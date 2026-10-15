@@ -1,0 +1,822 @@
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/cormorant-garamond-291655ad.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/cormorant-garamond-291655ad.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/cormorant-garamond-d9ec8210.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/cormorant-garamond-d9ec8210.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./assets/fonts/cormorant-garamond-d9ec8210.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #4a1524;
+  background: #f6f1e9;
+  font-synthesis: none;
+  --wine: #4a1524;
+  --paper: #f6f1e9;
+  --line: #cbbab5;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+body {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid #b75b70;
+  outline-offset: 5px;
+}
+::selection {
+  background: #4a1524;
+  color: #f6f1e9;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #7b3b4b;
+}
+::-webkit-scrollbar-track {
+  background: #e9e0d5;
+}
+svg {
+  flex-shrink: 0;
+}
+.topbar {
+  height: 111px;
+  padding: 20px 5%;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+.topbar > a:first-child {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+.logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 56px;
+  line-height: 0.8;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.logo span {
+  display: block;
+  font:
+    8px "DM Sans",
+    sans-serif;
+  letter-spacing: 0.4em;
+  margin-top: 12px;
+}
+.bag {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  background: none;
+  font-size: 11px;
+  padding: 10px;
+}
+.bag-panel {
+  position: absolute;
+  z-index: 5;
+  right: 4%;
+  top: 100px;
+  background: #f6f1e9;
+  border: 1px solid var(--wine);
+  padding: 28px;
+  width: min(350px, 90vw);
+  box-shadow: 0 15px 30px #35121c20;
+}
+.bag-panel h2 {
+  font-size: 30px;
+}
+.bag-panel p {
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 15px 0;
+}
+.bag-panel span {
+  font-size: 10px;
+  display: block;
+  margin-top: 20px;
+}
+.bag-panel button {
+  border: 0;
+  border-bottom: 1px solid;
+  background: none;
+  padding: 8px 0;
+  display: flex;
+  gap: 20px;
+  font-size: 11px;
+}
+.campaign {
+  display: grid;
+  grid-template-columns: 1fr 1fr 32px;
+  padding: 25px 3% 30px 5%;
+  min-height: 660px;
+  position: relative;
+}
+.campaign-copy {
+  padding: 0 9% 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.season {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  padding: 10px 0 25px;
+  gap: 10px;
+}
+.season span {
+  font-style: italic;
+}
+.campaign h1 {
+  font-size: clamp(72px, 8vw, 96px);
+  line-height: 0.88;
+  margin: 18px 0 30px;
+}
+.campaign h1 em {
+  padding-left: 10%;
+  font-weight: 400;
+}
+.campaign-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+.campaign-bottom p {
+  font-size: 11px;
+  line-height: 1.7;
+}
+.round-link {
+  width: 62px;
+  height: 62px;
+  border: 1px solid #8e626b;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+.round-link:hover {
+  background: var(--wine);
+  color: var(--paper);
+}
+.campaign-image {
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+.campaign-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  position: absolute;
+  animation: develop 1.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes develop {
+  from {
+    filter: sepia(0.6);
+    clip-path: inset(0 0 8% 0);
+    transform: scale(1.06);
+  }
+  to {
+    filter: sepia(0);
+    clip-path: inset(0);
+    transform: scale(1);
+  }
+}
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 60px 20px 20px;
+  font-size: 10px;
+  color: white;
+  background: linear-gradient(transparent, #0009);
+}
+.image-corner {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  color: white;
+  font-size: 10px;
+  line-height: 1.3;
+  letter-spacing: 0.12em;
+}
+.edge-text {
+  writing-mode: vertical-rl;
+  align-self: center;
+  justify-self: center;
+  font-size: 8px;
+  letter-spacing: 0.15em;
+}
+.ticker {
+  overflow: hidden;
+  background: var(--wine);
+  color: var(--paper);
+  padding: 18px 0;
+}
+.ticker div {
+  display: flex;
+  gap: 40px;
+  white-space: nowrap;
+  font:
+    italic 30px "Cormorant Garamond",
+    serif;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+.ticker span {
+  font-style: normal;
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.collection {
+  padding: 90px 8% 100px;
+  max-width: 1600px;
+  margin: auto;
+}
+.collection-head {
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.collection-head h2 {
+  font-size: 58px;
+  line-height: 0.95;
+}
+.collection-head p {
+  font-size: 11px;
+  line-height: 1.8;
+  padding-bottom: 5px;
+}
+.arrows {
+  display: flex;
+  gap: 12px;
+}
+.arrows button {
+  border: 1px solid var(--line);
+  background: transparent;
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.arrows button:hover {
+  background: #ece0d7;
+}
+.look {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 10%;
+  align-items: center;
+}
+.look-image {
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  background: #e5d9ce;
+}
+.look-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: develop 0.6s ease-out;
+}
+.look-image > span {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: var(--wine);
+  background: var(--paper);
+  padding: 9px 13px;
+  font-size: 10px;
+}
+.look-copy {
+  max-width: 390px;
+}
+.look-category {
+  font-size: 10px;
+}
+.look-copy h3 {
+  font-size: 48px;
+  line-height: 1.02;
+  margin: 20px 0;
+}
+.look-copy > p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+  max-width: 320px;
+}
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+.product-meta strong {
+  font-weight: 500;
+}
+.color {
+  font-size: 10px;
+  display: block;
+  margin-top: 10px;
+}
+.look-copy fieldset {
+  border: 0;
+  margin: 25px 0 20px;
+  padding: 0;
+  display: flex;
+  gap: 7px;
+}
+.look-copy legend {
+  font-size: 10px;
+  margin-bottom: 12px;
+}
+.look-copy fieldset button {
+  border: 1px solid var(--line);
+  background: none;
+  min-width: 43px;
+  height: 38px;
+  font-size: 11px;
+}
+.look-copy fieldset button[aria-pressed="true"] {
+  background: var(--wine);
+  color: var(--paper);
+  border-color: var(--wine);
+}
+.add {
+  width: 100%;
+  background: var(--wine);
+  color: var(--paper);
+  border: 0;
+  padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+}
+.add:hover {
+  background: #70283d;
+}
+.demo-note {
+  display: block;
+  margin-top: 12px;
+  font-size: 9px;
+  line-height: 1.6;
+}
+.manifesto {
+  background: #e8dfd4;
+  padding: 75px 8%;
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  gap: 13%;
+  align-items: center;
+}
+.manifesto-image {
+  height: 520px;
+  transform: rotate(-3deg);
+}
+.manifesto-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.manifesto h2 {
+  font-size: 60px;
+  line-height: 0.95;
+  margin-bottom: 30px;
+}
+.manifesto p {
+  font-size: 12px;
+  line-height: 1.8;
+  max-width: 380px;
+  margin-bottom: 15px;
+}
+.manifesto a {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  font-size: 11px;
+  margin-top: 20px;
+}
+.newsletter {
+  text-align: center;
+  padding: 95px 20px;
+}
+.newsletter > span {
+  font-size: 10px;
+}
+.newsletter h2 {
+  font-size: 65px;
+  margin: 15px 0 30px;
+}
+.newsletter form {
+  display: flex;
+  max-width: 390px;
+  margin: auto;
+  border-bottom: 1px solid var(--wine);
+}
+.newsletter input {
+  width: 100%;
+  background: none;
+  border: 0;
+  padding: 15px 0;
+  font-size: 12px;
+  min-width: 0;
+}
+.newsletter input::placeholder {
+  color: #784d56;
+}
+.newsletter button {
+  background: none;
+  border: 0;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+.newsletter p {
+  font-size: 10px;
+  line-height: 1.6;
+  margin: 17px auto 0;
+  max-width: 400px;
+}
+footer {
+  background: var(--wine);
+  color: var(--paper);
+  padding: 45px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.footer-logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 65px;
+  letter-spacing: 0.03em;
+}
+footer > div {
+  display: grid;
+  gap: 8px;
+  font-size: 10px;
+}
+footer > a:last-child {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 11px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+@media (min-width: 1500px) {
+  .campaign {
+    min-height: 790px;
+  }
+  .campaign h1 {
+    font-size: 96px;
+  }
+  .campaign-image {
+    min-height: 720px;
+  }
+}
+@media (max-width: 800px) {
+  .campaign {
+    min-height: 550px;
+  }
+  .campaign-image {
+    min-height: 490px;
+  }
+  .campaign h1 {
+    font-size: 76px;
+  }
+  .season {
+    display: block;
+  }
+  .season span {
+    display: block;
+    margin-top: 7px;
+  }
+  .campaign-bottom p {
+    font-size: 10px;
+  }
+  .round-link {
+    height: 46px;
+    width: 46px;
+  }
+  .collection {
+    padding: 70px 6%;
+  }
+  .collection-head h2 {
+    font-size: 46px;
+  }
+  .look {
+    gap: 7%;
+  }
+  .look-image {
+    height: 460px;
+  }
+  .look-copy h3 {
+    font-size: 39px;
+  }
+  .manifesto {
+    gap: 9%;
+    padding-inline: 6%;
+  }
+  .manifesto h2 {
+    font-size: 47px;
+  }
+  .manifesto-image {
+    height: 440px;
+  }
+}
+@media (max-width: 540px) {
+  .topbar {
+    height: 90px;
+    padding-inline: 6%;
+  }
+  .logo {
+    font-size: 43px;
+  }
+  .topbar > a:first-child,
+  .bag {
+    font-size: 9px;
+  }
+  .bag {
+    gap: 6px;
+    padding: 5px;
+  }
+  .logo span {
+    font-size: 7px;
+    margin-top: 9px;
+  }
+  .campaign {
+    grid-template-columns: 1fr;
+    padding: 20px 6% 24px;
+    gap: 25px;
+  }
+  .campaign-copy {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+  }
+  .season {
+    grid-column: 1/-1;
+    display: flex;
+    padding: 0 0 15px;
+  }
+  .season span {
+    margin: 0;
+  }
+  .campaign h1 {
+    font-size: 64px;
+    margin: 10px 0 0;
+    line-height: 0.87;
+  }
+  .campaign-bottom {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 22px;
+    padding: 0;
+  }
+  .campaign-bottom p {
+    text-align: right;
+  }
+  .campaign-image {
+    min-height: 420px;
+  }
+  .edge-text {
+    display: none;
+  }
+  .image-corner {
+    font-size: 9px;
+  }
+  .ticker {
+    padding: 12px 0;
+  }
+  .ticker div {
+    font-size: 25px;
+    gap: 25px;
+  }
+  .collection-head {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .collection-head h2 {
+    font-size: 43px;
+    flex: 1;
+  }
+  .collection-head p {
+    display: none;
+  }
+  .look {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .look-image {
+    height: 430px;
+  }
+  .look-copy {
+    max-width: none;
+  }
+  .look-copy h3 {
+    font-size: 42px;
+  }
+  .look-copy > p {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  .look-copy fieldset button {
+    flex: 1;
+  }
+  .manifesto {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding: 45px 9%;
+  }
+  .manifesto-image {
+    height: 380px;
+    margin-inline: 10px;
+  }
+  .manifesto h2 {
+    font-size: 53px;
+  }
+  .newsletter {
+    padding: 65px 7%;
+  }
+  .newsletter h2 {
+    font-size: 48px;
+  }
+  .newsletter p {
+    font-size: 9px;
+  }
+  footer {
+    flex-wrap: wrap;
+    padding: 30px 7%;
+    gap: 20px;
+  }
+  .footer-logo {
+    font-size: 55px;
+  }
+  footer > a:last-child {
+    font-size: 10px;
+  }
+  footer > div {
+    order: 3;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *:before,
+  *:after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

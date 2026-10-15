@@ -1,0 +1,888 @@
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(./assets/fonts/bricolage-grotesque-5f754c3a.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(./assets/fonts/bricolage-grotesque-5f754c3a.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(./assets/fonts/bricolage-grotesque-5f754c3a.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(./assets/fonts/bricolage-grotesque-5f754c3a.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(./assets/fonts/bricolage-grotesque-5f754c3a.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+:root {
+  --red: #b32f21;
+  --cream: #fff4df;
+  --ink: #402019;
+  --line: #d9c6ad;
+  color: var(--ink);
+  background: var(--cream);
+  font-family: "DM Sans", sans-serif;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 25px;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  letter-spacing: -0.04em;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #df9c42;
+  outline-offset: 4px;
+}
+::selection {
+  color: var(--cream);
+  background: var(--red);
+}
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--red);
+}
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+svg {
+  flex-shrink: 0;
+}
+.announcement {
+  background: var(--red);
+  color: var(--cream);
+  font-size: 10px;
+  padding: 11px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 5%;
+  border-bottom: 1px solid var(--line);
+}
+.logo {
+  font:
+    800 48px/0.8 "Bricolage Grotesque",
+    sans-serif;
+  letter-spacing: -0.04em;
+  color: var(--red);
+}
+.logo span {
+  font:
+    500 15px "DM Sans",
+    sans-serif;
+  vertical-align: top;
+  margin-left: 3px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-size: 12px;
+}
+.nav-book {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  background: var(--red);
+  color: var(--cream);
+  border-radius: 6px;
+  padding: 13px 18px;
+}
+.nav-book:hover {
+  background: #852216;
+}
+.hero {
+  padding: 0 3.5%;
+}
+.hero-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 4% 40px;
+  gap: 20px;
+}
+.hero h1 {
+  text-align: center;
+  font-size: clamp(56px, 7.2vw, 96px);
+  line-height: 0.98;
+  font-weight: 800;
+  color: var(--red);
+}
+.hero h1 em {
+  font-style: normal;
+}
+.side-copy {
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.07em;
+  transform: rotate(-90deg);
+  width: 100px;
+  flex-shrink: 0;
+}
+.hero-mark {
+  border: 1px solid var(--red);
+  border-radius: 50%;
+  height: 104px;
+  width: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--red);
+  flex-shrink: 0;
+  transform: rotate(12deg);
+}
+.hero-mark span {
+  font-size: 9px;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 4px;
+  letter-spacing: 0.08em;
+}
+.hero-photo {
+  height: 490px;
+  position: relative;
+  background: #a15e35;
+  overflow: visible;
+}
+.hero-photo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 60%;
+  animation: oven 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes oven {
+  from {
+    filter: saturate(0.5);
+    clip-path: inset(8% 0 0);
+  }
+  to {
+    filter: saturate(1);
+    clip-path: inset(0);
+  }
+}
+.paper-note {
+  position: absolute;
+  right: 4%;
+  top: 60px;
+  transform: rotate(5deg);
+  background: var(--cream);
+  padding: 27px 30px 25px;
+  color: var(--red);
+  width: 240px;
+  text-align: center;
+  box-shadow: 0 12px 28px #35100630;
+}
+.paper-note > svg {
+  margin-bottom: 13px;
+}
+.paper-note h2 {
+  font-size: 43px;
+  line-height: 0.95;
+}
+.paper-note p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 16px 0 22px;
+}
+.paper-note a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 10px;
+  border-top: 1px solid #d3b49b;
+  padding-top: 17px;
+}
+.photo-label {
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  background: var(--red);
+  color: var(--cream);
+  padding: 10px 13px;
+}
+.intro {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr;
+  gap: 35px;
+  padding: 100px 9%;
+  align-items: start;
+}
+.tiny-flame {
+  padding-top: 8px;
+  color: var(--red);
+}
+.intro h2 {
+  font-size: 50px;
+  line-height: 1.03;
+  font-weight: 700;
+}
+.intro h2 em {
+  font-style: normal;
+  color: var(--red);
+}
+.intro p {
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 17px;
+  max-width: 400px;
+}
+.intro a {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 11px;
+  border-bottom: 1px solid;
+  padding-bottom: 8px;
+  margin-top: 10px;
+}
+.menu-section {
+  background: #f0dfc2;
+  padding: 70px 7% 80px;
+}
+.menu-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 38px;
+}
+.menu-header h2 {
+  font-size: 60px;
+  line-height: 0.96;
+  color: var(--red);
+  font-weight: 700;
+}
+.menu-header h2 em {
+  font-style: normal;
+}
+.menu-header p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.menu-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 0;
+  align-items: stretch;
+}
+.menu-photo {
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+}
+.menu-photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.menu-stamp {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  background: var(--cream);
+  color: var(--red);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font:
+    700 18px/1.05 "Bricolage Grotesque",
+    sans-serif;
+  transform: rotate(-12deg);
+}
+.menu-paper {
+  background: var(--cream);
+  padding: 35px 40px;
+}
+.menu-tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 16px;
+  margin-bottom: 10px;
+}
+.menu-tabs button {
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 3px 0 8px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.menu-tabs button[aria-pressed="true"] {
+  border-bottom-color: var(--red);
+  color: var(--red);
+}
+.dishes {
+  min-height: 330px;
+}
+.dishes article {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+.dishes article > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.dishes h3 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.dishes h3 small {
+  font:
+    8px "DM Sans",
+    sans-serif;
+  margin-left: 5px;
+}
+.dishes article > div > span {
+  font-size: 13px;
+}
+.dishes p {
+  font-size: 11px;
+  line-height: 1.6;
+  margin-top: 6px;
+  max-width: 360px;
+}
+.dietary {
+  font-size: 9px;
+  line-height: 1.7;
+  margin-top: 22px;
+  max-width: 380px;
+}
+.gather {
+  height: 510px;
+  position: relative;
+  overflow: hidden;
+}
+.gather > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.42);
+}
+.gather > div {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--cream);
+}
+.gather h2 {
+  font-size: 65px;
+  line-height: 1.05;
+  font-weight: 600;
+}
+.gather h2 em {
+  font-style: normal;
+}
+.gather a {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-size: 12px;
+  border-bottom: 1px solid;
+  padding-bottom: 12px;
+  margin-top: 28px;
+}
+.reservation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12%;
+  padding: 85px 9%;
+  background: var(--red);
+  color: var(--cream);
+}
+.booking-title h2 {
+  font-size: 62px;
+  line-height: 1.02;
+  margin-top: 20px;
+  font-weight: 700;
+}
+.booking-title > p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 25px 0 35px;
+  max-width: 330px;
+}
+.hours {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  font-size: 10px;
+  max-width: 320px;
+}
+.hours span:nth-child(even) {
+  text-align: right;
+}
+.reservation form {
+  align-self: center;
+  background: var(--cream);
+  padding: 35px;
+  color: var(--ink);
+}
+.reservation form h3 {
+  font-size: 25px;
+  line-height: 1.1;
+  margin-bottom: 26px;
+}
+.booking-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.reservation label {
+  display: grid;
+  gap: 9px;
+  font-size: 10px;
+}
+.reservation input,
+.reservation select {
+  border: 1px solid #c8ae8c;
+  border-radius: 0;
+  width: 100%;
+  min-width: 0;
+  padding: 12px 10px;
+  background: transparent;
+  font-size: 11px;
+}
+.reservation input::placeholder {
+  color: #78604d;
+}
+.reservation fieldset {
+  border: 0;
+  padding: 0;
+  margin: 22px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 9px;
+}
+.reservation legend {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.reservation fieldset button {
+  background: none;
+  border: 1px solid #c8ae8c;
+  font-size: 11px;
+  padding: 10px;
+}
+.reservation fieldset button[aria-pressed="true"] {
+  background: var(--red);
+  color: var(--cream);
+  border-color: var(--red);
+}
+.reserve-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--red);
+  color: var(--cream);
+  padding: 15px;
+  border: 0;
+  font-size: 12px;
+  width: 100%;
+  margin-top: 20px;
+}
+.reserve-button:hover {
+  background: #852216;
+}
+.booking-note {
+  font-size: 9px;
+  line-height: 1.7;
+  margin-top: 14px;
+}
+footer {
+  padding: 40px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.footer-logo {
+  font:
+    800 50px "Bricolage Grotesque",
+    sans-serif;
+  letter-spacing: -0.04em;
+  color: var(--red);
+}
+footer > span {
+  font-size: 10px;
+  line-height: 1.7;
+}
+footer > a:last-child {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 10px;
+}
+@media (max-width: 900px) {
+  .side-copy {
+    display: none;
+  }
+  .hero-type {
+    justify-content: center;
+  }
+  .hero-mark {
+    width: 85px;
+    height: 85px;
+  }
+  .hero h1 {
+    font-size: 68px;
+  }
+  .hero-photo {
+    height: 440px;
+  }
+  .intro {
+    grid-template-columns: 1fr 1fr;
+    padding: 75px 7%;
+    gap: 30px;
+  }
+  .tiny-flame {
+    display: none;
+  }
+  .intro h2 {
+    font-size: 45px;
+  }
+  .menu-paper {
+    padding: 25px;
+  }
+  .menu-tabs {
+    gap: 15px;
+  }
+  .menu-tabs button {
+    font-size: 10px;
+  }
+  .dishes h3 {
+    font-size: 16px;
+  }
+  .reservation {
+    gap: 6%;
+    padding: 65px 6%;
+  }
+  .reservation form {
+    padding: 25px;
+  }
+  .booking-title h2 {
+    font-size: 51px;
+  }
+}
+@media (max-width: 580px) {
+  .announcement {
+    font-size: 8px;
+    gap: 8px;
+    padding-inline: 10px;
+  }
+  .announcement svg {
+    display: none;
+  }
+  header {
+    padding: 22px 6%;
+  }
+  .logo {
+    font-size: 38px;
+  }
+  header nav {
+    gap: 18px;
+    font-size: 10px;
+  }
+  header nav > a:nth-child(2) {
+    display: none;
+  }
+  .nav-book {
+    padding: 11px;
+    gap: 12px;
+  }
+  .hero {
+    padding: 0 4%;
+  }
+  .hero-type {
+    padding: 34px 0 30px;
+    gap: 0;
+  }
+  .hero h1 {
+    font-size: clamp(40px, 10.5vw, 60px);
+  }
+  .hero-mark {
+    display: none;
+  }
+  .hero-photo {
+    height: 430px;
+  }
+  .hero-photo > img {
+    object-position: 40% center;
+  }
+  .paper-note {
+    width: 170px;
+    right: 5%;
+    top: auto;
+    bottom: 35px;
+    padding: 20px;
+    transform: rotate(5deg);
+  }
+  .paper-note > svg {
+    width: 20px;
+    margin-bottom: 8px;
+  }
+  .paper-note h2 {
+    font-size: 32px;
+  }
+  .paper-note p {
+    font-size: 10px;
+    margin: 10px 0 15px;
+  }
+  .paper-note a {
+    font-size: 8px;
+    gap: 4px;
+    padding-top: 12px;
+  }
+  .photo-label {
+    font-size: 7px;
+    left: 12px;
+    bottom: 12px;
+    padding: 7px;
+  }
+  .intro {
+    grid-template-columns: 1fr;
+    padding: 60px 8%;
+    gap: 25px;
+  }
+  .intro h2 {
+    font-size: 45px;
+  }
+  .intro p {
+    font-size: 12px;
+  }
+  .menu-section {
+    padding: 50px 6%;
+  }
+  .menu-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 26px;
+  }
+  .menu-header h2 {
+    font-size: 48px;
+  }
+  .menu-header p {
+    font-size: 11px;
+  }
+  .menu-layout {
+    grid-template-columns: 1fr;
+  }
+  .menu-photo {
+    min-height: 270px;
+  }
+  .menu-stamp {
+    width: 95px;
+    height: 95px;
+    font-size: 15px;
+    bottom: 15px;
+    left: 18px;
+  }
+  .menu-paper {
+    padding: 22px;
+  }
+  .menu-tabs {
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .dishes {
+    min-height: 0;
+  }
+  .dishes article {
+    padding-block: 18px;
+  }
+  .gather {
+    height: 400px;
+  }
+  .gather h2 {
+    font-size: 48px;
+  }
+  .reservation {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 50px 7%;
+  }
+  .booking-title h2 {
+    font-size: 53px;
+  }
+  .booking-title > p {
+    max-width: none;
+    margin: 20px 0 25px;
+  }
+  .hours {
+    max-width: none;
+  }
+  .reservation form {
+    padding: 26px;
+  }
+  .booking-fields {
+    gap: 10px;
+  }
+  .reservation input {
+    font-size: 10px;
+  }
+  .reservation form h3 {
+    font-size: 24px;
+  }
+  footer {
+    flex-wrap: wrap;
+    padding: 30px 7%;
+    gap: 20px;
+  }
+  .footer-logo {
+    font-size: 43px;
+  }
+  footer > span {
+    font-size: 9px;
+  }
+  footer > a:last-child {
+    width: 100%;
+    font-size: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *:before,
+  *:after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,895 @@
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/instrument-serif-0d985700.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/instrument-serif-05103e2a.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #4b273b;
+  background: #f7f2ef;
+  font-synthesis: none;
+  --burgundy: #4b273b;
+  --lavender: #dcd4e4;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+  color: inherit;
+}
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+button:hover,
+.pill-button:hover {
+  filter: brightness(0.94);
+}
+:focus-visible {
+  outline: 2px solid #8a5477;
+  outline-offset: 6px;
+}
+::selection {
+  background: #c8b2d5;
+  color: #4b273b;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b49db5;
+  border-radius: 5px;
+}
+.header {
+  height: 105px;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wordmark {
+  font-family: "Instrument Serif", serif;
+  font-size: 49px;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.wordmark span {
+  font-family: "DM Sans";
+  font-size: 9px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  width: 55px;
+}
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  font-size: 11px;
+}
+.nav-book {
+  border: 1px solid #b9a9b1;
+  padding: 12px 18px;
+  border-radius: 30px;
+  display: flex;
+  gap: 23px;
+  align-items: center;
+}
+.menu-toggle {
+  display: none;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 620px;
+}
+.hero-copy {
+  padding: 74px 10% 33px;
+  display: flex;
+  flex-direction: column;
+  background: #e1dbe8;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h1 {
+  font-family: "Instrument Serif";
+  font-size: clamp(66px, 7.7vw, 96px);
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: -0.035em;
+}
+em {
+  font-weight: 400;
+}
+h1 em {
+  color: #865778;
+}
+.hero-copy > p {
+  font-size: 13px;
+  line-height: 1.9;
+  margin: 29px 0 29px;
+  color: #6d5267;
+}
+.pill-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 22px;
+  background: var(--burgundy);
+  color: #fff9f6;
+  border: 0;
+  border-radius: 30px;
+  font-size: 11px;
+  align-self: flex-start;
+}
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9px;
+  margin-top: auto;
+  padding-top: 65px;
+  color: #765d70;
+}
+.hero-bottom > a {
+  display: grid;
+  place-items: center;
+  border: 1px solid #bfaac5;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+}
+.hero-image {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: 50% 52%;
+  filter: saturate(0.65);
+}
+.image-caption {
+  position: absolute;
+  bottom: 32px;
+  left: 35px;
+  right: 35px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.image-caption > span {
+  font-family: "Instrument Serif";
+  font-size: 33px;
+  line-height: 1.05;
+  text-shadow: 0 2px 12px #172b2580;
+}
+.image-caption svg {
+  width: 58px;
+  height: 58px;
+  stroke: #fff;
+  stroke-width: 1;
+}
+.philosophy {
+  padding: 97px 10% 78px;
+}
+.section-mark {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  font-size: 10px;
+  color: #8a6c7c;
+  margin-bottom: 35px;
+}
+.philosophy h2 {
+  font-family: "Instrument Serif";
+  font-size: clamp(38px, 4.5vw, 59px);
+  font-weight: 400;
+  line-height: 1.13;
+  letter-spacing: -0.025em;
+}
+.philosophy h2 em {
+  color: #997688;
+}
+.philosophy-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+  margin-top: 35px;
+  border-top: 1px solid #e1d6da;
+  padding-top: 30px;
+}
+.philosophy-bottom > span {
+  font-size: 11px;
+  color: #8a6c7c;
+}
+.philosophy-bottom p {
+  max-width: 380px;
+  font-size: 12px;
+  line-height: 1.9;
+  color: #7d6171;
+}
+.breath-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8%;
+  background: #e5deeb;
+  padding: 75px 10%;
+  align-items: center;
+  min-height: 490px;
+}
+.breath-copy h2,
+.classes h2,
+.faq h2 {
+  font-family: "Instrument Serif";
+  font-size: clamp(40px, 4.5vw, 60px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+.breath-copy p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #785e74;
+  max-width: 315px;
+  margin: 24px 0;
+}
+.outline-button {
+  background: none;
+  border: 1px solid #9b7c97;
+  padding: 13px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+}
+.breath-copy > small {
+  display: block;
+  font-size: 9px;
+  color: #876f81;
+  margin-top: 16px;
+}
+.breathing-visual {
+  position: relative;
+  aspect-ratio: 1;
+  max-width: 360px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  justify-self: center;
+}
+.breath-ring {
+  position: absolute;
+  border: 1px solid #b79cbe;
+  border-radius: 50%;
+  transition: transform 4s ease-in-out;
+}
+.ring-outer {
+  inset: 0;
+  opacity: 0.6;
+}
+.ring-middle {
+  inset: 9%;
+  opacity: 0.75;
+}
+.breath-core {
+  background: #cbb8d3;
+  border-radius: 50%;
+  width: 62%;
+  height: 62%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  color: #654063;
+}
+.breath-core span {
+  font-family: "Instrument Serif";
+  font-size: 25px;
+}
+.breath-core small {
+  font-size: 9px;
+  color: #795c79;
+}
+.running .breath-ring,
+.running .breath-core {
+  animation: breath 10s ease-in-out infinite;
+}
+.running .ring-middle {
+  animation-delay: 0.15s;
+}
+.running .breath-core {
+  animation-name: breath-core;
+}
+.classes {
+  padding: 85px 10%;
+}
+.classes-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+.classes-heading p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #896d7b;
+}
+.schedule-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #dcd0d6;
+  padding-bottom: 18px;
+}
+.schedule-tabs button {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 17px;
+  font-size: 10px;
+}
+.schedule-tabs button.active {
+  border-color: #bda8b4;
+}
+.schedule-tabs > span {
+  margin-left: auto;
+  font-size: 9px;
+  color: #8d7481;
+}
+.class-row {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  padding: 27px 0;
+  border-bottom: 1px solid #e1d7dc;
+}
+.class-time {
+  min-width: 50px;
+}
+.class-time > span {
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+}
+.class-time small {
+  font-size: 9px;
+  display: block;
+  color: #977e8c;
+  margin-top: 6px;
+}
+.class-title h3 {
+  font-family: "Instrument Serif";
+  font-size: 26px;
+  font-weight: 400;
+}
+.class-title > span {
+  font-size: 10px;
+  color: #8c7281;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 7px;
+}
+.class-title i {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #aa909f;
+}
+.class-level {
+  margin-left: auto;
+  font-size: 10px;
+  color: #8c7281;
+}
+.class-row > button {
+  border: 1px solid #c7b5c0;
+  border-radius: 50%;
+  background: none;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.class-row > button.chosen {
+  background: #d9cbdf;
+}
+.signup {
+  background: #e8e0eb;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+  border-radius: 12px;
+}
+.signup > div {
+  flex: 1;
+}
+.signup h3 {
+  font-family: "Instrument Serif";
+  font-size: 25px;
+  font-weight: 400;
+}
+.signup p {
+  font-size: 10px;
+  color: #806477;
+  margin-top: 9px;
+  line-height: 1.6;
+}
+.signup label {
+  font-size: 10px;
+  display: grid;
+  gap: 7px;
+}
+.signup input {
+  border: 1px solid #cbb7cc;
+  background: #f7f1f7;
+  padding: 10px;
+  border-radius: 5px;
+  color: #4b273b;
+  width: 180px;
+}
+.signup .pill-button {
+  align-self: center;
+  padding: 13px 16px;
+  gap: 10px;
+  white-space: nowrap;
+}
+.confirmation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #e7deeb;
+  padding: 20px;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+.faq {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 15px 10% 100px;
+}
+.faq h2 {
+  font-size: 45px;
+  margin-top: 22px;
+}
+.faq-item {
+  border-bottom: 1px solid #deced8;
+}
+.faq-item button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+  background: none;
+  border: 0;
+  width: 100%;
+  padding: 24px 0;
+  font-size: 12px;
+}
+.faq-item button svg {
+  flex-shrink: 0;
+}
+.faq-item p {
+  font-size: 11px;
+  line-height: 1.9;
+  color: #896c7f;
+  padding: 0 30px 24px 0;
+}
+footer {
+  background: #4b273b;
+  color: #f0e6ed;
+  padding: 48px 5% 25px;
+}
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 43px;
+}
+.footer-top .wordmark {
+  font-size: 70px;
+}
+.footer-top p {
+  font-family: "Instrument Serif";
+  font-size: 30px;
+  line-height: 1.1;
+}
+.footer-top > a:last-child {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 11px;
+  border-bottom: 1px solid #ae8da4;
+  padding-bottom: 13px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid #735268;
+  padding-top: 22px;
+  font-size: 9px;
+  color: #cdb6c5;
+}
+.footer-bottom a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+@keyframes breath {
+  0%,
+  100% {
+    transform: scale(0.82);
+  }
+  40% {
+    transform: scale(1.06);
+  }
+}
+@keyframes breath-core {
+  0%,
+  100% {
+    transform: scale(0.9);
+    background: #cbb8d3;
+  }
+  40% {
+    transform: scale(1.07);
+    background: #bfa7ca;
+  }
+}
+@media (min-width: 1600px) {
+  main,
+  .header,
+  footer {
+    padding-left: max(5%, calc((100vw - 1480px) / 2));
+    padding-right: max(5%, calc((100vw - 1480px) / 2));
+  }
+  .hero-copy {
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+  .hero {
+    min-height: 720px;
+  }
+  .hero-image {
+    min-height: 720px;
+  }
+}
+@media (max-width: 1000px) {
+  .hero-copy {
+    padding-top: 70px;
+  }
+  .hero,
+  .hero-image {
+    min-height: 570px;
+  }
+  .hero-copy h1 {
+    font-size: 72px;
+  }
+  .hero-copy > p {
+    font-size: 12px;
+  }
+  .hero-bottom {
+    font-size: 8px;
+    gap: 15px;
+  }
+  .philosophy,
+  .classes {
+    padding: 70px 7%;
+  }
+  .breath-section {
+    padding: 65px 7%;
+    gap: 6%;
+  }
+  .breathing-visual {
+    max-width: 300px;
+  }
+  .signup {
+    flex-wrap: wrap;
+  }
+  .signup > div {
+    flex-basis: 100%;
+  }
+  .signup label {
+    flex: 1;
+  }
+  .signup input {
+    width: 100%;
+  }
+  .faq {
+    padding: 10px 7% 80px;
+    gap: 40px;
+  }
+  .class-row {
+    gap: 25px;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    height: 85px;
+    padding: 0 6%;
+  }
+  .wordmark {
+    font-size: 45px;
+  }
+  .wordmark span {
+    font-size: 8px;
+    gap: 13px;
+  }
+  .menu-toggle {
+    display: flex;
+    border: 0;
+    background: none;
+    padding: 10px;
+  }
+  .header nav {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 75px;
+    left: 0;
+    right: 0;
+    background: #f7f2ef;
+    padding: 25px 6%;
+    border-bottom: 1px solid #d8c8d2;
+    box-shadow: 0 12px 20px #4b273b12;
+  }
+  .header nav.open {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-copy {
+    padding: 55px 8% 25px;
+    min-height: 490px;
+  }
+  .hero-copy h1 {
+    font-size: 84px;
+  }
+  .hero-copy > p {
+    font-size: 13px;
+    margin-top: 25px;
+  }
+  .hero-bottom {
+    padding-top: 40px;
+    font-size: 9px;
+  }
+  .hero-image {
+    min-height: 520px;
+  }
+  .hero-image img {
+    object-position: 50% 58%;
+  }
+  .image-caption {
+    bottom: 28px;
+    left: 28px;
+    right: 28px;
+  }
+  .philosophy {
+    padding: 65px 8%;
+  }
+  .philosophy h2 {
+    font-size: 42px;
+  }
+  .philosophy-bottom {
+    display: block;
+    margin-top: 27px;
+    padding-top: 24px;
+  }
+  .philosophy-bottom p {
+    margin-top: 22px;
+    font-size: 12px;
+  }
+  .breath-section {
+    grid-template-columns: 1fr;
+    padding: 60px 8%;
+    gap: 45px;
+  }
+  .breath-copy h2 {
+    font-size: 51px;
+  }
+  .breath-copy p {
+    max-width: 100%;
+  }
+  .breathing-visual {
+    max-width: 310px;
+  }
+  .classes {
+    padding: 65px 8%;
+  }
+  .classes-heading {
+    display: block;
+  }
+  .classes h2 {
+    font-size: 47px;
+  }
+  .classes-heading p {
+    margin-top: 25px;
+    font-size: 11px;
+  }
+  .schedule-tabs {
+    gap: 2px;
+    flex-wrap: wrap;
+  }
+  .schedule-tabs > span {
+    width: 100%;
+    margin: 12px 0 0;
+    font-size: 8px;
+  }
+  .schedule-tabs button {
+    padding: 9px 13px;
+    font-size: 10px;
+  }
+  .class-row {
+    gap: 16px;
+    padding: 23px 0;
+  }
+  .class-time > span {
+    font-size: 14px;
+  }
+  .class-time {
+    min-width: 43px;
+  }
+  .class-title h3 {
+    font-size: 23px;
+  }
+  .class-title > span {
+    font-size: 8px;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .class-level {
+    display: none;
+  }
+  .class-row > button {
+    margin-left: auto;
+    width: 35px;
+    height: 35px;
+  }
+  .signup {
+    padding: 20px;
+    gap: 18px;
+  }
+  .signup > div {
+    min-width: 0;
+  }
+  .signup label {
+    flex-basis: 100%;
+  }
+  .signup .pill-button {
+    width: 100%;
+  }
+  .confirmation {
+    font-size: 10px;
+  }
+  .confirmation svg {
+    flex-shrink: 0;
+  }
+  .faq {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 0 8% 70px;
+  }
+  .faq h2 {
+    font-size: 43px;
+  }
+  .faq-item button {
+    font-size: 11px;
+  }
+  .footer-top {
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-bottom: 32px;
+  }
+  .footer-top > a:last-child {
+    width: 100%;
+  }
+  .footer-top p {
+    font-size: 27px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 13px;
+  }
+  .footer-bottom > span:last-child {
+    display: none;
+  }
+  footer {
+    padding: 40px 8% 25px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

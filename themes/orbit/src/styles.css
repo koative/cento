@@ -1,0 +1,787 @@
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(./assets/fonts/manrope-4872f2a6.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/manrope-4872f2a6.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/manrope-4872f2a6.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./assets/fonts/manrope-4872f2a6.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(./assets/fonts/manrope-4872f2a6.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+:root {
+  font-family: "DM Sans", sans-serif;
+  background: #08121c;
+  color: #e0edf3;
+  font-synthesis: none;
+  --ice: #9edbe9;
+  --muted: #9cacb8;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+body {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+}
+::selection {
+  background: var(--ice);
+  color: #08121c;
+}
+:focus-visible {
+  outline: 2px solid var(--ice);
+  outline-offset: 6px;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #597b8a;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding: 26px 5%;
+  border-bottom: 1px solid #26333f;
+}
+.logo {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: -0.04em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.orbit-mark {
+  width: 24px;
+  height: 24px;
+  border: 1.5px solid var(--ice);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  transform: rotate(-35deg);
+}
+.orbit-mark:after {
+  content: "";
+  position: absolute;
+  inset: 6px -5px;
+  border: 1px solid var(--ice);
+  border-radius: 50%;
+}
+.logo-dot {
+  font-size: 10px;
+  align-self: flex-start;
+  margin: 5px 0 0 -4px;
+}
+nav {
+  display: flex;
+  gap: 33px;
+  font-size: 12px;
+  color: #becbd4;
+}
+nav a:hover {
+  color: white;
+}
+.header-contact {
+  font-size: 11px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.hero {
+  position: relative;
+  min-height: 680px;
+  padding: 75px 6% 0;
+  overflow: hidden;
+}
+.hero-copy {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+.hero-copy a {
+  pointer-events: auto;
+}
+h1 {
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(55px, 6.2vw, 82px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin: 15px 0 30px;
+}
+h1 span {
+  color: var(--ice);
+}
+.hero-copy p {
+  font-size: 13px;
+  color: #b5c3ce;
+  line-height: 1.9;
+  margin-bottom: 35px;
+}
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 45px;
+  font-size: 12px;
+  border-bottom: 1px solid #7494a4;
+  padding: 0 0 12px;
+}
+.text-link:hover {
+  color: var(--ice);
+}
+.universe {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 53%;
+  height: 600px;
+  overflow: hidden;
+  perspective: 900px;
+  background: radial-gradient(ellipse at 55% 50%, #12314070, transparent 66%);
+}
+.orbital-scene {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 150px;
+  left: calc(50% - 150px);
+  transform-style: preserve-3d;
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.earth {
+  position: absolute;
+  inset: 24px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 24%,
+    #779aab 0,
+    #2d546a 22%,
+    #153346 45%,
+    #07121c 73%
+  );
+  box-shadow:
+    inset -16px -15px 40px #010710,
+    7px 3px 28px #02060b;
+  overflow: hidden;
+  transform: rotateX(-25deg);
+}
+.earth:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid #6c9dae88;
+  border-radius: 50%;
+}
+.earth-grid {
+  position: absolute;
+  inset: 0 30%;
+  border: 1px solid #8fb3c03f;
+  border-radius: 50%;
+  transform: rotate(15deg);
+}
+.earth-grid.second {
+  inset: 0 10%;
+}
+.earth-equator {
+  position: absolute;
+  inset: 32% 0;
+  border: 1px solid #8fb3c03f;
+  border-radius: 50%;
+  transform: rotate(15deg);
+}
+.earth-equator.second {
+  inset: 13% 0;
+}
+.orbit-ring {
+  position: absolute;
+  inset: -75px;
+  border: 1px solid #6b9db77d;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--rx)) rotateY(var(--ry)) rotateZ(var(--rz));
+  animation: orbit 25s linear infinite;
+}
+.orbit-ring:after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 1px solid #41657b30;
+  border-radius: 50%;
+}
+.ring-0 {
+  --rx: 68deg;
+  --ry: 0deg;
+  --rz: 0deg;
+}
+.ring-1 {
+  --rx: 70deg;
+  --ry: 48deg;
+  --rz: 60deg;
+  animation-duration: 32s;
+}
+.ring-2 {
+  --rx: 70deg;
+  --ry: -48deg;
+  --rz: -60deg;
+  animation-duration: 40s;
+}
+.satellite {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #dcf7ff;
+  top: 50%;
+  left: -4px;
+  box-shadow: 2px 2px 12px #8cdeef;
+  border-radius: 50%;
+}
+.coordinate {
+  position: absolute;
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  color: #829ba9;
+  line-height: 1.8;
+}
+.coordinate.top {
+  top: 40px;
+  right: 11%;
+}
+.coordinate.bottom {
+  bottom: 50px;
+  left: 15%;
+}
+.view-controls {
+  position: absolute;
+  bottom: 42px;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.view-controls button {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border: 1px solid #436173;
+  color: #b6d5e2;
+  border-radius: 50%;
+}
+.view-controls label {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.view-controls input {
+  width: 70px;
+  accent-color: var(--ice);
+}
+.hero-caption {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #26333f;
+  margin-top: 90px;
+  padding: 22px 0;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  color: #9cacb8;
+}
+.hero-caption i {
+  display: inline-block;
+  background: var(--ice);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.missions {
+  padding: 90px 7%;
+  border-top: 1px solid #26333f;
+  background: #0b1722;
+}
+.mission-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(34px, 4vw, 50px);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  margin: 0;
+}
+.mission-heading p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.mission-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.3fr;
+  gap: 8%;
+}
+.mission-list button {
+  display: flex;
+  text-align: left;
+  gap: 20px;
+  align-items: center;
+  border: 0;
+  border-top: 1px solid #32424f;
+  background: none;
+  color: #91a6b4;
+  width: 100%;
+  padding: 25px 0;
+}
+.mission-list button:last-child {
+  border-bottom: 1px solid #32424f;
+}
+.mission-list button[aria-selected="true"] {
+  color: #dbf3fb;
+}
+.mission-list button[aria-selected="true"] .mission-order {
+  color: var(--ice);
+}
+.mission-order {
+  font-size: 10px;
+  color: #708492;
+}
+.mission-list button > span:nth-child(2) {
+  flex: 1;
+}
+.mission-list strong {
+  font-size: 28px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 8px;
+}
+.mission-list small {
+  font-size: 11px;
+}
+.mission-detail {
+  position: relative;
+  padding-top: 6px;
+}
+.mission-detail h3 {
+  font-size: 21px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.mission-detail p {
+  max-width: 400px;
+  font-size: 12px;
+  color: #acbdc9;
+  line-height: 1.9;
+}
+.trajectory {
+  height: 120px;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.trajectory > div {
+  width: 250px;
+  height: 75px;
+  border: 1px solid #446579;
+  border-radius: 50%;
+  transition: transform 1s;
+}
+.trajectory > div span {
+  width: 7px;
+  height: 7px;
+  background: #cbeef8;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  top: 25px;
+  left: -3px;
+}
+.trajectory > i {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #4b6b7d;
+  background: #132c3c;
+  border-radius: 50%;
+  position: absolute;
+}
+.telemetry {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0 20px;
+  border-top: 1px solid #32424f;
+  margin-top: 28px;
+  gap: 15px;
+  font-variant-numeric: tabular-nums;
+}
+.telemetry span {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  color: #9cacb8;
+  margin-bottom: 12px;
+}
+.telemetry strong {
+  font-size: 24px;
+  font-weight: 400;
+}
+.telemetry small {
+  font-size: 11px;
+}
+.data-note {
+  font-size: 8px;
+  color: #96aab8;
+}
+.approach {
+  padding: 85px 10%;
+  background: #cadde3;
+  color: #112b39;
+}
+.approach h2 {
+  font-size: clamp(38px, 5.7vw, 72px);
+  line-height: 1.2;
+  margin: 45px 0 50px;
+}
+.approach em {
+  font-style: normal;
+  color: #376c81;
+}
+.approach-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #8ba5b1;
+}
+.approach-bottom > span {
+  font-size: 9px;
+  letter-spacing: 0.08em;
+}
+.approach-bottom p {
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 390px;
+  margin: 0;
+}
+.questions {
+  padding: 95px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 8%;
+}
+.questions article {
+  border-top: 1px solid #32424f;
+}
+.questions article:last-child {
+  border-bottom: 1px solid #32424f;
+}
+.questions button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  border: 0;
+  background: none;
+  color: #e0edf3;
+  width: 100%;
+  padding: 23px 0;
+  text-align: left;
+  font-size: 14px;
+}
+.questions p {
+  font-size: 12px;
+  color: #acbdc9;
+  line-height: 1.9;
+  margin: 0 30px 24px 0;
+}
+.contact {
+  padding: 50px 7% 75px;
+}
+.contact > span {
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+.contact > a {
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(48px, 8vw, 96px);
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #507180;
+  padding: 20px 0;
+}
+.contact > a svg {
+  width: 65px;
+  height: 65px;
+}
+.contact p {
+  font-size: 10px;
+  color: var(--muted);
+}
+footer {
+  padding: 25px 5%;
+  border-top: 1px solid #26333f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+footer > span {
+  font-size: 8px;
+  color: var(--muted);
+}
+footer > a:last-child {
+  font-size: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+@keyframes orbit {
+  from {
+    transform: rotateX(var(--rx)) rotateY(var(--ry)) rotateZ(var(--rz));
+  }
+  to {
+    transform: rotateX(var(--rx)) rotateY(var(--ry))
+      rotateZ(calc(var(--rz) + 360deg));
+  }
+}
+@media (max-width: 750px) {
+  header {
+    padding: 20px 6%;
+  }
+  nav {
+    display: none;
+  }
+  .header-contact {
+    font-size: 10px;
+    gap: 8px;
+  }
+  .hero {
+    padding: 40px 7% 0;
+    min-height: 0;
+  }
+  .hero-copy h1 {
+    font-size: 51px;
+  }
+  .hero-copy p {
+    font-size: 12px;
+  }
+  .universe {
+    position: relative;
+    width: calc(100% + 16%);
+    margin-left: -8%;
+    height: 400px;
+    margin-top: 5px;
+  }
+  .orbital-scene {
+    width: 220px;
+    height: 220px;
+    top: 80px;
+    left: calc(50% - 110px);
+  }
+  .orbit-ring {
+    inset: -40px;
+  }
+  .earth {
+    inset: 20px;
+  }
+  .coordinate.top {
+    top: 22px;
+    right: 7%;
+  }
+  .coordinate.bottom {
+    bottom: 20px;
+    left: 7%;
+  }
+  .view-controls {
+    right: 7%;
+    bottom: 18px;
+  }
+  .hero-caption {
+    margin-top: 0;
+    gap: 20px;
+    font-size: 7px;
+  }
+  .hero-caption > span:nth-child(2) {
+    display: none;
+  }
+  .missions {
+    padding: 60px 7%;
+  }
+  .mission-heading {
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .mission-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .mission-list button {
+    padding: 20px 0;
+  }
+  .mission-list strong {
+    font-size: 25px;
+  }
+  .mission-detail {
+    padding-top: 0;
+  }
+  .mission-detail h3 {
+    font-size: 24px;
+  }
+  .approach {
+    padding: 60px 7%;
+  }
+  .approach h2 {
+    font-size: 39px;
+    margin: 35px 0;
+  }
+  .approach-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .questions {
+    padding: 60px 7%;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .contact {
+    padding: 20px 7% 55px;
+  }
+  .contact > a {
+    font-size: 53px;
+  }
+  .contact > a svg {
+    width: 45px;
+    height: 45px;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+  footer > span {
+    order: 3;
+    width: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
