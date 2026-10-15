@@ -16,11 +16,11 @@ Developers and designers browsing reusable website starting points (inferred fro
 
 ## Product Purpose
 
-Publish 12–16 distinctly designed website templates, each with its own structure, sector and animation language, through a gallery. The user subsequently confirmed https://koative.github.io/templates/ as the publishing destination and instructed us not to change koative.com settings.
+Publish a growing collection of distinctly designed website templates, each with its own structure, sector and animation language, through a gallery. The user subsequently confirmed https://koative.github.io/templates/ as the publishing destination and instructed us not to change koative.com settings.
 
 ## Capabilities and Constraints
 
-Twelve templates in the first collection. Responsive, keyboard-accessible previews, source links and independently buildable folders. Static demonstration interactions only; no backend or payment processing requested. User explicitly delegates creative orchestration and parallel implementation to agents. Preserve the existing koative.com site.
+Twelve templates in the first collection; the user requested twelve additional templates, bringing the total to twenty-four. Responsive, keyboard-accessible previews, source links and independently buildable folders. Static demonstration interactions only; no backend or payment processing requested. User explicitly delegates creative orchestration and parallel implementation to agents. Preserve the existing koative.com site.
 
 ## Brand Commitments
 

@@ -1,18 +1,6 @@
 import { test, expect } from "@playwright/test";
-const slugs = [
-  "forma",
-  "muse",
-  "ember",
-  "haven",
-  "pulse",
-  "orbit",
-  "atelier",
-  "terrain",
-  "ledger",
-  "signal",
-  "still",
-  "roast",
-];
+import { catalog } from "../gallery/catalog";
+const slugs = catalog.map((template) => template.slug);
 for (const slug of slugs) {
   test(`${slug}: static deployment and responsive layout`, async ({ page }) => {
     const errors: string[] = [];
@@ -44,13 +32,15 @@ test("gallery filters, empty state, preview and device controls", async ({
   page,
 }) => {
   await page.goto("./");
-  await expect(page.locator(".template-entry")).toHaveCount(12);
+  await expect(page.locator(".template-entry")).toHaveCount(catalog.length);
   await page.getByRole("button", { name: "Technology", exact: true }).click();
-  await expect(page.locator(".template-entry")).toHaveCount(3);
+  await expect(page.locator(".template-entry")).toHaveCount(
+    catalog.filter((template) => template.category === "Technology").length,
+  );
   await page.getByRole("searchbox").fill("not-a-template");
   await expect(page.getByText("No match, yet.")).toBeVisible();
   await page.getByRole("button", { name: "Show all templates" }).click();
-  await expect(page.locator(".template-entry")).toHaveCount(12);
+  await expect(page.locator(".template-entry")).toHaveCount(catalog.length);
   await page
     .getByRole("button", { name: "Preview Orbit", exact: true })
     .click();

@@ -77,7 +77,7 @@ function App() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#collection">
-            The collection <span>12</span>
+            The collection <span>{catalog.length}</span>
           </a>
           <a href="#about">The idea</a>
           <a
@@ -111,7 +111,7 @@ function App() {
             </h1>
             <div className="opening-bottom">
               <p>
-                Twelve independent design worlds.
+                {catalog.length} independent design worlds.
                 <br />
                 Built to be explored. Made to be yours.
               </p>
@@ -201,7 +201,7 @@ function App() {
                   onClick={() => setCategory(c)}
                 >
                   {c}
-                  {c === "All" && <span>12</span>}
+                  {c === "All" && <span>{catalog.length}</span>}
                 </button>
               ))}
             </div>
@@ -221,13 +221,13 @@ function App() {
               {String(shown.length).padStart(2, "0")} templates to explore
             </span>
             <span>
-              <SlidersHorizontal size={13} /> Twelve perspectives. One
+              <SlidersHorizontal size={13} /> {catalog.length} perspectives. One
               collection.
             </span>
           </div>
           <div className="template-grid">
             {shown.map((t) => (
-              <article key={t.slug} className="template-entry">
+              <article id={t.slug} key={t.slug} className="template-entry">
                 <button
                   className="template-visual"
                   style={{ background: t.color, color: t.ink }}
@@ -372,6 +372,9 @@ function App() {
       <dialog
         ref={dialog}
         className="preview-dialog"
+        aria-label={
+          selected ? `${selected.name} template preview` : "Template preview"
+        }
         onCancel={() => setSelected(null)}
         onClick={(e) => {
           if (e.target === dialog.current) setSelected(null);

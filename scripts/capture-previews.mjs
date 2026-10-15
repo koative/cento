@@ -18,6 +18,14 @@ for (const slug of slugs) {
     waitUntil: "networkidle",
   });
   await page.evaluate(() => document.fonts.ready);
+  await page.locator("img").evaluateAll(async (imgs) => {
+    await Promise.all(
+      imgs.map((img) => {
+        img.loading = "eager";
+        return img.decode().catch(() => undefined);
+      }),
+    );
+  });
   await page.screenshot({ path: `.qa/${slug}-desktop.png`, fullPage: true });
   await page.screenshot({ path: `.qa/${slug}-preview.png` });
   const desktop = await page.evaluate(() => ({

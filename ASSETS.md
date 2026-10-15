@@ -6,11 +6,13 @@ The MIT license covers original source code in this repository. It does not repl
 
 Photography is downloaded locally from Unsplash, used as illustrative template imagery. Exact image URLs are documented in the README of each photographic template: [Forma](themes/forma/README.md), [Muse](themes/muse/README.md), [Ember](themes/ember/README.md), [Haven](themes/haven/README.md), [Pulse](themes/pulse/README.md), [Terrain](themes/terrain/README.md), [Still](themes/still/README.md), and [Roast](themes/roast/README.md). Images remain subject to the [Unsplash license](https://unsplash.com/license). Photographer, trademark, property and model rights are separate; select assets appropriate to your own published project.
 
+The second collection documents its asset sources in [Frame](themes/frame/README.md), [Monograph](themes/monograph/README.md), [Index](themes/index/README.md), [Bloom](themes/bloom/README.md), [Velo](themes/velo/README.md), [Prism](themes/prism/README.md), [Nocturne](themes/nocturne/README.md), [Arcade](themes/arcade/README.md), [Kiln](themes/kiln/README.md), [Aura](themes/aura/README.md), [Tide](themes/tide/README.md), and [Relay](themes/relay/README.md). Some use only original CSS/SVG geometry.
+
 ## Fonts
 
 Latin subsets are self-hosted next to the gallery and individual templates, so the shipped sites make no Google Fonts request. Exact download provenance is recorded in [`scripts/font-sources.json`](scripts/font-sources.json). Font licenses are retained in each font asset directory for standalone extraction.
 
-Font families used: DM Sans, Manrope, Barlow Condensed, Space Grotesk, Cormorant Garamond, Italiana, Instrument Serif, Bricolage Grotesque and IBM Plex Sans. Font copyright and licensing notices remain with their respective authors. The Google Fonts source repository provides the original [font family records and license files](https://github.com/google/fonts).
+Font families used: Barlow Condensed, Bodoni Moda, Bricolage Grotesque, Cormorant Garamond, DM Sans, IBM Plex Sans, Instrument Serif, Inter, Italiana, Libre Caslon Text, Lora, Manrope, Space Grotesk. Font copyright and licensing notices remain with their respective authors. The Google Fonts source repository provides the original [font family records and license files](https://github.com/google/fonts).
 
 ## Icons and geometry
 

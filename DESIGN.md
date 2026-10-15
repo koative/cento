@@ -24,3 +24,20 @@ Each folder owns an independent design system, composition, font pairing and mot
 - signal: analytics dashboard, porcelain/teal, dense purposeful data composition.
 - still: wellness studio, lavender/burgundy, slow breathing interaction.
 - roast: specialty coffee, chocolate/orange, product selector and local cart.
+
+## Second collection
+
+The user requests twelve additional original themes. Keep the gallery world and extend its catalog to 24. The existing preview dialog is explicitly centered in the viewport; device controls share its centerline. New themes deliberately add new sector and composition families:
+
+- frame: monochrome photography contact sheet with image-led project viewing.
+- monograph: independent journal with a newspaper column structure and reading modes.
+- index: literary bookstore organized as a bibliographic shelf and detail index.
+- bloom: floral studio with photographic arrangements and a bouquet builder.
+- velo: performance cycling with racing-red editorial tension and configuration.
+- prism: design conference with a typographic programme and track-based schedule.
+- nocturne: amber listening bar with a dimensional record deck and a local setlist.
+- arcade: indie game playground with a playable memory game and bold geometric identity.
+- kiln: ceramic objects displayed on a dimensional plinth and shoppable material studies.
+- aura: skincare ritual builder with butter/plum editorial restraint.
+- tide: ocean conservation with location-led volunteer actions and photographic storytelling.
+- relay: logistics workspace with searchable shipments, route visualization and reporting.

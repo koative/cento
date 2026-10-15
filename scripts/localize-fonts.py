@@ -1,26 +1,71 @@
-"""Download Latin Google Fonts subsets next to each standalone theme."""
-import re, pathlib, urllib.request, hashlib, json
-ROOT=pathlib.Path(__file__).resolve().parents[1]
-UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
-records=json.loads((ROOT/'scripts/font-sources.json').read_text()) if (ROOT/'scripts/font-sources.json').exists() else []
-for p in [ROOT/'gallery/styles.css',*sorted((ROOT/'themes').glob('*/src/styles.css'))]:
-    text=p.read_text()
-    matches=list(re.finditer(r"@import url\(['\"](https://fonts.googleapis.com/[^'\"]+)['\"]\);",text))
-    for m in matches:
-        url=m.group(1)
-        css=urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':UA}),timeout=30).read().decode()
-        blocks=re.findall(r'/\* latin \*/\s*(@font-face\s*\{.*?\})',css,re.S)
-        if not blocks: blocks=re.findall(r'(@font-face\s*\{.*?\})',css,re.S)
-        out=[];folder=p.parent/'assets/fonts';folder.mkdir(parents=True,exist_ok=True)
+"""Bundle Latin Google Fonts subsets and their licenses in standalone themes."""
+
+import hashlib
+import json
+from pathlib import Path
+import re
+import urllib.request
+
+ROOT = Path(__file__).resolve().parents[1]
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+)
+SOURCES = ROOT / "scripts/font-sources.json"
+records = json.loads(SOURCES.read_text()) if SOURCES.exists() else []
+
+
+def download(url):
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return response.read()
+
+
+def bundle_license(family, directory):
+    slug = re.sub(r"[^a-z0-9]", "", family.lower())
+    license_file = ROOT / "licenses/fonts" / f"{slug}-OFL.txt"
+    if not license_file.exists():
+        url = f"https://raw.githubusercontent.com/google/fonts/main/ofl/{slug}/OFL.txt"
+        content = download(url).decode()
+        license_file.parent.mkdir(parents=True, exist_ok=True)
+        license_file.write_text("\n".join(line.rstrip() for line in content.splitlines()) + "\n")
+    (directory / license_file.name).write_text(license_file.read_text())
+
+
+stylesheets = [ROOT / "gallery/styles.css", *sorted((ROOT / "themes").glob("*/src/styles.css"))]
+for stylesheet in stylesheets:
+    original = stylesheet.read_text()
+    content = original
+    imports = list(re.finditer(r"@import url\(['\"](https://fonts.googleapis.com/[^'\"]+)['\"]\);", content))
+    for imported in imports:
+        css = download(imported.group(1)).decode()
+        blocks = re.findall(r"/\* latin \*/\s*(@font-face\s*\{.*?\})", css, re.S)
+        if not blocks:
+            blocks = re.findall(r"(@font-face\s*\{.*?\})", css, re.S)
+        directory = stylesheet.parent / "assets/fonts"
+        directory.mkdir(parents=True, exist_ok=True)
+        faces = []
         for block in blocks:
-            remote=re.search(r'url\((https://[^)]+)\)',block).group(1)
-            family=re.search(r"font-family:\s*['\"]([^'\"]+)",block).group(1)
-            name=re.sub(r'[^a-z0-9]+','-',family.lower())+'-'+hashlib.sha256(remote.encode()).hexdigest()[:8]+'.woff2'
-            dest=folder/name
-            if not dest.exists(): dest.write_bytes(urllib.request.urlopen(remote,timeout=30).read())
-            out.append(block.replace(remote,'./assets/fonts/'+name))
-            records.append({'family':family,'file':str(dest.relative_to(ROOT)),'source':remote})
-        text=text.replace(m.group(0),'\n'.join(dict.fromkeys(out)))
-        print(p.relative_to(ROOT),len(out),'font faces')
-    p.write_text(text)
-(ROOT/'scripts/font-sources.json').write_text(json.dumps(records,indent=2)+'\n')
+            source = re.search(r"url\((https://[^)]+)\)", block).group(1)
+            family = re.search(r"font-family:\s*['\"]([^'\"]+)", block).group(1)
+            slug = re.sub(r"[^a-z0-9]+", "-", family.lower())
+            suffix = hashlib.sha256(source.encode()).hexdigest()[:8]
+            filename = f"{slug}-{suffix}.woff2"
+            target = directory / filename
+            if not target.exists():
+                target.write_bytes(download(source))
+            bundle_license(family, directory)
+            faces.append(block.replace(source, f"./assets/fonts/{filename}"))
+            records.append({"family": family, "file": str(target.relative_to(ROOT)), "source": source})
+        content = content.replace(imported.group(0), "\n".join(dict.fromkeys(faces)))
+        print(f"{stylesheet.relative_to(ROOT)}: {len(faces)} font faces")
+    if content != original:
+        stylesheet.write_text(content)
+
+unique = {record["file"]: record for record in records}
+known_files = {Path(record["file"]).name: record for record in records}
+for font in (ROOT / "themes").glob("*/src/assets/fonts/*.woff2"):
+    relative = str(font.relative_to(ROOT))
+    if relative not in unique and font.name in known_files:
+        unique[relative] = {**known_files[font.name], "file": relative}
+SOURCES.write_text(json.dumps(list(unique.values()), indent=2) + "\n")
