@@ -32,9 +32,9 @@ Edit `src/App.tsx` for copy, content, and interactions. Edit `src/styles.css` fo
 
 ## Assets
 
-Festival photo: [Unsplash](https://unsplash.com/photos/1470229722913-7c0e2dbbafd3), downloaded via `images.unsplash.com/photo-1470229722913-7c0e2dbbafd3`. Fonts: Barlow Condensed and Space Grotesk from Google Fonts.
+Festival photo: [Unsplash](https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3), downloaded via `images.unsplash.com/photo-1470229722913-7c0e2dbbafd3`. Fonts: Barlow Condensed and Space Grotesk from Google Fonts.
 
-Icons use Lucide React. Google Fonts are loaded from the Google Fonts CDN; self-host them if offline delivery is required. Photography is bundled locally. Review the relevant provider license before reusing assets outside this template.
+Icons use Lucide React. Fonts and their licenses are bundled locally. Any photographic assets are bundled locally as well. Review the relevant provider license before reusing assets outside this template.
 
 ## Demonstration status
 

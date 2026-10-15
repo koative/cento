@@ -6,7 +6,7 @@ Architecture / portfolio template from the Koative collection. Built with React,
 
 Warm bone paper, charcoal ink, Manrope display typography, and asymmetric photographic index. A clipped photograph reveal and restrained project-row motion reinforce the architectural composition.
 
-**Type:** Manrope and DM Sans. Fonts are loaded from Google Fonts.
+**Type:** Manrope and DM Sans. Fonts are sourced from Google Fonts and bundled locally.
 
 - Background: `#eeeee8`
 - Ink: `#292b26`

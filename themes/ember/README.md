@@ -6,7 +6,7 @@ Restaurant / hospitality template from the Koative collection. Built with React,
 
 Tomato red and buttercream, Bricolage Grotesque display typography, full food photography, a tilted menu note, and a paper-menu interaction.
 
-**Type:** Bricolage Grotesque and DM Sans. Fonts are loaded from Google Fonts.
+**Type:** Bricolage Grotesque and DM Sans. Fonts are sourced from Google Fonts and bundled locally.
 
 - Cream: `#fff4df`
 - Tomato: `#b32f21`

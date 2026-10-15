@@ -6,7 +6,7 @@ Fashion / editorial commerce template from the Koative collection. Built with Re
 
 Oxblood and warm ivory, expressive Cormorant Garamond typography, a split campaign spread, a moving editorial line, and a tactile product study.
 
-**Type:** Cormorant Garamond and DM Sans. Fonts are loaded from Google Fonts.
+**Type:** Cormorant Garamond and DM Sans. Fonts are sourced from Google Fonts and bundled locally.
 
 - Background: `#f6f1e9`
 - Oxblood: `#4a1524`

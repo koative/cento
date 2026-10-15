@@ -6,7 +6,7 @@ Alpine retreat / travel template from the Koative collection. Built with React, 
 
 Deep forest, warm limestone, Italiana typography, immersive mountain photography, a slow landscape reveal, and a compact stay configurator.
 
-**Type:** Italiana and DM Sans. Fonts are loaded from Google Fonts.
+**Type:** Italiana and DM Sans. Fonts are sourced from Google Fonts and bundled locally.
 
 - Forest: `#233c32`
 - Cream: `#f2f0e8`

@@ -34,7 +34,7 @@ Edit `src/App.tsx` for copy, content, and interactions. Edit `src/styles.css` fo
 
 No stock images. Orbital sculpture and trajectory diagrams are authored CSS/SVG geometry. Fonts: Manrope and DM Sans from Google Fonts.
 
-Icons use Lucide React. Google Fonts are loaded from the Google Fonts CDN; self-host them if offline delivery is required. Photography is bundled locally. Review the relevant provider license before reusing assets outside this template.
+Icons use Lucide React. Fonts and their licenses are bundled locally. Any photographic assets are bundled locally as well. Review the relevant provider license before reusing assets outside this template.
 
 ## Demonstration status
 
