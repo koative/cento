@@ -84,10 +84,8 @@ function App() {
           templates
         </a>
         <nav aria-label="Main navigation">
-          <a href="#collection">
-            The collection <span>{catalog.length}</span>
-          </a>
-          <a href="#about">The idea</a>
+          <a href="#collection">Templates</a>
+          <a href="#about">About</a>
           <a
             className="github-link"
             href={repo}
@@ -100,98 +98,21 @@ function App() {
       </header>
       <main>
         <section className="opening" aria-labelledby="title">
-          <div className="opening-copy">
-            <h1 id="title">
-              A different
-              <br />
-              starting <span>point.</span>
-              <svg
-                viewBox="0 0 100 100"
-                className="asterisk"
-                aria-hidden="true"
-              >
-                <path
-                  d="M50 0v100M0 50h100M15 15l70 70M15 85l70-70"
-                  stroke="currentColor"
-                  strokeWidth="13"
-                />
-              </svg>
-            </h1>
-            <div className="opening-bottom">
-              <p>
-                {catalog.length} independent design worlds.
-                <br />
-                Built to be explored. Made to be yours.
-              </p>
-              <a
-                href="#collection"
-                className="round-link"
-                aria-label="Explore the collection"
-              >
-                <ArrowRight size={28} />
-              </a>
-            </div>
-          </div>
-          <div className="specimen-stack">
-            <div className="stack-note">
-              Good things start with a little curiosity.
-            </div>
-            <button
-              className="specimen specimen-back"
-              onClick={() => preview(catalog[3])}
-              aria-label="Preview Pulse festival template"
-            >
-              <img
-                src={`${base}previews/pulse.webp`}
-                alt="Pulse festival website preview"
-              />
-              <span>
-                PULSE — MUSIC & EVENTS <ArrowUpRight size={17} />
-              </span>
-            </button>
-            <button
-              className="specimen specimen-front"
-              onClick={() => preview(catalog[0])}
-              aria-label="Preview Forma architecture template"
-            >
-              <img
-                src={`${base}previews/forma.webp`}
-                alt="Forma architecture website preview"
-              />
-              <span>
-                FORMA — ARCHITECTURE <ArrowUpRight size={17} />
-              </span>
-            </button>
-            <div className="stack-caption">
-              <span className="live-dot" /> Open source. Open possibilities.
-            </div>
-          </div>
+          <h1 id="title">A different starting point.</h1>
+          <p>
+            {catalog.length} independent website templates. Explore a design.
+            Make it yours.
+          </p>
+          <span className="collection-note">Open source · Free to use</span>
         </section>
-        <div className="collection-ribbon" aria-label="Collection features">
-          <span>Distinct by design</span>
-          <span>React + Vite</span>
-          <span>Responsive by nature</span>
-          <span>
-            Free to make your own <ArrowUpRight size={16} />
-          </span>
-        </div>
         <section
           className="collection"
           id="collection"
           aria-labelledby="collection-title"
         >
-          <div className="collection-heading">
-            <h2 id="collection-title">
-              Find your next
-              <br />
-              <em>what if.</em>
-            </h2>
-            <p>
-              Different industries. Different personalities.
-              <br />
-              Zero copy-and-paste identities.
-            </p>
-          </div>
+          <h2 id="collection-title" className="sr-only">
+            The collection
+          </h2>
           <div className="collection-tools">
             <div className="filters" aria-label="Filter templates">
               {[
@@ -243,42 +164,24 @@ function App() {
               <article id={t.slug} key={t.slug} className="template-entry">
                 <button
                   className="template-visual"
-                  style={{ background: t.color, color: t.ink }}
                   onClick={() => preview(t)}
                   aria-label={`Preview ${t.name}`}
                 >
-                  <div className="browser-chrome">
-                    <span />
-                    <span />
-                    <span />
-                    <small>{t.name.toLowerCase()}.design</small>
-                    <ArrowUpRight size={14} />
-                  </div>
                   <img
                     loading="lazy"
                     src={`${base}previews/${t.slug}.webp`}
                     alt={`${t.name} ${t.sector.toLowerCase()} website screenshot`}
                   />
                   <span className="preview-label">
-                    Explore {t.name}
+                    Preview {t.name}
                     <ArrowUpRight size={17} />
                   </span>
                 </button>
                 <div className="entry-meta">
-                  <div>
-                    <p className="entry-sector">{t.sector}</p>
-                    <h3>
-                      <button onClick={() => preview(t)}>
-                        {t.name}
-                        <ArrowUpRight size={24} />
-                      </button>
-                    </h3>
-                  </div>
-                  <div className="entry-tags">
-                    {t.tags.map((tag) => (
-                      <span key={tag}>{tag}</span>
-                    ))}
-                  </div>
+                  <h3>
+                    <button onClick={() => preview(t)}>{t.name}</button>
+                  </h3>
+                  <p className="entry-sector">{t.sector}</p>
                 </div>
                 <p className="entry-description">{t.description}</p>
                 <div className="entry-links">
@@ -312,65 +215,25 @@ function App() {
             </div>
           )}
         </section>
-        <section className="about" id="about">
+        <section className="about" id="about" aria-labelledby="about-title">
           <div>
-            <h2>
-              Not another
-              <br />
-              blank canvas.
-            </h2>
+            <h2 id="about-title">Yours to make your own.</h2>
             <p>
-              A starting point should give you a point of view.
-              <br />
-              Then get out of your way.
+              Every template has its own folder, design language, and working
+              interactions. React, TypeScript, and Vite. MIT licensed source.
             </p>
           </div>
-          <div className="about-details">
-            <p>
-              Every template lives in its own folder, with its own design
-              language and working interactions. Keep what you love. Change what
-              you don't. Build something we haven't imagined.
-            </p>
-            <dl>
-              <div>
-                <dt>The foundation</dt>
-                <dd>React · TypeScript · Vite · Bun</dd>
-              </div>
-              <div>
-                <dt>The approach</dt>
-                <dd>Independent folders. No UI kit lock-in.</dd>
-              </div>
-              <div>
-                <dt>The freedom</dt>
-                <dd>MIT licensed source code.</dd>
-              </div>
-            </dl>
+          <div className="about-actions">
+            <a className="readme-link" href={`${repo}#readme`}>
+              Read the documentation <ArrowUpRight size={16} />
+            </a>
             <button className="clone-button" onClick={copy}>
-              {copied ? <Check size={18} /> : <Copy size={18} />}
+              {copied ? <Check size={16} /> : <Copy size={16} />}
               <span>
                 {copied ? "Clone command copied" : "Copy the clone command"}
               </span>
             </button>
-            <a className="readme-link" href={`${repo}#readme`}>
-              Read the documentation <ArrowUpRight size={16} />
-            </a>
           </div>
-        </section>
-        <section className="closing">
-          <p>
-            Take a starting point.
-            <br />
-            <em>Make it a statement.</em>
-          </p>
-          <a
-            href={repo}
-            target="_blank"
-            rel="noreferrer"
-            className="closing-link"
-            aria-label="Explore the source on GitHub"
-          >
-            <ArrowUpRight />
-          </a>
         </section>
       </main>
       <footer>
@@ -379,7 +242,7 @@ function App() {
         </a>
         <span>Independent ideas, shared openly.</span>
         <a href={repo}>
-          Made together. Built to be remixed. <Github size={16} />
+          GitHub <ArrowUpRight size={14} />
         </a>
       </footer>
       <dialog

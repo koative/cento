@@ -50,7 +50,6 @@ This collection brings together sixty-four deliberately different websites: phot
 | **[Aura](themes/aura)**           | Skincare            | Ritual builder, Beauty                                         | [Explore ↗](https://koative.github.io/templates/themes/aura/)      |
 | **[Tide](themes/tide)**           | Ocean conservation  | Volunteer, Conservation                                        | [Explore ↗](https://koative.github.io/templates/themes/tide/)      |
 | **[Relay](themes/relay)**         | Logistics           | Operations, Tracking                                           | [Explore ↗](https://koative.github.io/templates/themes/relay/)     |
-
 | **[Solace](themes/solace)** | Healthcare clinic | Healthcare, Booking, Calm | [Explore ↗](https://koative.github.io/templates/themes/solace/) |
 | **[Helix](themes/helix)** | Biotechnology | Organic, Research, Molecular motion | [Explore ↗](https://koative.github.io/templates/themes/helix/) |
 | **[Aperture](themes/aperture)** | Independent cinema | Cinematic, Programme, Tickets | [Explore ↗](https://koative.github.io/templates/themes/aperture/) |
