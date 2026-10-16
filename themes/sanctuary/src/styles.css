@@ -1,0 +1,371 @@
+@import "./base.css";
+:root {
+  --paper: #f0eedb;
+  --ink: #283d2d;
+  --accent: #c5ce91;
+}
+body {
+  background: var(--ink);
+  color: var(--paper);
+}
+header {
+  padding: 27px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  font:
+    35px Display,
+    serif;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  gap: 35px;
+  font-size: 12px;
+}
+nav a {
+  text-decoration: none;
+}
+.forest {
+  height: 710px;
+  position: relative;
+  margin: 0 25px;
+}
+.forest > img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.53);
+  object-position: center;
+}
+.forest:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #14251b99, transparent 75%);
+  pointer-events: none;
+}
+.forest-title {
+  position: absolute;
+  left: 6%;
+  top: 65px;
+  z-index: 1;
+}
+.forest h1 {
+  font:
+    clamp(70px, 7vw, 96px)/0.95 Display,
+    serif;
+}
+.forest h1 em {
+  font-weight: 400;
+  color: #d6dba6;
+}
+.forest-title p {
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 28px 0;
+}
+.forest-title a {
+  display: inline-flex;
+  align-items: center;
+  gap: 35px;
+  border-bottom: 1px solid #f0eedb88;
+  padding-bottom: 12px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.forest-caption {
+  position: absolute;
+  bottom: 25px;
+  left: 6%;
+  right: 4%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+}
+.stories {
+  padding: 85px 8%;
+}
+.stories-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: end;
+  margin-bottom: 45px;
+}
+.stories-heading h2 {
+  font:
+    49px/1.08 Display,
+    serif;
+}
+.stories-heading em {
+  font-weight: 400;
+  color: #b7c08e;
+}
+.stories-heading p {
+  font-size: 13px;
+  line-height: 1.9;
+  max-width: 300px;
+}
+.casebook {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 65px;
+}
+.animal-list button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  border: 0;
+  border-top: 1px solid #6d7b5d;
+  background: none;
+  text-align: left;
+  font:
+    36px Display,
+    serif;
+}
+.animal-list button[aria-pressed="true"] {
+  color: #c8d48c;
+}
+.animal-list small {
+  font:
+    10px Body,
+    sans-serif;
+  display: block;
+  margin-top: 7px;
+}
+.casebook article {
+  background: #e4e5c9;
+  color: #283d2d;
+  padding: 35px 40px;
+}
+.case-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+.casebook h3 {
+  font:
+    68px Display,
+    serif;
+  margin-top: 20px;
+  line-height: 1;
+}
+.casebook p {
+  font-size: 14px;
+  line-height: 1.85;
+  margin-top: 20px;
+}
+.casebook .species {
+  font-size: 10px;
+  margin-top: 10px;
+}
+.casebook dl {
+  margin: 25px 0 20px;
+}
+.casebook dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+  border-top: 1px solid #aab798;
+  font-size: 10px;
+}
+.casebook dd {
+  margin: 0;
+}
+.fictional {
+  font-size: 9px;
+}
+.help {
+  background: #d5dbc0;
+  color: #283d2d;
+  padding: 70px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+.help h2 {
+  font:
+    53px/1.05 Display,
+    serif;
+}
+.help h2 em {
+  font-weight: 400;
+}
+.help > div > p {
+  font-size: 14px;
+  line-height: 1.9;
+  margin-top: 25px;
+  max-width: 420px;
+}
+.volunteer h3 {
+  font:
+    32px Display,
+    serif;
+  margin-bottom: 25px;
+}
+.volunteer label {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 11px;
+}
+.volunteer select {
+  padding: 13px 0;
+  border: 0;
+  border-bottom: 1px solid #899c76;
+  background: transparent;
+  color: #283d2d;
+  border-radius: 0;
+  font-size: 14px;
+}
+.volunteer > p {
+  font-size: 13px !important;
+  min-height: 75px;
+}
+.volunteer button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #283d2d;
+  color: #f0eedb;
+  border: 0;
+  width: 100%;
+  padding: 16px;
+  margin-top: 25px;
+  font-size: 12px;
+}
+.volunteer small {
+  display: block;
+  font-size: 10px;
+  line-height: 1.8;
+  margin-top: 12px;
+}
+.ethos {
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 80px;
+}
+.ethos h2 {
+  font:
+    60px/1.05 Display,
+    serif;
+}
+.ethos p {
+  font-size: 15px;
+  line-height: 1.9;
+  align-self: center;
+}
+.ethos a {
+  grid-column: 2;
+  font-size: 12px;
+}
+footer {
+  border-color: #6d7b5d;
+}
+footer .brand {
+  font-size: 28px;
+}
+@media (max-width: 750px) {
+  header {
+    padding: 24px 6%;
+  }
+  .brand {
+    font-size: 30px;
+  }
+  nav > a:not(:nth-child(2)) {
+    display: none;
+  }
+  .forest {
+    margin: 0 12px;
+    height: 700px;
+  }
+  .forest-title {
+    left: 6%;
+    top: 60px;
+  }
+  .forest h1 {
+    font-size: 76px;
+  }
+  .forest-title p {
+    font-size: 13px;
+  }
+  .forest-caption {
+    font-size: 7px;
+    gap: 30px;
+  }
+  .forest-caption > span:last-child {
+    max-width: 150px;
+    text-align: right;
+  }
+  .stories {
+    padding: 60px 6%;
+  }
+  .stories-heading {
+    display: block;
+  }
+  .stories-heading h2 {
+    font-size: 43px;
+  }
+  .stories-heading p {
+    margin-top: 25px;
+    max-width: 100%;
+  }
+  .casebook {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .animal-list {
+    display: flex;
+    gap: 20px;
+  }
+  .animal-list button {
+    font-size: 28px;
+    gap: 10px;
+    align-items: start;
+  }
+  .animal-list svg {
+    width: 15px;
+  }
+  .animal-list small {
+    font-size: 8px;
+  }
+  .casebook article {
+    padding: 28px;
+  }
+  .casebook dl > div {
+    font-size: 9px;
+    gap: 15px;
+  }
+  .help {
+    padding: 50px 6%;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .help h2 {
+    font-size: 45px;
+  }
+  .ethos {
+    padding: 55px 6%;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .ethos h2 {
+    font-size: 50px;
+  }
+  .ethos a {
+    grid-column: 1;
+  }
+}

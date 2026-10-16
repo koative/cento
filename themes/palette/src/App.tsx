@@ -8,6 +8,14 @@ const pigments = [
   { name: "Rose madder", hex: "#b7456c", code: "PR83", family: "Red" },
   { name: "Burnt sienna", hex: "#ae603e", code: "PBr7", family: "Earth" },
 ];
+function ink(hex: string) {
+  const rgb = [1, 3, 5]
+    .map((i) => parseInt(hex.slice(i, i + 2), 16) / 255)
+    .map((c) => (c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4));
+  return rgb[0] * 0.2126 + rgb[1] * 0.7152 + rgb[2] * 0.0722 > 0.179
+    ? "#161616"
+    : "#ffffff";
+}
 function mix(a: string, b: string, ratio: number) {
   return (
     "#" +
@@ -64,17 +72,32 @@ export default function App() {
             aria-label="Six pigment color specimens"
           >
             {pigments.map((p, i) => (
-              <div
+              <button
+                type="button"
+                aria-label={`Select pigment ${p.name}`}
+                aria-pressed={first === i}
+                onClick={() => setFirst(i)}
                 key={p.name}
                 style={{
                   background: p.hex,
-                  color: i === 1 || i === 2 ? "#24265c" : "#fff",
+                  color: ink(p.hex),
                   transform: `rotate(${i % 2 === 0 ? -5 : 4}deg)`,
                 }}
               >
                 <span>{p.code}</span>
+                <div className="pigment-tones" aria-hidden="true">
+                  {[0, 0.25, 0.5, 0.75].map((t) => (
+                    <i
+                      key={t}
+                      style={{ background: mix(p.hex, "#ffffff", t) }}
+                    />
+                  ))}
+                </div>
                 <b>{p.name}</b>
-              </div>
+                <small>
+                  {first === i ? "Selected for mixing" : "Explore this pigment"}
+                </small>
+              </button>
             ))}
           </div>
         </section>
@@ -187,7 +210,10 @@ export default function App() {
               RGB screen blending is illustrative. Real paint mixes differently.
             </p>
           </div>
-          <div className="mix-result" style={{ background: color }}>
+          <div
+            className="mix-result"
+            style={{ background: color, color: ink(color) }}
+          >
             <span>YOUR MIX</span>
             <div className="mix-geometry" aria-hidden="true">
               <div style={{ background: pigments[first].hex }} />
@@ -201,6 +227,38 @@ export default function App() {
             </p>
           </div>
         </section>
+        <section className="mix-ramp" aria-label="Mixing proportions">
+          <div>
+            <h2>Find the balance.</h2>
+            <p>
+              Try a proportion between {pigments[first].name.toLowerCase()} and{" "}
+              {pigments[second].name.toLowerCase()}.
+            </p>
+          </div>
+          <div className="ramp-swatches">
+            {[0, 25, 50, 75, 100].map((amount) => (
+              <button
+                key={amount}
+                aria-label={`Set mix to ${amount} percent`}
+                aria-pressed={ratio === amount}
+                onClick={() => setRatio(amount)}
+              >
+                <span
+                  style={{
+                    background: mix(
+                      pigments[first].hex,
+                      pigments[second].hex,
+                      amount / 100,
+                    ),
+                  }}
+                />
+                <strong>
+                  {100 - amount} / {amount}
+                </strong>
+              </button>
+            ))}
+          </div>
+        </section>
         <section className="your-palette" id="your-palette">
           <div>
             <h2>Your starting point.</h2>
@@ -212,7 +270,7 @@ export default function App() {
           </div>
           <div className="saved-colors">
             {saved.map((c) => (
-              <div key={c} style={{ background: c }}>
+              <div key={c} style={{ background: c, color: ink(c) }}>
                 <span>{c.toUpperCase()}</span>
                 <button
                   aria-label={`Remove ${c}`}

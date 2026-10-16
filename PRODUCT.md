@@ -1,4 +1,4 @@
-# Koative Templates
+# Elseform
 
 <!-- impeccable:product-schema 1 -->
 
@@ -20,15 +20,15 @@ Publish a growing collection of distinctly designed website templates, each with
 
 ## Capabilities and Constraints
 
-The user now requests sixty-four templates: the existing twenty-four plus forty additional independent sector-specific designs. Responsive, keyboard-accessible previews, source links and independently buildable folders. Static demonstration interactions only; no backend or payment processing requested. User explicitly delegates creative orchestration and parallel implementation to agents. Preserve the existing koative.com site.
+The user now requests one hundred templates: the existing sixty-four plus thirty-six additional independent sector-specific designs. Review the existing collection and improve weak visuals, overly simple sections and interactions while preserving each template’s identity. Responsive, keyboard-accessible previews, source links and independently buildable folders. Static demonstration interactions only; no backend or payment processing requested. User explicitly delegates creative orchestration and parallel implementation to agents. Preserve the existing koative.com site.
 
 ## Brand Commitments
 
-Koative. All UI and documentation in English, confirmed by user. Bold visual diversity including 3D and animation. Impeccable informs craft without limiting creativity.
+Elseform is the independent product identity; Koative remains the creator and repository owner. The user explicitly authorizes a full homepage brand/name/logo/design replacement and pins artistic liquid glass as its visual direction. All UI and documentation in English, confirmed by user. Bold visual diversity including 3D and animation. Impeccable informs craft without limiting creativity.
 
 ## Evidence on Hand
 
-Empty workspace. Authenticated GitHub account with koative organization. No supplied commercial photography, customer claims or testimonials. Template businesses and data must be identified as fictional demonstrations.
+Existing collection of 100 independently buildable designs with screenshots, local licensed fonts and authenticated GitHub access. No supplied commercial photography, customer claims or testimonials. Template businesses and data must be identified as fictional demonstrations.
 
 ## Product Principles
 

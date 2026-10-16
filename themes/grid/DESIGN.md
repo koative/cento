@@ -183,3 +183,7 @@ Authored source styling with representative content; interactive behavior remain
 - Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
 - Don't make decorative motion necessary to understand or use a control.
 - Don't present a local demonstration confirmation as a real transaction.
+
+## Collection 100 refinement
+
+The opening now contains an isometric 24-position solar array linked to the panel count and an adjustable time-of-day generation study. The planner explains home and battery energy paths; model values remain explicitly illustrative.

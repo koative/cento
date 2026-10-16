@@ -1,0 +1,384 @@
+@import "./base.css";
+:root {
+  --paper: #edf1eb;
+  --ink: #263f43;
+  --accent: #db662f;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+header {
+  height: 92px;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  font:
+    600 31px Display,
+    sans-serif;
+  letter-spacing: 0.03em;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  font-size: 12px;
+}
+nav a {
+  text-decoration: none;
+}
+nav > span {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  margin-left: 20px;
+}
+.panorama {
+  min-height: 700px;
+  height: calc(100svh - 92px);
+  max-height: 900px;
+  position: relative;
+  background: #1a424b;
+  color: #fff;
+}
+.panorama > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.57);
+  object-position: center;
+}
+.panorama:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #14383c66, transparent);
+  pointer-events: none;
+}
+.panorama-title {
+  position: absolute;
+  top: 65px;
+  left: 7%;
+  z-index: 1;
+}
+.panorama h1 {
+  font:
+    600 clamp(70px, 7.2vw, 96px)/0.94 Display,
+    sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+.panorama h1 em {
+  font-style: normal;
+  color: #f3c7a7;
+}
+.panorama-title > a {
+  display: inline-flex;
+  gap: 40px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 13px;
+  font-size: 12px;
+  margin-top: 35px;
+  text-decoration: none;
+}
+.altitude {
+  position: absolute;
+  right: 5%;
+  top: 80px;
+  z-index: 1;
+  display: flex;
+  gap: 12px;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+}
+.panorama-bottom {
+  position: absolute;
+  bottom: 35px;
+  left: 7%;
+  right: 5%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.panorama-bottom > a {
+  border: 1px solid #fff8;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  animation: float 4s ease-in-out infinite;
+}
+.flight-section {
+  padding: 80px 7%;
+}
+.flight-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 35px;
+  margin-bottom: 40px;
+}
+.flight-heading h2 {
+  font:
+    600 65px/0.95 Display,
+    sans-serif;
+  letter-spacing: -0.01em;
+}
+.flight-heading em {
+  color: #b54925;
+  font-style: normal;
+}
+.flight-heading p {
+  font-size: 14px;
+  line-height: 1.9;
+}
+.flight-picker {
+  display: flex;
+  border-bottom: 1px solid #acbcb3;
+  gap: 35px;
+}
+.flight-picker button {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  padding: 22px 0;
+  font:
+    500 27px Display,
+    sans-serif;
+  gap: 15px;
+}
+.flight-picker button[aria-pressed="true"] {
+  border-color: #c45e2f;
+}
+.flight-picker span {
+  font:
+    10px Body,
+    sans-serif;
+}
+.flight-detail {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 80px;
+  padding-top: 40px;
+}
+.flight-story h3 {
+  font:
+    500 40px Display,
+    sans-serif;
+}
+.flight-story > p {
+  font-size: 15px;
+  line-height: 1.9;
+  max-width: 600px;
+  margin-top: 18px;
+}
+.flight-facts {
+  display: flex;
+  gap: 35px;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+.flight-facts div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.flight-facts span {
+  font-size: 10px;
+}
+.flight-facts strong {
+  font:
+    500 23px Display,
+    sans-serif;
+}
+.level {
+  display: block;
+  font-size: 11px;
+  margin-top: 30px;
+}
+.flight-plan {
+  background: #dce5dc;
+  padding: 30px;
+}
+.flight-plan label {
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.flight-plan select {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #9eafa2;
+  padding: 10px 0;
+  color: var(--ink);
+  border-radius: 0;
+  font-size: 14px;
+}
+.price {
+  margin: 27px 0;
+}
+.price strong {
+  font:
+    500 45px Display,
+    sans-serif;
+}
+.price span {
+  display: block;
+  font-size: 10px;
+}
+.flight-plan button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--ink);
+  color: var(--paper);
+  border: 0;
+  padding: 15px;
+  font-size: 12px;
+}
+.flight-plan p {
+  font-size: 10px;
+  line-height: 1.7;
+  margin-top: 15px;
+}
+.ground {
+  padding: 65px 7%;
+  background: #263f43;
+  color: #edf1eb;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+.ground h2 {
+  font:
+    500 50px/0.98 Display,
+    sans-serif;
+}
+.ground article {
+  border-top: 1px solid #8ca39b;
+  padding: 20px 0;
+}
+.ground h3 {
+  font:
+    500 25px Display,
+    sans-serif;
+  margin-bottom: 12px;
+}
+.ground p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+footer {
+  border: 0;
+}
+@keyframes float {
+  50% {
+    transform: translateY(7px);
+  }
+}
+@media (max-width: 720px) {
+  header {
+    height: 78px;
+    padding: 0 6%;
+  }
+  nav > a:nth-child(2),
+  nav > span {
+    display: none;
+  }
+  .brand {
+    font-size: 27px;
+  }
+  .panorama {
+    height: 760px;
+    min-height: 0;
+  }
+  .panorama-title {
+    top: 55px;
+    left: 6%;
+    right: 6%;
+    min-width: 0;
+  }
+  .panorama h1 {
+    font-size: 69px;
+    overflow-wrap: anywhere;
+  }
+  .altitude {
+    top: auto;
+    bottom: 150px;
+    right: 6%;
+    font-size: 8px;
+  }
+  .panorama-bottom {
+    left: 6%;
+    right: 6%;
+    font-size: 10px;
+    gap: 20px;
+  }
+  .flight-section {
+    padding: 55px 6%;
+  }
+  .flight-heading {
+    display: block;
+  }
+  .flight-heading h2 {
+    font-size: 58px;
+  }
+  .flight-heading p {
+    margin-top: 25px;
+    font-size: 13px;
+  }
+  .flight-picker {
+    gap: 15px;
+  }
+  .flight-picker button {
+    font-size: 22px;
+    display: block;
+    line-height: 1.1;
+  }
+  .flight-picker span {
+    display: block;
+    margin-top: 10px;
+    font-size: 9px;
+  }
+  .flight-detail {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .flight-facts {
+    gap: 15px;
+  }
+  .flight-facts strong {
+    font-size: 20px;
+  }
+  .flight-facts span {
+    font-size: 9px;
+  }
+  .flight-story > p {
+    font-size: 14px;
+  }
+  .ground {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 50px 6%;
+  }
+  .ground h2 {
+    font-size: 45px;
+  }
+}

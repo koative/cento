@@ -1,0 +1,406 @@
+@import "./base.css";
+:root {
+  --paper: #f3e6d1;
+  --ink: #662b42;
+  --accent: #da977c;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+header {
+  padding: 27px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c4a697;
+}
+.brand {
+  font:
+    60px/0.8 Display,
+    serif;
+  text-decoration: none;
+}
+.brand span {
+  font:
+    8px Body,
+    sans-serif;
+  display: block;
+  margin-top: 12px;
+  letter-spacing: 0.14em;
+}
+nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 12px;
+}
+nav a {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  text-decoration: none;
+}
+.opening {
+  text-align: center;
+  padding: 55px 5% 45px;
+}
+.opening h1 {
+  font:
+    clamp(54px, 5.8vw, 80px)/1 Display,
+    serif;
+}
+.opening h1 em {
+  font-weight: 400;
+}
+.opening p {
+  font-size: 13px;
+  line-height: 1.8;
+  margin-top: 25px;
+}
+.shop {
+  padding: 0 5%;
+}
+.shop-bar {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #c4a697;
+  border-bottom: 1px solid #c4a697;
+  padding: 17px 0;
+  gap: 20px;
+  font-size: 11px;
+  align-items: center;
+}
+.shop-bar > div {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+.shop-bar button {
+  background: none;
+  border: 0;
+  padding: 4px 0;
+  font-size: 11px;
+  border-bottom: 1px solid transparent;
+}
+.shop-bar button[aria-pressed="true"] {
+  border-color: var(--ink);
+}
+.shelf {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+.wine {
+  min-width: 0;
+}
+.bottle-view {
+  height: 350px;
+  width: 100%;
+  border: 0;
+  background: none;
+  display: grid;
+  place-items: center;
+  perspective: 800px;
+}
+.bottle {
+  height: 286px;
+  width: 106px;
+  position: relative;
+  transition: transform 0.5s ease-out;
+  filter: drop-shadow(12px 16px 10px #4d28222a);
+}
+.bottle-view:hover .bottle {
+  transform: rotateY(-15deg) rotate(-4deg);
+}
+.neck {
+  position: absolute;
+  height: 85px;
+  width: 33px;
+  top: 0;
+  left: 37px;
+  background: var(--glass);
+  border-radius: 5px 5px 0 0;
+  border-top: 26px solid #5b4435;
+}
+.bottle-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 106px;
+  height: 218px;
+  background:
+    linear-gradient(90deg, #ffffff20, transparent 30%, #00000033), var(--glass);
+  border-radius: 34px 34px 9px 9px;
+  padding-top: 48px;
+}
+.wine-label {
+  background: var(--label);
+  color: #462d32;
+  padding: 13px 9px;
+  height: 142px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.wine-label > span {
+  font-size: 5px;
+  letter-spacing: 0.08em;
+}
+.wine-label strong {
+  font:
+    27px/0.95 Display,
+    serif;
+  text-align: center;
+  margin-top: 12px;
+  z-index: 1;
+}
+.wine-label small {
+  font-size: 6px;
+  margin-top: 10px;
+  line-height: 1.5;
+  z-index: 1;
+}
+.wine-label i {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #462d3240;
+  position: absolute;
+  bottom: -30px;
+  border-radius: 50%;
+}
+.wine-info h2 {
+  font:
+    30px Display,
+    serif;
+}
+.wine-info p {
+  font-size: 10px;
+  margin-top: 5px;
+}
+.wine-info > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-top: 18px;
+  font-size: 12px;
+}
+.wine-info button {
+  border: 0;
+  background: none;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 11px;
+  padding: 8px 0;
+}
+.tasting {
+  display: grid;
+  grid-template-columns: 140px 0.8fr 1.5fr;
+  align-items: center;
+  gap: 25px;
+  border-top: 1px solid #c4a697;
+  margin-top: 35px;
+  padding: 25px 0;
+}
+.tasting > span {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+.tasting h3 {
+  font:
+    29px Display,
+    serif;
+}
+.tasting p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.case {
+  background: #e6d8bf;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  padding: 70px 7%;
+  margin-top: 35px;
+}
+.case h2 {
+  font:
+    56px/1.04 Display,
+    serif;
+}
+.case h2 em {
+  font-weight: 400;
+}
+.case p {
+  font-size: 13px;
+  line-height: 1.9;
+  margin-top: 20px;
+}
+.case-list h3 {
+  font:
+    30px Display,
+    serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #bca78f;
+}
+.case-list h3 span {
+  font:
+    10px Body,
+    sans-serif;
+}
+.case-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 17px 0;
+  border-bottom: 1px solid #cbbba4;
+  font-size: 13px;
+}
+.case-row small {
+  display: block;
+  font-size: 9px;
+  margin-top: 4px;
+}
+.case-row > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.case-row button {
+  border: 0;
+  background: none;
+  padding: 5px;
+}
+.case-total {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+.case-total strong {
+  font:
+    35px Display,
+    serif;
+}
+.case-list > small {
+  font-size: 10px;
+}
+.philosophy {
+  padding: 75px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 90px;
+}
+.philosophy h2 {
+  font:
+    52px/1.04 Display,
+    serif;
+}
+.philosophy p {
+  font-size: 15px;
+  line-height: 1.9;
+}
+.philosophy a {
+  grid-column: 2;
+  display: flex;
+  gap: 30px;
+  font-size: 12px;
+}
+footer {
+  border-color: #c4a697;
+}
+footer .brand {
+  font-size: 40px;
+}
+@media (max-width: 750px) {
+  header {
+    padding: 25px 6%;
+  }
+  .brand {
+    font-size: 48px;
+  }
+  .brand span {
+    font-size: 6px;
+  }
+  nav > a:not(:last-child) {
+    display: none;
+  }
+  .opening {
+    padding: 45px 6% 35px;
+  }
+  .opening h1 {
+    font-size: 56px;
+  }
+  .shop {
+    padding: 0 6%;
+  }
+  .shop-bar {
+    display: block;
+  }
+  .shop-bar > div {
+    gap: 18px;
+  }
+  .shop-bar > span {
+    display: block;
+    margin-top: 12px;
+    font-size: 9px;
+  }
+  .shelf {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 20px;
+  }
+  .bottle-view {
+    height: 300px;
+  }
+  .bottle {
+    transform: scale(0.88);
+  }
+  .bottle-view:hover .bottle {
+    transform: scale(0.88) rotate(-4deg);
+  }
+  .wine-info h2 {
+    font-size: 26px;
+  }
+  .wine-info > div {
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .wine-info button {
+    font-size: 10px;
+  }
+  .wine-info p {
+    font-size: 9px;
+  }
+  .tasting {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .case {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 50px 6%;
+  }
+  .case h2 {
+    font-size: 46px;
+  }
+  .philosophy {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 50px 6%;
+  }
+  .philosophy h2 {
+    font-size: 45px;
+  }
+  .philosophy a {
+    grid-column: 1;
+  }
+}

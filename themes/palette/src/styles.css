@@ -283,7 +283,7 @@ nav a {
   padding: 25px 10px;
   perspective: 900px;
 }
-.specimen-wall > div {
+.specimen-wall > button {
   aspect-ratio: 0.69;
   color: #fff;
   display: flex;
@@ -293,7 +293,7 @@ nav a {
   box-shadow: 4px 12px 18px #25234124;
   animation: specimen-arrive 1.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.specimen-wall > div:nth-child(even) {
+.specimen-wall > button:nth-child(even) {
   margin-top: 25px;
   margin-bottom: -25px;
 }
@@ -528,7 +528,7 @@ nav a {
   .specimen-wall {
     gap: 10px;
   }
-  .specimen-wall > div {
+  .specimen-wall > button {
     padding: 12px;
   }
   .specimen-wall b {
@@ -622,9 +622,126 @@ nav a {
 }
 .mix-result output,
 .mix-result > p {
-  background: #24265c;
-  color: #fff;
+  background: transparent;
+  color: inherit;
   width: fit-content;
-  padding: 4px 8px;
+  padding: 0;
   text-shadow: none;
+}
+
+.specimen-wall > button {
+  border: 0;
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+}
+.specimen-wall > button:focus-visible {
+  outline: 3px solid #24265c;
+  outline-offset: 5px;
+}
+.specimen-wall > button[aria-pressed="true"] {
+  outline: 2px solid #24265c;
+  outline-offset: 6px;
+}
+.specimen-wall b {
+  text-shadow: none;
+}
+.specimen-wall small {
+  font-size: 9px;
+  margin-top: 12px;
+}
+.pigment-tones {
+  display: flex;
+  margin: 20px -14px 18px;
+  height: 38px;
+}
+.pigment-tones i {
+  flex: 1;
+}
+.mix-ramp {
+  padding: 40px 5vw 60px;
+  background: #e5e4dc;
+}
+.mix-ramp h2 {
+  font: 600 30px "Bricolage Grotesque";
+  letter-spacing: -0.03em;
+  margin: 0 0 12px;
+}
+.mix-ramp p {
+  font-size: 13px;
+}
+.ramp-swatches {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-top: 28px;
+}
+.ramp-swatches button {
+  background: none;
+  border: 0;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+}
+.ramp-swatches span {
+  display: block;
+  height: 120px;
+}
+.ramp-swatches strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.ramp-swatches button[aria-pressed="true"] span {
+  outline: 2px solid #24265c;
+  outline-offset: 4px;
+}
+@media (max-width: 650px) {
+  .specimen-wall small {
+    font-size: 8px;
+  }
+  .pigment-tones {
+    height: 24px;
+    margin-block: 12px;
+  }
+  .ramp-swatches {
+    gap: 9px;
+  }
+  .ramp-swatches span {
+    height: 85px;
+  }
+  .ramp-swatches strong {
+    font-size: 10px;
+  }
+}
+
+.mix-result > span {
+  color: #fff;
+}
+.saved-colors span {
+  background: transparent;
+  color: inherit;
+  font-size: 10px;
+  padding: 0;
+}
+
+.specimen-wall {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.specimen-wall > button {
+  min-width: 0;
+}
+@media (max-width: 600px) {
+  .specimen-wall {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 24px;
+    padding: 16px 12px 28px;
+  }
+  .specimen-wall small {
+    font-size: 10px;
+  }
+  .pigment-tones {
+    height: 34px;
+  }
 }

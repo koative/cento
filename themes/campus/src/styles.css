@@ -325,50 +325,73 @@ header > a:last-child {
   max-width: 1000px;
   padding: 30px 45px 40px;
 }
-.type-art {
-  height: 220px;
+.observation-study {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
   background: #e8d559;
+  min-height: 300px;
+}
+.observation-image {
   position: relative;
   overflow: hidden;
+  min-height: 300px;
+}
+.observation-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  filter: grayscale(1);
+  transition:
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    object-position 0.7s;
+}
+.observation-image > span {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  background: #f4f1df;
+  padding: 7px 9px;
+}
+.observation-guide {
+  padding: 26px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 25px 40px;
-  font-family: Display, sans-serif;
-  font-size: 82px;
-  font-weight: 600;
-  line-height: 0.9;
-  letter-spacing: -0.04em;
+  gap: 18px;
 }
-.type-art span:nth-child(2) {
-  align-self: flex-end;
+.observation-guide h2 {
+  font:
+    500 30px/1.05 Display,
+    sans-serif;
+  margin: 0;
+  letter-spacing: -0.03em;
 }
-.focus-frame {
-  position: absolute;
-  width: 170px;
-  height: 170px;
-  border: 1px solid #242820;
-  left: 41%;
-  top: 25px;
-  animation: focusFind 4s ease-in-out infinite alternate;
+.observation-guide p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0;
 }
-.focus-frame::after,
-.focus-frame::before {
-  content: "";
-  position: absolute;
+.observation-guide > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.observation-guide button {
+  border: 1px solid #878037;
+  background: transparent;
+  padding: 8px 10px;
+  font-size: 11px;
+}
+.observation-guide button[aria-pressed="true"] {
   background: #242820;
+  color: #fff;
 }
-.focus-frame::before {
-  width: 1px;
-  height: 30px;
-  left: 50%;
-  top: calc(50% - 15px);
-}
-.focus-frame::after {
-  height: 1px;
-  width: 30px;
-  left: calc(50% - 15px);
-  top: 50%;
+.observation-guide small {
+  font-size: 10px;
+  line-height: 1.5;
+  margin-top: auto;
 }
 .lesson h1 {
   font-family: Display, sans-serif;
@@ -471,10 +494,7 @@ header > a:last-child {
     padding-left: 25px;
     padding-right: 25px;
   }
-  .type-art {
-    font-size: 65px;
-    padding: 20px;
-  }
+
   .notebook {
     grid-template-columns: 1fr;
   }
@@ -522,14 +542,7 @@ header > a:last-child {
   .lesson {
     padding: 20px;
   }
-  .type-art {
-    height: 190px;
-    font-size: 65px;
-  }
-  .focus-frame {
-    height: 140px;
-    width: 140px;
-  }
+
   .lesson h1 {
     font-size: 2.4rem;
   }
@@ -545,5 +558,17 @@ header > a:last-child {
   }
   .notebook {
     padding: 25px 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .observation-study {
+    grid-template-columns: 1fr;
+  }
+  .observation-image {
+    min-height: 230px;
+  }
+  .observation-guide {
+    padding: 22px;
   }
 }

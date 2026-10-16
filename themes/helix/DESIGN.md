@@ -200,3 +200,7 @@ Authored source styling with representative content; interactive behavior remain
 - Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
 - Don't make decorative motion necessary to understand or use a control.
 - Don't present a local demonstration confirmation as a real transaction.
+
+## Collection 100 refinement
+
+The molecular specimen now exposes Backbone and Surface representations, with selected-study color and metadata. Layered geometric chains replace the isolated bead ring; motion can be paused.

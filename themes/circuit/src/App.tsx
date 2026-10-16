@@ -3,6 +3,7 @@ import {
   ArrowUpRight,
   ArrowRight,
   Smartphone,
+  BatteryCharging as BatteryIcon,
   Laptop,
   Gamepad2,
   Headphones,
@@ -31,6 +32,7 @@ export default function App() {
   const [step, setStep] = useState(1);
   const [confirmed, setConfirmed] = useState(false);
   const [open, setOpen] = useState(-1);
+  const [exploded, setExploded] = useState(true);
   const d = devices[device];
   const estimate =
     d.base +
@@ -68,31 +70,57 @@ export default function App() {
               Find your fix <ArrowRight />
             </a>
           </div>
-          <div
-            className="circuit-art"
-            aria-label="Animated geometric circuit paths"
-          >
-            <svg viewBox="0 0 1000 160">
-              <g fill="none" stroke="#aacf64" strokeWidth="3">
-                <path d="M0 80H170L220 30H380L430 80H570L620 130H780L830 80H1000" />
-                <path d="M0 120H130L180 70H330L380 120H540L590 70H730L780 20H1000" />
-                <path d="M0 40H100L150 90H300L350 40H500L550 90H700L750 140H1000" />
-              </g>
-              {[180, 380, 580, 780].map((x, i) => (
-                <circle
-                  key={x}
-                  cx={x}
-                  cy={[70, 120, 80, 20][i]}
-                  r="9"
-                  fill="#234a3a"
-                  stroke="#dce8ae"
-                  strokeWidth="3"
-                  className="pulse-point"
-                  style={{ animationDelay: i * 0.3 + "s" }}
-                />
-              ))}
-            </svg>
-            <span>REPAIR IS A FRESH START.</span>
+          <div className="repair-bench">
+            <div
+              className={
+                "device-model " + (exploded ? "exploded" : "assembled")
+              }
+              role="img"
+              aria-label={
+                exploded
+                  ? "Exploded phone model showing display, battery, and logic board"
+                  : "Assembled phone model"
+              }
+            >
+              <div className="phone-layer logic-board">
+                <div className="processor" />
+                <i />
+                <i />
+                <i />
+                <i />
+                <span>LOGIC BOARD</span>
+              </div>
+              <div className="phone-layer battery-layer">
+                <BatteryIcon />
+                <span>
+                  POWER
+                  <br />
+                  CELL
+                </span>
+                <small>Illustrative hardware</small>
+              </div>
+              <div className="phone-layer screen-layer">
+                <span>
+                  Another
+                  <br />
+                  good day.
+                </span>
+                <i />
+              </div>
+            </div>
+            <div className="bench-caption">
+              <div>
+                <strong>Good design goes deeper.</strong>
+                <p>A closer look at the parts worth keeping.</p>
+              </div>
+              <button
+                aria-pressed={exploded}
+                onClick={() => setExploded(!exploded)}
+              >
+                {exploded ? "Assemble device" : "Explore inside"}
+                <ArrowUpRight size={16} />
+              </button>
+            </div>
           </div>
         </section>
         <section id="repair" className="repair-section">

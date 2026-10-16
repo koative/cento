@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { ArrowUpRight, ArrowRight, Check, ChevronRight } from "lucide-react";
+import {
+  ArrowUpRight,
+  ArrowRight,
+  Check,
+  ChevronRight,
+  Pause,
+  Play,
+} from "lucide-react";
 const metals = [
   { name: "Warm gold", color: "#c6a269", price: 320 },
   { name: "Soft silver", color: "#b5b7ba", price: 260 },
@@ -10,6 +17,8 @@ export default function App() {
   const [size, setSize] = useState("6");
   const [engraving, setEngraving] = useState("always");
   const [reserved, setReserved] = useState(false);
+  const [angle, setAngle] = useState(-30);
+  const [rotating, setRotating] = useState(true);
   return (
     <>
       <header>
@@ -45,11 +54,20 @@ export default function App() {
             style={{ "--metal": metals[metal].color } as React.CSSProperties}
           >
             <div
-              className="ring"
+              className={"ring " + (rotating ? "rotating" : "")}
+              style={{ "--angle": `${angle}deg` } as React.CSSProperties}
               aria-label={`${metals[metal].name} sculptural ring`}
             >
-              <div className="ring-face" />
-              <div className="ring-back" />
+              {Array.from({ length: 14 }, (_, i) => (
+                <div
+                  key={i}
+                  className="ring-layer"
+                  style={{
+                    transform: `translateZ(${-i * 1.8}px)`,
+                    filter: `brightness(${1 - i * 0.026})`,
+                  }}
+                />
+              ))}
             </div>
             <span className="jewel-caption">
               THE CONTINUUM RING
@@ -57,6 +75,31 @@ export default function App() {
               <small>One line. No end.</small>
             </span>
             <span className="cabinet-mark">H.</span>
+            <div className="object-view-controls">
+              <label>
+                Turn the object
+                <input
+                  aria-label="Rotate ring"
+                  type="range"
+                  min="-90"
+                  max="90"
+                  value={angle}
+                  onChange={(e) => {
+                    setAngle(+e.target.value);
+                    setRotating(false);
+                  }}
+                />
+              </label>
+              <button
+                aria-label={rotating ? "Pause rotation" : "Resume rotation"}
+                onClick={() => setRotating(!rotating)}
+              >
+                {rotating ? <Pause size={16} /> : <Play size={16} />}
+              </button>
+            </div>
+            <span className="material-caption">
+              {metals[metal].name} / 4 mm band
+            </span>
           </div>
         </section>
         <section className="object" id="object">

@@ -26,3 +26,7 @@ Edit `src/App.tsx` for content and behavior, `src/styles.css` for styles, and `i
 Self-hosted space and dm fonts copied from the collection's licensed assets; OFL notices in `src/assets/fonts`. Lucide icons are ISC licensed. Photos are bundled from Unsplash under its license and are illustrative, without endorsement:
 
 No photography. Product geometry is authored in CSS.
+
+## Additional local photograph
+
+`src/assets/observation.jpg` is reused from the Forma template: [original Unsplash photograph](https://images.unsplash.com/photo-1511818966892-d7d671e672a2), under the [Unsplash license](https://unsplash.com/license). It is an illustrative scene, not a photograph of a real business represented by this demo.

@@ -8,12 +8,15 @@ import {
   Zap,
   BatteryCharging,
 } from "lucide-react";
-import house from "./assets/house.jpg";
+
 export default function App() {
   const [panels, setPanels] = useState(10);
   const [battery, setBattery] = useState(true);
   const [bill, setBill] = useState(140);
   const [saved, setSaved] = useState(false);
+  const [hour, setHour] = useState(12);
+  const generation =
+    Math.max(0, Math.sin(((hour - 6) / 12) * Math.PI)) * panels * 0.34;
   const coverage = Math.min(96, Math.round(panels * 6 + (battery ? 12 : 0)));
   return (
     <>
@@ -41,9 +44,6 @@ export default function App() {
             <br />
             <span>powerful.</span>
           </h1>
-          <div className="sun-circle">
-            <Sun strokeWidth={0.6} />
-          </div>
           <div className="intro-note">
             <p>
               Turn the everyday into renewable energy. A simpler way to imagine
@@ -55,11 +55,89 @@ export default function App() {
             <span className="demo">
               An independent energy concept. Illustrative estimates only.
             </span>
+          </div>{" "}
+          <div className="solar-observatory">
+            <div className="solar-caption">
+              <span>Your roof, reimagined</span>
+              <span>MODEL / {panels} PANELS</span>
+            </div>
+            <div
+              className="roof-stage"
+              aria-label={`${panels} solar panels in the illustrative array`}
+            >
+              <div className="roof-array">
+                {Array.from({ length: 24 }, (_, i) => (
+                  <span
+                    key={i}
+                    className={i < panels ? "panel installed" : "panel"}
+                  >
+                    <i />
+                    <i />
+                    <i />
+                    <i />
+                    <i />
+                    <i />
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="generation">
+              <div>
+                <span>Illustrative generation</span>
+                <strong>
+                  {generation.toFixed(1)} <small>kW</small>
+                </strong>
+              </div>
+              <div className="daylight-bars" aria-hidden="true">
+                {Array.from({ length: 13 }, (_, i) => (
+                  <i
+                    key={i}
+                    className={i + 6 === hour ? "current" : ""}
+                    style={{
+                      height: `${8 + Math.sin((i / 12) * Math.PI) * 55}px`,
+                    }}
+                  />
+                ))}
+              </div>
+            </div>
+            <label className="daylight-control">
+              <span>
+                Move through a day{" "}
+                <strong>{String(hour).padStart(2, "0")}:00</strong>
+              </span>
+              <input
+                aria-label="Time of day"
+                type="range"
+                min="6"
+                max="18"
+                value={hour}
+                onChange={(e) => setHour(+e.target.value)}
+              />
+            </label>
           </div>
         </section>
         <section className="planner" id="planner">
           <div className="house-view">
-            <img src={house} alt="Modern low-rise home framed by trees" />
+            <div className="energy-path">
+              <Sun size={52} />
+              <span className="energy-wire" />
+              <strong>{(panels * 0.4).toFixed(1)} kW solar array</strong>
+              <span className="energy-wire" />
+              <div className="energy-destinations">
+                <span>
+                  <Zap />
+                  Home
+                  <br />
+                  <b>Use it now</b>
+                </span>
+                <span className={!battery ? "inactive" : ""}>
+                  <BatteryCharging />
+                  Battery
+                  <br />
+                  <b>{battery ? "Keep it for later" : "Not included"}</b>
+                </span>
+              </div>
+            </div>
             <div className="energy-chip">
               <Sun size={22} />
               <div>
@@ -67,7 +145,7 @@ export default function App() {
                 <span>Your solar array</span>
               </div>
             </div>
-            <div className="flow-line" aria-hidden="true" />
+
             <div className="house-caption">
               A home that gives back.<span>YOUR SYSTEM / LIVE CONCEPT</span>
             </div>

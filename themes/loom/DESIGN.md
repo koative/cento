@@ -199,3 +199,7 @@ Authored source styling with representative content; interactive behavior remain
 - Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
 - Don't make decorative motion necessary to understand or use a control.
 - Don't present a local demonstration confirmation as a real transaction.
+
+## Collection 100 refinement
+
+Material selection and specifications form a two-column workspace. The active detail is sticky beside the swatch grid on desktop and follows it on mobile. Procedural fabric studies use more visible weave and fold depth.

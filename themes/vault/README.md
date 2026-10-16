@@ -35,3 +35,7 @@ Fonts are bundled in `src/assets/fonts/` with their Open Font License notices. F
 ## Validation
 
 Standalone build verified with `bun run build`. The root repository maintains interaction tests and responsive screenshot checks.
+
+## Additional local photograph
+
+`src/assets/interior.jpg` is reused from the Forma template: [original Unsplash photograph](https://images.unsplash.com/photo-1600210492486-724fe5c67fb0), under the [Unsplash license](https://unsplash.com/license). It is an illustrative scene, not a photograph of a real business represented by this demo.

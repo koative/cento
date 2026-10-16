@@ -1,0 +1,355 @@
+@import "./base.css";
+:root {
+  --paper: #171716;
+  --ink: #f5f0df;
+  --accent: #e5a667;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+header {
+  padding: 28px 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #595851;
+}
+.wordmark {
+  font:
+    600 48px Display,
+    sans-serif;
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+}
+.wordmark span {
+  font:
+    8px Body,
+    sans-serif;
+  letter-spacing: 0.18em;
+  display: block;
+  margin-top: 12px;
+}
+nav {
+  display: flex;
+  gap: 38px;
+  font-size: 12px;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+main {
+  padding: 0 4%;
+}
+.intro {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr auto;
+  align-items: end;
+  padding: 60px 0 50px;
+  gap: 35px;
+}
+.intro h1 {
+  font:
+    500 clamp(54px, 6.8vw, 88px)/0.98 Display,
+    sans-serif;
+}
+.intro p {
+  font-size: 14px;
+  line-height: 1.8;
+  padding-bottom: 6px;
+}
+.edition {
+  font-size: 10px;
+  line-height: 1.8;
+  text-align: right;
+}
+.screen {
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  background: #353631;
+}
+.screen > img {
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.62);
+  transition: filter 0.5s;
+  object-position: center;
+}
+.screening > img {
+  animation: pan 24s ease-in-out infinite alternate;
+  filter: brightness(0.52);
+}
+.screen-edge {
+  position: absolute;
+  inset: 22px 25px auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+.screen-title {
+  position: absolute;
+  bottom: 45px;
+  left: 35px;
+  right: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
+}
+.screen h2 {
+  font:
+    500 clamp(32px, 4.3vw, 60px)/1.1 Display,
+    sans-serif;
+  max-width: 650px;
+}
+.screen button {
+  border: 0;
+  background: var(--ink);
+  color: var(--paper);
+  display: flex;
+  align-items: center;
+  padding: 18px 24px;
+  gap: 20px;
+  flex-shrink: 0;
+  font-size: 12px;
+}
+.caption {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+}
+.timeline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #ffffff44;
+}
+.timeline i {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--accent);
+}
+.screening .timeline i {
+  animation: duration 24s linear infinite;
+}
+.screen-detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 28px 0 80px;
+}
+.screen-detail p {
+  max-width: 600px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+.screen-detail > span {
+  font-size: 11px;
+  color: #c2bba9;
+  max-width: 230px;
+}
+.index-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+.index-head h2 {
+  font:
+    36px Display,
+    sans-serif;
+}
+.filters {
+  display: flex;
+  gap: 20px;
+}
+.filters button {
+  background: none;
+  border: 0;
+  color: #c4bda9;
+  font-size: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid transparent;
+}
+.filters button[aria-pressed="true"] {
+  color: var(--ink);
+  border-color: var(--accent);
+}
+.film-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 140px 1fr 60px 70px 30px;
+  gap: 30px;
+  align-items: center;
+  text-align: left;
+  padding: 22px 0;
+  border: 0;
+  border-top: 1px solid #514f47;
+  background: none;
+}
+.film-row[aria-pressed="true"] {
+  color: var(--accent);
+}
+.film-row img {
+  width: 140px;
+  height: 88px;
+}
+.film-name {
+  font:
+    27px Display,
+    sans-serif;
+}
+.film-name small {
+  font:
+    10px Body,
+    sans-serif;
+  display: block;
+  color: #c4bda9;
+  margin-top: 10px;
+}
+.film-row > span:not(.film-name) {
+  font-size: 12px;
+}
+.studio {
+  margin-top: 80px;
+  padding: 70px 0;
+  border-top: 1px solid #514f47;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+.studio h2 {
+  font:
+    52px Display,
+    sans-serif;
+}
+.studio p {
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 560px;
+}
+.studio a {
+  display: flex;
+  gap: 30px;
+  margin-top: 25px;
+  font-size: 13px;
+}
+footer {
+  border-color: #514f47;
+}
+footer > a {
+  font-size: 11px;
+}
+@keyframes pan {
+  to {
+    transform: scale(1.12) translateX(-2%);
+  }
+}
+@keyframes duration {
+  to {
+    width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  header {
+    padding: 25px 6%;
+  }
+  .wordmark {
+    font-size: 40px;
+  }
+  nav {
+    gap: 20px;
+  }
+  nav > a:last-child {
+    display: none;
+  }
+  main {
+    padding: 0 6%;
+  }
+  .intro {
+    grid-template-columns: 1fr;
+    padding: 45px 0 30px;
+    gap: 25px;
+  }
+  .intro h1 {
+    font-size: 64px;
+  }
+  .edition {
+    display: none;
+  }
+  .screen {
+    height: 500px;
+  }
+  .screen-title {
+    left: 23px;
+    right: 23px;
+    bottom: 30px;
+    display: block;
+  }
+  .screen h2 {
+    font-size: 39px;
+    margin-bottom: 24px;
+  }
+  .screen button {
+    padding: 12px 20px;
+  }
+  .screen-edge {
+    inset: 18px 18px auto;
+    font-size: 8px;
+  }
+  .caption {
+    font-size: 12px;
+    top: 32%;
+  }
+  .screen-detail {
+    display: block;
+    padding: 25px 0 55px;
+  }
+  .screen-detail > span {
+    display: block;
+    margin-top: 20px;
+  }
+  .index-head {
+    display: block;
+  }
+  .filters {
+    margin-top: 20px;
+  }
+  .film-row {
+    grid-template-columns: 85px 1fr 20px;
+    gap: 17px;
+  }
+  .film-row img {
+    width: 85px;
+    height: 78px;
+  }
+  .film-name {
+    font-size: 21px;
+  }
+  .film-row > span:not(.film-name) {
+    display: none;
+  }
+  .studio {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 50px;
+    padding: 45px 0;
+  }
+  .studio h2 {
+    font-size: 45px;
+  }
+}

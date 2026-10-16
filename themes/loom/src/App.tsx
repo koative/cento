@@ -131,89 +131,91 @@ export default function App() {
               swatches
             </span>
           </div>
-          <div className="materials">
-            {fabrics.map((x, i) =>
-              filter === "All materials" || x.category === filter ? (
-                <button
-                  className={"material " + (active === i ? "selected" : "")}
-                  key={x.code}
-                  onClick={() => setActive(i)}
-                  aria-pressed={active === i}
-                >
-                  <span
-                    className={"swatch " + x.texture}
-                    style={{ "--fabric": x.color } as React.CSSProperties}
+          <div className="material-workspace">
+            <div className="materials">
+              {fabrics.map((x, i) =>
+                filter === "All materials" || x.category === filter ? (
+                  <button
+                    className={"material " + (active === i ? "selected" : "")}
+                    key={x.code}
+                    onClick={() => setActive(i)}
+                    aria-pressed={active === i}
                   >
-                    <span className="sample-tag">
-                      {x.code}
-                      <br />
-                      {x.category.toUpperCase()}
-                    </span>
-                    {samples.includes(x.code) && (
-                      <span className="in-box">
-                        <Check size={16} />
+                    <span
+                      className={"swatch " + x.texture}
+                      style={{ "--fabric": x.color } as React.CSSProperties}
+                    >
+                      <span className="sample-tag">
+                        {x.code}
+                        <br />
+                        {x.category.toUpperCase()}
                       </span>
-                    )}
-                  </span>
-                  <span className="material-caption">
-                    <strong>{x.name}</strong>
-                    <ArrowUpRight />
-                  </span>
+                      {samples.includes(x.code) && (
+                        <span className="in-box">
+                          <Check size={16} />
+                        </span>
+                      )}
+                    </span>
+                    <span className="material-caption">
+                      <strong>{x.name}</strong>
+                      <ArrowUpRight />
+                    </span>
+                  </button>
+                ) : null,
+              )}
+            </div>
+            <section className="material-story" aria-label="Selected material">
+              <div
+                className={"large-swatch " + f.texture}
+                style={{ "--fabric": f.color } as React.CSSProperties}
+              >
+                <span>
+                  {f.code}
+                  <br />
+                  <em>{f.name}</em>
+                </span>
+              </div>
+              <article>
+                <span className="material-code">{f.code} / MATERIAL STUDY</span>
+                <h2>{f.name}</h2>
+                <p>{f.desc}</p>
+                <dl>
+                  <div>
+                    <dt>Composition family</dt>
+                    <dd>{f.category}</dd>
+                  </div>
+                  <div>
+                    <dt>Illustrative weight</dt>
+                    <dd>{f.weight} g/m²</dd>
+                  </div>
+                  <div>
+                    <dt>Concept origin</dt>
+                    <dd>{f.origin}</dd>
+                  </div>
+                </dl>
+                <button
+                  className="btn"
+                  onClick={() => {
+                    setSamples(
+                      samples.includes(f.code)
+                        ? samples.filter((s) => s !== f.code)
+                        : [...samples, f.code],
+                    );
+                    setSent(false);
+                  }}
+                >
+                  {samples.includes(f.code)
+                    ? "Remove from sample box"
+                    : "Add to sample box"}
+                  {samples.includes(f.code) ? <Minus /> : <Plus />}
                 </button>
-              ) : null,
-            )}
+                <p className="demo">
+                  Textures are procedural digital studies, not product
+                  photographs. Specifications are fictional.
+                </p>
+              </article>
+            </section>
           </div>
-        </section>
-        <section className="material-story" aria-label="Selected material">
-          <div
-            className={"large-swatch " + f.texture}
-            style={{ "--fabric": f.color } as React.CSSProperties}
-          >
-            <span>
-              {f.code}
-              <br />
-              <em>{f.name}</em>
-            </span>
-          </div>
-          <article>
-            <span className="material-code">{f.code} / MATERIAL STUDY</span>
-            <h2>{f.name}</h2>
-            <p>{f.desc}</p>
-            <dl>
-              <div>
-                <dt>Composition family</dt>
-                <dd>{f.category}</dd>
-              </div>
-              <div>
-                <dt>Illustrative weight</dt>
-                <dd>{f.weight} g/m²</dd>
-              </div>
-              <div>
-                <dt>Concept origin</dt>
-                <dd>{f.origin}</dd>
-              </div>
-            </dl>
-            <button
-              className="btn"
-              onClick={() => {
-                setSamples(
-                  samples.includes(f.code)
-                    ? samples.filter((s) => s !== f.code)
-                    : [...samples, f.code],
-                );
-                setSent(false);
-              }}
-            >
-              {samples.includes(f.code)
-                ? "Remove from sample box"
-                : "Add to sample box"}
-              {samples.includes(f.code) ? <Minus /> : <Plus />}
-            </button>
-            <p className="demo">
-              Textures are procedural digital studies, not product photographs.
-              Specifications are fictional.
-            </p>
-          </article>
         </section>
         <section id="sample-box" className="sample-section">
           <div>

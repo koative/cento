@@ -176,3 +176,7 @@ Authored inscription styles with representative text; React behavior remains in 
 - Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
 - Don't make decorative motion necessary to understand or use a control.
 - Don't present a local demonstration confirmation as a real transaction.
+
+## Collection 100 refinement
+
+The ring has fourteen depth layers and visitor-controlled rotation, with an explicit animation pause. Metal and engraving controls remain independent and working.

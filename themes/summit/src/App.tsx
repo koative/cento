@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { ArrowUpRight, Check, Mountain, MoveUpRight } from "lucide-react";
+import {
+  ArrowUpRight,
+  Check,
+  Mountain,
+  MoveUpRight,
+  ArrowLeft,
+  ArrowRight,
+} from "lucide-react";
 import climb from "./assets/climb.jpg";
 const routes = [
   {
@@ -52,6 +59,7 @@ export default function App() {
   const [grade, setGrade] = useState("All");
   const [selected, setSelected] = useState(0);
   const [ticks, setTicks] = useState<string[]>([]);
+  const [hold, setHold] = useState(0);
   const r = routes[selected];
   return (
     <>
@@ -93,9 +101,15 @@ export default function App() {
               role="img"
               aria-label={`Climbing wall showing ${r.name}, grade ${r.grade}`}
             >
+              <defs>
+                <linearGradient id="wall-plane" x1="0" y1="0" x2="1" y2="1">
+                  <stop stopColor="#d8d0b9" />
+                  <stop offset="1" stopColor="#b8b19c" />
+                </linearGradient>
+              </defs>
               <path
                 d="M25 430 L50 200 L165 45 L365 20 L575 95 L590 430 Z"
-                fill="#d5cfbe"
+                fill="url(#wall-plane)"
               />
               <path
                 d="M50 200 L255 190 L365 20 M255 190 L300 430 M255 190 L575 95"
@@ -103,6 +117,20 @@ export default function App() {
                 strokeWidth="2"
                 fill="none"
               />
+              <path d="M50 200L165 45L365 20L255 190Z" fill="#e8e0ca" />
+              <path d="M255 190L575 95L590 430L300 430Z" fill="#bab5a3" />
+              {Array.from({ length: 7 }, (_, row) =>
+                Array.from({ length: 9 }, (_, col) => (
+                  <circle
+                    key={`${row}-${col}`}
+                    cx={70 + col * 54}
+                    cy={100 + row * 48}
+                    r="1.6"
+                    fill="#8a8879"
+                    opacity=".5"
+                  />
+                )),
+              )}
               {routes.map((route, i) => (
                 <g key={route.name} opacity={selected === i ? 1 : 0.28}>
                   <path
@@ -127,6 +155,29 @@ export default function App() {
                   ))}
                 </g>
               ))}
+              <circle
+                cx={r.holds[hold][0]}
+                cy={r.holds[hold][1]}
+                r="25"
+                fill="none"
+                stroke="#253f30"
+                strokeWidth="2"
+              />
+              <circle
+                cx={r.holds[hold][0] + 22}
+                cy={r.holds[hold][1] - 20}
+                r="12"
+                fill="#253f30"
+              />
+              <text
+                x={r.holds[hold][0] + 22}
+                y={r.holds[hold][1] - 16}
+                textAnchor="middle"
+                fontSize="11"
+                fill="#fff"
+              >
+                {hold + 1}
+              </text>
               <text x="35" y="458" fontSize="12" fill="#465143">
                 LANDING ZONE / 4.5 M WALL
               </text>
@@ -182,6 +233,37 @@ export default function App() {
                     </button>
                   ),
               )}
+            </div>
+            <div className="route-walkthrough">
+              <span>
+                Read the route{" "}
+                <strong>
+                  Hold {hold + 1} / {r.holds.length}
+                </strong>
+              </span>
+              <div>
+                <button
+                  aria-label="Previous hold"
+                  disabled={hold === 0}
+                  onClick={() => setHold(hold - 1)}
+                >
+                  <ArrowLeft size={16} />
+                </button>
+                <p>
+                  {hold === 0
+                    ? "Start the sequence"
+                    : hold === r.holds.length - 1
+                      ? "Finish hold"
+                      : "Follow the selected line"}
+                </p>
+                <button
+                  aria-label="Next hold"
+                  disabled={hold === r.holds.length - 1}
+                  onClick={() => setHold(hold + 1)}
+                >
+                  <ArrowRight size={16} />
+                </button>
+              </div>
             </div>
             <div className="route-detail">
               <span>ON YOUR RADAR</span>

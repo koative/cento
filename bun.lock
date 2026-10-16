@@ -38,6 +38,22 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/alpine": {
+      "name": "@koative/alpine",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/aperture": {
       "name": "@koative/aperture",
       "version": "1.0.0",
@@ -56,6 +72,22 @@
     },
     "themes/arcade": {
       "name": "@koative/arcade",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/ascent": {
+      "name": "@koative/ascent",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -118,8 +150,120 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/aurora": {
+      "name": "@koative/aurora",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/ballast": {
+      "name": "@koative/ballast",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/beacon": {
+      "name": "@koative/beacon",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/bloom": {
       "name": "@koative/bloom",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/botanica": {
+      "name": "@koative/botanica",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/brine": {
+      "name": "@koative/brine",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/cadence": {
+      "name": "@koative/cadence",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/cadencehouse": {
+      "name": "@koative/cadencehouse",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -246,8 +390,56 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/conduit": {
+      "name": "@koative/conduit",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/counsel": {
       "name": "@koative/counsel",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/cove": {
+      "name": "@koative/cove",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/delta": {
+      "name": "@koative/delta",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -294,6 +486,22 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/emberlight": {
+      "name": "@koative/emberlight",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/encore": {
       "name": "@koative/encore",
       "version": "1.0.0",
@@ -326,6 +534,22 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/fable": {
+      "name": "@koative/fable",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/field": {
       "name": "@koative/field",
       "version": "1.0.0",
@@ -344,6 +568,22 @@
     },
     "themes/flux": {
       "name": "@koative/flux",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/folio": {
+      "name": "@koative/folio",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -518,6 +758,22 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/horizon": {
+      "name": "@koative/horizon",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/index": {
       "name": "@koative/index",
       "version": "1.0.0",
@@ -550,6 +806,22 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/keystone": {
+      "name": "@koative/keystone",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/kiln": {
       "name": "@koative/kiln",
       "version": "1.0.0",
@@ -568,6 +840,38 @@
     },
     "themes/kindred": {
       "name": "@koative/kindred",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/kinetic": {
+      "name": "@koative/kinetic",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/lacquer": {
+      "name": "@koative/lacquer",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -630,6 +934,22 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/lumenary": {
+      "name": "@koative/lumenary",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/meridian": {
       "name": "@koative/meridian",
       "version": "1.0.0",
@@ -662,8 +982,40 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/mosaic": {
+      "name": "@koative/mosaic",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/muse": {
       "name": "@koative/muse",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/nectar": {
+      "name": "@koative/nectar",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -758,6 +1110,54 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/parcel": {
+      "name": "@koative/parcel",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/patina": {
+      "name": "@koative/patina",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/pour": {
+      "name": "@koative/pour",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/prism": {
       "name": "@koative/prism",
       "version": "1.0.0",
@@ -806,8 +1206,40 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/reel": {
+      "name": "@koative/reel",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/relay": {
       "name": "@koative/relay",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/ripple": {
+      "name": "@koative/ripple",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -854,6 +1286,38 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/sanctuary": {
+      "name": "@koative/sanctuary",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/score": {
+      "name": "@koative/score",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/signal": {
       "name": "@koative/signal",
       "version": "1.0.0",
@@ -886,6 +1350,38 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/sonnet": {
+      "name": "@koative/sonnet",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/sprout": {
+      "name": "@koative/sprout",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/stack": {
       "name": "@koative/stack",
       "version": "1.0.0",
@@ -904,6 +1400,22 @@
     },
     "themes/still": {
       "name": "@koative/still",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/strata": {
+      "name": "@koative/strata",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -982,6 +1494,38 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/torque": {
+      "name": "@koative/torque",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/truffle": {
+      "name": "@koative/truffle",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/vault": {
       "name": "@koative/vault",
       "version": "1.0.0",
@@ -1030,8 +1574,40 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/verdant": {
+      "name": "@koative/verdant",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/vow": {
       "name": "@koative/vow",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/waypoint": {
+      "name": "@koative/waypoint",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -1150,9 +1726,13 @@
 
     "@koative/alloy": ["@koative/alloy@workspace:themes/alloy"],
 
+    "@koative/alpine": ["@koative/alpine@workspace:themes/alpine"],
+
     "@koative/aperture": ["@koative/aperture@workspace:themes/aperture"],
 
     "@koative/arcade": ["@koative/arcade@workspace:themes/arcade"],
+
+    "@koative/ascent": ["@koative/ascent@workspace:themes/ascent"],
 
     "@koative/atelier": ["@koative/atelier@workspace:themes/atelier"],
 
@@ -1160,7 +1740,21 @@
 
     "@koative/aura": ["@koative/aura@workspace:themes/aura"],
 
+    "@koative/aurora": ["@koative/aurora@workspace:themes/aurora"],
+
+    "@koative/ballast": ["@koative/ballast@workspace:themes/ballast"],
+
+    "@koative/beacon": ["@koative/beacon@workspace:themes/beacon"],
+
     "@koative/bloom": ["@koative/bloom@workspace:themes/bloom"],
+
+    "@koative/botanica": ["@koative/botanica@workspace:themes/botanica"],
+
+    "@koative/brine": ["@koative/brine@workspace:themes/brine"],
+
+    "@koative/cadence": ["@koative/cadence@workspace:themes/cadence"],
+
+    "@koative/cadencehouse": ["@koative/cadencehouse@workspace:themes/cadencehouse"],
 
     "@koative/campus": ["@koative/campus@workspace:themes/campus"],
 
@@ -1176,19 +1770,31 @@
 
     "@koative/commons": ["@koative/commons@workspace:themes/commons"],
 
+    "@koative/conduit": ["@koative/conduit@workspace:themes/conduit"],
+
     "@koative/counsel": ["@koative/counsel@workspace:themes/counsel"],
+
+    "@koative/cove": ["@koative/cove@workspace:themes/cove"],
+
+    "@koative/delta": ["@koative/delta@workspace:themes/delta"],
 
     "@koative/drift": ["@koative/drift@workspace:themes/drift"],
 
     "@koative/ember": ["@koative/ember@workspace:themes/ember"],
 
+    "@koative/emberlight": ["@koative/emberlight@workspace:themes/emberlight"],
+
     "@koative/encore": ["@koative/encore@workspace:themes/encore"],
 
     "@koative/equinox": ["@koative/equinox@workspace:themes/equinox"],
 
+    "@koative/fable": ["@koative/fable@workspace:themes/fable"],
+
     "@koative/field": ["@koative/field@workspace:themes/field"],
 
     "@koative/flux": ["@koative/flux@workspace:themes/flux"],
+
+    "@koative/folio": ["@koative/folio@workspace:themes/folio"],
 
     "@koative/forge": ["@koative/forge@workspace:themes/forge"],
 
@@ -1210,13 +1816,21 @@
 
     "@koative/helix": ["@koative/helix@workspace:themes/helix"],
 
+    "@koative/horizon": ["@koative/horizon@workspace:themes/horizon"],
+
     "@koative/index": ["@koative/index@workspace:themes/index"],
 
     "@koative/ink": ["@koative/ink@workspace:themes/ink"],
 
+    "@koative/keystone": ["@koative/keystone@workspace:themes/keystone"],
+
     "@koative/kiln": ["@koative/kiln@workspace:themes/kiln"],
 
     "@koative/kindred": ["@koative/kindred@workspace:themes/kindred"],
+
+    "@koative/kinetic": ["@koative/kinetic@workspace:themes/kinetic"],
+
+    "@koative/lacquer": ["@koative/lacquer@workspace:themes/lacquer"],
 
     "@koative/ledger": ["@koative/ledger@workspace:themes/ledger"],
 
@@ -1224,11 +1838,17 @@
 
     "@koative/lumen": ["@koative/lumen@workspace:themes/lumen"],
 
+    "@koative/lumenary": ["@koative/lumenary@workspace:themes/lumenary"],
+
     "@koative/meridian": ["@koative/meridian@workspace:themes/meridian"],
 
     "@koative/monograph": ["@koative/monograph@workspace:themes/monograph"],
 
+    "@koative/mosaic": ["@koative/mosaic@workspace:themes/mosaic"],
+
     "@koative/muse": ["@koative/muse@workspace:themes/muse"],
+
+    "@koative/nectar": ["@koative/nectar@workspace:themes/nectar"],
 
     "@koative/nest": ["@koative/nest@workspace:themes/nest"],
 
@@ -1240,25 +1860,45 @@
 
     "@koative/palette": ["@koative/palette@workspace:themes/palette"],
 
+    "@koative/parcel": ["@koative/parcel@workspace:themes/parcel"],
+
+    "@koative/patina": ["@koative/patina@workspace:themes/patina"],
+
+    "@koative/pour": ["@koative/pour@workspace:themes/pour"],
+
     "@koative/prism": ["@koative/prism@workspace:themes/prism"],
 
     "@koative/proof": ["@koative/proof@workspace:themes/proof"],
 
     "@koative/pulse": ["@koative/pulse@workspace:themes/pulse"],
 
+    "@koative/reel": ["@koative/reel@workspace:themes/reel"],
+
     "@koative/relay": ["@koative/relay@workspace:themes/relay"],
+
+    "@koative/ripple": ["@koative/ripple@workspace:themes/ripple"],
 
     "@koative/roast": ["@koative/roast@workspace:themes/roast"],
 
     "@koative/saffron": ["@koative/saffron@workspace:themes/saffron"],
 
+    "@koative/sanctuary": ["@koative/sanctuary@workspace:themes/sanctuary"],
+
+    "@koative/score": ["@koative/score@workspace:themes/score"],
+
     "@koative/signal": ["@koative/signal@workspace:themes/signal"],
 
     "@koative/solace": ["@koative/solace@workspace:themes/solace"],
 
+    "@koative/sonnet": ["@koative/sonnet@workspace:themes/sonnet"],
+
+    "@koative/sprout": ["@koative/sprout@workspace:themes/sprout"],
+
     "@koative/stack": ["@koative/stack@workspace:themes/stack"],
 
     "@koative/still": ["@koative/still@workspace:themes/still"],
+
+    "@koative/strata": ["@koative/strata@workspace:themes/strata"],
 
     "@koative/summit": ["@koative/summit@workspace:themes/summit"],
 
@@ -1268,13 +1908,21 @@
 
     "@koative/tide": ["@koative/tide@workspace:themes/tide"],
 
+    "@koative/torque": ["@koative/torque@workspace:themes/torque"],
+
+    "@koative/truffle": ["@koative/truffle@workspace:themes/truffle"],
+
     "@koative/vault": ["@koative/vault@workspace:themes/vault"],
 
     "@koative/vector": ["@koative/vector@workspace:themes/vector"],
 
     "@koative/velo": ["@koative/velo@workspace:themes/velo"],
 
+    "@koative/verdant": ["@koative/verdant@workspace:themes/verdant"],
+
     "@koative/vow": ["@koative/vow@workspace:themes/vow"],
+
+    "@koative/waypoint": ["@koative/waypoint@workspace:themes/waypoint"],
 
     "@napi-rs/lzma-linux-x64-gnu": ["@napi-rs/lzma-linux-x64-gnu@1.5.1", "", { "os": "linux", "cpu": "x64" }, "sha512-oTXEIha4SsuXdTA4Iyskj0kpdx2yVXdhd75c2v3xGrHFfVMsbhTPZU/nMPL4sWKo4pBHm3aucLaqGlF696dTyQ=="],
 

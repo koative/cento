@@ -37,6 +37,7 @@ export default function App() {
   const [active, setActive] = useState(0);
   const [filter, setFilter] = useState("All research");
   const [playing, setPlaying] = useState(true);
+  const [representation, setRepresentation] = useState("Backbone");
   const [saved, setSaved] = useState<string[]>([]);
   const s = studies[active];
   return (
@@ -79,20 +80,85 @@ export default function App() {
             className={"specimen " + (!playing ? "paused" : "")}
             aria-label="Animated abstract protein model"
           >
-            <div className="orbit o1" />
-            <div className="orbit o2" />
-            <div className="orbit o3" />
-            {Array.from({ length: 12 }, (_, i) => (
-              <i key={i} style={{ "--i": i } as React.CSSProperties} />
-            ))}
+            <div className="model-topline">
+              <span>{s.id} / COMPUTATIONAL STUDY</span>
+              <span>Illustrative model</span>
+            </div>
+            <svg
+              className="molecular-model"
+              viewBox="0 0 600 430"
+              role="img"
+              aria-label={`${s.name}: illustrative molecular geometry in ${representation.toLowerCase()} view`}
+            >
+              <defs>
+                <radialGradient id="atom-light" cx="30%" cy="25%">
+                  <stop stopColor="#ffe5ee" />
+                  <stop offset=".5" stopColor={s.color} />
+                  <stop offset="1" stopColor="#663453" />
+                </radialGradient>
+              </defs>
+              {[0, 1, 2].map((chain) => {
+                const pts = Array.from({ length: 30 }, (_, i) => {
+                  const t = i * 0.47 + chain * 2.1;
+                  return [
+                    80 + i * 15,
+                    210 + Math.sin(t) * 76 + Math.cos(i * 0.2 + active) * 32,
+                    6 + (Math.cos(t) + 1) * 6,
+                  ];
+                });
+                return (
+                  <g key={chain} opacity={chain === 1 ? 1 : 0.65}>
+                    <polyline
+                      points={pts.map((p) => `${p[0]},${p[1]}`).join(" ")}
+                      fill="none"
+                      stroke={s.color}
+                      strokeWidth={representation === "Surface" ? 30 : 3}
+                      strokeLinejoin="round"
+                      opacity=".6"
+                    />
+                    {pts.map(([x, y, r], i) => (
+                      <circle
+                        key={i}
+                        cx={x}
+                        cy={y}
+                        r={representation === "Surface" ? r * 1.6 : r}
+                        fill="url(#atom-light)"
+                      />
+                    ))}
+                  </g>
+                );
+              })}
+              <path
+                d="M80 345H520M80 339V351M520 339V351"
+                stroke="#728476"
+                fill="none"
+              />
+              <text
+                x="300"
+                y="373"
+                textAnchor="middle"
+                fill="#42584a"
+                fontSize="11"
+              >
+                STRUCTURE STUDY · NOT TO SCALE
+              </text>
+            </svg>
+            <div className="model-controls" aria-label="Model representation">
+              {["Backbone", "Surface"].map((view) => (
+                <button
+                  key={view}
+                  aria-pressed={representation === view}
+                  onClick={() => setRepresentation(view)}
+                >
+                  {view}
+                </button>
+              ))}
+            </div>
             <div className="specimen-label">
-              MODEL 014 / STRUCTURAL STUDY
-              <br />
-              <strong>
-                Small structures.
-                <br />
-                Infinite questions.
-              </strong>
+              <span>
+                {s.area} / {s.phase}
+              </span>
+              <strong>{s.name}</strong>
             </div>
             <button
               className="motion"

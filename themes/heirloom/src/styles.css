@@ -281,28 +281,22 @@ header > span {
   width: 330px;
   height: 330px;
   transform-style: preserve-3d;
-  transform: rotateX(48deg) rotateY(-20deg) rotateZ(-30deg);
-  animation: heirloomTurn 8s ease-in-out infinite alternate;
+  transform: rotateX(48deg) rotateY(-20deg) rotateZ(var(--angle, -30deg));
 }
-.ring-face,
-.ring-back {
+.ring-layer {
   position: absolute;
   inset: 0;
   border: 35px solid var(--metal);
   border-radius: 50%;
   box-shadow:
-    inset 8px 8px 11px #fff6d273,
-    inset -8px -8px 9px #2b140bb3,
-    7px 24px 25px #0006;
+    inset 5px 4px 8px #fff5d989,
+    inset -7px -5px 7px #3f27149e;
   transition: border-color 0.5s;
 }
-.ring-back {
-  transform: translateZ(-24px);
-  border-width: 35px;
-  filter: brightness(0.7);
-}
-.ring-face {
-  transform: translateZ(0);
+.ring-layer:first-child {
+  box-shadow:
+    inset 8px 6px 12px #fff5d9ab,
+    inset -8px -8px 10px #3f2714b3;
 }
 .jewel-caption {
   position: absolute;
@@ -499,10 +493,7 @@ header > span {
     width: 270px;
     height: 270px;
   }
-  .ring-face,
-  .ring-back {
-    border-width: 29px;
-  }
+
   .object {
     grid-template-columns: 1fr 1fr;
   }
@@ -583,5 +574,69 @@ header > span {
   .closing a {
     max-width: 16ch;
     font-size: 11px;
+  }
+}
+
+.ring.rotating {
+  animation: heirloomTurn 8s ease-in-out infinite alternate;
+}
+.jewel-stage {
+  min-height: 540px;
+  background: radial-gradient(ellipse at 50% 45%, #443831 0, transparent 63%);
+}
+.jewel-caption {
+  bottom: 90px;
+}
+.object-view-controls {
+  position: absolute;
+  bottom: 16px;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: #d1b99c;
+}
+.object-view-controls label {
+  flex: 1;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+.object-view-controls input {
+  display: block;
+  width: 100%;
+  accent-color: #c6a269;
+  margin-top: 10px;
+}
+.object-view-controls button {
+  border: 1px solid #796b5a;
+  background: none;
+  color: #e7d2b6;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+.material-caption {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  font-size: 10px;
+  color: #ccb69c;
+}
+@media (max-width: 650px) {
+  .jewel-stage {
+    min-height: 470px;
+  }
+  .ring-layer {
+    border-width: 27px;
+  }
+  .material-caption {
+    left: 0;
+    top: 5px;
+  }
+  .jewel-caption {
+    bottom: 90px;
   }
 }

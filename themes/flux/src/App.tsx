@@ -30,6 +30,8 @@ export default function App() {
   const [adding, setAdding] = useState(false);
   const [tab, setTab] = useState("Builder");
   const [budget, setBudget] = useState(5000);
+  const [sampleBudget, setSampleBudget] = useState(7500);
+  const [stopped, setStopped] = useState(false);
   const active = steps.find((s) => s.id === selected);
   function add(type: string) {
     const s = { id: Date.now(), type: "action", name: type };
@@ -95,6 +97,9 @@ export default function App() {
                   setSelected(2);
                   setLog([]);
                   setStatus("Draft");
+                  setBudget(5000);
+                  setSampleBudget(7500);
+                  setStopped(false);
                 }}
               >
                 <RotateCcw />
@@ -103,10 +108,18 @@ export default function App() {
               <button
                 className="run"
                 onClick={() => {
-                  setLog(
-                    steps.map((s, i) => `${i + 1}. ${s.name} — completed`),
-                  );
-                  setStatus("Test passed");
+                  let blocked = false;
+                  const results = steps.map((s, i) => {
+                    if (blocked) return `${i + 1}. ${s.name} — skipped`;
+                    if (s.type === "condition" && sampleBudget <= budget) {
+                      blocked = true;
+                      return `${i + 1}. ${s.name} — condition not met`;
+                    }
+                    return `${i + 1}. ${s.name} — completed`;
+                  });
+                  setLog(results);
+                  setStopped(blocked);
+                  setStatus(blocked ? "Condition not met" : "Test passed");
                   setTab("Activity");
                 }}
               >
@@ -202,6 +215,34 @@ export default function App() {
                       </div>
                     )}
                   </div>
+                  <div className="simulation-input">
+                    <div>
+                      <strong>Try a sample project</strong>
+                      <p>
+                        The condition checks this budget before any action runs.
+                      </p>
+                    </div>
+                    <label>
+                      Sample project budget (€)
+                      <input
+                        type="number"
+                        min="0"
+                        step="500"
+                        value={sampleBudget}
+                        onChange={(e) => {
+                          setSampleBudget(Math.max(0, +e.target.value));
+                          setStatus("Draft");
+                        }}
+                      />
+                    </label>
+                    <span className="simulation-outcome">
+                      {steps.some((s) => s.type === "condition")
+                        ? sampleBudget > budget
+                          ? "Matches the current condition"
+                          : "Will stop at the condition"
+                        : "No condition in this workflow"}
+                    </span>
+                  </div>
                   <span className="canvas-scale">
                     100% <span>Auto layout</span>
                   </span>
@@ -212,15 +253,21 @@ export default function App() {
                   <p>Run a local simulation to check your workflow sequence.</p>
                   {log.length ? (
                     <>
-                      <div className="success">
+                      <div className={"success " + (stopped ? "stopped" : "")}>
                         <Check />
-                        All {log.length} steps completed.
+                        {stopped
+                          ? "Condition not met. Remaining actions skipped."
+                          : `All ${log.length} steps completed.`}
                       </div>
                       <ol>
                         {log.map((x) => (
                           <li key={x}>
-                            <Check />
-                            {x.slice(3)}
+                            {x.endsWith("completed") ? (
+                              <Check />
+                            ) : (
+                              <GitBranch />
+                            )}
+                            {x.replace(/^\d+\. /, "")}
                           </li>
                         ))}
                       </ol>

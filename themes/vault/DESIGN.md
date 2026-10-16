@@ -232,3 +232,7 @@ Authored source styling with representative content; interactive behavior remain
 - Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
 - Don't make decorative motion necessary to understand or use a control.
 - Don't present a local demonstration confirmation as a real transaction.
+
+## Collection 100 refinement
+
+A local interior photograph and live plan-summary sheet replace the generic geometric hero. The sheet reflects selected home, belongings value, plan and illustrative price. Muted text contrast is stronger.

@@ -948,5 +948,615 @@
     "family": "DM Sans",
     "file": "themes/grid/src/assets/fonts/dm-sans-713ca32c.woff2",
     "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/brine/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/brine/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/brine/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/brine/src/assets/fonts/libre-caslon-text-33765a61.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/folio/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/folio/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/folio/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/folio/src/assets/fonts/libre-caslon-text-33765a61.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/patina/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/patina/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/patina/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/patina/src/assets/fonts/libre-caslon-text-33765a61.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/nectar/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/nectar/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/nectar/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/nectar/src/assets/fonts/libre-caslon-text-33765a61.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/alpine/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/alpine/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/alpine/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/alpine/src/assets/fonts/libre-caslon-text-33765a61.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/sonnet/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/sonnet/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/sonnet/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/sonnet/src/assets/fonts/libre-caslon-text-33765a61.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/mosaic/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/mosaic/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/mosaic/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/mosaic/src/assets/fonts/libre-caslon-text-33765a61.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/lacquer/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/lacquer/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/lacquer/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/lacquer/src/assets/fonts/libre-caslon-text-33765a61.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/truffle/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/truffle/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/truffle/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/truffle/src/assets/fonts/libre-caslon-text-33765a61.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/score/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/score/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/score/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/score/src/assets/fonts/libre-caslon-text-33765a61.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/sprout/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/sprout/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/sprout/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/sprout/src/assets/fonts/libre-caslon-text-33765a61.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/ripple/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/ripple/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/ripple/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/ripple/src/assets/fonts/libre-caslon-text-33765a61.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+  },
+  {
+    "family": "Manrope",
+    "file": "themes/ballast/src/assets/fonts/manrope-4872f2a6.woff2",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/ballast/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/ballast/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/ballast/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Manrope",
+    "file": "themes/delta/src/assets/fonts/manrope-4872f2a6.woff2",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/delta/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/delta/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/delta/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Manrope",
+    "file": "themes/strata/src/assets/fonts/manrope-4872f2a6.woff2",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/strata/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/strata/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/strata/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Manrope",
+    "file": "themes/cadence/src/assets/fonts/manrope-4872f2a6.woff2",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/cadence/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/cadence/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/cadence/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Manrope",
+    "file": "themes/conduit/src/assets/fonts/manrope-4872f2a6.woff2",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/conduit/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/conduit/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/conduit/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Manrope",
+    "file": "themes/lumenary/src/assets/fonts/manrope-4872f2a6.woff2",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/lumenary/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/lumenary/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/lumenary/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Manrope",
+    "file": "themes/waypoint/src/assets/fonts/manrope-4872f2a6.woff2",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/waypoint/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/waypoint/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/waypoint/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Manrope",
+    "file": "themes/torque/src/assets/fonts/manrope-4872f2a6.woff2",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/torque/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/torque/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/torque/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Manrope",
+    "file": "themes/verdant/src/assets/fonts/manrope-4872f2a6.woff2",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/verdant/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/verdant/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/verdant/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Manrope",
+    "file": "themes/parcel/src/assets/fonts/manrope-4872f2a6.woff2",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/parcel/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/parcel/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/parcel/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Manrope",
+    "file": "themes/beacon/src/assets/fonts/manrope-4872f2a6.woff2",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/beacon/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/beacon/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/beacon/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Manrope",
+    "file": "themes/keystone/src/assets/fonts/manrope-4872f2a6.woff2",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/keystone/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "file": "themes/keystone/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
+    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/keystone/src/assets/fonts/dm-sans-713ca32c.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/aurora/src/assets/fonts/body.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Instrument Serif",
+    "file": "themes/aurora/src/assets/fonts/display.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/reel/src/assets/fonts/body.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/reel/src/assets/fonts/display.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/botanica/src/assets/fonts/body.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Instrument Serif",
+    "file": "themes/botanica/src/assets/fonts/display.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/cove/src/assets/fonts/body.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Instrument Serif",
+    "file": "themes/cove/src/assets/fonts/display.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/fable/src/assets/fonts/body.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/fable/src/assets/fonts/display.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/cadencehouse/src/assets/fonts/body.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/cadencehouse/src/assets/fonts/display.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/pour/src/assets/fonts/body.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Instrument Serif",
+    "file": "themes/pour/src/assets/fonts/display.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/ascent/src/assets/fonts/body.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Barlow Condensed",
+    "file": "themes/ascent/src/assets/fonts/display.woff2",
+    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/emberlight/src/assets/fonts/body.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Instrument Serif",
+    "file": "themes/emberlight/src/assets/fonts/display.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/sanctuary/src/assets/fonts/body.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Instrument Serif",
+    "file": "themes/sanctuary/src/assets/fonts/display.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/kinetic/src/assets/fonts/body.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Space Grotesk",
+    "file": "themes/kinetic/src/assets/fonts/display.woff2",
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+  },
+  {
+    "family": "DM Sans",
+    "file": "themes/horizon/src/assets/fonts/body.woff2",
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+  },
+  {
+    "family": "Instrument Serif",
+    "file": "themes/horizon/src/assets/fonts/display.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+  },
+  {
+    "family": "Instrument Serif",
+    "file": "gallery/assets/fonts/instrument-serif-05103e2a.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+  },
+  {
+    "family": "Instrument Serif",
+    "file": "gallery/assets/fonts/instrument-serif-0d985700.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2"
   }
 ]

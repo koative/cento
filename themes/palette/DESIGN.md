@@ -185,3 +185,7 @@ Authored color selects select styles with representative text; React behavior re
 - Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
 - Don't make decorative motion necessary to understand or use a control.
 - Don't present a local demonstration confirmation as a real transaction.
+
+## Collection 100 refinement
+
+Pigment specimens now choose a mixing input. Five proportion swatches let visitors compare and select blends. Mixed and saved color text chooses contrasting black or white from relative luminance.

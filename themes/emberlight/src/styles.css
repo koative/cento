@@ -1,0 +1,447 @@
+@import "./base.css";
+:root {
+  --paper: #f0e7d8;
+  --ink: #4c392d;
+  --accent: #a36a3b;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+header {
+  padding: 28px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d1c1ac;
+}
+.brand {
+  font:
+    31px Display,
+    serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  gap: 35px;
+  font-size: 12px;
+}
+nav a {
+  text-decoration: none;
+}
+.product-stage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 660px;
+}
+.stage-copy {
+  padding: 85px 12% 45px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.stage-copy h1 {
+  font:
+    clamp(54px, 5.5vw, 78px)/1.03 Display,
+    serif;
+}
+.stage-copy p {
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 30px 0;
+}
+.stage-copy > a {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  font-size: 12px;
+  border-bottom: 1px solid #8f7256;
+  padding-bottom: 12px;
+  text-decoration: none;
+}
+.stage-copy > span {
+  font-size: 8px;
+  letter-spacing: 0.14em;
+  margin-top: auto;
+  padding-top: 60px;
+}
+.candle-scene {
+  position: relative;
+  background: #e1d1ba;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  min-height: 660px;
+  perspective: 1000px;
+}
+.candle-scene:before {
+  content: "";
+  position: absolute;
+  left: 15%;
+  top: 0;
+  width: 35%;
+  height: 110%;
+  background: #f2e8d75c;
+  transform: skew(-20deg);
+}
+.plinth {
+  position: absolute;
+  bottom: -85px;
+  width: 360px;
+  height: 270px;
+  border-radius: 50%;
+  background: #cbb594;
+  box-shadow: 25px 30px 70px #78573530;
+  transform: rotateX(40deg);
+}
+.candle {
+  width: 210px;
+  height: 300px;
+  position: relative;
+  z-index: 1;
+  margin-top: 100px;
+  filter: drop-shadow(20px 25px 22px #4d352733);
+}
+.vessel {
+  height: 230px;
+  position: absolute;
+  bottom: 0;
+  width: 210px;
+  background:
+    linear-gradient(90deg, #ffffff30, transparent 45%, #00000018),
+    var(--ceramic);
+  border-radius: 0 0 42% 42%/0 0 14% 14%;
+  color: #302f27;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+  transition: background 0.4s;
+}
+.vessel > span {
+  font:
+    21px Display,
+    serif;
+}
+.vessel strong {
+  font:
+    28px Display,
+    serif;
+  margin-top: 26px;
+}
+.vessel small {
+  font-size: 6px;
+  margin-top: 17px;
+  letter-spacing: 0.1em;
+}
+.wax {
+  position: absolute;
+  top: 45px;
+  width: 210px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e9dcc0;
+  border: 7px solid var(--ceramic);
+  z-index: 2;
+}
+.wick {
+  height: 17px;
+  width: 3px;
+  background: #51402b;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+.flame {
+  position: absolute;
+  width: 16px;
+  height: 35px;
+  border-radius: 55% 45% 45% 55%;
+  background: #ffd58a;
+  left: calc(50% - 6px);
+  top: -32px;
+  opacity: 0;
+  transform: rotate(5deg);
+  box-shadow: 0 8px 15px #e7a24d35;
+}
+.lit .flame {
+  opacity: 1;
+  animation: flicker 3s ease-in-out infinite;
+}
+.scene-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.scene-caption > span {
+  font-size: 7px;
+  letter-spacing: 0.1em;
+}
+.scene-caption button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 10px;
+  border: 0;
+  background: none;
+}
+.ritual {
+  padding: 85px 7%;
+}
+.ritual-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 50px;
+  margin-bottom: 45px;
+}
+.ritual-intro h2 {
+  font:
+    54px/1.04 Display,
+    serif;
+}
+.ritual-intro h2 em {
+  font-weight: 400;
+  color: #916c4c;
+}
+.ritual-intro p {
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 330px;
+}
+.scent-workspace {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+}
+.scent-list button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 0;
+  border: 0;
+  border-top: 1px solid #c8b79f;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+.scent-list button > i {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.scent-list button > span {
+  font:
+    27px Display,
+    serif;
+  flex: 1;
+}
+.scent-list small {
+  display: block;
+  font:
+    10px Body,
+    sans-serif;
+  margin-top: 6px;
+}
+.scent-list button[aria-pressed="true"] > i {
+  outline: 1px solid #8a7159;
+  outline-offset: 5px;
+}
+.scent-detail h3 {
+  font:
+    43px Display,
+    serif;
+}
+.scent-detail p {
+  font-size: 14px;
+  line-height: 1.9;
+  margin-top: 22px;
+  max-width: 530px;
+}
+.scent-detail .notes {
+  font-size: 11px;
+  margin-top: 12px;
+}
+.specs {
+  display: flex;
+  gap: 25px;
+  font-size: 9px;
+  margin: 30px 0;
+  border-top: 1px solid #c8b79f;
+  border-bottom: 1px solid #c8b79f;
+  padding: 18px 0;
+  flex-wrap: wrap;
+}
+.purchase {
+  display: flex;
+  gap: 20px;
+}
+.quantity {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 12px;
+}
+.quantity button {
+  border: 0;
+  background: none;
+  padding: 10px 0;
+}
+.quantity button:disabled {
+  opacity: 0.35;
+}
+.add {
+  background: #4c392d;
+  color: #f0e7d8;
+  padding: 15px;
+  border: 0;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  gap: 15px;
+}
+.scent-detail .feedback {
+  font-size: 10px;
+  margin-top: 13px;
+}
+.making {
+  background: #ddd0ba;
+  padding: 75px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 80px;
+}
+.making-word {
+  font:
+    88px/0.9 Display,
+    serif;
+  align-self: center;
+  color: #876b4f;
+}
+.making h2 {
+  font:
+    46px/1.05 Display,
+    serif;
+}
+.making p {
+  font-size: 13px;
+  line-height: 1.9;
+  margin-top: 25px;
+}
+.making-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 10px;
+  margin-top: 25px;
+}
+.making .care {
+  font-size: 10px;
+  border-top: 1px solid #b8a183;
+  padding-top: 20px;
+}
+footer {
+  border: 0;
+}
+@keyframes flicker {
+  50% {
+    transform: rotate(-6deg) scaleY(0.9);
+  }
+}
+@media (max-width: 750px) {
+  nav > a:not(:last-child) {
+    display: none;
+  }
+  .brand {
+    font-size: 27px;
+  }
+  header {
+    padding: 24px 6%;
+  }
+  .product-stage {
+    grid-template-columns: 1fr;
+  }
+  .stage-copy {
+    padding: 45px 6% 35px;
+  }
+  .stage-copy h1 {
+    font-size: 62px;
+  }
+  .stage-copy > span {
+    padding-top: 35px;
+  }
+  .candle-scene {
+    min-height: 500px;
+  }
+  .candle {
+    transform: scale(0.85);
+    margin-top: 40px;
+  }
+  .plinth {
+    bottom: -110px;
+  }
+  .scene-caption {
+    left: 20px;
+    right: 20px;
+  }
+  .scene-caption > span {
+    font-size: 6px;
+  }
+  .scene-caption button {
+    font-size: 9px;
+  }
+  .ritual {
+    padding: 55px 6%;
+  }
+  .ritual-intro {
+    display: block;
+  }
+  .ritual-intro h2 {
+    font-size: 47px;
+  }
+  .ritual-intro p {
+    margin-top: 25px;
+  }
+  .scent-workspace {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .scent-detail h3 {
+    font-size: 38px;
+  }
+  .scent-list button {
+    padding: 22px 0;
+  }
+  .scent-list button > span {
+    font-size: 26px;
+  }
+  .purchase {
+    gap: 15px;
+  }
+  .add {
+    font-size: 10px;
+    padding: 13px 10px;
+  }
+  .making {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 50px 6%;
+  }
+  .making-word {
+    font-size: 75px;
+  }
+  .making h2 {
+    font-size: 42px;
+  }
+}

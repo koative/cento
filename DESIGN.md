@@ -1,183 +1,185 @@
 ---
-name: Koative Templates Gallery
-description: A minimal specimen archive for independent website designs.
+name: Elseform
+description: An independent open-source design collection presented through artistic liquid glass.
 colors:
-  blue: "#303cdb"
-  ink: "#282a29"
-  paper: "#fafaf8"
-  muted: "#676963"
-  line: "#e2e3dd"
-  soft-surface: "#efefeb"
+  ink: "#1e2b3c"
+  blue: "#3d518b"
+  muted: "#596578"
+  paper: "#eef2f8"
+  line: "#34496524"
+  primary: "#293c55"
+  primary-hover: "#415b7e"
   white: "#fff"
+  serif-ink: "#425b83"
+  masthead-glass: "#ffffff57"
+  tool-glass: "#ffffff65"
+  card-glass: "#ffffff50"
+  card-hover: "#ffffff8a"
+  filter-ink: "#536177"
+  search-glass: "#e8edf563"
+  search-ink: "#5d6c80"
+  screenshot-surface: "#e1e6ef"
+  preview-surface: "#dfe6f0"
+  preview-toolbar: "#f0f4fa"
+  preview-backdrop: "#15253bb8"
 typography:
   display:
     fontFamily: '"Manrope", sans-serif'
-    fontSize: "clamp(32px, 3.8vw, 50px)"
-    fontWeight: 500
-    lineHeight: 1.16
-    letterSpacing: "-0.035em"
+    fontSize: "clamp(56px, 6.6vw, 92px)"
+    fontWeight: 450
+    lineHeight: 1.04
+    letterSpacing: "-0.04em"
+  display-emphasis:
+    fontFamily: '"Instrument Serif", serif'
+    fontSize: "1.13em"
+    fontWeight: 400
+    lineHeight: 0.8
+    letterSpacing: "-0.02em"
   headline:
     fontFamily: '"Manrope", sans-serif'
-    fontSize: "24px"
+    fontSize: "30px"
     fontWeight: 500
-    letterSpacing: "-0.025em"
+    letterSpacing: "-0.035em"
   title:
     fontFamily: '"DM Sans", sans-serif'
-    fontSize: "17px"
-    fontWeight: 600
+    fontSize: "16px"
+    fontWeight: 550
     lineHeight: 1.4
   body:
     fontFamily: '"DM Sans", sans-serif'
-    fontSize: "16px"
-    fontWeight: 400
-    lineHeight: 1.6
+  introduction:
+    fontFamily: '"DM Sans", sans-serif'
+    fontSize: "15px"
+    lineHeight: 1.8
   description:
     fontFamily: '"DM Sans", sans-serif'
-    fontSize: "13px"
-    fontWeight: 400
-    lineHeight: 1.6
+    fontSize: "12px"
+    lineHeight: 1.7
   label:
     fontFamily: '"DM Sans", sans-serif'
-    fontSize: "12px"
-    fontWeight: 400
+    fontSize: "11px"
 rounded:
-  control: "7px"
-  specimen: "12px"
-  dialog: "10px"
+  control: "10px"
+  saved-toggle: "12px"
+  screenshot: "13px"
+  primary: "14px"
+  tools: "16px"
+  dialog: "18px"
+  card: "20px"
+  masthead: "22px"
 spacing:
-  compact: "8px"
+  filter-gap: "3px"
+  inset: "9px"
   control-gap: "12px"
-  content-gap: "16px"
-  section-gap: "24px"
+  toolbar-gap: "18px"
+  collection-gap: "24px"
 components:
-  filter:
-    textColor: "{colors.muted}"
-    rounded: "{rounded.control}"
-    padding: "9px 13px"
-  filter-active:
-    backgroundColor: "{colors.ink}"
+  button-primary:
+    backgroundColor: "{colors.primary}"
     textColor: "{colors.white}"
+    rounded: "{rounded.primary}"
+    padding: "17px 21px"
+  button-primary-hover:
+    backgroundColor: "{colors.primary-hover}"
+  filter:
+    textColor: "{colors.filter-ink}"
     rounded: "{rounded.control}"
-    padding: "9px 13px"
-  search:
-    textColor: "{colors.muted}"
-    rounded: "{rounded.control}"
-    padding: "10px 12px"
-    width: "234px"
-  specimen:
-    backgroundColor: "{colors.soft-surface}"
-    rounded: "{rounded.specimen}"
-    width: "100%"
-  preview-label:
+    padding: "9px 16px"
+  filter-active:
     backgroundColor: "{colors.white}"
     textColor: "{colors.ink}"
     rounded: "{rounded.control}"
-    padding: "9px 12px"
+    padding: "9px 16px"
+  search:
+    backgroundColor: "{colors.search-glass}"
+    textColor: "{colors.search-ink}"
+    rounded: "{rounded.control}"
+    padding: "10px 12px"
+    width: "245px"
+  specimen:
+    backgroundColor: "{colors.card-glass}"
+    rounded: "{rounded.card}"
+    padding: "9px"
+  saved-toggle:
+    backgroundColor: "#ffffff63"
+    rounded: "{rounded.saved-toggle}"
+    padding: "10px 15px"
+  saved-toggle-active:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.white}"
+  masthead:
+    backgroundColor: "{colors.masthead-glass}"
+    rounded: "{rounded.masthead}"
+    padding: "0 25px"
+    height: "76px"
 ---
 
-# Design System: Koative Templates Gallery
+# Design System: Elseform
 
 ## Overview
 
-**Creative North Star: "The Minimal Specimen Archive"**
+**Creative North Star: "The Liquid Glass Exhibition"**
 
-### Gallery
+Elseform is an independent product identity for a collection of one hundred open-source website designs, created by Koative. A luminous cool ground, translucent surfaces and a moving optical sculpture give the gallery its own character. Large Manrope lettering meets italic Instrument Serif; opaque navy text makes browsing legible against the glass.
 
-Experience mode: a quiet, elegant archive of independent website designs. Warm near-white paper, restrained ink typography, and small blue interaction accents let real screenshots carry the visual variety. A compact masthead and short introduction lead directly into a filterable collection; there is no featured hero specimen.
-
-The current implementation in `gallery/main.tsx` and `gallery/styles.css` is the source of these measured tokens. This system applies to the gallery shell; each template retains its own visual world.
+The user explicitly selected artistic liquid glass and authorized a complete homepage identity replacement. This system replaces the earlier gallery worlds. It documents `gallery/main.tsx`, `gallery/styles.css` and `gallery/LiquidArtwork.tsx`; it applies to the gallery shell, not to the independently designed templates. Each theme's own DESIGN.md remains its visual authority.
 
 **Key Characteristics:**
-- Real screenshot specimens in an even, responsive grid.
-- Modest typography, open spacing, and compact utility controls.
-- Flat surfaces with subtle rules and restrained blue feedback.
 
-### Historical gallery direction
-
-The original gallery used an independent design annual direction: bone paper, electric-blue editorial marks, overscale typography, an asymmetric title and featured specimen, and a two-column collection. That composition and its exploratory seed are historical, superseded by the current minimal archive. The user's delegated creative direction remains in force; implementation does not require separate comp approvals for each template.
+- A procedural refractive loop beside an editorial headline and a real featured preview.
+- Translucent navigation, controls and screenshot cards with restrained edge highlights.
+- Search, filters, local bookmarks and direct access to working demos and source.
 
 ## Colors
 
-Blue is the sole gallery accent. Ink carries titles and the selected filter; muted text carries descriptions and utilities. Paper is the continuous page canvas, soft surface backs unloaded screenshots and filter hover states, and line separates major regions. White is used for preview labels and active-filter text. The frontmatter records the implemented values.
+The primary action uses deep slate; the blue token marks focus and interaction. Ink and muted text remain opaque. Paper is the continuous cool background. Translucent white masthead, tool and card surfaces reveal a static ambient field of lilac, blue and rose gradients. The serif accent is a softened blue ink. Modal surfaces use cool solid fills over a translucent navy backdrop. Exact reusable values are recorded above; the shader's colored studio lighting belongs to the sculpture rather than the UI palette.
 
-**The Specimen Rule.** Let the screenshot supply each template's color; keep the surrounding archive neutral.
+**The Clear Specimen Rule.** Keep template screenshots full color and undistorted; glass treatments belong to their surrounding surfaces.
 
 ## Typography
 
-Manrope provides the introduction and about heading. DM Sans provides navigation, controls, specimen titles, and descriptions. Both fonts are served locally. Display type uses the frontmatter clamp; at the narrow breakpoint it becomes 36px and is constrained to 11ch. Opening body copy is limited to 70ch and becomes 14px on narrow screens. About copy is 14px/1.7 at 65ch. Controls are 13px; secondary labels are 12px, with tabular figures for counts. The hierarchy stays compact enough for previews to dominate.
+Manrope, DM Sans and both upright and italic Instrument Serif are self-hosted under `gallery/assets/fonts`, with bundled license notices. Manrope carries the wordmark, opening headline and section headings. Instrument Serif supplies the emphasized words and empty-state heading. DM Sans carries descriptions, navigation and controls. The display-emphasis role is italic in the implementation; its relative size is measured against the opening headline.
+
+The opening headline is constrained to 10.8ch and its supporting copy to 54ch. At 1100px the headline becomes 70px, at 850px it becomes 61px, and at 680px it uses `clamp(48px, 11.8vw, 76px)` with 1.05 line-height and 11ch width. At 1600px and above it becomes 96px. The enlarged serif word follows its own relative scale. Counts and sorting metadata use tabular figures. Avoid documenting a single size ceiling for every typographic element.
 
 ## Layout
 
-The shared shell is `min(1320px, calc(100% - 96px))`, with an 88px masthead. The introduction has 64px top and 48px bottom padding. Collection controls sit above a ruled result/sort row. The specimen grid has three equal columns, 38px row gaps and 26px column gaps; screenshot frames use a 1.5 aspect ratio. Metadata sits 16px below each frame, followed by description and direct links.
+The shared shell is `min(1380px, calc(100% - 96px))`. The masthead sits 22px below the page top. The opening is at least 590px high with 112px/85px vertical padding; copy occupies 62% while an absolutely positioned artwork stage occupies the right side. A floating Orbit preview provides a direct route into an actual template. At 1600px the opening and artwork stage grow to 640px.
 
-At 1100px and below, side gutters become 32px, the grid becomes two columns, and search wraps to full width. At 680px and below, gutters become 20px, the masthead becomes 72px, the introduction uses 40px/32px vertical padding, and specimens form one column with 30px gaps. Nonessential masthead links collapse; GitHub remains an icon link. About content stacks vertically.
+Collection tools precede a result/sort row and a three-column grid with 25px row gaps and 24px column gaps. Screenshots retain a 1.5 aspect ratio. At 1100px, the shell uses 32px side gutters and two columns. At 850px, search moves below the categories. At 680px, gutters become 18px, the grid becomes one column, and categories use three equal columns. The compact masthead hides its central navigation while retaining the source link. The opening has a minimum height of 730px; its 370px artwork stage sits below the main copy, with the featured preview above the opening footer.
 
-The preview dialog is centered at 96vw by 94dvh, capped at 1600px by 1100px. Its three-column toolbar centers device controls independently of side content. Desktop preview fills the canvas; tablet and mobile previews use 768px and 390px widths, constrained to the available space. At 680px and below, the dialog fills the viewport and device controls are hidden.
+The native preview dialog is centered using fixed positioning, zero inset and automatic margins. It measures 96vw by 94dvh, capped at 1600px by 1100px. A three-column toolbar centers device controls independently of left and right content. Desktop fills the canvas; tablet and mobile frames are centered at 768px and 390px, constrained to available width. At 680px the dialog fills the viewport, loses rounded corners and hides device controls.
 
 ## Elevation & Depth
 
-The archive is flat: subtle borders and spacing define sections and specimens, without card shadows. The preview dialog alone uses a structural shadow (`0 24px 100px #0005`) over a dark translucent backdrop (`#191c1ce0`) with 5px blur. This isolates the working demo from the archive.
+Glass depth comes from translucent fills, inset white highlights, soft cool shadows and backdrop blur. The masthead uses 22px blur with 135% saturation; the collection toolbar uses 22px blur with 130% saturation. The featured preview uses 24px blur with 145% saturation. Screenshot pixels themselves are not blurred. Card depth is deliberately lighter than the hero sculpture and modal.
+
+The masthead shadow is `inset 0 1px 0 #ffffffed, 0 8px 28px #364e7510`; cards use `inset 0 1px 0 #fff, 0 6px 20px #364e7508`. The modal retains the stronger `0 24px 100px #0005` shadow and a 14px backdrop blur. Extended shadow, motion and breakpoint records live in `.impeccable/design.json`.
+
+**The Optical Boundary Rule.** Reserve refraction for the decorative sculpture; labels, controls and demo content must remain readable and directly operable.
 
 ## Shapes
 
-Controls and preview labels use the control radius; screenshot frames use the specimen radius. Cards remain open on the page, with rounded corners confined to their image. The dialog uses its own radius, becoming square at the narrow breakpoint. Rules are 1px; screenshot borders use translucent ink (`#282a2912`).
+The mark is an offset pair of geometric E forms, drawn as inline SVG. Brand assets are `public/elseform-mark.svg`, `public/elseform-wordmark.svg` and `public/elseform-social.png`. Rounded rectangles govern navigation, controls, cards and the modal; nested screenshot corners are tighter than their surrounding card. The sculpture is an irregular, softly twisted loop rather than a UI container. Thin translucent rules separate collection, about and footer regions. Keep these roles distinct when adding new components.
 
 ## Components
 
-- **Navigation:** compact wordmark and text links; hover feedback turns blue. Navigation links have a minimum 44px height.
-- **Filters:** wrapping category buttons with a minimum 40px height; selected state is ink with white text. The All filter alone carries the collection count. Selection is exposed with `aria-pressed`.
-- **Search and sort:** bordered search field with a leading icon; native text-only sort control beside the live result count. Search matches names, industries, and tags.
-- **Specimen:** a real screenshot opens the interactive preview, as does the title. Sector and description provide context; Live demo and Get the code remain separate direct links. Hover gently scales the image to 1.025 over 0.6s using `cubic-bezier(0.16, 1, 0.3, 1)`; the preview label fades in over 0.2s on hover or keyboard focus.
-- **Preview:** native modal dialog with a named iframe, desktop/tablet/mobile buttons, direct demo/source links, close button, and Escape dismissal. Background scrolling is locked while open. Frame width transitions over 0.4s; canvas padding over 0.3s.
-- **Empty state:** centered explanation and a Show all templates reset action.
-- **About actions:** documentation link and clone-command copy action with temporary confirmation.
+- **Navigation and opening actions:** the brand returns home, Collection and The idea are in-page links, and Get the source opens the repository. The solid primary action scrolls to the collection. Surprise me chooses an actual entry from the complete catalog and opens its working preview; it does not simulate a result or restrict selection to the current filter.
+- **Glass artwork:** a decorative, `aria-hidden` WebGL canvas ray-marches the loop and calculates reflected/refracted procedural studio light. Global pointer movement gently changes orientation. Draws are throttled to roughly 30fps; resolution is bounded by DPR 1.5 and a 900×700 buffer. Animation pauses when the document is hidden, the canvas leaves an 80px viewport margin, or a template preview is open. Modal pause retains the current frame and GPU program; closing the preview resumes the artwork without rebuilding its resources. Reduced motion renders a static pose without pointer response. A CSS ring remains when WebGL is unavailable, initialization fails or context is lost. No external texture is required.
+- **Category, search and sort:** category buttons expose selection through `aria-pressed`; search matches template name, sector and tags without case sensitivity. Sort offers collection order, newest first and name. The result count is a polite live region. The empty state clears category, query and the saved-only view.
+- **Bookmarks:** save buttons toggle a catalog slug in local component state and attempt persistence under `elseform-saved`. Loaded values are checked against the catalog. If storage fails, bookmarking still works for the current visit. The saved-only count distinguishes “On this device” from “For this visit”; this supplementary note is hidden on narrow screens. Toggling Saved resets category and search. No account or remote synchronization exists. Save controls remain visible on touch devices, when saved, or when keyboard-focused.
+- **Screenshot cards:** a real screenshot and title each open the template preview. Preview labels appear on hover or keyboard focus. Separate Live demo and Get the code links remain available. Screenshot hover enlargement is 1.025 over 0.6s; the surrounding card only changes its glass fill. Orbit is the opening's fixed featured template, not a fictional endorsement.
+- **Preview:** opening any template resets to desktop width and a loading message. The named native modal contains a titled iframe and direct demo/source links; close, backdrop click and Escape dismiss it. Background scrolling is locked while open. The footer identifies the selected template as a fictional brand and interactive front-end demo, not Elseform itself as fictional.
+- **Documentation and copy:** the documentation link opens the repository README. Copy the clone command reports success for 2200ms or shows an explicit failure message with a documentation fallback.
 
-All interactive elements use a 2px blue focus outline with 4px offset. Keep the skip link, descriptive accessible names, live result count, and reduced-motion override that disables transitions, animations, and smooth scrolling.
+Interactive elements use a 2px blue focus outline with 4px offset. Preserve the skip link, native control semantics, accessible names and pressed states. The reduced-motion stylesheet disables transitions, animations and smooth scrolling in addition to the artwork's static mode. The sidecar snippets demonstrate appearances and CSS states; their actual application behaviors live in React.
 
 ## Do's and Don'ts
 
-- Do preserve the quiet shell and let independent template screenshots lead.
-- Do maintain the three-, two-, and one-column responsive progression.
-- Do keep preview, live demo, and source access clear and keyboard accessible.
-- Don't reintroduce the historical oversized annual hero or featured specimen into this minimal gallery.
-- Don't apply the gallery's restrained palette or component styling to the independent template worlds.
-
-### Template worlds
-
-Each folder owns an independent design system, composition, font pairing and motion. No shared hero scaffold. Fictional brands clearly labeled as demos. Real photos with documented asset sources where needed. CSS 3D or real canvas geometry where it supports the sector. Semantic HTML, visible focus, mobile reflow, reduced motion and useful demo interactions are required.
-
-- forma: architectural index, bone/ink, large photographic project table.
-- muse: couture editorial, high contrast serif, oxblood, horizontal collection.
-- ember: restaurant menu, tomato/cream, tactile food editorial.
-- haven: alpine hotel, deep forest, immersive reservation flow.
-- pulse: electronic festival, acid lime/violet, kinetic poster and schedule.
-- orbit: aerospace, midnight/ice, interactive three-dimensional orbital geometry.
-- atelier: creative portfolio, cobalt/yellow, playful draggable-feeling project field.
-- terrain: outdoor expedition, rust/sand, route-led journal and trip selector.
-- ledger: fintech, plum/pale lilac, interactive financial workspace.
-- signal: analytics dashboard, porcelain/teal, dense purposeful data composition.
-- still: wellness studio, lavender/burgundy, slow breathing interaction.
-- roast: specialty coffee, chocolate/orange, product selector and local cart.
-
-### Second collection (historical expansion)
-
-The user requests twelve additional original themes. At that stage, the gallery retained its original world and extended its catalog to 24. The existing preview dialog is explicitly centered in the viewport; device controls share its centerline. New themes deliberately add new sector and composition families:
-
-- frame: monochrome photography contact sheet with image-led project viewing.
-- monograph: independent journal with a newspaper column structure and reading modes.
-- index: literary bookstore organized as a bibliographic shelf and detail index.
-- bloom: floral studio with photographic arrangements and a bouquet builder.
-- velo: performance cycling with racing-red editorial tension and configuration.
-- prism: design conference with a typographic programme and track-based schedule.
-- nocturne: amber listening bar with a dimensional record deck and a local setlist.
-- arcade: indie game playground with a playable memory game and bold geometric identity.
-- kiln: ceramic objects displayed on a dimensional plinth and shoppable material studies.
-- aura: skincare ritual builder with butter/plum editorial restraint.
-- tide: ocean conservation with location-led volunteer actions and photographic storytelling.
-- relay: logistics workspace with searchable shipments, route visualization and reporting.
-
-### Sixty-four-template expansion (historical expansion)
-
-The user requests forty more exceptional, different templates across sectors, completing the collection at 64. That expansion preserved the then-current annual-style gallery and added sorting by collection order, newest first, and name. The current Gallery guidance above supersedes that historical shell direction. English throughout. Each new folder has its own durable direction in DESIGN.md; no shared hero renderer or color-switching page factory.
-
-Three parallel collections expand into services and knowledge; industrial and operational products; culture and everyday life. Four additional spatial experiences cover planetarium, city transport, coworking and auctions. Each owns useful local behavior, an authored motion moment, mobile reflow, licensed local assets and a complete standalone Vite entry.
+- Do preserve the liquid-glass identity and opaque readable text.
+- Do show actual screenshots and working previews with direct source access.
+- Do keep device previews and their toolbar controls centered.
+- Do preserve local bookmarking when persistent storage is unavailable.
+- Don't distort screenshots or embed essential information only in the sculpture.
+- Don't apply the gallery's palette or component styling to independent template worlds.
+- Don't invent customers, endorsements, backend capabilities or brand-clearance claims.

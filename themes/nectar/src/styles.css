@@ -1,0 +1,457 @@
+@font-face {
+  font-family: DM;
+  src: url("./assets/fonts/dm-sans-713ca32c.woff2");
+  font-weight: 100 1000;
+  font-display: swap;
+}
+@font-face {
+  font-family: Caslon;
+  src: url("./assets/fonts/libre-caslon-text-ea80801a.woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Caslon;
+  src: url("./assets/fonts/libre-caslon-text-33765a61.woff2");
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: Space;
+  src: url("./assets/fonts/space-grotesk-98a0d4ac.woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--ink) var(--paper);
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font:
+    16px/1.6 DM,
+    sans-serif;
+}
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+button,
+a {
+  touch-action: manipulation;
+}
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+button {
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.2s;
+}
+button:hover:not(:disabled) {
+  filter: brightness(0.94);
+}
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 5px;
+}
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
+input {
+  caret-color: var(--accent);
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1,
+h2 {
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+h1 {
+  font-size: clamp(44px, 6vw, 88px);
+}
+h2 {
+  font-size: clamp(32px, 4vw, 54px);
+}
+h3 {
+  line-height: 1.25;
+}
+p {
+  max-width: 68ch;
+}
+button,
+select,
+input {
+  min-height: 44px;
+}
+button {
+  border: 1px solid currentColor;
+  background: transparent;
+  padding: 11px 18px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+header a {
+  text-decoration: none;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  padding: 32px 5%;
+  font-size: 12px;
+  border-top: 1px solid currentColor;
+}
+footer p {
+  margin: 0;
+}
+.brand {
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+.action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 13px 23px;
+  border: 0;
+  text-decoration: none;
+}
+.status {
+  min-height: 28px;
+  font-size: 14px;
+  margin: 16px 0 0;
+}
+.muted {
+  opacity: 0.75;
+}
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tabs button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+section[id] {
+  scroll-margin-top: 24px;
+}
+@media (max-width: 700px) {
+  header {
+    align-items: flex-start;
+  }
+  nav {
+    gap: 14px;
+    font-size: 13px;
+  }
+  header nav a:nth-child(n + 3) {
+    display: none;
+  }
+  footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --paper: #f5e9c8;
+  --ink: #513b20;
+  --accent: #9c431d;
+}
+header {
+  padding: 25px 5%;
+  border-bottom: 1px solid #513b2033;
+}
+.brand {
+  font: 42px Caslon;
+  font-style: italic;
+}
+nav a:last-child {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.nectar-intro {
+  text-align: center;
+  padding: 55px 5% 15px;
+}
+.nectar-intro h1 {
+  font: clamp(48px, 6vw, 80px)/1.07 Caslon;
+}
+.nectar-intro p {
+  margin: 0 auto;
+}
+.nectar-intro em {
+  color: #9c431d;
+}
+.tasting {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr 1fr;
+  align-items: center;
+  gap: 4%;
+  padding: 55px 6% 80px;
+}
+.flavors h2 {
+  font: 34px/1.15 Caslon;
+}
+.flavors > button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #513b2044;
+  padding: 18px 0;
+  text-align: left;
+}
+.flavors > button[aria-pressed="true"] {
+  color: #9c431d;
+  font-weight: 700;
+}
+.flavors p {
+  font-size: 13px;
+  margin-top: 25px;
+}
+.jar-stage {
+  height: 440px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  perspective: 900px;
+}
+.jar {
+  width: 220px;
+  transform: rotate(-6deg);
+  animation: jar-turn 6s ease-in-out infinite;
+}
+.lid {
+  height: 35px;
+  background: #82582d;
+  border-radius: 12px 12px 0 0;
+  width: 94%;
+  margin: auto;
+  box-shadow: inset 0 6px 8px #fff3;
+}
+.jar-body {
+  height: 300px;
+  background: var(--honey);
+  border-radius: 25px 25px 32px 32px;
+  padding: 48px 0 30px;
+  box-shadow:
+    inset 14px 0 18px #fff4,
+    inset -18px 0 22px #0002,
+    12px 25px 35px #513b2033;
+  transition: background 0.6s;
+}
+.jar-label {
+  background: #f9f1d8;
+  text-align: center;
+  padding: 20px 5px;
+  display: grid;
+  gap: 10px;
+}
+.jar-label > span {
+  font: 13px Space;
+  letter-spacing: 0.3em;
+}
+.jar-label strong {
+  font: 29px Caslon;
+}
+.jar-label i {
+  font: 17px Caslon;
+}
+.jar-label small {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+.stage-caption {
+  position: absolute;
+  bottom: 4px;
+  font: 16px Caslon;
+  font-style: italic;
+}
+.tasting-note h2 {
+  font: 38px Caslon;
+}
+.tasting-note p {
+  font-size: 15px;
+}
+.tasting-note dl {
+  border-block: 1px solid #513b2044;
+  padding: 18px 0;
+}
+.tasting-note dt {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+.tasting-note dd {
+  margin: 0 0 17px;
+  font: 18px Caslon;
+}
+.tasting-note dd:last-child {
+  margin: 0;
+}
+.tasting-note strong {
+  font: 32px Caslon;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.quantity button {
+  padding: 6px;
+  border: 0;
+}
+.tasting-note .action {
+  width: 100%;
+  margin-top: 20px;
+}
+.fieldnotes {
+  background: #d6d8a3;
+  padding: 70px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 12%;
+}
+.fieldnotes h2 {
+  font-family: Caslon;
+}
+.season-line {
+  display: flex;
+  justify-content: space-between;
+  border-block: 1px solid #513b2044;
+  padding: 22px 0;
+  margin: 26px 0;
+  font-size: 10px;
+  gap: 10px;
+}
+.season-line b {
+  font: 17px Caslon;
+}
+.small {
+  font-size: 12px;
+}
+@keyframes jar-turn {
+  50% {
+    transform: rotate(3deg) translateY(-8px);
+  }
+}
+@media (max-width: 700px) {
+  .nectar-intro {
+    padding: 35px 6% 0;
+  }
+  .tasting {
+    grid-template-columns: 1fr;
+    padding: 30px 8% 45px;
+    gap: 25px;
+  }
+  .jar-stage {
+    grid-row: 1;
+    height: 380px;
+  }
+  .flavors h2 {
+    font-size: 30px;
+  }
+  .flavors > button {
+    display: inline-flex;
+    width: auto;
+    margin-right: 15px;
+    font-size: 13px;
+    gap: 8px;
+  }
+  .flavors > p {
+    display: none;
+  }
+  .fieldnotes {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 45px 7%;
+  }
+  .season-line b {
+    font-size: 14px;
+  }
+  header nav a:first-child {
+    display: none;
+  }
+  .nectar-intro h1 {
+    font-size: 48px;
+  }
+}

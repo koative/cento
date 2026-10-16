@@ -1,0 +1,486 @@
+@import "./base.css";
+:root {
+  --paper: #f0eee5;
+  --ink: #233c76;
+  --accent: #c89b64;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+header {
+  padding: 22px 5% 0;
+}
+.publication-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 8px;
+  letter-spacing: 0.07em;
+}
+.publication-meta a {
+  letter-spacing: 0;
+}
+.wordmark {
+  display: block;
+  text-align: center;
+  font:
+    96px/0.95 Display,
+    serif;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  padding: 25px 0 20px;
+}
+.wordmark span {
+  font:
+    11px Body,
+    sans-serif;
+  letter-spacing: 0;
+  display: block;
+  margin-top: 10px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  border-top: 1px solid #9fa9bd;
+  border-bottom: 1px solid #9fa9bd;
+  padding: 12px 0;
+}
+nav button {
+  padding: 5px 0;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  font-size: 12px;
+}
+nav button[aria-pressed="true"] {
+  border-color: var(--ink);
+}
+main {
+  padding: 0 5%;
+}
+.lead {
+  display: grid;
+  grid-template-columns: 1.05fr 1.1fr 0.7fr;
+  gap: 30px;
+  padding: 40px 0;
+  border-bottom: 1px solid #9fa9bd;
+}
+.lead-story h1 {
+  font:
+    52px/1.03 Display,
+    serif;
+}
+.lead-story em {
+  font-weight: 400;
+}
+.lead-story > p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin-top: 20px;
+}
+.orbit-model {
+  height: 310px;
+  position: relative;
+  perspective: 600px;
+  transform-style: preserve-3d;
+  max-width: 330px;
+  margin-top: 15px;
+}
+.orbit {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #5872a2;
+  border-radius: 50%;
+  position: absolute;
+  left: 25px;
+  top: 10px;
+  transform-style: preserve-3d;
+}
+.o1 {
+  transform: rotateY(65deg) rotateZ(15deg);
+}
+.o2 {
+  transform: rotateX(65deg) rotateZ(-20deg);
+}
+.o3 {
+  transform: rotateY(-35deg) rotateX(35deg);
+  animation: orbital 20s linear infinite;
+}
+.o3:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #b27742;
+}
+.planet {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  position: absolute;
+  left: 95px;
+  top: 80px;
+  background: radial-gradient(circle at 30% 30%, #7194bc, #233c76 70%);
+  box-shadow: 8px 12px 20px #233c7620;
+}
+.orbit-model > span {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  font-size: 7px;
+  letter-spacing: 0.1em;
+}
+.featured {
+  border-left: 1px solid #b0b7c1;
+  padding-left: 30px;
+}
+.featured > img {
+  height: 220px;
+  width: 100%;
+}
+.story-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  letter-spacing: 0.06em;
+  padding: 18px 0;
+}
+.featured h2 {
+  font:
+    36px/1.05 Display,
+    serif;
+}
+.featured p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin-top: 17px;
+}
+.featured > button {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #9fa9bd;
+  padding: 15px 0;
+  font-size: 11px;
+  margin-top: 12px;
+}
+.lead aside {
+  border-left: 1px solid #b0b7c1;
+  padding-left: 25px;
+}
+.lead aside > h2 {
+  font:
+    29px/1.1 Display,
+    serif;
+}
+.lead aside p {
+  font-size: 11px;
+  line-height: 1.9;
+  margin-top: 17px;
+}
+.editor-note {
+  border-top: 1px solid #9fa9bd;
+  padding-top: 23px;
+  margin-top: 30px;
+}
+.editor-note > span {
+  font-size: 7px;
+  letter-spacing: 0.05em;
+}
+.editor-note h3 {
+  font:
+    34px/1 Display,
+    serif;
+  margin-top: 20px;
+}
+.editor-note > span:last-child {
+  display: block;
+  margin-top: 20px;
+  font-size: 9px;
+  letter-spacing: 0;
+}
+.journal {
+  padding: 55px 0;
+}
+.journal-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.journal-heading h2 {
+  font:
+    42px Display,
+    serif;
+}
+.journal-heading > span {
+  font-size: 10px;
+}
+.story-list article {
+  display: grid;
+  grid-template-columns: 120px 1fr 40px;
+  gap: 30px;
+  padding: 25px 0;
+  border-top: 1px solid #b0b7c1;
+}
+.topic {
+  font-size: 10px;
+  margin-top: 8px;
+}
+.story-list h3 {
+  font:
+    31px/1.15 Display,
+    serif;
+}
+.story-list h3 button {
+  font: inherit;
+  border: 0;
+  background: none;
+  text-align: left;
+  padding: 0;
+}
+.story-list p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 12px;
+  max-width: 650px;
+}
+.story-list article > div > span {
+  font-size: 9px;
+  display: block;
+  margin-top: 12px;
+}
+.bookmark {
+  background: none;
+  border: 0;
+  align-self: start;
+  padding: 8px;
+}
+.reader {
+  background: #e2e4dc;
+  padding: 40px 8%;
+  margin-top: 25px;
+}
+.reader > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 9px;
+  align-items: center;
+}
+.reader button {
+  background: none;
+  border: 0;
+  font-size: 11px;
+  padding: 8px 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.reader h2 {
+  font:
+    46px/1.05 Display,
+    serif;
+  margin: 30px 0 25px;
+  max-width: 650px;
+}
+.reader > p {
+  font-size: 16px;
+  line-height: 2;
+  max-width: 70ch;
+}
+.reader-save {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+.reading {
+  background: #233c76;
+  color: #f0eee5;
+  margin: 0 -5.556%;
+  padding: 60px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+}
+.reading h2 {
+  font:
+    60px/1 Display,
+    serif;
+}
+.reading em {
+  font-weight: 400;
+}
+.reading h3 {
+  font:
+    30px Display,
+    serif;
+  margin-bottom: 20px;
+}
+.reading p {
+  font-size: 13px;
+  line-height: 1.9;
+  max-width: 470px;
+}
+.reading > div > span {
+  display: block;
+  font-size: 9px;
+  margin-top: 25px;
+  color: #c7d0de;
+}
+.saved-story {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px 0;
+  border-top: 1px solid #7184a5;
+}
+.saved-story button {
+  border: 0;
+  background: none;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 12px;
+  padding: 0;
+}
+.saved-story button:last-child {
+  font-size: 9px;
+}
+footer {
+  border: 0;
+}
+.footer-mark {
+  font:
+    30px Display,
+    serif;
+  text-decoration: none;
+}
+@keyframes orbital {
+  to {
+    transform: rotateY(-35deg) rotateX(35deg) rotateZ(360deg);
+  }
+}
+@media (max-width: 900px) {
+  .lead {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lead aside {
+    display: none;
+  }
+  .orbit-model {
+    transform: scale(0.85);
+    transform-origin: left top;
+    margin-bottom: -40px;
+  }
+  .lead-story h1 {
+    font-size: 46px;
+  }
+}
+@media (max-width: 650px) {
+  header {
+    padding: 20px 6% 0;
+  }
+  .publication-meta {
+    font-size: 6px;
+    gap: 15px;
+  }
+  .publication-meta > span:nth-child(2) {
+    display: none;
+  }
+  .wordmark {
+    font-size: 84px;
+    padding: 25px 0 20px;
+  }
+  nav {
+    gap: 26px;
+  }
+  nav button {
+    font-size: 10px;
+  }
+  main {
+    padding: 0 6%;
+  }
+  .lead {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 30px;
+  }
+  .lead-story h1 {
+    font-size: 54px;
+  }
+  .lead-story > p {
+    font-size: 12px;
+  }
+  .orbit-model {
+    height: 270px;
+    transform: scale(0.88);
+    transform-origin: center top;
+    margin: 15px auto -25px;
+  }
+  .featured {
+    padding: 25px 0 0;
+    border-left: 0;
+    border-top: 1px solid #b0b7c1;
+  }
+  .featured > img {
+    height: 220px;
+  }
+  .featured h2 {
+    font-size: 37px;
+  }
+  .journal {
+    padding: 40px 0;
+  }
+  .journal-heading {
+    display: block;
+  }
+  .journal-heading h2 {
+    font-size: 38px;
+  }
+  .journal-heading > span {
+    display: block;
+    margin-top: 12px;
+  }
+  .story-list article {
+    grid-template-columns: 1fr 30px;
+    gap: 10px;
+  }
+  .topic {
+    grid-column: 1/-1;
+    margin: 0 0 8px;
+  }
+  .story-list h3 {
+    font-size: 30px;
+  }
+  .reader {
+    padding: 25px;
+  }
+  .reader h2 {
+    font-size: 35px;
+  }
+  .reader > p {
+    font-size: 14px;
+  }
+  .reading {
+    margin: 0 -6.82%;
+    padding: 50px 6%;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .reading h2 {
+    font-size: 53px;
+  }
+  .saved-story button {
+    font-size: 11px;
+  }
+}

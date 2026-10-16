@@ -215,3 +215,7 @@ Authored source styling with representative content; interactive behavior remain
 - Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
 - Don't make decorative motion necessary to understand or use a control.
 - Don't present a local demonstration confirmation as a real transaction.
+
+## Collection 100 refinement
+
+An interactive exploded phone model replaces decorative circuit paths. Visitors assemble the device or inspect its screen, power cell and logic board. Layer motion respects reduced-motion preferences.

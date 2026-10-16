@@ -5,10 +5,9 @@ import {
   Check,
   Plus,
   Minus,
-  House,
   Shield,
-  Heart,
 } from "lucide-react";
+import interior from "./assets/interior.jpg";
 const plans = [
   {
     name: "The essentials",
@@ -88,26 +87,39 @@ export default function App() {
               Fictional insurance concept. Explore illustrative plans.
             </span>
           </div>
-          <div
-            className="life-objects"
-            aria-label="Abstract geometric composition symbolizing a protected home"
-          >
-            <div className="arch">
-              <House strokeWidth={0.6} />
-            </div>
-            <div className="circle">
-              <Heart strokeWidth={0.8} />
-            </div>
-            <div className="little-square">
-              <span>
-                Room for
-                <br />
-                real life.
+          <div className="life-objects">
+            <img
+              className="home-photograph"
+              src={interior}
+              alt="A sunlit living room with a sofa and carefully chosen everyday objects"
+            />
+            <div className="policy-sheet">
+              <div className="policy-head">
+                <Shield size={19} />
+                <span>Your everyday, considered.</span>
+              </div>
+              <h2>{plans[plan].name}</h2>
+              <dl>
+                <div>
+                  <dt>Home</dt>
+                  <dd>{type}</dd>
+                </div>
+                <div>
+                  <dt>Belongings</dt>
+                  <dd>€{value.toLocaleString()}</dd>
+                </div>
+                <div>
+                  <dt>Sample monthly price</dt>
+                  <dd>€{price(plans[plan].base)}</dd>
+                </div>
+              </dl>
+              <a href="#quote">
+                Explore your plan <ArrowUpRight size={16} />
+              </a>
+              <span className="policy-note">
+                ILLUSTRATIVE PLAN · NO POLICY ISSUED
               </span>
             </div>
-            <span className="objects-caption">
-              A little reassurance goes a long way.
-            </span>
           </div>
         </section>
         <section id="quote" className="quote-section">

@@ -8,6 +8,24 @@ import {
   GraduationCap,
   CheckCircle2,
 } from "lucide-react";
+import observation from "./assets/observation.jpg";
+const lenses = [
+  {
+    name: "Shape",
+    text: "Follow the meeting of two planes. Where does one shape become another?",
+    position: "50% 50%",
+  },
+  {
+    name: "Light",
+    text: "Compare the brightest surface with the deepest shadow. Notice how light describes depth.",
+    position: "15% 25%",
+  },
+  {
+    name: "Rhythm",
+    text: "Trace the repeated windows. Look for the moment the pattern changes.",
+    position: "80% 70%",
+  },
+];
 const lessons = [
   {
     name: "Notice the ordinary",
@@ -43,6 +61,7 @@ export default function App() {
   const [done, setDone] = useState<number[]>([]);
   const [notes, setNotes] = useState<Record<number, string>>({});
   const [saved, setSaved] = useState(false);
+  const [lens, setLens] = useState(0);
   const l = lessons[index];
   return (
     <>
@@ -114,10 +133,36 @@ export default function App() {
             </span>
           </div>
           <section className="lesson" key={index}>
-            <div className="type-art" aria-hidden="true">
-              <span>Look</span>
-              <span>closer.</span>
-              <div className="focus-frame" />
+            <div className="observation-study">
+              <div className="observation-image">
+                <img
+                  src={observation}
+                  alt="Architectural study of intersecting building planes and repeated windows"
+                  style={{
+                    objectPosition: lenses[lens].position,
+                    transform: `scale(${lens === 0 ? 1 : 1.35})`,
+                  }}
+                />
+                <span>FIELD STUDY / ARCHITECTURE</span>
+              </div>
+              <div className="observation-guide">
+                <h2>Look a little closer.</h2>
+                <p>{lenses[lens].text}</p>
+                <div aria-label="Observation lens">
+                  {lenses.map((l, i) => (
+                    <button
+                      key={l.name}
+                      aria-pressed={lens === i}
+                      onClick={() => setLens(i)}
+                    >
+                      {l.name}
+                    </button>
+                  ))}
+                </div>
+                <small>
+                  A worked example. Try this with the world around you.
+                </small>
+              </div>
             </div>
             <h1>{l.title}</h1>
             <p>{l.body}</p>

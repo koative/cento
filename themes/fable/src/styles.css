@@ -1,0 +1,425 @@
+@import "./base.css";
+:root {
+  --paper: #fff9e9;
+  --ink: #34277a;
+  --accent: #ef715a;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+header {
+  padding: 26px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  font:
+    700 50px Display,
+    sans-serif;
+  letter-spacing: -0.04em;
+  line-height: 0.85;
+  text-decoration: none;
+}
+.brand span {
+  display: block;
+  font:
+    8px Body,
+    sans-serif;
+  letter-spacing: 0.1em;
+  margin-top: 12px;
+}
+nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  font-size: 13px;
+}
+nav a {
+  text-decoration: none;
+}
+.ticket-link {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  background: #34277a;
+  color: #fff9e9;
+  border-radius: 40px;
+  padding: 13px 22px;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 6% 65px;
+  gap: 50px;
+  align-items: center;
+}
+.hero h1 {
+  font:
+    600 clamp(60px, 6.8vw, 90px)/1 Display,
+    sans-serif;
+}
+.hero h1 em {
+  font-style: normal;
+  color: #c24335;
+}
+.hero-copy p {
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 370px;
+  margin: 25px 0;
+}
+.hero-copy > a {
+  display: inline-flex;
+  gap: 35px;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--ink);
+  font-size: 13px;
+  text-decoration: none;
+}
+.play-world {
+  position: relative;
+  height: 560px;
+}
+.play-world > img {
+  position: absolute;
+  width: 77%;
+  height: 365px;
+  left: 12%;
+  top: 85px;
+  border-radius: 42% 42% 4% 4%;
+  transform: rotate(5deg);
+}
+.block {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  font-family: Display, sans-serif;
+  font-weight: 600;
+}
+.b1 {
+  background: #fbd84c;
+  width: 130px;
+  height: 150px;
+  left: 0;
+  top: 0;
+  border-radius: 50% 50% 10% 10%;
+  font-size: 105px;
+  transform: rotate(-12deg);
+}
+.b2 {
+  background: #aacbb8;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  right: 0;
+  top: 40px;
+  animation: playturn 16s linear infinite;
+}
+.b3 {
+  background: #f09888;
+  width: 110px;
+  height: 130px;
+  bottom: 0;
+  right: 20px;
+  border-radius: 45% 45% 5% 5%;
+  font-size: 100px;
+  transform: rotate(12deg);
+}
+.play-label {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  z-index: 2;
+  background: #34277a;
+  color: #fff9e9;
+  padding: 25px;
+  font:
+    600 26px/1.03 Display,
+    sans-serif;
+  transform: rotate(-8deg);
+}
+.ticker {
+  background: #fbd84c;
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  align-items: center;
+  padding: 20px 3%;
+  font:
+    600 15px Display,
+    sans-serif;
+}
+.programme {
+  padding: 85px 6%;
+}
+.programme-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 40px;
+}
+h2 {
+  font:
+    500 clamp(38px, 4.2vw, 60px)/1.08 Display,
+    sans-serif;
+}
+.programme-heading p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.filters {
+  display: flex;
+  gap: 10px;
+}
+.filters button {
+  border: 1px solid #34277a;
+  background: none;
+  border-radius: 30px;
+  padding: 9px 16px;
+  font-size: 12px;
+}
+.filters button[aria-pressed="true"] {
+  background: #34277a;
+  color: var(--paper);
+}
+.sessions {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+.session {
+  background: #fbd84c;
+  flex: 1;
+  padding: 30px;
+  min-width: 0;
+  border-radius: 14px;
+}
+.session.s1 {
+  background: #ccd9bb;
+}
+.session.s2 {
+  background: #f6b5a7;
+}
+.session-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 10px;
+}
+.session h3 {
+  font:
+    500 30px/1.08 Display,
+    sans-serif;
+  margin: 35px 0 20px;
+}
+.session p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.session-room {
+  font-size: 10px;
+  margin: 25px 0 15px;
+  font-weight: 600;
+}
+.session button {
+  border: 0;
+  border-top: 1px solid #34277a77;
+  background: none;
+  padding: 17px 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+}
+.day-plan {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  border-bottom: 1px solid #c4bfa9;
+  padding: 28px 0;
+  font-size: 12px;
+}
+.day-plan p {
+  max-width: 600px;
+}
+.visit {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 70px;
+  background: #e8e4f0;
+  padding: 65px 6%;
+}
+.visit > div > p {
+  font-size: 13px;
+  line-height: 1.9;
+  margin-top: 25px;
+}
+.ticket {
+  border: 1px dashed #34277a;
+  border-radius: 14px;
+  padding: 30px;
+  background: #fff9e9;
+}
+.ticket h3 {
+  font:
+    27px Display,
+    sans-serif;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 25px 0;
+  font-size: 12px;
+}
+.counter > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.counter button {
+  background: none;
+  border: 1px solid #aaa2c6;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.counter button:disabled {
+  opacity: 0.35;
+}
+.ticket .total {
+  font:
+    44px Display,
+    sans-serif;
+  margin: 0;
+}
+.total span {
+  font:
+    11px Body,
+    sans-serif;
+  display: block;
+}
+.ticket small {
+  display: block;
+  font-size: 10px;
+  margin-top: 20px;
+}
+footer {
+  border: 0;
+}
+footer .brand {
+  font-size: 35px;
+}
+@keyframes playturn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 760px) {
+  header {
+    padding: 25px 6%;
+  }
+  .brand {
+    font-size: 42px;
+  }
+  .brand span {
+    font-size: 6px;
+  }
+  nav > a:not(:last-child) {
+    display: none;
+  }
+  .ticket-link {
+    font-size: 11px;
+    padding: 10px 15px;
+    gap: 12px;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    gap: 35px;
+  }
+  .hero h1 {
+    font-size: 65px;
+  }
+  .play-world {
+    height: 420px;
+  }
+  .play-world > img {
+    height: 285px;
+    top: 60px;
+  }
+  .b1 {
+    width: 95px;
+    height: 115px;
+    font-size: 80px;
+  }
+  .b2 {
+    width: 95px;
+    height: 95px;
+  }
+  .b2 svg {
+    width: 45px;
+  }
+  .b3 {
+    width: 80px;
+    height: 100px;
+    font-size: 75px;
+  }
+  .play-label {
+    font-size: 20px;
+    padding: 18px;
+    bottom: 0;
+  }
+  .ticker {
+    flex-wrap: wrap;
+    font-size: 11px;
+    gap: 17px;
+  }
+  .ticker svg {
+    width: 15px;
+  }
+  .ticker > span:last-child,
+  .ticker > svg:last-of-type {
+    display: none;
+  }
+  .programme {
+    padding: 55px 6%;
+  }
+  .programme-heading {
+    display: block;
+  }
+  .programme-heading > div {
+    margin-top: 25px;
+  }
+  .sessions {
+    flex-direction: column;
+  }
+  .session h3 {
+    font-size: 32px;
+    margin-top: 25px;
+  }
+  .session p {
+    font-size: 14px;
+  }
+  .day-plan {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .visit {
+    grid-template-columns: 1fr;
+    padding: 50px 6%;
+    gap: 30px;
+  }
+  .ticket {
+    padding: 25px;
+  }
+}

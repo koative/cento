@@ -503,3 +503,39 @@ header > span {
     font-size: 44px;
   }
 }
+
+.route-walkthrough {
+  margin: 22px 0;
+  border-block: 1px solid #bbbba9;
+  padding: 17px 0;
+}
+.route-walkthrough > span {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+}
+.route-walkthrough strong {
+  font-weight: 500;
+}
+.route-walkthrough > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 13px;
+}
+.route-walkthrough p {
+  font-size: 11px;
+}
+.route-walkthrough button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #a5ae96;
+  background: transparent;
+  display: grid;
+  place-items: center;
+}
+.route-walkthrough button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}

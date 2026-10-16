@@ -42,36 +42,47 @@ h1 em {
   min-height: 600px;
   perspective: 800px;
 }
-.specimen i {
+.model-topline {
   position: absolute;
-  left: 50%;
-  top: 44%;
-  width: 95px;
-  height: 95px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 28%, #f8cadb, #d37da8 55%, #81446e);
-  transform: rotate(calc(var(--i) * 30deg)) translateX(130px)
-    rotate(calc(var(--i) * -30deg));
-  animation: cell 8s ease-in-out infinite;
-  animation-delay: calc(var(--i) * -0.3s);
-  box-shadow: 8px 15px 30px #5c46621a;
+  inset: 26px 30px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: #42584a;
 }
-.orbit {
+.molecular-model {
   position: absolute;
-  left: 50%;
-  top: 44%;
-  width: 400px;
-  height: 400px;
-  border: 1px solid #a3b29b;
-  border-radius: 50%;
-  transform: translate(-38%, -38%) rotateX(65deg);
-  animation: orbit 18s linear infinite;
+  top: 11%;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  animation: molecule-drift 12s ease-in-out infinite;
 }
-.o2 {
-  animation-delay: -6s;
+.model-controls {
+  position: absolute;
+  bottom: 124px;
+  left: 34px;
+  display: flex;
+  gap: 5px;
 }
-.o3 {
-  animation-delay: -12s;
+.model-controls button {
+  background: transparent;
+  border: 1px solid #899b87;
+  padding: 9px 13px;
+  font-size: 11px;
+  border-radius: 20px;
+}
+.model-controls button[aria-pressed="true"] {
+  background: #233c35;
+  color: #fff;
+  border-color: #233c35;
+}
+@keyframes molecule-drift {
+  50% {
+    transform: rotate(-5deg) translateY(-8px);
+  }
 }
 .specimen-label {
   position: absolute;
@@ -203,17 +214,6 @@ h1 em {
   background: transparent;
   padding: 8px;
 }
-@keyframes cell {
-  50% {
-    translate: 0 -25px;
-    filter: hue-rotate(10deg);
-  }
-}
-@keyframes orbit {
-  to {
-    transform: translate(-38%, -38%) rotateX(65deg) rotate(360deg);
-  }
-}
 @media (max-width: 760px) {
   .opening {
     grid-template-columns: 1fr;
@@ -224,10 +224,7 @@ h1 em {
   .specimen {
     min-height: 450px;
   }
-  .specimen i {
-    width: 75px;
-    height: 75px;
-  }
+
   .study-grid,
   .approach {
     grid-template-columns: 1fr;
@@ -251,5 +248,21 @@ h1 em {
   }
   .nav nav a:last-child {
     display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .molecular-model {
+    top: 3%;
+    height: 60%;
+  }
+  .model-controls {
+    bottom: 110px;
+  }
+  .specimen-label {
+    bottom: 25px;
+  }
+  .specimen-label strong {
+    font-size: 24px;
   }
 }
