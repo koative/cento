@@ -41,3 +41,9 @@ The user requests twelve additional original themes. Keep the gallery world and 
 - aura: skincare ritual builder with butter/plum editorial restraint.
 - tide: ocean conservation with location-led volunteer actions and photographic storytelling.
 - relay: logistics workspace with searchable shipments, route visualization and reporting.
+
+## Sixty-four-template expansion
+
+The user requests forty more exceptional, different templates across sectors, completing the collection at 64. Preserve the established annual-style gallery; add sorting so a larger archive can be explored by collection order, newest first, and name. English throughout. Each new folder has its own durable direction in DESIGN.md; no shared hero renderer or color-switching page factory.
+
+Three parallel collections expand into services and knowledge; industrial and operational products; culture and everyday life. Four additional spatial experiences cover planetarium, city transport, coworking and auctions. Each owns useful local behavior, an authored motion moment, mobile reflow, licensed local assets and a complete standalone Vite entry.

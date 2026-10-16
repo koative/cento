@@ -21,17 +21,25 @@ const demo = (slug: string) => `${base}themes/${slug}/`;
 function App() {
   const [category, setCategory] = useState("All");
   const [query, setQuery] = useState("");
+  const [sort, setSort] = useState("collection");
   const [selected, setSelected] = useState<Template | null>(null);
   const [device, setDevice] = useState("desktop");
   const [loaded, setLoaded] = useState(false);
   const [copied, setCopied] = useState(false);
   const dialog = useRef<HTMLDialogElement>(null);
-  const shown = catalog.filter(
+  const filtered = catalog.filter(
     (t) =>
       (category === "All" || t.category === category) &&
       `${t.name} ${t.sector} ${t.tags.join(" ")}`
         .toLowerCase()
         .includes(query.toLowerCase()),
+  );
+  const shown = [...filtered].sort((a, b) =>
+    sort === "newest"
+      ? Number(b.number) - Number(a.number)
+      : sort === "name"
+        ? a.name.localeCompare(b.name)
+        : Number(a.number) - Number(b.number),
   );
   useEffect(() => {
     if (selected) {
@@ -220,10 +228,15 @@ function App() {
             <span>
               {String(shown.length).padStart(2, "0")} templates to explore
             </span>
-            <span>
-              <SlidersHorizontal size={13} /> {catalog.length} perspectives. One
-              collection.
-            </span>
+            <label className="sort-control">
+              <SlidersHorizontal size={13} />
+              <span className="sr-only">Sort templates</span>
+              <select value={sort} onChange={(e) => setSort(e.target.value)}>
+                <option value="collection">Collection order</option>
+                <option value="newest">Newest first</option>
+                <option value="name">Name A–Z</option>
+              </select>
+            </label>
           </div>
           <div className="template-grid">
             {shown.map((t) => (

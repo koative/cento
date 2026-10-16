@@ -1,0 +1,372 @@
+@import "./base.css";
+:root {
+  --paper: #f6f5ef;
+  --ink: #25352e;
+  --muted: #617066;
+  --accent: #39774d;
+  --line: #d7dcd0;
+  --body: DM;
+}
+h1,
+h2,
+.brand {
+  font-family: Manrope, sans-serif;
+}
+.cipher-opening {
+  padding: 65px 6% 30px;
+}
+.cipher-opening h1 {
+  font-size: clamp(2.8rem, 5.2vw, 5rem);
+  line-height: 1.12;
+}
+.cipher-opening h1 span {
+  color: #778c78;
+}
+.cipher-opening > div:not(.trust-line) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  gap: 25px;
+}
+.cipher-opening p {
+  font-size: 15px;
+}
+.cipher-opening a {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  border-bottom: 1px solid var(--ink);
+  padding: 10px 0;
+  font-size: 14px;
+}
+.trust-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 45px 0 10px;
+}
+.trust-line i {
+  width: 13px;
+  height: 13px;
+  background: #a4bb9b;
+  border-radius: 50%;
+  animation: trust 4s ease-in-out infinite;
+}
+.trust-line span {
+  height: 1px;
+  flex: 1;
+  background: #bac9b3;
+}
+.trust-line i:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+.trust-line i:nth-of-type(3) {
+  animation-delay: 0.8s;
+}
+.trust-line i:nth-of-type(4) {
+  animation-delay: 1.2s;
+}
+.trust-line i:nth-of-type(5) {
+  animation-delay: 1.6s;
+}
+.review {
+  margin: 0 6% 70px;
+  border: 1px solid #c8d2c1;
+  background: #fffef9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px #273b2810;
+}
+.review-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 24px;
+  background: #e8eddf;
+  border-bottom: 1px solid #c8d2c1;
+  font-size: 11px;
+}
+.review-nav > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.review-nav strong {
+  font-size: 13px;
+}
+.review-body {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+.review aside {
+  border-right: 1px solid var(--line);
+  padding: 20px 12px;
+}
+.queue-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 20px;
+  font-size: 9px;
+  letter-spacing: 0.07em;
+}
+.review aside button {
+  width: 100%;
+  justify-content: start;
+  text-align: left;
+  padding: 14px 10px;
+  border: 0;
+  background: transparent;
+  border-radius: 8px;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.review aside button[aria-pressed="true"] {
+  background: #edf0e5;
+}
+.avatar {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background: #dbe5cc;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.review aside strong {
+  font-size: 12px;
+  display: block;
+}
+.review aside small {
+  font-size: 10px;
+  color: var(--muted);
+}
+.risk-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #96ad87;
+  margin-left: auto;
+}
+.risk-dot.elevated {
+  background: #ba8551;
+}
+.review-detail {
+  padding: 30px;
+  min-width: 0;
+}
+.identity {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.avatar.large {
+  width: 49px;
+  height: 49px;
+  font-size: 14px;
+}
+.identity h2 {
+  font-size: 23px;
+  letter-spacing: -0.02em;
+}
+.identity p {
+  font-size: 10px;
+  margin-top: 5px;
+}
+.risk {
+  margin-left: auto;
+  font-size: 10px;
+  background: #e5eddf;
+  padding: 5px 9px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.risk.elevated {
+  background: #f6e9d6;
+  color: #79572c;
+}
+.access-path {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #f5f5ee;
+  margin: 25px 0;
+  padding: 15px;
+  font-size: 10px;
+  flex-wrap: wrap;
+}
+.access-path svg {
+  width: 14px;
+}
+.review-explanation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.review-explanation h3 {
+  font-size: 14px;
+  margin: 10px 0;
+}
+.review-explanation p {
+  font-size: 12px;
+  color: var(--muted);
+}
+.review-explanation dl {
+  margin: 0;
+  display: grid;
+  gap: 12px;
+  font-size: 11px;
+}
+.review-explanation dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.review-explanation dt {
+  color: var(--muted);
+}
+.review-explanation dd {
+  margin: 0;
+  text-align: right;
+}
+.decision {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  padding: 24px 0 14px;
+  border-top: 1px solid var(--line);
+  margin-top: 25px;
+}
+.decision p {
+  font-size: 10px;
+  flex: 1;
+}
+.decision .btn {
+  font-size: 11px;
+  padding: 10px 12px;
+}
+.principles {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  background: #e3e9d7;
+  gap: 10%;
+}
+.principles > div {
+  display: grid;
+  gap: 30px;
+}
+.principles article {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 10px 20px;
+}
+.principles article p {
+  grid-column: 2;
+  font-size: 14px;
+}
+.principles article h3 {
+  font-size: 20px;
+}
+.answers {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 10%;
+}
+.answers h2 {
+  font-size: 36px;
+}
+.answers article {
+  border-bottom: 1px solid var(--line);
+}
+.answers button {
+  justify-content: space-between;
+  text-align: left;
+  gap: 20px;
+  width: 100%;
+  background: none;
+  border: 0;
+  padding: 22px 0;
+  font-size: 14px;
+}
+.answers article p {
+  font-size: 13px;
+  color: var(--muted);
+  padding-bottom: 22px;
+}
+@keyframes trust {
+  50% {
+    background: #39774d;
+    transform: scale(1.35);
+  }
+}
+@media (max-width: 900px) {
+  .review-body {
+    grid-template-columns: 210px 1fr;
+  }
+  .review-detail {
+    padding: 22px;
+  }
+  .review-explanation {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .decision {
+    flex-wrap: wrap;
+  }
+  .decision p {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .cipher-opening > div:not(.trust-line) {
+    flex-direction: column;
+    align-items: start;
+  }
+  .review {
+    margin: 0 4% 40px;
+  }
+  .review-nav > div > span {
+    display: none;
+  }
+  .review-body {
+    grid-template-columns: 1fr;
+  }
+  .review aside {
+    display: flex;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    padding: 10px;
+    gap: 8px;
+    overflow: auto;
+  }
+  .queue-heading {
+    display: none;
+  }
+  .review aside button {
+    min-width: 150px;
+    padding: 10px;
+    margin: 0;
+  }
+  .review aside .avatar {
+    display: none;
+  }
+  .identity {
+    flex-wrap: wrap;
+  }
+  .risk {
+    margin-left: 0;
+  }
+  .review-detail {
+    padding: 20px;
+  }
+  .principles,
+  .answers {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .nav nav a:last-child {
+    display: none;
+  }
+}

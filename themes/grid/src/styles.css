@@ -1,0 +1,316 @@
+@import "./base.css";
+:root {
+  --paper: #fff9e9;
+  --ink: #342c20;
+  --muted: #756449;
+  --accent: #b94e16;
+  --line: #d9cdb4;
+  --body: "DM Sans";
+}
+h1,
+h2,
+.brand {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.nav-action {
+  font-size: 13px;
+  display: flex;
+  gap: 15px;
+}
+.sun-intro {
+  background: #f8aa3d;
+  min-height: 620px;
+  padding: 65px 6%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: end;
+  gap: 80px;
+}
+.sun-intro h1 {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(3rem, 7.5vw, 6rem);
+  font-weight: 600;
+}
+.sun-intro h1 span {
+  color: #59350e;
+}
+.sun-circle {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  left: 40%;
+  top: -125px;
+  color: #f9cf77;
+}
+.sun-circle svg {
+  width: 100%;
+  height: 100%;
+  animation: sunturn 60s linear infinite;
+}
+.intro-note {
+  position: relative;
+  z-index: 1;
+  max-width: 345px;
+  padding-bottom: 10px;
+  display: grid;
+  justify-items: start;
+  gap: 24px;
+}
+.intro-note p {
+  font-size: 20px;
+}
+.intro-note .demo {
+  color: #574020;
+}
+.planner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  scroll-margin-top: 20px;
+}
+.house-view {
+  position: relative;
+  min-height: 740px;
+  overflow: hidden;
+  background: #f0e1c6;
+}
+.house-view img {
+  height: 100%;
+  width: 100%;
+  filter: saturate(0.65);
+}
+.house-view:after {
+  content: "";
+  position: absolute;
+  inset: 50% 0 0;
+  background: linear-gradient(transparent, #202a25c9);
+}
+.energy-chip {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  padding: 16px 22px;
+  background: #fff9e9;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border-radius: 12px;
+}
+.energy-chip strong,
+.energy-chip span {
+  display: block;
+}
+.energy-chip strong {
+  font-size: 26px;
+  line-height: 1.1;
+}
+.energy-chip span {
+  font-size: 11px;
+}
+.house-caption {
+  position: absolute;
+  z-index: 1;
+  bottom: 35px;
+  left: 35px;
+  right: 35px;
+  color: #fff9e9;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 32px;
+}
+.house-caption span {
+  display: block;
+  font:
+    10px/2 "DM Sans",
+    sans-serif;
+  letter-spacing: 0.1em;
+  margin-top: 10px;
+}
+.flow-line {
+  position: absolute;
+  top: 28%;
+  left: 38%;
+  height: 30%;
+  width: 25%;
+  border: 2px dashed #fff0c3;
+  animation: flow 2s linear infinite;
+  transform: skewY(-12deg);
+}
+.controls {
+  padding: 50px 12%;
+}
+.controls h2 {
+  font-size: 48px;
+}
+.controls > p {
+  font-size: 14px;
+  margin: 20px 0;
+}
+.panel-count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 22px 0;
+}
+.panel-count > div:first-child {
+  display: grid;
+  font-size: 14px;
+}
+.panel-count span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.panel-count > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.panel-count button {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+}
+.panel-count output {
+  font-size: 22px;
+}
+.bill-label {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+  margin: 24px 0;
+}
+.bill-label input {
+  width: 100%;
+  margin: 15px 0;
+  accent-color: #a64713;
+}
+.battery {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+}
+.battery span {
+  flex: 1;
+  display: grid;
+}
+.battery strong {
+  font-size: 14px;
+}
+.battery small {
+  font-size: 11px;
+}
+.battery input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--ink);
+}
+.estimate {
+  display: grid;
+  padding: 25px 0;
+  font-size: 11px;
+}
+.estimate strong {
+  font:
+    600 52px/1.2 "Bricolage Grotesque",
+    sans-serif;
+}
+.controls > .btn {
+  width: 100%;
+}
+.how {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 60px;
+}
+.how > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.how article {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 6px 20px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 30px;
+}
+.how article p {
+  grid-column: 2;
+  font-size: 14px;
+}
+.how h3 {
+  font-size: 20px;
+}
+.closing {
+  background: #e4ebca;
+  padding: 65px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+.closing p {
+  font:
+    500 clamp(2.6rem, 5vw, 4.8rem)/1.08 "Bricolage Grotesque",
+    sans-serif;
+}
+.closing em {
+  font-style: normal;
+  color: #627143;
+}
+@keyframes sunturn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes flow {
+  50% {
+    opacity: 0.4;
+  }
+}
+@media (max-width: 760px) {
+  .sun-intro {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 50px 6%;
+  }
+  .sun-circle {
+    left: 45%;
+    width: 350px;
+  }
+  .intro-note p {
+    font-size: 17px;
+  }
+  .planner {
+    grid-template-columns: 1fr;
+  }
+  .house-view {
+    min-height: 400px;
+    height: 400px;
+  }
+  .controls {
+    padding: 40px 6%;
+  }
+  .how {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .closing {
+    align-items: start;
+    flex-direction: column;
+  }
+  .nav-action {
+    display: none;
+  }
+  .controls h2 {
+    font-size: 40px;
+  }
+}

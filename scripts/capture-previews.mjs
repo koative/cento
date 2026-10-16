@@ -13,7 +13,12 @@ for (const slug of slugs) {
     reducedMotion: "reduce",
   });
   const errors = [];
+  const failedAssets = [];
   page.on("pageerror", (e) => errors.push(e.message));
+  page.on("response", (response) => {
+    if (response.status() >= 400 && !response.url().endsWith("favicon.ico"))
+      failedAssets.push({ url: response.url(), status: response.status() });
+  });
   await page.goto(`http://localhost:5173/templates/themes/${slug}/`, {
     waitUntil: "networkidle",
   });
@@ -55,7 +60,7 @@ for (const slug of slugs) {
         right: e.getBoundingClientRect().right,
       })),
   }));
-  report.push({ slug, desktop, mobile, errors });
+  report.push({ slug, desktop, mobile, errors, failedAssets });
   await page.close();
 }
 writeFileSync(".qa/report.json", JSON.stringify(report, null, 2));

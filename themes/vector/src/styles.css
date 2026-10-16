@@ -1,0 +1,374 @@
+@import "./base.css";
+:root {
+  --paper: #e8e8e4;
+  --ink: #222825;
+  --muted: #636b66;
+  --accent: #5a7759;
+  --line: #c4c9c1;
+  --body: "DM Sans";
+}
+h1,
+h2,
+.brand {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+}
+.nav {
+  background: #e8e8e4;
+}
+.brand {
+  letter-spacing: 0.03em;
+}
+.drive {
+  position: relative;
+  min-height: 720px;
+  color: white;
+  background: #28342f;
+  overflow: hidden;
+}
+.drive > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-position: center 55%;
+  filter: brightness(0.65) saturate(0.6);
+  animation: reveal 1.5s ease-out;
+}
+.drive-top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 55px 6%;
+}
+.drive-top h1 {
+  font-size: clamp(4rem, 8vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+.drive-top p {
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: right;
+  padding-top: 10px;
+}
+.drive-bottom {
+  position: absolute;
+  bottom: 35px;
+  left: 6%;
+  right: 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ffffff66;
+  padding-top: 20px;
+}
+.drive-bottom > span {
+  font-size: 10px;
+  letter-spacing: 0.13em;
+}
+.drive-bottom a {
+  display: flex;
+  gap: 40px;
+  font-size: 14px;
+}
+.vision {
+  padding: 65px 6%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12%;
+  align-items: end;
+}
+.vision > div {
+  display: flex;
+  gap: 30px;
+}
+.vision span {
+  font-size: 12px;
+}
+.vision h2 {
+  font-size: 42px;
+}
+.vision > p {
+  font-size: 15px;
+}
+.config {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  background: #d4d9d1;
+}
+.config-visual {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 680px;
+  background: #ced4cc;
+}
+.view-tabs {
+  display: flex;
+  gap: 25px;
+}
+.view-tabs button {
+  background: none;
+  border: 0;
+  padding: 8px 0;
+  border-bottom: 1px solid transparent;
+  font-size: 12px;
+}
+.view-tabs button[aria-pressed="true"] {
+  border-color: var(--ink);
+}
+.car-photo {
+  overflow: hidden;
+  margin: 35px -30px;
+}
+.car-photo img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  filter: saturate(0.2);
+  transition: filter 0.6s;
+}
+.car-photo.graphite img {
+  filter: grayscale(1) brightness(0.7);
+}
+.car-photo.copper img {
+  filter: sepia(0.5) saturate(1.2);
+}
+.visual-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 12px;
+  align-items: center;
+}
+.visual-foot strong {
+  font-size: 25px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.photo-note {
+  font-size: 10px;
+  color: #596359;
+  margin-top: 20px;
+}
+.config-options {
+  padding: 45px 12%;
+}
+.config-options h2 {
+  font-size: 44px;
+  margin-bottom: 30px;
+}
+.trims button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid #a6afa3;
+  padding: 18px 0;
+  font-size: 13px;
+  text-align: left;
+}
+.trims button[aria-pressed="true"] {
+  font-weight: 700;
+  color: #21432a;
+}
+.trims small {
+  margin-left: auto;
+}
+.trims svg {
+  width: 15px;
+}
+.paint {
+  margin: 25px 0;
+  font-size: 11px;
+}
+.paint > div {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+.paint button {
+  height: 29px;
+  width: 29px;
+  border-radius: 50%;
+  border: 3px solid #d4d9d1;
+  outline: 1px solid transparent;
+}
+.paint button[aria-pressed="true"] {
+  outline-color: var(--ink);
+}
+.specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #a6afa3;
+  padding: 20px 0;
+}
+.specs > div {
+  display: grid;
+  gap: 8px;
+}
+.specs strong {
+  font:
+    500 44px/1 "Barlow Condensed",
+    sans-serif;
+}
+.specs small {
+  font:
+    12px "DM Sans",
+    sans-serif;
+  margin-left: 5px;
+}
+.specs span {
+  font-size: 10px;
+}
+.config-options > p {
+  font-size: 13px;
+  margin: 14px 0 22px;
+}
+.config-options > .btn {
+  width: 100%;
+}
+.engineering {
+  height: 350px;
+  display: grid;
+  place-items: center;
+  perspective: 900px;
+}
+.chassis {
+  height: 250px;
+  width: 150px;
+  background: repeating-linear-gradient(
+    0deg,
+    #9aaa91 0 14px,
+    #5d6f57 15px 16px
+  );
+  border: 12px solid #3e4e3d;
+  position: relative;
+  transform: rotateX(40deg) rotateZ(-45deg);
+  animation: chassis 6s ease-in-out infinite;
+}
+.chassis i {
+  width: 28px;
+  height: 60px;
+  background: #222b24;
+  position: absolute;
+  left: -35px;
+  top: 0;
+  border-radius: 8px;
+}
+.chassis i:nth-child(2) {
+  left: auto;
+  right: -35px;
+}
+.chassis i:nth-child(3) {
+  top: auto;
+  bottom: 0;
+}
+.chassis i:nth-child(4) {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: -35px;
+}
+.chassis span {
+  font-size: 9px;
+  background: #d4d9d1;
+  position: absolute;
+  left: -15px;
+  top: 45%;
+  white-space: nowrap;
+  padding: 6px;
+}
+.engineering > p {
+  font-size: 10px;
+}
+.details {
+  background: #202a24;
+  color: #edf0e7;
+  padding: 65px 6%;
+}
+.details > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+  margin-top: 50px;
+}
+.details article {
+  border-top: 1px solid #73816f;
+  padding-top: 20px;
+}
+.details span {
+  font-size: 10px;
+  color: #b5c5aa;
+}
+.details h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+.details p {
+  font-size: 13px;
+  color: #c4cdc0;
+}
+@keyframes reveal {
+  from {
+    scale: 1.06;
+    filter: brightness(0.5) saturate(0.6);
+  }
+}
+@keyframes chassis {
+  50% {
+    transform: rotateX(50deg) rotateZ(-30deg);
+  }
+}
+@media (max-width: 760px) {
+  .drive {
+    min-height: 650px;
+  }
+  .drive-top {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .drive-top p {
+    text-align: left;
+  }
+  .drive > img {
+    object-position: 58% center;
+  }
+  .vision,
+  .config {
+    grid-template-columns: 1fr;
+  }
+  .vision {
+    gap: 30px;
+  }
+  .vision h2 {
+    font-size: 36px;
+  }
+  .config-visual {
+    min-height: 500px;
+    padding: 25px;
+  }
+  .car-photo {
+    margin: 20px -25px;
+  }
+  .config-options {
+    padding: 40px 6%;
+  }
+  .details > div {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .nav nav a:first-child {
+    display: none;
+  }
+  .drive-bottom > span {
+    font-size: 8px;
+  }
+  .drive-bottom a {
+    gap: 15px;
+  }
+}

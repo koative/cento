@@ -1,0 +1,419 @@
+@import "./base.css";
+:root {
+  --paper: #f7f1e7;
+  --ink: #49382e;
+  --muted: #857364;
+  --accent: #a35436;
+  --line: #dbccbb;
+  --body: "DM Sans";
+}
+h1,
+h2,
+.brand {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+}
+.brand {
+  font-size: 35px;
+}
+.brand svg {
+  width: 23px;
+}
+.vault-intro {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  padding: 60px 6% 65px;
+  gap: 8%;
+  align-items: center;
+}
+.intro-title h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 1.04;
+}
+.intro-title em {
+  color: #ae6d4c;
+  font-weight: 400;
+}
+.intro-title p {
+  font-size: 17px;
+  max-width: 33ch;
+  margin: 25px 0;
+}
+.intro-title > .demo {
+  display: block;
+  font-size: 10px;
+  margin-top: 25px;
+}
+.life-objects {
+  height: 480px;
+  position: relative;
+}
+.arch {
+  position: absolute;
+  width: 220px;
+  height: 300px;
+  top: 20px;
+  left: 20%;
+  border-radius: 120px 120px 0 0;
+  background: #c9d1ae;
+  display: grid;
+  place-items: center;
+  transform: rotate(-8deg);
+  animation: sway 9s ease-in-out infinite;
+}
+.arch svg {
+  height: 125px;
+  width: 125px;
+  color: #5d714a;
+}
+.circle {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  background: #e6b98e;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.circle svg {
+  width: 95px;
+  height: 95px;
+  color: #9e6240;
+}
+.little-square {
+  position: absolute;
+  right: 0;
+  bottom: 70px;
+  background: #ae6d4c;
+  color: #f7f1e7;
+  height: 180px;
+  width: 180px;
+  border-radius: 8px;
+  transform: rotate(8deg);
+  display: grid;
+  place-items: center;
+}
+.little-square span {
+  font:
+    400 33px/1.1 "Instrument Serif",
+    serif;
+}
+.objects-caption {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  font-size: 11px;
+  color: var(--muted);
+}
+.quote-section {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 12%;
+  background: #e8e5d4;
+  padding: 55px 6%;
+}
+.quote-title h2 {
+  font-size: 50px;
+}
+.quote-title p {
+  font-size: 14px;
+  margin-top: 20px;
+  max-width: 33ch;
+}
+.quote-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 25px 35px;
+  align-items: start;
+}
+.quote-inputs .field {
+  font-size: 12px;
+}
+.quote-inputs select {
+  background: #f4f1e6;
+}
+.value-input {
+  display: grid;
+  gap: 10px;
+  font-size: 12px;
+}
+.value-input strong {
+  font-size: 27px;
+  font-weight: 400;
+}
+.value-input input {
+  width: 100%;
+  accent-color: #7b6249;
+}
+.billing {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #cbc9b7;
+  padding-top: 25px;
+  font-size: 12px;
+}
+.billing input {
+  accent-color: #806044;
+  width: 18px;
+  height: 18px;
+}
+.billing span {
+  font-size: 10px;
+  color: #63734a;
+  margin-left: auto;
+}
+.plans {
+  padding: 65px 6%;
+}
+.plan-heading {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+.plan-heading h2 {
+  font-size: 45px;
+}
+.plan-heading p {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 20px;
+}
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.plan {
+  text-align: left;
+  display: block;
+  position: relative;
+  background: transparent;
+  border: 1px solid #cfc0ac;
+  border-radius: 12px;
+  padding: 28px;
+}
+.plan[aria-pressed="true"] {
+  background: #e7ebdb;
+  border-color: #6b7c51;
+}
+.plan-mark {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 24px;
+  height: 24px;
+  background: #eee5d8;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.plan-mark svg {
+  width: 12px;
+}
+.plan[aria-pressed="true"] .plan-mark {
+  background: #61784c;
+  color: #fff;
+}
+.plan h3 {
+  font:
+    400 28px "Instrument Serif",
+    serif;
+  margin: 20px 0 8px;
+}
+.plan p {
+  font-size: 11px;
+  color: var(--muted);
+}
+.price {
+  display: block;
+  font:
+    400 53px "Instrument Serif",
+    serif;
+  margin: 24px 0;
+}
+.price small {
+  font:
+    11px "DM Sans",
+    sans-serif;
+}
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 30px;
+  display: grid;
+  gap: 12px;
+  min-height: 85px;
+}
+.plan li {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.plan li svg {
+  width: 13px;
+  color: #61784c;
+}
+.choose {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  border-top: 1px solid #c7c9b7;
+  padding-top: 18px;
+}
+.plan-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding-top: 25px;
+  margin-top: 30px;
+}
+.plan-summary strong {
+  font-size: 15px;
+}
+.plan-summary p {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+.saved {
+  font-size: 12px;
+  background: #e7ebdb;
+  padding: 15px;
+  margin-top: 20px;
+}
+.care {
+  padding: 65px 6%;
+  background: #9f6245;
+  color: #fff4e4;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 10%;
+}
+.care h2 {
+  font-size: 57px;
+}
+.care em {
+  font-weight: 400;
+  color: #f0cca7;
+}
+.care p {
+  font-size: 15px;
+}
+.care > div > div {
+  display: grid;
+  gap: 12px;
+  margin-top: 25px;
+  font-size: 12px;
+}
+.care span {
+  border-bottom: 1px solid #dbab89;
+  padding-bottom: 12px;
+}
+.questions {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 12%;
+}
+.questions h2 {
+  font-size: 46px;
+}
+.questions article {
+  border-bottom: 1px solid var(--line);
+}
+.questions button {
+  background: none;
+  border: 0;
+  width: 100%;
+  justify-content: space-between;
+  text-align: left;
+  padding: 20px 0;
+  font-size: 13px;
+  gap: 20px;
+}
+.questions article p {
+  font-size: 12px;
+  color: var(--muted);
+  padding-bottom: 20px;
+}
+@keyframes sway {
+  50% {
+    transform: rotate(-3deg) translateY(-9px);
+  }
+}
+@media (max-width: 750px) {
+  .vault-intro {
+    grid-template-columns: 1fr;
+    padding-top: 45px;
+    gap: 20px;
+  }
+  .life-objects {
+    height: 370px;
+    max-width: 380px;
+    width: 100%;
+    margin: auto;
+  }
+  .arch {
+    width: 170px;
+    height: 240px;
+  }
+  .circle,
+  .little-square {
+    height: 140px;
+    width: 140px;
+    bottom: 45px;
+  }
+  .circle svg {
+    width: 75px;
+  }
+  .little-square span {
+    font-size: 28px;
+  }
+  .objects-caption {
+    left: 10%;
+    font-size: 10px;
+  }
+  .quote-section,
+  .questions,
+  .care {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .quote-title h2 {
+    font-size: 42px;
+  }
+  .quote-inputs {
+    grid-template-columns: 1fr;
+  }
+  .billing {
+    gap: 8px;
+  }
+  .billing span {
+    font-size: 9px;
+  }
+  .plan-grid {
+    grid-template-columns: 1fr;
+  }
+  .plan {
+    padding: 25px;
+  }
+  .plan ul {
+    min-height: 0;
+  }
+  .plan-summary {
+    align-items: start;
+    flex-direction: column;
+  }
+  .care h2 {
+    font-size: 43px;
+  }
+  .nav nav a:last-child {
+    display: none;
+  }
+}

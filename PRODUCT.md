@@ -20,7 +20,7 @@ Publish a growing collection of distinctly designed website templates, each with
 
 ## Capabilities and Constraints
 
-Twelve templates in the first collection; the user requested twelve additional templates, bringing the total to twenty-four. Responsive, keyboard-accessible previews, source links and independently buildable folders. Static demonstration interactions only; no backend or payment processing requested. User explicitly delegates creative orchestration and parallel implementation to agents. Preserve the existing koative.com site.
+The user now requests sixty-four templates: the existing twenty-four plus forty additional independent sector-specific designs. Responsive, keyboard-accessible previews, source links and independently buildable folders. Static demonstration interactions only; no backend or payment processing requested. User explicitly delegates creative orchestration and parallel implementation to agents. Preserve the existing koative.com site.
 
 ## Brand Commitments
 

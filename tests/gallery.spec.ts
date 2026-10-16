@@ -80,3 +80,26 @@ test("Signal search and downloadable CSV", async ({ page }) => {
   await page.getByLabel("Reporting period").selectOption("7 days");
   await expect(page.getByText("6,961", { exact: true })).toBeVisible();
 });
+
+test("gallery sorts by newest and name while preserving filters", async ({
+  page,
+}) => {
+  await page.goto("./");
+  await page.getByLabel("Sort templates").selectOption("newest");
+  await expect(page.locator(".template-entry").first()).toHaveAttribute(
+    "id",
+    catalog.at(-1)!.slug,
+  );
+  await page.getByLabel("Sort templates").selectOption("name");
+  const first = [...catalog].sort((a, b) => a.name.localeCompare(b.name))[0];
+  await expect(page.locator(".template-entry").first()).toHaveAttribute(
+    "id",
+    first.slug,
+  );
+  await page.getByRole("searchbox").fill("planetarium");
+  await expect(page.locator(".template-entry")).toHaveCount(1);
+  await expect(page.locator(".template-entry")).toHaveAttribute(
+    "id",
+    "equinox",
+  );
+});

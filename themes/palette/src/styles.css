@@ -1,0 +1,630 @@
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(./assets/fonts/bricolage-grotesque-5f754c3a.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(./assets/fonts/bricolage-grotesque-5f754c3a.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(./assets/fonts/bricolage-grotesque-5f754c3a.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(./assets/fonts/bricolage-grotesque-5f754c3a.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(./assets/fonts/bricolage-grotesque-5f754c3a.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+}
+:root {
+  --paper: #f2ede2;
+  --ink: #24265c;
+  font-family: "DM Sans", sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+button,
+a {
+  touch-action: manipulation;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+a {
+  color: inherit;
+  text-underline-offset: 5px;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 5px;
+}
+button {
+  border: 0;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1,
+h2 {
+  text-wrap: balance;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+svg {
+  flex-shrink: 0;
+}
+p {
+  line-height: 1.6;
+}
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
+input,
+textarea {
+  caret-color: var(--ink);
+}
+* {
+  scrollbar-color: var(--ink) var(--paper);
+  scrollbar-width: thin;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+footer {
+  padding: 30px 5vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 12px;
+  border-top: 1px solid currentColor;
+}
+footer p {
+  margin: 0;
+  max-width: 65ch;
+}
+.status {
+  font-size: 14px;
+  min-height: 1.6em;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media (max-width: 650px) {
+  footer {
+    flex-direction: column;
+  }
+}
+header {
+  padding: 25px 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c0bfcb;
+  gap: 25px;
+}
+.brand {
+  font: 700 38px "Bricolage Grotesque";
+  letter-spacing: -0.035em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav {
+  display: flex;
+  gap: 30px;
+  font-size: 12px;
+}
+nav a {
+  text-decoration: none;
+}
+.color-opening {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  padding: 60px 5vw 75px;
+  align-items: center;
+  overflow: hidden;
+}
+.color-title h1 {
+  font: 700 clamp(65px, 7.5vw, 105px)/0.94 "Bricolage Grotesque";
+  letter-spacing: -0.04em;
+  margin-bottom: 30px;
+}
+.color-title h1 span {
+  color: #e85b3e;
+}
+.color-title p {
+  font-size: 15px;
+}
+.color-title a {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 35px;
+}
+.specimen-wall {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding: 25px 10px;
+  perspective: 900px;
+}
+.specimen-wall > div {
+  aspect-ratio: 0.69;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 14px;
+  box-shadow: 4px 12px 18px #25234124;
+  animation: specimen-arrive 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.specimen-wall > div:nth-child(even) {
+  margin-top: 25px;
+  margin-bottom: -25px;
+}
+.specimen-wall span {
+  font-size: 10px;
+}
+.specimen-wall b {
+  font: 500 21px/1.1 "Bricolage Grotesque";
+  max-width: 9ch;
+  text-shadow: 0 1px 6px #0005;
+}
+.pigments {
+  padding: 60px 5vw;
+  background: #e5e4dc;
+}
+.pigment-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 35px;
+  margin-bottom: 35px;
+}
+.pigment-heading h2 {
+  font: 600 46px/1 "Bricolage Grotesque";
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+.filters {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.filters button {
+  border: 1px solid #b4b3c1;
+  padding: 8px 13px;
+  background: transparent;
+  font-size: 11px;
+}
+.filters button[aria-pressed="true"] {
+  background: #24265c;
+  color: #fff;
+}
+.pigment-list article {
+  display: grid;
+  grid-template-columns: 45px 1.3fr 0.4fr 1fr 110px;
+  gap: 25px;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #b4b3c1;
+}
+.sample {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.pigment-list h3 {
+  font: 600 22px "Bricolage Grotesque";
+  margin: 0;
+}
+.pigment-list article > span:not(.sample) {
+  font-size: 11px;
+}
+.pigment-list button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  font-size: 11px;
+  gap: 10px;
+  padding: 10px 0;
+}
+.mixing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 70px 5vw;
+  gap: 60px;
+}
+.mix-controls h2 {
+  font: 600 57px/0.97 "Bricolage Grotesque";
+  letter-spacing: -0.03em;
+}
+.mix-controls > p {
+  font-size: 14px;
+}
+.color-selects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 30px;
+}
+.color-selects label {
+  font-size: 11px;
+}
+.color-selects select {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #9594a7;
+  padding: 13px 0;
+  font-size: 13px;
+  margin-top: 8px;
+}
+.ratio {
+  display: block;
+  font-size: 12px;
+  margin: 30px 0;
+}
+.ratio > span {
+  float: right;
+}
+.ratio input {
+  width: 100%;
+  margin: 20px 0 0;
+  accent-color: #24265c;
+}
+.save-mix {
+  width: 100%;
+  background: #24265c;
+  color: #fff;
+  padding: 19px 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+.mix-controls .mix-note {
+  font-size: 10px;
+  margin: 15px 0 0;
+}
+.mix-result {
+  min-height: 470px;
+  position: relative;
+  padding: 28px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: background 0.4s;
+}
+.mix-result > span {
+  position: absolute;
+  top: 28px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  background: #24265c;
+  padding: 7px 10px;
+}
+.mix-result output {
+  font: 600 43px "Bricolage Grotesque";
+  text-shadow: 0 1px 6px #0008;
+}
+.mix-result p {
+  font-size: 12px;
+  text-shadow: 0 1px 6px #0008;
+  margin: 15px 0 0;
+}
+.mix-geometry {
+  position: absolute;
+  inset: 20% 14% 34%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mix-geometry > div {
+  width: 63%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: 6px 12px 25px #0002;
+}
+.mix-geometry > div + div {
+  margin-left: -25%;
+  mix-blend-mode: screen;
+}
+.your-palette {
+  padding: 55px 5vw;
+  background: #24265c;
+  color: #f2ede2;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 35px;
+}
+.your-palette h2 {
+  font: 500 36px "Bricolage Grotesque";
+  letter-spacing: -0.02em;
+}
+.your-palette p {
+  font-size: 13px;
+  max-width: 38ch;
+}
+.saved-colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+.saved-colors > div {
+  width: 110px;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  color: #fff;
+}
+.saved-colors span {
+  font-size: 9px;
+  background: #24265c;
+  padding: 4px;
+}
+.saved-colors button {
+  background: #f2ede2;
+  color: #24265c;
+  padding: 5px;
+  display: grid;
+  place-items: center;
+}
+@keyframes specimen-arrive {
+  from {
+    translate: 0 35px;
+    rotate: y 15deg;
+  }
+  to {
+    translate: 0 0;
+    rotate: y 0deg;
+  }
+}
+@media (max-width: 850px) {
+  .color-opening {
+    gap: 25px;
+  }
+  .specimen-wall {
+    gap: 10px;
+  }
+  .specimen-wall > div {
+    padding: 12px;
+  }
+  .specimen-wall b {
+    font-size: 16px;
+  }
+  .color-title h1 {
+    font-size: 75px;
+  }
+  .pigment-heading {
+    display: block;
+  }
+  .filters {
+    margin-top: 25px;
+  }
+  .mixing {
+    gap: 30px;
+  }
+  .pigment-list article {
+    gap: 15px;
+    grid-template-columns: 45px 1.4fr 0.4fr 1fr 95px;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    padding: 20px;
+  }
+  .brand {
+    font-size: 30px;
+  }
+  nav {
+    gap: 14px;
+    font-size: 10px;
+  }
+  nav a:first-child {
+    display: none;
+  }
+  .color-opening {
+    padding: 40px 22px 55px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .color-title h1 {
+    font-size: 79px;
+  }
+  .specimen-wall {
+    padding: 15px 5px;
+    gap: 12px;
+  }
+  .specimen-wall b {
+    font-size: 18px;
+  }
+  .pigments {
+    padding: 45px 22px;
+  }
+  .pigment-heading h2 {
+    font-size: 41px;
+  }
+  .pigment-list article {
+    grid-template-columns: 33px 1fr 85px;
+    gap: 12px;
+  }
+  .sample {
+    width: 30px;
+    height: 30px;
+  }
+  .pigment-list h3 {
+    font-size: 19px;
+  }
+  .pigment-list article > span:not(.sample) {
+    display: none;
+  }
+  .mixing {
+    padding: 45px 22px;
+    grid-template-columns: 1fr;
+  }
+  .mix-controls h2 {
+    font-size: 50px;
+  }
+  .mix-result {
+    min-height: 430px;
+  }
+  .your-palette {
+    padding: 45px 22px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.specimen-wall b {
+  text-shadow: none;
+}
+.mix-result output,
+.mix-result > p {
+  background: #24265c;
+  color: #fff;
+  width: fit-content;
+  padding: 4px 8px;
+  text-shadow: none;
+}

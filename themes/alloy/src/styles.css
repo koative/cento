@@ -1,0 +1,377 @@
+@import "./base.css";
+:root {
+  --paper: #ece9e0;
+  --ink: #35352e;
+  --muted: #79776a;
+  --accent: #aa512a;
+  --line: #c9c5b6;
+  --body: "DM Sans";
+}
+h1,
+h2,
+h3,
+.brand {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+}
+.brand {
+  font-size: 30px;
+  letter-spacing: 0.02em;
+}
+.nav {
+  padding: 22px 5%;
+}
+.alloy-title {
+  padding: 50px 5% 40px;
+}
+.alloy-title h1 {
+  font-size: clamp(3.4rem, 7.8vw, 6rem);
+  line-height: 0.94;
+  letter-spacing: -0.02em;
+}
+.alloy-title > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 35px;
+  margin-top: 30px;
+}
+.alloy-title span {
+  font-size: 9px;
+  letter-spacing: 0.06em;
+}
+.alloy-title p {
+  font-size: 14px;
+  max-width: 43ch;
+}
+.project-stage {
+  display: grid;
+  grid-template-columns: 1.9fr 1fr;
+  margin: 0 5% 65px;
+  gap: 35px;
+}
+.project-photo {
+  position: relative;
+  min-height: 550px;
+  background: #6f7469;
+  overflow: hidden;
+}
+.project-photo > img {
+  width: 100%;
+  height: 550px;
+  filter: saturate(0.45) brightness(0.85);
+  animation: building-reveal 1.2s ease-out;
+}
+.project-photo:after {
+  content: "";
+  position: absolute;
+  inset: 55% 0 0;
+  background: linear-gradient(transparent, #242821aa);
+}
+.project-stamp {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background: #c8d5b5;
+  color: #36472d;
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 16px 20px;
+  transform: rotate(-6deg);
+  border: 1px solid #617650;
+}
+.project-stamp strong {
+  font:
+    600 23px "Barlow Condensed",
+    sans-serif;
+}
+.project-caption {
+  position: absolute;
+  z-index: 1;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  color: #fff7e8;
+  gap: 20px;
+}
+.project-caption h2 {
+  font-size: 48px;
+}
+.project-caption span {
+  font-size: 10px;
+}
+.project-index {
+  display: flex;
+  flex-direction: column;
+}
+.project-index button {
+  width: 100%;
+  text-align: left;
+  justify-content: start;
+  flex-wrap: wrap;
+  position: relative;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--line);
+  padding: 22px 0;
+  gap: 8px;
+}
+.project-index button > span {
+  display: block;
+  font-size: 10px;
+  width: 100%;
+  color: var(--muted);
+}
+.project-index strong {
+  font:
+    500 29px "Barlow Condensed",
+    sans-serif;
+}
+.project-index svg {
+  margin-left: auto;
+}
+.project-index button[aria-pressed="true"] {
+  color: var(--accent);
+}
+.project-index > p {
+  font-size: 13px;
+  border-top: 1px solid var(--line);
+  padding-top: 25px;
+  margin-top: auto;
+}
+.project-index > .demo {
+  font-size: 9px;
+  margin-top: 20px;
+}
+.method {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 10%;
+  background: #2c3b30;
+  color: #e7ebdd;
+  padding: 60px 6%;
+}
+.method-intro h2 {
+  font-size: 51px;
+}
+.method-intro p {
+  font-size: 13px;
+  max-width: 34ch;
+  margin-top: 25px;
+  color: #c2ceb9;
+}
+.stage-tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid #68775e;
+  padding-bottom: 20px;
+}
+.stage-tabs button {
+  display: grid;
+  justify-items: center;
+  gap: 9px;
+  border: 0;
+  background: transparent;
+  color: #bac9af;
+  font-size: 10px;
+}
+.stage-tabs button > span {
+  display: grid;
+  place-items: center;
+  border: 1px solid #718262;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 9px;
+}
+.stage-tabs button[aria-pressed="true"] {
+  color: #fff7e8;
+}
+.stage-tabs button[aria-pressed="true"] > span {
+  background: #c3d0a2;
+  color: #2c3b30;
+  border-color: #c3d0a2;
+}
+.stage-content {
+  padding-top: 25px;
+}
+.stage-content > span {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: #a5b892;
+}
+.stage-content h3 {
+  font-size: 31px;
+  margin: 15px 0;
+}
+.stage-content p {
+  font-size: 13px;
+  color: #c2ceb9;
+}
+.blueprint {
+  width: 230px;
+  height: 140px;
+  border: 2px solid #8fa47b;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+  padding: 10px;
+  position: relative;
+  margin-top: 35px;
+}
+.blueprint > span {
+  border: 1px solid #708364;
+  background: #2c3b30;
+  transition: background 0.6s;
+}
+.blueprint > span.built {
+  background: #59714b;
+}
+.blueprint > span:first-child {
+  grid-row: span 2;
+}
+.blueprint > span:last-of-type {
+  display: none;
+}
+.measure {
+  position: absolute;
+  right: -65px;
+  top: 50%;
+  font: 9px monospace;
+  font-style: normal;
+  color: #a5b892;
+  transform: rotate(90deg);
+}
+.capabilities {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 10%;
+}
+.capabilities h2 {
+  font-size: 48px;
+}
+.capabilities article {
+  border-top: 1px solid var(--line);
+}
+.capabilities button {
+  font-size: 18px;
+  width: 100%;
+  justify-content: space-between;
+  text-align: left;
+  background: none;
+  border: 0;
+  padding: 24px 0;
+  gap: 20px;
+}
+.capabilities article p {
+  font-size: 13px;
+  color: var(--muted);
+  padding-bottom: 24px;
+}
+.brief {
+  background: #c3cbb0;
+  padding: 60px 6%;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 10%;
+}
+.brief h2 {
+  font-size: 53px;
+}
+.brief > div > p {
+  font-size: 14px;
+  margin-top: 25px;
+  max-width: 35ch;
+}
+.brief form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.brief .field {
+  font-size: 11px;
+}
+.brief input,
+.brief select {
+  background: #d4dbc6;
+  border-color: #9aa78b;
+}
+.project-email,
+.brief .btn,
+.brief .status {
+  grid-column: 1/-1;
+}
+.brief .status {
+  font-size: 11px;
+}
+.footer .brand {
+  font-size: 25px;
+}
+@keyframes building-reveal {
+  from {
+    scale: 1.04;
+    filter: saturate(0.2) brightness(0.65);
+  }
+}
+@media (max-width: 750px) {
+  .alloy-title {
+    padding: 40px 6% 30px;
+  }
+  .alloy-title > div {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .project-stage {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .project-photo,
+  .project-photo > img {
+    height: 430px;
+    min-height: 430px;
+  }
+  .project-caption {
+    left: 22px;
+    right: 22px;
+    bottom: 25px;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .project-caption h2 {
+    font-size: 42px;
+  }
+  .project-index button {
+    padding: 18px 0;
+  }
+  .project-index > p {
+    margin-top: 15px;
+  }
+  .method,
+  .capabilities,
+  .brief {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .method-intro h2,
+  .brief h2 {
+    font-size: 43px;
+  }
+  .capabilities h2 {
+    font-size: 40px;
+  }
+  .nav nav a:nth-child(2) {
+    display: none;
+  }
+  .brief form {
+    grid-template-columns: 1fr;
+  }
+  .measure {
+    right: -55px;
+  }
+}

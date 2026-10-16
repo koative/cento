@@ -1295,3 +1295,23 @@ footer > a:last-child {
     grid-template-columns: minmax(0, 1fr) auto;
   }
 }
+
+.sort-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #606256;
+}
+.sort-control select {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  padding: 6px 4px;
+  cursor: pointer;
+  max-width: 145px;
+}
+.sort-control select:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}

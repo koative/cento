@@ -1,0 +1,566 @@
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/cormorant-garamond-291655ad.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/cormorant-garamond-291655ad.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/cormorant-garamond-d9ec8210.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/cormorant-garamond-d9ec8210.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./assets/fonts/cormorant-garamond-d9ec8210.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/manrope-4872f2a6.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/manrope-4872f2a6.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./assets/fonts/manrope-4872f2a6.woff2) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(./assets/fonts/dm-sans-713ca32c.woff2) format("woff2");
+}
+:root {
+  --paper: #ebe3d5;
+  --ink: #272321;
+  font-family: "DM Sans", sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+button,
+a {
+  touch-action: manipulation;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+a {
+  color: inherit;
+  text-underline-offset: 5px;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 5px;
+}
+button {
+  border: 0;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1,
+h2 {
+  text-wrap: balance;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+svg {
+  flex-shrink: 0;
+}
+p {
+  line-height: 1.6;
+}
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
+input,
+textarea {
+  caret-color: var(--ink);
+}
+* {
+  scrollbar-color: var(--ink) var(--paper);
+  scrollbar-width: thin;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+footer {
+  padding: 30px 5vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 12px;
+  border-top: 1px solid currentColor;
+}
+footer p {
+  margin: 0;
+  max-width: 65ch;
+}
+.status {
+  font-size: 14px;
+  min-height: 1.6em;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media (max-width: 650px) {
+  footer {
+    flex-direction: column;
+  }
+}
+header {
+  padding: 25px 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #b5aca0;
+}
+.brand {
+  font: 500 50px/0.9 "Cormorant Garamond";
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.brand span {
+  font: 9px/1.5 "DM Sans";
+  letter-spacing: 0.13em;
+  max-width: 12ch;
+}
+nav {
+  display: flex;
+  gap: 35px;
+  font-size: 12px;
+}
+nav a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.opening {
+  padding: 55px 8vw 65px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+.opening-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.opening h1 {
+  font: 400 clamp(70px, 7.8vw, 112px)/0.9 "Cormorant Garamond";
+  letter-spacing: -0.035em;
+  margin-bottom: 28px;
+}
+.opening h1 em {
+  font-style: italic;
+  color: #7d3733;
+}
+.opening p {
+  font-size: 14px;
+}
+.opening a {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 22px;
+}
+.studio-note {
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  margin-top: auto;
+  padding-top: 35px;
+}
+.opening figure {
+  margin: 0;
+  position: relative;
+}
+.opening img {
+  height: 570px;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(1) sepia(0.15);
+}
+.opening figcaption {
+  font: italic 25px "Cormorant Garamond";
+  text-align: right;
+  margin-top: 14px;
+}
+.flashbook {
+  padding: 55px 5vw;
+  background: #ded6c8;
+  border-block: 1px solid #b5aca0;
+}
+.flash-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+.flash-head h2 {
+  font: 400 44px "Cormorant Garamond";
+  margin: 0;
+}
+.flash-head > div {
+  display: flex;
+  gap: 20px;
+}
+.flash-head button {
+  background: transparent;
+  font-size: 12px;
+  padding: 8px 0;
+}
+.flash-head button[aria-pressed="true"] {
+  border-bottom: 1px solid;
+}
+.flash-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #a99f90;
+  border-left: 1px solid #a99f90;
+}
+.flash {
+  background: transparent;
+  border-right: 1px solid #a99f90;
+  border-bottom: 1px solid #a99f90;
+  padding: 20px;
+  text-align: left;
+  transition: background 0.3s;
+}
+.flash:hover,
+.flash[aria-pressed="true"] {
+  background: #eee7dc;
+}
+.flash-code {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+}
+.flash > svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.flash:hover > svg {
+  transform: rotate(-6deg);
+}
+.flash-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.flash-meta b {
+  font: 400 25px "Cormorant Garamond";
+}
+.flash-meta > span {
+  font-size: 10px;
+  margin-left: auto;
+}
+.flash-note {
+  font-size: 11px;
+  margin: 25px 0 0;
+}
+.consultation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  padding: 75px 8vw;
+}
+.consultation h2 {
+  font: 400 55px/0.98 "Cormorant Garamond";
+  letter-spacing: -0.02em;
+}
+.consultation p {
+  font-size: 13px;
+  max-width: 46ch;
+}
+.consultation dl {
+  font-size: 12px;
+  margin-top: 30px;
+}
+.consultation dl div {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-top: 1px solid #b5aca0;
+}
+.consultation dd {
+  margin: 0;
+}
+.consultation form {
+  padding-top: 15px;
+}
+.consultation label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+.consultation select,
+.consultation textarea {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #8b8074;
+  border-radius: 0;
+  padding: 14px 0;
+  outline-offset: 4px;
+  margin-top: 6px;
+  font-size: 14px;
+}
+.consultation textarea {
+  resize: vertical;
+}
+.consultation form > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background: #7d3733;
+  color: #fff4e3;
+  padding: 20px;
+  width: 100%;
+  font-size: 12px;
+}
+.consultation .status {
+  font-size: 11px;
+  margin: 18px 0 0;
+}
+.process {
+  background: #272321;
+  color: #e6ddd1;
+  padding: 60px 8vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 100px;
+}
+.process h2 {
+  font: 400 58px/0.95 "Cormorant Garamond";
+  margin: 0;
+}
+.process p {
+  font-size: 14px;
+  margin: 0;
+}
+.process > span {
+  grid-column: 1/-1;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  margin-top: 25px;
+}
+@media (max-width: 800px) {
+  .opening {
+    gap: 30px;
+    padding: 40px 5vw;
+  }
+  .opening img {
+    height: 480px;
+  }
+  .opening h1 {
+    font-size: 80px;
+  }
+  .flash-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .consultation {
+    gap: 40px;
+    padding: 60px 5vw;
+  }
+}
+@media (max-width: 550px) {
+  header {
+    padding: 22px;
+  }
+  .brand {
+    font-size: 40px;
+    gap: 10px;
+  }
+  .brand span {
+    font-size: 8px;
+  }
+  nav {
+    gap: 17px;
+    font-size: 10px;
+  }
+  .opening {
+    padding: 35px 22px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .opening-copy {
+    position: relative;
+  }
+  .opening h1 {
+    font-size: 82px;
+  }
+  .opening p {
+    max-width: 27ch;
+  }
+  .studio-note {
+    font-size: 8px;
+  }
+  .opening img {
+    height: 410px;
+  }
+  .flashbook {
+    padding: 35px 22px;
+  }
+  .flash-head {
+    display: block;
+  }
+  .flash-head h2 {
+    font-size: 37px;
+  }
+  .flash-head > div {
+    margin-top: 20px;
+  }
+  .flash {
+    padding: 12px;
+  }
+  .flash-meta {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .flash-meta b {
+    font-size: 23px;
+  }
+  .flash-meta svg {
+    width: 14px;
+  }
+  .flash-meta > span {
+    font-size: 9px;
+  }
+  .consultation {
+    padding: 50px 22px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .consultation h2 {
+    font-size: 49px;
+  }
+  .process {
+    padding: 45px 22px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .process h2 {
+    font-size: 50px;
+  }
+}
