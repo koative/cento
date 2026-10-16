@@ -9,7 +9,7 @@ const entries = Object.fromEntries(
     .map((name) => [name, resolve(`themes/${name}/index.html`)]),
 );
 export default defineConfig({
-  base: "/templates/",
+  base: "/elseform/",
   plugins: [react(), tailwindcss()],
   build: {
     rollupOptions: { input: { gallery: resolve("index.html"), ...entries } },
