@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "koative-templates",
+      "name": "elseform",
       "dependencies": {
         "lucide-react": "^0.468.0",
         "react": "^19.2.0",

@@ -2,7 +2,7 @@
 
 A chocolate atelier with a dimensional gift box and a six-piece flavor composer.
 
-[Live demo](https://koative.github.io/templates/themes/truffle/)
+[Live demo](https://koative.github.io/elseform/themes/truffle/)
 
 ## Run independently
 

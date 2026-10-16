@@ -2,7 +2,7 @@
 
 A working flow builder with editable nodes, step actions and local test activity.
 
-A standalone, responsive React + TypeScript + Vite template from [Koative Templates](https://github.com/koative/templates).
+A standalone, responsive React + TypeScript + Vite template from [Elseform](https://github.com/koative/elseform).
 
 ## Run independently
 

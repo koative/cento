@@ -159,7 +159,7 @@ export default function App() {
           </div>
         </div>
         <a href="../../" className="back-link">
-          Koative Templates <ArrowUpRight size={14} />
+          Elseform <ArrowUpRight size={14} />
         </a>
       </aside>
       <div className="workspace-main">

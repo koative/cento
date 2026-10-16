@@ -241,7 +241,7 @@ export default function App() {
       </div>
       <footer>
         <span>Campus · Fictional learning experience</span>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
       </footer>
     </>
   );

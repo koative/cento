@@ -39,7 +39,7 @@ No stock imagery. Debit card and decorative geometry are authored in CSS. Fonts:
 
 Unsplash assets are subject to the [Unsplash license](https://unsplash.com/license); font families are open source under their respective licenses. Replace demonstration imagery and content as appropriate for your project. Lucide icons use the ISC license.
 
-Part of [Koative Templates](https://koative.github.io/templates/).
+Part of [Elseform](https://koative.github.io/elseform/).
 
 ## Self-hosted fonts
 

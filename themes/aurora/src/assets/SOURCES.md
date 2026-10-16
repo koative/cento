@@ -1,6 +1,6 @@
 # Asset provenance
 
-Fonts reused from the existing Koative collection; OFL notices are in `fonts/`. CSS geometry is authored for this template.
+Fonts reused from the existing Elseform collection; OFL notices are in `fonts/`. CSS geometry is authored for this template.
 
 - `cabin.jpg`: reused from `themes/haven/src/assets/cabin.jpg`. Original provider/source is documented in `themes/haven/README.md` in this repository.
 

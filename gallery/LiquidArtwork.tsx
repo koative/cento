@@ -12,6 +12,7 @@ precision highp float;
 uniform vec2 resolution;
 uniform vec2 pointer;
 uniform float time;
+uniform float darkMode;
 const vec3 PAPER = vec3(0.9333, 0.9490, 0.9725);
 mat2 turn(float a) { float s=sin(a), c=cos(a); return mat2(c,-s,s,c); }
 vec3 localPoint(vec3 p) {
@@ -49,6 +50,22 @@ vec3 environment(vec3 d) {
   float softbox = pow(max(0.0,dot(d,normalize(vec3(-0.5,0.85,0.7)))),28.0);
   float strip = pow(max(0.0,dot(d,normalize(vec3(0.7,0.8,0.3)))),100.0);
   c += vec3(1.0,0.99,0.95)*softbox*0.7 + vec3(0.92,0.97,1.0)*strip*1.4;
+  if(darkMode > 0.5) {
+    // The same glass in a night studio: dark transmitted surroundings,
+    // colored light panels, and narrow bright reflections at the edges.
+    c = mix(vec3(0.035,0.055,0.105),vec3(0.13,0.19,0.30),smoothstep(-0.8,0.7,d.y));
+    c += vec3(0.10,0.32,0.70)*blue*0.80;
+    c += vec3(0.36,0.18,0.62)*lilac*0.70;
+    c += vec3(0.24,0.065,0.10)*coral*0.40;
+    c = mix(c,vec3(0.008,0.015,0.030),flag*0.90);
+    c = mix(c,vec3(0.020,0.030,0.060),flag2*0.65);
+    c += vec3(0.50,0.73,1.0)*softbox*1.30;
+    c += vec3(0.76,0.87,1.0)*strip*1.80;
+    float rimPanel=pow(max(0.0,dot(d,normalize(vec3(0.05,-0.40,-0.92)))),35.0);
+    c += vec3(0.36,0.43,0.98)*rimPanel*1.15;
+    float transmittedStrip=exp(-pow((d.x+0.15)/0.085,2.0))*(1.0-smoothstep(-0.85,-0.25,d.z));
+    c += vec3(0.40,0.64,0.98)*transmittedStrip*0.90;
+  }
   return c;
 }
 float trace(vec3 origin,vec3 direction) {
@@ -86,6 +103,7 @@ vec3 glass(vec3 p, vec3 incoming, vec3 n) {
   c += vec3(0.98,0.99,1.0)*highlight*0.8;
   // A narrow spectral edge, produced from view angle rather than painted bands.
   c += vec3(0.13,0.07,0.19)*pow(1.0-facing,2.0)*sin(thickness*18.0)*0.14;
+  c += darkMode*vec3(0.055,0.105,0.19)*pow(1.0-facing,3.0);
   return c;
 }
 void main() {
@@ -97,7 +115,7 @@ void main() {
   if(distance>8.0 || surface(p)>0.006) {
     // Ground contact is a restrained optical shadow, otherwise canvas is clear.
     float shadow=exp(-pow(uv.x/0.40,2.0)-pow((uv.y+0.42)/0.045,2.0))*0.12;
-    gl_FragColor=vec4(vec3(0.31,0.39,0.53),shadow);
+    gl_FragColor=vec4(mix(vec3(0.31,0.39,0.53),vec3(0.008,0.014,0.028),darkMode),shadow);
     return;
   }
   vec3 n=normalAt(p);
@@ -109,13 +127,18 @@ void main() {
 
 export default function LiquidArtwork({
   paused = false,
+  dark = false,
 }: {
   paused?: boolean;
+  dark?: boolean;
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pausedRef = useRef(paused);
+  const darkRef = useRef(dark);
   const pauseHandlerRef = useRef<(() => void) | null>(null);
+  const redrawRef = useRef<(() => void) | null>(null);
   pausedRef.current = paused;
+  darkRef.current = dark;
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -187,6 +210,7 @@ export default function LiquidArtwork({
     const resolution = gl.getUniformLocation(program, "resolution");
     const pointer = gl.getUniformLocation(program, "pointer");
     const time = gl.getUniformLocation(program, "time");
+    const darkMode = gl.getUniformLocation(program, "darkMode");
 
     function draw(now: number) {
       frame = 0;
@@ -209,6 +233,7 @@ export default function LiquidArtwork({
         motion.matches ? 0 : currentY,
       );
       gl!.uniform1f(time, motion.matches ? 0 : elapsed);
+      gl!.uniform1f(darkMode, darkRef.current ? 1 : 0);
       gl!.drawArrays(gl!.TRIANGLES, 0, 6);
       setReady(true);
       if (!motion.matches) frame = requestAnimationFrame(draw);
@@ -271,6 +296,7 @@ export default function LiquidArtwork({
       }
     }
     pauseHandlerRef.current = onPauseChange;
+    redrawRef.current = schedule;
     function onContextLost(event: Event) {
       event.preventDefault();
       stopped = true;
@@ -299,6 +325,7 @@ export default function LiquidArtwork({
     return () => {
       stopped = true;
       pauseHandlerRef.current = null;
+      redrawRef.current = null;
       cancelAnimationFrame(frame);
       resizeObserver.disconnect();
       intersectionObserver.disconnect();
@@ -316,6 +343,12 @@ export default function LiquidArtwork({
     pauseHandlerRef.current?.();
   }, [paused]);
 
+  useEffect(() => {
+    // Static reduced-motion frames still reflect appearance changes. If a
+    // modal has paused rendering, the current uniform is applied on resume.
+    redrawRef.current?.();
+  }, [dark]);
+
   return (
     <div
       aria-hidden="true"
@@ -326,11 +359,12 @@ export default function LiquidArtwork({
           style={{
             position: "absolute",
             inset: "14% 20%",
-            border: "clamp(35px, 7vw, 90px) solid #d1dcee",
+            border: `clamp(35px, 7vw, 90px) solid ${dark ? "#263856" : "#d1dcee"}`,
             borderRadius: "46% 54% 48% 52%",
             transform: "rotate(-24deg) rotateX(22deg)",
-            boxShadow:
-              "inset 12px 18px 25px #ffffffc9, inset -16px -14px 24px #8599be5c, 15px 32px 55px #8b9dbc24",
+            boxShadow: dark
+              ? "inset 12px 18px 25px #9ac9ff70, inset -16px -14px 24px #9074ce50, 15px 32px 55px #02071370"
+              : "inset 12px 18px 25px #ffffffc9, inset -16px -14px 24px #8599be5c, 15px 32px 55px #8b9dbc24",
             background: "transparent",
           }}
         />

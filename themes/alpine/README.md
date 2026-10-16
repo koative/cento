@@ -2,7 +2,7 @@
 
 An alpine outfitter with a ski setup selector and live rental estimate.
 
-[Live demo](https://koative.github.io/templates/themes/alpine/)
+[Live demo](https://koative.github.io/elseform/themes/alpine/)
 
 ## Run independently
 

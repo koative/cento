@@ -2,7 +2,7 @@
 
 A tactile digital material library with procedural weaves and a curated sample box.
 
-A standalone, responsive React + TypeScript + Vite template from [Koative Templates](https://github.com/koative/templates).
+A standalone, responsive React + TypeScript + Vite template from [Elseform](https://github.com/koative/elseform).
 
 ## Run independently
 

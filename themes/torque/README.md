@@ -2,7 +2,7 @@
 
 A rotating wheel assembly meets a useful, transparent motorcycle service builder.
 
-[Live demo](https://koative.github.io/templates/themes/torque/) · [Collection](https://koative.github.io/templates/)
+[Live demo](https://koative.github.io/elseform/themes/torque/) · [Collection](https://koative.github.io/elseform/)
 
 ## Run independently
 

@@ -168,7 +168,7 @@ export default function App() {
       </main>
       <footer>
         <span>Counsel · Fictional legal practice. No legal advice.</span>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
       </footer>
     </>
   );

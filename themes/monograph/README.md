@@ -1,6 +1,6 @@
 # Monograph
 
-Independent journal website template from the Koative collection.
+Independent journal website template from the Elseform collection.
 
 ## Run independently
 

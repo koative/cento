@@ -228,7 +228,7 @@ export default function App() {
       </main>
       <footer>
         <span>Nest · Fictional childcare template</span>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
       </footer>
     </>
   );

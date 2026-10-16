@@ -2,7 +2,7 @@
 
 A sun-filled home energy planner with adjustable solar capacity and battery modeling.
 
-A standalone, responsive React + TypeScript + Vite template from [Koative Templates](https://github.com/koative/templates).
+A standalone, responsive React + TypeScript + Vite template from [Elseform](https://github.com/koative/elseform).
 
 ## Run independently
 

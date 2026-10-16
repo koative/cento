@@ -1,12 +1,15 @@
 <div align="center">
 
-<img src="public/elseform-wordmark.svg" alt="Elseform" width="230" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="public/elseform-wordmark-dark.svg" />
+  <img src="public/elseform-wordmark.svg" alt="Elseform" width="230" />
+</picture>
 
 ### Start with something else.
 
 100 distinct website templates. Beautifully different. Open source. Entirely yours.
 
-**[Explore the collection →](https://koative.github.io/templates/)** · **[Koative](https://koative.com)**
+**[Explore the collection →](https://koative.github.io/elseform/)** · **[Koative](https://koative.com)**
 
 ![React](https://img.shields.io/badge/React-19-20232a?logo=react&logoColor=61dafb)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)
@@ -16,118 +19,124 @@
 
 </div>
 
-[![Elseform — Start with something else](public/elseform-social.png)](https://koative.github.io/templates/)
+[![Elseform — Start with something else](public/elseform-social.png)](https://koative.github.io/elseform/)
 
 **Elseform** is an independent design collection by [Koative](https://koative.com). Find a starting point, explore a live demo, and make it your own.
 
 This collection brings together one hundred deliberately different websites: photographic editorials, kinetic posters, spatial experiments, useful dashboards, and thoughtful storefronts. Each template owns its layout, typography, color palette, motion and interactions. These are separate design directions, not one hundred skins on the same landing page.
 
+## Gallery appearance
+
+Choose **Light**, **Dark** or **System** in the gallery. System follows your device’s appearance; an explicit choice is remembered on this device when browser storage is available. If storage is unavailable, the selected appearance still works for the current visit.
+
+Appearance changes apply to the Elseform gallery and preview shell. Each template keeps its own visual identity, including inside the live preview.
+
 ## The collection
 
 ![All 100 Elseform templates](public/previews/collection.webp)
 
-| Template                                 | World                   | Signature                                   | Live demo                                                             |
-| ---------------------------------------- | ----------------------- | ------------------------------------------- | --------------------------------------------------------------------- |
-| **[Forma](themes/forma)**                | Architecture            | Editorial, Project index                    | [Explore ↗](https://koative.github.io/templates/themes/forma/)        |
-| **[Orbit](themes/orbit)**                | Aerospace               | 3D motion, Interactive                      | [Explore ↗](https://koative.github.io/templates/themes/orbit/)        |
-| **[Muse](themes/muse)**                  | Fashion                 | Art direction, Collection                   | [Explore ↗](https://koative.github.io/templates/themes/muse/)         |
-| **[Pulse](themes/pulse)**                | Music & events          | Kinetic type, Schedule                      | [Explore ↗](https://koative.github.io/templates/themes/pulse/)        |
-| **[Haven](themes/haven)**                | Hospitality             | Immersive, Reservations                     | [Explore ↗](https://koative.github.io/templates/themes/haven/)        |
-| **[Ledger](themes/ledger)**              | Finance                 | Workspace, 3D card                          | [Explore ↗](https://koative.github.io/templates/themes/ledger/)       |
-| **[Ember](themes/ember)**                | Restaurant              | Menu, Table booking                         | [Explore ↗](https://koative.github.io/templates/themes/ember/)        |
-| **[Atelier](themes/atelier)**            | Creative studio         | Portfolio, Expressive                       | [Explore ↗](https://koative.github.io/templates/themes/atelier/)      |
-| **[Signal](themes/signal)**              | Analytics               | Dashboard, Data viz                         | [Explore ↗](https://koative.github.io/templates/themes/signal/)       |
-| **[Still](themes/still)**                | Wellness                | Slow motion, Breathing                      | [Explore ↗](https://koative.github.io/templates/themes/still/)        |
-| **[Terrain](themes/terrain)**            | Outdoor                 | Adventure, Route finder                     | [Explore ↗](https://koative.github.io/templates/themes/terrain/)      |
-| **[Roast](themes/roast)**                | Coffee shop             | Storefront, Local cart                      | [Explore ↗](https://koative.github.io/templates/themes/roast/)        |
-| **[Frame](themes/frame)**                | Photography             | Contact sheet, Image viewer                 | [Explore ↗](https://koative.github.io/templates/themes/frame/)        |
-| **[Monograph](themes/monograph)**        | Independent journal     | Editorial, Reading room                     | [Explore ↗](https://koative.github.io/templates/themes/monograph/)    |
-| **[Index](themes/index)**                | Bookstore               | Book catalog, Local bag                     | [Explore ↗](https://koative.github.io/templates/themes/index/)        |
-| **[Bloom](themes/bloom)**                | Floral studio           | Bouquet builder, Seasonal                   | [Explore ↗](https://koative.github.io/templates/themes/bloom/)        |
-| **[Velo](themes/velo)**                  | Performance cycling     | Configurator, Performance                   | [Explore ↗](https://koative.github.io/templates/themes/velo/)         |
-| **[Prism](themes/prism)**                | Design conference       | Event agenda, Tickets                       | [Explore ↗](https://koative.github.io/templates/themes/prism/)        |
-| **[Nocturne](themes/nocturne)**          | Listening bar           | 3D turntable, Listening room                | [Explore ↗](https://koative.github.io/templates/themes/nocturne/)     |
-| **[Arcade](themes/arcade)**              | Indie games             | Playable, Game studio                       | [Explore ↗](https://koative.github.io/templates/themes/arcade/)       |
-| **[Kiln](themes/kiln)**                  | Ceramic objects         | Object gallery, 3D display                  | [Explore ↗](https://koative.github.io/templates/themes/kiln/)         |
-| **[Aura](themes/aura)**                  | Skincare                | Ritual builder, Beauty                      | [Explore ↗](https://koative.github.io/templates/themes/aura/)         |
-| **[Tide](themes/tide)**                  | Ocean conservation      | Volunteer, Conservation                     | [Explore ↗](https://koative.github.io/templates/themes/tide/)         |
-| **[Relay](themes/relay)**                | Logistics               | Operations, Tracking                        | [Explore ↗](https://koative.github.io/templates/themes/relay/)        |
-| **[Solace](themes/solace)**              | Healthcare clinic       | Healthcare, Booking, Calm                   | [Explore ↗](https://koative.github.io/templates/themes/solace/)       |
-| **[Helix](themes/helix)**                | Biotechnology           | Research library, Molecular model           | [Explore ↗](https://koative.github.io/templates/themes/helix/)        |
-| **[Aperture](themes/aperture)**          | Independent cinema      | Cinematic, Programme, Tickets               | [Explore ↗](https://koative.github.io/templates/themes/aperture/)     |
-| **[Counsel](themes/counsel)**            | Law practice            | Legal, Editorial, Enquiry                   | [Explore ↗](https://koative.github.io/templates/themes/counsel/)      |
-| **[Grid](themes/grid)**                  | Renewable Energy        | Solar planner, Daylight model               | [Explore ↗](https://koative.github.io/templates/themes/grid/)         |
-| **[Tempo](themes/tempo)**                | Dance studio            | Kinetic, Timetable, Bold                    | [Explore ↗](https://koative.github.io/templates/themes/tempo/)        |
-| **[Meridian](themes/meridian)**          | Real estate             | Property, Map, Search                       | [Explore ↗](https://koative.github.io/templates/themes/meridian/)     |
-| **[Forge](themes/forge)**                | Precision Manufacturing | CSS 3D, Industrial, Configurator            | [Explore ↗](https://koative.github.io/templates/themes/forge/)        |
-| **[Summit](themes/summit)**              | Climbing gym            | Route map, Hold walkthrough                 | [Explore ↗](https://koative.github.io/templates/themes/summit/)       |
-| **[Equinox](themes/equinox)**            | Planetarium             | Celestial atlas, Visit planner              | [Explore ↗](https://koative.github.io/templates/themes/equinox/)      |
-| **[Campus](themes/campus)**              | Online learning         | Learning workspace, Observation study       | [Explore ↗](https://koative.github.io/templates/themes/campus/)       |
-| **[Vector](themes/vector)**              | Automotive              | Cinematic, Automotive, Configurator         | [Explore ↗](https://koative.github.io/templates/themes/vector/)       |
-| **[Chapter](themes/chapter)**            | Podcast publication     | Editorial, Audio, Journal                   | [Explore ↗](https://koative.github.io/templates/themes/chapter/)      |
-| **[Civic](themes/civic)**                | Public services         | Government, Directory, Search               | [Explore ↗](https://koative.github.io/templates/themes/civic/)        |
-| **[Cipher](themes/cipher)**              | Cybersecurity           | Access review, Quiet, Product UI            | [Explore ↗](https://koative.github.io/templates/themes/cipher/)       |
-| **[Ink](themes/ink)**                    | Tattoo studio           | Flashbook, Minimal, Booking                 | [Explore ↗](https://koative.github.io/templates/themes/ink/)          |
-| **[Vow](themes/vow)**                    | Wedding planning        | Wedding, Folio, Planner                     | [Explore ↗](https://koative.github.io/templates/themes/vow/)          |
-| **[Stack](themes/stack)**                | Developer Documentation | Documentation, Code, Playground             | [Explore ↗](https://koative.github.io/templates/themes/stack/)        |
-| **[Proof](themes/proof)**                | Artisan bakery          | Tactile, Order sheet, Bakery                | [Explore ↗](https://koative.github.io/templates/themes/proof/)        |
-| **[Atlas](themes/atlas)**                | Public transport        | Route planner, Network map                  | [Explore ↗](https://koative.github.io/templates/themes/atlas/)        |
-| **[Kindred](themes/kindred)**            | Pet adoption            | Pets, Adoption, Playful                     | [Explore ↗](https://koative.github.io/templates/themes/kindred/)      |
-| **[Flux](themes/flux)**                  | Workflow Automation     | Workflow editor, Condition testing          | [Explore ↗](https://koative.github.io/templates/themes/flux/)         |
-| **[Grove](themes/grove)**                | Farm & CSA              | Seasonal, Calendar, Organic                 | [Explore ↗](https://koative.github.io/templates/themes/grove/)        |
-| **[Odyssey](themes/odyssey)**            | Travel planning         | Travel, Itinerary, Journal                  | [Explore ↗](https://koative.github.io/templates/themes/odyssey/)      |
-| **[Loom](themes/loom)**                  | Textiles & Materials    | Material library, Sample box                | [Explore ↗](https://koative.github.io/templates/themes/loom/)         |
-| **[Palette](themes/palette)**            | Art supplies            | Color lab, Mixing ramp                      | [Explore ↗](https://koative.github.io/templates/themes/palette/)      |
-| **[Lumen](themes/lumen)**                | Eyewear                 | Eyewear, 3D, Configurator                   | [Explore ↗](https://koative.github.io/templates/themes/lumen/)        |
-| **[Vault](themes/vault)**                | Insurance               | Plan explorer, Live summary                 | [Explore ↗](https://koative.github.io/templates/themes/vault/)        |
-| **[Drift](themes/drift)**                | Surf school             | Coastal, Field guide, Lessons               | [Explore ↗](https://koative.github.io/templates/themes/drift/)        |
-| **[Commons](themes/commons)**            | Coworking               | Floor plan, Day passes                      | [Explore ↗](https://koative.github.io/templates/themes/commons/)      |
-| **[Heirloom](themes/heirloom)**          | Jewelry atelier         | Jewelry, 3D rotation                        | [Explore ↗](https://koative.github.io/templates/themes/heirloom/)     |
-| **[Harbor](themes/harbor)**              | Port Operations         | Port operations, Map, Workspace             | [Explore ↗](https://koative.github.io/templates/themes/harbor/)       |
-| **[Chroma](themes/chroma)**              | Hair salon              | Lookbook, Editorial, Appointments           | [Explore ↗](https://koative.github.io/templates/themes/chroma/)       |
-| **[Saffron](themes/saffron)**            | Grocery market          | Grocery, Seasonal, Basket                   | [Explore ↗](https://koative.github.io/templates/themes/saffron/)      |
-| **[Alloy](themes/alloy)**                | Construction            | Construction, Blueprint, Project index      | [Explore ↗](https://koative.github.io/templates/themes/alloy/)        |
-| **[Encore](themes/encore)**              | Theatre                 | Theatre, Seating, Dramatic                  | [Explore ↗](https://koative.github.io/templates/themes/encore/)       |
-| **[Nest](themes/nest)**                  | Childcare               | Childcare, Timetable, Playful               | [Explore ↗](https://koative.github.io/templates/themes/nest/)         |
-| **[Circuit](themes/circuit)**            | Electronics Repair      | Repair intake, Exploded hardware            | [Explore ↗](https://koative.github.io/templates/themes/circuit/)      |
-| **[Field](themes/field)**                | Community sports        | Sports, Match hub, Community                | [Explore ↗](https://koative.github.io/templates/themes/field/)        |
-| **[Gavel](themes/gavel)**                | Auctions                | Lot catalog, Demo bidding                   | [Explore ↗](https://koative.github.io/templates/themes/gavel/)        |
-| **[Brine](themes/brine)**                | Seafood market          | Market counter, Basket, Coastal             | [Explore ↗](https://koative.github.io/templates/themes/brine/)        |
-| **[Folio](themes/folio)**                | Printmaking gallery     | Print archive, Original geometry, Shortlist | [Explore ↗](https://koative.github.io/templates/themes/folio/)        |
-| **[Patina](themes/patina)**              | Vintage furniture       | Vintage objects, Interior, Shortlist        | [Explore ↗](https://koative.github.io/templates/themes/patina/)       |
-| **[Nectar](themes/nectar)**              | Apiary & honey          | Tasting notes, 3D jar, Seasonal             | [Explore ↗](https://koative.github.io/templates/themes/nectar/)       |
-| **[Alpine](themes/alpine)**              | Ski equipment rental    | Rental calculator, Equipment, Mountain      | [Explore ↗](https://koative.github.io/templates/themes/alpine/)       |
-| **[Sonnet](themes/sonnet)**              | Language school         | Languages, Course finder, Word cards        | [Explore ↗](https://koative.github.io/templates/themes/sonnet/)       |
-| **[Mosaic](themes/mosaic)**              | Interior design         | Material library, Moodboard, Interiors      | [Explore ↗](https://koative.github.io/templates/themes/mosaic/)       |
-| **[Lacquer](themes/lacquer)**            | Nail art studio         | Color configurator, Sculptural, Beauty      | [Explore ↗](https://koative.github.io/templates/themes/lacquer/)      |
-| **[Truffle](themes/truffle)**            | Chocolate atelier       | Gift builder, 3D box, Chocolate             | [Explore ↗](https://koative.github.io/templates/themes/truffle/)      |
-| **[Score](themes/score)**                | Music lessons           | Playable piano, Web Audio, Lesson planner   | [Explore ↗](https://koative.github.io/templates/themes/score/)        |
-| **[Sprout](themes/sprout)**              | Garden nursery          | Plant finder, Garden planner, Botanical     | [Explore ↗](https://koative.github.io/templates/themes/sprout/)       |
-| **[Ripple](themes/ripple)**              | Swimming academy        | Timetable, Lane motion, Lessons             | [Explore ↗](https://koative.github.io/templates/themes/ripple/)       |
-| **[Ballast](themes/ballast)**            | Rail freight            | Dispatch board, Route motion                | [Explore ↗](https://koative.github.io/templates/themes/ballast/)      |
-| **[Delta](themes/delta)**                | Water management        | Water model, Fluid motion                   | [Explore ↗](https://koative.github.io/templates/themes/delta/)        |
-| **[Strata](themes/strata)**              | Geological survey       | Field atlas, Layer study                    | [Explore ↗](https://koative.github.io/templates/themes/strata/)       |
-| **[Cadence](themes/cadence)**            | Hiring workspace        | Hiring workspace, Shortlist                 | [Explore ↗](https://koative.github.io/templates/themes/cadence/)      |
-| **[Conduit](themes/conduit)**            | API integrations        | Event simulator, Developer tool             | [Explore ↗](https://koative.github.io/templates/themes/conduit/)      |
-| **[Lumenary](themes/lumenary)**          | Lighting design         | Object study, CSS lighting                  | [Explore ↗](https://koative.github.io/templates/themes/lumenary/)     |
-| **[Waypoint](themes/waypoint)**          | Flight school           | Heading dial, Route planner                 | [Explore ↗](https://koative.github.io/templates/themes/waypoint/)     |
-| **[Torque](themes/torque)**              | Motorcycle workshop     | Mechanical motion, Service builder          | [Explore ↗](https://koative.github.io/templates/themes/torque/)       |
-| **[Verdant](themes/verdant)**            | Urban farming           | Garden planner, Growing journal             | [Explore ↗](https://koative.github.io/templates/themes/verdant/)      |
-| **[Parcel](themes/parcel)**              | Postal shipping         | Rate calculator, Label preview              | [Explore ↗](https://koative.github.io/templates/themes/parcel/)       |
-| **[Beacon](themes/beacon)**              | Preparedness            | Household checklist, Progress states        | [Explore ↗](https://koative.github.io/templates/themes/beacon/)       |
-| **[Keystone](themes/keystone)**          | Structural engineering  | Structural diagram, Material study          | [Explore ↗](https://koative.github.io/templates/themes/keystone/)     |
-| **[Aurora](themes/aurora)**              | Northern lights lodge   | Immersive, Stay planner                     | [Explore ↗](https://koative.github.io/templates/themes/aurora/)       |
-| **[Reel](themes/reel)**                  | Documentary film        | Film archive, Editorial                     | [Explore ↗](https://koative.github.io/templates/themes/reel/)         |
-| **[Botanica](themes/botanica)**          | Botanical garden        | Field guide, Visit planner                  | [Explore ↗](https://koative.github.io/templates/themes/botanica/)     |
-| **[Cove](themes/cove)**                  | Sailing charters        | Route map, Voyages                          | [Explore ↗](https://koative.github.io/templates/themes/cove/)         |
-| **[Fable](themes/fable)**                | Children’s museum       | Playful, Programme                          | [Explore ↗](https://koative.github.io/templates/themes/fable/)        |
-| **[Cadence House](themes/cadencehouse)** | Recording studio        | 3D console, Sound studio                    | [Explore ↗](https://koative.github.io/templates/themes/cadencehouse/) |
-| **[Pour](themes/pour)**                  | Natural wine shop       | Product shelf, Case builder                 | [Explore ↗](https://koative.github.io/templates/themes/pour/)         |
-| **[Ascent](themes/ascent)**              | Paragliding school      | Adventure, Flight planner                   | [Explore ↗](https://koative.github.io/templates/themes/ascent/)       |
-| **[Emberlight](themes/emberlight)**      | Candle atelier          | Material study, Scent finder                | [Explore ↗](https://koative.github.io/templates/themes/emberlight/)   |
-| **[Sanctuary](themes/sanctuary)**        | Wildlife rescue         | Conservation, Animal journal                | [Explore ↗](https://koative.github.io/templates/themes/sanctuary/)    |
-| **[Kinetic](themes/kinetic)**            | Sports rehabilitation   | Movement, Care pathways                     | [Explore ↗](https://koative.github.io/templates/themes/kinetic/)      |
-| **[Horizon](themes/horizon)**            | Science publication     | Publication, Reading list                   | [Explore ↗](https://koative.github.io/templates/themes/horizon/)      |
+| Template                                 | World                   | Signature                                   | Live demo                                                            |
+| ---------------------------------------- | ----------------------- | ------------------------------------------- | -------------------------------------------------------------------- |
+| **[Forma](themes/forma)**                | Architecture            | Editorial, Project index                    | [Explore ↗](https://koative.github.io/elseform/themes/forma/)        |
+| **[Orbit](themes/orbit)**                | Aerospace               | 3D motion, Interactive                      | [Explore ↗](https://koative.github.io/elseform/themes/orbit/)        |
+| **[Muse](themes/muse)**                  | Fashion                 | Art direction, Collection                   | [Explore ↗](https://koative.github.io/elseform/themes/muse/)         |
+| **[Pulse](themes/pulse)**                | Music & events          | Kinetic type, Schedule                      | [Explore ↗](https://koative.github.io/elseform/themes/pulse/)        |
+| **[Haven](themes/haven)**                | Hospitality             | Immersive, Reservations                     | [Explore ↗](https://koative.github.io/elseform/themes/haven/)        |
+| **[Ledger](themes/ledger)**              | Finance                 | Workspace, 3D card                          | [Explore ↗](https://koative.github.io/elseform/themes/ledger/)       |
+| **[Ember](themes/ember)**                | Restaurant              | Menu, Table booking                         | [Explore ↗](https://koative.github.io/elseform/themes/ember/)        |
+| **[Atelier](themes/atelier)**            | Creative studio         | Portfolio, Expressive                       | [Explore ↗](https://koative.github.io/elseform/themes/atelier/)      |
+| **[Signal](themes/signal)**              | Analytics               | Dashboard, Data viz                         | [Explore ↗](https://koative.github.io/elseform/themes/signal/)       |
+| **[Still](themes/still)**                | Wellness                | Slow motion, Breathing                      | [Explore ↗](https://koative.github.io/elseform/themes/still/)        |
+| **[Terrain](themes/terrain)**            | Outdoor                 | Adventure, Route finder                     | [Explore ↗](https://koative.github.io/elseform/themes/terrain/)      |
+| **[Roast](themes/roast)**                | Coffee shop             | Storefront, Local cart                      | [Explore ↗](https://koative.github.io/elseform/themes/roast/)        |
+| **[Frame](themes/frame)**                | Photography             | Contact sheet, Image viewer                 | [Explore ↗](https://koative.github.io/elseform/themes/frame/)        |
+| **[Monograph](themes/monograph)**        | Independent journal     | Editorial, Reading room                     | [Explore ↗](https://koative.github.io/elseform/themes/monograph/)    |
+| **[Index](themes/index)**                | Bookstore               | Book catalog, Local bag                     | [Explore ↗](https://koative.github.io/elseform/themes/index/)        |
+| **[Bloom](themes/bloom)**                | Floral studio           | Bouquet builder, Seasonal                   | [Explore ↗](https://koative.github.io/elseform/themes/bloom/)        |
+| **[Velo](themes/velo)**                  | Performance cycling     | Configurator, Performance                   | [Explore ↗](https://koative.github.io/elseform/themes/velo/)         |
+| **[Prism](themes/prism)**                | Design conference       | Event agenda, Tickets                       | [Explore ↗](https://koative.github.io/elseform/themes/prism/)        |
+| **[Nocturne](themes/nocturne)**          | Listening bar           | 3D turntable, Listening room                | [Explore ↗](https://koative.github.io/elseform/themes/nocturne/)     |
+| **[Arcade](themes/arcade)**              | Indie games             | Playable, Game studio                       | [Explore ↗](https://koative.github.io/elseform/themes/arcade/)       |
+| **[Kiln](themes/kiln)**                  | Ceramic objects         | Object gallery, 3D display                  | [Explore ↗](https://koative.github.io/elseform/themes/kiln/)         |
+| **[Aura](themes/aura)**                  | Skincare                | Ritual builder, Beauty                      | [Explore ↗](https://koative.github.io/elseform/themes/aura/)         |
+| **[Tide](themes/tide)**                  | Ocean conservation      | Volunteer, Conservation                     | [Explore ↗](https://koative.github.io/elseform/themes/tide/)         |
+| **[Relay](themes/relay)**                | Logistics               | Operations, Tracking                        | [Explore ↗](https://koative.github.io/elseform/themes/relay/)        |
+| **[Solace](themes/solace)**              | Healthcare clinic       | Healthcare, Booking, Calm                   | [Explore ↗](https://koative.github.io/elseform/themes/solace/)       |
+| **[Helix](themes/helix)**                | Biotechnology           | Research library, Molecular model           | [Explore ↗](https://koative.github.io/elseform/themes/helix/)        |
+| **[Aperture](themes/aperture)**          | Independent cinema      | Cinematic, Programme, Tickets               | [Explore ↗](https://koative.github.io/elseform/themes/aperture/)     |
+| **[Counsel](themes/counsel)**            | Law practice            | Legal, Editorial, Enquiry                   | [Explore ↗](https://koative.github.io/elseform/themes/counsel/)      |
+| **[Grid](themes/grid)**                  | Renewable Energy        | Solar planner, Daylight model               | [Explore ↗](https://koative.github.io/elseform/themes/grid/)         |
+| **[Tempo](themes/tempo)**                | Dance studio            | Kinetic, Timetable, Bold                    | [Explore ↗](https://koative.github.io/elseform/themes/tempo/)        |
+| **[Meridian](themes/meridian)**          | Real estate             | Property, Map, Search                       | [Explore ↗](https://koative.github.io/elseform/themes/meridian/)     |
+| **[Forge](themes/forge)**                | Precision Manufacturing | CSS 3D, Industrial, Configurator            | [Explore ↗](https://koative.github.io/elseform/themes/forge/)        |
+| **[Summit](themes/summit)**              | Climbing gym            | Route map, Hold walkthrough                 | [Explore ↗](https://koative.github.io/elseform/themes/summit/)       |
+| **[Equinox](themes/equinox)**            | Planetarium             | Celestial atlas, Visit planner              | [Explore ↗](https://koative.github.io/elseform/themes/equinox/)      |
+| **[Campus](themes/campus)**              | Online learning         | Learning workspace, Observation study       | [Explore ↗](https://koative.github.io/elseform/themes/campus/)       |
+| **[Vector](themes/vector)**              | Automotive              | Cinematic, Automotive, Configurator         | [Explore ↗](https://koative.github.io/elseform/themes/vector/)       |
+| **[Chapter](themes/chapter)**            | Podcast publication     | Editorial, Audio, Journal                   | [Explore ↗](https://koative.github.io/elseform/themes/chapter/)      |
+| **[Civic](themes/civic)**                | Public services         | Government, Directory, Search               | [Explore ↗](https://koative.github.io/elseform/themes/civic/)        |
+| **[Cipher](themes/cipher)**              | Cybersecurity           | Access review, Quiet, Product UI            | [Explore ↗](https://koative.github.io/elseform/themes/cipher/)       |
+| **[Ink](themes/ink)**                    | Tattoo studio           | Flashbook, Minimal, Booking                 | [Explore ↗](https://koative.github.io/elseform/themes/ink/)          |
+| **[Vow](themes/vow)**                    | Wedding planning        | Wedding, Folio, Planner                     | [Explore ↗](https://koative.github.io/elseform/themes/vow/)          |
+| **[Stack](themes/stack)**                | Developer Documentation | Documentation, Code, Playground             | [Explore ↗](https://koative.github.io/elseform/themes/stack/)        |
+| **[Proof](themes/proof)**                | Artisan bakery          | Tactile, Order sheet, Bakery                | [Explore ↗](https://koative.github.io/elseform/themes/proof/)        |
+| **[Atlas](themes/atlas)**                | Public transport        | Route planner, Network map                  | [Explore ↗](https://koative.github.io/elseform/themes/atlas/)        |
+| **[Kindred](themes/kindred)**            | Pet adoption            | Pets, Adoption, Playful                     | [Explore ↗](https://koative.github.io/elseform/themes/kindred/)      |
+| **[Flux](themes/flux)**                  | Workflow Automation     | Workflow editor, Condition testing          | [Explore ↗](https://koative.github.io/elseform/themes/flux/)         |
+| **[Grove](themes/grove)**                | Farm & CSA              | Seasonal, Calendar, Organic                 | [Explore ↗](https://koative.github.io/elseform/themes/grove/)        |
+| **[Odyssey](themes/odyssey)**            | Travel planning         | Travel, Itinerary, Journal                  | [Explore ↗](https://koative.github.io/elseform/themes/odyssey/)      |
+| **[Loom](themes/loom)**                  | Textiles & Materials    | Material library, Sample box                | [Explore ↗](https://koative.github.io/elseform/themes/loom/)         |
+| **[Palette](themes/palette)**            | Art supplies            | Color lab, Mixing ramp                      | [Explore ↗](https://koative.github.io/elseform/themes/palette/)      |
+| **[Lumen](themes/lumen)**                | Eyewear                 | Eyewear, 3D, Configurator                   | [Explore ↗](https://koative.github.io/elseform/themes/lumen/)        |
+| **[Vault](themes/vault)**                | Insurance               | Plan explorer, Live summary                 | [Explore ↗](https://koative.github.io/elseform/themes/vault/)        |
+| **[Drift](themes/drift)**                | Surf school             | Coastal, Field guide, Lessons               | [Explore ↗](https://koative.github.io/elseform/themes/drift/)        |
+| **[Commons](themes/commons)**            | Coworking               | Floor plan, Day passes                      | [Explore ↗](https://koative.github.io/elseform/themes/commons/)      |
+| **[Heirloom](themes/heirloom)**          | Jewelry atelier         | Jewelry, 3D rotation                        | [Explore ↗](https://koative.github.io/elseform/themes/heirloom/)     |
+| **[Harbor](themes/harbor)**              | Port Operations         | Port operations, Map, Workspace             | [Explore ↗](https://koative.github.io/elseform/themes/harbor/)       |
+| **[Chroma](themes/chroma)**              | Hair salon              | Lookbook, Editorial, Appointments           | [Explore ↗](https://koative.github.io/elseform/themes/chroma/)       |
+| **[Saffron](themes/saffron)**            | Grocery market          | Grocery, Seasonal, Basket                   | [Explore ↗](https://koative.github.io/elseform/themes/saffron/)      |
+| **[Alloy](themes/alloy)**                | Construction            | Construction, Blueprint, Project index      | [Explore ↗](https://koative.github.io/elseform/themes/alloy/)        |
+| **[Encore](themes/encore)**              | Theatre                 | Theatre, Seating, Dramatic                  | [Explore ↗](https://koative.github.io/elseform/themes/encore/)       |
+| **[Nest](themes/nest)**                  | Childcare               | Childcare, Timetable, Playful               | [Explore ↗](https://koative.github.io/elseform/themes/nest/)         |
+| **[Circuit](themes/circuit)**            | Electronics Repair      | Repair intake, Exploded hardware            | [Explore ↗](https://koative.github.io/elseform/themes/circuit/)      |
+| **[Field](themes/field)**                | Community sports        | Sports, Match hub, Community                | [Explore ↗](https://koative.github.io/elseform/themes/field/)        |
+| **[Gavel](themes/gavel)**                | Auctions                | Lot catalog, Demo bidding                   | [Explore ↗](https://koative.github.io/elseform/themes/gavel/)        |
+| **[Brine](themes/brine)**                | Seafood market          | Market counter, Basket, Coastal             | [Explore ↗](https://koative.github.io/elseform/themes/brine/)        |
+| **[Folio](themes/folio)**                | Printmaking gallery     | Print archive, Original geometry, Shortlist | [Explore ↗](https://koative.github.io/elseform/themes/folio/)        |
+| **[Patina](themes/patina)**              | Vintage furniture       | Vintage objects, Interior, Shortlist        | [Explore ↗](https://koative.github.io/elseform/themes/patina/)       |
+| **[Nectar](themes/nectar)**              | Apiary & honey          | Tasting notes, 3D jar, Seasonal             | [Explore ↗](https://koative.github.io/elseform/themes/nectar/)       |
+| **[Alpine](themes/alpine)**              | Ski equipment rental    | Rental calculator, Equipment, Mountain      | [Explore ↗](https://koative.github.io/elseform/themes/alpine/)       |
+| **[Sonnet](themes/sonnet)**              | Language school         | Languages, Course finder, Word cards        | [Explore ↗](https://koative.github.io/elseform/themes/sonnet/)       |
+| **[Mosaic](themes/mosaic)**              | Interior design         | Material library, Moodboard, Interiors      | [Explore ↗](https://koative.github.io/elseform/themes/mosaic/)       |
+| **[Lacquer](themes/lacquer)**            | Nail art studio         | Color configurator, Sculptural, Beauty      | [Explore ↗](https://koative.github.io/elseform/themes/lacquer/)      |
+| **[Truffle](themes/truffle)**            | Chocolate atelier       | Gift builder, 3D box, Chocolate             | [Explore ↗](https://koative.github.io/elseform/themes/truffle/)      |
+| **[Score](themes/score)**                | Music lessons           | Playable piano, Web Audio, Lesson planner   | [Explore ↗](https://koative.github.io/elseform/themes/score/)        |
+| **[Sprout](themes/sprout)**              | Garden nursery          | Plant finder, Garden planner, Botanical     | [Explore ↗](https://koative.github.io/elseform/themes/sprout/)       |
+| **[Ripple](themes/ripple)**              | Swimming academy        | Timetable, Lane motion, Lessons             | [Explore ↗](https://koative.github.io/elseform/themes/ripple/)       |
+| **[Ballast](themes/ballast)**            | Rail freight            | Dispatch board, Route motion                | [Explore ↗](https://koative.github.io/elseform/themes/ballast/)      |
+| **[Delta](themes/delta)**                | Water management        | Water model, Fluid motion                   | [Explore ↗](https://koative.github.io/elseform/themes/delta/)        |
+| **[Strata](themes/strata)**              | Geological survey       | Field atlas, Layer study                    | [Explore ↗](https://koative.github.io/elseform/themes/strata/)       |
+| **[Cadence](themes/cadence)**            | Hiring workspace        | Hiring workspace, Shortlist                 | [Explore ↗](https://koative.github.io/elseform/themes/cadence/)      |
+| **[Conduit](themes/conduit)**            | API integrations        | Event simulator, Developer tool             | [Explore ↗](https://koative.github.io/elseform/themes/conduit/)      |
+| **[Lumenary](themes/lumenary)**          | Lighting design         | Object study, CSS lighting                  | [Explore ↗](https://koative.github.io/elseform/themes/lumenary/)     |
+| **[Waypoint](themes/waypoint)**          | Flight school           | Heading dial, Route planner                 | [Explore ↗](https://koative.github.io/elseform/themes/waypoint/)     |
+| **[Torque](themes/torque)**              | Motorcycle workshop     | Mechanical motion, Service builder          | [Explore ↗](https://koative.github.io/elseform/themes/torque/)       |
+| **[Verdant](themes/verdant)**            | Urban farming           | Garden planner, Growing journal             | [Explore ↗](https://koative.github.io/elseform/themes/verdant/)      |
+| **[Parcel](themes/parcel)**              | Postal shipping         | Rate calculator, Label preview              | [Explore ↗](https://koative.github.io/elseform/themes/parcel/)       |
+| **[Beacon](themes/beacon)**              | Preparedness            | Household checklist, Progress states        | [Explore ↗](https://koative.github.io/elseform/themes/beacon/)       |
+| **[Keystone](themes/keystone)**          | Structural engineering  | Structural diagram, Material study          | [Explore ↗](https://koative.github.io/elseform/themes/keystone/)     |
+| **[Aurora](themes/aurora)**              | Northern lights lodge   | Immersive, Stay planner                     | [Explore ↗](https://koative.github.io/elseform/themes/aurora/)       |
+| **[Reel](themes/reel)**                  | Documentary film        | Film archive, Editorial                     | [Explore ↗](https://koative.github.io/elseform/themes/reel/)         |
+| **[Botanica](themes/botanica)**          | Botanical garden        | Field guide, Visit planner                  | [Explore ↗](https://koative.github.io/elseform/themes/botanica/)     |
+| **[Cove](themes/cove)**                  | Sailing charters        | Route map, Voyages                          | [Explore ↗](https://koative.github.io/elseform/themes/cove/)         |
+| **[Fable](themes/fable)**                | Children’s museum       | Playful, Programme                          | [Explore ↗](https://koative.github.io/elseform/themes/fable/)        |
+| **[Cadence House](themes/cadencehouse)** | Recording studio        | 3D console, Sound studio                    | [Explore ↗](https://koative.github.io/elseform/themes/cadencehouse/) |
+| **[Pour](themes/pour)**                  | Natural wine shop       | Product shelf, Case builder                 | [Explore ↗](https://koative.github.io/elseform/themes/pour/)         |
+| **[Ascent](themes/ascent)**              | Paragliding school      | Adventure, Flight planner                   | [Explore ↗](https://koative.github.io/elseform/themes/ascent/)       |
+| **[Emberlight](themes/emberlight)**      | Candle atelier          | Material study, Scent finder                | [Explore ↗](https://koative.github.io/elseform/themes/emberlight/)   |
+| **[Sanctuary](themes/sanctuary)**        | Wildlife rescue         | Conservation, Animal journal                | [Explore ↗](https://koative.github.io/elseform/themes/sanctuary/)    |
+| **[Kinetic](themes/kinetic)**            | Sports rehabilitation   | Movement, Care pathways                     | [Explore ↗](https://koative.github.io/elseform/themes/kinetic/)      |
+| **[Horizon](themes/horizon)**            | Science publication     | Publication, Reading list                   | [Explore ↗](https://koative.github.io/elseform/themes/horizon/)      |
 
 ## The 100-template edition
 
@@ -151,13 +160,13 @@ This edition adds 36 independent templates and revisits the existing 64. The Els
 Requires [Bun](https://bun.sh) 1.4.3 or newer.
 
 ```sh
-git clone https://github.com/koative/templates.git
-cd templates
+git clone https://github.com/koative/elseform.git
+cd elseform
 bun install
 bun run dev
 ```
 
-Open **http://localhost:5173/templates/**. The gallery includes search, category filters, collection/name/newest sorting, keyboard-accessible previews and desktop, tablet and mobile viewport controls. Every demo is also directly addressable at `/templates/themes/<name>/`.
+Open **http://localhost:5173/elseform/**. The gallery includes search, category filters, collection/name/newest sorting, keyboard-accessible previews and desktop, tablet and mobile viewport controls. Every demo is also directly addressable at `/elseform/themes/<name>/`.
 
 ```sh
 bun run check     # TypeScript validation
@@ -206,7 +215,7 @@ The templates include CSS 3D geometry, controlled rotations, animated type and d
 
 ## Publish with GitHub Pages
 
-This repository is configured for **https://koative.github.io/templates/**. The root Vite base is `/templates/`, and the production build contains a real HTML entry for every demo, so direct links do not require a single-page-app fallback.
+This repository is configured for **https://koative.github.io/elseform/**. The root Vite base is `/elseform/`, and the production build contains a real HTML entry for every demo, so direct links do not require a single-page-app fallback.
 
 In repository **Settings → Pages**, choose **GitHub Actions** as the build source. Push to `main` to build and deploy through `.github/workflows/pages.yml`. No custom domain is needed. This repository does not change the hosting or domain configuration of koative.com.
 

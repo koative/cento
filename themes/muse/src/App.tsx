@@ -292,7 +292,7 @@ export default function App() {
         </a>
         <div>
           <span>Fictional fashion house</span>
-          <span>A Koative template · 2026</span>
+          <span>An Elseform template · 2026</span>
         </div>
         <a href="#collection">
           Explore the edit <ArrowUpRight size={16} />

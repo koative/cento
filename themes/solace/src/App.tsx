@@ -167,7 +167,7 @@ export default function App() {
       </main>
       <footer>
         <span>Solace · A fictional healthcare template</span>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
       </footer>
     </>
   );

@@ -41,7 +41,7 @@ Unsplash photos are subject to the [Unsplash license](https://unsplash.com/licen
 
 Fonts are bundled in `src/assets/fonts/` with their OFL licenses: DM Sans and Manrope, sourced from Google Fonts. No external fonts are requested at runtime. Icons are from [Lucide](https://lucide.dev), ISC license.
 
-Part of [Koative Templates](https://koative.github.io/templates/).
+Part of [Elseform](https://koative.github.io/elseform/).
 
 ## Self-hosted fonts
 

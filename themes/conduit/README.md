@@ -2,7 +2,7 @@
 
 Trace an event from source to destination in a local integration workbench.
 
-[Live demo](https://koative.github.io/templates/themes/conduit/) · [Collection](https://koative.github.io/templates/)
+[Live demo](https://koative.github.io/elseform/themes/conduit/) · [Collection](https://koative.github.io/elseform/)
 
 ## Run independently
 

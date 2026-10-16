@@ -2,7 +2,7 @@
 
 A navigational instrument and route planner introduce a new perspective on flight.
 
-[Live demo](https://koative.github.io/templates/themes/waypoint/) · [Collection](https://koative.github.io/templates/)
+[Live demo](https://koative.github.io/elseform/themes/waypoint/) · [Collection](https://koative.github.io/elseform/)
 
 ## Run independently
 

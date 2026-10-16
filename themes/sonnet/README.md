@@ -2,7 +2,7 @@
 
 A conversational language school with rotating word cards and a course-plan builder.
 
-[Live demo](https://koative.github.io/templates/themes/sonnet/)
+[Live demo](https://koative.github.io/elseform/themes/sonnet/)
 
 ## Run independently
 

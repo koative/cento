@@ -2,7 +2,7 @@
 
 A cinematic automotive concept with trim, finish and engineering views.
 
-A standalone, responsive React + TypeScript + Vite template from [Koative Templates](https://github.com/koative/templates).
+A standalone, responsive React + TypeScript + Vite template from [Elseform](https://github.com/koative/elseform).
 
 ## Run independently
 

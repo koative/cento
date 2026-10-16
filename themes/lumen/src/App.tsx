@@ -198,7 +198,7 @@ export default function App() {
       </main>
       <footer>
         <span>Lumen · Fictional eyewear concept</span>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
       </footer>
     </>
   );

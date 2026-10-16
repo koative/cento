@@ -2,7 +2,7 @@
 
 An architectural practice with a material-led interactive structural proportion study.
 
-[Live demo](https://koative.github.io/templates/themes/keystone/) · [Collection](https://koative.github.io/templates/)
+[Live demo](https://koative.github.io/elseform/themes/keystone/) · [Collection](https://koative.github.io/elseform/)
 
 ## Run independently
 

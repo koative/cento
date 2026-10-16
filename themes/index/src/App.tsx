@@ -327,7 +327,7 @@ export default function App() {
         <a href="#">index</a>
         <span>
           Fictional books. An independent spirit.
-          <br />A Koative template — no purchases are processed.
+          <br />An Elseform template — no purchases are processed.
         </span>
         <a href="#shelf">Back to the shelves ↑</a>
       </footer>

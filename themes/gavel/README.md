@@ -2,7 +2,7 @@
 
 Objects with another chapter. A considered auction catalog with an interactive local bidding rhythm.
 
-**[Live demo](https://koative.github.io/templates/themes/gavel/)** · Auctions
+**[Live demo](https://koative.github.io/elseform/themes/gavel/)** · Auctions
 
 ## Run independently
 
@@ -44,4 +44,4 @@ Photography is locally included and subject to the [Unsplash license](https://un
 
 ## Demonstration boundaries
 
-The brand, venue, routes, inventory, prices and activities are fictional sample content. No reservation, purchase, payment or message is sent. Connect your own backend and replace illustrative data before real commercial use. Template source is MIT licensed as part of Koative Templates.
+The brand, venue, routes, inventory, prices and activities are fictional sample content. No reservation, purchase, payment or message is sent. Connect your own backend and replace illustrative data before real commercial use. Template source is MIT licensed as part of Elseform.

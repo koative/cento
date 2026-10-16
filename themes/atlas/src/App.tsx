@@ -388,7 +388,7 @@ export default function App() {
       </main>
       <footer>
         <a href="../../">
-          Koative collection <ArrowUpRight size={14} />
+          Elseform collection <ArrowUpRight size={14} />
         </a>
         <span>
           Atlas is a fictional transit concept. All routes, fares and times are

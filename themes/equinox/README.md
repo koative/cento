@@ -2,7 +2,7 @@
 
 A night beyond the everyday. An interactive celestial atlas and an evening under the dome.
 
-**[Live demo](https://koative.github.io/templates/themes/equinox/)** · Planetarium
+**[Live demo](https://koative.github.io/elseform/themes/equinox/)** · Planetarium
 
 ## Run independently
 
@@ -40,4 +40,4 @@ No external photography or 3D models are required.
 
 ## Demonstration boundaries
 
-The brand, venue, routes, inventory, prices and activities are fictional sample content. No reservation, purchase, payment or message is sent. Connect your own backend and replace illustrative data before real commercial use. Template source is MIT licensed as part of Koative Templates.
+The brand, venue, routes, inventory, prices and activities are fictional sample content. No reservation, purchase, payment or message is sent. Connect your own backend and replace illustrative data before real commercial use. Template source is MIT licensed as part of Elseform.

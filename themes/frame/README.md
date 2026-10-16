@@ -1,6 +1,6 @@
 # Frame
 
-Photography studio website template from the Koative collection.
+Photography studio website template from the Elseform collection.
 
 ## Run independently
 

@@ -244,7 +244,7 @@ export default function App() {
         <a className="wordmark" href="#">
           kiln
         </a>
-        <p>Fictional ceramics studio · A Koative template</p>
+        <p>Fictional ceramics studio · An Elseform template</p>
         <a href="../../">
           Back to the collection <ArrowUpRight size={16} />
         </a>

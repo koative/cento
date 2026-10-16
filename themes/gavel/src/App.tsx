@@ -267,7 +267,7 @@ export default function App() {
       </main>
       <footer>
         <a href="../../">
-          Koative collection <ArrowUpRight size={14} />
+          Elseform collection <ArrowUpRight size={14} />
         </a>
         <span>
           Gavel is a fictional auction house. All lots and prices are

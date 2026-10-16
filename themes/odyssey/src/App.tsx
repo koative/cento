@@ -242,7 +242,7 @@ export default function App() {
       </main>
       <footer>
         <span>Odyssey · Fictional travel planning template</span>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
       </footer>
     </>
   );

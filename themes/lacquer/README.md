@@ -2,7 +2,7 @@
 
 An expressive color studio with sculptural nail samples, finishes and service planning.
 
-[Live demo](https://koative.github.io/templates/themes/lacquer/)
+[Live demo](https://koative.github.io/elseform/themes/lacquer/)
 
 ## Run independently
 

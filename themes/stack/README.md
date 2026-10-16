@@ -2,7 +2,7 @@
 
 A readable documentation workspace with search, SDK examples and an event playground.
 
-A standalone, responsive React + TypeScript + Vite template from [Koative Templates](https://github.com/koative/templates).
+A standalone, responsive React + TypeScript + Vite template from [Elseform](https://github.com/koative/elseform).
 
 ## Run independently
 

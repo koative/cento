@@ -4,6 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#eef2f8" />
+    <script>
+      (() => {
+        let preference = "system";
+        try {
+          const saved = localStorage.getItem("elseform-appearance");
+          if (saved === "light" || saved === "dark") preference = saved;
+        } catch {}
+        const dark =
+          preference === "dark" ||
+          (preference === "system" &&
+            matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+        document.documentElement.style.colorScheme = dark ? "dark" : "light";
+        document.querySelector('meta[name="theme-color"]').content = dark
+          ? "#0c1320"
+          : "#eef2f8";
+      })();
+    </script>
+    <style>
+      html {
+        background: #eef2f8;
+        color-scheme: light;
+      }
+      html[data-theme="dark"] {
+        background: #0c1320;
+        color-scheme: dark;
+      }
+    </style>
     <meta
       name="description"
       content="Elseform: 100 distinct, open-source website templates. Find a starting point, explore a live demo, and make it your own. An independent collection by Koative."
@@ -15,9 +43,9 @@
     />
     <meta
       property="og:image"
-      content="https://koative.github.io/templates/elseform-social.png"
+      content="https://koative.github.io/elseform/elseform-social.png"
     />
-    <meta property="og:url" content="https://koative.github.io/templates/" />
+    <meta property="og:url" content="https://koative.github.io/elseform/" />
     <meta name="twitter:card" content="summary_large_image" />
     <title>Elseform — Start with something else.</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

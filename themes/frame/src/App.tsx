@@ -213,7 +213,7 @@ export default function App() {
         </section>
       </main>
       <footer>
-        <span>FRAME — A Koative template</span>
+        <span>FRAME — An Elseform template</span>
         <span>Fictional studio. Real attention to detail.</span>
         <a href="#">Back to top ↑</a>
       </footer>

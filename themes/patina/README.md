@@ -2,7 +2,7 @@
 
 An atmospheric furniture salon with decade browsing and an object shortlist.
 
-[Live demo](https://koative.github.io/templates/themes/patina/)
+[Live demo](https://koative.github.io/elseform/themes/patina/)
 
 ## Run independently
 

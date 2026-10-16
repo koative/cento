@@ -243,7 +243,7 @@ export default function App() {
       </main>
       <footer>
         <span>Heirloom · Fictional jewelry atelier</span>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
       </footer>
     </>
   );

@@ -2,7 +2,7 @@
 
 An approachable shipping desk with a live rate estimate and tactile demo label.
 
-[Live demo](https://koative.github.io/templates/themes/parcel/) · [Collection](https://koative.github.io/templates/)
+[Live demo](https://koative.github.io/elseform/themes/parcel/) · [Collection](https://koative.github.io/elseform/)
 
 ## Run independently
 

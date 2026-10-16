@@ -186,7 +186,7 @@ export default function App() {
         </section>
       </main>
       <footer>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
         <p>
           Score is a fictional music school. Keyboard sound is generated
           locally; lessons are demonstrations.

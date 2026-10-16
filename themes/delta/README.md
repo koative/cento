@@ -2,7 +2,7 @@
 
 A living reservoir study turns rainfall and catchment area into a water capture model.
 
-[Live demo](https://koative.github.io/templates/themes/delta/) · [Collection](https://koative.github.io/templates/)
+[Live demo](https://koative.github.io/elseform/themes/delta/) · [Collection](https://koative.github.io/elseform/)
 
 ## Run independently
 

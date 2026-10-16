@@ -319,7 +319,7 @@ export default function App() {
         </a>
         <span>A FICTIONAL STUDIO WITH REAL PERSONALITY.</span>
         <a href="../../">
-          A KOATIVE TEMPLATE <ArrowUpRight size={14} />
+          AN ELSEFORM TEMPLATE <ArrowUpRight size={14} />
         </a>
       </footer>
     </>

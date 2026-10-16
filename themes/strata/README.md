@@ -2,7 +2,7 @@
 
 A geological field atlas with tangible rock horizons and a personal notebook.
 
-[Live demo](https://koative.github.io/templates/themes/strata/) · [Collection](https://koative.github.io/templates/)
+[Live demo](https://koative.github.io/elseform/themes/strata/) · [Collection](https://koative.github.io/elseform/)
 
 ## Run independently
 

@@ -233,7 +233,7 @@ export default function App() {
         </section>
       </main>
       <footer>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
         <p>
           Ripple is a fictional swimming academy. Timetables and lessons are
           examples.

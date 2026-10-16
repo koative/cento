@@ -2,7 +2,7 @@
 
 A coastal market counter with catch filters, a local basket and pickup notes.
 
-[Live demo](https://koative.github.io/templates/themes/brine/)
+[Live demo](https://koative.github.io/elseform/themes/brine/)
 
 ## Run independently
 

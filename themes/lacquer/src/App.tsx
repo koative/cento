@@ -173,7 +173,7 @@ export default function App() {
         </div>
       </main>
       <footer>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
         <p>
           Lacquer is a fictional nail studio. Colors and services are
           illustrative.

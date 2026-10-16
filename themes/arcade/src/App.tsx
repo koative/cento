@@ -368,7 +368,7 @@ export default function App() {
         <span>PLAY IS A PERFECTLY GOOD USE OF TIME.</span>
         <p>
           Fictional studio. Real little game.
-          <br />A Koative template.
+          <br />An Elseform template.
         </p>
       </footer>
     </>

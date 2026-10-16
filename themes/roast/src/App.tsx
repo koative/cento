@@ -453,7 +453,7 @@ export default function App() {
           A fictional coffee brand. All products are demonstration content.
         </span>
         <a href="../../">
-          A Koative template <ArrowUpRight size={14} />
+          An Elseform template <ArrowUpRight size={14} />
         </a>
       </footer>
       {cartOpen && (

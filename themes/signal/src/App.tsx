@@ -214,7 +214,7 @@ export default function App() {
             <small>68,420 of 100,000 events</small>
           </div>
           <a href="../../">
-            Explore Koative templates <ArrowUpRight size={14} />
+            Explore Elseform <ArrowUpRight size={14} />
           </a>
           <div className="profile">
             <span>AC</span>

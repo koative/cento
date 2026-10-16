@@ -276,7 +276,7 @@ export default function App() {
         <a className="brand" href="#">
           tide
         </a>
-        <p>Fictional conservation project · Koative Templates</p>
+        <p>Fictional conservation project · Elseform</p>
         <a href="../../">
           Explore the collection <ArrowUpRight size={16} />
         </a>

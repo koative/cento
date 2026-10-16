@@ -1,6 +1,6 @@
 # Forma
 
-Architecture / portfolio template from the Koative collection. Built with React, TypeScript, Vite, and Lucide icons.
+Architecture / portfolio template from the Elseform collection. Built with React, TypeScript, Vite, and Lucide icons.
 
 ## Design
 
@@ -21,7 +21,7 @@ bun run build
 bun run preview
 ```
 
-The relative Vite base supports deployment at `/templates/themes/forma/` or another subdirectory. The theme has no dependency on the gallery or other templates. `src/main.tsx` is the entry point. Edit `src/App.tsx` for content and `src/styles.css` for the visual system.
+The relative Vite base supports deployment at `/elseform/themes/forma/` or another subdirectory. The theme has no dependency on the gallery or other templates. `src/main.tsx` is the entry point. Edit `src/App.tsx` for content and `src/styles.css` for the visual system.
 
 ## Working interactions
 

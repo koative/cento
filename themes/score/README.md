@@ -2,7 +2,7 @@
 
 An inviting music practice room with a playable piano and a personal lesson finder.
 
-[Live demo](https://koative.github.io/templates/themes/score/)
+[Live demo](https://koative.github.io/elseform/themes/score/)
 
 ## Run independently
 

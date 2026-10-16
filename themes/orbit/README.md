@@ -1,6 +1,6 @@
 # Orbit
 
-A standalone **aerospace studio** template from the Koative collection.
+A standalone **aerospace studio** template from the Elseform collection.
 
 Midnight blue and glacial blue, an interactive native CSS 3D orbital model, fine trajectory geometry, and open typographic space.
 

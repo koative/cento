@@ -269,7 +269,7 @@ export default function App() {
       </main>
       <footer>
         <a href="../../">
-          Koative collection <ArrowUpRight size={15} />
+          Elseform collection <ArrowUpRight size={15} />
         </a>
         <span>Equinox is a fictional planetarium concept.</span>
         <span>Stay curious.</span>

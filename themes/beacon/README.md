@@ -2,7 +2,7 @@
 
 Small, thoughtful steps toward a household checklist and a shared plan.
 
-[Live demo](https://koative.github.io/templates/themes/beacon/) · [Collection](https://koative.github.io/templates/)
+[Live demo](https://koative.github.io/elseform/themes/beacon/) · [Collection](https://koative.github.io/elseform/)
 
 ## Run independently
 

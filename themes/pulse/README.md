@@ -1,6 +1,6 @@
 # Pulse
 
-A standalone **electronic music festival** template from the Koative collection.
+A standalone **electronic music festival** template from the Elseform collection.
 
 Acid green, violet, condensed poster typography, and a kinetic concentric speaker sculpture.
 

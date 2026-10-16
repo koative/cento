@@ -249,7 +249,7 @@ export default function App() {
         </section>
       </main>
       <footer>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
         <p>
           Sprout is a fictional nursery. Plant suggestions and prices are
           illustrative.

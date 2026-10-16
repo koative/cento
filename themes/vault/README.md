@@ -2,7 +2,7 @@
 
 A warm insurance concept with an adjustable plan explorer and transparent local summaries.
 
-A standalone, responsive React + TypeScript + Vite template from [Koative Templates](https://github.com/koative/templates).
+A standalone, responsive React + TypeScript + Vite template from [Elseform](https://github.com/koative/elseform).
 
 ## Run independently
 

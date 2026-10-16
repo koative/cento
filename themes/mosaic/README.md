@@ -2,7 +2,7 @@
 
 A material-led interiors studio with a live sample library and room moodboard.
 
-[Live demo](https://koative.github.io/templates/themes/mosaic/)
+[Live demo](https://koative.github.io/elseform/themes/mosaic/)
 
 ## Run independently
 

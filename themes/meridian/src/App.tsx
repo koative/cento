@@ -255,7 +255,7 @@ export default function App() {
       </main>
       <footer>
         <span>Meridian · Fictional properties and prices</span>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
       </footer>
     </>
   );

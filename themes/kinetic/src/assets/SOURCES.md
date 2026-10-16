@@ -1,6 +1,6 @@
 # Asset provenance
 
-Fonts reused from the existing Koative collection; OFL notices are in `fonts/`. CSS geometry is authored for this template.
+Fonts reused from the existing Elseform collection; OFL notices are in `fonts/`. CSS geometry is authored for this template.
 
 - `movement.jpg`: reused from `themes/tempo/src/assets/dance.jpg`. Original provider/source is documented in `themes/tempo/README.md` in this repository.
 

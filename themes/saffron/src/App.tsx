@@ -215,7 +215,7 @@ export default function App() {
       </main>
       <footer>
         <span>Saffron · Fictional neighborhood market</span>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
       </footer>
     </>
   );

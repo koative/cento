@@ -1,6 +1,6 @@
 # Atelier
 
-A standalone **independent creative studio** template from the Koative collection.
+A standalone **independent creative studio** template from the Elseform collection.
 
 Cobalt, citron, playful typographic projects, asymmetric portfolio columns, and an interactive studio sculpture.
 

@@ -312,7 +312,7 @@ export default function App() {
         </a>
         <span>Fictional workspace. Real possibilities.</span>
         <a href="../../">
-          Back to Koative <ArrowUpRight size={14} />
+          Back to Elseform <ArrowUpRight size={14} />
         </a>
       </footer>
     </>

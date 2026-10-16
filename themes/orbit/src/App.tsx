@@ -298,7 +298,7 @@ export default function App() {
           <span className="orbit-mark" />
           orbit
         </a>
-        <span>A FICTIONAL AEROSPACE STUDIO · KOATIVE TEMPLATE</span>
+        <span>A FICTIONAL AEROSPACE STUDIO · ELSEFORM TEMPLATE</span>
         <a href="../../">
           Back to the collection <ArrowUpRight size={14} />
         </a>

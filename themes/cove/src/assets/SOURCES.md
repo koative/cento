@@ -1,6 +1,6 @@
 # Asset provenance
 
-Fonts reused from the existing Koative collection; OFL notices are in `fonts/`. CSS geometry is authored for this template.
+Fonts reused from the existing Elseform collection; OFL notices are in `fonts/`. CSS geometry is authored for this template.
 
 - `coast.jpg`: reused from `themes/odyssey/src/assets/coast.jpg`. Original provider/source is documented in `themes/odyssey/README.md` in this repository.
 

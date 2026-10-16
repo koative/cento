@@ -2,7 +2,7 @@
 
 A green growing journal with a garden-bed planner and seasonal harvest model.
 
-[Live demo](https://koative.github.io/templates/themes/verdant/) · [Collection](https://koative.github.io/templates/)
+[Live demo](https://koative.github.io/elseform/themes/verdant/) · [Collection](https://koative.github.io/elseform/)
 
 ## Run independently
 

@@ -243,7 +243,7 @@ export default function App() {
         <a href="#" className="wordmark">
           forma<span>®</span>
         </a>
-        <span>Fictional studio · A Koative template</span>
+        <span>Fictional studio · An Elseform template</span>
         <a href="#">
           Back to top <ArrowUpRight size={15} />
         </a>

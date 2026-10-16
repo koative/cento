@@ -2,7 +2,7 @@
 
 A dimensional table-light showroom with finishes, warmth and a considered concept list.
 
-[Live demo](https://koative.github.io/templates/themes/lumenary/) · [Collection](https://koative.github.io/templates/)
+[Live demo](https://koative.github.io/elseform/themes/lumenary/) · [Collection](https://koative.github.io/elseform/)
 
 ## Run independently
 

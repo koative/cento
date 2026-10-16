@@ -16,7 +16,7 @@ Developers and designers browsing reusable website starting points (inferred fro
 
 ## Product Purpose
 
-Publish a growing collection of distinctly designed website templates, each with its own structure, sector and animation language, through a gallery. The user subsequently confirmed https://koative.github.io/templates/ as the publishing destination and instructed us not to change koative.com settings.
+Publish a growing collection of distinctly designed website templates, each with its own structure, sector and animation language, through a gallery. The user authorized renaming the repository to Elseform. Publish at https://koative.github.io/elseform/ and preserve the separate koative.com site.
 
 ## Capabilities and Constraints
 
@@ -25,6 +25,8 @@ The user now requests one hundred templates: the existing sixty-four plus thirty
 ## Brand Commitments
 
 Elseform is the independent product identity; Koative remains the creator and repository owner. The user explicitly authorizes a full homepage brand/name/logo/design replacement and pins artistic liquid glass as its visual direction. All UI and documentation in English, confirmed by user. Bold visual diversity including 3D and animation. Impeccable informs craft without limiting creativity.
+
+The gallery supports Light, Dark and System appearance. System follows live OS preference changes; explicit choices persist locally. Individual templates retain their own art direction.
 
 ## Evidence on Hand
 

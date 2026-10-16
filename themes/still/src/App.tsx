@@ -361,7 +361,7 @@ export default function App() {
         <div className="footer-bottom">
           <span>A fictional wellness studio. No real classes or bookings.</span>
           <a href="../../">
-            A Koative template <ArrowUpRight size={13} />
+            An Elseform template <ArrowUpRight size={13} />
           </a>
           <span>Move gently. Stay curious.</span>
         </div>

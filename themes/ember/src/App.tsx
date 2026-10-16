@@ -373,7 +373,7 @@ export default function App() {
         <span>
           Made with fire. Shared with love.
           <br />
-          Fictional restaurant · A Koative template
+          Fictional restaurant · An Elseform template
         </span>
         <a href="#menu">
           One more look at the menu? <ArrowUpRight size={17} />

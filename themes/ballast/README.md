@@ -2,7 +2,7 @@
 
 A working dispatch board, route movement and per-train release controls.
 
-[Live demo](https://koative.github.io/templates/themes/ballast/) · [Collection](https://koative.github.io/templates/)
+[Live demo](https://koative.github.io/elseform/themes/ballast/) · [Collection](https://koative.github.io/elseform/)
 
 ## Run independently
 

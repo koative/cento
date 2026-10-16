@@ -1,6 +1,6 @@
 # Terrain
 
-A standalone **outdoor travel journal** template from the Koative collection.
+A standalone **outdoor travel journal** template from the Elseform collection.
 
 Rust, sand, and forest green; immersive alpine photography; illustrated route diagrams; and quiet serif editorial typography.
 

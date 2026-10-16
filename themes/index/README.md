@@ -1,6 +1,6 @@
 # Index
 
-Independent bookstore website template from the Koative collection.
+Independent bookstore website template from the Elseform collection.
 
 ## Run independently
 

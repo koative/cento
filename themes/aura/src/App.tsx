@@ -270,7 +270,7 @@ export default function App() {
         <a className="logo" href="#">
           aura
         </a>
-        <p>Fictional brand and products. A Koative template.</p>
+        <p>Fictional brand and products. An Elseform template.</p>
         <a href="../../">
           Explore all templates <ArrowUpRight size={16} />
         </a>

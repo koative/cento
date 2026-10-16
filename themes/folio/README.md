@@ -2,7 +2,7 @@
 
 An independent print room with original geometric editions and a viewing-table shortlist.
 
-[Live demo](https://koative.github.io/templates/themes/folio/)
+[Live demo](https://koative.github.io/elseform/themes/folio/)
 
 ## Run independently
 

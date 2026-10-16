@@ -2,7 +2,7 @@
 
 A seasonal honey tasting counter with a dimensional jar and quantity-aware demo basket.
 
-[Live demo](https://koative.github.io/templates/themes/nectar/)
+[Live demo](https://koative.github.io/elseform/themes/nectar/)
 
 ## Run independently
 

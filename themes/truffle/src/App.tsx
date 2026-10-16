@@ -173,7 +173,7 @@ export default function App() {
         </section>
       </main>
       <footer>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
         <p>
           Truffle is a fictional chocolate atelier. All products and prices are
           illustrative.

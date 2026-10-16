@@ -1,6 +1,6 @@
 # Asset provenance
 
-Fonts reused from the existing Koative collection; OFL notices are in `fonts/`. CSS geometry is authored for this template.
+Fonts reused from the existing Elseform collection; OFL notices are in `fonts/`. CSS geometry is authored for this template.
 
 - `garden.jpg`: reused from `themes/meridian/src/assets/garden.jpg`. Original provider/source is documented in `themes/meridian/README.md` in this repository.
 

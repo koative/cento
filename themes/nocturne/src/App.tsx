@@ -344,7 +344,7 @@ export default function App() {
         </span>
         <p>
           A fictional listening bar.
-          <br />A Koative template.
+          <br />An Elseform template.
         </p>
       </footer>
     </>

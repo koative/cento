@@ -235,7 +235,7 @@ export default function App() {
       </main>
       <footer>
         <span>Kindred · Fictional pet adoption template</span>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
       </footer>
     </>
   );

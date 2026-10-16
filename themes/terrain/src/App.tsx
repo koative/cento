@@ -381,7 +381,7 @@ export default function App() {
         <div className="footer-bottom">
           <span>FICTIONAL TRAVEL BRAND · NO TRIPS ARE SOLD</span>
           <a href="../../">
-            A KOATIVE TEMPLATE <ArrowUpRight size={13} />
+            AN ELSEFORM TEMPLATE <ArrowUpRight size={13} />
           </a>
         </div>
       </footer>

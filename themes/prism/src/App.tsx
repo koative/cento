@@ -357,7 +357,7 @@ export default function App() {
         <p>
           A fictional conference.
           <br />
-          Made for Koative Templates.
+          Made for Elseform.
         </p>
       </footer>
     </>

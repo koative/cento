@@ -197,7 +197,7 @@ export default function App() {
       </main>
       <footer>
         <span>Vow · Stories worth celebrating. Fictional template.</span>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
       </footer>
     </>
   );

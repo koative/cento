@@ -174,7 +174,7 @@ export default function App() {
         </section>
       </main>
       <footer>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
         <p>
           Patina is a fictional vintage furniture concept. Shortlists stay in
           this page.

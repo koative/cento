@@ -250,7 +250,7 @@ export default function App() {
       </main>
       <footer>
         <span>Civic · Fictional town. Not a government website.</span>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
       </footer>
     </>
   );

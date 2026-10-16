@@ -2,7 +2,7 @@
 
 A maritime operations workspace with a terminal schematic, vessel details and manifest export.
 
-A standalone, responsive React + TypeScript + Vite template from [Koative Templates](https://github.com/koative/templates).
+A standalone, responsive React + TypeScript + Vite template from [Elseform](https://github.com/koative/elseform).
 
 ## Run independently
 

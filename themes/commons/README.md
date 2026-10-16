@@ -2,7 +2,7 @@
 
 Space for your next idea. Explore a shared workspace and find your kind of working day.
 
-**[Live demo](https://koative.github.io/templates/themes/commons/)** · Coworking
+**[Live demo](https://koative.github.io/elseform/themes/commons/)** · Coworking
 
 ## Run independently
 
@@ -42,4 +42,4 @@ Photography is locally included and subject to the [Unsplash license](https://un
 
 ## Demonstration boundaries
 
-The brand, venue, routes, inventory, prices and activities are fictional sample content. No reservation, purchase, payment or message is sent. Connect your own backend and replace illustrative data before real commercial use. Template source is MIT licensed as part of Koative Templates.
+The brand, venue, routes, inventory, prices and activities are fictional sample content. No reservation, purchase, payment or message is sent. Connect your own backend and replace illustrative data before real commercial use. Template source is MIT licensed as part of Elseform.

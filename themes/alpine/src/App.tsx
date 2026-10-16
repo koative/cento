@@ -185,7 +185,7 @@ export default function App() {
         </section>
       </main>
       <footer>
-        <a href="../../">Koative collection</a>
+        <a href="../../">Elseform collection</a>
         <p>
           Alpine is a fictional ski outfitter. Prices and equipment are
           illustrative.

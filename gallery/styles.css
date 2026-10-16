@@ -1249,3 +1249,291 @@ footer > a:last-child:hover {
     right: -24px;
   }
 }
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.appearance-control {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 0 10px;
+  background: #ffffff7d;
+  border-radius: 12px;
+  box-shadow:
+    inset 0 1px 0 #fff,
+    0 3px 10px #364e7509;
+}
+.appearance-control select {
+  max-width: 80px;
+  min-height: 44px;
+  border: 0;
+  padding: 0 2px;
+  background: transparent;
+  font-size: 12px;
+  cursor: pointer;
+}
+.appearance-control select option,
+.sort-control select option {
+  background: var(--paper, #eef2f8);
+  color: var(--ink);
+}
+.source-icon {
+  display: none;
+}
+.preview-canvas iframe {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  color: #e5edf9;
+  background: #0c1320;
+  --paper: #0c1320;
+  --ink: #e5edf9;
+  --blue: #b3caff;
+  --muted: #afbed3;
+  --line: #afc5e529;
+  --glass: #24334e66;
+}
+:root[data-theme="dark"] * {
+  scrollbar-color: #52627b #0c1320;
+}
+:root[data-theme="dark"] ::selection {
+  background: #415882;
+  color: #f4f7ff;
+}
+:root[data-theme="dark"] .ambient-field {
+  background:
+    radial-gradient(ellipse at 86% 12%, #242346 0, transparent 48%),
+    radial-gradient(ellipse at 2% 32%, #122a3b 0, transparent 44%),
+    radial-gradient(ellipse at 64% 100%, #272437 0, transparent 50%), #0c1320;
+}
+:root[data-theme="dark"] .masthead {
+  background: #1a263b66;
+  box-shadow:
+    inset 0 1px 0 #d6e5ff26,
+    0 8px 28px #00000024;
+}
+:root[data-theme="dark"] .brand svg {
+  color: #b7d0f6;
+}
+:root[data-theme="dark"] .nav-source,
+:root[data-theme="dark"] .appearance-control {
+  background: #33456355;
+  box-shadow:
+    inset 0 1px 0 #d6e5ff26,
+    0 3px 10px #00000014;
+}
+:root[data-theme="dark"] .opening h1 em,
+:root[data-theme="dark"] .about h2 em {
+  color: #b6cbf2;
+}
+:root[data-theme="dark"] .opening-copy > p {
+  color: #becce0;
+}
+:root[data-theme="dark"] .primary-action {
+  background: #c9dcf6;
+  color: #12253e;
+  box-shadow:
+    inset 0 1px 0 #ffffffc7,
+    0 6px 16px #00000026;
+}
+:root[data-theme="dark"] .primary-action:hover {
+  background: #e1ecff;
+}
+:root[data-theme="dark"] .discovery-action {
+  color: #c2d4f0;
+}
+:root[data-theme="dark"] .discovery-action:hover {
+  color: #fff;
+}
+:root[data-theme="dark"] .featured-peek {
+  background: #24334e80;
+  box-shadow:
+    inset 0 1px 0 #d6e5ff33,
+    0 14px 35px #00000024;
+}
+:root[data-theme="dark"] .featured-peek:hover {
+  background: #344660a6;
+}
+:root[data-theme="dark"] .featured-peek > span > span,
+:root[data-theme="dark"] .opening-foot {
+  color: #b0c1da;
+}
+:root[data-theme="dark"] .collection-heading h2 span {
+  color: #afc8f5;
+}
+:root[data-theme="dark"] .saved-toggle {
+  background: #30425d66;
+  box-shadow: inset 0 1px 0 #d6e5ff26;
+}
+:root[data-theme="dark"] .saved-toggle[aria-pressed="true"] {
+  background: #c9dcf6;
+  color: #12253e;
+  box-shadow: none;
+}
+:root[data-theme="dark"] .saved-toggle[aria-pressed="true"] span {
+  color: #334b6a;
+}
+:root[data-theme="dark"] .collection-tools {
+  background: #24334e66;
+  box-shadow:
+    inset 0 1px 0 #d6e5ff26,
+    0 5px 20px #00000016;
+}
+:root[data-theme="dark"] .filters button {
+  color: #bbcae0;
+}
+:root[data-theme="dark"] .filters button:hover {
+  background: #41567455;
+  color: #f3f6ff;
+}
+:root[data-theme="dark"] .filters button.active {
+  background: #c9dcf6;
+  color: #12253e;
+  box-shadow: 0 2px 8px #00000018;
+}
+:root[data-theme="dark"] .search {
+  background: #0b162b66;
+  color: #b6c8e1;
+}
+:root[data-theme="dark"] .search input::placeholder {
+  color: #b6c8e1;
+}
+:root[data-theme="dark"] .template-entry {
+  background: #27365050;
+  box-shadow:
+    inset 0 1px 0 #d6e5ff29,
+    0 6px 20px #00000016;
+}
+:root[data-theme="dark"] .template-entry:hover {
+  background: #31436080;
+}
+:root[data-theme="dark"] .template-visual {
+  background: #1b293e;
+}
+:root[data-theme="dark"] .preview-label {
+  background: #1e2d46ed;
+  color: #e5edf9;
+}
+:root[data-theme="dark"] .save-template {
+  background: #20324be8;
+  color: #e1edff;
+  box-shadow: 0 3px 12px #00000026;
+}
+:root[data-theme="dark"] .save-template[aria-pressed="true"] {
+  background: #c9dcf6;
+  color: #12253e;
+}
+:root[data-theme="dark"] .entry-links {
+  border-color: #b4c9ea24;
+}
+:root[data-theme="dark"] .about-actions {
+  background: #24334e66;
+  box-shadow: inset 0 1px 0 #d6e5ff26;
+}
+:root[data-theme="dark"] .skip-link {
+  background: #c9dcf6;
+  color: #12253e;
+}
+:root[data-theme="dark"] .preview-dialog {
+  background: #111c2d;
+  color: #e5edf9;
+}
+:root[data-theme="dark"] .preview-dialog::backdrop {
+  background: #030916cf;
+}
+:root[data-theme="dark"] .preview-toolbar,
+:root[data-theme="dark"] .preview-foot {
+  background: #1c2940;
+  color: #e5edf9;
+}
+:root[data-theme="dark"] .preview-name span,
+:root[data-theme="dark"] .preview-foot {
+  color: #bdcce2;
+}
+:root[data-theme="dark"] .preview-foot a {
+  color: #c1d6ff;
+}
+:root[data-theme="dark"] .device-controls button[aria-pressed="true"] {
+  background: #384b6b;
+  color: #e5edf9;
+}
+@media (max-width: 900px) {
+  .masthead nav {
+    gap: 18px;
+  }
+  .header-actions {
+    gap: 8px;
+  }
+  .appearance-control {
+    padding-inline: 8px;
+  }
+}
+@media (max-width: 680px) {
+  .header-actions {
+    gap: 7px;
+  }
+  .nav-source {
+    width: 36px;
+    height: 44px;
+    justify-content: center;
+    padding: 0;
+  }
+  .nav-source > span,
+  .source-arrow {
+    display: none;
+  }
+  .source-icon {
+    display: block;
+  }
+  .appearance-control {
+    gap: 5px;
+    padding: 0 7px;
+  }
+  .appearance-control select {
+    font-size: 11px;
+    max-width: 72px;
+  }
+}
+@media (max-width: 380px) {
+  .masthead {
+    padding-inline: 10px;
+    gap: 7px;
+  }
+  .brand {
+    font-size: 22px;
+    gap: 3px;
+  }
+  .brand svg {
+    width: 26px;
+    height: 26px;
+  }
+  .header-actions {
+    gap: 5px;
+  }
+  .appearance-control {
+    padding-inline: 5px;
+    gap: 3px;
+  }
+  .appearance-control svg {
+    width: 14px;
+  }
+  .appearance-control select {
+    max-width: 65px;
+  }
+  .nav-source {
+    width: 30px;
+  }
+}
+@media (max-width: 380px) {
+  .opening {
+    min-height: 830px;
+  }
+  .artwork-stage {
+    top: 400px;
+    height: 330px;
+  }
+}

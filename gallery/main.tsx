@@ -14,12 +14,15 @@ import {
   SlidersHorizontal,
   Bookmark,
   Shuffle,
+  Sun,
+  Moon,
 } from "lucide-react";
 import { catalog, type Template } from "./catalog";
 import "./styles.css";
 import LiquidArtwork from "./LiquidArtwork";
+import { useAppearance, type Appearance } from "./useAppearance";
 const base = import.meta.env.BASE_URL;
-const repo = "https://github.com/koative/templates";
+const repo = "https://github.com/koative/elseform";
 const demo = (slug: string) => `${base}themes/${slug}/`;
 function BrandMark() {
   return (
@@ -39,6 +42,7 @@ function BrandMark() {
   );
 }
 function App() {
+  const { appearance, theme, setPreference } = useAppearance();
   const [saved, setSaved] = useState<string[]>(() => {
     try {
       const data: unknown = JSON.parse(
@@ -113,7 +117,7 @@ function App() {
   async function copy() {
     try {
       await navigator.clipboard.writeText(
-        "git clone https://github.com/koative/templates.git",
+        "git clone https://github.com/koative/elseform.git",
       );
       setCopied(true);
       setCopyFailed(false);
@@ -138,14 +142,43 @@ function App() {
           <a href="#collection">Collection</a>
           <a href="#about">The idea</a>
         </nav>
-        <a className="nav-source" href={repo} target="_blank" rel="noreferrer">
-          Get the source <ArrowUpRight size={16} />
-        </a>
+        <div className="header-actions">
+          <label className="appearance-control">
+            {theme === "dark" ? (
+              <Moon size={16} aria-hidden="true" />
+            ) : (
+              <Sun size={16} aria-hidden="true" />
+            )}
+            <span className="sr-only">Appearance</span>
+            <select
+              aria-label="Appearance"
+              value={appearance}
+              onChange={(event) =>
+                setPreference(event.target.value as Appearance)
+              }
+            >
+              <option value="system">System</option>
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+          </label>
+          <a
+            className="nav-source"
+            href={repo}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Get the source"
+          >
+            <Github className="source-icon" size={17} />
+            <span>Get the source</span>
+            <ArrowUpRight className="source-arrow" size={16} />
+          </a>
+        </div>
       </header>
       <main>
         <section className="opening" aria-labelledby="title">
           <div className="artwork-stage">
-            <LiquidArtwork paused={Boolean(selected)} />
+            <LiquidArtwork paused={Boolean(selected)} dark={theme === "dark"} />
           </div>
           <div className="opening-copy">
             <h1 id="title">

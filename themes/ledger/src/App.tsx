@@ -124,7 +124,7 @@ export default function App() {
           </button>
         </div>
         <a className="back" href="../../">
-          A Koative template <ArrowUpRight size={14} />
+          An Elseform template <ArrowUpRight size={14} />
         </a>
       </aside>
       <main id="overview">

@@ -19,7 +19,7 @@ for (const slug of slugs) {
     if (response.status() >= 400 && !response.url().endsWith("favicon.ico"))
       failedAssets.push({ url: response.url(), status: response.status() });
   });
-  await page.goto(`http://localhost:5173/templates/themes/${slug}/`, {
+  await page.goto(`http://localhost:5173/elseform/themes/${slug}/`, {
     waitUntil: "networkidle",
   });
   await page.evaluate(() => document.fonts.ready);

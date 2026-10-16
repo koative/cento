@@ -273,7 +273,7 @@ export default function App() {
           vélo®
         </a>
         <p>
-          A fictional cycling brand. A Koative template.
+          A fictional cycling brand. An Elseform template.
           <br />
           Reference photograph is not the configured bicycle.
         </p>

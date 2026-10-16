@@ -2,7 +2,7 @@
 
 A cheerful nursery with light-aware plant discovery and a small-space growing plan.
 
-[Live demo](https://koative.github.io/templates/themes/sprout/)
+[Live demo](https://koative.github.io/elseform/themes/sprout/)
 
 ## Run independently
 

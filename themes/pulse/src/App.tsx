@@ -256,7 +256,7 @@ export default function App() {
         </a>
         <span>A FICTIONAL FESTIVAL. A REAL GOOD TEMPLATE.</span>
         <a href="../../">
-          KOATIVE COLLECTION <ArrowUpRight size={16} />
+          ELSEFORM COLLECTION <ArrowUpRight size={16} />
         </a>
       </footer>
     </>

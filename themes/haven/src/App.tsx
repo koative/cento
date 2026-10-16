@@ -433,7 +433,7 @@ export default function App() {
         <p>
           A little closer to yourself.
           <br />
-          Fictional retreat · A Koative template
+          Fictional retreat · An Elseform template
         </p>
         <a href="#top">
           Back to the mountains <ArrowUpRight size={16} />

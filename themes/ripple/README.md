@@ -2,7 +2,7 @@
 
 A bright swimming academy with animated lanes and a filterable weekly lesson planner.
 
-[Live demo](https://koative.github.io/templates/themes/ripple/)
+[Live demo](https://koative.github.io/elseform/themes/ripple/)
 
 ## Run independently
 
