@@ -1,6 +1,6 @@
 # Lumen
 
-Glasses that fit your face, at one honest price. An eyewear brand website template from [Cento](https://koative.github.io/cento/) by Koative.
+Glasses that fit your face, at one honest price. An eyewear brand website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

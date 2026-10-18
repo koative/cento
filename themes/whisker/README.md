@@ -1,6 +1,6 @@
 # Whisker
 
-Calm, unhurried vet care for dogs, cats and rabbits. A veterinary clinic website template from [Cento](https://koative.github.io/cento/) by Koative.
+Calm, unhurried vet care for dogs, cats and rabbits. A veterinary clinic website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

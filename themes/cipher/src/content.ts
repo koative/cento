@@ -14,7 +14,7 @@ export const brand = {
     "410 Harbor Row, Suite 6",
     "Portland, OR 97209",
   ],
-  gallery: "https://koative.github.io/cento/",
+  gallery: "https://cento.koative.com/",
 };
 
 export type NavItem = { to: string; label: string };

@@ -1,6 +1,6 @@
 # Clutch
 
-Three games, twelve players, one habit: winning the last round. An esports team website template from [Cento](https://koative.github.io/cento/) by Koative.
+Three games, twelve players, one habit: winning the last round. An esports team website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

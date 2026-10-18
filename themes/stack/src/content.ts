@@ -16,7 +16,7 @@ export const brand = {
   phone: "+1 555 0142",
   baseUrl: "https://api.stack.example/v3",
   testKey: "sk_test_51Hq8vStackDemo0042",
-  gallery: "https://koative.github.io/cento/",
+  gallery: "https://cento.koative.com/",
   address: ["Stack Labs", "Rua da Boavista 118", "1200-066 Lisbon, Portugal"],
 };
 

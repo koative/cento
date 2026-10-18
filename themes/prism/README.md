@@ -1,6 +1,6 @@
 # Prism
 
-Three days in a tram depot full of light, taking design apart. A design conference website template from [Cento](https://koative.github.io/cento/) by Koative.
+Three days in a tram depot full of light, taking design apart. A design conference website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

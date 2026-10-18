@@ -1,6 +1,6 @@
 # Pour
 
-Good wine, no ceremony. A shop by day, a bar by night. A natural wine shop & bar website template from [Cento](https://koative.github.io/cento/) by Koative.
+Good wine, no ceremony. A shop by day, a bar by night. A natural wine shop & bar website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

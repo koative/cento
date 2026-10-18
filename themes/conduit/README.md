@@ -1,6 +1,6 @@
 # Conduit
 
-One request format for every API your product touches. An API integration platform website template from [Cento](https://koative.github.io/cento/) by Koative.
+One request format for every API your product touches. An API integration platform website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

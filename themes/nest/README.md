@@ -1,6 +1,6 @@
 # Nest
 
-Big days for small people, on Linden Row. A childcare & nursery website template from [Cento](https://koative.github.io/cento/) by Koative.
+Big days for small people, on Linden Row. A childcare & nursery website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

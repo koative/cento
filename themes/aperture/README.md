@@ -1,6 +1,6 @@
 # Aperture
 
-Two screens, one bar, and the lights go down on time. An independent cinema website template from [Cento](https://koative.github.io/cento/) by Koative.
+Two screens, one bar, and the lights go down on time. An independent cinema website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

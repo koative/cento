@@ -1,6 +1,6 @@
 # Proof
 
-Baked before you're up. Ready when you are. An artisan bakery website template from [Cento](https://koative.github.io/cento/) by Koative.
+Baked before you're up. Ready when you are. An artisan bakery website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

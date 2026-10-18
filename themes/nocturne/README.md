@@ -1,6 +1,6 @@
 # Nocturne
 
-Stay for another side. A cocktail & listening bar website template from [Cento](https://koative.github.io/cento/) by Koative.
+Stay for another side. A cocktail & listening bar website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

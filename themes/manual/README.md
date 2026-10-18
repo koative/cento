@@ -1,6 +1,6 @@
 # Manual
 
-Find the fix, then get back to the counter. A help center & knowledge base website template from [Cento](https://koative.github.io/cento/) by Koative.
+Find the fix, then get back to the counter. A help center & knowledge base website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

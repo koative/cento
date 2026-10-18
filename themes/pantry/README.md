@@ -1,6 +1,6 @@
 # Pantry
 
-Everything for dinner except the salt. A meal kit subscription website template from [Cento](https://koative.github.io/cento/) by Koative.
+Everything for dinner except the salt. A meal kit subscription website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

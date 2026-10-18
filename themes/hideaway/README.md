@@ -1,6 +1,6 @@
 # Hideaway
 
-Eight houses on Vellmar, and the people who keep their keys. A vacation rental villas website template from [Cento](https://koative.github.io/cento/) by Koative.
+Eight houses on Vellmar, and the people who keep their keys. A vacation rental villas website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

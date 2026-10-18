@@ -1,6 +1,6 @@
 # Odyssey
 
-Slow journeys, planned by people who have been. A travel agency website template from [Cento](https://koative.github.io/cento/) by Koative.
+Slow journeys, planned by people who have been. A travel agency website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

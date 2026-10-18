@@ -1,6 +1,6 @@
 # Smash
 
-Smashed thin. Stacked tall. Ready in twelve. A burger joint with online ordering website template from [Cento](https://koative.github.io/cento/) by Koative.
+Smashed thin. Stacked tall. Ready in twelve. A burger joint with online ordering website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

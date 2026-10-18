@@ -1,6 +1,6 @@
 # Kettle
 
-Brewed in copper. Poured twelve feet from the kettle. A craft brewery & taproom website template from [Cento](https://koative.github.io/cento/) by Koative.
+Brewed in copper. Poured twelve feet from the kettle. A craft brewery & taproom website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

@@ -1,6 +1,6 @@
 # Fixture
 
-A fixed price before the work. A two-year warranty after it. A plumbing & electrical services website template from [Cento](https://koative.github.io/cento/) by Koative.
+A fixed price before the work. A two-year warranty after it. A plumbing & electrical services website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

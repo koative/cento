@@ -1,6 +1,6 @@
 # Bloom
 
-Flowers gathered by hand, delivered the same day. A florist website template from [Cento](https://koative.github.io/cento/) by Koative.
+Flowers gathered by hand, delivered the same day. A florist website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

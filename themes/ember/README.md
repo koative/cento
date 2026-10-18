@@ -1,6 +1,6 @@
 # Ember
 
-Wood-fired, every night on Alder Street. A neighbourhood restaurant website template from [Cento](https://koative.github.io/cento/) by Koative.
+Wood-fired, every night on Alder Street. A neighbourhood restaurant website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

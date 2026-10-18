@@ -1,6 +1,6 @@
 # Index
 
-Three rooms of books, chosen by people who read them. An independent bookstore website template from [Cento](https://koative.github.io/cento/) by Koative.
+Three rooms of books, chosen by people who read them. An independent bookstore website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

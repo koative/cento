@@ -1,6 +1,6 @@
 # Cadence
 
-Hire good people with a steady beat. A hiring & ATS software website template from [Cento](https://koative.github.io/cento/) by Koative.
+Hire good people with a steady beat. A hiring & ATS software website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

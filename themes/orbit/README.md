@@ -1,6 +1,6 @@
 # Orbit
 
-Orbit by the kilogram, on a manifest you can read a year ahead. A space launch startup website template from [Cento](https://koative.github.io/cento/) by Koative.
+Orbit by the kilogram, on a manifest you can read a year ahead. A space launch startup website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

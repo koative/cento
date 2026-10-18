@@ -1,6 +1,6 @@
 # Vow
 
-Every detail carried, so you can simply be there. A wedding planner website template from [Cento](https://koative.github.io/cento/) by Koative.
+Every detail carried, so you can simply be there. A wedding planner website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

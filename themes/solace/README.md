@@ -1,6 +1,6 @@
 # Solace
 
-Family medicine with room to talk, from newborns to grandparents. A family health clinic website template from [Cento](https://koative.github.io/cento/) by Koative.
+Family medicine with room to talk, from newborns to grandparents. A family health clinic website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

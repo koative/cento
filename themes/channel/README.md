@@ -1,6 +1,6 @@
 # Channel
 
-Steel, sparks and second chances. New build every Thursday. A video creator & merch website template from [Cento](https://koative.github.io/cento/) by Koative.
+Steel, sparks and second chances. New build every Thursday. A video creator & merch website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

@@ -1,6 +1,6 @@
 # Alloy
 
-Frames, civils and the difficult sites in between. A construction company website template from [Cento](https://koative.github.io/cento/) by Koative.
+Frames, civils and the difficult sites in between. A construction company website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

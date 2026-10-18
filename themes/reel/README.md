@@ -1,6 +1,6 @@
 # Reel
 
-Documentaries made slowly, with the people in them. A documentary film production website template from [Cento](https://koative.github.io/cento/) by Koative.
+Documentaries made slowly, with the people in them. A documentary film production website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

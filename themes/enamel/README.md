@@ -1,6 +1,6 @@
 # Enamel
 
-Careful dentistry, priced before we pick up a drill. A dental clinic website template from [Cento](https://koative.github.io/cento/) by Koative.
+Careful dentistry, priced before we pick up a drill. A dental clinic website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

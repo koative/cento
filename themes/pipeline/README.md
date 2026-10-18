@@ -1,6 +1,6 @@
 # Pipeline
 
-Every deal on the board. One honest number on Thursday. A CRM & sales software website template from [Cento](https://koative.github.io/cento/) by Koative.
+Every deal on the board. One honest number on Thursday. A CRM & sales software website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

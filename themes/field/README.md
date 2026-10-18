@@ -1,6 +1,6 @@
 # Field
 
-Our game. Our ground. Our people. A community sports club website template from [Cento](https://koative.github.io/cento/) by Koative.
+Our game. Our ground. Our people. A community sports club website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

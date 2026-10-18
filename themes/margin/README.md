@@ -1,6 +1,6 @@
 # Margin
 
-The quiet parts of everyday software, annotated in the margin. A product designer portfolio website template from [Cento](https://koative.github.io/cento/) by Koative.
+The quiet parts of everyday software, annotated in the margin. A product designer portfolio website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

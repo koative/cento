@@ -1,6 +1,6 @@
 # Muse
 
-Clothes for the in-between hours, cut and finished in Paris. A fashion label website template from [Cento](https://koative.github.io/cento/) by Koative.
+Clothes for the in-between hours, cut and finished in Paris. A fashion label website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

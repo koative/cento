@@ -1,6 +1,6 @@
 # Terrain
 
-Small-group treks, led by people who live where they walk. A guided adventure travel website template from [Cento](https://koative.github.io/cento/) by Koative.
+Small-group treks, led by people who live where they walk. A guided adventure travel website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

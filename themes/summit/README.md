@@ -1,6 +1,6 @@
 # Summit
 
-Six walls, one reset every Tuesday, always something new to try. A climbing gym website template from [Cento](https://koative.github.io/cento/) by Koative.
+Six walls, one reset every Tuesday, always something new to try. A climbing gym website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

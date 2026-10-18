@@ -1,6 +1,6 @@
 # Streak
 
-Mark the day. Keep the chain. A habit-tracking mobile app website template from [Cento](https://koative.github.io/cento/) by Koative.
+Mark the day. Keep the chain. A habit-tracking mobile app website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

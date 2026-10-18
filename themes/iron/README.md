@@ -1,6 +1,6 @@
 # Iron
 
-Heavy iron, honest coaching, a timetable that starts at 5:45. A gym & personal training website template from [Cento](https://koative.github.io/cento/) by Koative.
+Heavy iron, honest coaching, a timetable that starts at 5:45. A gym & personal training website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

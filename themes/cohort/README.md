@@ -1,6 +1,6 @@
 # Cohort
 
-First checks for the industrial middle. A venture capital firm website template from [Cento](https://koative.github.io/cento/) by Koative.
+First checks for the industrial middle. A venture capital firm website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

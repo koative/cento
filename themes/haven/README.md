@@ -1,6 +1,6 @@
 # Haven
 
-Twenty-two beds at 1,640 metres, and the whole valley below. An alpine hotel website template from [Cento](https://koative.github.io/cento/) by Koative.
+Twenty-two beds at 1,640 metres, and the whole valley below. An alpine hotel website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

@@ -1,6 +1,6 @@
 # Still
 
-Less noise. More you. Slow yoga, breath and rest, taught plainly. A yoga & meditation studio website template from [Cento](https://koative.github.io/cento/) by Koative.
+Less noise. More you. Slow yoga, breath and rest, taught plainly. A yoga & meditation studio website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

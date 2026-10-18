@@ -1,6 +1,6 @@
 # Encore
 
-Eight productions, one house, and every seat with its view. A theatre website template from [Cento](https://koative.github.io/cento/) by Koative.
+Eight productions, one house, and every seat with its view. A theatre website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

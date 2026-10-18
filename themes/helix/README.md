@@ -1,6 +1,6 @@
 # Helix
 
-Quantum processors, held at nine millikelvin and open for work. A quantum computing company website template from [Cento](https://koative.github.io/cento/) by Koative.
+Quantum processors, held at nine millikelvin and open for work. A quantum computing company website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

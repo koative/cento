@@ -1,6 +1,6 @@
 # Signal
 
-Know which change moved the number. A product analytics SaaS website template from [Cento](https://koative.github.io/cento/) by Koative.
+Know which change moved the number. A product analytics SaaS website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

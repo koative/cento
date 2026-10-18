@@ -1,6 +1,6 @@
 # Vault
 
-Cover for the home you actually live in. A home & renters insurance website template from [Cento](https://koative.github.io/cento/) by Koative.
+Cover for the home you actually live in. A home & renters insurance website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

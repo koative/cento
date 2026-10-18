@@ -1,6 +1,6 @@
 # Heirloom
 
-Rings and jewels made by hand, to be worn and handed on. A jewelry atelier website template from [Cento](https://koative.github.io/cento/) by Koative.
+Rings and jewels made by hand, to be worn and handed on. A jewelry atelier website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

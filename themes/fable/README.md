@@ -1,6 +1,6 @@
 # Fable
 
-Please touch everything. A children's museum website template from [Cento](https://koative.github.io/cento/) by Koative.
+Please touch everything. A children's museum website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

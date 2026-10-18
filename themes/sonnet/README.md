@@ -1,6 +1,6 @@
 # Sonnet
 
-Small classes, real conversation, from the first evening. A language school website template from [Cento](https://koative.github.io/cento/) by Koative.
+Small classes, real conversation, from the first evening. A language school website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

@@ -1,6 +1,6 @@
 # Vector
 
-Six electric cars, with the range you get in January. An electric car maker website template from [Cento](https://koative.github.io/cento/) by Koative.
+Six electric cars, with the range you get in January. An electric car maker website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

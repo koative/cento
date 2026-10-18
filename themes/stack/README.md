@@ -1,6 +1,6 @@
 # Stack
 
-Durable jobs, events and webhooks for TypeScript backends. A developer documentation website template from [Cento](https://koative.github.io/cento/) by Koative.
+Durable jobs, events and webhooks for TypeScript backends. A developer documentation website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

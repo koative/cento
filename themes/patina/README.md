@@ -1,6 +1,6 @@
 # Patina
 
-Furniture with a past, measured and mended for its next room. A vintage furniture store website template from [Cento](https://koative.github.io/cento/) by Koative.
+Furniture with a past, measured and mended for its next room. A vintage furniture store website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

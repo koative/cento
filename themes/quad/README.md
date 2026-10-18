@@ -1,6 +1,6 @@
 # Quad
 
-Study where the city meets the quad. Applications for 2027 are open. A university website template from [Cento](https://koative.github.io/cento/) by Koative.
+Study where the city meets the quad. Applications for 2027 are open. A university website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

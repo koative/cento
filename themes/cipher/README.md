@@ -1,6 +1,6 @@
 # Cipher
 
-Trust is a decision. Make it a clear one. A cybersecurity SaaS website template from [Cento](https://koative.github.io/cento/) by Koative.
+Trust is a decision. Make it a clear one. A cybersecurity SaaS website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

@@ -1,6 +1,6 @@
 # Lantern
 
-Small lights, carried together. Your town's fund, in the window. A community charity & fundraising website template from [Cento](https://koative.github.io/cento/) by Koative.
+Small lights, carried together. Your town's fund, in the window. A community charity & fundraising website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

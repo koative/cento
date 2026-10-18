@@ -1,6 +1,6 @@
 # Kindred
 
-Somebody here has been waiting for you. A pet adoption shelter website template from [Cento](https://koative.github.io/cento/) by Koative.
+Somebody here has been waiting for you. A pet adoption shelter website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

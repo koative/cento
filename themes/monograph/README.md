@@ -1,6 +1,6 @@
 # Monograph
 
-A quarterly of slow attention. One word, four times a year. An independent magazine website template from [Cento](https://koative.github.io/cento/) by Koative.
+A quarterly of slow attention. One word, four times a year. An independent magazine website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

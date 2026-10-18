@@ -104,7 +104,7 @@ export function Footer() {
         <p>{brand.registration}</p>
         <p>
           {brand.name} is a fictional brand — a{" "}
-          <a href="https://koative.github.io/cento/">Cento</a> template by
+          <a href="https://cento.koative.com/">Cento</a> template by
           Koative.
         </p>
       </div>

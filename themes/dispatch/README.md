@@ -1,6 +1,6 @@
 # Dispatch
 
-A Sunday letter on the machinery of ordinary life. A newsletter & personal blog website template from [Cento](https://koative.github.io/cento/) by Koative.
+A Sunday letter on the machinery of ordinary life. A newsletter & personal blog website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

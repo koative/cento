@@ -1,6 +1,6 @@
 # Vital
 
-A licensed clinician on your phone, usually within fifteen minutes. A telehealth service website template from [Cento](https://koative.github.io/cento/) by Koative.
+A licensed clinician on your phone, usually within fifteen minutes. A telehealth service website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

@@ -1,9 +1,9 @@
 // Crawl every page of one or more themes on a running dev server, report defects and save screenshots.
-// Usage: bun scripts/check-theme.mjs <slug...> [--no-shots]   (CENTO_URL defaults to http://localhost:5180/cento/)
+// Usage: bun scripts/check-theme.mjs <slug...> [--no-shots]   (CENTO_URL defaults to http://localhost:5173/)
 import { chromium } from "@playwright/test";
 import { mkdirSync, readFileSync } from "node:fs";
 
-const base = process.env.CENTO_URL ?? "http://localhost:5180/cento/";
+const base = process.env.CENTO_URL ?? "http://localhost:5173/";
 const args = process.argv.slice(2);
 const shots = !args.includes("--no-shots");
 const slugs = args.filter((a) => !a.startsWith("--"));

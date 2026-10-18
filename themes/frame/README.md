@@ -1,6 +1,6 @@
 # Frame
 
-Photographs made slowly, mostly on film, printed to last. A photographer portfolio website template from [Cento](https://koative.github.io/cento/) by Koative.
+Photographs made slowly, mostly on film, printed to last. A photographer portfolio website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

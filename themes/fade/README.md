@@ -1,6 +1,6 @@
 # Fade
 
-Sharp fades, hot towels, no rush. A barbershop website template from [Cento](https://koative.github.io/cento/) by Koative.
+Sharp fades, hot towels, no rush. A barbershop website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

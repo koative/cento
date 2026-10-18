@@ -1,6 +1,6 @@
 # Quadrant
 
-Strategy that survives Monday morning. A management consultancy website template from [Cento](https://koative.github.io/cento/) by Koative.
+Strategy that survives Monday morning. A management consultancy website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

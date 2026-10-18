@@ -1,6 +1,6 @@
 // Capture the first viewport of each template into public/previews/<slug>.webp (1200×750),
 // then tile every preview into public/previews/collection.webp for the README.
-// Usage: bun scripts/capture-previews.mjs [slug...]   (CENTO_URL defaults to http://localhost:5180/cento/)
+// Usage: bun scripts/capture-previews.mjs [slug...]   (CENTO_URL defaults to http://localhost:5173/)
 import { chromium } from "@playwright/test";
 import {
   existsSync,
@@ -11,7 +11,7 @@ import {
 } from "node:fs";
 import { execFileSync } from "node:child_process";
 
-const base = process.env.CENTO_URL ?? "http://localhost:5180/cento/";
+const base = process.env.CENTO_URL ?? "http://localhost:5173/";
 const all = readdirSync("themes").filter((s) =>
   existsSync(`themes/${s}/cento.json`),
 );

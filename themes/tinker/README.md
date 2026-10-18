@@ -1,6 +1,6 @@
 # Tinker
 
-A toy shop with a workbench in the back. A toy store website template from [Cento](https://koative.github.io/cento/) by Koative.
+A toy shop with a workbench in the back. A toy store website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

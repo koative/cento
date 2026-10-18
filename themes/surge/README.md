@@ -1,6 +1,6 @@
 # Surge
 
-Growth you can read in the numbers. A growth marketing agency website template from [Cento](https://koative.github.io/cento/) by Koative.
+Growth you can read in the numbers. A growth marketing agency website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

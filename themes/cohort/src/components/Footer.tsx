@@ -133,7 +133,7 @@ export function Footer() {
       <div className="wrap footer-base rule-top">
         <p>
           {cento}
-          <a href="https://koative.github.io/cento/">Cento</a>
+          <a href="https://cento.koative.com/">Cento</a>
           {rest}
         </p>
         <p>

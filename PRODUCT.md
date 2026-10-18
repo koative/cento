@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-React 19, Vite 7, TypeScript and Bun workspaces. The gallery uses plain CSS; every template is an independent Vite app with its own package.json, plain CSS, hash routing and no shared runtime. Static build for GitHub Pages under the `/cento/` base.
+React 19, Vite 7, TypeScript and Bun workspaces. The gallery uses plain CSS; every template is an independent Vite app with its own package.json, plain CSS, hash routing and no shared runtime. Static build for GitHub Pages, served at the root of the custom domain cento.koative.com.
 
 ## Users
 
@@ -16,7 +16,7 @@ Developers, designers and freelancers looking for a complete website to start a 
 
 ## Product Purpose
 
-Cento (formerly Elseform) publishes one hundred complete, multi-page website templates, each with its own sector, art direction, typography and signature interaction, through a browsable catalogue with live previews and direct source access. Published at https://koative.github.io/cento/ from the koative/cento repository. The separate koative.com site stays untouched.
+Cento (formerly Elseform) publishes one hundred complete, multi-page website templates, each with its own sector, art direction, typography and signature interaction, through a browsable catalogue with live previews and direct source access. Published at https://cento.koative.com/ from the koative/cento repository. The separate koative.com site stays untouched.
 
 ## Capabilities and Constraints
 

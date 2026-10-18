@@ -1,6 +1,6 @@
 # Aura
 
-Daily care. Quiet joy. Five minutes, twice a day. A skincare brand website template from [Cento](https://koative.github.io/cento/) by Koative.
+Daily care. Quiet joy. Five minutes, twice a day. A skincare brand website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

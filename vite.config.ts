@@ -8,7 +8,7 @@ const entries = Object.fromEntries(
     .map((name) => [name, resolve(`themes/${name}/index.html`)]),
 );
 export default defineConfig({
-  base: "/cento/",
+  base: "/",
   plugins: [react()],
   build: {
     rollupOptions: { input: { gallery: resolve("index.html"), ...entries } },

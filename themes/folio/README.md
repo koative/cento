@@ -1,6 +1,6 @@
 # Folio
 
-Three rooms, eight artists, every price on the wall label. A contemporary art gallery website template from [Cento](https://koative.github.io/cento/) by Koative.
+Three rooms, eight artists, every price on the wall label. A contemporary art gallery website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

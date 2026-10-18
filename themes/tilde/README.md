@@ -1,6 +1,6 @@
 # Tilde
 
-I build the slow, careful parts of fast software. A developer portfolio website template from [Cento](https://koative.github.io/cento/) by Koative.
+I build the slow, careful parts of fast software. A developer portfolio website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

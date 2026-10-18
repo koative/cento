@@ -1,6 +1,6 @@
 # Civic
 
-Your city, one search away. A city government services website template from [Cento](https://koative.github.io/cento/) by Koative.
+Your city, one search away. A city government services website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

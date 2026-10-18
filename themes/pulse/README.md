@@ -1,6 +1,6 @@
 # Pulse
 
-Three days, four stages, no off switch. A music festival website template from [Cento](https://koative.github.io/cento/) by Koative.
+Three days, four stages, no off switch. A music festival website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

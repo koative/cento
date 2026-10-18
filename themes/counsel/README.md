@@ -1,6 +1,6 @@
 # Counsel
 
-Clear counsel for the decisions that define a business or a family. A law firm website template from [Cento](https://koative.github.io/cento/) by Koative.
+Clear counsel for the decisions that define a business or a family. A law firm website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

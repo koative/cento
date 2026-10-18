@@ -1,6 +1,6 @@
 # Saffron
 
-Your corner market, picked by hand and at your door in two hours. A grocery market & delivery website template from [Cento](https://koative.github.io/cento/) by Koative.
+Your corner market, picked by hand and at your door in two hours. A grocery market & delivery website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

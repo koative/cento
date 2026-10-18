@@ -1,6 +1,6 @@
 # Drift
 
-Surf lessons and camps timed to the tide, not the clock. A surf school & camps website template from [Cento](https://koative.github.io/cento/) by Koative.
+Surf lessons and camps timed to the tide, not the clock. A surf school & camps website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

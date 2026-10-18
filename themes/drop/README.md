@@ -1,6 +1,6 @@
 # Drop
 
-Small runs. Saturday drops. No restocks. A streetwear store website template from [Cento](https://koative.github.io/cento/) by Koative.
+Small runs. Saturday drops. No restocks. A streetwear store website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

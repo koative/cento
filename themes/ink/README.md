@@ -1,6 +1,6 @@
 # Ink
 
-Flash off the wall, drawn again for your skin. A tattoo studio website template from [Cento](https://koative.github.io/cento/) by Koative.
+Flash off the wall, drawn again for your skin. A tattoo studio website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

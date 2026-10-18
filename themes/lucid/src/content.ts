@@ -17,7 +17,7 @@ export const brand = {
     "300 Adelaide Street West, 4th floor",
     "Toronto, ON M5V 1R7",
   ],
-  gallery: "https://koative.github.io/cento/",
+  gallery: "https://cento.koative.com/",
 };
 
 export type NavItem = { to: string; label: string };

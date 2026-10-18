@@ -1,6 +1,6 @@
 # Score
 
-Lessons for every age, one teacher at a time. A music school website template from [Cento](https://koative.github.io/cento/) by Koative.
+Lessons for every age, one teacher at a time. A music school website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

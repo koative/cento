@@ -1,6 +1,6 @@
 # Meridian
 
-Homes on both banks of the Ellery, sold and let by neighbours. A real estate agency website template from [Cento](https://koative.github.io/cento/) by Koative.
+Homes on both banks of the Ellery, sold and let by neighbours. A real estate agency website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

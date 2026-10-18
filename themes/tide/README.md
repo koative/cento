@@ -1,6 +1,6 @@
 # Tide
 
-We look after the coast between the tides. An ocean conservation nonprofit website template from [Cento](https://koative.github.io/cento/) by Koative.
+We look after the coast between the tides. An ocean conservation nonprofit website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

@@ -1,6 +1,6 @@
 # Commons
 
-Good work. Better company. Four houses, one key card. A coworking space website template from [Cento](https://koative.github.io/cento/) by Koative.
+Good work. Better company. Four houses, one key card. A coworking space website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

@@ -1,6 +1,6 @@
 # Arcade
 
-Little games. Big feelings. Finished with love. An indie game studio website template from [Cento](https://koative.github.io/cento/) by Koative.
+Little games. Big feelings. Finished with love. An indie game studio website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

@@ -1,6 +1,6 @@
 # Hush
 
-Headphones that turn the world down, not your music up. A noise-cancelling headphones website template from [Cento](https://koative.github.io/cento/) by Koative.
+Headphones that turn the world down, not your music up. A noise-cancelling headphones website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

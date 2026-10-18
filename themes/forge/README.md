@@ -1,6 +1,6 @@
 # Forge
 
-Machined to print. Shipped on the date we quote. A precision manufacturing website template from [Cento](https://koative.github.io/cento/) by Koative.
+Machined to print. Shipped on the date we quote. A precision manufacturing website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

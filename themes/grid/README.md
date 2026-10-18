@@ -1,6 +1,6 @@
 # Grid
 
-Your roof, wired to run your home. A home solar & energy website template from [Cento](https://koative.github.io/cento/) by Koative.
+Your roof, wired to run your home. A home solar & energy website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

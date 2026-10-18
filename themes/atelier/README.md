@@ -1,6 +1,6 @@
 # Atelier
 
-Good ideas. Strange shapes. A creative agency website template from [Cento](https://koative.github.io/cento/) by Koative.
+Good ideas. Strange shapes. A creative agency website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

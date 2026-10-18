@@ -1,6 +1,6 @@
 # Ledger
 
-Give every dollar a job before the month does. A personal finance app website template from [Cento](https://koative.github.io/cento/) by Koative.
+Give every dollar a job before the month does. A personal finance app website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

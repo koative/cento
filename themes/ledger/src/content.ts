@@ -14,7 +14,7 @@ export const brand = {
     "Portland, OR 97204",
   ],
   hours: "Support answers Mon–Fri, 8 am – 6 pm Pacific",
-  gallery: "https://koative.github.io/cento/",
+  gallery: "https://cento.koative.com/",
 };
 
 export type NavItem = { to: string; label: string };

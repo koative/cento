@@ -1,6 +1,6 @@
 # Flux
 
-Let the handoffs run themselves. A workflow automation SaaS website template from [Cento](https://koative.github.io/cento/) by Koative.
+Let the handoffs run themselves. A workflow automation SaaS website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

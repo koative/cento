@@ -146,7 +146,7 @@ export function Footer() {
       <div className="wrap footer-base">
         <p>
           {brand.name} is a fictional brand — a{" "}
-          <a href="https://koative.github.io/cento/">Cento</a> template by
+          <a href="https://cento.koative.com/">Cento</a> template by
           Koative.
         </p>
         <p>Teams, players, partners and results are demonstration content.</p>

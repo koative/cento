@@ -1,6 +1,6 @@
 # Riff
 
-Loud-quiet rock from a Baltimore basement. A band & musician website template from [Cento](https://koative.github.io/cento/) by Koative.
+Loud-quiet rock from a Baltimore basement. A band & musician website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

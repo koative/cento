@@ -1,6 +1,6 @@
 # Chroma
 
-Colour that grows out as well as it goes on. A hair salon website template from [Cento](https://koative.github.io/cento/) by Koative.
+Colour that grows out as well as it goes on. A hair salon website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

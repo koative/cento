@@ -94,7 +94,7 @@ export function Footer() {
       <div className="footer-bottom">
         <p>
           {brand.name} is a fictional brand — a{" "}
-          <a href="https://koative.github.io/cento/">Cento</a> template by
+          <a href="https://cento.koative.com/">Cento</a> template by
           Koative.
         </p>
         <ul className="social">

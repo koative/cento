@@ -1,6 +1,6 @@
 # Shortlist
 
-Fewer, better jobs. Every one shows the pay. A job board website template from [Cento](https://koative.github.io/cento/) by Koative.
+Fewer, better jobs. Every one shows the pay. A job board website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

@@ -37,7 +37,7 @@ export const brand = {
     "48 Tremont Works, Bay 3",
     "Boulder, CO 80301",
   ],
-  gallery: "https://koative.github.io/cento/",
+  gallery: "https://cento.koative.com/",
 };
 
 export type NavItem = { to: string; label: string };

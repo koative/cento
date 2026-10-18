@@ -1,6 +1,6 @@
 # Guild
 
-Independent talent, vouched for by the people who know the work. A freelance marketplace website template from [Cento](https://koative.github.io/cento/) by Koative.
+Independent talent, vouched for by the people who know the work. A freelance marketplace website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

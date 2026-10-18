@@ -1,6 +1,6 @@
 # Roam
 
-Land, sign once, drive. Five stations from the coast to the passes. A car rental website template from [Cento](https://koative.github.io/cento/) by Koative.
+Land, sign once, drive. Five stations from the coast to the passes. A car rental website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

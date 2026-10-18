@@ -1,6 +1,6 @@
 # Kiln
 
-Stoneware for the everyday table, fired in small batches. A ceramics studio & shop website template from [Cento](https://koative.github.io/cento/) by Koative.
+Stoneware for the everyday table, fired in small batches. A ceramics studio & shop website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

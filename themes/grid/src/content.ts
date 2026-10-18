@@ -30,7 +30,7 @@ export const brand = {
     ["Sunday", "Closed · monitoring alerts 24/7"],
   ] as [string, string][],
   licence: "Licensed electrical contractor no. EC-48213",
-  gallery: "https://koative.github.io/cento/",
+  gallery: "https://cento.koative.com/",
 };
 
 export type NavItem = { to: string; label: string };

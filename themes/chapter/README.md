@@ -1,6 +1,6 @@
 # Chapter
 
-Conversations that take their time. A podcast network website template from [Cento](https://koative.github.io/cento/) by Koative.
+Conversations that take their time. A podcast network website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

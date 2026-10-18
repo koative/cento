@@ -1,6 +1,6 @@
 # Lucid
 
-Say what you mean, in fewer words. An AI writing assistant SaaS website template from [Cento](https://koative.github.io/cento/) by Koative.
+Say what you mean, in fewer words. An AI writing assistant SaaS website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

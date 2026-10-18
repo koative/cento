@@ -1,6 +1,6 @@
 # Velo
 
-Steel bicycles, drawn to fit and serviced for life. A bicycle shop & builds website template from [Cento](https://koative.github.io/cento/) by Koative.
+Steel bicycles, drawn to fit and serviced for life. A bicycle shop & builds website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

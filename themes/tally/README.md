@@ -1,6 +1,6 @@
 # Tally
 
-Books closed by the 10th. Taxes filed before the deadline. A small-business accounting firm website template from [Cento](https://koative.github.io/cento/) by Koative.
+Books closed by the 10th. Taxes filed before the deadline. A small-business accounting firm website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

@@ -14,7 +14,7 @@ export const brand = {
     "1200-195 Lisbon",
   ],
   workspace: "Fernway",
-  gallery: "https://koative.github.io/cento/",
+  gallery: "https://cento.koative.com/",
 };
 
 export type NavItem = { to: string; label: string };

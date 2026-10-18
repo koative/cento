@@ -1,6 +1,6 @@
 # Relay
 
-Road, rail, sea and air freight across Europe, on one record. A freight logistics platform website template from [Cento](https://koative.github.io/cento/) by Koative.
+Road, rail, sea and air freight across Europe, on one record. A freight logistics platform website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

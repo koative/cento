@@ -1,6 +1,6 @@
 # Forma
 
-Architecture built around the light. An architecture studio website template from [Cento](https://koative.github.io/cento/) by Koative.
+Architecture built around the light. An architecture studio website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

@@ -1,6 +1,6 @@
 # Tempo
 
-No perfect moves. Just yours. A dance studio website template from [Cento](https://koative.github.io/cento/) by Koative.
+No perfect moves. Just yours. A dance studio website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

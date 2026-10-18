@@ -1,6 +1,6 @@
 # Sprint
 
-The board your standup actually looks at. A project management SaaS website template from [Cento](https://koative.github.io/cento/) by Koative.
+The board your standup actually looks at. A project management SaaS website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 

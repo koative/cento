@@ -19,7 +19,7 @@ export const brand = {
     "210 Mercer Lane, Suite 4",
     "Portland, OR 97209",
   ],
-  gallery: "https://koative.github.io/cento/",
+  gallery: "https://cento.koative.com/",
 };
 
 export type NavLink = { to: string; label: string };

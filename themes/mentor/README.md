@@ -1,6 +1,6 @@
 # Mentor
 
-Coaching for the promotion nobody trains you for. An online coach & course creator website template from [Cento](https://koative.github.io/cento/) by Koative.
+Coaching for the promotion nobody trains you for. An online coach & course creator website template from [Cento](https://cento.koative.com/) by Koative.
 
 ## Pages
 
