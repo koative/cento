@@ -1,0 +1,29 @@
+{
+  "number": 35,
+  "name": "Vector",
+  "sector": "Electric car maker",
+  "category": "Industry",
+  "tagline": "Six electric cars, with the range you get in January.",
+  "description": "A multi-page electric car maker site: six models drawn as morphing SVG elevations, model pages with a range estimator, a full configurator with a saved build and reservation, a charging-time calculator, test-drive booking, owner stories and support.",
+  "tags": [
+    "Car configurator",
+    "Range estimator",
+    "Charging calculator",
+    "Test-drive booking"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/models", "title": "Models" },
+    { "path": "/models/span", "title": "Model" },
+    { "path": "/configure", "title": "Configure" },
+    { "path": "/configure/axis", "title": "Configure a model" },
+    { "path": "/reserve", "title": "Reserve" },
+    { "path": "/test-drive", "title": "Test drive" },
+    { "path": "/charging", "title": "Charging" },
+    { "path": "/owners", "title": "Owners" },
+    { "path": "/owners/coast-to-coast", "title": "Owner story" },
+    { "path": "/about", "title": "Company" }
+  ],
+  "colors": { "paper": "#eef0ec", "ink": "#121518", "accent": "#d4511c" },
+  "fonts": ["Red Hat Display", "Red Hat Text"]
+}

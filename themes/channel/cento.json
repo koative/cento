@@ -1,0 +1,25 @@
+{
+  "number": 89,
+  "name": "Channel",
+  "sector": "Video creator & merch",
+  "category": "Creative",
+  "tagline": "Steel, sparks and second chances. New build every Thursday.",
+  "description": "A creator site for a fabrication and restoration video channel: video library with search and filters, a chaptered demo player, series pages, a merch shop with recolourable SVG mockups, cart and checkout, membership tiers and a brand-deals media kit.",
+  "tags": ["Chaptered video player", "Merch shop", "Memberships", "Media kit"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/videos", "title": "Videos" },
+    { "path": "/videos/one-stick-welding-cart", "title": "Video" },
+    { "path": "/series", "title": "Series" },
+    { "path": "/series/saved-from-scrap", "title": "Series page" },
+    { "path": "/shop", "title": "Merch" },
+    { "path": "/shop/shop-tee", "title": "Product" },
+    { "path": "/cart", "title": "Bag" },
+    { "path": "/checkout", "title": "Checkout" },
+    { "path": "/membership", "title": "Membership" },
+    { "path": "/partners", "title": "Brand deals" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#141210", "ink": "#f3eee5", "accent": "#ff7a2e" },
+  "fonts": ["Paytone One", "Nunito"]
+}

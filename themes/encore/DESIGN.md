@@ -1,178 +1,68 @@
 ---
 name: Encore
-description: An evening theatre programme with an interactive seating plan and ticket totals.
 colors:
-  paper: '#4e242c'
-  ink: '#f2d9b2'
-  header-tone: '#88575b'
-  booking-tone: '#f2e6cf'
-  seat-heading-select-tone: '#af9190'
-  seat-row-button-tone: '#a88982'
-  seat-row-button-disabled-tone: '#ccc0ac'
-  production-h1-em-ink: '#d6a880'
+  paper: "#f3ead8"
+  paper-2: "#e9dcc3"
+  card: "#fbf6ec"
+  ink: "#1f1517"
+  ink-2: "#57443f"
+  rule: "#b9a68f"
+  red: "#a51d2d"
+  red-deep: "#7c1220"
+  gilt: "#c99a48"
+  house: "#1a1012"
+  house-2: "#2a1a1e"
+  house-mute: "#cdbba6"
+  seat-premium: "#d6a64f"
+  seat-standard: "#cf7a68"
+  seat-value: "#b3a48c"
+  seat-wheelchair: "#8fb0d6"
 typography:
   display:
-    fontFamily: '"Cormorant Garamond"'
-    fontSize: clamp(70px, 7vw, 100px)
-    lineHeight: '0.88'
-    fontWeight: '400'
-    letterSpacing: -0.025em
-  headline:
-    fontFamily: '"DM Sans", sans-serif'
-  headline-context-1:
-    fontFamily: '"Cormorant Garamond"'
-    fontSize: 62px
-    lineHeight: '0.95'
-    fontWeight: '400'
-  headline-context-2:
-    fontFamily: '"Cormorant Garamond"'
-    fontSize: 48px
-    lineHeight: '1.05'
-    fontWeight: '400'
-  title:
-    fontFamily: '"DM Sans", sans-serif'
-  title-context-1:
-    fontFamily: '"Cormorant Garamond"'
-    fontSize: 35px
-    lineHeight: '1.05'
-    fontWeight: '400'
+    family: Abril Fatface
+    sizes: "clamp(2.6rem, 1.5rem + 4.6vw, 6rem) display; clamp(1.85rem, 1.3rem + 2.2vw, 3.1rem) h2; clamp(1.35rem, 1.15rem + 0.8vw, 1.85rem) h3"
   body:
-    fontFamily: '"DM Sans", sans-serif'
+    family: Karla
+    sizes: "clamp(1rem, 0.96rem + 0.2vw, 1.0875rem) body; 0.8rem uppercase data lines at 0.12em tracking"
+rounded:
+  card: 14px
+  input: 6px
+  control: 999px
 spacing:
-  observed-1: 30px
-  observed-2: '0'
-  observed-3: 25px
-  observed-4: 65px
-components:
-  navigation:
-    textColor: '#f2d9b2'
-  booking:
-    backgroundColor: '#f2e6cf'
-    textColor: '#4e242c'
-    padding: 65px 6vw
-  seat-row-button:
-    textColor: inherit
-    height: 36px
-    rounded: 8px 8px 2px 2px
-    backgroundColor: transparent
-    padding: '0'
-  seat-heading-select:
-    textColor: inherit
-    backgroundColor: transparent
-    padding: 13px 0
-    width: 100%
+  gutter: "clamp(1.1rem, 0.6rem + 2.4vw, 2.75rem)"
+  section: "clamp(3.75rem, 2.5rem + 5vw, 7.5rem)"
+  wrap: 1240px
 ---
-
-# Design System: Encore
 
 ## Overview
 
-**Creative North Star: "Burgundy theatre programme with gold paper, arch typography and seat geometry"**
-
-Burgundy theatre programme with gold paper, arch typography and seat geometry. An evening theatre programme with an interactive seating plan and ticket totals.
-
-This records the implemented theatre template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Theatre composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-Mode: Experience with a useful demonstration task. The user delegates creative orchestration and direct implementation. Impeccable collection seed `0b4a6fde` assigns candidate 3: a collection of culturally grounded programme and specimen systems. Grounded candidates were exhibition, poster, programme/specimen, field notes, studio archive, publication, and operational board. The individual sector owns its typography, topology and behavior.
+A nineteenth-century playbill brought online: fat Didone titles stacked over cream paper, double rules between billings, and crimson used the way theatres use it — on the curtain and the ticket. Browsing happens with the house lights up (paper); choosing seats happens with them down (the booking page fades to the dark auditorium), because that is where the decision is really made.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Header Tone**: context-specific authored color.
-- **Booking Tone**: context-specific authored color.
-- **Seat Heading Select Tone**: context-specific authored color.
-- **Seat Row Button Tone**: context-specific authored color.
-- **Seat Row Button Disabled Tone**: context-specific authored color.
-- **Production H1 Em Ink**: context-specific authored color.
+Cream paper and near-black ink carry everything. Theatre red is the only action colour (primary buttons, current step, ticket stubs). Gilt appears only on dark surfaces: the stage edge, the proscenium in the seat-view drawing, focus rings and footer headings. Seat colours encode price zones and stay inside the same warm family; wheelchair spaces are the single cool hue so they are findable at a glance.
 
 ## Typography
 
-- **Cormorant Garamond** is the CSS family alias for Cormorant Garamond Light. Local faces: italic / 400, italic / 500, normal / 400, normal / 500, normal / 600.
-- **Manrope** is the CSS family alias for Manrope ExtraLight. Local faces: normal / 400, normal / 500, normal / 600.
-- **DM Sans** is the CSS family alias for DM Sans 9pt. Local faces: normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
-- brand uses the font shorthand (`400 42px/0.9 "Cormorant Garamond"`).
-- brand span uses the font shorthand (`9px "DM Sans"`).
-- production h1 uses the font shorthand (`400 clamp(70px, 7vw, 100px)/0.88 "Cormorant Garamond"`).
-- programme note   p uses the font shorthand (`400 24px/1.35 "Cormorant Garamond"`).
-- programme note b uses the font shorthand (`400 28px "Cormorant Garamond"`).
+Abril Fatface for every title, production name, date numeral on tickets and the large total — the playbill voice. Karla for reading, controls and tabular data, with tabular lining numerals for prices and times. Small uppercase tracked lines are reserved for dates and data (run dates, table headers), never placed as labels above headings.
 
 ## Layout
 
-- **Production**: padding (55px 6vw 50px); grid-template-columns (1.2fr 1fr); gap (55px).
-- **Programme note**: grid-template-columns (0.7fr 1.5fr 0.7fr); gap (45px); padding (35px 6vw 45px).
-- **Booking layout**: grid-template-columns (1.5fr 1fr); gap (65px).
-- **Seat row**: grid-template-columns (20px repeat(8, 1fr) 20px); gap (9px).
-- **Visit**: padding (60px 6vw); grid-template-columns (1fr 1fr); gap (65px).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 900px)`.
-- @media (max-width: 650px): footer changes to flex-direction (column).
-- @media (max-width: 650px): production changes to grid-template-columns (1fr); gap (30px).
-- @media (max-width: 650px): programme note changes to grid-template-columns (1fr); gap (20px).
-- @media (max-width: 650px): booking layout changes to grid-template-columns (1fr); gap (30px).
-- @media (max-width: 650px): seat row changes to grid-template-columns (15px repeat(8, 1fr) 15px); gap (5px).
-- @media (max-width: 650px): visit changes to grid-template-columns (1fr); gap (10px).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-- production img: corners (`48% 48% 0 0`).
-- stage: corners (`50% 50% 0 0`).
-- seat row button: corners (`8px 8px 2px 2px`).
-- seat legend i: corners (`3px`).
+Playbill rows (image, billing, side column with dates, tags, price and a seat button) separated by hairlines and closed by double rules. Pages alternate paper, deeper paper tint and dark house bands so density varies: dense playbill and tables, then a quiet spotlight. The home hero frames the current production in a proscenium arch.
 
 ## Components
 
-Choose a performance and seats; calculate a local ticket total.
+Header with typographic wordmark and arch mark, sticky with a double-rule underline; mobile menu as a full-width paper sheet. Production row, facts strip, credits definition lists, performance list with availability dots, segmented control and filter chips, disclosure FAQs, the keyboard-operable seat map, the SightLine SVG, the basket, three-step stepper, form fields with inline errors, ticket stubs, membership tier columns and comparison table, footer with newsletter.
 
-### Navigation
+## Motion
 
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Booking
-
-Authored booking styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Seat Row Button
-
-Authored seat row button styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Seat Heading Select
-
-Authored seat heading select styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid currentColor); outline-offset (5px).
-- button:disabled: opacity (0.55).
-- seat row button[aria pressed="true"]: background (#4e242c); color (#f2e6cf); border-color (#4e242c).
-- seat row button:disabled: background (#ccc0ac); color (#877968); border-color (transparent); opacity (0.7).
-- production img animation: `curtain 1.5s cubic-bezier(0.16, 1, 0.3, 1)`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+The curtain opens once over the hero arch on first load (two drapes slide apart). Pages rise slightly on route change. Choosing seats dims the house (background fades to dark over 0.9s); taking a seat pops it, and the view-from-seat drawing re-frames on every hover or focus. Confirmation tickets slide up in sequence. All of it collapses under `prefers-reduced-motion`, and the drapes are not drawn at all.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do keep red for actions and tickets only; never for decoration.
+- Do keep gilt to dark surfaces; it fails contrast on paper.
+- Do describe access performances wherever dates are listed.
+- Don't put labels above headings; dates go below the title or in the side column.
+- Don't add new seat colours without adding them to the legend.
+- Don't replace the SightLine drawing with a photo per seat; it is meant to be illustrative and honest about it.

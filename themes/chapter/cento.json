@@ -1,0 +1,32 @@
+{
+  "number": 36,
+  "name": "Chapter",
+  "sector": "Podcast network",
+  "category": "Culture & Media",
+  "tagline": "Conversations that take their time.",
+  "description": "A podcast network site with six shows and their pages, a searchable episode archive, an episode page with a chapter-marked waveform player, a mini player that follows you across pages, a saved listening list, host profiles, a newsletter signup and an advertiser rate card with campaign planner.",
+  "tags": [
+    "Chapter-marked player",
+    "Listening list",
+    "Show pages",
+    "Ad campaign planner"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/shows", "title": "Shows" },
+    { "path": "/shows/the-long-walk", "title": "Show" },
+    { "path": "/episodes", "title": "Episodes" },
+    {
+      "path": "/episodes/the-art-of-paying-attention",
+      "title": "Episode player"
+    },
+    { "path": "/hosts", "title": "Hosts" },
+    { "path": "/hosts/lena-moss", "title": "Host" },
+    { "path": "/newsletter", "title": "Newsletter" },
+    { "path": "/advertise", "title": "Advertise" },
+    { "path": "/about", "title": "About" },
+    { "path": "/listening-list", "title": "Listening list" }
+  ],
+  "colors": { "paper": "#f1ece1", "ink": "#1c2b55", "accent": "#a8361a" },
+  "fonts": ["Epilogue", "Lora"]
+}

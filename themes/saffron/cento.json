@@ -1,0 +1,28 @@
+{
+  "number": 52,
+  "name": "Saffron",
+  "sector": "Grocery market & delivery",
+  "category": "Commerce",
+  "tagline": "Your corner market, picked by hand and at your door in two hours.",
+  "description": "A multi-page neighbourhood grocer with delivery: filterable aisles with product pages (variants, quantity, swap preference), recipes that scale servings and fill the basket, a priced seven-day delivery slot board with ZIP check, and a persisted basket with validated checkout.",
+  "tags": [
+    "Delivery slot board",
+    "Shop-the-recipe",
+    "Online grocery",
+    "Swap preferences"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/aisles", "title": "All aisles" },
+    { "path": "/aisles/produce", "title": "Aisle" },
+    { "path": "/aisles/produce/heirloom-tomatoes", "title": "Product" },
+    { "path": "/recipes", "title": "Recipes" },
+    { "path": "/recipes/heirloom-shakshuka", "title": "Recipe" },
+    { "path": "/delivery", "title": "Delivery slots" },
+    { "path": "/about", "title": "Our market" },
+    { "path": "/basket", "title": "Basket" },
+    { "path": "/checkout", "title": "Checkout" }
+  ],
+  "colors": { "paper": "#fbf6ea", "ink": "#1e2a1f", "accent": "#f2a516" },
+  "fonts": ["Bagel Fat One", "Onest"]
+}

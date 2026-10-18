@@ -1,162 +1,94 @@
 ---
 name: Civic
-description: An accessible town service directory with search and report tracking.
 colors:
-  paper: '#f2f3ed'
-  ink: '#123f54'
-  accent: '#3d630b'
-  official-tone: '#fff'
-  directory-aside-button-tone: '#b8c9c8'
-  search-hero-surface: '#dbe74d'
-  town-note-surface: '#dce5df'
+  paper: "#f4f4ee"
+  surface: "#ffffff"
+  mist: "#e4ebe8"
+  ink: "#10384b"
+  ink-deep: "#0a2836"
+  ink-soft: "#3d5967"
+  line: "#c9d3cf"
+  citron: "#dbe74d"
+  green: "#3d630b"
+  red: "#b3261e"
+  amber: "#f2b33d"
+  on-ink: "#f4f4ee"
+  on-ink-soft: "#b9cbd2"
+  map-land: "#e9ece3"
+  map-park: "#bcd59a"
+  map-water: "#a9cdd9"
 typography:
   display:
-    fontFamily: Display
-    lineHeight: '1.05'
-    fontWeight: '600'
-    letterSpacing: -0.035em
-    fontSize: clamp(3.5rem, 6.5vw, 6rem)
+    fontFamily: Public Sans
+    fontWeight: 800
+    fontSize: clamp(2.3rem, 1.6rem + 3.3vw, 4.4rem)
+    letterSpacing: -0.03em
+    lineHeight: 1.12
   headline:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 3.7rem)
-  headline-context-1:
-    fontFamily: Display
-    lineHeight: '1.05'
-    fontWeight: '500'
-    letterSpacing: -0.035em
-    fontSize: 36px
-  headline-context-2:
-    fontFamily: Display
-    lineHeight: '1.05'
-    fontWeight: '500'
-    letterSpacing: -0.035em
-    fontSize: 29px
+    fontFamily: Public Sans
+    fontWeight: 750
+    fontSize: clamp(1.75rem, 1.4rem + 1.6vw, 2.6rem)
+    letterSpacing: -0.022em
   title:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
-  title-context-1:
-    fontFamily: Display
-    lineHeight: '1.5'
-    fontSize: 23px
-    fontWeight: '500'
+    fontFamily: Public Sans
+    fontWeight: 700
+    fontSize: clamp(1.15rem, 1.05rem + 0.4vw, 1.3rem)
   body:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
+    fontFamily: Public Sans
+    fontWeight: 400
+    fontSize: 1.0625rem
+    lineHeight: 1.55
+  small:
+    fontFamily: Public Sans
+    fontSize: 0.875rem
+rounded:
+  control: 6px
+  card: 12px
 spacing:
-  observed-1: 12px
-  observed-2: 20px
-  observed-3: '0'
-  observed-4: 24px
-components:
-  primary-button:
-    padding: 14px 22px
-    backgroundColor: '#123f54'
-    textColor: '#f2f3ed'
-  navigation:
-    textColor: '#123f54'
-  official:
-    padding: 8px 5vw
-    backgroundColor: '#123f54'
-    textColor: '#fff'
+  gutter: clamp(1.1rem, 4vw, 2.5rem)
+  section: clamp(3rem, 7vw, 5.5rem)
+  wrap: 1240px
 ---
 
 # Design System: Civic
 
 ## Overview
 
-**Creative North Star: "A public information board in civic blue and citron"**
-
-A public information board in civic blue and citron. A large service search, grouped text directory and useful local issue reporting are the primary composition; an animated status line records a report without pretending to submit it.
-
-This records the implemented public services template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Public services composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-The collection considered a neighborhood gazette, service counter, museum directory, brand magazine, specimen catalogue, community field guide, and event programme. Seed `4fa713db` assigned sixth, community field guide: navigable specificity and contextual choices. This template translates that discipline into its own sector world, not common visual scaffolding. Explicit delegated creative direction authorizes code-led implementation.
+Municipal street signage and the city's own survey map. Civic blue enamel plates, high-visibility citron (the colour of road crews' vests and snowplow lights) and a pale map-paper ground. Residents arrive on a phone, often outdoors and in a hurry — a dark streetlight, a missed pickup — so the site is light, plain-spoken, high-contrast and search-first: the first screen asks "What do you need from the city today?" and answers with a search field, the most-asked services and today's City Hall status.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Accent**: interactive emphasis.
-- **Official Tone**: context-specific authored color.
-- **Directory Aside Button Tone**: context-specific authored color.
-- **Search Hero Surface**: context-specific authored color.
-- **Town Note Surface**: context-specific authored color.
+- **Paper** `#f4f4ee` page ground, **surface** white for forms and cards, **mist** `#e4ebe8` for alternate bands.
+- **Ink** `#10384b` civic blue for text, header plates, page heads and the dark lookup band; **on-ink** paper text on it.
+- **Citron** `#dbe74d` is the action colour: home hero, primary buttons, selected ward, selection highlight and the outer focus ring. Never used for text on paper.
+- Status colours carry meaning only: **red** urgent alerts and the alert ribbon, **amber** advisories and open reports on the map, **green** fixed/confirmed.
+- Map palette (land, blocks, park, river) is muted so pins and wards read first.
 
 ## Typography
 
-- **Display** is the CSS family alias for IBM Plex Sans. Local faces: normal / 100 900.
-- **Body** is the CSS family alias for DM Sans 9pt. Local faces: normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
+Public Sans throughout — the typeface designed for government services. Headings 700–800 with −0.01 to −0.03em tracking and balanced wrapping; body 17px at 1.55 with a 68ch measure; tabular numerals everywhere (dates, fees, reference numbers, budget figures). Reference numbers and day plates are set large and bold like stamped signage.
 
 ## Layout
 
-- **Directory body**: grid-template-columns (25% 1fr); gap (40px).
-- **Service list**: grid-template-columns (1fr 1fr); gap (0 30px).
-- **Report**: grid-template-columns (1fr 1fr); gap (12vw); padding (60px 5vw).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 900px)`.
-- @media (max-width: 900px): directory body changes to grid-template-columns (1fr).
-- @media (max-width: 650px): directory aside changes to grid-template-columns (1fr 1fr).
-- @media (max-width: 650px): service list changes to grid-template-columns (1fr).
-- @media (max-width: 650px): report changes to grid-template-columns (1fr); gap (30px).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-- input: corners (`0`).
+A 1240px wrap with fluid gutters. Page heads are full-bleed ink blocks with breadcrumb, H1 and lede. Content alternates paper, mist and ink bands; dense passages (service directory, alerts, departments table) sit between quiet ones (mayor's note, ask-a-person close). Service and meeting pages use a reading column plus a sticky action card; the report form keeps tracking and the 911 note in a sticky aside. Everything collapses to one column under 900px with a menu button.
 
 ## Components
 
-Search and filter services, expand a service and prepare a demonstration report.
+- **Official strip + alert ribbon**: thin ink bar stating the site is official (and fictional), then a red ribbon for the urgent alert on every page.
+- **Plates**: ink rectangles with an inset paper outline — letter plates in the A–Z directory, date plates for meetings, ward badges, the logo.
+- **City map** (authored SVG): streets, avenues, park, river, wards. Click or arrow-key to drop a pin; shows open reports as dots, finds the nearest corner and ward.
+- **Report flow**: type tiles, map pin with nearby-duplicate detection ("add my voice"), details, photo, updates; validation names the fix; loading button; success shows a CW reference and a four-stage tracker (Received → Assigned → Scheduled → Fixed).
+- **Address lookup**: house number + street → trash day, ward, councillor, polling place, highlighted on the ward map.
+- Meeting rows, member cards (highlighted by the ward finder), alert rows with severity tags, fee tables, FAQ `<details>`, budget bars.
 
-### Primary button
+## Motion
 
-Authored btn styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Navigation
-
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Official
-
-Authored official styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid var(--accent)); outline-offset (4px).
-- searchbox input:focus: outline (0).
-- button:disabled: opacity (0.5).
-- btn:hover: background (var(--accent)).
-- button[aria pressed="true"]: outline (2px solid var(--accent)); outline-offset (3px).
-- directory aside button[aria pressed="true"]: outline (0); background (var(--ink)); color (#fff).
-- report status animation: `reportReveal 0.7s ease-out`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+One settle on page change (content fades up 10px from an already-visible state), the pin drop with a single ring pulse on the map, the tracker line growing to the current stage, budget bars growing, and the mobile menu sliding in. All ease-out (`cubic-bezier(0.16, 1, 0.3, 1)`); `prefers-reduced-motion` removes animation and transitions.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do lead with the task: search, report, look up. Say who handles it, how long it takes and what it costs.
+- Do use citron only for action and selection, red only for urgency.
+- Do keep focus visible: 3px ink outline plus a citron halo (citron outline on dark bands).
+- Don't add decorative imagery; photos show real city work (paving crews, the snowplow, the chamber).
+- Don't use eyebrow labels, gradient text or icon-card grids; plates and tables carry the structure.

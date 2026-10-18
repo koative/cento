@@ -1,0 +1,24 @@
+{
+  "number": 42,
+  "name": "Proof",
+  "sector": "Artisan bakery",
+  "category": "Food & Drink",
+  "tagline": "Baked before you're up. Ready when you are.",
+  "description": "A multi-page sourdough bakery site: a live oven board you scrub through the day, an order-ahead shop with filters and product variants, a pickup checkout that only offers days your whole bag can be baked, baking classes with seat booking, and a wholesale price list with trial enquiry.",
+  "tags": ["Oven board", "Order-ahead shop", "Pickup planner", "Class booking"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/today", "title": "Today's bake" },
+    { "path": "/shop", "title": "Order ahead" },
+    { "path": "/shop/country-sourdough", "title": "Product" },
+    { "path": "/classes", "title": "Classes" },
+    { "path": "/classes/sourdough-from-scratch", "title": "Class" },
+    { "path": "/wholesale", "title": "Wholesale" },
+    { "path": "/about", "title": "Our story" },
+    { "path": "/visit", "title": "Visit & FAQ" },
+    { "path": "/cart", "title": "Bag" },
+    { "path": "/checkout", "title": "Pickup checkout" }
+  ],
+  "colors": { "paper": "#f7efe1", "ink": "#3a2116", "accent": "#b03f1c" },
+  "fonts": ["Caprasimo", "Nunito"]
+}

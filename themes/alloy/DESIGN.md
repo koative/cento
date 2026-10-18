@@ -1,230 +1,70 @@
 ---
 name: Alloy
-description: A building studio project index with a staged blueprint and project brief intake.
 colors:
-  paper: '#ece9e0'
-  ink: '#35352e'
-  muted: '#79776a'
-  accent: '#aa512a'
-  line: '#c9c5b6'
-  method-tone: '#2c3b30'
-  project-caption-tone: '#fff7e8'
-  method-intro-p-tone: '#c2ceb9'
-  stage-tabs-button-aria-pressed-true-span-tone: '#c3d0a2'
-  stage-content-span-tone: '#a5b892'
-  project-photo-surface: '#6f7469'
-  project-stamp-surface: '#c8d5b5'
-  project-stamp-ink: '#36472d'
-  method-ink: '#e7ebdd'
-  stage-tabs-button-ink: '#bac9af'
-  blueprint-spanbuilt-surface: '#59714b'
-  brief-surface: '#c3cbb0'
-  brief-input-surface: '#d4dbc6'
+  paper: "#eceae4"
+  paper-2: "#e1ded5"
+  paper-hi: "#f7f6f2"
+  ink: "#161714"
+  ink-2: "#4b4e47"
+  line: "#c2beb2"
+  signal: "#f2c11d"
+  signal-pale: "#fbeec0"
+  dark: "#161714"
+  on-dark: "#eceae4"
+  on-dark-2: "#b3b4ab"
+  error: "#a3241a"
 typography:
   display:
-    fontFamily: '"Barlow Condensed", sans-serif'
-    lineHeight: '0.94'
-    letterSpacing: -0.02em
-    fontSize: clamp(3.4rem, 7.8vw, 6rem)
-    fontWeight: '600'
-  headline:
-    fontFamily: '"Barlow Condensed", sans-serif'
-    lineHeight: '1.02'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 4rem)
-    fontWeight: '600'
-  headline-context-1:
-    fontFamily: '"Barlow Condensed", sans-serif'
-    lineHeight: '1.02'
-    letterSpacing: -0.035em
-    fontSize: 48px
-    fontWeight: '600'
-  headline-context-2:
-    fontFamily: '"Barlow Condensed", sans-serif'
-    lineHeight: '1.02'
-    letterSpacing: -0.035em
-    fontSize: 51px
-    fontWeight: '600'
-  title:
-    fontFamily: '"Barlow Condensed", sans-serif'
-    lineHeight: '1.2'
-    fontWeight: '600'
-  title-context-1:
-    fontFamily: '"Barlow Condensed", sans-serif'
-    lineHeight: '1.2'
-    fontWeight: '600'
-    fontSize: 31px
+    {
+      family: Anton,
+      case: uppercase,
+      h1: "clamp(2.75rem, 1.7rem + 4.4vw, 5.75rem)",
+      h2: "clamp(2rem, 1.45rem + 2.2vw, 3.5rem)",
+      leading: 0.96,
+    }
   body:
-    fontFamily: '"DM Sans", sans-serif'
-    lineHeight: '1.55'
-rounded:
-  observed-1: 3px
+    {
+      family: Barlow,
+      size: 1.0625rem,
+      leading: 1.55,
+      weights: [400, 500, 600, 700],
+    }
+rounded: 0
 spacing:
-  observed-1: 8px
-  observed-2: 20px
-  observed-3: 10px
-  observed-4: 10%
-  observed-5: 12px
-  observed-6: 35px
-  observed-7: 60px 6%
-components:
-  primary-button:
-    textColor: '#ece9e0'
-    padding: 13px 20px
-    backgroundColor: '#35352e'
-    rounded: 3px
-  text-field:
-    textColor: inherit
-    padding: 13px
-    backgroundColor: '#ece9e0'
-    rounded: 3px
-  project-stamp:
-    backgroundColor: '#c8d5b5'
-    textColor: '#36472d'
-    padding: 16px 20px
-  nav-nav:
-    textColor: '#35352e'
-  field-select:
-    textColor: inherit
-    padding: 13px
-    backgroundColor: '{colors.paper}'
-    rounded: 3px
-  project-index-button:
-    textColor: inherit
-    width: 100%
-    backgroundColor: none
-    padding: 22px 0
+  gutter: "clamp(1.25rem, 4vw, 3rem)"
+  section: "clamp(4rem, 3rem + 4vw, 7.5rem)"
 ---
-
-# Design System: Alloy
 
 ## Overview
 
-**Creative North Star: "A site project folio"**
-
-A site project folio: broad architectural image, condensed construction lettering, olive blueprint phase diagram and practical project brief.
-
-This records the implemented construction template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Construction composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-Impeccable collection seed `0c646d2f`, assigned candidate 7. Grounded collection candidates: trade publication; materials archive; field guide; factory drawing; operational atlas; neighborhood workshop; **sector-specific working artifact**. The seventh is selected: each theme gets the artifact its audience uses to understand and decide, rather than a shared marketing skeleton. The user's direct-code creative delegation controls the workflow.
+Site hoarding meets the drawing register. Alloy speaks like the plywood panel outside a job: concrete-grey paper, black condensed lettering, one signal yellow for anything you act on. Underneath sits the language of construction drawings — title blocks, ruled schedules, grid-lined elevations — because the people who hire a contractor (developers, public-works officers, facilities directors) read programmes and quantities for a living, mostly at a desk in daylight. Hence a light theme with one dark "drawing board" band.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Muted**: secondary copy.
-- **Accent**: interactive emphasis.
-- **Line**: dividers.
-- **Method Tone**: context-specific authored color.
-- **Project Caption Tone**: context-specific authored color.
-- **Method Intro P Tone**: context-specific authored color.
-- **Stage Tabs Button Aria Pressed True Span Tone**: context-specific authored color.
-- **Stage Content Span Tone**: context-specific authored color.
-- **Project Photo Surface**: context-specific authored color.
-- **Project Stamp Surface**: context-specific authored color.
-- **Project Stamp Ink**: context-specific authored color.
-- **Method Ink**: context-specific authored color.
-- **Stage Tabs Button Ink**: context-specific authored color.
-- **Blueprint Spanbuilt Surface**: context-specific authored color.
-- **Brief Surface**: context-specific authored color.
-- **Brief Input Surface**: context-specific authored color.
+Paper `#eceae4` and ink `#161714` carry almost everything. Signal yellow `#f2c11d` is a fill only (buttons, status tags, the hoarding, active programme bars), always with ink text. Dark bands use `#161714` with `#b3b4ab` secondary text. Errors are `#a3241a` on paper and `#ff9e92` on dark. Selection, caret, scrollbar and focus rings all come from these tokens.
 
 ## Typography
 
-- **Barlow Condensed** is the CSS family alias for Barlow Condensed Medium, Barlow Condensed SemiBold, Barlow Condensed, Barlow Condensed ExtraBold. Local faces: normal / 500, normal / 600, normal / 700, normal / 800.
-- **DM Sans** is the CSS family alias for DM Sans 9pt. Local faces: normal / 400, normal / 500, normal / 600, normal / 700.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
-- project stamp strong uses the font shorthand (`600 23px "Barlow Condensed", sans-serif`).
-- project index strong uses the font shorthand (`500 29px "Barlow Condensed", sans-serif`).
-- measure uses the font shorthand (`9px monospace`).
+Anton, uppercase, for h1/h2, project names in feature cards, the safety figure and the programme status line. Barlow for everything else, with uppercase 600–700 small labels for table headers and title-block cells, and tabular numerals for every figure (`.num`).
 
 ## Layout
 
-- **Project stage**: grid-template-columns (1.9fr 1fr); gap (35px).
-- **Method**: grid-template-columns (1fr 1.25fr); gap (10%); padding (60px 6%).
-- **Blueprint**: grid-template-columns (1.5fr 1fr 1fr); gap (8px); padding (10px).
-- **Capabilities**: grid-template-columns (1fr 1.25fr); gap (10%).
-- **Brief**: padding (60px 6%); grid-template-columns (1fr 1.25fr); gap (10%).
-- **Brief form**: grid-template-columns (1fr 1fr); gap (20px).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 750px)`.
-- @media (max-width: 650px): section title changes to flex-direction (column).
-- @media (max-width: 650px): footer changes to flex-direction (column).
-- @media (max-width: 750px): alloy title   div changes to flex-direction (column); gap (18px).
-- @media (max-width: 750px): project stage changes to grid-template-columns (1fr); gap (25px).
-- @media (max-width: 750px): project caption changes to flex-direction (column); gap (10px).
-- @media (max-width: 750px): method changes to grid-template-columns (1fr); gap (35px).
-- @media (max-width: 750px): brief form changes to grid-template-columns (1fr).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-- btn: corners (`3px`).
-- field input: corners (`3px`).
-- tabs button: corners (`3px`).
-- stage tabs button   span: corners (`50%`).
+1320px max width. Sections alternate density: dense ruled lists and tables, a quiet single-figure safety band, a full-bleed dark drawing band, a yellow close panel. Lists are ruled (2px ink top rule, 1px hairlines) rather than carded. Project pages open with a photo beside a title-block `dl` of contract facts and quantities.
 
 ## Components
 
-Select projects, explore the four project stages, expand services and submit a validated local project brief.
+- **Build sequence** (signature): an SVG elevation drawing that builds as you scrub a range input through the programme week by week — substructure and piles, frame floors rising with a tower crane, cladding, lit windows during fit-out, hoarding removed and trees at handover. Bridges draw piers, deck pours on falsework, or (truss rehab) old steel turning new under a moving containment rig. Beside it: status line, week/month/crew readout, play/pause, "back to this week", and a Gantt with a live week marker.
+- Project card with status tag and stretched link; filter chips and segmented controls with `aria-pressed`.
+- Forms: `Field` wrapper with label, hint, inline error naming the fix; segmented radio mode switch; live estimate panel.
+- Header with underline active state; below 960px a full-panel menu in Anton.
 
-### Primary button
+## Motion
 
-Authored btn styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Text field
-
-Authored field input styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Project Stamp
-
-Authored project stamp styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Nav Nav
-
-Authored nav nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Field Select
-
-Authored source styling with representative content; interactive behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Project Index Button
-
-Authored source styling with representative content; interactive behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- :focus visible: outline (3px solid var(--accent)); outline-offset (4px).
-- button:disabled: opacity (0.5).
-- button:hover: filter (brightness(0.94)).
-- tabs button[aria pressed="true"]: background (var(--ink)); color (var(--paper)); border-color (var(--ink)).
-- project index button[aria pressed="true"]: color (var(--accent)).
-- project photo   img animation: `building-reveal 1.2s ease-out`.
-- blueprint   span transition: `background 0.6s`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+One page-enter rise (12px, expo ease-out from 35% opacity), the progress meters growing on the home page, the mobile menu wiping down, and the build sequence itself. `prefers-reduced-motion: reduce` removes all animation and smooth scrolling.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do keep yellow as a fill with ink text; never yellow text on paper.
+- Do show real programme data (weeks, crews, quantities) instead of decorative stats.
+- Don't round corners; don't add shadows — elevation is a 2px ink rule.
+- Don't add kicker labels above headings; the heading speaks.

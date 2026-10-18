@@ -1,0 +1,33 @@
+{
+  "number": 38,
+  "name": "Cipher",
+  "sector": "Cybersecurity SaaS",
+  "category": "Technology",
+  "tagline": "Trust is a decision. Make it a clear one.",
+  "description": "An identity-security SaaS site with platform, filterable solutions and solution pages, pricing calculator, trust center with document request, changelog and demo request, plus a working /app access-review workspace: overview charts, review queue, identities table, identity detail and settings.",
+  "tags": [
+    "Access review with signed attestation",
+    "App demo",
+    "Trust center",
+    "Pricing calculator"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/platform", "title": "Platform" },
+    { "path": "/solutions", "title": "Solutions" },
+    { "path": "/solutions/soc2-access-reviews", "title": "Solution" },
+    { "path": "/pricing", "title": "Pricing" },
+    { "path": "/trust", "title": "Trust center" },
+    { "path": "/changelog", "title": "Changelog" },
+    { "path": "/about", "title": "Company" },
+    { "path": "/demo", "title": "Request a demo" },
+    { "path": "/signin", "title": "Sign in" },
+    { "path": "/app", "title": "App: Overview" },
+    { "path": "/app/review", "title": "App: Review queue" },
+    { "path": "/app/identities", "title": "App: Identities" },
+    { "path": "/app/identities/alex-morgan", "title": "App: Identity" },
+    { "path": "/app/settings", "title": "App: Settings" }
+  ],
+  "colors": { "paper": "#f2efe6", "ink": "#15241c", "accent": "#1d5a3e" },
+  "fonts": ["Funnel Display", "Funnel Sans"]
+}

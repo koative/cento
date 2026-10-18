@@ -1,0 +1,29 @@
+{
+  "number": 79,
+  "name": "Whisker",
+  "sector": "Veterinary clinic",
+  "category": "Health & Wellness",
+  "tagline": "Calm, unhurried vet care for dogs, cats and rabbits.",
+  "description": "A neighbourhood vet clinic site: services with fee board and detail pages, vet profiles, health plans with pricing toggles, an emergency guide, a live vaccine record-card planner and a full appointment booking flow.",
+  "tags": [
+    "Appointment booking",
+    "Vaccine care planner",
+    "Health plans",
+    "Emergency guide"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/services", "title": "Services" },
+    { "path": "/services/dental-care", "title": "Service" },
+    { "path": "/vets", "title": "Vets & nurses" },
+    { "path": "/vets/hana-okafor", "title": "Vet profile" },
+    { "path": "/plans", "title": "Health plans" },
+    { "path": "/planner", "title": "Care planner" },
+    { "path": "/emergency", "title": "Emergency" },
+    { "path": "/book", "title": "Book a visit" },
+    { "path": "/visit", "title": "Visit" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#f4efe3", "ink": "#1d2a27", "accent": "#1d5e4f" },
+  "fonts": ["Gabarito", "Nunito Sans"]
+}

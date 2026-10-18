@@ -1,0 +1,33 @@
+{
+  "number": 9,
+  "name": "Signal",
+  "sector": "Product analytics SaaS",
+  "category": "Technology",
+  "tagline": "Know which change moved the number.",
+  "description": "A product analytics SaaS site with marketing pages, pricing calculator, customer stories and docs teaser, plus a working /app demo with dashboards, a funnel builder, a sortable event catalog and settings.",
+  "tags": [
+    "Live query composer",
+    "App demo",
+    "Funnel builder",
+    "Pricing calculator"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/product", "title": "Product" },
+    { "path": "/pricing", "title": "Pricing" },
+    { "path": "/customers", "title": "Customers" },
+    { "path": "/customers/fernway", "title": "Customer story" },
+    { "path": "/changelog", "title": "Changelog" },
+    { "path": "/docs", "title": "Docs" },
+    { "path": "/about", "title": "Company" },
+    { "path": "/demo", "title": "Book a demo" },
+    { "path": "/signin", "title": "Sign in" },
+    { "path": "/app", "title": "App: Overview" },
+    { "path": "/app/funnels", "title": "App: Funnels" },
+    { "path": "/app/events", "title": "App: Events" },
+    { "path": "/app/events/booking_confirmed", "title": "App: Event detail" },
+    { "path": "/app/settings", "title": "App: Settings" }
+  ],
+  "colors": { "paper": "#f4f5f1", "ink": "#111513", "accent": "#0d7a5a" },
+  "fonts": ["Geist", "Geist Mono"]
+}

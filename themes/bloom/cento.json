@@ -1,0 +1,30 @@
+{
+  "number": 16,
+  "name": "Bloom",
+  "sector": "Florist",
+  "category": "Commerce",
+  "tagline": "Flowers gathered by hand, delivered the same day.",
+  "description": "A neighbourhood florist template with a filtered shop, product pages with sizes and vases, a spiral bouquet builder, flower subscriptions, a weddings enquiry form and a delivery checkout with postcode zones and date rules.",
+  "tags": [
+    "Bouquet builder",
+    "Delivery checkout",
+    "Subscriptions",
+    "Wedding enquiries"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/shop", "title": "Shop" },
+    { "path": "/shop/the-daydream", "title": "Product" },
+    { "path": "/builder", "title": "Bouquet builder" },
+    { "path": "/subscriptions", "title": "Subscriptions" },
+    { "path": "/weddings", "title": "Weddings & events" },
+    { "path": "/journal", "title": "Journal" },
+    { "path": "/journal/the-hand-tied-spiral", "title": "Article" },
+    { "path": "/about", "title": "About" },
+    { "path": "/delivery", "title": "Delivery & FAQ" },
+    { "path": "/cart", "title": "Bag" },
+    { "path": "/checkout", "title": "Checkout" }
+  ],
+  "colors": { "paper": "#f8f3ee", "ink": "#23322a", "accent": "#a8325e" },
+  "fonts": ["Gilda Display", "Lato"]
+}

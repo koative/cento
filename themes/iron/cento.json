@@ -1,0 +1,23 @@
+{
+  "number": 77,
+  "name": "Iron",
+  "sector": "Gym & personal training",
+  "category": "Health & Wellness",
+  "tagline": "Heavy iron, honest coaching, a timetable that starts at 5:45.",
+  "description": "A dark, rubber-and-chalk site for a coached barbell gym: filterable weekly timetable, class and trainer profiles, memberships with billing toggle, a programme builder that loads the bar plate by plate, and a three-step join flow.",
+  "tags": ["Class timetable", "Programme builder", "Plate loader", "Join flow"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/timetable", "title": "Timetable" },
+    { "path": "/classes", "title": "Classes" },
+    { "path": "/classes/barbell-club", "title": "Class" },
+    { "path": "/trainers", "title": "Trainers" },
+    { "path": "/trainers/marcus-bell", "title": "Trainer profile" },
+    { "path": "/memberships", "title": "Memberships" },
+    { "path": "/programme", "title": "Programme builder" },
+    { "path": "/join", "title": "Join" },
+    { "path": "/about", "title": "The gym" }
+  ],
+  "colors": { "paper": "#121211", "ink": "#efede6", "accent": "#f4c430" },
+  "fonts": ["Archivo Black", "Archivo"]
+}

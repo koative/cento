@@ -1,0 +1,29 @@
+{
+  "number": 18,
+  "name": "Prism",
+  "sector": "Design conference",
+  "category": "Culture & Media",
+  "tagline": "Three days in a tram depot full of light, taking design apart.",
+  "description": "A three-day design conference site: speakers with filterable index and profile pages, a spectrum-coded agenda builder that draws your days, flags overlaps and exports .ics, tickets with team pricing and a validated registration flow, interactive venue floor plan, partner packages with enquiry form, and past-edition recaps.",
+  "tags": [
+    "Agenda builder",
+    "Speaker profiles",
+    "Ticket registration",
+    "Venue floor plan"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/speakers", "title": "Speakers" },
+    { "path": "/speakers/maren-holt", "title": "Speaker" },
+    { "path": "/agenda", "title": "Agenda builder" },
+    { "path": "/tickets", "title": "Tickets" },
+    { "path": "/register", "title": "Register" },
+    { "path": "/venue", "title": "Venue & travel" },
+    { "path": "/sponsors", "title": "Partner with us" },
+    { "path": "/editions", "title": "Past editions" },
+    { "path": "/editions/2026", "title": "Edition recap" },
+    { "path": "/about", "title": "About & FAQ" }
+  ],
+  "colors": { "paper": "#f4f1ea", "ink": "#24132f", "accent": "#8550e0" },
+  "fonts": ["Climate Crisis", "Instrument Sans"]
+}

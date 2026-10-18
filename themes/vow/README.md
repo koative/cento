@@ -1,29 +1,36 @@
 # Vow
 
-A romantic wedding folio with an interactive celebration brief.
+Every detail carried, so you can simply be there. A wedding planner website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — home: wedding folio hero, packages menu card, featured wedding, live countdown, approach, planning process, more weddings, couples' words, journal, enquiry close
+- `/services` — four packages with fees switched by guest count, comparison table, add-ons, FAQ
+- `/planner` — countdown planner: date, guests, budget and priorities produce a dated, tickable milestone list with a "today" marker, a budget split and a package suggestion
+- `/weddings` — portfolio with setting filter and sort
+- `/weddings/:slug` — wedding story: specs, the brief / the day / what we solved, gallery, quote, supplier credits, related weddings
+- `/journal` — articles with topic filter and search
+- `/journal/:slug` — article with author note and related reading
+- `/about` — the studio: story, principles, team, process, visit details
+- `/enquire` — enquiry form prefilled from the planner, with validation and a confirmation state
+- anything else — not found page
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Build with `bun run build`. Publish `dist`; relative asset paths support subdirectory hosting.
-
-## Design and interaction
-
-A rosewood wedding folio with offset photographic pages and a generous centered serif opening. A celebration brief updates estimated planning scope, while quiet image-pan motion feels like turning a memory over.
-
-The controls demonstrate complete local state changes. All brands, people, addresses, prices, dates and offerings are fictional demo content. No information is submitted, no booking or order is made, and no service or advice is provided. Replace demo content and connect an appropriate backend before real use.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-Edit `src/App.tsx` for content and behavior, `src/styles.css` for styles, and `index.html` for metadata. React, TypeScript, Vite and Lucide icons. Keyboard focus, semantic controls, mobile layouts and reduced-motion preferences are supported.
+`src/content.ts` holds all copy and data (packages, weddings, journal, team, planner milestones and budget shares). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
-## Assets
+## Demo behaviour
 
-Self-hosted cormorant and dm fonts copied from the collection's licensed assets; OFL notices in `src/assets/fonts`. Lucide icons are ISC licensed. Photos are bundled from Unsplash under its license and are illustrative, without endorsement:
+The planner saves its date, guest count, budget, priorities and ticked milestones in `localStorage` (it still works for the visit when storage is blocked), and the enquiry form picks up the planned date and guests. Forms validate in the browser and show a confirmation, but nothing is sent, booked or charged. Vow, its people, couples, venues, suppliers and prices are fictional.
 
-- `table.jpg`: https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1400&q=85
-- `ceremony.jpg`: https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85
+## Credits
+
+Fonts: Italiana and Raleway (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

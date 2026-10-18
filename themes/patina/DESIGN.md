@@ -1,54 +1,66 @@
 ---
-name: "Patina"
+name: Patina
 colors:
-  paper: "#e9e4d9"
-  ink: "#3e3028"
-  accent: "#a0442e"
+  paper: "#f1ebe0"
+  paper-2: "#e8e0d1"
+  field: "#fbf8f2"
+  ink: "#2a211b"
+  ink-2: "#5a4c40"
+  line: "#cdbfa9"
+  control: "#8a7a66"
+  verdigris: "#2f6b5e"
+  verdigris-deep: "#23524a"
+  verdigris-pale: "#dbe7e0"
+  rust: "#a3462c"
+  manila: "#e3cf9f"
 typography:
-  body:
-    fontFamily: "DM, sans-serif"
-    fontSize: "16px"
-    fontWeight: 400
-    lineHeight: "1.6"
   display:
-    fontWeight: 400
-    lineHeight: "1.1"
-    letterSpacing: "-0.035em"
-    fontSize: "clamp(48px, 5.5vw, 78px)"
-    fontFamily: "Caslon"
-components:
-  button-primary:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.paper}"
-    padding: "13px 23px"
+    fontFamily: "Sorts Mill Goudy"
+    sizes: "h1 clamp(2.6rem → 5.25rem), h2 clamp(2rem → 3.25rem), h3 clamp(1.3rem → 1.6rem)"
+    tracking: "-0.025em to -0.015em"
+  body:
+    fontFamily: "Work Sans"
+    fontSize: "1.0625rem"
+    lineHeight: 1.6
+    numerals: "tabular"
+rounded: "3px (controls, images); 999px only for filter chips"
+spacing: "section rhythm clamp(4rem → 7.5rem); gutter clamp(1rem → 3rem); max width 1320px"
 ---
 
-# Patina design
+# Patina
 
-Mode: Persuade, with an embedded sector-specific demonstration tool.
+## Overview
 
-## Direction
+A dealer's stock book on aged paper. Every piece wears the manila tag it has on the warehouse floor — stock number, price, condition grade — hung from a string and swinging when you reach for it. The accent is verdigris, the green that copper earns with age, which is literally what the shop is named for. Light theme: people browse with a tape measure in hand, at home, in daylight.
 
-Furniture salon: an inset editorial title over interior photography, timber tones, inventory rows and an object study.
+## Colors
 
-The user delegated distinct creative directions across a 100-template collection. Impeccable direction seed `8cc53e15`, assigned grounded candidate 7, resolved as **the working studio/counter**: visitors handle the sector's actual objects, choices and outcomes rather than browse generic feature cards. This folder interprets that direction independently. No shared template renderer is used.
-
-## Behavior and composition
-
-Decade filtering, piece selection, shortlist and care disclosures.
-
-Primary composition and exact local tokens live in `src/styles.css`. Desktop layout uses sector-specific media and a task region; mobile at 700px linearizes the flow and preserves all controls. Artwork remains visible by default. Dimensional product surfaces use authored CSS geometry; motion is confined to one sector-relevant moment where used.
-
-## Accessibility and truth
-
-Native labeled controls, visible 3px focus outlines, pressed states, live confirmations, reduced-motion overrides and themed selection/scrollbars. All example offerings are explicitly fictional. No backend or payment integration. Photos have descriptive alternatives and documented provenance in README.
-
-## Supporting material palette
-
-`#3e3028`, `#3e302855`, `#604532`, `#655744`, `#775842`, `#943b29`, `#a0442e`, `#b79565`, `#d4c9b7`, `#e9e4d9`, `#f5eee2`, `#f5eee266`, `#fff`
-
-The supporting shades belong to product materials, photography-adjacent surfaces, print editions, or alpha overlays. They are intentional local tokens.
+Paper and paper-2 are the page and its quieter panels; walnut ink carries text and rules. Verdigris is the only action colour (buttons, selection, focus, chosen options, a fit that works). Rust marks what does not work: sold pieces, errors, a piece too big for the door. Manila exists only on stock tags. The footer and restoration band invert to ink with paper text.
 
 ## Typography
 
-Body text uses DM Sans (CSS alias `DM`); the main heading uses Libre Caslon Text (CSS alias `Caslon`). The aliases resolve through local `@font-face` declarations in `src/`; the font files and license notices are bundled under `src/assets/fonts`. Frontmatter captures the desktop main-heading declarations; responsive overrides remain in the stylesheet.
+Sorts Mill Goudy for headings, prices on tags, totals and the italic captions — an old-style book face that suits a catalogue of old things. Work Sans for body, labels and every measurement, with tabular numerals throughout so dimensions and prices line up in ledgers.
+
+## Layout
+
+Editorial two-column splits (copy against a photograph) alternate with dense ledgers: dotted-rule price lists, specs tables, room inventories. The home page runs hero → arrivals → browse-by-kind index → a staged room → the fit check → restoration band → sell steps → condition grades → a customer note → visiting hours. Mobile collapses every split to one column, shows cards two-up, and puts the warehouse photograph first.
+
+## Components
+
+- **Stock tag** — clipped manila tag with a masked string hole; small on cards and the hero, large on the piece page.
+- **Piece card** — 4:5 photograph, hanging tag, name, date and origin, W·D·H in inches.
+- **Fit check (signature)** — doorway and wall inputs drive a to-scale SVG: the piece's cross-section passes through the door in the first orientation that clears it (or in parts, for pieces that come apart), and its front elevation stands against the wall.
+- **Finish options** — radio cards with price deltas and lead-time notes; quantity stepper only for sets sold singly.
+- **Ledger** — dotted-rule rows with right-aligned prices, used for room sets, restoration services and order summaries.
+- Forms use native validation with messages that name the fix, a sending state, and a success panel.
+
+## Motion
+
+Tags swing like a pendulum on hover and settle into place on load; the fit drawing eases between orientations and sizes; pages rise in once. Everything is visible without animation and `prefers-reduced-motion` removes all of it.
+
+## Do's and Don'ts
+
+- Do list every mark and dimension; the copy is the dealer talking.
+- Do keep verdigris for actions and good news, rust for problems.
+- Don't add new accent colours, card shadows or eyebrow labels.
+- Don't show a price without its stock number and grade.

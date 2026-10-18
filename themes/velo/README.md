@@ -1,35 +1,35 @@
-# Vélo
+# Velo
 
-A steel cycling editorial with a full-bleed bicycle photograph, scarlet race strip, perspective frame geometry configurator, and quiet manifesto.
+Steel bicycles, drawn to fit and serviced for life. A bicycle shop & builds website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: hero with the flagship bike, featured bikes, live frame-drawing teaser with paint swatches, fit-to-ride process, workshop price list, rides club timetable, rider quotes, visit details with open-now status
+- `/bikes` — Bike catalogue with type chips, frame material and budget filters, sort, result count and empty state
+- `/bikes/:id` — Bike page (7 bikes): photo / to-scale geometry drawing switch, finish and size variants, rider-height size helper, quantity, add to cart, specification, full geometry table across sizes, related bikes
+- `/build` — Build configurator: frame platform, rider height → size, paint, groupset, wheels, tyre width, mudguards and rack drawn live on the frame drawing, itemised price and weight, add build to cart
+- `/service` — Workshop: service packages, single-job price list, drop-off booking with a two-week workshop calendar, time slots and validation, FAQ
+- `/rides` — Rides club: weekly rides with elevation profiles and surface filter, pace groups, ride rules, join form
+- `/about` — Workshop story, how a frame is made, team, opening hours
+- `/cart` — Persisted cart with quantities and removal
+- `/checkout` — Contact, delivery method, conditional address, terms, validation and order confirmation
+
+## Run
 
 ```sh
-cd themes/velo
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Run `bun run build` for a static production build and `bun run preview` to inspect it. The Vite base is relative (`./`), so the built `dist` folder can be hosted below any path. React, Vite, TypeScript, and Lucide are the only dependencies.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
-## Included interactions
+## Customize
 
-Choose Road or All-road, a finish, and a frame size. The geometry, price, saved-build summary, and expandable specifications update together. Saved configurations last only for this visit.
+`src/content.ts` holds all copy and data (bikes, geometry, build options, services, rides, team, hours). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
-## Design
+## Demo behaviour
 
-Bone #f2f0e7 / racing red #d42d22 / graphite #242924. Typography: Barlow Condensed and DM Sans. Responsive mobile layouts, native controls, visible keyboard focus, and reduced-motion support are included.
+The cart is stored in `localStorage` (and still works for the visit when storage is unavailable). The configurator, size helper, workshop booking, club sign-up, newsletter and checkout run entirely in the browser: forms validate and show a confirmation, but nothing is sent, booked or charged. Velo, its people, prices and reviews are fictional.
 
-## Sources and reuse
+## Credits
 
-Bicycle photograph: https://images.unsplash.com/photo-1485965120184-e220f721d03e (Unsplash, downloaded locally as `src/assets/bicycle.jpg`). Used as an editorial reference; the photograph is explicitly not the configured product. Frame geometry is original SVG.
-
-Fonts are from Google Fonts, distributed under their respective open font licenses. Icons use Lucide (ISC). See the repository license for template code.
-
-## Demo disclosure
-
-The brand, content, people, events, product specifications, prices, and availability are fictional demonstrations. There is no commerce, booking, email collection, or backend integration. Replace the example content and connect real services before production use.
-
-## Self-hosted fonts
-
-Font files and their OFL license notices are included in `src/assets/fonts/`. No remote font request is required at runtime.
+Fonts: Saira Condensed and Saira (Omnibus-Type, SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

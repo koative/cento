@@ -1,163 +1,66 @@
 ---
 name: Counsel
-description: An editorial legal practice with a guided enquiry brief.
 colors:
-  paper: '#e8e1d3'
-  ink: '#292b23'
-  accent: '#98622e'
-  header-tone: '#817f70'
-  opening-h1-em-ink: '#99602e'
-  practice-detail-surface: '#d5c9b5'
-  principle-em-ink: '#c7aa7f'
+  paper: "#f4f0e8"
+  paper-2: "#ebe5d8"
+  field: "#fffdf8"
+  ink: "#1c211f"
+  ink-2: "#4b524d"
+  rule: "#cfc7b6"
+  edge: "#8f8a7e"
+  seal: "#8c2a22"
+  seal-dark: "#6e1f19"
+  seal-wash: "#f8ebe7"
+  night: "#1c211f"
+  night-2: "#252b28"
+  on-night: "#efe9dd"
+  on-night-2: "#b8b2a5"
+  seal-light: "#e3a294"
 typography:
   display:
-    fontFamily: Display, serif
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(4rem, 8vw, 6rem)
-  headline:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 3.7rem)
-  headline-context-1:
-    fontFamily: Display, serif
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: 33px
-  headline-context-2:
-    fontFamily: Display, serif
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(2.5rem, 4.5vw, 4.5rem)
-  title:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
-  title-context-1:
-    fontFamily: Display, serif
-    lineHeight: '1.12'
-    fontWeight: '400'
-    fontSize: 34px
+    fontFamily: Libre Baskerville
+    fontWeight: 400
+    sizes: "h1 clamp(2.25rem, 1.35rem + 3.6vw, 4.25rem); section h2 clamp(1.6rem, 1.2rem + 1.6vw, 2.5rem); h3 1.25–1.5rem"
+    letterSpacing: -0.02em
   body:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
+    fontFamily: Libre Franklin
+    fontWeight: 400–700
+    size: 1.0625rem / 1.6
+rounded: 2px
 spacing:
-  observed-1: 20px
-  observed-2: 12px
-  observed-3: '0'
-  observed-4: 70px 5vw
-components:
-  primary-button:
-    padding: 14px 22px
-    backgroundColor: '#292b23'
-    textColor: '#e8e1d3'
-  navigation:
-    textColor: '#292b23'
-  principle:
-    padding: 70px 5vw
-    backgroundColor: '#292b23'
-    textColor: '#e8e1d3'
+  gutter: clamp(1.25rem, 4vw, 3rem)
+  section: clamp(3.5rem, 7vw, 6.5rem)
+  max: 1240px
 ---
-
-# Design System: Counsel
 
 ## Overview
 
-**Creative North Star: "An archival casefolio in ochre, limestone and charcoal"**
-
-An archival casefolio in ochre, limestone and charcoal. Wide ruled chapter headings, generous serif type, a vertical practice index and a working enquiry summary replace typical legal hero conventions.
-
-This records the implemented law practice template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Law practice composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-The collection considered a neighborhood gazette, service counter, museum directory, brand magazine, specimen catalogue, community field guide, and event programme. Seed `4fa713db` assigned sixth, community field guide: navigable specificity and contextual choices. This template translates that discipline into its own sector world, not common visual scaffolding. Explicit delegated creative direction authorizes code-led implementation.
+Counsel is set like the firm's own paper: laid cream stock, iron-gall ink, a double rule under the letterhead and a single oxblood accent taken from sealing wax. Clients come to a law firm site anxious and reading carefully, often at a desk during the day, so the world is light, quiet and typographic, and every page reads like a document the firm would sign: memoranda, ledgers, schedules.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Accent**: interactive emphasis.
-- **Header Tone**: context-specific authored color.
-- **Opening H1 Em Ink**: context-specific authored color.
-- **Practice Detail Surface**: context-specific authored color.
-- **Principle Em Ink**: context-specific authored color.
+Paper and ink carry almost everything. Seal (oxblood) marks the few things that matter: active links, paragraph numbers, the deadline tool's actions, the closing band. Night is the ink colour used as a surface for the limitation clock, the pro bono note and the footer; on it, seal-light replaces seal. All text pairs pass AA.
 
 ## Typography
 
-- **Display** is the CSS family alias for Libre Caslon Text. Local faces: normal / 100 900.
-- **Body** is the CSS family alias for DM Sans 9pt. Local faces: normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
+Libre Baskerville for headlines, matter descriptions, quotes, FAQ questions and figures, always at regular weight; italic only for client voices. Libre Franklin for body, labels and interface. Uppercase tracked Franklin is reserved for data labels (memo FROM/DATE/RE, table heads, footer headings), never above a heading. Figures are tabular.
 
 ## Layout
 
-- **Practice**: grid-template-columns (30% 70%).
-- **Practice detail**: grid-template-columns (42% 58%).
-- **Enquiry**: grid-template-columns (1fr 1fr); gap (12vw); padding (70px 5vw).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 900px)`.
-- @media (max-width: 900px): practice changes to grid-template-columns (1fr).
-- @media (max-width: 650px): practice detail changes to grid-template-columns (1fr).
-- @media (max-width: 650px): enquiry changes to grid-template-columns (1fr); gap (30px).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-- input: corners (`0`).
-- round link: corners (`50%`).
+A 1240px column with a ruled rhythm: sections separate with a hairline, documents open and close with a 3px double rule. Home pairs the headline with a practice index so the first viewport says what the firm does. Long reads use a side panel and a 70ch text column; directory and practice lists are ruled rows rather than cards.
 
 ## Components
 
-Choose a practice area and enter a name to prepare an enquiry summary.
+Letterhead header with utility line (offices, hours, phone) and a mobile menu below 960px. Practice index and practice rows with a whole-row link. Ledger tables for recent work, fees and rates. Person cards with grayscale portraits that warm on hover. Memo block (From / Date / Re / Format) on articles and the enquiry receipt. Native `<details>` FAQs. Segmented toggles for filters. The limitation clock: event select, date input, a big day count, a ruled timeline with year/month ticks and a "Today" marker, and a prefilled enquiry link. The enquiry form with conflict-check fields, inline errors that name the fix, a sending state and a receipt.
 
-### Primary button
+## Motion
 
-Authored btn styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Navigation
-
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Principle
-
-Authored principle styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid var(--accent)); outline-offset (4px).
-- button:disabled: opacity (0.5).
-- btn:hover: background (var(--accent)).
-- button[aria pressed="true"]: outline (2px solid var(--accent)); outline-offset (3px).
-- round link:hover: background (#d2c3ab).
-- practice aside button[aria pressed="true"]: outline (0); color (#98622e).
-- round link transition: `background 0.2s`.
-- practice detail animation: `caseReveal 0.5s ease-out`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+Each route settles in (opacity and a 12px rise, exponential ease-out). The clock's fill and Today marker glide to their new position when inputs change, and the enquiry receipt unfolds from the top. Portrait filters ease on hover. `prefers-reduced-motion: reduce` turns all of it off.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do write matters, fees and deadlines as specific sentences and numbers; label illustrative values as such.
+- Do keep seal for actions and markers; one accent only.
+- Don't add eyebrow labels, icon-card grids or stat rows; the content is the structure.
+- Don't round corners beyond 2px or add shadows except the mobile menu's soft drop.
+- Don't show portraits in full colour in lists; the directory is printed in one ink.

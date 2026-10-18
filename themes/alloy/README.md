@@ -1,41 +1,35 @@
 # Alloy
 
-A building studio project index with a staged blueprint and project brief intake.
+Frames, civils and the difficult sites in between. A construction company website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-A standalone, responsive React + TypeScript + Vite template from [Elseform](https://github.com/koative/elseform).
+## Pages
 
-## Run independently
+- `/` — Home: hero with live "on site this week" progress, services index, interactive build programme, recent projects, safety statement, how a project starts, client quote, careers teaser, tender close
+- `/services` — Six services with scope lists, value ranges and example projects, a jump index and a delivery-route comparison table
+- `/projects` — Project index filterable by sector and status, sortable by date, value or name
+- `/projects/:slug` — Project page (9 projects): title-block facts and quantities, story and scope, the scrubbable build programme, site gallery, client quote, related projects
+- `/safety` — Stop-work authority, five-year safety record table, eight site rules, programmes behind the numbers, visitor and subcontractor FAQ
+- `/careers` — Open roles filterable by discipline and office, benefits, apprenticeships, hiring steps
+- `/careers/:id` — Job page (7 roles) with a validated application form
+- `/about` — Story, timeline since 1987, how the company runs, leadership, offices and credentials
+- `/tender` — Tender invitation or budget-estimate form with a live indicative cost range and programme length
+
+## Run
 
 ```sh
-cd themes/alloy
-bun install
-bun run dev
-bun run build
-bun run preview
+bun install && bun run dev
 ```
 
-The production output is `dist/`. Vite uses a relative base, so the output can be served from any static subdirectory.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
-## Working interactions
+## Customize
 
-Select projects, explore the four project stages, expand services and submit a validated local project brief.
+`src/content.ts` holds all copy and data (projects with their programme phases, services, jobs, safety record, estimate rates). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
-All business names, prices, specifications, data and availability are **fictional demonstration content**. State stays in memory and resets on reload. No backend, booking, email, payment or external operation is connected. Replace demonstration content and implement real integrations before production use.
+## Demo behaviour
 
-## Design and accessibility
+The build programme player, filters, tender/estimate form, job applications and the footer bulletin signup all run locally in the browser: forms validate, show a sending state and a confirmation with a reference number, but nothing is sent, uploaded, stored or charged. Alloy, its projects, clients, people, figures and rates are fictional.
 
-A site project folio: broad architectural image, condensed construction lettering, olive blueprint phase diagram and practical project brief.
+## Credits
 
-Responsive layouts, semantic controls, visible focus, meaningful labels, native form validation where relevant, and reduced-motion support. Motion follows the material of each theme; reduced-motion disables decorative animation.
-
-## Self-hosted fonts and icons
-
-Fonts are bundled in `src/assets/fonts/` with their Open Font License notices. Font assets are reused from this repository's licensed font collection. No external font request is made. [Lucide](https://lucide.dev/) icons use the ISC license. CSS and SVG geometry are authored for this template.
-
-## Photography
-
-Locally bundled editorial architecture photography: [building](https://images.unsplash.com/photo-1511818966892-d7d671e672a2) and [interior](https://images.unsplash.com/photo-1600210492486-724fe5c67fb0), under the [Unsplash license](https://unsplash.com/license). Projects are fictional; no claim of authorship of pictured architecture.
-
-## Validation
-
-Standalone build verified with `bun run build`. The root repository maintains interaction tests and responsive screenshot checks.
+Fonts: Anton and Barlow (SIL Open Font License). Images: see `src/assets/SOURCES.md` (CC0, WordPress Photo Directory). Icons: Lucide (ISC). Code: MIT.

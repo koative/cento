@@ -1,0 +1,27 @@
+{
+  "number": 27,
+  "name": "Aperture",
+  "sector": "Independent cinema",
+  "category": "Culture & Media",
+  "tagline": "Two screens, one bar, and the lights go down on time.",
+  "description": "A two-screen independent cinema: a seven-day programme with day, format and strand filters, film pages with every screening, seat-by-seat booking with a live sightline preview, events, membership with monthly/yearly pricing, and venue hire with a live estimate.",
+  "tags": [
+    "Seat-picker booking",
+    "Sightline preview",
+    "Weekly programme",
+    "Venue hire estimate"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/whats-on", "title": "What's on" },
+    { "path": "/films/the-harbour-wall", "title": "Film" },
+    { "path": "/book", "title": "Book tickets" },
+    { "path": "/events", "title": "Events" },
+    { "path": "/membership", "title": "Membership" },
+    { "path": "/hire", "title": "Venue hire" },
+    { "path": "/visit", "title": "Visit & access" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#efe8d8", "ink": "#17130e", "accent": "#b42d17" },
+  "fonts": ["Oswald", "Crimson Pro"]
+}

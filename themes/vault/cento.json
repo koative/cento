@@ -1,0 +1,26 @@
+{
+  "number": 47,
+  "name": "Vault",
+  "sector": "Home & renters insurance",
+  "category": "Services",
+  "tagline": "Cover for the home you actually live in.",
+  "description": "A home and renters insurance website: eight cover pages with plain-English schedules, a four-step quote flow with a live policy schedule, an incident-by-incident claims guide, a searchable help centre and an about page for a mutual insurer.",
+  "tags": [
+    "Quote builder",
+    "Live policy schedule",
+    "Contents counter",
+    "Claims triage"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/cover", "title": "Cover" },
+    { "path": "/cover/renters", "title": "Cover page" },
+    { "path": "/quote", "title": "Get a quote" },
+    { "path": "/claims", "title": "Claims guide" },
+    { "path": "/help", "title": "Help centre" },
+    { "path": "/help/choosing-a-deductible", "title": "Help article" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#f4efe5", "ink": "#1d2a33", "accent": "#a4472a" },
+  "fonts": ["Merriweather", "Merriweather Sans"]
+}

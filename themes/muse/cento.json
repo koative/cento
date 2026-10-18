@@ -1,0 +1,29 @@
+{
+  "number": 3,
+  "name": "Muse",
+  "sector": "Fashion label",
+  "category": "Commerce",
+  "tagline": "Clothes for the in-between hours, cut and finished in Paris.",
+  "description": "A multi-page womenswear label: a ten-look lookbook with an hour-of-the-day timeline and shop-the-look, a filterable shop with colour and size variants, journal articles, stores with live opening status, and a persisted bag with checkout.",
+  "tags": [
+    "Lookbook with shop-the-look",
+    "Online shop",
+    "Store hours",
+    "Checkout"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/collection", "title": "Collection" },
+    { "path": "/collection/look-04", "title": "Look" },
+    { "path": "/shop", "title": "Shop" },
+    { "path": "/shop/hours-coat", "title": "Product" },
+    { "path": "/journal", "title": "Journal" },
+    { "path": "/journal/forty-hours-in-a-coat", "title": "Article" },
+    { "path": "/stores", "title": "Stores" },
+    { "path": "/house", "title": "The House" },
+    { "path": "/bag", "title": "Bag" },
+    { "path": "/checkout", "title": "Checkout" }
+  ],
+  "colors": { "paper": "#f3eee6", "ink": "#1c1815", "accent": "#5c1a27" },
+  "fonts": ["Bodoni Moda", "Jost"]
+}

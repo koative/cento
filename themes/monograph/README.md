@@ -1,45 +1,37 @@
 # Monograph
 
-Independent journal website template from the Elseform collection.
+A quarterly of slow attention. One word, four times a year. An independent magazine website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: the current issue's cover and contents, the lead essay, more from the issue (online and print-only), a pull quote, the photo portfolio, the five sections, back issues, contributors as a typeset run-in, and a subscription close
+- `/stories` — every online story with search, section filter and ordering
+- `/read/:slug` — the article reader: standfirst, byline, hero, side notes, pull quotes, text size and lamplight controls, a print folio counter, author note, the issue it ran in and related stories
+- `/issues` — the issue archive with authored covers and an "in print only" filter
+- `/issues/:no` — one issue: cover, price and stock, editor's letter, full contents with page numbers, object specs, previous/next issue
+- `/sections/:slug` — Essays, Reportage, Conversations, Fiction, Portfolio: what the section is, its online stories and its print-only pieces
+- `/contributors` — writers and photographers, plus how to pitch
+- `/contributors/:slug` — a contributor's bio, online stories and print pieces
+- `/subscribe` — print, digital, gift or single-issue orders with a 1/2-year toggle, a live order summary, validated details and address, confirmation, and an FAQ
+- `/about` — the magazine's principles, masthead, submissions, stockists and office
+- any other route — a 404 page
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Build with `bun run build`; publish the resulting `dist` directory. Vite uses relative asset paths, so the template can be hosted under a subdirectory.
-
-## Design
-
-An oversized Libre Caslon newspaper masthead, cream stock, oxblood annotations, and an irregular multi-column issue. Expanded stories unfold in place.
-
-## Interactions
-
-Filter the issue by topic; open and close complete demonstration stories; submit a validated email for an explicitly local subscription confirmation. No email is sent or stored remotely.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-Edit content and interactions in `src/App.tsx`, styles in `src/styles.css`, and the document title and description in `index.html`. Photography is imported from `src/assets/`. The template uses React, Vite, TypeScript, and Lucide icons.
+`src/content.ts` holds all copy and data (issues, articles, sections, contributors, plans, FAQ). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
-## Accessibility
+## Demo behaviour
 
-Semantic landmarks, visible keyboard focus, labeled controls, native form validation, responsive layouts, and reduced-motion overrides are included. All text is English.
+Search and filters run on local data. The reader remembers text size and lamplight mode in `localStorage` (it still works when storage is unavailable). The subscribe form and the Sunday letter sign-up validate in the browser and show a confirmation; nothing is sent, stored on a server or charged. Monograph, its people, issues and prices are fictional.
 
-## Asset credits
+## Credits
 
-Typography: Libre Caslon Text and DM Sans, distributed through Google Fonts under their included open font licenses. Icons: [Lucide](https://lucide.dev), ISC license. Photography is locally bundled from Unsplash; source image URLs are listed below. Photographs illustrate the fictional concept and do not imply endorsement.
-
-- `architecture.jpg`: https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1600&q=85
-- `reading.jpg`: https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1600&q=85
-
-## Demonstration content
-
-The brand, people, project names, books, descriptions, pricing, and business information are fictional demonstration content. Replace them with your own content before publication. No personal information leaves this page.
-
-The quotation from Arthur Conan Doyle is from the public-domain novel _The Hound of the Baskervilles_ (1902). Journal stories are original fictional demonstration copy.
-
-## Self-hosted fonts
-
-Font files and their OFL license notices are included in `src/assets/fonts/`. No remote font request is required at runtime.
+Fonts: Libre Bodoni and Literata (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

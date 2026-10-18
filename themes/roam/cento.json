@@ -1,0 +1,22 @@
+{
+  "number": 93,
+  "name": "Roam",
+  "sector": "Car rental",
+  "category": "Travel & Stay",
+  "tagline": "Land, sign once, drive. Five stations from the coast to the passes.",
+  "description": "A car rental site in a garage-wayfinding world: fleet with filters and car pages drawn as side elevations, a four-step booking flow with live line-by-line pricing, deal codes, five stations with a region map and one-way fee table, FAQ and about.",
+  "tags": ["Booking flow", "Bag fit planner", "Station map", "Deal codes"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/fleet", "title": "Fleet" },
+    { "path": "/fleet/tessel-touring", "title": "Car" },
+    { "path": "/book", "title": "Book a car" },
+    { "path": "/locations", "title": "Locations" },
+    { "path": "/locations/harbor-airport", "title": "Station" },
+    { "path": "/deals", "title": "Deals" },
+    { "path": "/faq", "title": "FAQ" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#eeece6", "ink": "#15171a", "accent": "#f4c20d" },
+  "fonts": ["Encode Sans Expanded", "Encode Sans"]
+}

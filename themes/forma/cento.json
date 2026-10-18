@@ -1,0 +1,21 @@
+{
+  "number": 1,
+  "name": "Forma",
+  "sector": "Architecture studio",
+  "category": "Creative",
+  "tagline": "Architecture built around the light.",
+  "description": "A multi-page architecture studio site: sortable project register with plate view, case pages with facts, materials and an interactive sun-path section, plus studio, process and fees, journal and a validated enquiry form.",
+  "tags": ["Light study", "Project register", "Case pages", "Enquiry form"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/projects", "title": "Projects" },
+    { "path": "/projects/dune-house", "title": "Project" },
+    { "path": "/studio", "title": "Studio" },
+    { "path": "/process", "title": "Process and fees" },
+    { "path": "/journal", "title": "Journal" },
+    { "path": "/journal/drawing-at-one-to-twenty", "title": "Journal entry" },
+    { "path": "/contact", "title": "Contact" }
+  ],
+  "colors": { "paper": "#efede6", "ink": "#1f201c", "accent": "#b0391f" },
+  "fonts": ["Familjen Grotesk", "Newsreader"]
+}

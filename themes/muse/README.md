@@ -1,54 +1,37 @@
 # Muse
 
-Fashion / editorial commerce template from the Elseform collection. Built with React, TypeScript, Vite, and Lucide icons.
+Clothes for the in-between hours, cut and finished in Paris. A fashion label website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Design
+## Pages
 
-Oxblood and warm ivory, expressive Cormorant Garamond typography, a split campaign spread, a moving editorial line, and a tactile product study.
+- `/` — Home: AW26 campaign hero with shop links, new-in grid, look filmstrip, house statement, the Hours Coat split feature, category index, atelier band, journal teaser, and a close with live store status and service promises
+- `/collection` — Collection: _The Quiet Hours_ lookbook, ten looks pinned on an hour-of-the-day timeline
+- `/collection/look-04` — Look: full-height look, day-line navigation, previous/next, and shop-the-look (pick pieces and sizes, add all to bag)
+- `/shop` — Shop: category, colour and size filters (drawer on mobile), sort, live result count
+- `/shop/hours-coat` — Product: colour-switched gallery, size picker with size guide, quantity, composition and care, looks that feature it, related pieces
+- `/journal` — Journal: entries filtered by topic (Atelier, Collection, Materials, Care)
+- `/journal/forty-hours-in-a-coat` — Article: long-form reader with pull quotes and the pieces featured in the story
+- `/stores` — Stores: Paris, London and New York with hours, live open/closed status, in-store services and an appointments FAQ
+- `/house` — The House: story, how we work, where it is made, the studio team and atelier visits
+- `/bag` — Bag: persisted lines with quantity controls, delivery threshold and summary
+- `/checkout` — Checkout: delivery or store collection, gift option, validated contact/address/card form and order confirmation
 
-**Type:** Cormorant Garamond and DM Sans. Fonts are sourced from Google Fonts and bundled locally.
-
-- Background: `#f6f1e9`
-- Oxblood: `#4a1524`
-- Secondary Surface: `#e8dfd4`
-
-## Run independently
+## Run
 
 ```sh
-bun install
-bun run dev
-bun run build
-bun run preview
+bun install && bun run dev
 ```
 
-The relative Vite base supports deployment at `/elseform/themes/muse/` or another subdirectory. The theme has no dependency on the gallery or other templates. `src/main.tsx` is the entry point. Edit `src/App.tsx` for content and `src/styles.css` for the visual system.
+Build: `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
-## Working interactions
+## Customize
 
-- Cycle through three editorial looks.
-- Select a size and add demonstration pieces to the bag. Open or clear the local bag.
-- Submit a local newsletter signup and receive a demonstration confirmation.
+`src/content.ts` holds all copy and data (brand, products, looks, posts, stores, checkout options). `src/styles.css` holds the design system with tokens at `:root`. Imagery lives in `src/assets`.
 
-State is held in memory and resets on reload. Forms use native validation; no server, payment processor, or external message service is connected. All business names, projects, prices, offerings, and availability are **fictional demonstration content**. Replace these and connect your own services before production use.
+## Demo behaviour
 
-## Accessibility and motion
+The bag is stored in `localStorage` (and still works for the visit when storage is blocked); shop-the-look, product variants and quantities all write to it. Checkout validates every field in the browser and shows a confirmation with a demo order number, then empties the bag. Newsletter and look forms confirm locally. Nothing is sent, charged or stored on a server, and Muse is a fictional brand.
 
-Semantic navigation and forms, visible keyboard focus, accessible button names, pressed/expanded control states, explicit confirmation messages, mobile reflow, and `prefers-reduced-motion` support. Photographs include descriptive alternative text. The intentionally authored motion is disabled for reduced-motion preferences.
+## Credits
 
-## Photography and icons
-
-The following photographs are stored locally under `src/assets` and imported by Vite, so nested deployments do not depend on remote photo URLs. Sources:
-
-- [fashion — original Unsplash image](https://images.unsplash.com/photo-1539109136881-3be0616acf4b)
-- [portrait — original Unsplash image](https://images.unsplash.com/photo-1483985988355-763728e1935b)
-- [detail — original Unsplash image](https://images.unsplash.com/photo-1532453288672-3a27e9be9efd)
-
-Photography: [Unsplash license](https://unsplash.com/license). Fonts: [Google Fonts](https://fonts.google.com/), under the respective open font licenses. Icons: [Lucide](https://lucide.dev/), ISC license. Verify the terms for your intended use and replace editorial demonstration photographs before using them to imply a real business, product, or property.
-
-## Validation
-
-Standalone production build verified with `bun run build`. Collection-wide responsive and interaction verification is maintained at the repository level.
-
-## Self-hosted fonts
-
-Fonts are bundled under `src/assets/fonts/`, with their OFL license notices. No external font service is needed at runtime.
+Fonts: Bodoni Moda and Jost (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

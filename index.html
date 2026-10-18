@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#eef2f8" />
+    <meta name="theme-color" content="#ffffff" />
     <script>
       (() => {
         let preference = "system";
         try {
-          const saved = localStorage.getItem("elseform-appearance");
+          const saved = localStorage.getItem("cento-appearance");
           if (saved === "light" || saved === "dark") preference = saved;
         } catch {}
         const dark =
@@ -18,36 +18,36 @@
         document.documentElement.dataset.theme = dark ? "dark" : "light";
         document.documentElement.style.colorScheme = dark ? "dark" : "light";
         document.querySelector('meta[name="theme-color"]').content = dark
-          ? "#0c1320"
-          : "#eef2f8";
+          ? "#0b0b0d"
+          : "#ffffff";
       })();
     </script>
     <style>
       html {
-        background: #eef2f8;
+        background: #ffffff;
         color-scheme: light;
       }
       html[data-theme="dark"] {
-        background: #0c1320;
+        background: #0b0b0d;
         color-scheme: dark;
       }
     </style>
     <meta
       name="description"
-      content="Elseform: 100 distinct, open-source website templates. Find a starting point, explore a live demo, and make it your own. An independent collection by Koative."
+      content="Cento: 100 complete, multi-page website templates by Koative. Browse them live, pick one and take the code with a single command. Open source, MIT licensed."
     />
-    <meta property="og:title" content="Elseform — Start with something else." />
+    <meta property="og:title" content="Cento — 100 websites, ready to borrow" />
     <meta
       property="og:description"
-      content="100 distinct website templates. Beautifully different. Open source. Entirely yours."
+      content="A hundred complete, multi-page website templates. Preview every page live, then take the code with one command."
     />
     <meta
       property="og:image"
-      content="https://koative.github.io/elseform/elseform-social.png"
+      content="https://koative.github.io/cento/cento-social.png"
     />
-    <meta property="og:url" content="https://koative.github.io/elseform/" />
+    <meta property="og:url" content="https://koative.github.io/cento/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <title>Elseform — Start with something else.</title>
+    <title>Cento — 100 websites, ready to borrow</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>

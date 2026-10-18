@@ -1,181 +1,73 @@
 ---
 name: Odyssey
-description: A destination journal with a buildable day-by-day itinerary.
 colors:
-  paper: '#eae4d7'
-  ink: '#244857'
-  accent: '#a95532'
-  destination-copy-tone: '#fff8e9'
-  intro-tone: '#b8bbaa'
-  day-tabs-button-aria-pressed-true-tone: '#f5eddb'
-  planner-aside-surface: '#d7ded3'
+  paper: "#ebe4d6"
+  paper-2: "#e2d9c6"
+  sheet: "#f5f0e6"
+  ink: "#1f3e4b"
+  ink-2: "#4b6470"
+  line: "#c8bea9"
+  accent: "#9b4a2a"
+  accent-hover: "#823c20"
+  accent-light: "#e08a5f"
+  night: "#16303a"
+  on-night: "#ebe4d6"
+  on-night-2: "#b6c4c2"
+  sea: "#dfe2d5"
 typography:
   display:
-    fontFamily: Display, serif
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(4.7rem, 8vw, 6rem)
-  headline:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 3.7rem)
-  headline-context-1:
-    fontFamily: Display
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: 38px
-  headline-context-2:
-    fontFamily: Display
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: 46px
-  title:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
-  title-context-1:
-    fontFamily: Display
-    lineHeight: '1.1'
-    fontSize: 30px
-    fontWeight: '400'
-  title-context-2:
-    fontFamily: Display
-    lineHeight: '1.5'
-    fontSize: 34px
-    fontWeight: '400'
+    fontFamily: Playfair Display
+    fontWeight: 500
+    h1: clamp(2.6rem, 1.5rem + 4.2vw, 5.4rem)
+    h2: clamp(1.9rem, 1.35rem + 1.9vw, 3rem)
+    h3: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem)
+    letterSpacing: -0.025em to -0.015em
   body:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
+    fontFamily: Kumbh Sans
+    fontSize: 1.0625rem
+    lineHeight: 1.6
+    measure: 68ch
+rounded:
+  control: 3px
+  sheet: 12px
 spacing:
-  observed-1: 12px
-  observed-2: 6px
-  observed-3: 20px
-  observed-4: '0'
-  observed-5: 25px
-  observed-6: 10px
-  observed-7: 5vw
-  observed-8: 15px
-components:
-  primary-button:
-    padding: 14px 22px
-    backgroundColor: '#244857'
-    textColor: '#eae4d7'
-  quiet-button:
-    backgroundColor: transparent
-    textColor: inherit
-    padding: 10px 16px
-  navigation:
-    textColor: '#244857'
-  packing:
-    padding: 55px 7vw
-    backgroundColor: '#244857'
-    textColor: '#f5eddb'
+  gutter: clamp(20px, 4vw, 48px)
+  section: clamp(64px, 9vw, 128px)
+  wrap: 1280px
 ---
 
-# Design System: Odyssey
+# Odyssey — design
 
 ## Overview
 
-**Creative North Star: "A blue-and-sand travel notebook"**
-
-A blue-and-sand travel notebook: panoramic destination imagery, tabbed daily plans and a trip packing sheet. The itinerary behaves like a practical journal and each selected activity changes a visible route summary.
-
-This records the implemented travel planning template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Travel planning composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-The collection considered a neighborhood gazette, service counter, museum directory, brand magazine, specimen catalogue, community field guide, and event programme. Seed `4fa713db` assigned sixth, community field guide: navigable specificity and contextual choices. This template translates that discipline into its own sector world, not common visual scaffolding. Explicit delegated creative direction authorizes code-led implementation.
+A travel dossier: the sand-coloured paper of a printed itinerary, harbour-blue ink, a terracotta stamp for the one thing to press. People plan a long trip slowly, on a laptop in the evening, coming back several times, so the site is light, quiet and legible, with photographs doing the travel and an authored navigator's chart doing the planning.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Accent**: interactive emphasis.
-- **Destination Copy Tone**: context-specific authored color.
-- **Intro Tone**: context-specific authored color.
-- **Day Tabs Button Aria Pressed True Tone**: context-specific authored color.
-- **Planner Aside Surface**: context-specific authored color.
+Paper (`#ebe4d6`) is the page, sheet (`#f5f0e6`) the raised route sheet and form fields, ink (`#1f3e4b`) all text and rules, ink-2 secondary copy. Terracotta accent (`#9b4a2a`) is reserved for primary buttons, route stops and errors. Night (`#16303a`) carries the destination strip, the chart teaser and the footer, with on-night text. Sea (`#dfe2d5`) fills the chart. Selection, caret, scrollbar and focus ring all come from this palette.
 
 ## Typography
 
-- **Display** is the CSS family alias for Instrument Serif. Local faces: italic / 100 900, normal / 100 900.
-- **Body** is the CSS family alias for DM Sans 9pt. Local faces: normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
+Playfair Display (500, italic for place names and captions) for headings, place names and the big estimate; Kumbh Sans for everything that has to be read or operated. Display tops out at 5.4rem, tracking never tighter than −0.025em, tabular numerals in prices, dates and the season chart.
 
 ## Layout
 
-- **Intro**: padding (45px 5vw); grid-template-columns (1.2fr 1.3fr 0.5fr); gap (5vw).
-- **Planner**: grid-template-columns (1.5fr 1fr); gap (5vw).
-- **Day tabs**: grid-template-columns (repeat(3, 1fr)).
-- **Day plan article**: grid-template-columns (50px 1fr 35px); gap (15px); padding (30px 0).
-- **Packing**: padding (55px 7vw); grid-template-columns (1fr 1fr); gap (10vw).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 900px)`.
-- @media (max-width: 900px): intro changes to grid-template-columns (1fr 1fr).
-- @media (max-width: 900px): day plan article changes to grid-template-columns (40px 1fr 32px); gap (10px).
-- @media (max-width: 650px): intro changes to grid-template-columns (1fr); gap (25px).
-- @media (max-width: 650px): planner changes to grid-template-columns (1fr).
-- @media (max-width: 650px): packing changes to grid-template-columns (1fr); gap (30px).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-- input: corners (`0`).
+A 1280px wrap with fluid gutters; asymmetric section heads (heading left, short note right). Home alternates dense passages (destination grid, journeys table) with quiet ones (a single quote, the close). Lists are ledgers and tables rather than card grids; the destination grid leads with one tall image. Below 760px everything stacks; the planner chart keeps its working scale and scrolls sideways.
 
 ## Components
 
-Choose a day, add activities and prepare an itinerary.
+- **Route chart** (`RouteMap`): an equirectangular graticule with every destination as a fix, the route drawn as numbered northward arcs; interactive in the planner, compact on journey pages.
+- **Route sheet**: sticky summary with date, travellers, stay level, proportional nights bar, length, legs and per-person estimate.
+- **Season chart**: twelve bars per destination, coloured by our pick / good / off season, with daytime highs.
+- Ledger rows for journeys and stays, segmented filters, accessible FAQ `<details>`, enquiry form with error summary, inline errors and a reference-numbered confirmation.
 
-### Primary button
+## Motion
 
-Authored btn styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Quiet button
-
-Authored quiet styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Navigation
-
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Packing
-
-Authored packing styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid var(--accent)); outline-offset (4px).
-- button:disabled: opacity (0.5).
-- btn:hover: background (var(--accent)).
-- button[aria pressed="true"]: outline (2px solid var(--accent)); outline-offset (3px).
-- day tabs button[aria pressed="true"]: outline (0); background (var(--ink)); color (#f5eddb).
-- destination   img animation: `coastReveal 1.8s ease-out both`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+Pages fade up once on arrival (0.6s exponential ease-out); route arcs draw themselves when stops change and new stops pop in; the mobile menu drops down. Content is visible without JavaScript-gated reveals, and `prefers-reduced-motion: reduce` removes all animation.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do let photographs and the chart carry the page; keep chrome to hairlines.
+- Do keep terracotta for actions, stops and errors only.
+- Don't add eyebrow labels, card grids of icons, gradients or glass.
+- Don't draw coastlines or fake illustrations on the chart; it stays pure geometry.

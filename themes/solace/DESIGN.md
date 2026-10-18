@@ -1,161 +1,66 @@
 ---
 name: Solace
-description: A warm, appointment-first clinic with a calm visit planner.
 colors:
-  paper: '#f4f3eb'
-  ink: '#183e38'
-  accent: '#9a562d'
-  care-tone: '#b7c5b3'
-  intro-em-ink: '#607b68'
-  visit-surface: '#e2eadc'
-  note-surface: '#d9dfd2'
+  paper: "#f5f2ea"
+  paper-deep: "#ece6d7"
+  card: "#fffdf8"
+  sage: "#dfe8da"
+  sage-deep: "#c5d6be"
+  ink: "#1c4038"
+  ink-soft: "#46625a"
+  accent: "#9a4f27"
+  accent-soft: "#f1dccd"
+  line: "#d2d4c6"
+  ok: "#2d6a3c"
+  error: "#a3312a"
 typography:
-  display:
-    fontFamily: Display, serif
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(3rem, 5.5vw, 5.5rem)
-  headline:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 3.7rem)
-  headline-context-1:
-    fontFamily: Display, serif
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: 34px
-  headline-context-2:
-    fontFamily: Display, serif
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 3.7rem)
-  title:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
-  title-context-1:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
-    fontWeight: '500'
-    fontSize: 21px
-  body:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
+  display: "Source Serif 4 (450–600, optical sizing)"
+  body: "Source Sans 3 (400–700)"
+  sizes:
+    body: "clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem)"
+    h1: "clamp(2.6rem, 1.8rem + 3.6vw, 5rem)"
+    h2: "clamp(1.9rem, 1.5rem + 1.8vw, 2.9rem)"
+rounded:
+  card: 14px
+  control: 10px
+  chip: 99px
 spacing:
-  observed-1: 10px
-  observed-2: 12px
-  observed-3: 10px 16px
-  observed-4: 16px
-  observed-5: '0'
-components:
-  primary-button:
-    padding: 14px 22px
-    backgroundColor: '#183e38'
-    textColor: '#f4f3eb'
-  navigation:
-    textColor: '#183e38'
-  visit:
-    backgroundColor: '#e2eadc'
-    padding: 35px
-    rounded: 18px
-    textColor: '#183e38'
+  page-pad: "clamp(1.25rem, 4vw, 3.5rem)"
+  section: "clamp(4rem, 8vw, 7.5rem)"
+  max-width: 1320px
 ---
-
-# Design System: Solace
 
 ## Overview
 
-**Creative North Star: "A sage appointment sheet"**
-
-A sage appointment sheet: a friendly circular portrait paired with a four-step visit planner, clean service rows, and an unfolding care note. The booking form shows a local confirmation with selected visit type and time.
-
-This records the implemented healthcare clinic template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Healthcare clinic composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-The collection considered a neighborhood gazette, service counter, museum directory, brand magazine, specimen catalogue, community field guide, and event programme. Seed `4fa713db` assigned sixth, community field guide: navigable specificity and contextual choices. This template translates that discipline into its own sector world, not common visual scaffolding. Explicit delegated creative direction authorizes code-led implementation.
+Solace is set like the practice’s own printed patient leaflet: warm uncoated paper, deep pine ink, a terracotta cross, plain serif headings and generous sans text. Patients — parents on a phone in a waiting room, older people at a desktop — read it in ordinary daylight, so it is light, calm and high-contrast, never clinical white and never cute.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Accent**: interactive emphasis.
-- **Care Tone**: context-specific authored color.
-- **Intro Em Ink**: context-specific authored color.
-- **Visit Surface**: context-specific authored color.
-- **Note Surface**: context-specific authored color.
+Paper `#f5f2ea` is the page; card `#fffdf8` lifts badges, the appointment card and inputs. Pine ink `#1c4038` carries text, buttons and the footer. Sage `#dfe8da` marks selection and quiet bands. Terracotta `#9a4f27` is the only accent: the logo cross, step numbers, times, links and the “Booked” stamp. Green `#2d6a3c` is reserved for “open now” and “accepting new patients”; `#a3312a` for errors.
 
 ## Typography
 
-- **Display** is the CSS family alias for Lora. Local faces: italic / 100 900, normal / 100 900.
-- **Body** is the CSS family alias for DM Sans 9pt. Local faces: normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
+Source Serif 4 for headings, service names, card values and quotes (italic). Source Sans 3 for body, labels and data, with tabular numerals for times, prices and hours. Tracking stays between −0.025em and 0.
 
 ## Layout
 
-- **Welcome**: grid-template-columns (1fr 0.85fr); gap (7vw); padding (65px 6vw).
-- **Care**: grid-template-columns (1fr 1fr); gap (9vw).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 900px)`.
-- @media (max-width: 650px): welcome changes to grid-template-columns (1fr).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-- input: corners (`0`).
-- portrait img: corners (`150px 150px 0 0`).
-- visit: corners (`18px`).
+A 1320px column with fluid padding. Services read as an index of leaflets (ruled rows, not cards). Two-column splits for features, service and profile pages with a sticky facts aside. Full-bleed only for the same-day band, the closing split and the footer.
 
 ## Components
 
-Choose visit type, day and time; prepare a local visit confirmation.
+- Clinician badge: the clinic ID badge with lanyard slot, initials disc, role in terracotta and an availability dot.
+- Appointment card (signature): the reception card with dotted blanks that ink in as the visit is planned, then a rotated “Booked” stamp with the reference.
+- Booking planner: four numbered fieldsets with radio cards, pill segments, a two-row day strip with open counts, and time slots grouped by morning/afternoon/evening.
+- Clinic map: authored SVG of Alder Bay with pressable pins synced to clinic tabs.
+- FAQ: native `details` with a rotating plus.
 
-### Primary button
+## Motion
 
-Authored btn styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Navigation
-
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Visit
-
-Authored visit styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid var(--accent)); outline-offset (4px).
-- button:disabled: opacity (0.5).
-- btn:hover: background (var(--accent)).
-- button[aria pressed="true"]: outline (2px solid var(--accent)); outline-offset (3px).
-- visit button[aria pressed="true"]: outline (0); background (var(--ink)); color (var(--paper)).
-- portrait img animation: `solaceReveal 1.6s ease-out both`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+Pages rise in once (12px, 0.6s expo-out). Values on the appointment card ink in (blur to sharp); the stamp lands with a slight overshoot. Nav underlines draw from the left. Everything collapses to instant under `prefers-reduced-motion`.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do keep one accent; let pine and paper do the work.
+- Do write in the practice’s voice: plain, specific, kind.
+- Don’t add eyebrows, icon-tile grids or stat rows.
+- Don’t use red for anything but errors, or green for anything but availability.

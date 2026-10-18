@@ -1,0 +1,25 @@
+{
+  "number": 100,
+  "name": "Tinker",
+  "sector": "Toy store",
+  "category": "Commerce",
+  "tagline": "A toy shop with a workbench in the back.",
+  "description": "A multi-page independent toy shop: shelves by age with age-band landing pages, a filterable catalogue with product variants and gift wrap, a live gift finder, bookable workshops, a store events calendar with RSVP, and a persisted basket with checkout.",
+  "tags": ["Shop by age", "Gift finder", "Workshop booking", "Gift wrap"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/shop", "title": "Shop" },
+    { "path": "/shop/rainbow-stacker", "title": "Toy" },
+    { "path": "/ages/preschool", "title": "Age shelf" },
+    { "path": "/gift-finder", "title": "Gift finder" },
+    { "path": "/workshops", "title": "Workshops" },
+    { "path": "/workshops/peg-doll-painting", "title": "Workshop" },
+    { "path": "/events", "title": "Store events" },
+    { "path": "/visit", "title": "Visit" },
+    { "path": "/about", "title": "About" },
+    { "path": "/cart", "title": "Basket" },
+    { "path": "/checkout", "title": "Checkout" }
+  ],
+  "colors": { "paper": "#f7f0e3", "ink": "#1f2340", "accent": "#c63a22" },
+  "fonts": ["Grandstander", "Quicksand"]
+}

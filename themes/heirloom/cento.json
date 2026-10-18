@@ -1,0 +1,29 @@
+{
+  "number": 50,
+  "name": "Heirloom",
+  "sector": "Jewelry atelier",
+  "category": "Commerce",
+  "tagline": "Rings and jewels made by hand, to be worn and handed on",
+  "description": "A dark, lamp-lit jewelry atelier shop with collections, filterable listings, piece pages whose drawings redraw per metal, a live ring builder, bespoke process, appointment booking, and a persisted bag with checkout.",
+  "tags": [
+    "Ring builder",
+    "Online shop",
+    "Appointment booking",
+    "Bespoke process"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/collections", "title": "Collections" },
+    { "path": "/collections/engagement", "title": "Collection" },
+    { "path": "/collections/engagement/the-ardent", "title": "Piece" },
+    { "path": "/ring-builder", "title": "Ring builder" },
+    { "path": "/bespoke", "title": "Bespoke" },
+    { "path": "/atelier", "title": "Atelier" },
+    { "path": "/appointments", "title": "Appointments" },
+    { "path": "/care", "title": "Care & sizing" },
+    { "path": "/cart", "title": "Bag" },
+    { "path": "/checkout", "title": "Checkout" }
+  ],
+  "colors": { "paper": "#171413", "ink": "#f0e3cf", "accent": "#c9a46a" },
+  "fonts": ["Cinzel", "Cormorant Garamond"]
+}

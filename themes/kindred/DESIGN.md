@@ -1,176 +1,68 @@
 ---
 name: Kindred
-description: A spirited adoption board with animal filters and meet-and-greet requests.
 colors:
-  paper: '#f7e9cf'
-  ink: '#3a392c'
-  accent: '#b44720'
-  friends-head-button-aria-pressed-true-tone: '#fff3dc'
-  hello-tone: '#f0c449'
-  friends-head-button-tone: '#756f54'
-  meet-tone: '#3a513c'
-  friends-surface: '#eadbbd'
-  meet-input-placeholder-ink: '#d0d6c6'
+  paper: "#f7ead2"
+  paper-2: "#fffaf0"
+  paper-3: "#efdcb9"
+  ink: "#33302a"
+  ink-2: "#5c5546"
+  accent: "#b44720"
+  accent-deep: "#933612"
+  marigold: "#f0c449"
+  forest: "#2e4a37"
+  tag-green: "#3d7a4c"
+  tag-amber: "#d99a1e"
+  tag-orange: "#c4552a"
 typography:
-  display:
-    fontFamily: Display
-    lineHeight: '0.98'
-    fontWeight: '600'
-    letterSpacing: -0.035em
-    fontSize: clamp(4rem, 6.8vw, 6rem)
-  headline:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 3.7rem)
-  headline-context-1:
-    fontFamily: Display
-    lineHeight: '1.05'
-    fontWeight: '600'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 3.7rem)
-  headline-context-2:
-    fontFamily: Display
-    lineHeight: '1.05'
-    fontWeight: '600'
-    letterSpacing: -0.035em
-    fontSize: 54px
-  title:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
-  title-context-1:
-    fontFamily: Display
-    lineHeight: '1.5'
-    fontSize: 33px
-  body:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
+  display: "Baloo 2, 600–800"
+  body: "Mulish, 400–800"
+  sizes:
+    h1: "clamp(2.6rem, 5.6vw, 5.25rem)"
+    h2: "clamp(1.9rem, 3.5vw, 3rem)"
+    h3: "1.35rem"
+    body: "1.0625rem / 1.6"
+rounded:
+  card: "20px"
+  control: "10px"
+  button: "999px"
+  arch: "999px 999px 26px 26px"
 spacing:
-  observed-1: 20px
-  observed-2: 12px
-components:
-  primary-button:
-    padding: 14px 22px
-    backgroundColor: '#3a392c'
-    textColor: '#f7e9cf'
-  quiet-button:
-    backgroundColor: transparent
-    textColor: inherit
-    padding: 10px 16px
-  navigation:
-    textColor: '#3a392c'
-  hello:
-    backgroundColor: '#f0c449'
-    textColor: '#3a392c'
-    padding: 24px 16px
-    rounded: 50%
+  gutter: "clamp(1.1rem, 4vw, 2.5rem)"
+  section: "clamp(3.5rem, 8vw, 6.5rem)"
 ---
-
-# Design System: Kindred
 
 ## Overview
 
-**Creative North Star: "An affectionate adoption noticeboard in orange, cream and forest"**
-
-An affectionate adoption noticeboard in orange, cream and forest. Oversized animal photography, informal bold type, a species filter and an inline meeting request make matching the central experience.
-
-This records the implemented pet adoption template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Pet adoption composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-The collection considered a neighborhood gazette, service counter, museum directory, brand magazine, specimen catalogue, community field guide, and event programme. Seed `4fa713db` assigned sixth, community field guide: navigable specificity and contextual choices. This template translates that discipline into its own sector world, not common visual scaffolding. Explicit delegated creative direction authorizes code-led implementation.
+Kindred is set in the world of the shelter's own paperwork: the kennel card clipped to every run door, the coloured collar tag that tells staff how experienced an adopter should be, the hours board at reception. Families browse on a phone in the evening or a laptop at the weekend, so the site is light, warm and rounded, with honest information density where decisions get made.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Accent**: interactive emphasis.
-- **Friends Head Button Aria Pressed True Tone**: context-specific authored color.
-- **Hello Tone**: context-specific authored color.
-- **Friends Head Button Tone**: context-specific authored color.
-- **Meet Tone**: context-specific authored color.
-- **Friends Surface**: context-specific authored color.
-- **Meet Input Placeholder Ink**: context-specific authored color.
+Cream paper with near-white card stock and a deeper cream band; warm ink for text. Rust is the action colour (buttons, scores, links, punched marks), marigold the sticker and highlight colour (today's hours, active nav underline, quiz leaders), forest green the calm band behind the quiz teaser and building section. Green, amber and orange are reserved for the shelter's collar-tag system and good-with marks.
 
 ## Typography
 
-- **Display** is the CSS family alias for Bricolage Grotesque 96pt ExtraBold. Local faces: normal / 100 900.
-- **Body** is the CSS family alias for DM Sans 9pt. Local faces: normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
+Baloo 2 at 700–800 carries every heading, animal name, price and button — round and friendly, tight at −0.02em. Mulish handles body copy, labels and data. Numerals in hours, fees, days-here counts and scores are tabular.
 
 ## Layout
 
-- **Intro**: padding (30px 5vw 55px); grid-template-columns (1fr 1fr); gap (4vw).
-- **Pet grid**: grid-template-columns (repeat(3, 1fr)); gap (28px).
-- **How**: padding (65px 7vw); grid-template-columns (1fr 1fr); gap (7vw).
-- **Meet**: padding (60px 7vw); grid-template-columns (1fr 1fr); gap (10vw).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 900px)`.
-- @media (max-width: 650px): intro changes to grid-template-columns (1fr); gap (25px).
-- @media (max-width: 650px): pet grid changes to grid-template-columns (1fr); gap (35px).
-- @media (max-width: 650px): how changes to grid-template-columns (1fr); gap (30px).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-- input: corners (`0`).
-- hero pet   img: corners (`180px 180px 20px 20px`).
-- hello: corners (`50%`).
-- friends head button: corners (`25px`).
-- pet photo   span: corners (`18px`).
+A 1260px wrap with fluid gutters. Pages alternate between dense passages (kennel-card grids, spec sheets, fee tables, the roles table) and quiet ones (the adopter quote, the closing invitation). Photography sits in an arch on the hero, animal profile and story — the shelter's doorway — and in rounded rectangles elsewhere.
 
 ## Components
 
-Filter animals, select a companion and prepare a meeting request.
+- **Kennel card**: card stock with a punched hole at the top centre, kennel number and days-here row, photo, name, meta, one-line personality, then a dashed tear line above the collar tag and good-with icons. It pivots from the hole on hover.
+- **Collar tag chip**: tiny SVG ID tag filled in the tag colour plus its name.
+- **Good-with marks**: Lucide kid/dog/cat icons with a green tick, amber dash or orange cross badge.
+- **Spec sheet**: two-column dashed-rule list on the animal page.
+- **Still-in-the-running board**: every animal's face on the quiz; ruled-out faces dim to grey, leaders get a marigold ring.
+- Forms: card-stock panels, 48px fields, inline errors in deep rust naming the fix, stepper for the three-stage application, segmented toggle and amount tiles on donate.
 
-### Primary button
+## Motion
 
-Authored btn styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Quiet button
-
-Authored quiet styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Navigation
-
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Hello
-
-Authored hello styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid var(--accent)); outline-offset (4px).
-- button:disabled: opacity (0.5).
-- btn:hover: background (var(--accent)).
-- button[aria pressed="true"]: outline (2px solid var(--accent)); outline-offset (3px).
-- friends head button[aria pressed="true"]: outline (0); background (#3a392c); color (#fff3dc).
-- meet btn:hover: background (#f7e9cf).
-- pet label animation: `hello 1.2s ease-out`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+Pages ease in from a visible state. Kennel cards swing on their hook on hover; quiz result cards drop in and settle as if hung on a door; the quiz board dims and lights faces as answers change; the open-now dot pulses. Everything collapses to instant under `prefers-reduced-motion`.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do keep collar-tag colours for tags and good-with only.
+- Do write animal copy in the counsellors' voice: specific habits, honest cautions.
+- Don't add eyebrow labels, stat rows or decorative gradients.
+- Don't use the arch on landscape-only crops smaller than about 300px wide.

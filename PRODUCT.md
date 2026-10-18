@@ -1,4 +1,4 @@
-# Elseform
+# Cento
 
 <!-- impeccable:product-schema 1 -->
 
@@ -8,33 +8,32 @@ web
 
 ## Stack
 
-User-authorized React, Vite, Tailwind CSS and Bun. Static builds for GitHub Pages. Separate template folders in a single repository.
+React 19, Vite 7, TypeScript and Bun workspaces. The gallery uses plain CSS; every template is an independent Vite app with its own package.json, plain CSS, hash routing and no shared runtime. Static build for GitHub Pages under the `/cento/` base.
 
 ## Users
 
-Developers and designers browsing reusable website starting points (inferred from gallery and repository request).
+Developers, designers and freelancers looking for a complete website to start a client or personal project from. They compare a few candidates quickly, then open two or three live and take the source.
 
 ## Product Purpose
 
-Publish a growing collection of distinctly designed website templates, each with its own structure, sector and animation language, through a gallery. The user authorized renaming the repository to Elseform. Publish at https://koative.github.io/elseform/ and preserve the separate koative.com site.
+Cento (formerly Elseform) publishes one hundred complete, multi-page website templates, each with its own sector, art direction, typography and signature interaction, through a browsable catalogue with live previews and direct source access. Published at https://koative.github.io/cento/ from the koative/cento repository. The separate koative.com site stays untouched.
 
 ## Capabilities and Constraints
 
-The user now requests one hundred templates: the existing sixty-four plus thirty-six additional independent sector-specific designs. Review the existing collection and improve weak visuals, overly simple sections and interactions while preserving each template’s identity. Responsive, keyboard-accessible previews, source links and independently buildable folders. Static demonstration interactions only; no backend or payment processing requested. User explicitly delegates creative orchestration and parallel implementation to agents. Preserve the existing koative.com site.
+Every template is a real multi-page site (7+ page templates, 10+ routes, collection → detail pages, a working client-side conversion flow, commerce carts and checkouts or SaaS `/app` demos where the sector calls for them) whose copy and data live in one `content.ts`. The user asked to replace the most niche sectors with in-demand categories (portfolios, SaaS, agencies, clinics, local services, commerce) while keeping a hundred. Static demonstration behaviour only: no backend, payments or message delivery. Templates must build standalone when their folder is copied out (e.g. with `degit`). All UI and documentation in English.
 
 ## Brand Commitments
 
-Elseform is the independent product identity; Koative remains the creator and repository owner. The user explicitly authorizes a full homepage brand/name/logo/design replacement and pins artistic liquid glass as its visual direction. All UI and documentation in English, confirmed by user. Bold visual diversity including 3D and animation. Impeccable informs craft without limiting creativity.
-
-The gallery supports Light, Dark and System appearance. System follows live OS preference changes; explicit choices persist locally. Individual templates retain their own art direction.
+Cento is the product identity; Koative is the creator and repository owner. The user chose the name Cento (Italian for a hundred; a poem built from borrowed lines). For the gallery, after rejecting a card-catalogue world and comparing five rendered directions, the user chose the category standard: a template marketplace executed at full craft, with Framer Marketplace as the quality bar. Convention is the commitment — no ironic or quirky reinterpretation. The gallery supports Light, Dark and System appearance; System follows live OS changes and explicit choices persist locally. Individual templates keep their own art direction and are never styled by the gallery.
 
 ## Evidence on Hand
 
-Existing collection of 100 independently buildable designs with screenshots, local licensed fonts and authenticated GitHub access. No supplied commercial photography, customer claims or testimonials. Template businesses and data must be identified as fictional demonstrations.
+One hundred buildable templates with per-theme metadata (`themes/<slug>/cento.json`), screenshots generated from the real builds, open-licensed photography recorded per theme in `src/assets/SOURCES.md`, OFL fonts self-hosted, authenticated GitHub access. No customers, endorsements or testimonials exist for Cento itself; every template brand and figure is fictional and labelled as such.
 
 ## Product Principles
 
-- Distinct compositions, not color-swapped copies.
-- Each template is usable outside the gallery.
-- Motion enhances identity and respects reduced-motion preferences.
-- Make exploration and source access immediate.
+- Complete sites, not landing-page skins: every template could be launched.
+- Distinct worlds: no two templates share a composition, palette or type pairing.
+- Show the real thing: screenshots and previews come from the actual builds.
+- Source in one step: every template is one command away from your machine.
+- Motion is authored, bounded and respects reduced motion.

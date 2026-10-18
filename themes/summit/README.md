@@ -1,32 +1,37 @@
 # Summit
 
-A climbing route wall and grade-led route finder with a local tick list.
+Six walls, one reset every Tuesday, always something new to try. A climbing gym website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: hero with live open status, reset rotation, colour circuits with the newest wall drawn, first-visit steps, classes this week, member quote, memberships, youth team, upcoming events, hours, closing call to action
+- `/routes` — Route map: floor plan of the hall, wall elevations with every problem's holds, circuit/style filters, hold-by-hold stepper, tick list saved on the device
+- `/classes` — Weekly timetable and filterable class list (level, format)
+- `/classes/:id` — Class page: specs, what you'll learn, session plan, next dates with booking links, coach, related classes
+- `/memberships` — Plans with monthly/yearly toggle, "what should I buy?" calculator, day passes and visit cards, FAQ
+- `/events` — Season of comps, socials, clinics, films and trips, filterable by type
+- `/events/:id` — Event page: details, schedule, what to bring, RSVP form with confirmation
+- `/youth` — Youth team: pathway, squads and fees, season results, parent FAQ
+- `/book` — Day-pass or class booking: date strip, arrival slots with availability, climbers and shoe hire, details, waiver, live summary, confirmation
+- `/about` — Story, how the setters work, values, team, facilities
+- `/visit` — Opening hours, typical busyness chart, getting here, house rules, first-visit FAQ
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Build with `bun run build`. Deploy `dist/` to any static host. Relative Vite asset paths support subdirectories.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
-## Design and interactions
+## Customize
 
-Printed climbing topo with chalk-white holds and forest linework. SVG route geometry animates on selection; grade filtering and route completion.
+`src/content.ts` holds all copy and data (walls, problems, classes, events, plans, team, hours). `src/styles.css` has the design tokens at `:root`. Imagery lives in `src/assets`.
 
-Edit `src/App.tsx` for content and behavior, `src/styles.css` for the design system, and `index.html` for metadata. React, TypeScript, Vite and Lucide icons. No backend required.
+## Demo behaviour
 
-## Accessibility
+The route map filters, steps through holds and keeps your tick list in `localStorage` (it still works without storage). The booking page, event RSVPs and newsletter form validate in the browser, show a loading state and a confirmation, but nothing is sent, stored on a server or charged. Availability is generated demo data. Summit and everyone in it is fictional.
 
-Semantic landmarks, visible focus, labeled controls, mobile reflow and reduced-motion preferences. All interaction state is local to this visit and resets on reload.
+## Credits
 
-## Demonstration content
-
-All brands, people, schedules, products, prices and availability are fictional sample content. No booking, payment, message, or personal data leaves the page. Replace example content and connect your own services for production.
-
-## Assets
-
-Fonts are self-hosted in `src/assets/fonts/`, copied from the collection's pulse template with their OFL notices. DM Sans is also bundled. Fonts originate from [Google Fonts](https://fonts.google.com/). Icons: [Lucide](https://lucide.dev/), ISC license. Original vector diagrams and CSS graphics are part of this MIT-licensed template.
-
-Photography `climb.jpg`: [photo-1522163182402-834f871fd851](https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=1600&q=85), [Unsplash license](https://unsplash.com/license). Bundled locally; illustrative use does not imply endorsement.
+Fonts: Bowlby One and Barlow (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

@@ -1,37 +1,40 @@
 # Conduit
 
-Trace an event from source to destination in a local integration workbench.
+One request format for every API your product touches. An API integration platform website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-[Live demo](https://koative.github.io/elseform/themes/conduit/) · [Collection](https://koative.github.io/elseform/)
+## Pages
 
-## Run independently
+- `/` — Home: hero with a working request console, patch-bay wiring diagram, connector preview, request pipeline, SDK quickstart, customer quote, uptime teaser, plan rail, changelog and guides, closing call to action
+- `/platform` — Platform: auth vault, field mapping, retries and observability with authored diagrams, regions, security
+- `/connectors` — Connectors directory with search, category chips, plan filter and sort
+- `/connectors/:slug` — Connector page: actions, events, setup steps, facts, scopes, preloaded console, related connectors
+- `/console` — Full request console with failure injection, retry policy, timing waterfall, response/headers/cURL and history
+- `/pricing` — Plans with monthly/yearly toggle, usage estimator, comparison table, billing FAQ
+- `/docs` — Docs teaser: quickstart, concepts, error codes, guides
+- `/status` — System status: per-component 90-day uptime, region filter, incident history, email subscription form
+- `/changelog` — Releases filterable by type
+- `/customers` — Four customer stories with their connector wiring
+- `/about` — Story, principles, team, offices, open roles
+- `/signup` — Create a workspace (validated form with success state)
+- `/signin` — Sign in UI with SSO button
+- `/app`, `/app/connections`, `/app/logs`, `/app/settings` — Dashboard demo: traffic chart, sortable connections table with pause/resume, live log tail, API keys and delivery settings
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-```sh
-bun run build
-bun run preview
-```
-
-Production output is `dist/`. The Vite base is relative, so this folder can be deployed to any static subdirectory. React, TypeScript, Vite and Lucide.
-
-## Working interactions
-
-Select event and retry policy, run a local simulation, inspect JSON response and execution count.
-
-All brands, people, pricing, locations, figures and availability are fictional demonstration content. State stays in memory and resets on reload. Nothing is submitted to a backend. Replace example content and wire your own services before production use.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-`src/App.tsx` owns content and behavior. `src/styles.css` owns the independent visual system. `DESIGN.md` records the direction, tokens and responsive behavior.
+`src/content.ts` holds all copy and data (connectors, plans, incidents, changelog, people, dashboard data). `src/styles.css` holds the design tokens at `:root`. `src/assets` holds SOURCES.md (the template ships no raster images).
 
-## Assets and licenses
+## Demo behaviour
 
-Self-hosted DM Sans, Space Grotesk, Manrope and Libre Caslon Text originate from Google Fonts, reused from this repository's licensed collection. OFL notices are included beside the fonts. Lucide icons are ISC licensed. Original CSS and SVG geometry is part of this MIT-licensed template.
+The request console runs a local model of the pipeline (auth, transform, upstream with retries and backoff) and plays it back with real-shaped responses; forms validate and show success states; the dashboard tails generated log lines and lets you pause connections and rotate keys. Nothing is sent, stored or charged, and state resets on reload. Conduit and every connector, company and person are fictional.
 
-## Accessibility
+## Credits
 
-Semantic landmarks, descriptive labels, visible keyboard focus, reduced-motion preferences, and mobile reflow. Interactive calculations and confirmations use local state and accessible status messages.
+Fonts: Bai Jamjuree and Golos Text (SIL OFL 1.1). Graphics are authored SVG/CSS — see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

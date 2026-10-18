@@ -1,0 +1,22 @@
+{
+  "number": 39,
+  "name": "Ink",
+  "sector": "Tattoo studio",
+  "category": "Creative",
+  "tagline": "Flash off the wall, drawn again for your skin.",
+  "description": "A four-artist tattoo studio: a filterable flash book of 17 authored SVG designs, design pages with a stencil sizer that scales each sheet against real placements and prices it live, artist profiles, a day-by-day healing clock and a validated booking request.",
+  "tags": ["Flash book", "Stencil sizer", "Healing clock", "Booking request"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/flash", "title": "Flash book" },
+    { "path": "/flash/orbit", "title": "Design" },
+    { "path": "/artists", "title": "Artists" },
+    { "path": "/artists/mara-vey", "title": "Artist" },
+    { "path": "/aftercare", "title": "Aftercare" },
+    { "path": "/studio", "title": "Studio" },
+    { "path": "/faq", "title": "FAQ & policies" },
+    { "path": "/book", "title": "Request a booking" }
+  ],
+  "colors": { "paper": "#ebe2d0", "ink": "#171312", "accent": "#a3271d" },
+  "fonts": ["Pirata One", "Inter Tight"]
+}

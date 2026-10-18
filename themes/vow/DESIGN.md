@@ -1,162 +1,70 @@
 ---
 name: Vow
-description: A romantic wedding folio with an interactive celebration brief.
 colors:
-  paper: '#f3ede6'
-  ink: '#623838'
-  accent: '#a34e42'
-  folio-copy-span-tone: '#b58f83'
-  brief-preview-tone: '#a7817d'
-  brief-input-type-range-tone: '#e7b0a1'
-  story-surface: '#e6d7cf'
-  brief-input-placeholder-ink: '#d0b7ae'
+  paper: "#f4eee6"
+  paper-2: "#ebe0d3"
+  card: "#fbf7f1"
+  ink: "#3b2321"
+  ink-2: "#694741"
+  accent: "#9a463b"
+  accent-ink: "#833a30"
+  rule: "#d8c4b7"
+  rule-strong: "#ad9083"
+  night: "#2a1918"
+  night-ink: "#f3e8de"
 typography:
   display:
-    fontFamily: Display, serif
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(4rem, 7vw, 6rem)
-  headline:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 3.7rem)
-  headline-context-1:
-    fontFamily: Display, serif
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: 42px
-  headline-context-2:
-    fontFamily: Display, serif
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 3.7rem)
-  title:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
+    {
+      family: Italiana,
+      weight: 400,
+      sizes: "h1 clamp(2.75rem → 5.75rem), h2 clamp(2rem → 3.4rem), h3 1.5–1.9rem",
+    }
   body:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
+    {
+      family: Raleway,
+      weights: "400, 600, 700",
+      size: "1–1.0625rem / 1.7",
+      numerals: "lining tabular for data (.num)",
+    }
+rounded: { base: 2px, pills: 999px, monogram: 50% }
 spacing:
-  observed-1: 12px
-  observed-2: 20px
-  observed-3: '0'
-  observed-4: 12vw
-components:
-  primary-button:
-    padding: 14px 22px
-    backgroundColor: '#623838'
-    textColor: '#f3ede6'
-  navigation:
-    textColor: '#623838'
-  story:
-    backgroundColor: '#e6d7cf'
-    padding: 70px 9vw
-    textColor: '#623838'
+  {
+    gutter: "clamp(1.25rem, 4vw, 3rem)",
+    section: "clamp(4rem, 8vw, 7.5rem)",
+    max: 1280px,
+  }
 ---
-
-# Design System: Vow
 
 ## Overview
 
-**Creative North Star: "Vow wedding planning world"**
-
-A rosewood wedding folio with offset photographic pages and a generous centered serif opening. A celebration brief updates estimated planning scope, while quiet image-pan motion feels like turning a memory over.
-
-This records the implemented wedding planning template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Wedding planning composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-The collection considered a neighborhood gazette, service counter, museum directory, brand magazine, specimen catalogue, community field guide, and event programme. Seed `4fa713db` assigned sixth, community field guide: navigable specificity and contextual choices. This template translates that discipline into its own sector world, not common visual scaffolding. Explicit delegated creative direction authorizes code-led implementation.
+A wedding stationery suite turned into a website: ivory paper, rosewood ink, engraved-feeling Italiana headings and fine letterpress rules. Couples browse a planner's site in the evening on their phones and on a laptop together at weekends; a warm light page reads like the invitations they are about to order, and evening-dark bands mark the reception moments (couples' words, the closing invitation to enquire).
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Accent**: interactive emphasis.
-- **Folio Copy Span Tone**: context-specific authored color.
-- **Brief Preview Tone**: context-specific authored color.
-- **Brief Input Type Range Tone**: context-specific authored color.
-- **Story Surface**: context-specific authored color.
-- **Brief Input Placeholder Ink**: context-specific authored color.
+Paper and a blush-sand second surface carry most pages. Rosewood ink for text, a clay-rose accent for links, active states, checkmarks and the planner's "today" rule. One night colour for the testimonials and the closing band. Budget lines in the planner use muted materials from the same table: rosewood, clay, dried rose, walnut, linen, sage, parchment, ash.
 
 ## Typography
 
-- **Display** is the CSS family alias for Cormorant Garamond Light. Local faces: italic / 100 900, normal / 100 900.
-- **Body** is the CSS family alias for DM Sans 9pt. Local faces: normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
+Italiana for every heading, the wordmark, prices and spec values, set mixed-case with slight positive tracking. Raleway for reading text at a long, open line height; small uppercase Raleway for metadata placed under headings, never above. Raleway's old-style figures stay in prose; data uses lining tabular numerals.
 
 ## Layout
 
-- **Header**: grid-template-columns (1fr auto 1fr); padding (22px 5vw).
-- **Folio**: grid-template-columns (1fr 0.45fr 1.1fr); gap (35px); max-width (1100px).
-- **Story**: grid-template-columns (1fr 1fr); gap (12vw); padding (70px 9vw).
-- **Celebrations   div**: grid-template-columns (repeat(3, 1fr)); gap (30px).
-- **Brief**: grid-template-columns (1fr 1fr); gap (12vw); padding (70px 7vw).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 900px)`.
-- @media (max-width: 650px): folio changes to grid-template-columns (1fr 1fr); gap (17px).
-- @media (max-width: 650px): story changes to grid-template-columns (1fr); gap (35px).
-- @media (max-width: 650px): celebrations   div changes to grid-template-columns (1fr); gap (0).
-- @media (max-width: 650px): brief changes to grid-template-columns (1fr); gap (35px).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-- input: corners (`0`).
-- folio copy a: corners (`50%`).
+Centered invitation typesetting for story and article heads; asymmetric two-column grids elsewhere. The home hero is a folio of three slightly turned wedding photographs beside the headline, proving the work in the first viewport. Packages read as a menu card, add-ons and principles as a two-column menu list.
 
 ## Components
 
-Choose celebration style and guest count, then create a named local brief.
+- **Place card**: card surface with a second inner rule (`outline-offset: -9px`), used for the planner summary, the home countdown and the enquiry confirmation.
+- **Countdown planner**: controls in a sticky column; output is a dated, tickable milestone list with a "Today" divider, states Done / Behind / Next up, a budget bar plus table, and a package suggestion that feeds the enquiry form.
+- **Segmented pills** for filters and the guest-count fee switch; FAQ as native `<details>` with a drawn plus.
+- Wedding and journal cards: framed image, Italiana title, metadata line, excerpt.
 
-### Primary button
+## Motion
 
-Authored btn styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Navigation
-
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Story
-
-Authored story styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid var(--accent)); outline-offset (4px).
-- button:disabled: opacity (0.5).
-- btn:hover: background (var(--accent)).
-- button[aria pressed="true"]: outline (2px solid var(--accent)); outline-offset (3px).
-- celebrations button[aria pressed="true"]: outline (0).
-- brief btn:hover: background (#e7b0a1).
-- folio img animation: `memory 2s ease-out both`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+Page content settles in once on arrival (10px, exponential ease-out). Hero folio photographs unveil top-down with a clip-path. Planner milestones re-lay in sequence when the date changes; the budget bar segments glide between splits. All motion collapses under `prefers-reduced-motion`.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do keep rules at 1px and let the double rule be the only ornament.
+- Do keep headings in Italiana, never bold, never all caps except the wordmark.
+- Don't add eyebrow labels, icon card rows or decorative flourishes; the photographs and type carry the romance.
+- Don't use the night colour for whole pages; it belongs to the evening moments.

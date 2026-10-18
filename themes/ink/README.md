@@ -1,32 +1,35 @@
 # Ink
 
-A tattoo flashbook with a curated design index and a local consultation brief.
+Flash off the wall, drawn again for your skin. A tattoo studio website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: hero with a pinned flash sheet, this month's wall, stencil sizer teaser, booking steps, artists, studio statement, Flash Friday walk-ins, prices, reviews, aftercare teaser, visit and hours
+- `/flash` — Flash book: 17 authored designs with style chips, artist filter, search, sort and a hide-claimed toggle
+- `/flash/:id` — Design page: the sheet, specs, placement notes, the stencil sizer (size, placement, angle, transfer view, live estimate) and related sheets
+- `/artists` — Artists: four residents with books status, day rates and their flash
+- `/artists/:id` — Artist page: bio, quote, booking facts, guest spots, their flash and the rest of the studio
+- `/aftercare` — Aftercare: healing clock (days slider or session date) with day-by-day stages, things to avoid, the take-home kit and infection warning signs
+- `/studio` — Studio: story, the room, who works here, hours, address and an authored street plan
+- `/faq` — FAQ & policies: accessible disclosures grouped by booking, money and the day, plus studio policies
+- `/book` — Booking request: flash / custom / touch-up form with validation, live summary and a confirmation state; prefilled from the stencil sizer
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Build with `bun run build`. Deploy `dist/` to any static host. Relative Vite asset paths support subdirectories.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
-## Design and interactions
+## Customize
 
-Tattoo flash catalogue on warm paper with oxblood annotations. Flash sheet reveals by discipline; design selection updates a consultation brief.
+`src/content.ts` holds all copy and data (studio, artists, flash, placements, prices, aftercare, FAQ). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`; new flash drawings go in `src/components/FlashArt.tsx`.
 
-Edit `src/App.tsx` for content and behavior, `src/styles.css` for the design system, and `index.html` for metadata. React, TypeScript, Vite and Lucide icons. No backend required.
+## Demo behaviour
 
-## Accessibility
+The stencil sizer scales each flash design against the usable area of real placements and estimates price and sit time locally; "Request" carries the design, size and placement into the booking form. The booking form validates in the browser, shows a loading state and a confirmation with a reference number; the footer newsletter validates and confirms. Nothing is sent, stored or charged, and Ink, its artists and its clients are fictional.
 
-Semantic landmarks, visible focus, labeled controls, mobile reflow and reduced-motion preferences. All interaction state is local to this visit and resets on reload.
+## Credits
 
-## Demonstration content
-
-All brands, people, schedules, products, prices and availability are fictional sample content. No booking, payment, message, or personal data leaves the page. Replace example content and connect your own services for production.
-
-## Assets
-
-Fonts are self-hosted in `src/assets/fonts/`, copied from the collection's nocturne template with their OFL notices. DM Sans is also bundled. Fonts originate from [Google Fonts](https://fonts.google.com/). Icons: [Lucide](https://lucide.dev/), ISC license. Original vector diagrams and CSS graphics are part of this MIT-licensed template.
-
-Photography `studio.jpg`: [photo-1565058379802-bbe93b2f703a](https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?auto=format&fit=crop&w=1600&q=85), [Unsplash license](https://unsplash.com/license). Bundled locally; illustrative use does not imply endorsement.
+Fonts: Pirata One and Inter Tight (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

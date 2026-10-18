@@ -1,0 +1,30 @@
+{
+  "number": 5,
+  "name": "Haven",
+  "sector": "Alpine hotel",
+  "category": "Travel & Stay",
+  "tagline": "Twenty-two beds at 1,640 metres, and the whole valley below.",
+  "description": "A small alpine hotel in an 1898 pass inn: filterable rooms with detail pages, a four-step availability booking flow with a nightly-rate calendar, dining menus, a bathhouse, guided experiences and a journal, tied together by an interactive panorama table that shows each room's view.",
+  "tags": [
+    "Availability calendar",
+    "Room-view panorama",
+    "Booking flow",
+    "Dining & spa menus"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/rooms", "title": "Rooms and cabins" },
+    { "path": "/rooms/stone-pine-room", "title": "Room" },
+    { "path": "/book", "title": "Check availability" },
+    { "path": "/dining", "title": "Dining" },
+    { "path": "/spa", "title": "The bathhouse" },
+    { "path": "/experiences", "title": "Experiences" },
+    { "path": "/experiences/teriahorn-sunrise", "title": "Experience" },
+    { "path": "/journal", "title": "Journal" },
+    { "path": "/journal/the-house-the-pass-built", "title": "Journal story" },
+    { "path": "/about", "title": "The house" },
+    { "path": "/plan", "title": "Plan your stay" }
+  ],
+  "colors": { "paper": "#f3efe7", "ink": "#1b231f", "accent": "#a3402a" },
+  "fonts": ["Gloock", "Figtree"]
+}

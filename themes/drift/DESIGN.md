@@ -1,168 +1,60 @@
 ---
 name: Drift
-description: A coastal surf field guide with a lesson finder and local booking summary.
 colors:
-  paper: '#d6e8ed'
-  ink: '#174955'
-  conditions-tone: '#9cbcc3'
-  lesson-detail-tone: '#f3eddd'
-  coast-ink: '#fff8e9'
-  coast-a-surface: '#f2db95'
-  conditions-surface: '#e6efed'
-  lesson-choices-button-aria-pressed-true-surface: '#c3dce0'
+  sand: "#f6efe2"
+  sand-2: "#ece1cc"
+  paper: "#fffaf0"
+  foam: "#d8ebe8"
+  ink: "#0d3341"
+  ink-2: "#43616b"
+  ink-soft: "#9bb8bf"
+  sea: "#0b6b77"
+  wax: "#f5c34a"
+  wax-deep: "#e6ac25"
+  error: "#a63a1c"
 typography:
-  display:
-    fontFamily: '"Bricolage Grotesque"'
-    fontSize: clamp(65px, 7vw, 100px)
-    lineHeight: '0.98'
-    fontWeight: '600'
-    letterSpacing: -0.04em
-  headline:
-    fontFamily: '"DM Sans", sans-serif'
-  headline-context-1:
-    fontFamily: '"Bricolage Grotesque"'
-    fontSize: 46px
-    lineHeight: '1.08'
-    fontWeight: '500'
-    letterSpacing: -0.03em
-  headline-context-2:
-    fontFamily: '"Bricolage Grotesque"'
-    fontSize: 48px
-    lineHeight: '1.03'
-    fontWeight: '500'
-    letterSpacing: -0.03em
-  title:
-    fontFamily: '"DM Sans", sans-serif'
-  title-context-1:
-    fontFamily: '"Bricolage Grotesque"'
-    fontSize: 37px
-    lineHeight: normal
-    fontWeight: '500'
-    letterSpacing: -0.02em
-  body:
-    fontFamily: '"DM Sans", sans-serif'
+  display: "Lilita One, 400 — hero clamp(2.9rem → 5.75rem), h1 clamp(2.6rem → 4.75rem), h2 clamp(2rem → 3.25rem), h3 clamp(1.3rem → 1.65rem)"
+  body: "Albert Sans 400–700 — 1rem/1.6, lede clamp(1.1rem → 1.3rem)"
+rounded:
+  card: 14px
+  panel: 18px
+  field: 10px
+  control: 999px
 spacing:
-  observed-1: 20px
-  observed-2: 30px
-components:
-  navigation:
-    textColor: '#174955'
-  conditions:
-    padding: 28px 5vw
-    backgroundColor: '#e6efed'
-    textColor: '#174955'
-  lesson-choices-button:
-    textColor: inherit
-    backgroundColor: transparent
-    width: 100%
-    padding: 30px 45px 30px 0
-  form-row-select:
-    textColor: inherit
-    backgroundColor: transparent
-    padding: 13px 0
-    width: 100%
+  page-gutter: "clamp(1.25rem, 4vw, 3rem)"
+  section: "clamp(4rem, 3rem + 5vw, 7.5rem)"
+  max-width: 1240px
 ---
-
-# Design System: Drift
 
 ## Overview
 
-**Creative North Star: "Sun-worn surf fieldguide with ocean-blue annotations and asymmetrical photo spreads"**
-
-Sun-worn surf fieldguide with ocean-blue annotations and asymmetrical photo spreads. A coastal surf field guide with a lesson finder and local booking summary.
-
-This records the implemented surf school template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Surf school composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-Mode: Experience with a useful demonstration task. The user delegates creative orchestration and direct implementation. Impeccable collection seed `0b4a6fde` assigns candidate 3: a collection of culturally grounded programme and specimen systems. Grounded candidates were exhibition, poster, programme/specimen, field notes, studio archive, publication, and operational board. The individual sector owns its typography, topology and behavior.
+Drift is a surf school's beach hut turned into a website: sun-bleached sand paper, deep-water ink, and surf-wax yellow for anything you can act on. The display face is chunky and friendly like hand-painted board-rack signage, and the signature is the thing every surf coach does at dawn: reading the forecast. Visitors plan on phones in daylight, so the world is light, high-contrast and numeric where it matters.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Conditions Tone**: context-specific authored color.
-- **Lesson Detail Tone**: context-specific authored color.
-- **Coast Ink**: context-specific authored color.
-- **Coast A Surface**: context-specific authored color.
-- **Conditions Surface**: context-specific authored color.
-- **Lesson Choices Button Aria Pressed True Surface**: context-specific authored color.
+Sand is the page; sand-2 and foam alternate as section grounds (camps, forecast, practical info). Ink carries text, primary buttons and the dark "night" bands (a day on camp, the forecast readout, the footer). Wax yellow is reserved for calls to action, the current-hour cursor and key numbers on dark grounds. Sea marks "good" conditions, links-as-labels and offshore wind. Error red is only used for validation.
 
 ## Typography
 
-- **Bricolage Grotesque** is the CSS family alias for Bricolage Grotesque 96pt ExtraBold. Local faces: normal / 400, normal / 500, normal / 600, normal / 700, normal / 800.
-- **DM Sans** is the CSS family alias for DM Sans 9pt. Local faces: normal / 400, normal / 500, normal / 600, normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
-- brand uses the font shorthand (`700 42px "Bricolage Grotesque"`).
-- coast h1 uses the font shorthand (`600 clamp(65px, 7vw, 100px)/0.98 "Bricolage Grotesque"`).
-- lesson heading h2 uses the font shorthand (`500 46px/1.08 "Bricolage Grotesque"`).
-- lesson choices b uses the font shorthand (`500 28px "Bricolage Grotesque"`).
-- lesson detail h3 uses the font shorthand (`500 37px "Bricolage Grotesque"`).
+Lilita One for every heading, prices, wave heights and timeline times; never below 1.2rem. Albert Sans for everything else, 650–700 for labels and buttons. Numerals in prices, forecasts and summaries use tabular figures. Headings balance; body measure stays under ~65ch.
 
 ## Layout
 
-- **Lesson layout**: grid-template-columns (0.85fr 1.3fr); gap (55px).
-- **Form row**: grid-template-columns (1.2fr 0.8fr); gap (20px).
-- **Field notes**: padding (65px 7vw); grid-template-columns (1fr 1fr); gap (80px).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 900px)`, `(max-width: 600px)`.
-- @media (max-width: 650px): footer changes to flex-direction (column).
-- @media (max-width: 600px): lesson layout changes to grid-template-columns (1fr); gap (25px).
-- @media (max-width: 600px): field notes changes to grid-template-columns (1fr); gap (35px).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-The scanned stylesheet defines no border-radius values; preserve its existing geometry and border construction.
+Wide 1240px wrap with generous section rhythm. Home alternates dense and quiet passages: split hero with the live "today" card, a lesson rack (horizontal rows, not cards), the forecast panel on foam, a three-stage method with a beach-profile diagram, a featured camp plus cards, a single large quote, an ink timeline band, a coach strip, a practical list and a photo close. Detail pages pair a main column with a sticky aside (camp dates, coach sessions, booking summary).
 
 ## Components
 
-Choose level, day and group size; preview a lesson summary.
+- **Forecast widget**: spot and level radio pills, seven day buttons with per-hour rating strips, an SVG chart (wave bars coloured by rating for the chosen level, dashed tide curve, wind arrows and mph), a range scrubber, and an ink readout with a coach's verdict and a prefilled booking link.
+- **Lesson rack** rows, **camp cards** with a stretched link, **pills** for every segmented choice, **departure list** with places left and struck-through full dates, **itinerary** with numbered stops on a foam line.
+- **Forms**: labelled fields, hints under inputs, inline errors that name the fix, disabled loading button, polite live success.
 
-### Navigation
+## Motion
 
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Conditions
-
-Authored conditions styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Lesson Choices Button
-
-Authored lesson choices button styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Form Row Select
-
-Authored form row select styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid currentColor); outline-offset (5px).
-- button:disabled: opacity (0.55).
-- lesson choices button[aria pressed="true"]: color (#174955); background (#c3dce0).
-- wave art svg animation: `wave-drift 7s ease-in-out infinite alternate`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+Pages rise in on route change. Hero wave contours drift slowly. The forecast is the authored moment: bars grow from the baseline when the day, spot or level changes, and the wax cursor glides between hours. Hover states lift cards and coach portraits slightly. Everything collapses to instant under `prefers-reduced-motion`.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do keep wax yellow for actions and the selected hour; don't use it as decoration.
+- Do let numbers (ft, mph, $) carry the display face; don't set paragraphs in Lilita One.
+- Do keep forecast colours paired with words (Good / Fair / Poor); never colour alone.
+- Don't add eyebrow labels above headings or icon-card grids; use rows, timelines and photos.

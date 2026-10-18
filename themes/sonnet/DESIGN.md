@@ -1,54 +1,64 @@
 ---
-name: "Sonnet"
+name: Sonnet
 colors:
   paper: "#f6f0e4"
-  ink: "#343b32"
-  accent: "#b3472e"
+  paper-2: "#ece4d2"
+  sheet: "#fcf9f2"
+  ink: "#263027"
+  ink-2: "#4c5749"
+  line: "#7d8278"
+  pen: "#b3361d"
+  french: "#34508a"
+  italian: "#3f7353"
+  spanish: "#94560f"
+  portuguese: "#1d6470"
+  german: "#55506a"
+  japanese: "#8e3550"
 typography:
-  body:
-    fontFamily: "DM, sans-serif"
-    fontSize: "16px"
-    fontWeight: 400
-    lineHeight: "1.6"
-  display:
-    fontWeight: 400
-    lineHeight: "1.13"
-    letterSpacing: "-0.035em"
-    fontSize: "clamp(44px, 5vw, 68px)"
-    fontFamily: "Caslon"
-components:
-  button-primary:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.paper}"
-    padding: "13px 23px"
+  display: Alegreya
+  body: Alegreya Sans
+  sizes:
+    h1: clamp(2.5rem, 1.5rem + 3.6vw, 4.9rem)
+    h2: clamp(1.75rem, 1.25rem + 1.8vw, 2.75rem)
+    body: 1.125rem
+rounded:
+  control: 4px
+  card: 8px
+  chip: 999px
+spacing:
+  gutter: clamp(1.25rem, 4vw, 3rem)
+  section: clamp(4.5rem, 9vw, 7.5rem)
+  wrap: 1240px
 ---
 
-# Sonnet design
+## Overview
 
-Mode: Persuade, with an embedded sector-specific demonstration tool.
+The world is the language learner's desk: a bilingual dictionary, an exercise book with a red margin line, and a teacher's red pen. Adults choosing a class in the evening, on a laptop or phone, under warm light, so the site is light paper with green-black ink. Every page heading carries a dictionary entry beside it, and the signature level test hands your sheet back marked in red.
 
-## Direction
+## Colors
 
-Language workbook: typographic vocabulary card, coral and sage paper, conversational sentence-based course planning.
-
-The user delegated distinct creative directions across a 100-template collection. Impeccable direction seed `8cc53e15`, assigned grounded candidate 7, resolved as **the working studio/counter**: visitors handle the sector's actual objects, choices and outcomes rather than browse generic feature cards. This folder interprets that direction independently. No shared template renderer is used.
-
-## Behavior and composition
-
-Language switching, starting level, weekday choice and saved learning plan.
-
-Primary composition and exact local tokens live in `src/styles.css`. Desktop layout uses sector-specific media and a task region; mobile at 700px linearizes the flow and preserves all controls. Artwork remains visible by default. Dimensional product surfaces use authored CSS geometry; motion is confined to one sector-relevant moment where used.
-
-## Accessibility and truth
-
-Native labeled controls, visible 3px focus outlines, pressed states, live confirmations, reduced-motion overrides and themed selection/scrollbars. All example offerings are explicitly fictional. No backend or payment integration. Photos have descriptive alternatives and documented provenance in README.
-
-## Supporting material palette
-
-`#343b32`, `#343b3220`, `#343b3233`, `#427658`, `#a5432e`, `#b3472e`, `#b77c16`, `#cc583d`, `#e4e8d4`, `#f6f0e4`, `#fff`, `#fff5e7`, `#fff5e766`
-
-The supporting shades belong to product materials, photography-adjacent surfaces, print editions, or alpha overlays. They are intentional local tokens.
+Warm paper and green-black ink carry everything. One accent, `pen`, is reserved for corrections, pronunciations, the couplet in the logo and urgent counts (places left). Each language has its own ink colour, used for its name, level tag, course hero tint, timetable slot and the word card.
 
 ## Typography
 
-Body text uses DM Sans (CSS alias `DM`); the main heading uses Libre Caslon Text (CSS alias `Caslon`). The aliases resolve through local `@font-face` declarations in `src/`; the font files and license notices are bundled under `src/assets/fonts`. Frontmatter captures the desktop main-heading declarations; responsive overrides remain in the stylesheet.
+Alegreya for headings, foreign phrases (italic), pronunciations and prices; Alegreya Sans for interface and body. Data uses lining tabular numerals; running text keeps Alegreya's old-style figures. Tracking never below −0.022em.
+
+## Layout
+
+A 1240px wrap with generous section spacing. Courses are a ledger (language, title and summary, when, price), not cards. Page heads pair the h1 and lead with a dictionary gloss in a narrow right column. Dense passages (ledger, timetable) alternate with quiet ones (parallel proverbs, student voices) and tinted bands.
+
+## Components
+
+Word card with language toggle; course ledger row; dictionary entry (name, IPA, role, bio, favourite word); exercise sheet with red margin line; red-pen mark (struck word with correction written above, or a tick); ledger lists for specs, dates and hours; filter chips coloured by language; per-term / whole-year toggle; floor plan in SVG; enrolment form with sticky summary.
+
+## Motion
+
+Pages rise in on route change. The word card re-inks (blur to sharp) when the language changes. In the test, each sheet slides in, and marking strikes the wrong word left to right before the correction writes itself in. All motion is disabled under `prefers-reduced-motion`.
+
+## Do's and Don'ts
+
+- Do use the red pen only for corrections and urgency; it is the teacher's voice.
+- Do set foreign text with a `lang` attribute and its translation underneath.
+- Do keep language colours for language-specific content only.
+- Don't add eyebrow labels, icon card grids or decorative gradients.
+- Don't set data in old-style figures; use `.num`.

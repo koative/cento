@@ -1,0 +1,27 @@
+{
+  "number": 80,
+  "name": "Quadrant",
+  "sector": "Management consultancy",
+  "category": "Services",
+  "tagline": "Strategy that survives Monday morning.",
+  "description": "An independent management consultancy site set like a board paper: capabilities with exhibits and engagement plans, an industry heatmap, filterable insights with article pages, people, careers with open roles, and a validated enquiry form — plus a drag-and-keyboard priority matrix that writes a memo.",
+  "tags": [
+    "Priority matrix",
+    "Exhibit charts",
+    "Industry heatmap",
+    "Enquiry form"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/capabilities", "title": "Capabilities" },
+    { "path": "/capabilities/pricing", "title": "Capability" },
+    { "path": "/industries", "title": "Industries" },
+    { "path": "/insights", "title": "Insights" },
+    { "path": "/insights/price-increases-leak", "title": "Article" },
+    { "path": "/people", "title": "People" },
+    { "path": "/careers", "title": "Careers" },
+    { "path": "/contact", "title": "Contact" }
+  ],
+  "colors": { "paper": "#f5f3ee", "ink": "#15181d", "accent": "#b8361a" },
+  "fonts": ["Newsreader", "Instrument Sans"]
+}

@@ -1,32 +1,38 @@
 # Campus
 
-A vivid learning workspace with lessons, notes and real progress.
+Learn a real skill in the evenings you already have. An online course platform website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: hero with a live lesson card, featured courses, subject index, a week of study, learner quote, workspace teaser with the interactive lens study, instructors, learners, pricing summary, closing call to action
+- `/courses` — Catalogue: search, subject chips, level filter and sorting over 8 courses (`?subject=Data` preselects a subject)
+- `/courses/:slug` — Course page: facts, outcomes, final project, syllabus disclosures, pace planner, instructor, reviews, sticky enrol panel, related courses
+- `/instructors` — Six instructors with the courses they teach
+- `/instructors/:slug` — Instructor profile: bio, quote, background, their courses, more instructors
+- `/pricing` — Single course, Membership and Teams with a monthly/yearly toggle, seat calculator, comparison table and FAQ
+- `/about` — Story, teaching rules, how a course gets made, team
+- `/signup` — Account form with plan and billing choice, validation and success state
+- `/signin` — Sign-in screen (demo: opens the workspace)
+- `/learn` — Workspace desk: resume lesson, course progress, study-time chart, upcoming critiques, recent notes
+- `/learn/:lesson` — Lesson player: lens study, exercise, understanding check, ruled notebook, mark complete, lesson pager
+- `/learn/notes` — Notebook: every saved note, searchable, deletable, exportable as text
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Build with `bun run build`. Publish `dist`; relative asset paths support subdirectory hosting.
-
-## Design and interaction
-
-A yellow and charcoal course workspace: a persistent syllabus rail, a typographic lesson canvas, lesson completion and a locally editable notebook. The opening is a working learning surface rather than marketing.
-
-The controls demonstrate complete local state changes. All brands, people, addresses, prices, dates and offerings are fictional demo content. No information is submitted, no booking or order is made, and no service or advice is provided. Replace demo content and connect an appropriate backend before real use.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-Edit `src/App.tsx` for content and behavior, `src/styles.css` for styles, and `index.html` for metadata. React, TypeScript, Vite and Lucide icons. Keyboard focus, semantic controls, mobile layouts and reduced-motion preferences are supported.
+`src/content.ts` holds all copy and data (courses, syllabi, instructors, plans, workspace lessons). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
-## Assets
+## Demo behaviour
 
-Self-hosted space and dm fonts copied from the collection's licensed assets; OFL notices in `src/assets/fonts`. Lucide icons are ISC licensed. Photos are bundled from Unsplash under its license and are illustrative, without endorsement:
+Filters, the pace planner, pricing toggles and every form run entirely in the browser. Sign-up and newsletter forms validate and show a success state, but nothing is sent, stored on a server or charged. Workspace progress, check answers and notes are saved to `localStorage` (and still work for the session if storage is unavailable); "Reset demo" on the desk clears them. Campus, its instructors, learners, prices and figures are fictional.
 
-No photography. Product geometry is authored in CSS.
+## Credits
 
-## Additional local photograph
-
-`src/assets/observation.jpg` is reused from the Forma template: [original Unsplash photograph](https://images.unsplash.com/photo-1511818966892-d7d671e672a2), under the [Unsplash license](https://unsplash.com/license). It is an illustrative scene, not a photograph of a real business represented by this demo.
+Font: Be Vietnam Pro (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

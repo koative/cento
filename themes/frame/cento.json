@@ -1,0 +1,27 @@
+{
+  "number": 13,
+  "name": "Frame",
+  "sector": "Photographer portfolio",
+  "category": "Creative",
+  "tagline": "Photographs made slowly, mostly on film, printed to last.",
+  "description": "A photographer's studio site: six long-form series with a contact-sheet viewer where visitors circle frames in red and send them with an enquiry, a commissions page with rates and process, and an editioned prints shop with a to-scale wall preview, order and checkout.",
+  "tags": [
+    "Contact-sheet viewer",
+    "Marked frames enquiry",
+    "Editioned prints shop",
+    "Wall-scale preview"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/series", "title": "Series" },
+    { "path": "/series/where-the-earth-exhales", "title": "Series viewer" },
+    { "path": "/commissions", "title": "Commissions" },
+    { "path": "/prints", "title": "Prints" },
+    { "path": "/prints/kirkjufell-fog", "title": "Print" },
+    { "path": "/order", "title": "Order" },
+    { "path": "/about", "title": "About" },
+    { "path": "/contact", "title": "Contact" }
+  ],
+  "colors": { "paper": "#eeece6", "ink": "#1c1b18", "accent": "#b0301d" },
+  "fonts": ["Tenor Sans", "Spectral"]
+}

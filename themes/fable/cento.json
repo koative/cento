@@ -1,0 +1,27 @@
+{
+  "number": 65,
+  "name": "Fable",
+  "sector": "Children's museum",
+  "category": "Culture & Media",
+  "tagline": "Please touch everything.",
+  "description": "A hands-on children's museum: filterable exhibits with rich gallery pages, an interactive floor map and day planner, timed-entry ticket booking with a printable stub, school-trip and party request forms, and an events calendar.",
+  "tags": [
+    "Floor map & day planner",
+    "Timed tickets",
+    "School trip requests",
+    "Party packages"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/exhibits", "title": "Exhibits" },
+    { "path": "/exhibits/bubble-works", "title": "Exhibit" },
+    { "path": "/visit", "title": "Plan your visit" },
+    { "path": "/tickets", "title": "Tickets" },
+    { "path": "/events", "title": "Events" },
+    { "path": "/school-trips", "title": "School trips" },
+    { "path": "/parties", "title": "Birthday parties" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#fff9e9", "ink": "#2e2470", "accent": "#ef715a" },
+  "fonts": ["Rammetto One", "Nunito"]
+}

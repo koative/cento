@@ -1,45 +1,36 @@
 # Terrain
 
-A standalone **outdoor travel journal** template from the Elseform collection.
+Small-group treks, led by people who live where they walk. A guided adventure travel website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-Rust, sand, and forest green; immersive alpine photography; illustrated route diagrams; and quiet serif editorial typography.
+## Pages
 
-## Run locally
+- `/` — Home: hero with a trail-sign of the next departures, departure board, featured trips, the three grades, quick route finder, a day on the trail, guides, philosophy, traveller notes, gear teaser, closing signpost
+- `/trips` — All trips: filter by region, grade, length and month, sort, switch between cards and a comparison table, empty state
+- `/trips/:slug` — Trip: specs, price box, gallery, highlights, day-by-day explorer (topo map + elevation profile + day tabs), at-a-glance table, dates and places, inclusions, guide, packing kit, related trips
+- `/route-finder` — Route finder: six questions that rank all eight trips with a fit score and the reasons for and against each
+- `/guides` — Guides: the eight lead guides and the routes they lead
+- `/guides/:slug` — Guide profile: facts, qualifications, story, favourite moment, their trips
+- `/gear` — Gear list: packing checklist per kit with weight and progress, remembered on the device, hire prices
+- `/book` — Booking: trip, departure, travellers, room, gear hire, lead traveller and emergency contact, live price summary, validation and confirmation
+- `/about` — About & safety: story, safety standards, planning desk
+- `/faq` — FAQ & policies: accessible disclosures, grade summary, contact
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-## Build
-
-```sh
-bun run build
-bun run preview
-```
-
-The production output is written to `dist/`. The Vite configuration uses a relative asset base so the site can be hosted under any static subdirectory. React, TypeScript, and Vite; no backend required.
-
-## Interactions
-
-Switch difficulty to see a different trip, map, duration, distance, departure, and price; expand the itinerary and add a trip to the in-memory shortlist.
-
-Keyboard focus, semantic buttons, responsive mobile layouts, and reduced-motion preferences are supported. State is local to this visit and resets on reload.
+Build: `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-Edit `src/App.tsx` for copy, content, and interactions. Edit `src/styles.css` for typography, color, layout, and motion. Images are imported from `src/assets/` so Vite rewrites their URLs correctly.
+`src/content.ts` (all copy and data: trips with day-by-day profiles and map legs, guides, gear, FAQ), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
-## Assets
+## Demo behaviour
 
-Mountain photo: `https://images.unsplash.com/photo-1464822759023-fed622ff2c3b`. Forest photo: `https://images.unsplash.com/photo-1472396961693-142e6e269027`. Images from Unsplash, downloaded locally. Fonts: Instrument Serif and DM Sans from Google Fonts.
+The trips filter, route finder, day-by-day explorer and packing list all run in the browser; the packing list is saved to `localStorage` when available. The booking and newsletter forms validate input and show a confirmation, but nothing is sent, held or charged. Terrain, its guides, prices and reviews are fictional.
 
-Icons use Lucide React. Fonts and their licenses are bundled locally. Any photographic assets are bundled locally as well. Review the relevant provider license before reusing assets outside this template.
+## Credits
 
-## Demonstration status
-
-All brands, products, artists, missions, routes, prices, schedules, and claims are fictional sample content. This template does not sell products, take payments, make bookings, send messages, or connect to a backend. Replace the example content and contact address before launch.
-
-## Self-hosted fonts
-
-Fonts are bundled under `src/assets/fonts/`, with their OFL license notices. No external font service is needed at runtime.
+Fonts: Anybody and Overpass (SIL Open Font License). Images: see `src/assets/SOURCES.md` (Wikimedia Commons, CC0 and CC BY). Icons: Lucide (ISC). Code: MIT.

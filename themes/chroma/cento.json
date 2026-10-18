@@ -1,0 +1,28 @@
+{
+  "number": 51,
+  "name": "Chroma",
+  "sector": "Hair salon",
+  "category": "Health & Wellness",
+  "tagline": "Colour that grows out as well as it goes on.",
+  "description": "A colour-led hair salon site: services menu priced by stylist level, stylist profiles, a lookbook with formula cards, a product shelf with set-aside, and online booking with a live minute-by-minute chair-time planner.",
+  "tags": [
+    "Chair-time planner",
+    "Online booking",
+    "Lookbook formulas",
+    "Shade level chart"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/services", "title": "Services & prices" },
+    { "path": "/lookbook", "title": "Lookbook" },
+    { "path": "/lookbook/honey-melt", "title": "Look" },
+    { "path": "/stylists", "title": "Stylists" },
+    { "path": "/stylists/margaux-bell", "title": "Stylist profile" },
+    { "path": "/products", "title": "Products" },
+    { "path": "/book", "title": "Book" },
+    { "path": "/about", "title": "About" },
+    { "path": "/visit", "title": "Visit, policies & FAQ" }
+  ],
+  "colors": { "paper": "#f7dccf", "ink": "#3d1621", "accent": "#9b2f45" },
+  "fonts": ["Yeseva One", "Montserrat"]
+}

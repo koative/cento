@@ -1,41 +1,34 @@
 # Vault
 
-A warm insurance concept with an adjustable plan explorer and transparent local summaries.
+Cover for the home you actually live in. A home & renters insurance website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-A standalone, responsive React + TypeScript + Vite template from [Elseform](https://github.com/koative/elseform).
+## Pages
 
-## Run independently
+- `/` — Home: hero with a sample policy schedule, the eight covers as an index, the room-by-room contents counter, annotated policy clauses, claims steps, member stories, premium split, help search, close
+- `/cover` — Cover: all eight policies and add-ons with situation filter, sort and an A–F comparison table
+- `/cover/:slug` — Cover page (e.g. `/cover/renters`): schedule with plain-English column, who it suits, exclusions, a claim story, FAQ, related cover
+- `/quote` — Get a quote: four-step form (home, things, cover, about you) with validation, a live draft schedule, monthly/annual billing and a quoted confirmation; accepts `?cover=` and `?contents=`
+- `/claims` — Claims guide: "What happened?" triage for six incidents, first-call-to-payment timeline, claims promise
+- `/help` — Help centre: live search, topic filter, FAQ, policy desk contacts
+- `/help/:slug` — Help article (e.g. `/help/choosing-a-deductible`) with related articles and a "did this help" prompt
+- `/about` — About the mutual: story, milestones, principles, people, where premiums go
+
+## Run
 
 ```sh
-cd themes/vault
-bun install
-bun run dev
-bun run build
-bun run preview
+bun install && bun run dev
 ```
 
-The production output is `dist/`. Vite uses a relative base, so the output can be served from any static subdirectory.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
-## Working interactions
+## Customize
 
-Change home type, belongings value and billing period, compare plans, save a local summary and expand answers.
+`src/content.ts` holds all copy and data (covers, rates, rooms, incidents, articles, people). Design tokens sit at `:root` in `src/styles.css`; imagery lives in `src/assets`.
 
-All business names, prices, specifications, data and availability are **fictional demonstration content**. State stays in memory and resets on reload. No backend, booking, email, payment or external operation is connected. Replace demonstration content and implement real integrations before production use.
+## Demo behaviour
 
-## Design and accessibility
+The quote prices a policy locally from illustrative rates in `content.ts`, validates every step, shows a loading state and issues a made-up quote reference; the contents counter, claims triage, help search and newsletter form all run in the browser. Nothing is sent, stored or charged, and no insurance is offered. Vault and everyone in it are fictional.
 
-A reassuring household booklet: warm paper, earthy modular forms, expressive Instrument Serif and visible insurance comparisons.
+## Credits
 
-Responsive layouts, semantic controls, visible focus, meaningful labels, native form validation where relevant, and reduced-motion support. Motion follows the material of each theme; reduced-motion disables decorative animation.
-
-## Self-hosted fonts and icons
-
-Fonts are bundled in `src/assets/fonts/` with their Open Font License notices. Font assets are reused from this repository's licensed font collection. No external font request is made. [Lucide](https://lucide.dev/) icons use the ISC license. CSS and SVG geometry are authored for this template.
-
-## Validation
-
-Standalone build verified with `bun run build`. The root repository maintains interaction tests and responsive screenshot checks.
-
-## Additional local photograph
-
-`src/assets/interior.jpg` is reused from the Forma template: [original Unsplash photograph](https://images.unsplash.com/photo-1600210492486-724fe5c67fb0), under the [Unsplash license](https://unsplash.com/license). It is an illustrative scene, not a photograph of a real business represented by this demo.
+Fonts: Merriweather and Merriweather Sans (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

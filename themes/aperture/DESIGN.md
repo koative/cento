@@ -1,143 +1,71 @@
 ---
 name: Aperture
-description: A late-night cinema programme, cinematic image frames, and a working ticket selector.
 colors:
-  paper: '#e6e0d0'
-  ink: '#191815'
-  film-screen-surface: '#15232c'
-  film-screen-ink: '#fff8e7'
-  programme-aside-surface: '#ede9dd'
-  film-list-button-aria-pressed-true-ink: '#a13915'
-  reserve-surface: '#cf4c23'
+  paper: "#efe8d8"
+  paper-2: "#e4dbc6"
+  rule-soft: "#cbbfa6"
+  ink: "#17130e"
+  ink-2: "#4b4236"
+  red: "#b42d17"
+  red-deep: "#8e2311"
+  house: "#121015"
+  house-3: "#2f2a33"
+  glow: "#f4ead2"
+  glow-2: "#b9ad97"
+  red-lit: "#e2553a"
 typography:
   display:
-    fontFamily: '"Barlow Condensed", sans-serif'
-    fontSize: clamp(60px, 7.7vw, 108px)
-    lineHeight: '0.93'
-    fontWeight: '600'
-    letterSpacing: -0.02em
-  headline:
-    fontFamily: '"DM Sans", sans-serif'
-  headline-context-1:
-    fontFamily: '"Barlow Condensed", sans-serif'
-    fontSize: 44px
-    lineHeight: '1'
-    fontWeight: '600'
-  headline-context-2:
-    fontFamily: '"Barlow Condensed", sans-serif'
-    fontSize: 32px
-    lineHeight: normal
-    fontWeight: '600'
-  title:
-    fontFamily: '"DM Sans", sans-serif'
+    fontFamily: Oswald
+    weights: [400, 500, 600]
+    h1: clamp(2.75rem, 7vw, 6rem) / 0.95, uppercase
+    h2: clamp(1.9rem, 3.6vw, 3rem) / 1, uppercase
+    label: 0.95rem, uppercase, 0.06em tracking
   body:
-    fontFamily: '"DM Sans", sans-serif'
+    fontFamily: Crimson Pro
+    size: 1.1875rem / 1.55
+rounded:
+  default: 0
+  seat: 0.5rem 0.5rem 0.2rem 0.2rem
 spacing:
-  observed-1: 20px
-components:
-  reserve-action:
-    textColor: white
-    padding: 23px
-    backgroundColor: '#cf4c23'
-  navigation:
-    textColor: '#191815'
+  gutter: clamp(1.25rem, 4vw, 3rem)
+  section: clamp(4rem, 9vw, 7.5rem)
+  wrap: 1320px
 ---
-
-# Design System: Aperture
 
 ## Overview
 
-**Creative North Star: "Film programme / ink, warm paper and electric orange"**
-
-Film programme / ink, warm paper and electric orange. A late-night cinema programme, cinematic image frames, and a working ticket selector.
-
-This records the implemented independent cinema template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Independent cinema composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-Mode: Experience with a useful demonstration task. The user delegates creative orchestration and direct implementation. Impeccable collection seed `0b4a6fde` assigns candidate 3: a collection of culturally grounded programme and specimen systems. Grounded candidates were exhibition, poster, programme/specimen, field notes, studio archive, publication, and operational board. The individual sector owns its typography, topology and behavior.
+Aperture is set like a repertory cinema's printed monthly programme: warm newsprint, black ink, a single spot red, condensed listing type and hairline rules. The one dark room on the site is the auditorium itself — the listings board, the film-page projection band, the seat map and the footer go "house lights down". It fits how people use a cinema site: a quick scan for tonight's times on a phone, then a careful choice of seat.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Film Screen Surface**: context-specific authored color.
-- **Film Screen Ink**: context-specific authored color.
-- **Programme Aside Surface**: context-specific authored color.
-- **Film List Button Aria Pressed True Ink**: context-specific authored color.
-- **Reserve Surface**: context-specific authored color.
+Paper and ink carry everything; `red` is the spot colour for actions, formats and dates (5.2:1 on paper). The `house` family is the dark auditorium: `glow` is projected light (selected seats, the screen line), `glow-2` secondary text, `red-lit` the red that survives on black. No gradients except the legibility scrim on the projected still and the ribbed listings board, which is a literal letterboard.
 
 ## Typography
 
-- **Barlow Condensed** is the CSS family alias for Barlow Condensed Medium, Barlow Condensed SemiBold, Barlow Condensed, Barlow Condensed ExtraBold, Barlow Condensed Black. Local faces: normal / 500, normal / 600, normal / 700, normal / 800, normal / 900.
-- **DM Sans** is the CSS family alias for DM Sans 9pt. Local faces: normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
-- film title h1 uses the font shorthand (`600 clamp(60px, 7.7vw, 108px)/0.93 "Barlow Condensed", sans-serif`).
-- programme h2 uses the font shorthand (`600 44px/1 "Barlow Condensed", sans-serif`).
-- ticket strip h2 uses the font shorthand (`600 32px "Barlow Condensed", sans-serif`).
-- cinema note h2 uses the font shorthand (`500 56px/0.98 "Barlow Condensed", sans-serif`).
-- stamp uses the font shorthand (`600 32px/1 "Barlow Condensed"`).
+Oswald is the marquee and listings voice: uppercase headings, times, labels, buttons, all with tabular numerals. Crimson Pro is the programme-notes voice for synopses, ledes and forms, with italics for programmers' asides. Display tops out at 6rem; tracking never below −0.01em.
 
 ## Layout
 
-- **Programme**: grid-template-columns (minmax(0, 2.1fr) minmax(270px, 1fr)).
-- **Ticket strip**: grid-template-columns (1.6fr 1fr 1.4fr); gap (25px); padding (30px 0).
-- **Cinema note**: padding (85px 4vw); grid-template-columns (1fr 1fr 0.45fr); gap (50px).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 800px)`, `(max-width: 500px)`.
-- @media (max-width: 650px): footer changes to flex-direction (column).
-- @media (max-width: 800px): programme changes to grid-template-columns (1fr).
-- @media (max-width: 800px): film list changes to grid-template-columns (repeat(3, 1fr)); gap (15px).
-- @media (max-width: 800px): ticket strip changes to grid-template-columns (1fr 1fr).
-- @media (max-width: 800px): cinema note changes to grid-template-columns (1fr 1fr).
-- @media (max-width: 500px): cinema note changes to grid-template-columns (1fr); gap (25px).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-- stamp: corners (`50%`).
+A 1320px column with section breaks marked by a 3px ink rule, the way a printed programme separates pages. Listings are ruled rows (still · title and credits · times); film pages run a 2.39:1 scope still above a two-column body with screenings and specs in the margin. Pages collapse to one column at 800–960px; the seat map scrolls sideways inside its own frame on phones.
 
 ## Components
 
-Choose a film session and ticket quantity; calculate a local receipt.
+- Logo: six-blade iris drawn from exact geometry, red pupil.
+- Time buttons: square outlined chips with the note (Q&A, Captioned) in red; struck through when started or sold out.
+- Listings board: ribbed black letterboard with today's screenings.
+- Seat map (signature): curved rows, gangways, wheelchair spaces, roving-tabindex keyboard control; picked seats light up.
+- Sightline: top-down SVG showing distance and viewing angle for the active row, also on Home as a row slider.
+- Basket: ticket-type steppers that always sum to the seats chosen, Cheap Tuesday pricing.
+- Ticket stubs with a perforated tear-off for the confirmation.
+- Tiers: one ruled frame, the featured tier inverted.
 
-### Reserve action
+## Motion
 
-Authored reserve styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Navigation
-
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid currentColor); outline-offset (5px).
-- button:disabled: opacity (0.55).
-- film list button[aria pressed="true"]: color (#a13915).
-- reserve:hover: background (#a63b1a).
-- film screen img animation: `projector 1.3s cubic-bezier(0.16, 1, 0.3, 1) both`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+A projector shutter: stills open from a horizontal slit with an overexposed flash (home projection, film pages). Seats flash on when picked, stubs print down, the logo iris turns on hover, pages ease in. All of it drops to instant under `prefers-reduced-motion`.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do keep the dark palette for auditorium moments only; the rest is paper.
+- Do keep times in Oswald with tabular numerals.
+- Don't add rounded cards or shadows; edges are square and rules do the separating.
+- Don't put labels above headings; context goes in the meta line beneath.

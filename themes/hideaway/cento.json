@@ -1,0 +1,27 @@
+{
+  "number": 87,
+  "name": "Hideaway",
+  "sector": "Vacation rental villas",
+  "category": "Travel & Stay",
+  "tagline": "Eight houses on Vellmar, and the people who keep their keys.",
+  "description": "A villa-rental site for a small island collection: filterable villa list with an island map, villa pages with a live availability calendar and season-aware quote, an island guide with place pages, a concierge with an enquiry form, and a validated booking flow.",
+  "tags": [
+    "Availability calendar",
+    "Live stay quote",
+    "Island map",
+    "Booking flow"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/villas", "title": "Villas" },
+    { "path": "/villas/sa-talaia", "title": "Villa" },
+    { "path": "/guide", "title": "Island guide" },
+    { "path": "/guide/cala-morella", "title": "Guide place" },
+    { "path": "/concierge", "title": "Concierge" },
+    { "path": "/book", "title": "Book a stay" },
+    { "path": "/about", "title": "About us" },
+    { "path": "/good-to-know", "title": "Good to know" }
+  ],
+  "colors": { "paper": "#f3eee5", "ink": "#1f2a2c", "accent": "#a64b2a" },
+  "fonts": ["Cormorant", "Mulish"]
+}

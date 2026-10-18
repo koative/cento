@@ -1,45 +1,34 @@
 # Atelier
 
-A standalone **independent creative studio** template from the Elseform collection.
+Good ideas. Strange shapes. A creative agency website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-Cobalt, citron, playful typographic projects, asymmetric portfolio columns, and an interactive studio sculpture.
+## Pages
 
-## Run locally
+- `/` — Home: cobalt hero with the spinning studio asterisk and latest projects, selected work, client run, services index, studio band, process, client quote, open roles, closing call to action
+- `/work` — Work index: discipline filters with counts, search, sort, grid or table index view with a live cover preview
+- `/work/:slug` — Case study (eight): cover, project facts, brief, authored artefacts (posters, cartons, cans, screens, phones, signs, colour specs, motion frames), approach, client quote, outcomes, credits, related work, previous/next
+- `/services` — Six disciplines with deliverables, length and starting fees, engagement models, process, FAQ
+- `/studio` — Story, principles, team of twelve, the space and hours, studio habits, recognition
+- `/careers` — Open roles with published salaries, benefits, hiring steps
+- `/careers/:id` — Role (five): responsibilities, requirements and a validated application form
+- `/contact` — Brief builder: six-step form with a live brief sheet that estimates team, timeline, starting fee and the closest past project
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-## Build
-
-```sh
-bun run build
-bun run preview
-```
-
-The production output is written to `dist/`. The Vite configuration uses a relative asset base so the site can be hosted under any static subdirectory. React, TypeScript, and Vite; no backend required.
-
-## Interactions
-
-Turn the studio sculpture, filter projects by discipline, expand each project, and copy the demo email to the clipboard. Clipboard failure provides a manual fallback.
-
-Keyboard focus, semantic buttons, responsive mobile layouts, and reduced-motion preferences are supported. State is local to this visit and resets on reload.
+Build: `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-Edit `src/App.tsx` for copy, content, and interactions. Edit `src/styles.css` for typography, color, layout, and motion. Images are imported from `src/assets/` so Vite rewrites their URLs correctly.
+`src/content.ts` (all copy and data: brand, services, case studies, team, roles, brief options), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
-## Assets
+## Demo behaviour
 
-No stock images. Project posters, product mockups, and studio sculpture are original CSS/SVG compositions. Fonts: Space Grotesk and DM Sans from Google Fonts.
+The brief builder updates its brief sheet as you type, estimates the team, length and starting fee from the chosen disciplines, warns when the budget sits below that fee, validates every step and ends on a confirmation with a brief number. Role pages carry a validated application form, the footer has a newsletter sign-up and the work index filters, searches, sorts and switches views. Nothing is sent, stored or charged anywhere, and Atelier, its clients and its people are fictional.
 
-Icons use Lucide React. Fonts and their licenses are bundled locally. Any photographic assets are bundled locally as well. Review the relevant provider license before reusing assets outside this template.
+## Credits
 
-## Demonstration status
-
-All brands, products, artists, missions, routes, prices, schedules, and claims are fictional sample content. This template does not sell products, take payments, make bookings, send messages, or connect to a backend. Replace the example content and contact address before launch.
-
-## Self-hosted fonts
-
-Fonts are bundled under `src/assets/fonts/`, with their OFL license notices. No external font service is needed at runtime.
+Fonts: Syne and Albert Sans (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

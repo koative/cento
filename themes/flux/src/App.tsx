@@ -1,393 +1,127 @@
-import { useState } from "react";
+import { useRef, type ReactNode } from "react";
+import { match, usePageChange, useRoute } from "./router";
 import {
-  Workflow,
-  Plus,
-  Play,
-  Check,
-  Mail,
-  FileText,
-  GitBranch,
-  Trash2,
-  ChevronDown,
-  ArrowRight,
-  RotateCcw,
-  MousePointer2,
-  Settings2,
-} from "lucide-react";
-type Step = { id: number; type: string; name: string };
-const initial: Step[] = [
-  { id: 1, type: "trigger", name: "New project created" },
-  { id: 2, type: "condition", name: "Budget is above €5,000" },
-  { id: 3, type: "action", name: "Create project brief" },
-  { id: 4, type: "action", name: "Notify the team" },
-];
+  about,
+  appNav,
+  brand,
+  changelog,
+  connectors,
+  contact,
+  customers,
+  home,
+  notFound,
+  pricing,
+  product,
+  signin,
+  templates,
+  type Workflow,
+} from "./content";
+import { useWorkflows } from "./lib/workspace";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { AppSidebar } from "./components/AppSidebar";
+import Home from "./pages/Home";
+import Product from "./pages/Product";
+import Integrations from "./pages/Integrations";
+import Integration from "./pages/Integration";
+import Templates from "./pages/Templates";
+import TemplatePage from "./pages/Template";
+import Pricing from "./pages/Pricing";
+import Customers from "./pages/Customers";
+import Changelog from "./pages/Changelog";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import SignIn from "./pages/SignIn";
+import NotFound from "./pages/NotFound";
+import AppOverview from "./pages/AppOverview";
+import AppWorkflows from "./pages/AppWorkflows";
+import AppBuilder from "./pages/AppBuilder";
+import AppRuns from "./pages/AppRuns";
+import AppSettings from "./pages/AppSettings";
+
+type Page = [title: string, node: ReactNode] | null;
+
+const site = (s: string) => `${s} — ${brand.name}`;
+const inDemo = (s: string) => `${s} — ${brand.name} demo`;
+
+function routes(
+  workflows: Workflow[],
+): [string, (p: Record<string, string>) => Page][] {
+  return [
+    ["/", () => [home.title, <Home />]],
+    ["/product", () => [site(product.title), <Product />]],
+    ["/integrations", () => [site("Integrations"), <Integrations />]],
+    [
+      "/integrations/:slug",
+      ({ slug }) => {
+        const c = connectors.find((x) => x.slug === slug);
+        return c
+          ? [site(`${c.name} integration`), <Integration connector={c} />]
+          : null;
+      },
+    ],
+    ["/templates", () => [site("Templates"), <Templates />]],
+    [
+      "/templates/:slug",
+      ({ slug }) => {
+        const t = templates.find((x) => x.slug === slug);
+        return t
+          ? [site(`${t.name} template`), <TemplatePage template={t} />]
+          : null;
+      },
+    ],
+    ["/pricing", () => [site(pricing.title), <Pricing />]],
+    ["/customers", () => [site(customers.title), <Customers />]],
+    ["/changelog", () => [site(changelog.title), <Changelog />]],
+    ["/about", () => [site(about.title), <About />]],
+    ["/contact", () => [site(contact.title), <Contact />]],
+    ["/signin", () => [site(signin.title), <SignIn />]],
+    ["/app", () => [inDemo(appNav[0].label), <AppOverview />]],
+    ["/app/workflows", () => [inDemo(appNav[1].label), <AppWorkflows />]],
+    [
+      "/app/workflows/:id",
+      ({ id }) => {
+        const w = workflows.find((x) => x.id === id);
+        return w
+          ? [inDemo(w.name), <AppBuilder key={w.id} workflow={w} />]
+          : null;
+      },
+    ],
+    ["/app/runs", () => [inDemo(appNav[2].label), <AppRuns />]],
+    ["/app/settings", () => [inDemo(appNav[3].label), <AppSettings />]],
+  ];
+}
+
 export default function App() {
-  const [steps, setSteps] = useState(initial);
-  const [selected, setSelected] = useState(2);
-  const [name, setName] = useState("Client onboarding");
-  const [status, setStatus] = useState("Draft");
-  const [log, setLog] = useState<string[]>([]);
-  const [adding, setAdding] = useState(false);
-  const [tab, setTab] = useState("Builder");
-  const [budget, setBudget] = useState(5000);
-  const [sampleBudget, setSampleBudget] = useState(7500);
-  const [stopped, setStopped] = useState(false);
-  const active = steps.find((s) => s.id === selected);
-  function add(type: string) {
-    const s = { id: Date.now(), type: "action", name: type };
-    setSteps([...steps, s]);
-    setSelected(s.id);
-    setAdding(false);
-    setStatus("Draft");
-    setLog([]);
+  const path = useRoute();
+  const workflows = useWorkflows();
+  const mainRef = useRef<HTMLElement>(null);
+  let found: [string, ReactNode] | null = null;
+  for (const [pattern, render] of routes(workflows)) {
+    const params = match(pattern, path);
+    found = params && render(params);
+    if (found) break;
   }
+  const [title, page] = found ?? [site(notFound.title), <NotFound />];
+  const inApp = found !== null && path.startsWith("/app");
+  usePageChange(mainRef, title);
+
   return (
-    <>
-      <a className="skip" href="#canvas">
-        Skip to workflow canvas
+    <div className={inApp ? "app-shell" : "site-shell"}>
+      <a className="skip-link" href="#main">
+        Skip to content
       </a>
-      <div className="app-shell">
-        <aside className="rail">
-          <a className="brand" href="#">
-            <Workflow />
-          </a>
-          <button
-            aria-label="Open workflows"
-            className="active"
-            onClick={() => setTab("Builder")}
-          >
-            <Workflow />
-          </button>
-          <button aria-label="Open activity" onClick={() => setTab("Activity")}>
-            <FileText />
-          </button>
-          <span className="rail-avatar">JD</span>
-        </aside>
-        <div className="workspace">
-          <header className="workspace-header">
-            <div>
-              <span>Acme studio</span>
-              <ChevronDown size={14} />
-              <span className="slash">/</span>
-              <strong>Workflows</strong>
-            </div>
-            <span className="demo">Fictional workspace · local demo</span>
-          </header>
-          <div className="workflow-header">
-            <div>
-              <h1 aria-label={name || "Untitled workflow"}>
-                <input
-                  aria-label="Workflow name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-              </h1>
-              <p>
-                Make the handoff feel effortless.{" "}
-                <span className={"state " + status.toLowerCase()}>
-                  {status}
-                </span>
-              </p>
-            </div>
-            <div>
-              <button
-                className="outline"
-                onClick={() => {
-                  setSteps(initial);
-                  setSelected(2);
-                  setLog([]);
-                  setStatus("Draft");
-                  setBudget(5000);
-                  setSampleBudget(7500);
-                  setStopped(false);
-                }}
-              >
-                <RotateCcw />
-                Reset
-              </button>
-              <button
-                className="run"
-                onClick={() => {
-                  let blocked = false;
-                  const results = steps.map((s, i) => {
-                    if (blocked) return `${i + 1}. ${s.name} — skipped`;
-                    if (s.type === "condition" && sampleBudget <= budget) {
-                      blocked = true;
-                      return `${i + 1}. ${s.name} — condition not met`;
-                    }
-                    return `${i + 1}. ${s.name} — completed`;
-                  });
-                  setLog(results);
-                  setStopped(blocked);
-                  setStatus(blocked ? "Condition not met" : "Test passed");
-                  setTab("Activity");
-                }}
-              >
-                <Play />
-                Test workflow
-              </button>
-            </div>
-          </div>
-          <div className="workspace-tabs">
-            <div>
-              {["Builder", "Activity"].map((t) => (
-                <button
-                  key={t}
-                  aria-pressed={tab === t}
-                  onClick={() => setTab(t)}
-                >
-                  {t}
-                  {t === "Activity" && log.length > 0 && (
-                    <span>{log.length}</span>
-                  )}
-                </button>
-              ))}
-            </div>
-            <span>All changes stay in this browser session</span>
-          </div>
-          <main className="editor">
-            <section id="canvas" className="canvas">
-              {tab === "Builder" ? (
-                <>
-                  <div className="canvas-note">
-                    <MousePointer2 size={14} />
-                    Select a step to edit
-                  </div>
-                  <div className="flow">
-                    {steps.map((s, i) => (
-                      <div className="flow-step" key={s.id}>
-                        {i > 0 && (
-                          <div className="connector">
-                            <span />
-                          </div>
-                        )}
-                        <button
-                          className={"node " + s.type}
-                          aria-pressed={selected === s.id}
-                          onClick={() => setSelected(s.id)}
-                        >
-                          <span className="node-icon">
-                            {s.type === "trigger" ? (
-                              <Workflow />
-                            ) : s.type === "condition" ? (
-                              <GitBranch />
-                            ) : s.name.includes("Notify") ? (
-                              <Mail />
-                            ) : (
-                              <FileText />
-                            )}
-                          </span>
-                          <span>
-                            <small>
-                              {s.type === "trigger"
-                                ? "WHEN THIS HAPPENS"
-                                : s.type === "condition"
-                                  ? "ONLY CONTINUE IF"
-                                  : "THEN DO THIS"}
-                            </small>
-                            <strong>{s.name}</strong>
-                          </span>
-                          <span className="step-no">{i + 1}</span>
-                        </button>
-                      </div>
-                    ))}
-                    <div className="connector" />
-                    <button
-                      className="add-step"
-                      aria-expanded={adding}
-                      onClick={() => setAdding(!adding)}
-                    >
-                      <Plus />
-                      Add a step
-                    </button>
-                    {adding && (
-                      <div className="add-options">
-                        {[
-                          "Send an email",
-                          "Create a task",
-                          "Update project status",
-                        ].map((x) => (
-                          <button key={x} onClick={() => add(x)}>
-                            {x}
-                            <Plus size={14} />
-                          </button>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                  <div className="simulation-input">
-                    <div>
-                      <strong>Try a sample project</strong>
-                      <p>
-                        The condition checks this budget before any action runs.
-                      </p>
-                    </div>
-                    <label>
-                      Sample project budget (€)
-                      <input
-                        type="number"
-                        min="0"
-                        step="500"
-                        value={sampleBudget}
-                        onChange={(e) => {
-                          setSampleBudget(Math.max(0, +e.target.value));
-                          setStatus("Draft");
-                        }}
-                      />
-                    </label>
-                    <span className="simulation-outcome">
-                      {steps.some((s) => s.type === "condition")
-                        ? sampleBudget > budget
-                          ? "Matches the current condition"
-                          : "Will stop at the condition"
-                        : "No condition in this workflow"}
-                    </span>
-                  </div>
-                  <span className="canvas-scale">
-                    100% <span>Auto layout</span>
-                  </span>
-                </>
-              ) : (
-                <div className="activity">
-                  <h2>Test activity</h2>
-                  <p>Run a local simulation to check your workflow sequence.</p>
-                  {log.length ? (
-                    <>
-                      <div className={"success " + (stopped ? "stopped" : "")}>
-                        <Check />
-                        {stopped
-                          ? "Condition not met. Remaining actions skipped."
-                          : `All ${log.length} steps completed.`}
-                      </div>
-                      <ol>
-                        {log.map((x) => (
-                          <li key={x}>
-                            {x.endsWith("completed") ? (
-                              <Check />
-                            ) : (
-                              <GitBranch />
-                            )}
-                            {x.replace(/^\d+\. /, "")}
-                          </li>
-                        ))}
-                      </ol>
-                      <p className="demo">
-                        Simulated outcomes only. No email, task or external
-                        action was created.
-                      </p>
-                    </>
-                  ) : (
-                    <div className="empty">
-                      <Play />
-                      <h2>Ready when you are.</h2>
-                      <p>Your first test run will appear here.</p>
-                    </div>
-                  )}
-                </div>
-              )}
-            </section>
-            <aside className="inspector">
-              <div className="inspector-heading">
-                <Settings2 size={16} />
-                <strong>Step settings</strong>
-              </div>
-              {active ? (
-                <>
-                  <span className="type-label">{active.type}</span>
-                  <h2>{active.name}</h2>
-                  <label className="field">
-                    Step name
-                    <input
-                      value={active.name}
-                      onChange={(e) => {
-                        setSteps(
-                          steps.map((s) =>
-                            s.id === selected
-                              ? { ...s, name: e.target.value }
-                              : s,
-                          ),
-                        );
-                        setStatus("Draft");
-                      }}
-                    />
-                  </label>
-                  {active.type === "condition" ? (
-                    <>
-                      <label className="field">
-                        Minimum project budget (€)
-                        <input
-                          type="number"
-                          min={0}
-                          step={500}
-                          value={budget}
-                          onChange={(e) => {
-                            setBudget(+e.target.value);
-                            setSteps(
-                              steps.map((s) =>
-                                s.id === selected
-                                  ? {
-                                      ...s,
-                                      name: `Budget is above €${(+e.target.value).toLocaleString()}`,
-                                    }
-                                  : s,
-                              ),
-                            );
-                          }}
-                        />
-                      </label>
-                      <p className="field-help">
-                        The simulated path continues when a project meets this
-                        condition.
-                      </p>
-                    </>
-                  ) : (
-                    <p className="field-help">
-                      This step is a local placeholder. Connect your own service
-                      to perform real actions.
-                    </p>
-                  )}
-                  <div className="connection">
-                    <span className="connection-dot" />
-                    Demo connection<span>Local only</span>
-                  </div>
-                  {active.type !== "trigger" && (
-                    <button
-                      className="delete"
-                      onClick={() => {
-                        setSteps(steps.filter((s) => s.id !== selected));
-                        setSelected(1);
-                        setStatus("Draft");
-                      }}
-                    >
-                      <Trash2 />
-                      Remove step
-                    </button>
-                  )}
-                  <div className="inspector-tip">
-                    <h3>A little less busywork.</h3>
-                    <p>
-                      Keep each step focused. A good workflow is one your whole
-                      team can understand.
-                    </p>
-                    <ArrowRight />
-                  </div>
-                </>
-              ) : (
-                <p>Select a step to get started.</p>
-              )}
-            </aside>
-          </main>
-          <footer className="editor-footer">
-            <span>
-              <Workflow size={14} /> flux
-            </span>
-            <span>
-              Fictional workflow builder by Koative · no services connected
-            </span>
-            <span>{steps.length} steps</span>
-          </footer>
-        </div>
-      </div>
-    </>
+      {inApp ? <AppSidebar /> : <Header />}
+      <main
+        id="main"
+        tabIndex={-1}
+        ref={mainRef}
+        key={path}
+        className={inApp ? "app-main" : "site-main"}
+      >
+        {page}
+      </main>
+      {!inApp && <Footer />}
+    </div>
   );
 }

@@ -1,0 +1,26 @@
+{
+  "number": 83,
+  "name": "Shortlist",
+  "sector": "Job board",
+  "category": "Technology",
+  "tagline": "Fewer, better jobs. Every one shows the pay.",
+  "description": "A job board set like the classified pages: filterable job search, rich job pages with pay against the market, an application flow, company directory and pages, post-a-job pricing with a live listing preview, an interactive salary guide and a ranked, side-by-side shortlist kept in localStorage.",
+  "tags": ["Job search", "Shortlist compare", "Salary checker", "Post a job"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/jobs", "title": "Find jobs" },
+    { "path": "/jobs/senior-backend-engineer-plainfield", "title": "Job" },
+    {
+      "path": "/jobs/senior-backend-engineer-plainfield/apply",
+      "title": "Apply"
+    },
+    { "path": "/companies", "title": "Companies" },
+    { "path": "/companies/oven-street", "title": "Company" },
+    { "path": "/post", "title": "Post a job" },
+    { "path": "/salaries", "title": "Salary guide" },
+    { "path": "/shortlist", "title": "Your shortlist" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#f4f2ec", "ink": "#16171a", "accent": "#c8321e" },
+  "fonts": ["Instrument Sans"]
+}

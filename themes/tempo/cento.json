@@ -1,0 +1,28 @@
+{
+  "number": 30,
+  "name": "Tempo",
+  "sector": "Dance studio",
+  "category": "Health & Wellness",
+  "tagline": "No perfect moves. Just yours.",
+  "description": "A multi-style dance studio site: a weekly timetable whose My week planner prices every pass against your picks, eight style pages with a tap-tempo finder, instructors, passes with a commitment toggle, a validated trial-class booking flow and events with RSVP.",
+  "tags": [
+    "Timetable planner",
+    "Tap-tempo style finder",
+    "Trial booking",
+    "Events RSVP"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/timetable", "title": "Timetable" },
+    { "path": "/styles", "title": "Styles" },
+    { "path": "/styles/hip-hop", "title": "Style" },
+    { "path": "/instructors", "title": "Instructors" },
+    { "path": "/passes", "title": "Passes" },
+    { "path": "/trial", "title": "Book a trial" },
+    { "path": "/events", "title": "Events" },
+    { "path": "/events/friday-social-soul-house", "title": "Event" },
+    { "path": "/about", "title": "Studio" }
+  ],
+  "colors": { "paper": "#f4f2ea", "ink": "#1d1b36", "accent": "#d9ff66" },
+  "fonts": ["Dela Gothic One", "Outfit"]
+}

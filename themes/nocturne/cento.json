@@ -1,0 +1,28 @@
+{
+  "number": 19,
+  "name": "Nocturne",
+  "sector": "Cocktail & listening bar",
+  "category": "Food & Drink",
+  "tagline": "Stay for another side.",
+  "description": "A basement cocktail and listening bar: drinks menu with drink pages, a nightly record log with a turntable player, events with event pages, table reservations with a floor plan and a private-hire enquiry.",
+  "tags": [
+    "Drinks menu",
+    "Record of the night",
+    "Table booking",
+    "Private hire"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/menu", "title": "Drinks menu" },
+    { "path": "/menu/side-b", "title": "Drink" },
+    { "path": "/records", "title": "Record of the night" },
+    { "path": "/records/2026-10-17", "title": "Night" },
+    { "path": "/events", "title": "Events" },
+    { "path": "/events/low-light-both-sides", "title": "Event" },
+    { "path": "/reservations", "title": "Reservations" },
+    { "path": "/private-hire", "title": "Private hire" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "night": "#110d0b", "cream": "#f2e7d2", "brass": "#d4a55a" },
+  "fonts": ["Limelight", "Josefin Sans"]
+}

@@ -1,37 +1,74 @@
 ---
-name: "Reel"
+name: Reel
 colors:
-  paper: "#171716"
-  ink: "#f5f0df"
-  accent: "#e5a667"
+  bg: "#131210"
+  surface: "#1c1a17"
+  surface-2: "#24211d"
+  line: "#34312b"
+  line-strong: "#514c42"
+  ink: "#f2ecdc"
+  muted: "#b5ac98"
+  accent: "#e8a463"
+  accent-ink: "#1a1107"
+  subtitle: "#fff4cf"
+  ok: "#b4d69a"
+  danger: "#ff9f8a"
 typography:
-  body:
-    fontFamily: "Body, sans-serif"
-    lineHeight: "1.5"
   display:
-    fontWeight: 500
-    lineHeight: "0.98"
-    letterSpacing: "-0.035em"
-    fontFamily: "Display, sans-serif"
-    fontSize: "clamp(54px, 6.8vw, 88px)"
+    fontFamily: "Bebas Neue"
+    fontSize: "clamp(3.25rem, 1.6rem + 5.4vw, 6rem)"
+    lineHeight: 0.9
+    letterSpacing: "0.005em"
+  section:
+    fontFamily: "Bebas Neue"
+    fontSize: "clamp(2.1rem, 1.5rem + 2.1vw, 3.4rem)"
+  body:
+    fontFamily: "Inter Tight"
+    fontSize: "1.0625rem"
+    lineHeight: 1.6
+rounded:
+  default: "2px"
+  chip: "999px"
+spacing:
+  gutter: "clamp(1.25rem, 4vw, 3rem)"
+  section: "clamp(4rem, 3rem + 4vw, 7.5rem)"
+  wrap: "1320px"
 ---
 
 # Reel
 
-Stories with a point of view. A cinematic film index with a working screening room.
+## Overview
 
-Mode: Experience with a task-specific local planning interaction. The user delegated creative direction. Code-led build; no mockup approval is claimed. Shared seed `ae458e69`, assigned grounded candidate 6: a collection of physical-sector artifacts translated into living interfaces, with independent compositions, palettes and navigation rather than a shared hero scaffold.
+The world is a grading suite and a village-hall screening: a warm, unlit auditorium black, cream like projected light and one amber for the projector lamp. Documentary audiences browse in the evening and decide by watching, so the first viewport is a trailer, and the site borrows its furniture from film itself — letterboxes, timecode, subtitles, poster billing blocks and a production board.
 
-## Craft
+## Colors
 
-Local type and assets, visible keyboard focus, semantic controls, a 390px reflow, readable contrast and reduced-motion alternatives. Body text uses DM Sans. The main heading uses the source-extracted display scale above. Specific layout and motion tokens are in `src/styles.css`.
-
-## Implemented palette
-
-`#171716`, `#353631`, `#514f47`, `#595851`, `#c2bba9`, `#c4bda9`, `#e5a667`, `#f5f0df`, `#ffffff44`
-
-These shades include intentional surface, rule, subject geometry and overlay variants. Preserve the material treatments used by this theme’s own composition.
+`bg` and `surface` are two steps of auditorium black separated by hairline `line` rules. `ink` (cream) carries text; `muted` is a warm grey that stays above 7:1 on `bg`. `accent` amber marks the one thing to do next (buttons, the current production stage, active subtitles' speaker), never decoration. `subtitle` is the slightly yellowed white of burnt-in subtitles. `ok` and `danger` are reserved for ticket and form states.
 
 ## Typography
 
-Body text uses DM Sans (CSS alias `Body`); the main heading uses Space Grotesk (CSS alias `Display`). The aliases resolve through local `@font-face` declarations in `src/`; the font files and license notices are bundled under `src/assets/fonts`. Frontmatter captures the desktop main-heading declarations; responsive overrides remain in the stylesheet.
+Bebas Neue, condensed caps, sets every title the way a poster or a title card would: page titles, film names, dates, credits. Inter Tight sets everything people read at length, at 17 px with a 65–75ch measure. Timecode, dates and rates use tabular numerals.
+
+## Layout
+
+A 1320 px wrap with fluid gutters. Pages alternate dense bands (dates, programme, rate card) with quiet ones (pull quote, close). The home slate is a zig-zag of wide and narrow frames; film pages run head → player → facts beside synopsis → stills mosaic → centred billing block. Below 900 px everything stacks; below 600 px the programme and dates collapse to two columns.
+
+## Components
+
+- **Trailer player** (signature): 16:9 frame with stills that drift and dissolve, 2.39:1 letterbox bars that close in when playing, burnt-in subtitles, a scrubber marked with every cut, `HH:MM:SS:FF` timecode, subtitle toggle, full screen, keyboard (Space/K, J/L, C), a transcript with jump-to-line timecodes and an end card linking to screenings.
+- **Production board**: four stage cells per film in progress, the current stage in amber.
+- **Film card**: still, Bebas title, status chip for unreleased films, meta line, logline.
+- **Programme row**: date and time, film, venue, kind and a ticket state.
+- **Billing block**: role labels over names, centred like a poster.
+- Hairline lists instead of cards for services, team, festivals and facts; `details` disclosures for FAQ and transcript.
+
+## Motion
+
+One language: the letterbox. Each page opens from a 7% letterbox with a soft fade, the player's bars close to 2.39:1 when it starts, and stills drift slowly while dissolving. With reduced motion the stills hold still and every animation is cut to a single frame.
+
+## Do's and Don'ts
+
+- Do let the films' images and titles carry the page; keep amber for the next action.
+- Do write subtitles, credits and dates in the film world's own conventions.
+- Don't add eyebrows above headings, icon-card grids or decorative gradients.
+- Don't use real festivals, venues or press in sample content.

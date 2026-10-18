@@ -1,35 +1,36 @@
-# Oddbox / Arcade
+# Arcade
 
-An indie game studio with a playable browser memory game, tactile lilac game cabinet, playful catalog artwork, and an orange studio introduction.
+Little games. Big feelings. Finished with love. An indie game studio website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: hero key art, the cartridge shelf, the playable Blob Hop demo, next game spotlight, press quote, latest devlog posts, team, open roles and a closing call to play
+- `/games` — Games: cartridge shelf with status chips, platform filter, search and sort, plus an empty state
+- `/games/:slug` — Game page (7 games): key art, facts strip, embedded demo where one exists, about and features, screenshot viewer, specs, quotes and awards, related devlog posts and more games
+- `/play` — Play: the Blob Hop canvas demo with controls, assist mode and your top runs saved on the device, plus the Pair Up! memory game
+- `/devlog` — Devlog: lead post, topic chips, game filter and search
+- `/devlog/:slug` — Devlog post (7 posts): article with screenshots, quotes and lists, author box, older/newer navigation and the related game
+- `/studio` — Studio: story, timeline, working principles, the team in pixel portraits, and a visit invitation
+- `/press` — Press kit: fact sheet, copyable boilerplate, downloadable SVG logos and key art, quotes and awards, review key request form
+- `/jobs` — Jobs: open roles with salaries, perks and the hiring process
+- `/jobs/:slug` — Job page (4 roles): role details and a validated application form
+
+## Run
 
 ```sh
-cd themes/arcade
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Run `bun run build` for a static production build and `bun run preview` to inspect it. The Vite base is relative (`./`), so the built `dist` folder can be hosted below any path. React, Vite, TypeScript, and Lucide are the only dependencies.
+Build with `bun run build`: static output in `dist/`, and the relative base works in any subfolder.
 
-## Included interactions
+## Customize
 
-Pair Up is a working randomized memory game with six pairs, move count, match state, keyboard support, and reset. Read expandable game concepts and try a clearly disclosed local demo email form. No information is collected.
+`src/content.ts` holds all copy and data (games with their pixel palettes, posts, team, jobs, press facts). `src/styles.css` holds the design tokens at `:root`. All artwork is drawn in code from `src/lib/pixels.ts` (sprites) and `src/components/Scene.tsx` (key art and screenshots), so new games only need a palette, a scene type and a few seeds.
 
-## Design
+## Demo behaviour
 
-Cream #faf2de / purple #6848bd / candy pink #edc6e6 / orange #e98c5d. Typography: Space Grotesk and DM Sans. Responsive mobile layouts, native controls, visible keyboard focus, and reduced-motion support are included.
+Blob Hop is a real canvas game: tap, click or press Space to hop, hold to float higher, P to pause, with an assist mode at 70% speed; your ten best runs are kept in `localStorage` (the game still works when storage is blocked). Pair Up! is a working memory game. The games list and devlog filter locally, the press page copies the boilerplate and downloads SVGs generated in the browser, and the review key request, job application and playtest signup forms validate inline, show a loading state and confirm success. Nothing is sent, stored on a server or charged, and Arcade with all its games, people and quotes is fictional.
 
-## Sources and reuse
+## Credits
 
-All game symbols are Lucide icons (ISC); all cabinet and catalog graphics are original CSS. No third-party images or audio.
-
-Fonts are from Google Fonts, distributed under their respective open font licenses. Icons use Lucide (ISC). See the repository license for template code.
-
-## Demo disclosure
-
-The brand, content, people, events, product specifications, prices, and availability are fictional demonstrations. There is no commerce, booking, email collection, or backend integration. Replace the example content and connect real services before production use.
-
-## Self-hosted fonts
-
-Font files and their OFL license notices are included in `src/assets/fonts/`. No remote font request is required at runtime.
+Fonts: Bungee and Rubik (SIL Open Font License). Images: none — all art is authored pixel SVG/canvas, see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

@@ -1,0 +1,31 @@
+{
+  "number": 74,
+  "name": "Pipeline",
+  "sector": "CRM & sales software",
+  "category": "Technology",
+  "tagline": "Every deal on the board. One honest number on Thursday.",
+  "description": "A CRM SaaS site with product, pricing (billing toggle and seat calculator), customer stories, changelog, company, demo booking and sign-in, plus a working /app demo: drag-and-drop deals board, sortable contacts table, contact detail with activity logging, and live reports.",
+  "tags": [
+    "Forecast call",
+    "Deals board demo",
+    "Contacts & timeline",
+    "Seat pricing"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/product", "title": "Product" },
+    { "path": "/pricing", "title": "Pricing" },
+    { "path": "/customers", "title": "Customers" },
+    { "path": "/customers/halvard-freight", "title": "Customer story" },
+    { "path": "/changelog", "title": "Changelog" },
+    { "path": "/about", "title": "Company" },
+    { "path": "/demo", "title": "Book a demo" },
+    { "path": "/signin", "title": "Sign in" },
+    { "path": "/app", "title": "App: Deals board" },
+    { "path": "/app/contacts", "title": "App: Contacts" },
+    { "path": "/app/contacts/ines-albright", "title": "App: Contact detail" },
+    { "path": "/app/reports", "title": "App: Reports" }
+  ],
+  "colors": { "paper": "#f6f4ee", "ink": "#161a33", "accent": "#2638b8" },
+  "fonts": ["Figtree"]
+}

@@ -1,0 +1,29 @@
+{
+  "number": 21,
+  "name": "Kiln",
+  "sector": "Ceramics studio & shop",
+  "category": "Commerce",
+  "tagline": "Stoneware for the everyday table, fired in small batches.",
+  "description": "A ceramics studio and shop with a filterable catalogue, object pages with glaze and size variants, a made-to-order glaze bench, workshop booking, a journal and a persisted bag with checkout.",
+  "tags": [
+    "Glaze bench configurator",
+    "Online shop",
+    "Workshop booking",
+    "Firing calendar"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/shop", "title": "Shop" },
+    { "path": "/shop/marigold-mug", "title": "Object" },
+    { "path": "/glazes", "title": "Glaze bench" },
+    { "path": "/workshops", "title": "Workshops" },
+    { "path": "/workshops/wheel-taster", "title": "Workshop" },
+    { "path": "/studio", "title": "Studio" },
+    { "path": "/journal", "title": "Journal" },
+    { "path": "/journal/why-we-leave-the-foot-raw", "title": "Journal entry" },
+    { "path": "/cart", "title": "Bag" },
+    { "path": "/checkout", "title": "Checkout" }
+  ],
+  "colors": { "paper": "#f4efe7", "ink": "#2a201b", "accent": "#a2482a" },
+  "fonts": ["Cardo", "Red Hat Text"]
+}

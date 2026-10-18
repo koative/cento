@@ -1,28 +1,35 @@
 # Nest
 
-A colorful early-years studio with age-based schedules and visit planning.
+Big days for small people, on Linden Row. A childcare & nursery website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: hero with the six rooms as coat-peg labels, age growth chart and room mosaic, live day timeline, care principles, session prices, this week's menu, a parent's story, room leads, FAQ teaser and next free tour slots
+- `/rooms` — Rooms by age: age slider that places your child on the growth chart and names their room and move-up date, stage filter, all six rooms
+- `/rooms/:id` — Room page (e.g. `/rooms/finches`): ages, ratio, places, session prices, what the room is working on, weekly rhythm, room lead, what to bring, the shape of the day, younger/older room pager
+- `/day` — A day at Nest: age-group switcher, scrubbable hour-by-hour timeline that highlights what is happening right now, Nest Notes diary app, outdoors and food
+- `/fees` — Fees calculator: pick a room and a session per weekday, see weekly and monthly totals with pre-K credit and sibling discount, then carry the pattern into a tour booking; billing notes
+- `/parents` — Parent info: settling-in steps, packing checklist, weekly menu, policies, closure dates and FAQ
+- `/team` — Team: leadership, room leads and kitchen & garden staff on coat-peg labels, careers
+- `/about` — Our story: history timeline, principles, the house/garden/woods, staffing ratios, family testimonials
+- `/tour` — Book a tour: slot picker with full slots, contact and child details with room suggestion from the birthday, validation and confirmation
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Build with `bun run build`. Publish `dist`; relative asset paths support subdirectory hosting.
-
-## Design and interaction
-
-A playful school-day collage in peach, violet, leaf and butter. Oversized type, a real classroom photo, age tabs and a tactile daily timetable establish care through visible routines. A local visit planner gives the parent a concrete next step.
-
-The controls demonstrate complete local state changes. All brands, people, addresses, prices, dates and offerings are fictional demo content. No information is submitted, no booking or order is made, and no service or advice is provided. Replace demo content and connect an appropriate backend before real use.
+Build: `bun run build` — static output in `dist/`, the relative base works in any subfolder.
 
 ## Customize
 
-Edit `src/App.tsx` for content and behavior, `src/styles.css` for styles, and `index.html` for metadata. React, TypeScript, Vite and Lucide icons. Keyboard focus, semantic controls, mobile layouts and reduced-motion preferences are supported.
+`src/content.ts` (all copy and data: rooms, sessions and prices, day plans, team, menu, policies, tours), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
-## Assets
+## Demo behaviour
 
-Self-hosted bricolage and dm fonts copied from the collection's licensed assets; OFL notices in `src/assets/fonts`. Lucide icons are ISC licensed. Photos are bundled from Unsplash under its license and are illustrative, without endorsement:
+The fees calculator, age finder, day timeline, packing checklist, tour booking and newsletter sign-up all run locally in the browser. Tour slots are generated from today's date; the calculator's chosen days are carried into the tour form for the current visit only. Nothing is sent, booked or charged, prices and credit rules are illustrative, and Nest, its staff and families are fictional.
 
-- `play.jpg`: https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=1400&q=85
+## Credits
+
+Fonts: Fredoka and Nunito (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

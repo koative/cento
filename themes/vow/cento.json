@@ -1,0 +1,27 @@
+{
+  "number": 40,
+  "name": "Vow",
+  "sector": "Wedding planner",
+  "category": "Services",
+  "tagline": "Every detail carried, so you can simply be there.",
+  "description": "A wedding planning studio site with packages and fees by guest count, a countdown planner that schedules milestones and splits the budget, wedding stories, a journal and a validated enquiry form.",
+  "tags": [
+    "Countdown planner",
+    "Packages by guest count",
+    "Wedding stories",
+    "Enquiry form"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/services", "title": "Services and fees" },
+    { "path": "/planner", "title": "Countdown planner" },
+    { "path": "/weddings", "title": "Weddings" },
+    { "path": "/weddings/hollins-orchard", "title": "Wedding story" },
+    { "path": "/journal", "title": "Journal" },
+    { "path": "/journal/when-to-book-what", "title": "Article" },
+    { "path": "/about", "title": "The studio" },
+    { "path": "/enquire", "title": "Enquire" }
+  ],
+  "colors": { "paper": "#f4eee6", "ink": "#3b2321", "accent": "#9a463b" },
+  "fonts": ["Italiana", "Raleway"]
+}

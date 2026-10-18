@@ -1,175 +1,92 @@
-import { useState } from "react";
-import { ArrowUpRight, ArrowRight, Scale, Check } from "lucide-react";
-import building from "./assets/building.jpg";
-const practices = [
-  {
-    name: "Business & contracts",
-    text: "For the decisions that shape the work you do.",
-    items: ["Commercial agreements", "Business formation", "Contract review"],
-  },
-  {
-    name: "Property & place",
-    text: "Clear thinking for the places that matter.",
-    items: ["Property transactions", "Leasing questions", "Ownership planning"],
-  },
-  {
-    name: "People & transitions",
-    text: "Considered support for a changing chapter.",
-    items: ["Personal planning", "Family transitions", "Estate administration"],
-  },
+import { useRef, type ReactNode } from "react";
+import { match, useRoute, usePageChange } from "./router";
+import { brand, insights } from "./content";
+import { areaBySlug, personBySlug } from "./lib/util";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { Home } from "./pages/Home";
+import { Practice } from "./pages/Practice";
+import { Area } from "./pages/Area";
+import { People } from "./pages/People";
+import { Profile } from "./pages/Profile";
+import { Insights } from "./pages/Insights";
+import { Article } from "./pages/Article";
+import { Firm } from "./pages/Firm";
+import { Fees } from "./pages/Fees";
+import { Enquiry } from "./pages/Enquiry";
+import { NotFound } from "./pages/NotFound";
+
+type Page = { title: string; node: ReactNode };
+
+const routes: [string, (p: Record<string, string>) => Page | null][] = [
+  ["/", () => ({ title: `${brand.name} — ${brand.sector}`, node: <Home /> })],
+  ["/practice", () => ({ title: "Practice areas", node: <Practice /> })],
+  [
+    "/practice/:slug",
+    ({ slug }) => {
+      const area = areaBySlug(slug);
+      return area
+        ? { title: area.name, node: <Area area={area} key={slug} /> }
+        : null;
+    },
+  ],
+  ["/people", () => ({ title: "People", node: <People /> })],
+  [
+    "/people/:slug",
+    ({ slug }) => {
+      const person = personBySlug(slug);
+      return person
+        ? {
+            title: `${person.name}, ${person.role}`,
+            node: <Profile person={person} key={slug} />,
+          }
+        : null;
+    },
+  ],
+  ["/insights", () => ({ title: "Insights", node: <Insights /> })],
+  [
+    "/insights/:slug",
+    ({ slug }) => {
+      const insight = insights.find((i) => i.slug === slug);
+      return insight
+        ? {
+            title: insight.title,
+            node: <Article insight={insight} key={slug} />,
+          }
+        : null;
+    },
+  ],
+  ["/firm", () => ({ title: "The firm", node: <Firm /> })],
+  ["/fees", () => ({ title: "Fees & engagement", node: <Fees /> })],
+  ["/enquiry", () => ({ title: "Make an enquiry", node: <Enquiry /> })],
 ];
+
+function resolve(path: string): Page {
+  for (const [pattern, render] of routes) {
+    const params = match(pattern, path);
+    const page = params && render(params);
+    if (page) return page;
+  }
+  return { title: "Page not found", node: <NotFound /> };
+}
+
 export default function App() {
-  const [active, setActive] = useState(0);
-  const [name, setName] = useState("");
-  const [summary, setSummary] = useState(false);
+  const path = useRoute();
+  const main = useRef<HTMLElement>(null);
+  const page = resolve(path);
+  const title = path === "/" ? page.title : `${page.title} — ${brand.name}`;
+  usePageChange(main, title);
+
   return (
     <>
-      <header>
-        <a className="brand" href="#">
-          <Scale size={26} /> COUNSEL<span>Independent legal practice</span>
-        </a>
-        <nav>
-          <a href="#practice">Our work</a>
-          <a href="#enquiry">
-            Make an enquiry <ArrowUpRight size={16} />
-          </a>
-        </nav>
-      </header>
-      <main>
-        <section className="opening">
-          <h1>
-            Clarity, when
-            <br />
-            it matters <em>most.</em>
-          </h1>
-          <div className="opening-bottom">
-            <p>
-              A thoughtful approach to complex questions.
-              <br />
-              We start by understanding what matters to you.
-            </p>
-            <a
-              href="#practice"
-              className="round-link"
-              aria-label="Explore our practice"
-            >
-              <ArrowRight size={28} />
-            </a>
-          </div>
-        </section>
-        <section id="practice" className="practice">
-          <aside>
-            <h2>Our practice</h2>
-            <p>
-              Good questions are
-              <br />a good place to start.
-            </p>
-            {practices.map((p, i) => (
-              <button
-                key={p.name}
-                aria-pressed={active === i}
-                onClick={() => {
-                  setActive(i);
-                  setSummary(false);
-                }}
-              >
-                {p.name}
-                <ArrowUpRight size={18} />
-              </button>
-            ))}
-          </aside>
-          <article key={active} className="practice-detail">
-            <img
-              src={building}
-              alt="Shelves of books in a warmly lit library"
-            />
-            <div>
-              <h3>{practices[active].name}</h3>
-              <p>{practices[active].text}</p>
-              <ul>
-                {practices[active].items.map((x) => (
-                  <li key={x}>{x}</li>
-                ))}
-              </ul>
-              <a href="#enquiry">
-                Start a conversation <ArrowRight size={18} />
-              </a>
-            </div>
-          </article>
-        </section>
-        <section className="principle">
-          <h2>
-            Understand the whole picture.
-            <br />
-            <em>Then find the way forward.</em>
-          </h2>
-          <p>
-            This fictional practice introduces a considered service experience.
-            The content is illustrative and is not legal advice.
-          </p>
-        </section>
-        <section className="enquiry" id="enquiry">
-          <div>
-            <h2>
-              Your next
-              <br />
-              chapter starts here.
-            </h2>
-            <p>
-              Prepare an enquiry brief. Nothing is sent; no professional
-              relationship is created.
-            </p>
-          </div>
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              setSummary(true);
-            }}
-          >
-            <label>
-              Your name
-              <input
-                required
-                value={name}
-                onChange={(e) => {
-                  setName(e.target.value);
-                  setSummary(false);
-                }}
-                placeholder="Alex Morgan"
-              />
-            </label>
-            <label>
-              Area of interest
-              <select
-                value={active}
-                onChange={(e) => {
-                  setActive(Number(e.target.value));
-                  setSummary(false);
-                }}
-              >
-                {practices.map((p, i) => (
-                  <option value={i} key={p.name}>
-                    {p.name}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <button className="btn">
-              Prepare enquiry <ArrowUpRight size={18} />
-            </button>
-            {summary && (
-              <p role="status">
-                <Check size={18} /> Brief prepared for {name}:{" "}
-                {practices[active].name}. Demo only — no enquiry sent.
-              </p>
-            )}
-          </form>
-        </section>
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
+      <Header />
+      <main id="main" tabIndex={-1} ref={main} key={path}>
+        {page.node}
       </main>
-      <footer>
-        <span>Counsel · Fictional legal practice. No legal advice.</span>
-        <a href="../../">Elseform collection</a>
-      </footer>
+      <Footer />
     </>
   );
 }

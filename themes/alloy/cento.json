@@ -1,0 +1,27 @@
+{
+  "number": 53,
+  "name": "Alloy",
+  "sector": "Construction company",
+  "category": "Industry",
+  "tagline": "Frames, civils and the difficult sites in between.",
+  "description": "A general contractor's site with services, a filterable project index and project pages that each carry a scrubbable build programme drawn in SVG, plus a safety record, careers with job applications and a tender/budget-estimate form with a live cost range.",
+  "tags": [
+    "Build programme scrubber",
+    "Project index",
+    "Tender & estimate form",
+    "Careers"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/services", "title": "Services" },
+    { "path": "/projects", "title": "Projects" },
+    { "path": "/projects/quayside-residences", "title": "Project" },
+    { "path": "/safety", "title": "Safety" },
+    { "path": "/careers", "title": "Careers" },
+    { "path": "/careers/field-engineer", "title": "Job" },
+    { "path": "/about", "title": "About" },
+    { "path": "/tender", "title": "Tenders and quotes" }
+  ],
+  "colors": { "paper": "#eceae4", "ink": "#161714", "accent": "#f2c11d" },
+  "fonts": ["Anton", "Barlow"]
+}

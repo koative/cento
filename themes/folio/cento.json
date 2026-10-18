@@ -1,0 +1,31 @@
+{
+  "number": 57,
+  "name": "Folio",
+  "sector": "Contemporary art gallery",
+  "category": "Culture & Media",
+  "tagline": "Three rooms, eight artists, every price on the wall label.",
+  "description": "A multi-page contemporary gallery site: exhibitions and exhibition pages, an artist roster with artist pages, an online viewing room with a saved list, true-scale wall previews and an enquiry form, visit information with live opening hours, and an editions shop with bag and checkout.",
+  "tags": [
+    "True-scale wall preview",
+    "Viewing room shortlist",
+    "Live opening hours",
+    "Editions shop"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/exhibitions", "title": "Exhibitions" },
+    { "path": "/exhibitions/weather-inside", "title": "Exhibition" },
+    { "path": "/artists", "title": "Artists" },
+    { "path": "/artists/ines-calder", "title": "Artist" },
+    { "path": "/viewing-room", "title": "Viewing room" },
+    { "path": "/viewing-room/low-tide-room", "title": "Work" },
+    { "path": "/visit", "title": "Visit" },
+    { "path": "/shop", "title": "Shop" },
+    { "path": "/shop/balance-edition", "title": "Shop item" },
+    { "path": "/bag", "title": "Bag & checkout" },
+    { "path": "/about", "title": "About" },
+    { "path": "/enquire", "title": "Enquire" }
+  ],
+  "colors": { "wall": "#f4f3ef", "ink": "#161513", "accent": "#d0381f" },
+  "fonts": ["Hanken Grotesk"]
+}

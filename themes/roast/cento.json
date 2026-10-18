@@ -1,0 +1,23 @@
+{
+  "number": 12,
+  "name": "Roast",
+  "sector": "Coffee roastery",
+  "category": "Food & Drink",
+  "tagline": "Roasted on Monday and Thursday. In your cup by the weekend.",
+  "description": "A multi-page specialty coffee roastery shop: filterable coffee catalogue with roast-curve product pages, a cups-per-day subscription builder, brew guides with a live timer, cafés with opening hours, and a persisted cart with checkout.",
+  "tags": ["Online shop", "Subscription builder", "Brew timer", "Roast curves"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/shop", "title": "Shop" },
+    { "path": "/shop/daybreak", "title": "Coffee" },
+    { "path": "/subscribe", "title": "Subscriptions" },
+    { "path": "/brew", "title": "Brew guides" },
+    { "path": "/brew/v60", "title": "Brew guide" },
+    { "path": "/cafes", "title": "Cafés" },
+    { "path": "/about", "title": "Our story" },
+    { "path": "/cart", "title": "Bag" },
+    { "path": "/checkout", "title": "Checkout" }
+  ],
+  "colors": { "paper": "#f4eee4", "ink": "#2b1a12", "accent": "#f78b38" },
+  "fonts": ["DM Serif Display", "Hanken Grotesk"]
+}

@@ -1,0 +1,27 @@
+{
+  "number": 7,
+  "name": "Ember",
+  "sector": "Neighbourhood restaurant",
+  "category": "Food & Drink",
+  "tagline": "Wood-fired, every night on Alder Street.",
+  "description": "A wood-fired neighbourhood restaurant: dinner, brunch and drinks menus with dietary filters and dish pages, a table planner that suggests a balanced order per head, a reservations flow with live slot availability, private dining enquiries and supper-club events with seat holds.",
+  "tags": [
+    "Table planner",
+    "Reservations",
+    "Private dining",
+    "Supper-club events"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/menu/dinner", "title": "Menu" },
+    { "path": "/menu/dinner/whole-lemon-sole", "title": "Dish" },
+    { "path": "/reservations", "title": "Reservations" },
+    { "path": "/private-dining", "title": "Private dining" },
+    { "path": "/events", "title": "Events" },
+    { "path": "/events/pizza-school", "title": "Event" },
+    { "path": "/about", "title": "About" },
+    { "path": "/visit", "title": "Visit" }
+  ],
+  "colors": { "paper": "#f5ead6", "ink": "#2a1712", "accent": "#b3301f" },
+  "fonts": ["Young Serif", "Work Sans"]
+}

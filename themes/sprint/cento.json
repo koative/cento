@@ -1,0 +1,32 @@
+{
+  "number": 73,
+  "name": "Sprint",
+  "sector": "Project management SaaS",
+  "category": "Technology",
+  "tagline": "The board your standup actually looks at.",
+  "description": "A project management SaaS site with product tour, sprint capacity planner, pricing with seat calculator, customer stories and changelog, plus a working /app demo: drag-and-drop or keyboard board, sortable issue list, editable issue detail and workspace settings.",
+  "tags": [
+    "Sprint capacity planner",
+    "Keyboard-movable board",
+    "App demo",
+    "Pricing calculator"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/product", "title": "Product tour" },
+    { "path": "/pricing", "title": "Pricing" },
+    { "path": "/customers", "title": "Customers" },
+    { "path": "/customers/quayside-games", "title": "Customer story" },
+    { "path": "/changelog", "title": "Changelog" },
+    { "path": "/about", "title": "About" },
+    { "path": "/contact", "title": "Talk to sales" },
+    { "path": "/signin", "title": "Sign in" },
+    { "path": "/signup", "title": "Start free" },
+    { "path": "/app", "title": "App: Board" },
+    { "path": "/app/list", "title": "App: All issues" },
+    { "path": "/app/issues/FRN-201", "title": "App: Issue detail" },
+    { "path": "/app/settings", "title": "App: Settings" }
+  ],
+  "colors": { "paper": "#f3f4f0", "ink": "#161a23", "accent": "#2340b0" },
+  "fonts": ["Inter"]
+}

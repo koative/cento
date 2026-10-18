@@ -1,46 +1,41 @@
 # Signal
 
-A porcelain and teal analytics workspace with restrained data density, an authored SVG chart, contextual navigation, and useful reports.
+Know which change moved the number. A product analytics SaaS website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: live query composer (pick measure, event, breakdown and period; the chart and the query rewrite themselves), SDK install, booking funnel, retention cohort grid, event catalog excerpt, customer quote, privacy commitments, SDK list, customer stories, pricing teaser, demo close
+- `/product` — Capabilities (dashboards, funnels, retention, event catalog, alerts) each with a working SVG visual, data pipeline, performance specs
+- `/pricing` — Monthly/yearly toggle, three plans, event-volume calculator that picks the cheapest plan, comparison table, enterprise band, FAQ
+- `/customers` — Six customer stories with industry filter, search and sort
+- `/customers/:slug` — Story: before/after chart with the release annotated, company facts, problem, approach, quote, what they built, related stories
+- `/changelog` — Releases filterable by New / Improved / Fixed
+- `/docs` — Docs teaser: SDK quickstart tabs with copyable code, filterable guide list, HTTP API endpoints
+- `/about` — Story, principles, timeline, team, open roles
+- `/demo` — Book-a-demo form with validation, loading and success states
+- `/signin` — Sign-in screen (UI only; a valid email and 8+ character password open the app demo)
+- `/app` — Demo workspace overview: KPI switcher, SVG line chart with previous-period comparison and keyboard cursor, CSV export, traffic sources, top pages, retention grid
+- `/app/funnels` — Funnel builder: saved funnels, add/remove/reorder steps, conversion window and platform, live SVG funnel and step table
+- `/app/events` — Event catalog table: search, category and status filters, sortable columns
+- `/app/events/:id` — Event detail: verify/deprecate, volume chart, properties, funnels using it, related events
+- `/app/settings` — Workspace settings, team roles and invites, API key reveal/copy/regenerate, notification toggles
+
+## Run
 
 ```sh
-bun install
-bun run dev
-bun run build
-bun run preview
+bun install && bun run dev
 ```
 
-Node and npm may also be used with the equivalent commands. The Vite configuration uses relative asset paths, so the production `dist/` folder can be hosted at any static subdirectory.
-
-## Interactions
-
-Switch reporting periods and chart metrics, toggle the previous-period series, search page data, switch demo workspaces, load saved report presets, and download the visible rows as a real CSV file.
+Build with `bun run build`; the static output in `dist/` uses a relative base and works from any subfolder.
 
 ## Customize
 
-- `src/App.tsx`: content, sample data, interactions, sections.
-- `src/styles.css`: complete independent design system and responsive rules.
-- `src/assets/`: local photography where applicable.
+`src/content.ts` holds all copy and demo data, `src/styles.css` holds the design tokens at `:root`, and `src/assets/` holds imagery sources.
 
-This is a React + Vite + TypeScript template. It is independent of the gallery and other templates. No backend or environment variables are required.
+## Demo behaviour
 
-## Demo boundaries
+Every interactive flow runs locally in the browser: the query composer, charts, funnel builder, event table, settings, pricing calculator and all forms work on fictional demo data held in React state, and reset on reload. The CSV export builds the file in the browser. Forms validate and show a success state, but nothing is sent, stored or charged anywhere. Signal, Fernway and every company, person and number on the site are fictional.
 
-All brands, balances, metrics, products, classes, schedules, prices, and account details are fictional demonstration content. State lives in memory and resets on reload. No real payments, financial transfers, orders, bookings, account connections, analytics tracking, or email delivery are implemented. Form values are not sent or stored.
+## Credits
 
-## Accessibility and motion
-
-Semantic landmarks, labeled controls, keyboard focus, responsive layouts, native form validation, and reduced-motion styles are included. The main animation is decorative or user-initiated; the content remains available without it.
-
-## Assets
-
-No stock imagery. Charts are authored SVG geometry. Fonts: IBM Plex Sans and DM Sans sourced from Google Fonts and bundled locally. Icons: Lucide.
-
-Unsplash assets are subject to the [Unsplash license](https://unsplash.com/license); font families are open source under their respective licenses. Replace demonstration imagery and content as appropriate for your project. Lucide icons use the ISC license.
-
-Part of [Elseform](https://koative.github.io/elseform/).
-
-## Self-hosted fonts
-
-Fonts and their OFL licenses are bundled under `src/assets/fonts/`. No external font service is needed at runtime.
+Fonts: Geist and Geist Mono (SIL Open Font License). Images: none; every chart, funnel and logo is authored SVG/CSS — see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

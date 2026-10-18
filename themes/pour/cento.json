@@ -1,0 +1,25 @@
+{
+  "number": 66,
+  "name": "Pour",
+  "sector": "Natural wine shop & bar",
+  "category": "Food & Drink",
+  "tagline": "Good wine, no ceremony. A shop by day, a bar by night.",
+  "description": "A natural wine shop and bar template with a filterable bottle shelf, rich bottle pages with formats, a palate-map taste finder, a bar menu, tastings with seat booking, a wine club and a persisted cart with checkout.",
+  "tags": ["Taste finder", "Online shop", "Tastings booking", "Wine club"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/wines", "title": "Wines" },
+    { "path": "/wines/cloud-study", "title": "Bottle" },
+    { "path": "/finder", "title": "Taste finder" },
+    { "path": "/bar", "title": "Bar menu" },
+    { "path": "/tastings", "title": "Tastings & events" },
+    { "path": "/tastings/chenin-four-ways", "title": "Event" },
+    { "path": "/club", "title": "Wine club" },
+    { "path": "/about", "title": "Our story" },
+    { "path": "/visit", "title": "Visit & FAQ" },
+    { "path": "/cart", "title": "Cart" },
+    { "path": "/checkout", "title": "Checkout" }
+  ],
+  "colors": { "paper": "#f3e6d1", "ink": "#34151f", "accent": "#662b42" },
+  "fonts": ["Ibarra Real Nova", "Figtree"]
+}

@@ -1,45 +1,37 @@
 # Orbit
 
-A standalone **aerospace studio** template from the Elseform collection.
+Orbit by the kilogram, on a manifest you can read a year ahead. A space launch startup website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-Midnight blue and glacial blue, an interactive native CSS 3D orbital model, fine trajectory geometry, and open typographic space.
+## Pages
 
-## Run locally
+- `/` — Home: next-launch countdown, the next four flights, the fleet drawn to scale, a compact price calculator, recent missions, rideshare milestones, flight log, a customer quote, hiring and a booking close
+- `/missions` — Missions: flown and upcoming missions with generated patches, filter by status and vehicle, sort by date
+- `/missions/:slug` — Mission: patch, countdown for upcoming flights, facts, orbit diagram, flight timeline, payload table, related missions
+- `/vehicles` — Vehicles: dimensioned elevation drawings for Kestrel, Halcyon and Wayfarer, performance and price, side-by-side comparison
+- `/vehicles/:id` — Vehicle spec sheet: drawing, specifications, stages, payload-vs-altitude chart, flight history
+- `/manifest` — Launch manifest: countdown to the next launch, filterable flight table with status and open capacity, launch sites
+- `/rideshare` — Rideshare pricing: the full calculator (payload, orbit, Wayfarer altitude, flight, services, payment schedule), inclusions, milestones, FAQ
+- `/reserve` — Reserve a launch: validated reservation form carrying the calculator quote, dedicated-launch variant, confirmation state
+- `/careers` — Careers: open roles filtered by team, benefits, hiring process
+- `/careers/:slug` — Job: responsibilities, requirements, salary and a validated application form
+- `/about` — About: story, principles, milestones, leadership, facilities
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-## Build
-
-```sh
-bun run build
-bun run preview
-```
-
-The production output is written to `dist/`. The Vite configuration uses a relative asset base so the site can be hosted under any static subdirectory. React, TypeScript, and Vite; no backend required.
-
-## Interactions
-
-Pause/resume the orbital animation, rotate the 3D view, select one of three missions to change its angle and illustrative data, and expand FAQ answers.
-
-Keyboard focus, semantic buttons, responsive mobile layouts, and reduced-motion preferences are supported. State is local to this visit and resets on reload.
+Build: `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-Edit `src/App.tsx` for copy, content, and interactions. Edit `src/styles.css` for typography, color, layout, and motion. Images are imported from `src/assets/` so Vite rewrites their URLs correctly.
+`src/content.ts` holds all copy and data (vehicles, missions, manifest, rideshare prices, jobs, team). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
-## Assets
+## Demo behaviour
 
-No stock images. Orbital sculpture and trajectory diagrams are authored CSS/SVG geometry. Fonts: Manrope and DM Sans from Google Fonts.
+The rideshare calculator prices a payload from the published rates in `content.ts`, remembers the quote in `localStorage` (it still works when storage is blocked) and hands it to the reservation form. The manifest and header count down to the next scheduled launch in real time. The reservation, job application and launch-alert forms validate in the browser and show a confirmation; nothing is sent, booked or charged. Orbit, its vehicles, customers, people and prices are fictional.
 
-Icons use Lucide React. Fonts and their licenses are bundled locally. Any photographic assets are bundled locally as well. Review the relevant provider license before reusing assets outside this template.
+## Credits
 
-## Demonstration status
-
-All brands, products, artists, missions, routes, prices, schedules, and claims are fictional sample content. This template does not sell products, take payments, make bookings, send messages, or connect to a backend. Replace the example content and contact address before launch.
-
-## Self-hosted fonts
-
-Fonts are bundled under `src/assets/fonts/`, with their OFL license notices. No external font service is needed at runtime.
+Fonts: Unbounded and Onest (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

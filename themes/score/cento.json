@@ -1,0 +1,29 @@
+{
+  "number": 61,
+  "name": "Score",
+  "sector": "Music school",
+  "category": "Education & Community",
+  "tagline": "Lessons for every age, one teacher at a time.",
+  "description": "A multi-page music school site: filterable programmes with detail pages, a faculty roster with teacher profiles, a recital season with printed concert programmes and .ics export, a practice room with a playable keyboard that engraves notes on a staff, a metronome and tuning notes, and a trial-lesson booking flow with live teacher slots.",
+  "tags": [
+    "Playable keyboard + staff",
+    "Metronome & tuner",
+    "Trial lesson booking",
+    "Recital season"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/programmes", "title": "Programmes" },
+    { "path": "/programmes/piano", "title": "Programme" },
+    { "path": "/teachers", "title": "Teachers" },
+    { "path": "/teachers/ines-halloran", "title": "Teacher" },
+    { "path": "/recitals", "title": "Recitals" },
+    { "path": "/recitals/autumn-keys", "title": "Recital" },
+    { "path": "/practice", "title": "Practice room" },
+    { "path": "/fees", "title": "Fees & terms" },
+    { "path": "/about", "title": "About" },
+    { "path": "/trial", "title": "Book a trial lesson" }
+  ],
+  "colors": { "paper": "#f4efe3", "ink": "#1c1915", "accent": "#b0322a" },
+  "fonts": ["Brygada 1918", "Albert Sans"]
+}

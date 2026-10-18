@@ -1,0 +1,62 @@
+{
+  "number": 72,
+  "name": "Hush",
+  "sector": "Noise-cancelling headphones",
+  "category": "Commerce",
+  "tagline": "Headphones that turn the world down, not your music up.",
+  "description": "A headphone brand store: flagship product story, seven models with an SVG colour picker, side-by-side compare, support guides with FAQ and ticket form, and a persisted cart with validated checkout. The signature noise lab charts and plays what cancelling removes in four real places.",
+  "tags": [
+    "Noise lab with Web Audio",
+    "Colour picker",
+    "Compare models",
+    "Cart & checkout"
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "title": "Home"
+    },
+    {
+      "path": "/shop",
+      "title": "Shop"
+    },
+    {
+      "path": "/shop/hush-one",
+      "title": "Product"
+    },
+    {
+      "path": "/story",
+      "title": "Product story"
+    },
+    {
+      "path": "/compare",
+      "title": "Compare"
+    },
+    {
+      "path": "/support",
+      "title": "Support"
+    },
+    {
+      "path": "/support/pair-a-device",
+      "title": "Support guide"
+    },
+    {
+      "path": "/about",
+      "title": "About"
+    },
+    {
+      "path": "/cart",
+      "title": "Cart"
+    },
+    {
+      "path": "/checkout",
+      "title": "Checkout"
+    }
+  ],
+  "colors": {
+    "paper": "#e9e7e1",
+    "ink": "#17191b",
+    "accent": "#e0552b"
+  },
+  "fonts": ["SUSE"]
+}

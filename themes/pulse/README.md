@@ -1,45 +1,35 @@
 # Pulse
 
-A standalone **electronic music festival** template from the Elseform collection.
+Three days, four stages, no off switch. A music festival website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-Acid green, violet, condensed poster typography, and a kinetic concentric speaker sculpture.
+## Pages
 
-## Run locally
+- `/` — Home: poster hero with headliners, full billing by day, live timetable grid, the four stages, manifesto, ticket tiers, interactive site map, care, FAQ teaser, closing call to action
+- `/lineup` — Lineup: all 30 artists with search, day chips, stage filter and poster / set-time / A–Z sort
+- `/lineup/:slug` — Artist page (e.g. `/lineup/mira-nova`): set time card with add-to-timetable and clash advice, bio, moods, records, stage, neighbouring sets
+- `/timetable` — Timetable builder: clash-finder grid per day, saved picks, clash warnings with walking times, copy-to-clipboard
+- `/tickets` — Tickets: tier progress, wristband tiers with quantities, instalment toggle, extras, live order summary
+- `/tickets/checkout` — Checkout: lead booker, 18+ check, a name for every wristband, terms; confirmation state
+- `/venue` — Venue: interactive site map, stage hours, walking-time table, getting there, camping, access
+- `/faq` — FAQ: searchable, filterable by topic, native disclosures
+- `/about` — About: story, principles, edition timeline, crew
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-## Build
-
-```sh
-bun run build
-bun run preview
-```
-
-The production output is written to `dist/`. The Vite configuration uses a relative asset base so the site can be hosted under any static subdirectory. React, TypeScript, and Vite; no backend required.
-
-## Interactions
-
-Day tabs change the artist schedule. Ticket type and quantity controls update the total; selection produces an inline demo confirmation.
-
-Keyboard focus, semantic buttons, responsive mobile layouts, and reduced-motion preferences are supported. State is local to this visit and resets on reload.
+Build: `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-Edit `src/App.tsx` for copy, content, and interactions. Edit `src/styles.css` for typography, color, layout, and motion. Images are imported from `src/assets/` so Vite rewrites their URLs correctly.
+`src/content.ts` holds all copy and data (artists, stages, set times, tickets, places, FAQ, team). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
-## Assets
+## Demo behaviour
 
-Festival photo: [Unsplash](https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3), downloaded via `images.unsplash.com/photo-1470229722913-7c0e2dbbafd3`. Fonts: Barlow Condensed and Space Grotesk from Google Fonts.
+Timetable picks and the ticket order are kept in `localStorage` (the site still works when storage is blocked). Checkout and the newsletter form validate in the browser and show a confirmation; nothing is sent, booked or charged. Pulse, its artists, venue and people are fictional.
 
-Icons use Lucide React. Fonts and their licenses are bundled locally. Any photographic assets are bundled locally as well. Review the relevant provider license before reusing assets outside this template.
+## Credits
 
-## Demonstration status
-
-All brands, products, artists, missions, routes, prices, schedules, and claims are fictional sample content. This template does not sell products, take payments, make bookings, send messages, or connect to a backend. Replace the example content and contact address before launch.
-
-## Self-hosted fonts
-
-Fonts are bundled under `src/assets/fonts/`, with their OFL license notices. No external font service is needed at runtime.
+Fonts: Big Shoulders Display and Rubik (SIL OFL 1.1). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

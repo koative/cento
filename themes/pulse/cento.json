@@ -1,0 +1,22 @@
+{
+  "number": 4,
+  "name": "Pulse",
+  "sector": "Music festival",
+  "category": "Culture & Media",
+  "tagline": "Three days, four stages, no off switch.",
+  "description": "A three-day electronic music festival site: poster-style lineup with artist pages, a clash-finder timetable builder that saves your picks, wristband ticket tiers with instalments and checkout, an interactive venue map and a searchable FAQ.",
+  "tags": ["Timetable builder", "Artist pages", "Ticket checkout", "Venue map"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/lineup", "title": "Lineup" },
+    { "path": "/lineup/mira-nova", "title": "Artist" },
+    { "path": "/timetable", "title": "Timetable builder" },
+    { "path": "/tickets", "title": "Tickets" },
+    { "path": "/tickets/checkout", "title": "Checkout" },
+    { "path": "/venue", "title": "Venue" },
+    { "path": "/faq", "title": "FAQ" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#121211", "ink": "#efebe4", "accent": "#d2fc40" },
+  "fonts": ["Big Shoulders Display", "Rubik"]
+}

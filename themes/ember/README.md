@@ -1,54 +1,35 @@
 # Ember
 
-Restaurant / hospitality template from the Elseform collection. Built with React, TypeScript, Vite, and Lucide icons.
+Wood-fired, every night on Alder Street. A neighbourhood restaurant website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Design
+## Pages
 
-Tomato red and buttercream, Bricolage Grotesque display typography, full food photography, a tilted menu note, and a paper-menu interaction.
+- `/` — Home: hero with tonight's dishes, the three menus, the oven and its day, a dish spotlight, table-planner teaser, upcoming events, private dining, regulars' notes, hours and booking close
+- `/menu/dinner`, `/menu/brunch`, `/menu/drinks` — Menus set like a printed bill of fare, with search, dietary filters, a photo strip and the table planner
+- `/menu/:service/:dish` — Dish page: photo, kitchen notes, allergens, suppliers, drink pairing, related dishes, add to table
+- `/reservations` — Booking flow: date, party size, live time-slot availability, seating, contact details, optional table plan, confirmation
+- `/private-dining` — Spaces compared, three set feasts, policies and an enquiry form
+- `/events` — Supper clubs, classes, tastings and music, filterable by kind
+- `/events/:id` — Event page: running order, seats left, seat-hold or waiting-list form
+- `/about` — Story, team and the supplier ledger
+- `/visit` — Authored street map, hours with today highlighted, getting here, access and FAQ
 
-**Type:** Bricolage Grotesque and DM Sans. Fonts are sourced from Google Fonts and bundled locally.
-
-- Cream: `#fff4df`
-- Tomato: `#b32f21`
-- Ink: `#402019`
-
-## Run independently
+## Run
 
 ```sh
-bun install
-bun run dev
-bun run build
-bun run preview
+bun install && bun run dev
 ```
 
-The relative Vite base supports deployment at `/elseform/themes/ember/` or another subdirectory. The theme has no dependency on the gallery or other templates. `src/main.tsx` is the entry point. Edit `src/App.tsx` for content and `src/styles.css` for the visual system.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
-## Working interactions
+## Customize
 
-- Switch between oven dishes, small plates, and sweet endings.
-- Choose a future date, party size, and service time; enter a name to generate a local reservation preview.
-- Navigate directly to menu, story, and booking sections.
+`src/content.ts` holds all copy and data (menus, dishes, hours, events, spaces, team, FAQ). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
-State is held in memory and resets on reload. Forms use native validation; no server, payment processor, or external message service is connected. All business names, projects, prices, offerings, and availability are **fictional demonstration content**. Replace these and connect your own services before production use.
+## Demo behaviour
 
-## Accessibility and motion
+The table planner keeps a guest count and chosen dishes in `localStorage` (and still works without it), totals the bill per head and suggests a balanced order. Reservations show demo availability per date and time, validate every field and return a confirmation reference; the private-dining enquiry, event seat holds and newsletter sign-up behave the same way. Nothing is sent, booked or charged, and Ember is a fictional brand.
 
-Semantic navigation and forms, visible keyboard focus, accessible button names, pressed/expanded control states, explicit confirmation messages, mobile reflow, and `prefers-reduced-motion` support. Photographs include descriptive alternative text. The intentionally authored motion is disabled for reduced-motion preferences.
+## Credits
 
-## Photography and icons
-
-The following photographs are stored locally under `src/assets` and imported by Vite, so nested deployments do not depend on remote photo URLs. Sources:
-
-- [pizza — original Unsplash image](https://images.unsplash.com/photo-1513104890138-7c749659a591)
-- [pasta — original Unsplash image](https://images.unsplash.com/photo-1473093295043-cdd812d0e601)
-- [restaurant — original Unsplash image](https://images.unsplash.com/photo-1414235077428-338989a2e8c0)
-
-Photography: [Unsplash license](https://unsplash.com/license). Fonts: [Google Fonts](https://fonts.google.com/), under the respective open font licenses. Icons: [Lucide](https://lucide.dev/), ISC license. Verify the terms for your intended use and replace editorial demonstration photographs before using them to imply a real business, product, or property.
-
-## Validation
-
-Standalone production build verified with `bun run build`. Collection-wide responsive and interaction verification is maintained at the repository level.
-
-## Self-hosted fonts
-
-Fonts are bundled under `src/assets/fonts/`, with their OFL license notices. No external font service is needed at runtime.
+Fonts: Young Serif and Work Sans (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

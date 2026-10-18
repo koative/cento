@@ -1,0 +1,25 @@
+{
+  "number": 68,
+  "name": "Margin",
+  "sector": "Product designer portfolio",
+  "category": "Creative",
+  "tagline": "The quiet parts of everyday software, annotated in the margin.",
+  "description": "A product designer's portfolio set like a marked-up design review: case studies with live redline overlays on authored UI screens, a playground of working design tools, about, résumé and a validated enquiry form.",
+  "tags": [
+    "Redline case studies",
+    "Design playground",
+    "Printable résumé",
+    "Enquiry form"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/work", "title": "Case studies" },
+    { "path": "/work/fernway-tickets", "title": "Case study" },
+    { "path": "/playground", "title": "Playground" },
+    { "path": "/about", "title": "About" },
+    { "path": "/resume", "title": "Résumé" },
+    { "path": "/contact", "title": "Contact" }
+  ],
+  "colors": { "paper": "#f5f3ee", "ink": "#1c1b18", "accent": "#c4321b" },
+  "fonts": ["Instrument Serif", "Instrument Sans"]
+}

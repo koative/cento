@@ -1,0 +1,22 @@
+{
+  "number": 99,
+  "name": "Pantry",
+  "sector": "Meal kit subscription",
+  "category": "Food & Drink",
+  "tagline": "Everything for dinner except the salt.",
+  "description": "A multi-page meal kit subscription site: a filterable weekly menu with recipe pages (swaps, servings, scaled ingredients, method, nutrition), a box-builder that packs numbered bags live, how it works, gift cards with a live card preview, and a persisted box with sign-up checkout.",
+  "tags": ["Plan builder", "Weekly menu", "Recipe pages", "Sign-up checkout"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/menu", "title": "This week’s menu" },
+    { "path": "/menu/sticky-gochujang-chicken", "title": "Recipe" },
+    { "path": "/plans", "title": "Plans & prices" },
+    { "path": "/how-it-works", "title": "How it works" },
+    { "path": "/gift-cards", "title": "Gift cards" },
+    { "path": "/about", "title": "Our kitchen" },
+    { "path": "/box", "title": "Your box" },
+    { "path": "/checkout", "title": "Sign up & checkout" }
+  ],
+  "colors": { "paper": "#f6eedf", "ink": "#2b2118", "accent": "#c13f29" },
+  "fonts": ["Corben", "Nunito Sans"]
+}

@@ -1,0 +1,30 @@
+{
+  "number": 94,
+  "name": "Fade",
+  "sector": "Barbershop",
+  "category": "Health & Wellness",
+  "tagline": "Sharp fades, hot towels, no rush.",
+  "description": "A six-chair neighbourhood barbershop: price board, barbers with profiles and live next-free times, a four-step chair booking flow, a fade chart that draws your cut and writes it into the booking, a filterable cut gallery and a product shop with a persisted bag and pick-up/shipping checkout.",
+  "tags": [
+    "Fade chart builder",
+    "Chair booking",
+    "Barber profiles",
+    "Product shop"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/services", "title": "Services & prices" },
+    { "path": "/fade-chart", "title": "Fade chart" },
+    { "path": "/barbers", "title": "Barbers" },
+    { "path": "/barbers/jules", "title": "Barber profile" },
+    { "path": "/book", "title": "Book a chair" },
+    { "path": "/gallery", "title": "Gallery" },
+    { "path": "/shop", "title": "Shop" },
+    { "path": "/shop/heavy-pomade", "title": "Product" },
+    { "path": "/bag", "title": "Bag & checkout" },
+    { "path": "/about", "title": "Our story" },
+    { "path": "/visit", "title": "Hours & directions" }
+  ],
+  "colors": { "paper": "#f3efe6", "ink": "#161513", "accent": "#b3261e" },
+  "fonts": ["Alfa Slab One", "Barlow"]
+}

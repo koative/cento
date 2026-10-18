@@ -1,45 +1,36 @@
 # Commons
 
-Space for your next idea. Explore a shared workspace and find your kind of working day.
+Good work. Better company. Four houses, one key card. A coworking space website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-**[Live demo](https://koative.github.io/elseform/themes/commons/)** · Coworking
+## Pages
 
-## Run independently
+- `/` — Home: hero with a live "Today at Commons" desk board, the Mill Yard floor-plan zone explorer, memberships, the four houses, today's meeting-room board, events, the lobby member directory, a day at Commons and a tour close
+- `/memberships` — Plans with a monthly/yearly toggle, drop-in prices, a side-by-side comparison table and an FAQ
+- `/locations` — The four houses on a schematic city map, filterable by amenity
+- `/locations/:id` — Location page: gallery, interactive floor plan, story and host, front-desk hours with today highlighted, transit, meeting rooms and events at that house
+- `/rooms` — Meeting-room booking: pick a house, day and group size, choose a slot on the room board or the floor plan, set the length, then book with validation and a confirmation
+- `/events` — Calendar grouped by month, filterable by type and house
+- `/events/:id` — Event page with running order, host, places left and an RSVP form
+- `/community` — Member stories, a filterable notice board you can pin to, a searchable member directory and perks
+- `/about` — Story, timeline, the front-desk team and house rules
+- `/tour` — Tour booking form (house, weekday, time, team size) with confirmation
 
-Copy this folder, then run:
+## Run
 
 ```sh
-bun install
-bun run dev
-bun run build
+bun install && bun run dev
 ```
 
-The build uses a relative base and outputs `dist/`. React, TypeScript, Vite and Lucide are the only required runtime/build dependencies. The folder does not import any shared repository components.
-
-## Design
-
-An orange architectural note pinned to a full-width real workspace photograph. A drawn geometric floor plan connects with three zone controls; a pass calculator closes the flow.
-
-## Working interactions
-
-Select a floorplan zone, choose one to five days, see calculated pricing and create a local workday plan.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-Edit `src/App.tsx` for data and behavior, `src/styles.css` for type, layout, color and motion, and `index.html` for metadata. All state stays in memory and resets on refresh.
+`src/content.ts` holds all copy and data (houses, floor plans, rooms, plans, events, members). Design tokens live at `:root` in `src/styles.css`. Imagery is in `src/assets`.
 
-## Accessibility and motion
+## Demo behaviour
 
-Semantic landmarks, named controls, visible focus, mobile layouts and reduced-motion overrides. Original chart/floorplan geometry is paired with textual controls and outcomes.
+The room board, RSVP, tour, notice-board and newsletter forms validate in the browser and show loading and confirmation states; bookings appear on the board for the rest of the visit. Room availability is generated demo data. Nothing is sent, stored on a server or charged, and Commons, its houses and its people are fictional.
 
-## Assets and licenses
+## Credits
 
-DM Sans and Manrope are self-hosted in `src/assets/fonts/`, with OFL notices copied alongside them. Original sources are documented in the root font provenance file. Icons: Lucide, ISC license. CSS/SVG geometry is original template work.
-
-- workspace.jpg: https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1800&q=85&fit=crop
-
-Photography is locally included and subject to the [Unsplash license](https://unsplash.com/license). It illustrates fictional content and does not identify real items for sale.
-
-## Demonstration boundaries
-
-The brand, venue, routes, inventory, prices and activities are fictional sample content. No reservation, purchase, payment or message is sent. Connect your own backend and replace illustrative data before real commercial use. Template source is MIT licensed as part of Elseform.
+Font: Parkinsans (SIL Open Font License). Images: see `src/assets/SOURCES.md` (Unsplash License). Icons: Lucide (ISC). Code: MIT.

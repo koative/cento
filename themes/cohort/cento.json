@@ -1,0 +1,23 @@
+{
+  "number": 98,
+  "name": "Cohort",
+  "sector": "Venture capital firm",
+  "category": "Services",
+  "tagline": "First checks for the industrial middle.",
+  "description": "A seed-stage venture firm site set like a financial-press tombstone: filterable portfolio with company memos and round history, thesis, partners and partner pages, essays, a cap-table round modeller and a validated founders' pitch form.",
+  "tags": ["Round modeller", "Portfolio tombstones", "Pitch form", "Essays"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/portfolio", "title": "Portfolio" },
+    { "path": "/portfolio/halyard", "title": "Company" },
+    { "path": "/thesis", "title": "Thesis" },
+    { "path": "/team", "title": "Team" },
+    { "path": "/team/margit-oyelaran", "title": "Partner" },
+    { "path": "/writing", "title": "Writing" },
+    { "path": "/writing/one-page-term-sheet", "title": "Essay" },
+    { "path": "/founders", "title": "For founders" },
+    { "path": "/pitch", "title": "Pitch us" }
+  ],
+  "colors": { "paper": "#f3eee2", "ink": "#1b1a16", "accent": "#1e5a40" },
+  "fonts": ["Libre Caslon Display", "Geist"]
+}

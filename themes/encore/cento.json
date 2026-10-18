@@ -1,0 +1,26 @@
+{
+  "number": 54,
+  "name": "Encore",
+  "sector": "Theatre",
+  "category": "Culture & Media",
+  "tagline": "Eight productions, one house, and every seat with its view.",
+  "description": "A regional playhouse with a filterable season, rich production pages, and a three-step seat booking flow on a keyboard-operable auditorium map that previews the view from each seat — plus membership with monthly/yearly pricing, learning programmes and a visit guide.",
+  "tags": [
+    "Seat map with view preview",
+    "Booking flow",
+    "Membership tiers",
+    "Access performances"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/season", "title": "Season" },
+    { "path": "/season/the-space-between-the-words", "title": "Production" },
+    { "path": "/book/the-space-between-the-words", "title": "Seat booking" },
+    { "path": "/membership", "title": "Membership" },
+    { "path": "/learning", "title": "Learning" },
+    { "path": "/visit", "title": "Visit" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#f3ead8", "ink": "#1f1517", "accent": "#a51d2d" },
+  "fonts": ["Abril Fatface", "Karla"]
+}

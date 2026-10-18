@@ -1,0 +1,28 @@
+{
+  "number": 15,
+  "name": "Index",
+  "sector": "Independent bookstore",
+  "category": "Commerce",
+  "tagline": "Three rooms of books, chosen by people who read them.",
+  "description": "A multi-page independent bookshop with a filterable catalogue, book pages with formats and quantity, staff picks, events with seat reservations, a book club membership builder and a persisted bag with checkout.",
+  "tags": [
+    "Card catalogue drawer",
+    "Online bookshop",
+    "Events & RSVP",
+    "Book club membership"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/books", "title": "Catalogue" },
+    { "path": "/books/the-salt-orchard", "title": "Book" },
+    { "path": "/staff-picks", "title": "Staff picks" },
+    { "path": "/events", "title": "Events" },
+    { "path": "/events/ada-hart-in-conversation", "title": "Event" },
+    { "path": "/book-club", "title": "Book club" },
+    { "path": "/about", "title": "The shop" },
+    { "path": "/cart", "title": "Bag" },
+    { "path": "/checkout", "title": "Checkout" }
+  ],
+  "colors": { "paper": "#efe9d8", "ink": "#1f3328", "accent": "#b13f26" },
+  "fonts": ["EB Garamond", "Karla"]
+}

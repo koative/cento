@@ -1,0 +1,31 @@
+{
+  "number": 28,
+  "name": "Counsel",
+  "sector": "Law firm",
+  "category": "Services",
+  "tagline": "Clear counsel for the decisions that define a business or a family.",
+  "description": "A multi-page law firm site: filterable practice areas with area pages, a searchable people directory with profiles, insights set as numbered memoranda, a published fee schedule, a limitation-period timeline tool and a conflict-check-aware enquiry form.",
+  "tags": [
+    "Limitation clock",
+    "People directory",
+    "Fee schedule",
+    "Enquiry intake"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/practice", "title": "Practice areas" },
+    { "path": "/practice/employment", "title": "Practice area" },
+    { "path": "/people", "title": "People" },
+    { "path": "/people/nora-tierney", "title": "Profile" },
+    { "path": "/insights", "title": "Insights" },
+    {
+      "path": "/insights/revocable-trusts-are-not-a-tax-plan",
+      "title": "Article"
+    },
+    { "path": "/firm", "title": "The firm" },
+    { "path": "/fees", "title": "Fees" },
+    { "path": "/enquiry", "title": "Enquiry" }
+  ],
+  "colors": { "paper": "#f4f0e8", "ink": "#1c211f", "accent": "#8c2a22" },
+  "fonts": ["Libre Baskerville", "Libre Franklin"]
+}

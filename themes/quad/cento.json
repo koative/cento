@@ -1,0 +1,28 @@
+{
+  "number": 90,
+  "name": "Quad",
+  "sector": "University",
+  "category": "Education & Community",
+  "tagline": "Study where the city meets the quad. Applications for 2027 are open.",
+  "description": "A university website in the voice of a printed prospectus: programme finder with filters and sorting, programme pages with a credit-counting module planner and clash-checking timetable, admissions with fees toggle, campus plan, research, events with booking, and a three-step application form.",
+  "tags": [
+    "Programme finder",
+    "Module planner",
+    "Campus map",
+    "Application form"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/programmes", "title": "Programme finder" },
+    { "path": "/programmes/history", "title": "Programme" },
+    { "path": "/admissions", "title": "Admissions" },
+    { "path": "/apply", "title": "Apply" },
+    { "path": "/campus-life", "title": "Campus life" },
+    { "path": "/research", "title": "Research" },
+    { "path": "/events", "title": "Events" },
+    { "path": "/events/autumn-open-day", "title": "Event" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#f5f0e6", "ink": "#1d232c", "accent": "#8f1c2f" },
+  "fonts": ["Domine", "Source Sans 3"]
+}

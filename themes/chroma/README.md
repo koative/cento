@@ -1,32 +1,36 @@
 # Chroma
 
-A sharp salon lookbook and a service-duration appointment planner.
+Colour that grows out as well as it goes on. A hair salon website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: hero with from-prices and live open status, menu in short, recent looks, interactive shade-level chart, chair-time planner preview, stylists, client quote, product shelf, hours and a closing call to book
+- `/services` — Services & prices: full menu by category with price toggle by stylist level, timed steps per service, add-to-booking with a sticky booking bar
+- `/lookbook` — Lookbook: filter by kind of work and by stylist
+- `/lookbook/:id` — Look: photo, formula card, stylist, the appointment as a chair-time plan, “Book this look”, related looks
+- `/stylists` — Stylists: filter by specialism, what the levels mean, weekly rota table
+- `/stylists/:id` — Stylist profile: bio, quote, days in, most-booked services at their prices, their looks, favourite product, “Book with …”
+- `/products` — Products: filter by need, sort by price, set aside for pickup with a running total
+- `/book` — Book: services, stylist, patch-test rule, day and time slots, details form with validation, live chair-time summary, confirmation
+- `/about` — About: story, how the salon runs, client words, careers
+- `/visit` — Visit: open status, hours, contact, getting here, access, policies, FAQ
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Build with `bun run build`. Deploy `dist/` to any static host. Relative Vite asset paths support subdirectories.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
-## Design and interactions
+## Customize
 
-Peach and burgundy salon lookbook with sweeping italic-free high contrast type. Portrait crop shifts between services; appointment selection computes duration and price.
+`src/content.ts` holds all copy and data (services, steps and prices, stylists, looks, products, hours, policies). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
-Edit `src/App.tsx` for content and behavior, `src/styles.css` for the design system, and `index.html` for metadata. React, TypeScript, Vite and Lucide icons. No backend required.
+## Demo behaviour
 
-## Accessibility
+Services, a chosen stylist and set-aside products are kept in `localStorage` (falling back to memory) so they follow you from the menu, a look or a profile into booking. The booking page computes your appointment minute by minute, shows which start times fit before closing, blocks the next two days for new colour clients who need a patch test, validates every field and ends on a confirmation with a reference number. Booked slots are simulated. Nothing is sent, booked or charged, and Chroma is a fictional brand.
 
-Semantic landmarks, visible focus, labeled controls, mobile reflow and reduced-motion preferences. All interaction state is local to this visit and resets on reload.
+## Credits
 
-## Demonstration content
-
-All brands, people, schedules, products, prices and availability are fictional sample content. No booking, payment, message, or personal data leaves the page. Replace example content and connect your own services for production.
-
-## Assets
-
-Fonts are self-hosted in `src/assets/fonts/`, copied from the collection's frame template with their OFL notices. DM Sans is also bundled. Fonts originate from [Google Fonts](https://fonts.google.com/). Icons: [Lucide](https://lucide.dev/), ISC license. Original vector diagrams and CSS graphics are part of this MIT-licensed template.
-
-Photography `portrait.jpg`: [photo-1524504388940-b1c1722653e1](https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1600&q=85), [Unsplash license](https://unsplash.com/license). Bundled locally; illustrative use does not imply endorsement.
+Fonts: Yeseva One and Montserrat (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

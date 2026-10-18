@@ -1,0 +1,28 @@
+{
+  "number": 60,
+  "name": "Mosaic",
+  "sector": "Interior design studio",
+  "category": "Creative",
+  "tagline": "Rooms composed from the materials up.",
+  "description": "A multi-page interior design studio site: filterable projects with case pages, services and fees, a stage-by-stage process timeline, a 15-sample material library with spec pages, a sample-board builder and a consultation booking flow.",
+  "tags": [
+    "Sample-board builder",
+    "Material library",
+    "Consultation booking",
+    "Project timeline"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/projects", "title": "Projects" },
+    { "path": "/projects/alder-house", "title": "Project" },
+    { "path": "/services", "title": "Services" },
+    { "path": "/process", "title": "Process" },
+    { "path": "/materials", "title": "Material library" },
+    { "path": "/materials/carrara", "title": "Material" },
+    { "path": "/samples", "title": "Sample board" },
+    { "path": "/studio", "title": "Studio" },
+    { "path": "/consultation", "title": "Consultation" }
+  ],
+  "colors": { "paper": "#f3efe7", "ink": "#2c2e28", "accent": "#8a4630" },
+  "fonts": ["Marcellus", "Jost"]
+}

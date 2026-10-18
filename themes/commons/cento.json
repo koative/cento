@@ -1,0 +1,28 @@
+{
+  "number": 49,
+  "name": "Commons",
+  "sector": "Coworking space",
+  "category": "Services",
+  "tagline": "Good work. Better company. Four houses, one key card.",
+  "description": "A multi-page coworking site: memberships with a monthly/yearly toggle, four locations with interactive floor plans, a live meeting-room board with booking, an events calendar with RSVPs, and a community notice board.",
+  "tags": [
+    "Meeting-room board",
+    "Interactive floor plans",
+    "Events & RSVP",
+    "Memberships"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/memberships", "title": "Memberships" },
+    { "path": "/locations", "title": "Locations" },
+    { "path": "/locations/mill-yard", "title": "Location" },
+    { "path": "/rooms", "title": "Meeting rooms" },
+    { "path": "/events", "title": "Events" },
+    { "path": "/events/show-and-tell-31", "title": "Event" },
+    { "path": "/community", "title": "Community" },
+    { "path": "/about", "title": "About" },
+    { "path": "/tour", "title": "Book a tour" }
+  ],
+  "colors": { "paper": "#f2efe6", "ink": "#2b3127", "accent": "#b4492a" },
+  "fonts": ["Parkinsans"]
+}

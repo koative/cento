@@ -1,0 +1,25 @@
+{
+  "number": 95,
+  "name": "Kettle",
+  "sector": "Craft brewery & taproom",
+  "category": "Food & Drink",
+  "tagline": "Brewed in copper. Poured twelve feet from the kettle.",
+  "description": "A multi-page brewery and taproom site: live tap board, beer pages with full brew sheets, a flight-paddle builder, events calendar, tour booking, a pickup shop with cart and checkout, and an age gate.",
+  "tags": ["Flight builder", "Tour booking", "Pickup shop", "Age gate"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/beers", "title": "Beers" },
+    { "path": "/beers/low-water", "title": "Beer" },
+    { "path": "/taproom", "title": "Taproom menu" },
+    { "path": "/events", "title": "Events" },
+    { "path": "/events/the-ferrymen", "title": "Event" },
+    { "path": "/tours", "title": "Tours booking" },
+    { "path": "/shop", "title": "Shop" },
+    { "path": "/shop/copper-marzen-4pack", "title": "Product" },
+    { "path": "/cart", "title": "Cart" },
+    { "path": "/checkout", "title": "Checkout" },
+    { "path": "/about", "title": "Story" }
+  ],
+  "colors": { "paper": "#f3ead8", "ink": "#241710", "accent": "#a8461c" },
+  "fonts": ["Ultra", "Work Sans"]
+}

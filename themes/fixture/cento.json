@@ -1,0 +1,26 @@
+{
+  "number": 92,
+  "name": "Fixture",
+  "sector": "Plumbing & electrical services",
+  "category": "Services",
+  "tagline": "A fixed price before the work. A two-year warranty after it.",
+  "description": "A plumbing and electrical contractor site: filterable services with detail pages, an instant estimator that writes a live carbon-copy work order, a clickable service-area map with ZIP checker, emergency triage and a validated visit-booking flow.",
+  "tags": [
+    "Instant estimate",
+    "Service-area map",
+    "Emergency triage",
+    "Visit booking"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/services", "title": "Services" },
+    { "path": "/services/leak-repair", "title": "Service" },
+    { "path": "/estimate", "title": "Instant estimate" },
+    { "path": "/areas", "title": "Service areas" },
+    { "path": "/emergency", "title": "Emergency" },
+    { "path": "/book", "title": "Book a visit" },
+    { "path": "/about", "title": "About & team" }
+  ],
+  "colors": { "paper": "#f4f2ec", "ink": "#141c2a", "accent": "#f5c02e" },
+  "fonts": ["Roboto Slab", "Roboto"]
+}

@@ -1,4 +1,4 @@
-name: Deploy Elseform
+name: Deploy Cento
 on:
   push:
     branches: [main]

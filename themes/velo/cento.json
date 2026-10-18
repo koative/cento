@@ -1,0 +1,22 @@
+{
+  "number": 17,
+  "name": "Velo",
+  "sector": "Bicycle shop & builds",
+  "category": "Commerce",
+  "tagline": "Steel bicycles, drawn to fit and serviced for life.",
+  "description": "A multi-page bicycle shop and frame workshop: filterable bike catalogue with size, finish and geometry tables, a to-scale build configurator, workshop booking with a drop-off calendar, a rides club schedule with elevation profiles, and a persisted cart with checkout.",
+  "tags": ["Bike shop", "Build configurator", "Service booking", "Rides club"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/bikes", "title": "Bikes" },
+    { "path": "/bikes/corsa", "title": "Bike" },
+    { "path": "/build", "title": "Build configurator" },
+    { "path": "/service", "title": "Workshop" },
+    { "path": "/rides", "title": "Rides club" },
+    { "path": "/about", "title": "About" },
+    { "path": "/cart", "title": "Cart" },
+    { "path": "/checkout", "title": "Checkout" }
+  ],
+  "colors": { "paper": "#f2f0e7", "ink": "#1f2421", "accent": "#d42d22" },
+  "fonts": ["Saira Condensed", "Saira"]
+}

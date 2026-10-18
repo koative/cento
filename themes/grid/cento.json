@@ -1,0 +1,28 @@
+{
+  "number": 29,
+  "name": "Grid",
+  "sector": "Home solar & energy",
+  "category": "Industry",
+  "tagline": "Your roof, wired to run your home.",
+  "description": "A home solar installer site: roof-layout solar planner with an hour-by-hour energy-flow day, product catalogue with datasheet drawings, financing calculator, case studies with bill charts and a three-step quote form.",
+  "tags": [
+    "Roof solar planner",
+    "Energy-flow day",
+    "Financing calculator",
+    "Multi-step quote"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/planner", "title": "Solar planner" },
+    { "path": "/products", "title": "Products" },
+    { "path": "/products/grid-store-13", "title": "Product" },
+    { "path": "/financing", "title": "Financing" },
+    { "path": "/how-it-works", "title": "How it works" },
+    { "path": "/case-studies", "title": "Case studies" },
+    { "path": "/case-studies/harlow-avenue", "title": "Case study" },
+    { "path": "/about", "title": "About" },
+    { "path": "/quote", "title": "Get a quote" }
+  ],
+  "colors": { "paper": "#f5f1e8", "ink": "#17211c", "accent": "#a8420c" },
+  "fonts": ["Lexend"]
+}

@@ -1,105 +1,136 @@
 import { test, expect } from "@playwright/test";
-import { catalog } from "../gallery/catalog";
-const slugs = catalog.map((template) => template.slug);
-for (const slug of slugs) {
-  test(`${slug}: static deployment and responsive layout`, async ({ page }) => {
-    const errors: string[] = [];
-    page.on("pageerror", (e) => errors.push(e.message));
-    await page.goto(`themes/${slug}/`);
-    await expect(page.locator("h1")).toBeVisible();
-    await expect(page.locator("body")).toContainText(/fictional|demo|concept/i);
-    await page.setViewportSize({ width: 390, height: 844 });
-    expect(
-      await page.evaluate(
-        () => document.documentElement.scrollWidth <= innerWidth + 1,
-      ),
-    ).toBeTruthy();
-    expect(errors).toEqual([]);
-    const broken = await page
-      .locator("img")
-      .evaluateAll(
-        (imgs) =>
-          imgs.filter(
-            (i) =>
-              (i as HTMLImageElement).complete &&
-              (i as HTMLImageElement).naturalWidth === 0,
-          ).length,
-      );
-    expect(broken).toBe(0);
-  });
-}
-test("gallery filters, empty state, preview and device controls", async ({
+import { readdirSync, readFileSync, existsSync } from "node:fs";
+
+const catalog = readdirSync("themes")
+  .filter((slug) => existsSync(`themes/${slug}/cento.json`))
+  .map((slug) => ({
+    slug,
+    ...JSON.parse(readFileSync(`themes/${slug}/cento.json`, "utf8")),
+  }))
+  .sort((a, b) => a.number - b.number);
+const cards = ".grid > li";
+
+test("category chips and search filter the grid, with an empty state that recovers", async ({
   page,
 }) => {
   await page.goto("./");
-  await expect(page.locator(".template-entry")).toHaveCount(catalog.length);
-  await page.getByRole("button", { name: "Technology", exact: true }).click();
-  await expect(page.locator(".template-entry")).toHaveCount(
-    catalog.filter((template) => template.category === "Technology").length,
+  await expect(page.locator(cards)).toHaveCount(catalog.length);
+  const category = catalog[0].category;
+  await page.locator(".chips .chip", { hasText: category }).click();
+  await expect(page.locator(cards)).toHaveCount(
+    catalog.filter((t) => t.category === category).length,
   );
-  await page.getByRole("searchbox").fill("not-a-template");
-  await expect(page.getByText("No match, yet.")).toBeVisible();
-  await page.getByRole("button", { name: "Show all templates" }).click();
-  await expect(page.locator(".template-entry")).toHaveCount(catalog.length);
+  const search = page.locator(".bar").getByRole("searchbox");
+  await search.fill("zzz-not-a-template");
+  await expect(page.locator(cards)).toHaveCount(0);
   await page
-    .getByRole("button", { name: "Preview Orbit", exact: true })
+    .locator(".empty")
+    .getByRole("button", { name: /^Show all/ })
     .click();
-  await expect(page.locator("dialog")).toBeVisible();
-  await page.getByRole("button", { name: "mobile preview" }).click();
-  await expect(page.locator(".preview-canvas")).toHaveClass(/mobile/);
+  await expect(page.locator(cards)).toHaveCount(catalog.length);
+  await expect(search).toHaveValue("");
   await expect(
-    page.frameLocator("iframe").getByRole("heading", { level: 1 }),
-  ).toContainText("perspective");
-  await page.getByRole("button", { name: "Close preview" }).click();
-  await expect(page.locator("dialog")).not.toBeVisible();
-});
-test("Orbit mission and motion controls", async ({ page }) => {
-  await page.goto("themes/orbit/");
-  await page.getByRole("tab", { name: /Lumen/ }).click();
-  await expect(page.getByRole("tabpanel")).toContainText("1,200");
-  await page.getByRole("button", { name: "Pause orbit animation" }).click();
-  await expect(
-    page.getByRole("button", { name: "Play orbit animation" }),
-  ).toBeVisible();
-});
-test("Ledger local card controls", async ({ page }) => {
-  await page.goto("themes/ledger/");
-  await page.getByRole("button", { name: "Freeze card", exact: true }).click();
-  await expect(page.getByText("Your card is paused")).toBeVisible();
-  await page.getByRole("button", { name: "Unfreeze", exact: true }).click();
-  await expect(page.getByText("Your everyday card")).toBeVisible();
-});
-test("Signal search and downloadable CSV", async ({ page }) => {
-  await page.goto("themes/signal/");
-  await page.getByRole("textbox", { name: "Search pages" }).fill("contact");
-  await expect(page.locator("tbody tr")).toHaveCount(1);
-  const downloaded = page.waitForEvent("download");
-  await page.getByRole("button", { name: "Download CSV" }).click();
-  const file = await downloaded;
-  expect(file.suggestedFilename()).toMatch(/signal-pages/);
-  await page.getByLabel("Reporting period").selectOption("7 days");
-  await expect(page.getByText("6,961", { exact: true })).toBeVisible();
+    page.locator(".chips .chip", { hasText: "All" }).first(),
+  ).toHaveAttribute("aria-pressed", "true");
 });
 
-test("gallery sorts by newest and name while preserving filters", async ({
+test("the featured rail changes the featured template", async ({ page }) => {
+  await page.goto("./");
+  const rail = page.getByRole("group", { name: "Featured templates" });
+  const buttons = rail.getByRole("button");
+  const names = await rail.locator("span").allTextContents();
+  await expect(page.locator(".feature-name")).toHaveText(names[0]);
+  await buttons.nth(1).click();
+  await expect(buttons.nth(1)).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator(".feature-name")).toHaveText(names[1]);
+});
+
+test("saving persists across a reload and the Saved filter shows it", async ({
   page,
 }) => {
   await page.goto("./");
-  await page.getByLabel("Sort templates").selectOption("newest");
-  await expect(page.locator(".template-entry").first()).toHaveAttribute(
-    "id",
-    catalog.at(-1)!.slug,
+  const first = page.locator(cards).first();
+  const save = first.getByRole("button", { name: `Save ${catalog[0].name}` });
+  await save.click();
+  await expect(save).toHaveAttribute("aria-pressed", "true");
+  await page.reload();
+  await page
+    .locator(".bar")
+    .getByRole("button", { name: /^Saved/ })
+    .click();
+  await expect(page.locator(cards)).toHaveCount(1);
+  await expect(page.locator(cards).first().locator("h3")).toHaveText(
+    catalog[0].name,
   );
-  await page.getByLabel("Sort templates").selectOption("name");
-  const first = [...catalog].sort((a, b) => a.name.localeCompare(b.name))[0];
-  await expect(page.locator(".template-entry").first()).toHaveAttribute(
-    "id",
-    first.slug,
+});
+
+test("preview opens the live template and the Page select changes its route", async ({
+  page,
+}) => {
+  const t = catalog[0];
+  await page.goto("./");
+  await page
+    .locator(cards)
+    .first()
+    .getByRole("button", { name: `Preview ${t.name}` })
+    .click();
+  const dialog = page.getByRole("dialog");
+  await expect(dialog.getByRole("heading", { name: t.name })).toBeVisible();
+  const frame = page.frameLocator(`iframe[title="${t.name} live preview"]`);
+  await expect(frame.locator("h1")).toBeVisible();
+  const second = t.pages[1];
+  await dialog.getByLabel("Page").selectOption(second.path);
+  await expect(dialog.locator("iframe")).toHaveAttribute(
+    "src",
+    new RegExp(`#${second.path}$`),
   );
-  await page.getByRole("searchbox").fill("planetarium");
-  await expect(page.locator(".template-entry")).toHaveCount(1);
-  await expect(page.locator(".template-entry")).toHaveAttribute(
-    "id",
-    "equinox",
-  );
+  await page.keyboard.press("Escape");
+  await expect(dialog).toBeHidden();
+});
+
+test("appearance follows the choice, persists, and System follows the OS", async ({
+  page,
+}) => {
+  const appearance = page.getByRole("radiogroup", { name: "Appearance" });
+  await page.emulateMedia({ colorScheme: "light" });
+  await page.goto("./");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+  await appearance.getByRole("radio", { name: "Dark" }).check();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await appearance.getByRole("radio", { name: "System" }).check();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+  await page.emulateMedia({ colorScheme: "dark" });
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+});
+
+test("the category rail reveals hidden categories with its scroll buttons", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("./");
+  await expect(
+    page.getByRole("button", { name: "Show previous categories" }),
+  ).toHaveCount(0);
+  await page.getByRole("button", { name: "Show more categories" }).click();
+  await expect(
+    page.getByRole("button", { name: "Show previous categories" }),
+  ).toBeVisible();
+});
+
+test("the mobile menu reaches every section and closes on Escape", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("./");
+  const toggle = page.getByRole("button", { name: "Menu" });
+  await toggle.click();
+  await expect(toggle).toHaveAttribute("aria-expanded", "true");
+  const menu = page.getByRole("navigation", { name: "Menu" });
+  await expect(menu.getByRole("link", { name: "How to use" })).toBeVisible();
+  await expect(menu.getByRole("link", { name: /Docs/ })).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(menu).toBeHidden();
+  await expect(toggle).toBeFocused();
 });

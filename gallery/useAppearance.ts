@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 export type Appearance = "system" | "light" | "dark";
-const key = "elseform-appearance";
+const key = "cento-appearance";
 function preference(value: string | null): Appearance {
   return value === "light" || value === "dark" ? value : "system";
 }
@@ -38,7 +38,7 @@ export function useAppearance() {
     document.documentElement.style.colorScheme = theme;
     document
       .querySelector('meta[name="theme-color"]')
-      ?.setAttribute("content", theme === "dark" ? "#0c1320" : "#eef2f8");
+      ?.setAttribute("content", theme === "dark" ? "#0b0b0d" : "#ffffff");
   }, [theme]);
   function setPreference(next: Appearance) {
     setAppearance(next);

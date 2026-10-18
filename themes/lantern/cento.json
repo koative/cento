@@ -1,0 +1,27 @@
+{
+  "number": 82,
+  "name": "Lantern",
+  "sector": "Community charity & fundraising",
+  "category": "Education & Community",
+  "tagline": "Small lights, carried together. Your town's fund, in the window.",
+  "description": "A community charity site: campaign list with filters, campaign pages with a live fundraising thermometer, a three-step donate flow with receipt, events with RSVP, volunteer sign-up with an availability grid, and open-book annual reports.",
+  "tags": [
+    "Live totaliser board",
+    "Donate flow",
+    "Event RSVP",
+    "Open-book reports"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/campaigns", "title": "Campaigns" },
+    { "path": "/campaigns/warm-homes", "title": "Campaign" },
+    { "path": "/donate", "title": "Donate" },
+    { "path": "/events", "title": "Events" },
+    { "path": "/events/lantern-walk", "title": "Event" },
+    { "path": "/volunteer", "title": "Volunteer" },
+    { "path": "/reports", "title": "Reports" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#f6f0e3", "ink": "#1c2332", "accent": "#ef6a2c" },
+  "fonts": ["Bitter", "Source Sans 3"]
+}

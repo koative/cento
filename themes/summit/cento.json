@@ -1,0 +1,29 @@
+{
+  "number": 33,
+  "name": "Summit",
+  "sector": "Climbing gym",
+  "category": "Health & Wellness",
+  "tagline": "Six walls, one reset every Tuesday, always something new to try.",
+  "description": "A bouldering and rope gym site with an interactive route map (floor plan, wall topos, circuit filters, hold-by-hold stepper, saved tick list), classes timetable + class pages, memberships with a value calculator, events + RSVP, youth team and a day-pass booking flow.",
+  "tags": [
+    "Interactive route map",
+    "Day-pass booking",
+    "Classes timetable",
+    "Membership calculator"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/routes", "title": "Route map" },
+    { "path": "/classes", "title": "Classes" },
+    { "path": "/classes/footwork-fundamentals", "title": "Class" },
+    { "path": "/memberships", "title": "Memberships" },
+    { "path": "/events", "title": "Events" },
+    { "path": "/events/boulder-league-round-3", "title": "Event" },
+    { "path": "/youth", "title": "Youth team" },
+    { "path": "/book", "title": "Book a day pass" },
+    { "path": "/about", "title": "About" },
+    { "path": "/visit", "title": "Visit" }
+  ],
+  "colors": { "paper": "#f3f1ec", "ink": "#16181a", "accent": "#ff5a1f" },
+  "fonts": ["Bowlby One", "Barlow"]
+}

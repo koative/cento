@@ -1,0 +1,27 @@
+{
+  "number": 81,
+  "name": "Tally",
+  "sector": "Small-business accounting firm",
+  "category": "Services",
+  "tagline": "Books closed by the 10th. Taxes filed before the deadline.",
+  "description": "A bookkeeping, tax and payroll firm for owner-run businesses: services with detail pages, packages with monthly/yearly billing and a columnar comparison, a personalised tax deadline calendar with .ics export, a filterable resource library with articles, and a book-a-call flow with a slot picker.",
+  "tags": [
+    "Tax deadline calendar",
+    "Packages pricing",
+    "Book a call",
+    "Resource library"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/services", "title": "Services" },
+    { "path": "/services/bookkeeping", "title": "Service" },
+    { "path": "/pricing", "title": "Packages & pricing" },
+    { "path": "/calendar", "title": "Tax deadline calendar" },
+    { "path": "/resources", "title": "Resources" },
+    { "path": "/resources/quarterly-estimates-explained", "title": "Article" },
+    { "path": "/about", "title": "About" },
+    { "path": "/book", "title": "Book a call" }
+  ],
+  "colors": { "paper": "#f3f5ec", "ink": "#15251d", "accent": "#b8322a" },
+  "fonts": ["Hanken Grotesk"]
+}

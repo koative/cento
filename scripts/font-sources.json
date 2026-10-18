@@ -1,645 +1,5 @@
 [
   {
-    "family": "DM Sans",
-    "file": "gallery/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "gallery/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/atelier/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/atelier/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Bricolage Grotesque",
-    "file": "themes/ember/src/assets/fonts/bricolage-grotesque-5f754c3a.woff2",
-    "source": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInE.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/ember/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/forma/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/forma/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/haven/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Italiana",
-    "file": "themes/haven/src/assets/fonts/italiana-846911c4.woff2",
-    "source": "https://fonts.gstatic.com/s/italiana/v21/QldNNTtLsx4E__B0XQmWaXw.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/ledger/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/ledger/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Cormorant Garamond",
-    "file": "themes/muse/src/assets/fonts/cormorant-garamond-291655ad.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2"
-  },
-  {
-    "family": "Cormorant Garamond",
-    "file": "themes/muse/src/assets/fonts/cormorant-garamond-d9ec8210.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/muse/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/orbit/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/orbit/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/pulse/src/assets/fonts/barlow-condensed-fdb19320.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lwz3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/pulse/src/assets/fonts/barlow-condensed-808d8d26.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/pulse/src/assets/fonts/barlow-condensed-2a84ba04.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/pulse/src/assets/fonts/barlow-condensed-488e956f.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/pulse/src/assets/fonts/barlow-condensed-c876947c.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B45L0z3bWuQ.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/pulse/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/signal/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "IBM Plex Sans",
-    "file": "themes/signal/src/assets/fonts/ibm-plex-sans-6d5e7fb8.woff2",
-    "source": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/still/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "themes/still/src/assets/fonts/instrument-serif-0d985700.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "themes/still/src/assets/fonts/instrument-serif-05103e2a.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/terrain/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "themes/terrain/src/assets/fonts/instrument-serif-0d985700.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "themes/terrain/src/assets/fonts/instrument-serif-05103e2a.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/roast/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/roast/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/arcade/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/arcade/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Bodoni Moda",
-    "file": "themes/bloom/src/assets/fonts/bodoni-moda-13cf898e.woff2",
-    "source": "https://fonts.gstatic.com/s/bodonimoda/v28/aFTB7PxzY382XsXX63LUYJSPUqb0pL6OQqxrZLnVbtxSXgM.woff2"
-  },
-  {
-    "family": "Bodoni Moda",
-    "file": "themes/bloom/src/assets/fonts/bodoni-moda-ad1ed94f.woff2",
-    "source": "https://fonts.gstatic.com/s/bodonimoda/v28/aFTH7PxzY382XsXX63LUYL6GYFcan6NJrKp-VPj1KOxQ.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/bloom/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/frame/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Italiana",
-    "file": "themes/frame/src/assets/fonts/italiana-846911c4.woff2",
-    "source": "https://fonts.gstatic.com/s/italiana/v21/QldNNTtLsx4E__B0XQmWaXw.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/index/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Lora",
-    "file": "themes/index/src/assets/fonts/lora-7d7da0fe.woff2",
-    "source": "https://fonts.gstatic.com/s/lora/v37/0QIhMX1D_JOuMw_LIftL.woff2"
-  },
-  {
-    "family": "Lora",
-    "file": "themes/index/src/assets/fonts/lora-ebd7f0a7.woff2",
-    "source": "https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwr7Iw.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/monograph/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/monograph/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/monograph/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/monograph/src/assets/fonts/libre-caslon-text-1ccc4ec2.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT578IGsGw1aF1JU10PUbTvNNaDMfID8vdkPx4.woff2"
-  },
-  {
-    "family": "Cormorant Garamond",
-    "file": "themes/nocturne/src/assets/fonts/cormorant-garamond-291655ad.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2"
-  },
-  {
-    "family": "Cormorant Garamond",
-    "file": "themes/nocturne/src/assets/fonts/cormorant-garamond-d9ec8210.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/nocturne/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Inter",
-    "file": "themes/prism/src/assets/fonts/inter-e3237528.woff2",
-    "source": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/prism/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/velo/src/assets/fonts/barlow-condensed-fdb19320.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lwz3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/velo/src/assets/fonts/barlow-condensed-808d8d26.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/velo/src/assets/fonts/barlow-condensed-2a84ba04.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/velo/src/assets/fonts/barlow-condensed-488e956f.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/velo/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Cormorant Garamond",
-    "file": "themes/kiln/src/assets/fonts/cormorant-garamond-291655ad.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/kiln/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Cormorant Garamond",
-    "file": "themes/kiln/src/assets/fonts/cormorant-garamond-d9ec8210.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/tide/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/tide/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Cormorant Garamond",
-    "file": "themes/aura/src/assets/fonts/cormorant-garamond-291655ad.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/aura/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Cormorant Garamond",
-    "file": "themes/aura/src/assets/fonts/cormorant-garamond-d9ec8210.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/relay/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/relay/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/gavel/src/assets/fonts/libre-caslon-text-1ccc4ec2.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT578IGsGw1aF1JU10PUbTvNNaDMfID8vdkPx4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/gavel/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/gavel/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/gavel/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/counsel/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/counsel/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/ink/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Cormorant Garamond",
-    "file": "themes/ink/src/assets/fonts/cormorant-garamond-291655ad.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/ink/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Cormorant Garamond",
-    "file": "themes/ink/src/assets/fonts/cormorant-garamond-d9ec8210.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/proof/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Cormorant Garamond",
-    "file": "themes/proof/src/assets/fonts/cormorant-garamond-291655ad.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/proof/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Cormorant Garamond",
-    "file": "themes/proof/src/assets/fonts/cormorant-garamond-d9ec8210.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/encore/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Cormorant Garamond",
-    "file": "themes/encore/src/assets/fonts/cormorant-garamond-291655ad.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/encore/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Cormorant Garamond",
-    "file": "themes/encore/src/assets/fonts/cormorant-garamond-d9ec8210.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2"
-  },
-  {
-    "family": "Italiana",
-    "file": "themes/chroma/src/assets/fonts/italiana-846911c4.woff2",
-    "source": "https://fonts.gstatic.com/s/italiana/v21/QldNNTtLsx4E__B0XQmWaXw.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/chroma/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "IBM Plex Sans",
-    "file": "themes/civic/src/assets/fonts/ibm-plex-sans-6d5e7fb8.woff2",
-    "source": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/civic/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/harbor/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/harbor/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/alloy/src/assets/fonts/barlow-condensed-2a84ba04.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/alloy/src/assets/fonts/barlow-condensed-808d8d26.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/alloy/src/assets/fonts/barlow-condensed-fdb19320.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lwz3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/alloy/src/assets/fonts/barlow-condensed-488e956f.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/alloy/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/flux/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/flux/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/commons/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/commons/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/equinox/src/assets/fonts/libre-caslon-text-1ccc4ec2.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT578IGsGw1aF1JU10PUbTvNNaDMfID8vdkPx4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/equinox/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/equinox/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/equinox/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
-  },
-  {
-    "family": "Bricolage Grotesque",
-    "file": "themes/circuit/src/assets/fonts/bricolage-grotesque-5f754c3a.woff2",
-    "source": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInE.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/circuit/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/summit/src/assets/fonts/barlow-condensed-2a84ba04.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/summit/src/assets/fonts/barlow-condensed-c876947c.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B45L0z3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/summit/src/assets/fonts/barlow-condensed-808d8d26.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/summit/src/assets/fonts/barlow-condensed-fdb19320.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lwz3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/summit/src/assets/fonts/barlow-condensed-488e956f.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/summit/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/campus/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/campus/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/odyssey/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "themes/odyssey/src/assets/fonts/instrument-serif-0d985700.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "themes/odyssey/src/assets/fonts/instrument-serif-05103e2a.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
-  },
-  {
-    "family": "Lora",
-    "file": "themes/grove/src/assets/fonts/lora-7d7da0fe.woff2",
-    "source": "https://fonts.gstatic.com/s/lora/v37/0QIhMX1D_JOuMw_LIftL.woff2"
-  },
-  {
-    "family": "Lora",
-    "file": "themes/grove/src/assets/fonts/lora-ebd7f0a7.woff2",
-    "source": "https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwr7Iw.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/grove/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/cipher/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/cipher/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/field/src/assets/fonts/barlow-condensed-2a84ba04.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/field/src/assets/fonts/barlow-condensed-c876947c.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B45L0z3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/field/src/assets/fonts/barlow-condensed-808d8d26.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/field/src/assets/fonts/barlow-condensed-fdb19320.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lwz3bWuQ.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/field/src/assets/fonts/barlow-condensed-488e956f.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/field/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
     "family": "Lora",
     "file": "themes/chapter/src/assets/fonts/lora-7d7da0fe.woff2",
     "source": "https://fonts.gstatic.com/s/lora/v37/0QIhMX1D_JOuMw_LIftL.woff2"
@@ -650,913 +10,1443 @@
     "source": "https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwr7Iw.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/chapter/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Roboto",
+    "file": "themes/fixture/src/assets/fonts/roboto-be171dff.woff2",
+    "source": "https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHQuAj-kw.woff2"
   },
   {
-    "family": "Bricolage Grotesque",
-    "file": "themes/drift/src/assets/fonts/bricolage-grotesque-5f754c3a.woff2",
-    "source": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInE.woff2"
+    "family": "Roboto",
+    "file": "themes/fixture/src/assets/fonts/roboto-890de452.woff2",
+    "source": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/drift/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Roboto Slab",
+    "file": "themes/fixture/src/assets/fonts/roboto-slab-eb4a9038.woff2",
+    "source": "https://fonts.gstatic.com/s/robotoslab/v36/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2"
   },
   {
-    "family": "Lora",
-    "file": "themes/solace/src/assets/fonts/lora-7d7da0fe.woff2",
-    "source": "https://fonts.gstatic.com/s/lora/v37/0QIhMX1D_JOuMw_LIftL.woff2"
+    "family": "Wix Madefor Display",
+    "file": "themes/flux/src/assets/fonts/wix-madefor-display-8f940aa5.woff2",
+    "source": "https://fonts.gstatic.com/s/wixmadefordisplay/v12/SZcl3EX9IbbyeJ8aOluD52KXgUA_7Ed1CVHuAg.woff2"
   },
   {
-    "family": "Lora",
-    "file": "themes/solace/src/assets/fonts/lora-ebd7f0a7.woff2",
-    "source": "https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwr7Iw.woff2"
+    "family": "Wix Madefor Text",
+    "file": "themes/flux/src/assets/fonts/wix-madefor-text-b162ba92.woff2",
+    "source": "https://fonts.gstatic.com/s/wixmadefortext/v17/-W_jXI_oSymQ8Qj-Apx3HGN_Hu1RZiAh5SQb.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/solace/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Wix Madefor Text",
+    "file": "themes/flux/src/assets/fonts/wix-madefor-text-ad9993c3.woff2",
+    "source": "https://fonts.gstatic.com/s/wixmadefortext/v17/-W_lXI_oSymQ8Qj-Apx3HGN_Hu1RZiUR5w.woff2"
+  },
+  {
+    "family": "Hanken Grotesk",
+    "file": "themes/folio/src/assets/fonts/hanken-grotesk-b28085b4.woff2",
+    "source": "https://fonts.gstatic.com/s/hankengrotesk/v12/ieVl2YZDLWuGJpnzaiwFXS9tYtpY19K7DQ.woff2"
+  },
+  {
+    "family": "Hanken Grotesk",
+    "file": "themes/folio/src/assets/fonts/hanken-grotesk-cfc8a4ef.woff2",
+    "source": "https://fonts.gstatic.com/s/hankengrotesk/v12/ieVn2YZDLWuGJpnzaiwFXS9tYtpd59A.woff2"
+  },
+  {
+    "family": "Chivo",
+    "file": "themes/forge/src/assets/fonts/chivo-c7110f79.woff2",
+    "source": "https://fonts.gstatic.com/s/chivo/v21/va9Z4kzIxd1KFrBtW-13ZHhT-jDqdFwG1FrRPXw.woff2"
+  },
+  {
+    "family": "Chivo",
+    "file": "themes/forge/src/assets/fonts/chivo-a355bab1.woff2",
+    "source": "https://fonts.gstatic.com/s/chivo/v21/va9I4kzIxd1KFrBoQeM.woff2"
+  },
+  {
+    "family": "Chivo Mono",
+    "file": "themes/forge/src/assets/fonts/chivo-mono-43c0ef85.woff2",
+    "source": "https://fonts.gstatic.com/s/chivomono/v11/mFT0WbgRxKvF_Z5eQMO9gx8D1Q.woff2"
+  },
+  {
+    "family": "Familjen Grotesk",
+    "file": "themes/forma/src/assets/fonts/familjen-grotesk-5a808247.woff2",
+    "source": "https://fonts.gstatic.com/s/familjengrotesk/v11/Qw3GZR9ZHiDnImG6-NEMQ41wby8WbHoEjw.woff2"
+  },
+  {
+    "family": "Newsreader",
+    "file": "themes/forma/src/assets/fonts/newsreader-4ec822e4.woff2",
+    "source": "https://fonts.gstatic.com/s/newsreader/v26/cY9CfjOCX1hbuyalUrK439vCjohC.woff2"
+  },
+  {
+    "family": "Newsreader",
+    "file": "themes/forma/src/assets/fonts/newsreader-0aa0ffe3.woff2",
+    "source": "https://fonts.gstatic.com/s/newsreader/v26/cY9AfjOCX1hbuyalUrK4397yjA.woff2"
+  },
+  {
+    "family": "Spectral",
+    "file": "themes/frame/src/assets/fonts/spectral-f5abda7e.woff2",
+    "source": "https://fonts.gstatic.com/s/spectral/v15/rnCu-xNNww_2s0amA9M8qtHEWfSFXQ.woff2"
+  },
+  {
+    "family": "Spectral",
+    "file": "themes/frame/src/assets/fonts/spectral-05aabba4.woff2",
+    "source": "https://fonts.gstatic.com/s/spectral/v15/rnCt-xNNww_2s0amA9M8onrmTA.woff2"
+  },
+  {
+    "family": "Spectral",
+    "file": "themes/frame/src/assets/fonts/spectral-df1ee1a4.woff2",
+    "source": "https://fonts.gstatic.com/s/spectral/v15/rnCs-xNNww_2s0amA9uSsG3BafY.woff2"
+  },
+  {
+    "family": "Spectral",
+    "file": "themes/frame/src/assets/fonts/spectral-eef129c8.woff2",
+    "source": "https://fonts.gstatic.com/s/spectral/v15/rnCr-xNNww_2s0amA9M5kng.woff2"
+  },
+  {
+    "family": "Spectral",
+    "file": "themes/frame/src/assets/fonts/spectral-c2069748.woff2",
+    "source": "https://fonts.gstatic.com/s/spectral/v15/rnCs-xNNww_2s0amA9vKsW3BafY.woff2"
+  },
+  {
+    "family": "Tenor Sans",
+    "file": "themes/frame/src/assets/fonts/tenor-sans-c04ffae8.woff2",
+    "source": "https://fonts.gstatic.com/s/tenorsans/v21/bx6ANxqUneKx06UkIXISn3V4Cg.woff2"
+  },
+  {
+    "family": "Lexend",
+    "file": "themes/grid/src/assets/fonts/lexend-6d740206.woff2",
+    "source": "https://fonts.gstatic.com/s/lexend/v26/wlpwgwvFAVdoq2_v-6QU.woff2"
+  },
+  {
+    "family": "DM Serif Text",
+    "file": "themes/guild/src/assets/fonts/dm-serif-text-e098676d.woff2",
+    "source": "https://fonts.gstatic.com/s/dmseriftext/v13/rnCw-xZa_krGokauCeNq1wWyWfG1X1oN.woff2"
+  },
+  {
+    "family": "DM Serif Text",
+    "file": "themes/guild/src/assets/fonts/dm-serif-text-d3f70f5e.woff2",
+    "source": "https://fonts.gstatic.com/s/dmseriftext/v13/rnCu-xZa_krGokauCeNq1wWyWfSFXQ.woff2"
+  },
+  {
+    "family": "Karla",
+    "file": "themes/guild/src/assets/fonts/karla-b0e0c428.woff2",
+    "source": "https://fonts.gstatic.com/s/karla/v33/qkBKXvYC6trAT7RQNNK2EG7SIwPWMNlCV3lIb7M.woff2"
+  },
+  {
+    "family": "Karla",
+    "file": "themes/guild/src/assets/fonts/karla-ee60be3a.woff2",
+    "source": "https://fonts.gstatic.com/s/karla/v33/qkB9XvYC6trAT55ZBi1ueQVIjQTD-JrIH2G7nytkHRyQ8p4wUje6bg.woff2"
+  },
+  {
+    "family": "Figtree",
+    "file": "themes/haven/src/assets/fonts/figtree-57c9a3dd.woff2",
+    "source": "https://fonts.gstatic.com/s/figtree/v9/_Xm9-HUzqDCFdgfMm4GnA4aZFrUvtOK3A7Yd-EI85A.woff2"
+  },
+  {
+    "family": "Figtree",
+    "file": "themes/haven/src/assets/fonts/figtree-2e4538dc.woff2",
+    "source": "https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4S9DQ.woff2"
+  },
+  {
+    "family": "Gloock",
+    "file": "themes/haven/src/assets/fonts/gloock-61aff847.woff2",
+    "source": "https://fonts.gstatic.com/s/gloock/v8/Iurb6YFw84WUY4NJiBak.woff2"
+  },
+  {
+    "family": "Cinzel",
+    "file": "themes/heirloom/src/assets/fonts/cinzel-192773d8.woff2",
+    "source": "https://fonts.gstatic.com/s/cinzel/v26/8vIJ7ww63mVu7gt79mT7.woff2"
   },
   {
     "family": "Cormorant Garamond",
-    "file": "themes/vow/src/assets/fonts/cormorant-garamond-291655ad.woff2",
+    "file": "themes/heirloom/src/assets/fonts/cormorant-garamond-291655ad.woff2",
     "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/vow/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Cormorant Garamond",
+    "file": "themes/heirloom/src/assets/fonts/cormorant-garamond-d9ec8210.woff2",
+    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2"
   },
   {
-    "family": "Cormorant Garamond",
-    "file": "themes/vow/src/assets/fonts/cormorant-garamond-d9ec8210.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2"
+    "family": "Sora",
+    "file": "themes/helix/src/assets/fonts/sora-45b477f6.woff2",
+    "source": "https://fonts.gstatic.com/s/sora/v17/xMQbuFFYT72XzQUpDg.woff2"
+  },
+  {
+    "family": "Cormorant",
+    "file": "themes/hideaway/src/assets/fonts/cormorant-7101e1d9.woff2",
+    "source": "https://fonts.gstatic.com/s/cormorant/v24/H4cjBXOCl9bbnla_nHIq6qu_oqM.woff2"
+  },
+  {
+    "family": "Cormorant",
+    "file": "themes/hideaway/src/assets/fonts/cormorant-d361e82e.woff2",
+    "source": "https://fonts.gstatic.com/s/cormorant/v24/H4clBXOCl9bbnla_nHIq75u9.woff2"
+  },
+  {
+    "family": "Mulish",
+    "file": "themes/hideaway/src/assets/fonts/mulish-e98b0252.woff2",
+    "source": "https://fonts.gstatic.com/s/mulish/v18/1Ptwg83HX_SGhgqk2hAjQlW_mEuZ0FsSKeOfGZQ6.woff2"
+  },
+  {
+    "family": "Mulish",
+    "file": "themes/hideaway/src/assets/fonts/mulish-55c906a8.woff2",
+    "source": "https://fonts.gstatic.com/s/mulish/v18/1Ptvg83HX_SGhgqk3wot.woff2"
+  },
+  {
+    "family": "SUSE",
+    "file": "themes/hush/src/assets/fonts/suse-aba2c58f.woff2",
+    "source": "https://fonts.gstatic.com/s/suse/v4/MwQ5bhb078Wt2V9BPQ.woff2"
+  },
+  {
+    "family": "EB Garamond",
+    "file": "themes/index/src/assets/fonts/eb-garamond-3dd70ef0.woff2",
+    "source": "https://fonts.gstatic.com/s/ebgaramond/v33/SlGWmQSNjdsmc35JDF1K5GRweDs1Zw.woff2"
+  },
+  {
+    "family": "EB Garamond",
+    "file": "themes/index/src/assets/fonts/eb-garamond-318c441c.woff2",
+    "source": "https://fonts.gstatic.com/s/ebgaramond/v33/SlGUmQSNjdsmc35JDF1K5GR1SDk.woff2"
+  },
+  {
+    "family": "Karla",
+    "file": "themes/index/src/assets/fonts/karla-b0e0c428.woff2",
+    "source": "https://fonts.gstatic.com/s/karla/v33/qkBKXvYC6trAT7RQNNK2EG7SIwPWMNlCV3lIb7M.woff2"
+  },
+  {
+    "family": "Karla",
+    "file": "themes/index/src/assets/fonts/karla-23b45baa.woff2",
+    "source": "https://fonts.gstatic.com/s/karla/v33/qkBbXvYC6trAT7RVLtw.woff2"
+  },
+  {
+    "family": "Inter Tight",
+    "file": "themes/ink/src/assets/fonts/inter-tight-eb6b2eb8.woff2",
+    "source": "https://fonts.gstatic.com/s/intertight/v9/NGSyv5HMAFg6IuGlBNMjxLsCwapkRA.woff2"
+  },
+  {
+    "family": "Inter Tight",
+    "file": "themes/ink/src/assets/fonts/inter-tight-603db177.woff2",
+    "source": "https://fonts.gstatic.com/s/intertight/v9/NGSwv5HMAFg6IuGlBNMjxLsH8ag.woff2"
+  },
+  {
+    "family": "Pirata One",
+    "file": "themes/ink/src/assets/fonts/pirata-one-8d3c5459.woff2",
+    "source": "https://fonts.gstatic.com/s/pirataone/v23/I_urMpiDvgLdLh0fAtofhi-Org.woff2"
+  },
+  {
+    "family": "Archivo",
+    "file": "themes/iron/src/assets/fonts/archivo-9b798957.woff2",
+    "source": "https://fonts.gstatic.com/s/archivo/v25/k3kSo8UDI-1M0wlSfdzYLGHE.woff2"
+  },
+  {
+    "family": "Archivo",
+    "file": "themes/iron/src/assets/fonts/archivo-6cbde114.woff2",
+    "source": "https://fonts.gstatic.com/s/archivo/v25/k3kQo8UDI-1M0wlSfdnoLg.woff2"
+  },
+  {
+    "family": "Archivo Black",
+    "file": "themes/iron/src/assets/fonts/archivo-black-36b2c420.woff2",
+    "source": "https://fonts.gstatic.com/s/archivoblack/v23/HTxqL289NzCGg4MzN6KJ7eW6CYyF_g.woff2"
+  },
+  {
+    "family": "Ultra",
+    "file": "themes/kettle/src/assets/fonts/ultra-a1a93844.woff2",
+    "source": "https://fonts.gstatic.com/s/ultra/v25/zOLy4prXmrtY-uT9wrI.woff2"
+  },
+  {
+    "family": "Work Sans",
+    "file": "themes/kettle/src/assets/fonts/work-sans-e4e7c53b.woff2",
+    "source": "https://fonts.gstatic.com/s/worksans/v24/QGY9z_wNahGAdqQ43Rh_ebrnlwyYfEPxPoGU3ms5pIfY.woff2"
+  },
+  {
+    "family": "Work Sans",
+    "file": "themes/kettle/src/assets/fonts/work-sans-817c6cfc.woff2",
+    "source": "https://fonts.gstatic.com/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2"
+  },
+  {
+    "family": "Cardo",
+    "file": "themes/kiln/src/assets/fonts/cardo-28b63c28.woff2",
+    "source": "https://fonts.gstatic.com/s/cardo/v21/wlpxgwjKBV1pqhv97IMx3A.woff2"
+  },
+  {
+    "family": "Cardo",
+    "file": "themes/kiln/src/assets/fonts/cardo-87f51af4.woff2",
+    "source": "https://fonts.gstatic.com/s/cardo/v21/wlp_gwjKBV1pqhv43IE.woff2"
+  },
+  {
+    "family": "Cardo",
+    "file": "themes/kiln/src/assets/fonts/cardo-015e9a39.woff2",
+    "source": "https://fonts.gstatic.com/s/cardo/v21/wlpygwjKBV1pqhND-ZQW-WM.woff2"
+  },
+  {
+    "family": "Red Hat Text",
+    "file": "themes/kiln/src/assets/fonts/red-hat-text-bea9d467.woff2",
+    "source": "https://fonts.gstatic.com/s/redhattext/v19/RrQJbohi_ic6B3yVSzGBrMxQbZcvO8g.woff2"
+  },
+  {
+    "family": "Red Hat Text",
+    "file": "themes/kiln/src/assets/fonts/red-hat-text-e8e8334b.woff2",
+    "source": "https://fonts.gstatic.com/s/redhattext/v19/RrQXbohi_ic6B3yVSzGBrMxQaKct.woff2"
+  },
+  {
+    "family": "Baloo 2",
+    "file": "themes/kindred/src/assets/fonts/baloo-2-8fece0b3.woff2",
+    "source": "https://fonts.gstatic.com/s/baloo2/v23/wXKrE3kTposypRyd51jcAA.woff2"
+  },
+  {
+    "family": "Mulish",
+    "file": "themes/kindred/src/assets/fonts/mulish-12437bfd.woff2",
+    "source": "https://fonts.gstatic.com/s/mulish/v18/1Pttg83HX_SGhgqk2jovaqQ.woff2"
+  },
+  {
+    "family": "Mulish",
+    "file": "themes/kindred/src/assets/fonts/mulish-55c906a8.woff2",
+    "source": "https://fonts.gstatic.com/s/mulish/v18/1Ptvg83HX_SGhgqk3wot.woff2"
+  },
+  {
+    "family": "Bitter",
+    "file": "themes/lantern/src/assets/fonts/bitter-578987a7.woff2",
+    "source": "https://fonts.gstatic.com/s/bitter/v42/rax-HiqOu8IVPmn7erxrJD0.woff2"
+  },
+  {
+    "family": "Bitter",
+    "file": "themes/lantern/src/assets/fonts/bitter-2d8de769.woff2",
+    "source": "https://fonts.gstatic.com/s/bitter/v42/rax8HiqOu8IVPmn7f4xp.woff2"
+  },
+  {
+    "family": "Source Sans 3",
+    "file": "themes/lantern/src/assets/fonts/source-sans-3-9267eb96.woff2",
+    "source": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpDtKy2OAdR1K-IwhWudF-R3woAa8opPOrG97lwqLlOxCkSmg.woff2"
+  },
+  {
+    "family": "Source Sans 3",
+    "file": "themes/lantern/src/assets/fonts/source-sans-3-181da826.woff2",
+    "source": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3w8aZQ.woff2"
+  },
+  {
+    "family": "Plus Jakarta Sans",
+    "file": "themes/ledger/src/assets/fonts/plus-jakarta-sans-493b8041.woff2",
+    "source": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIuaomQNQcsA88c7O9yZ4KMCoOg4Koz4y6qhA.woff2"
+  },
+  {
+    "family": "Plus Jakarta Sans",
+    "file": "themes/ledger/src/assets/fonts/plus-jakarta-sans-d8c30647.woff2",
+    "source": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2"
+  },
+  {
+    "family": "Hubot Sans",
+    "file": "themes/lucid/src/assets/fonts/hubot-sans-e86cbce3.woff2",
+    "source": "https://fonts.gstatic.com/s/hubotsans/v5/pe0rMIiULYxOvxVLbVwhEtCaBg.woff2"
+  },
+  {
+    "family": "Mona Sans",
+    "file": "themes/lucid/src/assets/fonts/mona-sans-589defaa.woff2",
+    "source": "https://fonts.gstatic.com/s/monasans/v4/o-0OIpQmx24alC5A4PNr4ARCQ_k.woff2"
+  },
+  {
+    "family": "Mona Sans",
+    "file": "themes/lucid/src/assets/fonts/mona-sans-1ab3bc20.woff2",
+    "source": "https://fonts.gstatic.com/s/monasans/v4/o-0IIpQmx24alC5A4PNr5TRA.woff2"
+  },
+  {
+    "family": "Host Grotesk",
+    "file": "themes/lumen/src/assets/fonts/host-grotesk-4f3e1754.woff2",
+    "source": "https://fonts.gstatic.com/s/hostgrotesk/v5/co3fmWBnlCJ3U42vbbfdwMjZoWjkyUk.woff2"
+  },
+  {
+    "family": "Host Grotesk",
+    "file": "themes/lumen/src/assets/fonts/host-grotesk-4795f852.woff2",
+    "source": "https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2"
+  },
+  {
+    "family": "Source Code Pro",
+    "file": "themes/manual/src/assets/fonts/source-code-pro-9db6e6c6.woff2",
+    "source": "https://fonts.gstatic.com/s/sourcecodepro/v32/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2"
+  },
+  {
+    "family": "Source Sans 3",
+    "file": "themes/manual/src/assets/fonts/source-sans-3-0d658b49.woff2",
+    "source": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpMtKy2OAdR1K-IwhWudF-R3woqZ-LY.woff2"
+  },
+  {
+    "family": "Source Sans 3",
+    "file": "themes/manual/src/assets/fonts/source-sans-3-181da826.woff2",
+    "source": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3w8aZQ.woff2"
+  },
+  {
+    "family": "Instrument Sans",
+    "file": "themes/margin/src/assets/fonts/instrument-sans-05884aa5.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentsans/v4/pxitypc9vsFDm051Uf6KVwgkfoSbSnNPooZAN0lInHGpCWNu15GR.woff2"
+  },
+  {
+    "family": "Instrument Sans",
+    "file": "themes/margin/src/assets/fonts/instrument-sans-345453b7.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1Q.woff2"
+  },
+  {
+    "family": "Instrument Serif",
+    "file": "themes/margin/src/assets/fonts/instrument-serif-0d985700.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2"
+  },
+  {
+    "family": "Instrument Serif",
+    "file": "themes/margin/src/assets/fonts/instrument-serif-05103e2a.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+  },
+  {
+    "family": "Bricolage Grotesque",
+    "file": "themes/mentor/src/assets/fonts/bricolage-grotesque-596fae03.woff2",
+    "source": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y996as8bTXq_nANBjzKo3IeZx8z6up5L-iNGQ.woff2"
+  },
+  {
+    "family": "Figtree",
+    "file": "themes/mentor/src/assets/fonts/figtree-d2319cd6.woff2",
+    "source": "https://fonts.gstatic.com/s/figtree/v9/_Xmu-HUzqDCFdgfMm4GND65o.woff2"
+  },
+  {
+    "family": "Figtree",
+    "file": "themes/mentor/src/assets/fonts/figtree-2e4538dc.woff2",
+    "source": "https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4S9DQ.woff2"
+  },
+  {
+    "family": "Albert Sans",
+    "file": "themes/meridian/src/assets/fonts/albert-sans-17e5ebe7.woff2",
+    "source": "https://fonts.gstatic.com/s/albertsans/v4/i7dMIFdwYjGaAMFtZd_QA1ZeUFWaHg.woff2"
+  },
+  {
+    "family": "Albert Sans",
+    "file": "themes/meridian/src/assets/fonts/albert-sans-ebfcbb01.woff2",
+    "source": "https://fonts.gstatic.com/s/albertsans/v4/i7dOIFdwYjGaAMFtZd_QA1ZbYFc.woff2"
+  },
+  {
+    "family": "Noto Serif Display",
+    "file": "themes/meridian/src/assets/fonts/noto-serif-display-8cbbff16.woff2",
+    "source": "https://fonts.gstatic.com/s/notoserifdisplay/v29/buEcppa9f8_vkXaZLAgP0G5Wi6QmA1QwcLRCOrN8uo7t6FBJOJT6hvd8.woff2"
+  },
+  {
+    "family": "Noto Serif Display",
+    "file": "themes/meridian/src/assets/fonts/noto-serif-display-7fcc4238.woff2",
+    "source": "https://fonts.gstatic.com/s/notoserifdisplay/v29/buEeppa9f8_vkXaZLAgP0G5Wi6QmA1QaeYah2sovLCDq_ZgL4NHKhA.woff2"
+  },
+  {
+    "family": "Libre Bodoni",
+    "file": "themes/monograph/src/assets/fonts/libre-bodoni-8eed33b4.woff2",
+    "source": "https://fonts.gstatic.com/s/librebodoni/v9/_Xm1-H45qDWDYULr5OfyZud9xDiTk_I.woff2"
+  },
+  {
+    "family": "Libre Bodoni",
+    "file": "themes/monograph/src/assets/fonts/libre-bodoni-284ab5d9.woff2",
+    "source": "https://fonts.gstatic.com/s/librebodoni/v9/_Xmr-H45qDWDYULr5OfyZud9wQiR.woff2"
+  },
+  {
+    "family": "Literata",
+    "file": "themes/monograph/src/assets/fonts/literata-d96b052a.woff2",
+    "source": "https://fonts.gstatic.com/s/literata/v40/or3nQ6P12-iJxAIgLYT1Frcdmg.woff2"
+  },
+  {
+    "family": "Literata",
+    "file": "themes/monograph/src/assets/fonts/literata-0532e32e.woff2",
+    "source": "https://fonts.gstatic.com/s/literata/v40/or3hQ6P12-iJxAIgLYTwJrU.woff2"
+  },
+  {
+    "family": "Jost",
+    "file": "themes/mosaic/src/assets/fonts/jost-7e35d6b5.woff2",
+    "source": "https://fonts.gstatic.com/s/jost/v20/92zUtBhPNqw73oHt4D4h.woff2"
+  },
+  {
+    "family": "Jost",
+    "file": "themes/mosaic/src/assets/fonts/jost-b1863709.woff2",
+    "source": "https://fonts.gstatic.com/s/jost/v20/92zatBhPNqw73oTd4g.woff2"
+  },
+  {
+    "family": "Marcellus",
+    "file": "themes/mosaic/src/assets/fonts/marcellus-fd2ac2e9.woff2",
+    "source": "https://fonts.gstatic.com/s/marcellus/v14/wEO_EBrOk8hQLDvIAF81VvoK.woff2"
   },
   {
     "family": "Bodoni Moda",
-    "file": "themes/heirloom/src/assets/fonts/bodoni-moda-ad1ed94f.woff2",
-    "source": "https://fonts.gstatic.com/s/bodonimoda/v28/aFTH7PxzY382XsXX63LUYL6GYFcan6NJrKp-VPj1KOxQ.woff2"
+    "file": "themes/muse/src/assets/fonts/bodoni-moda-ec86b9d3.woff2",
+    "source": "https://fonts.gstatic.com/s/bodonimoda/v28/aFTS7PxzY382XsXX63LUYJSPeKrcWw.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/heirloom/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Bodoni Moda",
+    "file": "themes/muse/src/assets/fonts/bodoni-moda-5114ef56.woff2",
+    "source": "https://fonts.gstatic.com/s/bodonimoda/v28/aFTQ7PxzY382XsXX63LUYJSKSKg.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/tempo/src/assets/fonts/barlow-condensed-2a84ba04.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2"
+    "family": "Jost",
+    "file": "themes/muse/src/assets/fonts/jost-7e35d6b5.woff2",
+    "source": "https://fonts.gstatic.com/s/jost/v20/92zUtBhPNqw73oHt4D4h.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/tempo/src/assets/fonts/barlow-condensed-c876947c.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B45L0z3bWuQ.woff2"
+    "family": "Jost",
+    "file": "themes/muse/src/assets/fonts/jost-b1863709.woff2",
+    "source": "https://fonts.gstatic.com/s/jost/v20/92zatBhPNqw73oTd4g.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/tempo/src/assets/fonts/barlow-condensed-808d8d26.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuQ.woff2"
+    "family": "Fredoka",
+    "file": "themes/nest/src/assets/fonts/fredoka-0d86eb18.woff2",
+    "source": "https://fonts.gstatic.com/s/fredoka/v17/X7n64b87HvSqjb_WIi2yDCRwoQ_k7367_DWu89U.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/tempo/src/assets/fonts/barlow-condensed-fdb19320.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lwz3bWuQ.woff2"
+    "family": "Nunito",
+    "file": "themes/nest/src/assets/fonts/nunito-077ebeed.woff2",
+    "source": "https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaDRs4.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/tempo/src/assets/fonts/barlow-condensed-488e956f.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2"
+    "family": "Nunito",
+    "file": "themes/nest/src/assets/fonts/nunito-fd8b8aea.woff2",
+    "source": "https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/tempo/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Josefin Sans",
+    "file": "themes/nocturne/src/assets/fonts/josefin-sans-c9fd97da.woff2",
+    "source": "https://fonts.gstatic.com/s/josefinsans/v34/Qw3JZQNVED7rKGKxtqIqX5EUCGZ2dIn0FyA96fCTtIJRLSzo.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/aperture/src/assets/fonts/barlow-condensed-2a84ba04.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2"
+    "family": "Josefin Sans",
+    "file": "themes/nocturne/src/assets/fonts/josefin-sans-fc3e2c31.woff2",
+    "source": "https://fonts.gstatic.com/s/josefinsans/v34/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/aperture/src/assets/fonts/barlow-condensed-c876947c.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B45L0z3bWuQ.woff2"
+    "family": "Limelight",
+    "file": "themes/nocturne/src/assets/fonts/limelight-ebb85790.woff2",
+    "source": "https://fonts.gstatic.com/s/limelight/v21/XLYkIZL7aopJVbZJHDuoOulH.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/aperture/src/assets/fonts/barlow-condensed-808d8d26.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuQ.woff2"
+    "family": "Kumbh Sans",
+    "file": "themes/odyssey/src/assets/fonts/kumbh-sans-4dbab11c.woff2",
+    "source": "https://fonts.gstatic.com/s/kumbhsans/v27/c4mw1n92AsfhuCq6tVsaoIx1LQICk0boNoq0ShNPVo0.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/aperture/src/assets/fonts/barlow-condensed-fdb19320.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lwz3bWuQ.woff2"
+    "family": "Playfair Display",
+    "file": "themes/odyssey/src/assets/fonts/playfair-display-a50b218e.woff2",
+    "source": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/aperture/src/assets/fonts/barlow-condensed-488e956f.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2"
+    "family": "Playfair Display",
+    "file": "themes/odyssey/src/assets/fonts/playfair-display-363014d7.woff2",
+    "source": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/aperture/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Onest",
+    "file": "themes/orbit/src/assets/fonts/onest-a1981c57.woff2",
+    "source": "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
   },
   {
-    "family": "Bricolage Grotesque",
-    "file": "themes/saffron/src/assets/fonts/bricolage-grotesque-5f754c3a.woff2",
-    "source": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInE.woff2"
+    "family": "Unbounded",
+    "file": "themes/orbit/src/assets/fonts/unbounded-9b396391.woff2",
+    "source": "https://fonts.gstatic.com/s/unbounded/v12/Yq6W-LOTXCb04q32xlpwu8Zf.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/saffron/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Corben",
+    "file": "themes/pantry/src/assets/fonts/corben-9568ac19.woff2",
+    "source": "https://fonts.gstatic.com/s/corben/v23/LYjDdGzzklQtCMpNpwNF.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/forge/src/assets/fonts/barlow-condensed-2a84ba04.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2"
+    "family": "Corben",
+    "file": "themes/pantry/src/assets/fonts/corben-cf116d85.woff2",
+    "source": "https://fonts.gstatic.com/s/corben/v23/LYjAdGzzklQtCMpFHCZQqnoq.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/forge/src/assets/fonts/barlow-condensed-808d8d26.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuQ.woff2"
+    "family": "Nunito Sans",
+    "file": "themes/pantry/src/assets/fonts/nunito-sans-673efc96.woff2",
+    "source": "https://fonts.gstatic.com/s/nunitosans/v19/pe0RMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t2FQWEAEOvV9wNvrwlNstMKW3Y6K5WMwd-laLQ.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/forge/src/assets/fonts/barlow-condensed-fdb19320.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lwz3bWuQ.woff2"
+    "family": "Nunito Sans",
+    "file": "themes/pantry/src/assets/fonts/nunito-sans-16838be1.woff2",
+    "source": "https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/forge/src/assets/fonts/barlow-condensed-488e956f.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2"
+    "family": "Sorts Mill Goudy",
+    "file": "themes/patina/src/assets/fonts/sorts-mill-goudy-67fba2b2.woff2",
+    "source": "https://fonts.gstatic.com/s/sortsmillgoudy/v16/Qw3AZR9MED_6PSuS_50nEaVrfzgEbH80jbs_.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/forge/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Sorts Mill Goudy",
+    "file": "themes/patina/src/assets/fonts/sorts-mill-goudy-3b64e984.woff2",
+    "source": "https://fonts.gstatic.com/s/sortsmillgoudy/v16/Qw3GZR9MED_6PSuS_50nEaVrfzgEbHoEjw.woff2"
   },
   {
-    "family": "Space Grotesk",
-    "file": "themes/lumen/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+    "family": "Work Sans",
+    "file": "themes/patina/src/assets/fonts/work-sans-817c6cfc.woff2",
+    "source": "https://fonts.gstatic.com/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/lumen/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Figtree",
+    "file": "themes/pipeline/src/assets/fonts/figtree-d2319cd6.woff2",
+    "source": "https://fonts.gstatic.com/s/figtree/v9/_Xmu-HUzqDCFdgfMm4GND65o.woff2"
   },
   {
-    "family": "Manrope",
-    "file": "themes/meridian/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+    "family": "Figtree",
+    "file": "themes/pipeline/src/assets/fonts/figtree-2e4538dc.woff2",
+    "source": "https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4S9DQ.woff2"
   },
   {
-    "family": "Instrument Serif",
-    "file": "themes/meridian/src/assets/fonts/instrument-serif-0d985700.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2"
+    "family": "Figtree",
+    "file": "themes/pour/src/assets/fonts/figtree-57c9a3dd.woff2",
+    "source": "https://fonts.gstatic.com/s/figtree/v9/_Xm9-HUzqDCFdgfMm4GnA4aZFrUvtOK3A7Yd-EI85A.woff2"
   },
   {
-    "family": "Instrument Serif",
-    "file": "themes/meridian/src/assets/fonts/instrument-serif-05103e2a.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+    "family": "Figtree",
+    "file": "themes/pour/src/assets/fonts/figtree-2e4538dc.woff2",
+    "source": "https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4S9DQ.woff2"
   },
   {
-    "family": "Manrope",
-    "file": "themes/stack/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+    "family": "Ibarra Real Nova",
+    "file": "themes/pour/src/assets/fonts/ibarra-real-nova-ae46c5f9.woff2",
+    "source": "https://fonts.gstatic.com/s/ibarrarealnova/v30/sZlZdQiA-DBIDCcaWtQzL4BZHoiDkH5oE_Rq.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/stack/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Ibarra Real Nova",
+    "file": "themes/pour/src/assets/fonts/ibarra-real-nova-5d0e3209.woff2",
+    "source": "https://fonts.gstatic.com/s/ibarrarealnova/v30/sZlfdQiA-DBIDCcaWtQzL4BZHoiDkHtYEQ.woff2"
   },
   {
-    "family": "Manrope",
-    "file": "themes/atlas/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+    "family": "Climate Crisis",
+    "file": "themes/prism/src/assets/fonts/climate-crisis-e3ceae35.woff2",
+    "source": "https://fonts.gstatic.com/s/climatecrisis/v15/wEOpEB3AntNeKCPBVW9XOKlmp3AUgWFN1DvIvcM0gFpKiq8q.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/atlas/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Instrument Sans",
+    "file": "themes/prism/src/assets/fonts/instrument-sans-05884aa5.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentsans/v4/pxitypc9vsFDm051Uf6KVwgkfoSbSnNPooZAN0lInHGpCWNu15GR.woff2"
+  },
+  {
+    "family": "Instrument Sans",
+    "file": "themes/prism/src/assets/fonts/instrument-sans-345453b7.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1Q.woff2"
+  },
+  {
+    "family": "Caprasimo",
+    "file": "themes/proof/src/assets/fonts/caprasimo-3c10c630.woff2",
+    "source": "https://fonts.gstatic.com/s/caprasimo/v6/esDT31JQOPuXIUGBp72Ukp8D.woff2"
+  },
+  {
+    "family": "Nunito",
+    "file": "themes/proof/src/assets/fonts/nunito-077ebeed.woff2",
+    "source": "https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaDRs4.woff2"
+  },
+  {
+    "family": "Nunito",
+    "file": "themes/proof/src/assets/fonts/nunito-fd8b8aea.woff2",
+    "source": "https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2"
+  },
+  {
+    "family": "Big Shoulders Display",
+    "file": "themes/pulse/src/assets/fonts/big-shoulders-display-623f09e3.woff2",
+    "source": "https://fonts.gstatic.com/s/bigshouldersdisplay/v24/fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1czNDu.woff2"
+  },
+  {
+    "family": "Rubik",
+    "file": "themes/pulse/src/assets/fonts/rubik-e03a3f09.woff2",
+    "source": "https://fonts.gstatic.com/s/rubik/v31/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8tdE3U3f4I.woff2"
+  },
+  {
+    "family": "Rubik",
+    "file": "themes/pulse/src/assets/fonts/rubik-54706243.woff2",
+    "source": "https://fonts.gstatic.com/s/rubik/v31/iJWKBXyIfDnIV7nBrXw.woff2"
+  },
+  {
+    "family": "Domine",
+    "file": "themes/quad/src/assets/fonts/domine-70492d28.woff2",
+    "source": "https://fonts.gstatic.com/s/domine/v25/L0x8DFMnlVwD4h3hu_qn.woff2"
+  },
+  {
+    "family": "Source Sans 3",
+    "file": "themes/quad/src/assets/fonts/source-sans-3-0d658b49.woff2",
+    "source": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpMtKy2OAdR1K-IwhWudF-R3woqZ-LY.woff2"
+  },
+  {
+    "family": "Source Sans 3",
+    "file": "themes/quad/src/assets/fonts/source-sans-3-181da826.woff2",
+    "source": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3w8aZQ.woff2"
+  },
+  {
+    "family": "Instrument Sans",
+    "file": "themes/quadrant/src/assets/fonts/instrument-sans-05884aa5.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentsans/v4/pxitypc9vsFDm051Uf6KVwgkfoSbSnNPooZAN0lInHGpCWNu15GR.woff2"
+  },
+  {
+    "family": "Instrument Sans",
+    "file": "themes/quadrant/src/assets/fonts/instrument-sans-345453b7.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1Q.woff2"
+  },
+  {
+    "family": "Newsreader",
+    "file": "themes/quadrant/src/assets/fonts/newsreader-4ec822e4.woff2",
+    "source": "https://fonts.gstatic.com/s/newsreader/v26/cY9CfjOCX1hbuyalUrK439vCjohC.woff2"
+  },
+  {
+    "family": "Newsreader",
+    "file": "themes/quadrant/src/assets/fonts/newsreader-0aa0ffe3.woff2",
+    "source": "https://fonts.gstatic.com/s/newsreader/v26/cY9AfjOCX1hbuyalUrK4397yjA.woff2"
+  },
+  {
+    "family": "Bebas Neue",
+    "file": "themes/reel/src/assets/fonts/bebas-neue-f68f7fa9.woff2",
+    "source": "https://fonts.gstatic.com/s/bebasneue/v16/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2"
+  },
+  {
+    "family": "Inter Tight",
+    "file": "themes/reel/src/assets/fonts/inter-tight-eb6b2eb8.woff2",
+    "source": "https://fonts.gstatic.com/s/intertight/v9/NGSyv5HMAFg6IuGlBNMjxLsCwapkRA.woff2"
+  },
+  {
+    "family": "Inter Tight",
+    "file": "themes/reel/src/assets/fonts/inter-tight-603db177.woff2",
+    "source": "https://fonts.gstatic.com/s/intertight/v9/NGSwv5HMAFg6IuGlBNMjxLsH8ag.woff2"
+  },
+  {
+    "family": "IBM Plex Mono",
+    "file": "themes/relay/src/assets/fonts/ibm-plex-mono-7e3d7e3c.woff2",
+    "source": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q1w.woff2"
+  },
+  {
+    "family": "IBM Plex Mono",
+    "file": "themes/relay/src/assets/fonts/ibm-plex-mono-eb889034.woff2",
+    "source": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgg.woff2"
+  },
+  {
+    "family": "IBM Plex Mono",
+    "file": "themes/relay/src/assets/fonts/ibm-plex-mono-86628368.woff2",
+    "source": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3vAOwlBFgg.woff2"
+  },
+  {
+    "family": "IBM Plex Sans Condensed",
+    "file": "themes/relay/src/assets/fonts/ibm-plex-sans-condensed-8ed5310c.woff2",
+    "source": "https://fonts.gstatic.com/s/ibmplexsanscondensed/v15/Gg8lN4UfRSqiPg7Jn2ZI12V4DCEwkj1E4LVeHYapyK4.woff2"
+  },
+  {
+    "family": "IBM Plex Sans Condensed",
+    "file": "themes/relay/src/assets/fonts/ibm-plex-sans-condensed-22a1c531.woff2",
+    "source": "https://fonts.gstatic.com/s/ibmplexsanscondensed/v15/Gg8gN4UfRSqiPg7Jn2ZI12V4DCEwkj1E4LVeHY5a67vspYY.woff2"
+  },
+  {
+    "family": "IBM Plex Sans Condensed",
+    "file": "themes/relay/src/assets/fonts/ibm-plex-sans-condensed-bbae8825.woff2",
+    "source": "https://fonts.gstatic.com/s/ibmplexsanscondensed/v15/Gg8gN4UfRSqiPg7Jn2ZI12V4DCEwkj1E4LVeHY527LvspYY.woff2"
+  },
+  {
+    "family": "IBM Plex Sans Condensed",
+    "file": "themes/relay/src/assets/fonts/ibm-plex-sans-condensed-74d078ec.woff2",
+    "source": "https://fonts.gstatic.com/s/ibmplexsanscondensed/v15/Gg8gN4UfRSqiPg7Jn2ZI12V4DCEwkj1E4LVeHY4S7bvspYY.woff2"
+  },
+  {
+    "family": "Six Caps",
+    "file": "themes/riff/src/assets/fonts/six-caps-c88f9d93.woff2",
+    "source": "https://fonts.gstatic.com/s/sixcaps/v23/6ae_4KGrU7VR7bNmaYcV_3Q.woff2"
+  },
+  {
+    "family": "Work Sans",
+    "file": "themes/riff/src/assets/fonts/work-sans-e4e7c53b.woff2",
+    "source": "https://fonts.gstatic.com/s/worksans/v24/QGY9z_wNahGAdqQ43Rh_ebrnlwyYfEPxPoGU3ms5pIfY.woff2"
+  },
+  {
+    "family": "Work Sans",
+    "file": "themes/riff/src/assets/fonts/work-sans-817c6cfc.woff2",
+    "source": "https://fonts.gstatic.com/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2"
+  },
+  {
+    "family": "Encode Sans",
+    "file": "themes/roam/src/assets/fonts/encode-sans-b2b54d3c.woff2",
+    "source": "https://fonts.gstatic.com/s/encodesans/v23/LDIhapOFNxEwR-Bd1O9uYNmnUQomAgE25imKSbHLSMA6.woff2"
+  },
+  {
+    "family": "Encode Sans Expanded",
+    "file": "themes/roam/src/assets/fonts/encode-sans-expanded-457d9b87.woff2",
+    "source": "https://fonts.gstatic.com/s/encodesansexpanded/v15/c4m_1mF4GcnstG_Jh1QH6ac4hNLeNyeYUpolKQY.woff2"
+  },
+  {
+    "family": "Encode Sans Expanded",
+    "file": "themes/roam/src/assets/fonts/encode-sans-expanded-a9ab38a9.woff2",
+    "source": "https://fonts.gstatic.com/s/encodesansexpanded/v15/c4mw1mF4GcnstG_Jh1QH6ac4hNLeNyeYUpLWChNPVo0.woff2"
+  },
+  {
+    "family": "Encode Sans Expanded",
+    "file": "themes/roam/src/assets/fonts/encode-sans-expanded-0c54c348.woff2",
+    "source": "https://fonts.gstatic.com/s/encodesansexpanded/v15/c4mw1mF4GcnstG_Jh1QH6ac4hNLeNyeYUpL6DRNPVo0.woff2"
+  },
+  {
+    "family": "Encode Sans Expanded",
+    "file": "themes/roam/src/assets/fonts/encode-sans-expanded-fbb5b875.woff2",
+    "source": "https://fonts.gstatic.com/s/encodesansexpanded/v15/c4mw1mF4GcnstG_Jh1QH6ac4hNLeNyeYUpKeDBNPVo0.woff2"
+  },
+  {
+    "family": "Encode Sans Expanded",
+    "file": "themes/roam/src/assets/fonts/encode-sans-expanded-c08d0189.woff2",
+    "source": "https://fonts.gstatic.com/s/encodesansexpanded/v15/c4mw1mF4GcnstG_Jh1QH6ac4hNLeNyeYUpKCDxNPVo0.woff2"
+  },
+  {
+    "family": "DM Serif Display",
+    "file": "themes/roast/src/assets/fonts/dm-serif-display-b867c8dc.woff2",
+    "source": "https://fonts.gstatic.com/s/dmserifdisplay/v17/-nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2.woff2"
+  },
+  {
+    "family": "DM Serif Display",
+    "file": "themes/roast/src/assets/fonts/dm-serif-display-3f5fbefc.woff2",
+    "source": "https://fonts.gstatic.com/s/dmserifdisplay/v17/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0g.woff2"
+  },
+  {
+    "family": "Hanken Grotesk",
+    "file": "themes/roast/src/assets/fonts/hanken-grotesk-7dedaa51.woff2",
+    "source": "https://fonts.gstatic.com/s/hankengrotesk/v12/ieVo2YZDLWuGJpnzaiwFXS9tYtpY_d6T_POl0fRJeyWyosBO5Xw.woff2"
+  },
+  {
+    "family": "Hanken Grotesk",
+    "file": "themes/roast/src/assets/fonts/hanken-grotesk-cfc8a4ef.woff2",
+    "source": "https://fonts.gstatic.com/s/hankengrotesk/v12/ieVn2YZDLWuGJpnzaiwFXS9tYtpd59A.woff2"
+  },
+  {
+    "family": "Bagel Fat One",
+    "file": "themes/saffron/src/assets/fonts/bagel-fat-one-aab7d75d.woff2",
+    "source": "https://fonts.gstatic.com/s/bagelfatone/v2/hYkPPucsQOr5dy02WmQr5Zkd4Blsvw.woff2"
+  },
+  {
+    "family": "Onest",
+    "file": "themes/saffron/src/assets/fonts/onest-a1981c57.woff2",
+    "source": "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+  },
+  {
+    "family": "Albert Sans",
+    "file": "themes/score/src/assets/fonts/albert-sans-17e5ebe7.woff2",
+    "source": "https://fonts.gstatic.com/s/albertsans/v4/i7dMIFdwYjGaAMFtZd_QA1ZeUFWaHg.woff2"
+  },
+  {
+    "family": "Albert Sans",
+    "file": "themes/score/src/assets/fonts/albert-sans-ebfcbb01.woff2",
+    "source": "https://fonts.gstatic.com/s/albertsans/v4/i7dOIFdwYjGaAMFtZd_QA1ZbYFc.woff2"
+  },
+  {
+    "family": "Brygada 1918",
+    "file": "themes/score/src/assets/fonts/brygada-1918-2f9da414.woff2",
+    "source": "https://fonts.gstatic.com/s/brygada1918/v27/pe03MI6eKpdGqlF5LANrM--qAc5tU1E.woff2"
+  },
+  {
+    "family": "Brygada 1918",
+    "file": "themes/score/src/assets/fonts/brygada-1918-3d679556.woff2",
+    "source": "https://fonts.gstatic.com/s/brygada1918/v27/pe0pMI6eKpdGqlF5LANrM--qBP5v.woff2"
+  },
+  {
+    "family": "Instrument Sans",
+    "file": "themes/shortlist/src/assets/fonts/instrument-sans-a6240a46.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentsans/v4/pxieypc9vsFDm051Uf6KVwgkfoSbSllDims.woff2"
+  },
+  {
+    "family": "Instrument Sans",
+    "file": "themes/shortlist/src/assets/fonts/instrument-sans-636a8d82.woff2",
+    "source": "https://fonts.gstatic.com/s/instrumentsans/v4/pxicypc9vsFDm051Uf6KVwgkfoSbT2lB.woff2"
+  },
+  {
+    "family": "Geist",
+    "file": "themes/signal/src/assets/fonts/geist-553cbc16.woff2",
+    "source": "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2"
+  },
+  {
+    "family": "Geist Mono",
+    "file": "themes/signal/src/assets/fonts/geist-mono-5039f502.woff2",
+    "source": "https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrcdmg.woff2"
+  },
+  {
+    "family": "Rubik",
+    "file": "themes/smash/src/assets/fonts/rubik-481c3916.woff2",
+    "source": "https://fonts.gstatic.com/s/rubik/v31/iJWEBXyIfDnIV7nEnX661A.woff2"
+  },
+  {
+    "family": "Rubik",
+    "file": "themes/smash/src/assets/fonts/rubik-54706243.woff2",
+    "source": "https://fonts.gstatic.com/s/rubik/v31/iJWKBXyIfDnIV7nBrXw.woff2"
+  },
+  {
+    "family": "Titan One",
+    "file": "themes/smash/src/assets/fonts/titan-one-710f83dc.woff2",
+    "source": "https://fonts.gstatic.com/s/titanone/v17/mFTzWbsGxbbS_J5cQcjClDgm.woff2"
+  },
+  {
+    "family": "Source Sans 3",
+    "file": "themes/solace/src/assets/fonts/source-sans-3-0d658b49.woff2",
+    "source": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpMtKy2OAdR1K-IwhWudF-R3woqZ-LY.woff2"
+  },
+  {
+    "family": "Source Sans 3",
+    "file": "themes/solace/src/assets/fonts/source-sans-3-181da826.woff2",
+    "source": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3w8aZQ.woff2"
+  },
+  {
+    "family": "Source Serif 4",
+    "file": "themes/solace/src/assets/fonts/source-serif-4-9b3688f6.woff2",
+    "source": "https://fonts.gstatic.com/s/sourceserif4/v15/vEFK2_tTDB4M7-auWDN0ahZJW1gewtW_Wg.woff2"
+  },
+  {
+    "family": "Source Serif 4",
+    "file": "themes/solace/src/assets/fonts/source-serif-4-326b4b86.woff2",
+    "source": "https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW1gb8tc.woff2"
+  },
+  {
+    "family": "Alegreya",
+    "file": "themes/sonnet/src/assets/fonts/alegreya-4152d173.woff2",
+    "source": "https://fonts.gstatic.com/s/alegreya/v41/4UaHrEBBsBhlBjvfkSLk96rp5w.woff2"
+  },
+  {
+    "family": "Alegreya",
+    "file": "themes/sonnet/src/assets/fonts/alegreya-9a4bd7f8.woff2",
+    "source": "https://fonts.gstatic.com/s/alegreya/v41/4UaBrEBBsBhlBjvfkSLhx6g.woff2"
+  },
+  {
+    "family": "Alegreya Sans",
+    "file": "themes/sonnet/src/assets/fonts/alegreya-sans-198cbc2b.woff2",
+    "source": "https://fonts.gstatic.com/s/alegreyasans/v28/5aUt9_-1phKLFgshYDvh6Vwt7V9dv21T.woff2"
+  },
+  {
+    "family": "Alegreya Sans",
+    "file": "themes/sonnet/src/assets/fonts/alegreya-sans-d98461b6.woff2",
+    "source": "https://fonts.gstatic.com/s/alegreyasans/v28/5aUz9_-1phKLFgshYDvh6Vwt7VptvQ.woff2"
+  },
+  {
+    "family": "Alegreya Sans",
+    "file": "themes/sonnet/src/assets/fonts/alegreya-sans-58f2b464.woff2",
+    "source": "https://fonts.gstatic.com/s/alegreyasans/v28/5aUu9_-1phKLFgshYDvh6Vwt5alOqEp2iw.woff2"
+  },
+  {
+    "family": "Alegreya Sans",
+    "file": "themes/sonnet/src/assets/fonts/alegreya-sans-570652cb.woff2",
+    "source": "https://fonts.gstatic.com/s/alegreyasans/v28/5aUu9_-1phKLFgshYDvh6Vwt5eFIqEp2iw.woff2"
+  },
+  {
+    "family": "Inter",
+    "file": "themes/sprint/src/assets/fonts/inter-ff750d83.woff2",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcCo3FwrK3iLTcviYwY.woff2"
+  },
+  {
+    "family": "IBM Plex Mono",
+    "file": "themes/stack/src/assets/fonts/ibm-plex-mono-7e3d7e3c.woff2",
+    "source": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q1w.woff2"
+  },
+  {
+    "family": "IBM Plex Mono",
+    "file": "themes/stack/src/assets/fonts/ibm-plex-mono-eb889034.woff2",
+    "source": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgg.woff2"
+  },
+  {
+    "family": "IBM Plex Mono",
+    "file": "themes/stack/src/assets/fonts/ibm-plex-mono-86628368.woff2",
+    "source": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3vAOwlBFgg.woff2"
+  },
+  {
+    "family": "IBM Plex Sans",
+    "file": "themes/stack/src/assets/fonts/ibm-plex-sans-d1c5b8cb.woff2",
+    "source": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V78x9OWIhqbQ5g6voI.woff2"
+  },
+  {
+    "family": "IBM Plex Sans",
+    "file": "themes/stack/src/assets/fonts/ibm-plex-sans-6d5e7fb8.woff2",
+    "source": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2"
+  },
+  {
+    "family": "Fraunces",
+    "file": "themes/still/src/assets/fonts/fraunces-9a69b66d.woff2",
+    "source": "https://fonts.gstatic.com/s/fraunces/v38/6NUG8FyLNQOQZAnv9ZwNjucMAkn8xNi7emAe9nimTfc.woff2"
+  },
+  {
+    "family": "Fraunces",
+    "file": "themes/still/src/assets/fonts/fraunces-32f458ae.woff2",
+    "source": "https://fonts.gstatic.com/s/fraunces/v38/6NUI8FyLNQOQZAnv9bYEvCeYdG9Ea92uemAO8Uik.woff2"
+  },
+  {
+    "family": "Nunito Sans",
+    "file": "themes/still/src/assets/fonts/nunito-sans-303b0b37.woff2",
+    "source": "https://fonts.gstatic.com/s/nunitosans/v19/pe0OMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t3NeCAAFOvV9SNjBznuB.woff2"
+  },
+  {
+    "family": "Nunito Sans",
+    "file": "themes/still/src/assets/fonts/nunito-sans-3cff2472.woff2",
+    "source": "https://fonts.gstatic.com/s/nunitosans/v19/pe0AMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfUVwoNnq4CLz0_kJ3xzA.woff2"
+  },
+  {
+    "family": "Rubik",
+    "file": "themes/streak/src/assets/fonts/rubik-481c3916.woff2",
+    "source": "https://fonts.gstatic.com/s/rubik/v31/iJWEBXyIfDnIV7nEnX661A.woff2"
+  },
+  {
+    "family": "Rubik",
+    "file": "themes/streak/src/assets/fonts/rubik-54706243.woff2",
+    "source": "https://fonts.gstatic.com/s/rubik/v31/iJWKBXyIfDnIV7nBrXw.woff2"
+  },
+  {
+    "family": "Barlow",
+    "file": "themes/summit/src/assets/fonts/barlow-f191f319.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHrv4kjgoGqM7E_Cfs7wH8.woff2"
+  },
+  {
+    "family": "Barlow",
+    "file": "themes/summit/src/assets/fonts/barlow-817ef878.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHpv4kjgoGqM7E_DMs5.woff2"
+  },
+  {
+    "family": "Barlow",
+    "file": "themes/summit/src/assets/fonts/barlow-af3cc18b.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3_-gs51os.woff2"
+  },
+  {
+    "family": "Barlow",
+    "file": "themes/summit/src/assets/fonts/barlow-2b0cf632.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E30-8s51os.woff2"
+  },
+  {
+    "family": "Barlow",
+    "file": "themes/summit/src/assets/fonts/barlow-b6a89d47.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3t-4s51os.woff2"
+  },
+  {
+    "family": "Bowlby One",
+    "file": "themes/summit/src/assets/fonts/bowlby-one-65ae83ae.woff2",
+    "source": "https://fonts.gstatic.com/s/bowlbyone/v25/taiPGmVuC4y96PFeqp8sqomI_A.woff2"
+  },
+  {
+    "family": "Inter Tight",
+    "file": "themes/surge/src/assets/fonts/inter-tight-eb6b2eb8.woff2",
+    "source": "https://fonts.gstatic.com/s/intertight/v9/NGSyv5HMAFg6IuGlBNMjxLsCwapkRA.woff2"
+  },
+  {
+    "family": "Inter Tight",
+    "file": "themes/surge/src/assets/fonts/inter-tight-603db177.woff2",
+    "source": "https://fonts.gstatic.com/s/intertight/v9/NGSwv5HMAFg6IuGlBNMjxLsH8ag.woff2"
+  },
+  {
+    "family": "Kanit",
+    "file": "themes/surge/src/assets/fonts/kanit-8941e220.woff2",
+    "source": "https://fonts.gstatic.com/s/kanit/v17/nKKS-Go6G5tXcraQI_GjZaNhMQ.woff2"
+  },
+  {
+    "family": "Kanit",
+    "file": "themes/surge/src/assets/fonts/kanit-89d76911.woff2",
+    "source": "https://fonts.gstatic.com/s/kanit/v17/nKKS-Go6G5tXcraQI92kZaNhMQ.woff2"
+  },
+  {
+    "family": "Kanit",
+    "file": "themes/surge/src/assets/fonts/kanit-06d8427a.woff2",
+    "source": "https://fonts.gstatic.com/s/kanit/v17/nKKS-Go6G5tXcraQI7mlZaNhMQ.woff2"
+  },
+  {
+    "family": "Kanit",
+    "file": "themes/surge/src/assets/fonts/kanit-90fdb54a.woff2",
+    "source": "https://fonts.gstatic.com/s/kanit/v17/nKKS-Go6G5tXcraQI6WmZaNhMQ.woff2"
+  },
+  {
+    "family": "Kanit",
+    "file": "themes/surge/src/assets/fonts/kanit-52b9bfe0.woff2",
+    "source": "https://fonts.gstatic.com/s/kanit/v17/nKKZ-Go6G5tXcraVGwA.woff2"
+  },
+  {
+    "family": "Kanit",
+    "file": "themes/surge/src/assets/fonts/kanit-5d29dc62.woff2",
+    "source": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr5mOBWnVaE.woff2"
+  },
+  {
+    "family": "Kanit",
+    "file": "themes/surge/src/assets/fonts/kanit-82c39bb5.woff2",
+    "source": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr5KPxWnVaE.woff2"
+  },
+  {
+    "family": "Kanit",
+    "file": "themes/surge/src/assets/fonts/kanit-77c453e6.woff2",
+    "source": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr4uPhWnVaE.woff2"
+  },
+  {
+    "family": "Kanit",
+    "file": "themes/surge/src/assets/fonts/kanit-aa186bda.woff2",
+    "source": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr4yPRWnVaE.woff2"
+  },
+  {
+    "family": "Hanken Grotesk",
+    "file": "themes/tally/src/assets/fonts/hanken-grotesk-b28085b4.woff2",
+    "source": "https://fonts.gstatic.com/s/hankengrotesk/v12/ieVl2YZDLWuGJpnzaiwFXS9tYtpY19K7DQ.woff2"
+  },
+  {
+    "family": "Hanken Grotesk",
+    "file": "themes/tally/src/assets/fonts/hanken-grotesk-cfc8a4ef.woff2",
+    "source": "https://fonts.gstatic.com/s/hankengrotesk/v12/ieVn2YZDLWuGJpnzaiwFXS9tYtpd59A.woff2"
+  },
+  {
+    "family": "Dela Gothic One",
+    "file": "themes/tempo/src/assets/fonts/dela-gothic-one-2e7ad14a.woff2",
+    "source": "https://fonts.gstatic.com/s/delagothicone/v19/hESp6XxvMDRA-2eD0lXpDa6QkBA2QkEI.woff2"
+  },
+  {
+    "family": "Outfit",
+    "file": "themes/tempo/src/assets/fonts/outfit-836b5877.woff2",
+    "source": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2"
+  },
+  {
+    "family": "Anybody",
+    "file": "themes/terrain/src/assets/fonts/anybody-3dfb8e97.woff2",
+    "source": "https://fonts.gstatic.com/s/anybody/v13/VuJxdNvK2Ib2ppdWSKHdOQ.woff2"
+  },
+  {
+    "family": "Overpass",
+    "file": "themes/terrain/src/assets/fonts/overpass-afa3e3e6.woff2",
+    "source": "https://fonts.gstatic.com/s/overpass/v19/qFdU35WCmI96Ajtm81GgSdXCNs-VMF0vNLADeqqIncM.woff2"
+  },
+  {
+    "family": "Overpass",
+    "file": "themes/terrain/src/assets/fonts/overpass-af6ba09a.woff2",
+    "source": "https://fonts.gstatic.com/s/overpass/v19/qFdH35WCmI96Ajtm81GlU9s.woff2"
+  },
+  {
+    "family": "Atkinson Hyperlegible",
+    "file": "themes/tide/src/assets/fonts/atkinson-hyperlegible-7b8cec7a.woff2",
+    "source": "https://fonts.gstatic.com/s/atkinsonhyperlegible/v12/9Bt43C1KxNDXMspQ1lPyU89-1h6ONRlW45G056IqUwA.woff2"
+  },
+  {
+    "family": "Atkinson Hyperlegible",
+    "file": "themes/tide/src/assets/fonts/atkinson-hyperlegible-dd9e78c5.woff2",
+    "source": "https://fonts.gstatic.com/s/atkinsonhyperlegible/v12/9Bt23C1KxNDXMspQ1lPyU89-1h6ONRlW45G04pIo.woff2"
+  },
+  {
+    "family": "Atkinson Hyperlegible",
+    "file": "themes/tide/src/assets/fonts/atkinson-hyperlegible-886f7d27.woff2",
+    "source": "https://fonts.gstatic.com/s/atkinsonhyperlegible/v12/9Bt73C1KxNDXMspQ1lPyU89-1h6ONRlW45G8Wbc9dCWP.woff2"
+  },
+  {
+    "family": "Zilla Slab",
+    "file": "themes/tide/src/assets/fonts/zilla-slab-8d327326.woff2",
+    "source": "https://fonts.gstatic.com/s/zillaslab/v12/dFa4ZfeM_74wlPZtksIFaj8K_1SM.woff2"
+  },
+  {
+    "family": "Zilla Slab",
+    "file": "themes/tide/src/assets/fonts/zilla-slab-c51bd81d.woff2",
+    "source": "https://fonts.gstatic.com/s/zillaslab/v12/dFanZfeM_74wlPZtksIFaj8CDHeZWXB3.woff2"
+  },
+  {
+    "family": "Zilla Slab",
+    "file": "themes/tide/src/assets/fonts/zilla-slab-25255e0e.woff2",
+    "source": "https://fonts.gstatic.com/s/zillaslab/v12/dFa6ZfeM_74wlPZtksIFajo6_Q.woff2"
+  },
+  {
+    "family": "Zilla Slab",
+    "file": "themes/tide/src/assets/fonts/zilla-slab-4c094d17.woff2",
+    "source": "https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYskZ6HOpWw.woff2"
+  },
+  {
+    "family": "Zilla Slab",
+    "file": "themes/tide/src/assets/fonts/zilla-slab-6aadeb3f.woff2",
+    "source": "https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYuUe6HOpWw.woff2"
+  },
+  {
+    "family": "Zilla Slab",
+    "file": "themes/tide/src/assets/fonts/zilla-slab-c2835f57.woff2",
+    "source": "https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYoEf6HOpWw.woff2"
+  },
+  {
+    "family": "DM Mono",
+    "file": "themes/tilde/src/assets/fonts/dm-mono-112c247f.woff2",
+    "source": "https://fonts.gstatic.com/s/dmmono/v16/aFTW7PB1QTsUX8KYth-gBqSI.woff2"
+  },
+  {
+    "family": "DM Mono",
+    "file": "themes/tilde/src/assets/fonts/dm-mono-3b17519f.woff2",
+    "source": "https://fonts.gstatic.com/s/dmmono/v16/aFTR7PB1QTsUX8KYvrGyEYOtbQ.woff2"
+  },
+  {
+    "family": "DM Mono",
+    "file": "themes/tilde/src/assets/fonts/dm-mono-54a123c1.woff2",
+    "source": "https://fonts.gstatic.com/s/dmmono/v16/aFTU7PB1QTsUX8KYthqQBA.woff2"
+  },
+  {
+    "family": "DM Mono",
+    "file": "themes/tilde/src/assets/fonts/dm-mono-37479ee6.woff2",
+    "source": "https://fonts.gstatic.com/s/dmmono/v16/aFTR7PB1QTsUX8KYvumzEYOtbQ.woff2"
+  },
+  {
+    "family": "Schibsted Grotesk",
+    "file": "themes/tilde/src/assets/fonts/schibsted-grotesk-bdfddae6.woff2",
+    "source": "https://fonts.gstatic.com/s/schibstedgrotesk/v7/Jqz_5SSPQuCQF3t8uOwiUL-taUTtap9DWygpcg.woff2"
+  },
+  {
+    "family": "Schibsted Grotesk",
+    "file": "themes/tilde/src/assets/fonts/schibsted-grotesk-071266fc.woff2",
+    "source": "https://fonts.gstatic.com/s/schibstedgrotesk/v7/Jqz55SSPQuCQF3t8uOwiUL-taUTtap9Gayo.woff2"
+  },
+  {
+    "family": "Grandstander",
+    "file": "themes/tinker/src/assets/fonts/grandstander-3a89e8a8.woff2",
+    "source": "https://fonts.gstatic.com/s/grandstander/v20/ga6KawtA-GpSsTWrnNHPCSImajC7.woff2"
+  },
+  {
+    "family": "Quicksand",
+    "file": "themes/tinker/src/assets/fonts/quicksand-ce9300a4.woff2",
+    "source": "https://fonts.gstatic.com/s/quicksand/v37/6xKtdSZaM9iE8KbpRA_hK1QN.woff2"
+  },
+  {
+    "family": "Merriweather",
+    "file": "themes/vault/src/assets/fonts/merriweather-190f1218.woff2",
+    "source": "https://fonts.gstatic.com/s/merriweather/v33/u-4r0qyriQwlOrhSvowK_l5-eTxCVw8XP0LuKH2Gy9thlrXC.woff2"
+  },
+  {
+    "family": "Merriweather",
+    "file": "themes/vault/src/assets/fonts/merriweather-5da1e557.woff2",
+    "source": "https://fonts.gstatic.com/s/merriweather/v33/u-4t0qyriQwlOrhSvowK_l5UcA6ht3ZEqezpPbXEE55RlA.woff2"
+  },
+  {
+    "family": "Merriweather Sans",
+    "file": "themes/vault/src/assets/fonts/merriweather-sans-d4a70e7a.woff2",
+    "source": "https://fonts.gstatic.com/s/merriweathersans/v28/2-c79IRs1JiJN1FRAMjTN5zd9vgsFHXwcjfj9w.woff2"
+  },
+  {
+    "family": "Merriweather Sans",
+    "file": "themes/vault/src/assets/fonts/merriweather-sans-c3ac6b4d.woff2",
+    "source": "https://fonts.gstatic.com/s/merriweathersans/v28/2-c99IRs1JiJN1FRAMjTN5zd9vgsFHX1QjU.woff2"
+  },
+  {
+    "family": "Red Hat Display",
+    "file": "themes/vector/src/assets/fonts/red-hat-display-95ae2ffb.woff2",
+    "source": "https://fonts.gstatic.com/s/redhatdisplay/v21/8vIQ7wUr0m80wwYf0QCXZzYzUoTg_T6h.woff2"
+  },
+  {
+    "family": "Red Hat Text",
+    "file": "themes/vector/src/assets/fonts/red-hat-text-bea9d467.woff2",
+    "source": "https://fonts.gstatic.com/s/redhattext/v19/RrQJbohi_ic6B3yVSzGBrMxQbZcvO8g.woff2"
+  },
+  {
+    "family": "Red Hat Text",
+    "file": "themes/vector/src/assets/fonts/red-hat-text-e8e8334b.woff2",
+    "source": "https://fonts.gstatic.com/s/redhattext/v19/RrQXbohi_ic6B3yVSzGBrMxQaKct.woff2"
+  },
+  {
+    "family": "Saira",
+    "file": "themes/velo/src/assets/fonts/saira-ab91355b.woff2",
+    "source": "https://fonts.gstatic.com/s/saira/v23/memhYa2wxmKQyNkiV50dulWP7s95AqZTzbvQfS0.woff2"
+  },
+  {
+    "family": "Saira",
+    "file": "themes/velo/src/assets/fonts/saira-1c9323cf.woff2",
+    "source": "https://fonts.gstatic.com/s/saira/v23/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLiIvS.woff2"
+  },
+  {
+    "family": "Saira Condensed",
+    "file": "themes/velo/src/assets/fonts/saira-condensed-f6a347af.woff2",
+    "source": "https://fonts.gstatic.com/s/sairacondensed/v12/EJRLQgErUN8XuHNEtX81i9TmEkrnUchQ962f.woff2"
+  },
+  {
+    "family": "Saira Condensed",
+    "file": "themes/velo/src/assets/fonts/saira-condensed-433385c4.woff2",
+    "source": "https://fonts.gstatic.com/s/sairacondensed/v12/EJRLQgErUN8XuHNEtX81i9TmEkrnfc9Q962f.woff2"
+  },
+  {
+    "family": "Saira Condensed",
+    "file": "themes/velo/src/assets/fonts/saira-condensed-8c2a3ed2.woff2",
+    "source": "https://fonts.gstatic.com/s/sairacondensed/v12/EJRLQgErUN8XuHNEtX81i9TmEkrnGc5Q962f.woff2"
+  },
+  {
+    "family": "Saira Condensed",
+    "file": "themes/velo/src/assets/fonts/saira-condensed-ce6a3565.woff2",
+    "source": "https://fonts.gstatic.com/s/sairacondensed/v12/EJRLQgErUN8XuHNEtX81i9TmEkrnBc1Q962f.woff2"
+  },
+  {
+    "family": "Plus Jakarta Sans",
+    "file": "themes/vital/src/assets/fonts/plus-jakarta-sans-493b8041.woff2",
+    "source": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIuaomQNQcsA88c7O9yZ4KMCoOg4Koz4y6qhA.woff2"
+  },
+  {
+    "family": "Plus Jakarta Sans",
+    "file": "themes/vital/src/assets/fonts/plus-jakarta-sans-d8c30647.woff2",
+    "source": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2"
   },
   {
     "family": "Italiana",
-    "file": "themes/helix/src/assets/fonts/italiana-846911c4.woff2",
+    "file": "themes/vow/src/assets/fonts/italiana-846911c4.woff2",
     "source": "https://fonts.gstatic.com/s/italiana/v21/QldNNTtLsx4E__B0XQmWaXw.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/helix/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Raleway",
+    "file": "themes/vow/src/assets/fonts/raleway-dcd0d239.woff2",
+    "source": "https://fonts.gstatic.com/s/raleway/v37/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4WjMDrMfIA.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/vector/src/assets/fonts/barlow-condensed-2a84ba04.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2"
+    "family": "Raleway",
+    "file": "themes/vow/src/assets/fonts/raleway-15df53a1.woff2",
+    "source": "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyC0ITw.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/vector/src/assets/fonts/barlow-condensed-808d8d26.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuQ.woff2"
+    "family": "Gabarito",
+    "file": "themes/whisker/src/assets/fonts/gabarito-18bda2d6.woff2",
+    "source": "https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/vector/src/assets/fonts/barlow-condensed-fdb19320.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lwz3bWuQ.woff2"
+    "family": "Nunito Sans",
+    "file": "themes/whisker/src/assets/fonts/nunito-sans-303b0b37.woff2",
+    "source": "https://fonts.gstatic.com/s/nunitosans/v19/pe0OMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t3NeCAAFOvV9SNjBznuB.woff2"
   },
   {
-    "family": "Barlow Condensed",
-    "file": "themes/vector/src/assets/fonts/barlow-condensed-488e956f.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2"
+    "family": "Nunito Sans",
+    "file": "themes/whisker/src/assets/fonts/nunito-sans-3cff2472.woff2",
+    "source": "https://fonts.gstatic.com/s/nunitosans/v19/pe0AMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfUVwoNnq4CLz0_kJ3xzA.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/vector/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Albert Sans",
+    "file": "themes/atelier/src/assets/fonts/albert-sans-ebfcbb01.woff2",
+    "source": "https://fonts.gstatic.com/s/albertsans/v4/i7dOIFdwYjGaAMFtZd_QA1ZbYFc.woff2"
   },
   {
-    "family": "Cormorant Garamond",
-    "file": "themes/loom/src/assets/fonts/cormorant-garamond-291655ad.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2"
+    "family": "Albert Sans",
+    "file": "themes/atelier/src/assets/fonts/albert-sans-17e5ebe7.woff2",
+    "source": "https://fonts.gstatic.com/s/albertsans/v4/i7dMIFdwYjGaAMFtZd_QA1ZeUFWaHg.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/loom/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Karla",
+    "file": "themes/encore/src/assets/fonts/karla-ee60be3a.woff2",
+    "source": "https://fonts.gstatic.com/s/karla/v33/qkB9XvYC6trAT55ZBi1ueQVIjQTD-JrIH2G7nytkHRyQ8p4wUje6bg.woff2"
   },
   {
-    "family": "Cormorant Garamond",
-    "file": "themes/loom/src/assets/fonts/cormorant-garamond-d9ec8210.woff2",
-    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2"
+    "family": "Karla",
+    "file": "themes/encore/src/assets/fonts/karla-b0e0c428.woff2",
+    "source": "https://fonts.gstatic.com/s/karla/v33/qkBKXvYC6trAT7RQNNK2EG7SIwPWMNlCV3lIb7M.woff2"
   },
   {
-    "family": "Bricolage Grotesque",
-    "file": "themes/nest/src/assets/fonts/bricolage-grotesque-5f754c3a.woff2",
-    "source": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInE.woff2"
+    "family": "Rubik",
+    "file": "themes/arcade/src/assets/fonts/rubik-481c3916.woff2",
+    "source": "https://fonts.gstatic.com/s/rubik/v31/iJWEBXyIfDnIV7nEnX661A.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/nest/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Rubik",
+    "file": "themes/arcade/src/assets/fonts/rubik-54706243.woff2",
+    "source": "https://fonts.gstatic.com/s/rubik/v31/iJWKBXyIfDnIV7nBrXw.woff2"
   },
   {
-    "family": "Bricolage Grotesque",
-    "file": "themes/palette/src/assets/fonts/bricolage-grotesque-5f754c3a.woff2",
-    "source": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInE.woff2"
+    "family": "Barlow",
+    "file": "themes/alloy/src/assets/fonts/barlow-b6a89d47.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3t-4s51os.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/palette/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Barlow",
+    "file": "themes/alloy/src/assets/fonts/barlow-817ef878.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHpv4kjgoGqM7E_DMs5.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/vault/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Barlow",
+    "file": "themes/alloy/src/assets/fonts/barlow-af3cc18b.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3_-gs51os.woff2"
   },
   {
-    "family": "Instrument Serif",
-    "file": "themes/vault/src/assets/fonts/instrument-serif-0d985700.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2"
+    "family": "Barlow",
+    "file": "themes/alloy/src/assets/fonts/barlow-2b0cf632.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E30-8s51os.woff2"
   },
   {
-    "family": "Instrument Serif",
-    "file": "themes/vault/src/assets/fonts/instrument-serif-05103e2a.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+    "family": "Barlow",
+    "file": "themes/alloy/src/assets/fonts/barlow-f191f319.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHrv4kjgoGqM7E_Cfs7wH8.woff2"
   },
   {
-    "family": "Bricolage Grotesque",
-    "file": "themes/kindred/src/assets/fonts/bricolage-grotesque-5f754c3a.woff2",
-    "source": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInE.woff2"
+    "family": "Inter Tight",
+    "file": "themes/dispatch/src/assets/fonts/inter-tight-603db177.woff2",
+    "source": "https://fonts.gstatic.com/s/intertight/v9/NGSwv5HMAFg6IuGlBNMjxLsH8ag.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/kindred/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Barlow",
+    "file": "themes/fade/src/assets/fonts/barlow-b6a89d47.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3t-4s51os.woff2"
   },
   {
-    "family": "Bricolage Grotesque",
-    "file": "themes/grid/src/assets/fonts/bricolage-grotesque-5f754c3a.woff2",
-    "source": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInE.woff2"
+    "family": "Barlow",
+    "file": "themes/fade/src/assets/fonts/barlow-817ef878.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHpv4kjgoGqM7E_DMs5.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/grid/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Barlow",
+    "file": "themes/fade/src/assets/fonts/barlow-af3cc18b.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3_-gs51os.woff2"
   },
   {
-    "family": "Space Grotesk",
-    "file": "themes/brine/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+    "family": "Barlow",
+    "file": "themes/fade/src/assets/fonts/barlow-2b0cf632.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E30-8s51os.woff2"
   },
   {
-    "family": "Libre Caslon Text",
-    "file": "themes/brine/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+    "family": "Barlow",
+    "file": "themes/fade/src/assets/fonts/barlow-f191f319.woff2",
+    "source": "https://fonts.gstatic.com/s/barlow/v13/7cHrv4kjgoGqM7E_Cfs7wH8.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/brine/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Rubik",
+    "file": "themes/field/src/assets/fonts/rubik-481c3916.woff2",
+    "source": "https://fonts.gstatic.com/s/rubik/v31/iJWEBXyIfDnIV7nEnX661A.woff2"
   },
   {
-    "family": "Libre Caslon Text",
-    "file": "themes/brine/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+    "family": "Rubik",
+    "file": "themes/field/src/assets/fonts/rubik-54706243.woff2",
+    "source": "https://fonts.gstatic.com/s/rubik/v31/iJWKBXyIfDnIV7nBrXw.woff2"
   },
   {
-    "family": "Space Grotesk",
-    "file": "themes/folio/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+    "family": "Albert Sans",
+    "file": "themes/drift/src/assets/fonts/albert-sans-ebfcbb01.woff2",
+    "source": "https://fonts.gstatic.com/s/albertsans/v4/i7dOIFdwYjGaAMFtZd_QA1ZbYFc.woff2"
   },
   {
-    "family": "Libre Caslon Text",
-    "file": "themes/folio/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+    "family": "Nunito",
+    "file": "themes/channel/src/assets/fonts/nunito-077ebeed.woff2",
+    "source": "https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaDRs4.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/folio/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Nunito",
+    "file": "themes/channel/src/assets/fonts/nunito-fd8b8aea.woff2",
+    "source": "https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2"
   },
   {
-    "family": "Libre Caslon Text",
-    "file": "themes/folio/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+    "family": "Geist",
+    "file": "themes/cohort/src/assets/fonts/geist-553cbc16.woff2",
+    "source": "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2"
   },
   {
-    "family": "Space Grotesk",
-    "file": "themes/patina/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+    "family": "Inter Tight",
+    "file": "themes/drop/src/assets/fonts/inter-tight-603db177.woff2",
+    "source": "https://fonts.gstatic.com/s/intertight/v9/NGSwv5HMAFg6IuGlBNMjxLsH8ag.woff2"
   },
   {
-    "family": "Libre Caslon Text",
-    "file": "themes/patina/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+    "family": "Inter Tight",
+    "file": "themes/drop/src/assets/fonts/inter-tight-eb6b2eb8.woff2",
+    "source": "https://fonts.gstatic.com/s/intertight/v9/NGSyv5HMAFg6IuGlBNMjxLsCwapkRA.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/patina/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Nunito",
+    "file": "themes/fable/src/assets/fonts/nunito-077ebeed.woff2",
+    "source": "https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaDRs4.woff2"
   },
   {
-    "family": "Libre Caslon Text",
-    "file": "themes/patina/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+    "family": "Nunito",
+    "file": "themes/fable/src/assets/fonts/nunito-fd8b8aea.woff2",
+    "source": "https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2"
   },
   {
-    "family": "Space Grotesk",
-    "file": "themes/nectar/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+    "family": "Work Sans",
+    "file": "themes/ember/src/assets/fonts/work-sans-e4e7c53b.woff2",
+    "source": "https://fonts.gstatic.com/s/worksans/v24/QGY9z_wNahGAdqQ43Rh_ebrnlwyYfEPxPoGU3ms5pIfY.woff2"
   },
   {
-    "family": "Libre Caslon Text",
-    "file": "themes/nectar/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+    "family": "Work Sans",
+    "file": "themes/ember/src/assets/fonts/work-sans-817c6cfc.woff2",
+    "source": "https://fonts.gstatic.com/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/nectar/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
+    "family": "Albert Sans",
+    "file": "themes/enamel/src/assets/fonts/albert-sans-ebfcbb01.woff2",
+    "source": "https://fonts.gstatic.com/s/albertsans/v4/i7dOIFdwYjGaAMFtZd_QA1ZbYFc.woff2"
   },
   {
-    "family": "Libre Caslon Text",
-    "file": "themes/nectar/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
+    "family": "Albert Sans",
+    "file": "themes/enamel/src/assets/fonts/albert-sans-17e5ebe7.woff2",
+    "source": "https://fonts.gstatic.com/s/albertsans/v4/i7dMIFdwYjGaAMFtZd_QA1ZeUFWaHg.woff2"
   },
   {
-    "family": "Space Grotesk",
-    "file": "themes/alpine/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+    "family": "Outfit",
+    "file": "themes/cadence/src/assets/fonts/outfit-836b5877.woff2",
+    "source": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2"
   },
   {
-    "family": "Libre Caslon Text",
-    "file": "themes/alpine/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
+    "family": "Geist",
+    "file": "gallery/assets/fonts/geist-553cbc16.woff2",
+    "source": "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2"
   },
   {
-    "family": "DM Sans",
-    "file": "themes/alpine/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/alpine/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/sonnet/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/sonnet/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/sonnet/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/sonnet/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/mosaic/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/mosaic/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/mosaic/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/mosaic/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/lacquer/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/lacquer/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/lacquer/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/lacquer/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/truffle/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/truffle/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/truffle/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/truffle/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/score/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/score/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/score/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/score/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/sprout/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/sprout/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/sprout/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/sprout/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/ripple/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/ripple/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/ripple/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/ripple/src/assets/fonts/libre-caslon-text-33765a61.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGg.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/ballast/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/ballast/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/ballast/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/ballast/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/delta/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/delta/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/delta/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/delta/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/strata/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/strata/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/strata/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/strata/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/cadence/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/cadence/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/cadence/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/cadence/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/conduit/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/conduit/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/conduit/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/conduit/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/lumenary/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/lumenary/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/lumenary/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/lumenary/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/waypoint/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/waypoint/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/waypoint/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/waypoint/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/torque/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/torque/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/torque/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/torque/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/verdant/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/verdant/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/verdant/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/verdant/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/parcel/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/parcel/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/parcel/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/parcel/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/beacon/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/beacon/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/beacon/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/beacon/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Manrope",
-    "file": "themes/keystone/src/assets/fonts/manrope-4872f2a6.woff2",
-    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/keystone/src/assets/fonts/space-grotesk-98a0d4ac.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "Libre Caslon Text",
-    "file": "themes/keystone/src/assets/fonts/libre-caslon-text-ea80801a.woff2",
-    "source": "https://fonts.gstatic.com/s/librecaslontext/v5/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/keystone/src/assets/fonts/dm-sans-713ca32c.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/aurora/src/assets/fonts/body.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "themes/aurora/src/assets/fonts/display.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/reel/src/assets/fonts/body.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/reel/src/assets/fonts/display.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/botanica/src/assets/fonts/body.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "themes/botanica/src/assets/fonts/display.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/cove/src/assets/fonts/body.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "themes/cove/src/assets/fonts/display.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/fable/src/assets/fonts/body.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/fable/src/assets/fonts/display.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/cadencehouse/src/assets/fonts/body.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/cadencehouse/src/assets/fonts/display.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/pour/src/assets/fonts/body.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "themes/pour/src/assets/fonts/display.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/ascent/src/assets/fonts/body.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Barlow Condensed",
-    "file": "themes/ascent/src/assets/fonts/display.woff2",
-    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/emberlight/src/assets/fonts/body.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "themes/emberlight/src/assets/fonts/display.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/sanctuary/src/assets/fonts/body.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "themes/sanctuary/src/assets/fonts/display.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/kinetic/src/assets/fonts/body.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Space Grotesk",
-    "file": "themes/kinetic/src/assets/fonts/display.woff2",
-    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
-  },
-  {
-    "family": "DM Sans",
-    "file": "themes/horizon/src/assets/fonts/body.woff2",
-    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "themes/horizon/src/assets/fonts/display.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "gallery/assets/fonts/instrument-serif-05103e2a.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
-  },
-  {
-    "family": "Instrument Serif",
-    "file": "gallery/assets/fonts/instrument-serif-0d985700.woff2",
-    "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2"
+    "family": "Geist Mono",
+    "file": "gallery/assets/fonts/geist-mono-5039f502.woff2",
+    "source": "https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrcdmg.woff2"
   }
 ]

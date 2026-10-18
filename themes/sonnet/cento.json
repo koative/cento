@@ -1,0 +1,27 @@
+{
+  "number": 59,
+  "name": "Sonnet",
+  "sector": "Language school",
+  "category": "Education & Community",
+  "tagline": "Small classes, real conversation, from the first evening.",
+  "description": "A multi-page language school site: filterable course ledger with week-by-week course pages, a marked-in-red-pen level test, weekly timetable, teacher entries set like a dictionary, fees with a term/year toggle, and a validated enrolment flow.",
+  "tags": [
+    "Level test",
+    "Course catalogue",
+    "Weekly timetable",
+    "Enrolment form"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/courses", "title": "Courses" },
+    { "path": "/courses/french-first-words", "title": "Course" },
+    { "path": "/level-test", "title": "Level test" },
+    { "path": "/timetable", "title": "Timetable" },
+    { "path": "/teachers", "title": "Teachers" },
+    { "path": "/fees", "title": "Fees & terms" },
+    { "path": "/about", "title": "About" },
+    { "path": "/enrol", "title": "Enrol" }
+  ],
+  "colors": { "paper": "#f6f0e4", "ink": "#263027", "accent": "#b3361d" },
+  "fonts": ["Alegreya", "Alegreya Sans"]
+}

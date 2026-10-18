@@ -1,174 +1,81 @@
-import { useState } from "react";
-import {
-  ArrowUpRight,
-  Plus,
-  Check,
-  Clock3,
-  Heart,
-  ArrowRight,
-} from "lucide-react";
-import care from "./assets/care.jpg";
+import { useRef, type ReactNode } from "react";
+import { match, useRoute, usePageChange } from "./router";
+import { brand } from "./content";
+import { clinicianBy, serviceBy } from "./lib/schedule";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { Home } from "./pages/Home";
+import { Services } from "./pages/Services";
+import { ServicePage } from "./pages/ServicePage";
+import { Clinicians } from "./pages/Clinicians";
+import { ClinicianPage } from "./pages/ClinicianPage";
+import { Book } from "./pages/Book";
+import { Patients } from "./pages/Patients";
+import { Locations } from "./pages/Locations";
+import { About } from "./pages/About";
+import { NotFound } from "./pages/NotFound";
+
+type Page = { title: string; node: ReactNode };
+
+const routes: [string, (p: Record<string, string>) => Page | null][] = [
+  ["/", () => ({ title: `${brand.name} — ${brand.sector}`, node: <Home /> })],
+  ["/services", () => ({ title: "Services", node: <Services /> })],
+  [
+    "/services/:slug",
+    ({ slug }) => {
+      const service = serviceBy(slug);
+      return service
+        ? { title: service.name, node: <ServicePage service={service} /> }
+        : null;
+    },
+  ],
+  ["/clinicians", () => ({ title: "Our clinicians", node: <Clinicians /> })],
+  [
+    "/clinicians/:slug",
+    ({ slug }) => {
+      const clinician = clinicianBy(slug);
+      return clinician
+        ? {
+            title: `${clinician.name}, ${clinician.role}`,
+            node: <ClinicianPage clinician={clinician} />,
+          }
+        : null;
+    },
+  ],
+  ["/book", () => ({ title: "Book a visit", node: <Book /> })],
+  ["/patients", () => ({ title: "Patient information", node: <Patients /> })],
+  ["/locations", () => ({ title: "Locations & hours", node: <Locations /> })],
+  ["/about", () => ({ title: "About the practice", node: <About /> })],
+];
+
+function resolve(path: string): Page {
+  for (const [pattern, render] of routes) {
+    const params = match(pattern, path);
+    const page = params && render(params);
+    if (page) return page;
+  }
+  return { title: "Page not found", node: <NotFound /> };
+}
+
 export default function App() {
-  const [type, setType] = useState("General visit");
-  const [day, setDay] = useState("Monday, 19 Oct");
-  const [time, setTime] = useState("09:30");
-  const [done, setDone] = useState(false);
+  const path = useRoute();
+  const main = useRef<HTMLElement>(null);
+  const page = resolve(path);
+  usePageChange(
+    main,
+    path === "/" ? page.title : `${page.title} — ${brand.name}`,
+  );
+
   return (
     <>
-      <header>
-        <a className="brand" href="#">
-          solace
-          <Plus size={27} />
-        </a>
-        <nav>
-          <a href="#care">Our approach</a>
-          <a href="#visit">Plan a visit</a>
-        </nav>
-        <span className="location">A little more human.</span>
-      </header>
-      <main>
-        <section className="welcome">
-          <div className="intro">
-            <h1>
-              Good care.
-              <br />
-              <em>Room to breathe.</em>
-            </h1>
-            <p>
-              Time to talk. Space to ask. A neighborhood clinic designed around
-              the person, not just the appointment.
-            </p>
-            <div className="portrait">
-              <img src={care} alt="A sunlit, welcoming clinic interior" />
-              <span>
-                <Heart size={20} /> Here for the everyday.
-              </span>
-            </div>
-          </div>
-          <div className="visit" id="visit">
-            <div className="visit-title">
-              <h2>Let's make time.</h2>
-              <ArrowUpRight size={30} />
-            </div>
-            <p>Explore a visit that works for your day.</p>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                setDone(true);
-              }}
-            >
-              <label>
-                What brings you in?
-                <select
-                  value={type}
-                  onChange={(e) => {
-                    setType(e.target.value);
-                    setDone(false);
-                  }}
-                >
-                  <option>General visit</option>
-                  <option>Follow-up visit</option>
-                  <option>New patient introduction</option>
-                </select>
-              </label>
-              <fieldset>
-                <legend>Choose a day</legend>
-                {["Monday, 19 Oct", "Tuesday, 20 Oct", "Wednesday, 21 Oct"].map(
-                  (d) => (
-                    <button
-                      key={d}
-                      type="button"
-                      aria-pressed={day === d}
-                      onClick={() => {
-                        setDay(d);
-                        setDone(false);
-                      }}
-                    >
-                      {d.split(", ")[0]}
-                      <strong>{d.split(", ")[1]}</strong>
-                    </button>
-                  ),
-                )}
-              </fieldset>
-              <fieldset className="times">
-                <legend>Available times · illustrative schedule</legend>
-                {["09:30", "11:00", "14:30", "16:00"].map((t) => (
-                  <button
-                    type="button"
-                    key={t}
-                    aria-pressed={time === t}
-                    onClick={() => {
-                      setTime(t);
-                      setDone(false);
-                    }}
-                  >
-                    {t}
-                  </button>
-                ))}
-              </fieldset>
-              <button className="btn" type="submit">
-                Preview my visit <ArrowRight size={19} />
-              </button>
-              {done && (
-                <p role="status" className="confirmation">
-                  <Check size={18} /> {type} · {day} at {time}. Your demo visit
-                  is selected. No appointment was booked.
-                </p>
-              )}
-              <small>No account needed. This is a local demonstration.</small>
-            </form>
-          </div>
-        </section>
-        <section className="care" id="care">
-          <div>
-            <h2>
-              Care with
-              <br />a familiar face.
-            </h2>
-            <p>
-              We believe a comfortable visit starts before you walk through the
-              door.
-            </p>
-          </div>
-          <div className="care-list">
-            {[
-              [
-                "More time, fewer unknowns",
-                "Find the visit type, time and practical details in one place.",
-              ],
-              [
-                "Your questions belong here",
-                "Bring a list of what you would like to discuss at your visit.",
-              ],
-              [
-                "A clear next step",
-                "A thoughtful conversation makes room for what comes next.",
-              ],
-            ].map(([a, b]) => (
-              <article key={a}>
-                <h3>{a}</h3>
-                <p>{b}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-        <section className="note">
-          <Clock3 size={29} />
-          <p>
-            <strong>A note before you visit</strong>
-            <br />
-            This fictional clinic demonstrates appointment browsing only. It
-            does not provide medical advice or urgent care.
-          </p>
-          <a href="#visit">
-            Explore the planner <ArrowUpRight size={19} />
-          </a>
-        </section>
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
+      <Header />
+      <main id="main" tabIndex={-1} ref={main} key={path} className="page">
+        {page.node}
       </main>
-      <footer>
-        <span>Solace · A fictional healthcare template</span>
-        <a href="../../">Elseform collection</a>
-      </footer>
+      <Footer />
     </>
   );
 }

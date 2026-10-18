@@ -1,206 +1,72 @@
 ---
 name: Helix
-description: An organic research journal with a moving molecular study and a personal study library.
 colors:
-  paper: '#f7f6ef'
-  ink: '#233c35'
-  muted: '#596f64'
-  accent: '#ae456f'
-  line: '#ced5c9'
-  orbit-tone: '#a3b29b'
-  specimen-surface: '#e6ebe0'
-  study-detail-surface: '#e9eedd'
-  approach-ink: '#f3f4e8'
+  paper: "#f2f1ec"
+  paper-2: "#e8e6de"
+  field: "#fbfaf7"
+  ink: "#14171f"
+  ink-2: "#454954"
+  rule: "#c9c5b9"
+  gold: "#c28a3a"
+  gold-deep: "#7a4c10"
+  gold-pale: "#efe0c0"
+  cobalt: "#2340c4"
+  night: "#14171f"
+  error: "#a3221b"
 typography:
   display:
-    fontFamily: Italiana, serif
-    lineHeight: '1.02'
-    letterSpacing: -0.035em
-    fontSize: clamp(3rem, 6.8vw, 6rem)
-    fontWeight: '400'
-  headline:
-    fontFamily: Italiana, serif
-    lineHeight: '1.02'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 4rem)
-    fontWeight: '400'
-  title:
-    fontFamily: '"DM Sans", sans-serif'
-    lineHeight: '1.2'
-  title-context-1:
-    fontFamily: Italiana, serif
-    lineHeight: '1.2'
-    fontSize: 37px
-  title-context-2:
-    fontFamily: '"DM Sans", sans-serif'
-    lineHeight: '1.2'
-  body:
-    fontFamily: '"DM Sans", sans-serif'
-    lineHeight: '1.55'
-rounded:
-  observed-1: 3px
-  observed-2: 50%
+    {
+      family: Sora,
+      weight: 600,
+      size: "clamp(2.3rem, 1.5rem + 3.4vw, 4.4rem)",
+      tracking: "-0.035em",
+    }
+  body: { family: Sora, weight: 400, size: "1rem", lineHeight: 1.62 }
+rounded: { sm: "4px", md: "6px", pill: "999px" }
 spacing:
-  observed-1: 8px
-  observed-2: 12px
-  observed-3: 20px
-  observed-4: 28px
-components:
-  primary-button:
-    textColor: '#f7f6ef'
-    padding: 13px 20px
-    backgroundColor: '#233c35'
-    rounded: 3px
-  selection-tab:
-    textColor: inherit
-    padding: 9px 16px
-    backgroundColor: transparent
-    rounded: 3px
-  study-detail:
-    padding: 35px
-    backgroundColor: '#e9eedd'
-    rounded: 0 70px 0 0
-    textColor: '#233c35'
-  nav-nav:
-    textColor: '#233c35'
-  motion:
-    textColor: inherit
-    rounded: 50%
-    width: 42px
-    height: 42px
-    backgroundColor: transparent
-  study-list-button:
-    textColor: inherit
-    width: 100%
-    padding: 28px 0
-    backgroundColor: transparent
+  {
+    section: "clamp(4rem, 3rem + 4vw, 7rem)",
+    gutter: "clamp(1.25rem, 4vw, 2.75rem)",
+    max: "1280px",
+  }
 ---
 
-# Design System: Helix
+# Helix
 
 ## Overview
 
-**Creative North Star: "A botanical research folio"**
-
-A botanical research folio: pale sage fields, pink molecular spheres, fine Italiana headings and an indexed study library.
-
-This records the implemented biotechnology template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Biotechnology composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-Impeccable collection seed `0c646d2f`, assigned candidate 7. Grounded collection candidates: trade publication; materials archive; field guide; factory drawing; operational atlas; neighborhood workshop; **sector-specific working artifact**. The seventh is selected: each theme gets the artifact its audience uses to understand and decide, rather than a shared marketing skeleton. The user's direct-code creative delegation controls the workflow.
+Helix is drawn from the inside of a dilution refrigerator and the pages of a physics journal: off-white paper, ink rules, gold-plated copper stages and the microwave lines that carry pulses down to the chip. Visitors are researchers and engineers comparing hardware at a desk in daylight, so the site is light, dense where data lives (spec tables, calibration maps, paper listings) and quiet between. Every illustration is an exact diagram (cryostat section, circuit wires, qubit lattices, plotted figures), never a mood picture.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Muted**: secondary copy.
-- **Accent**: interactive emphasis.
-- **Line**: dividers.
-- **Orbit Tone**: context-specific authored color.
-- **Specimen Surface**: context-specific authored color.
-- **Study Detail Surface**: context-specific authored color.
-- **Approach Ink**: context-specific authored color.
+Paper `#f2f1ec` with a slightly darker panel `#e8e6de` for interactive instruments. Ink `#14171f` carries text and rules; `#454954` handles secondary text at AA. Gold `#c28a3a` is the plating: cryostat plates, qubits, bars, list markers. `#7a4c10` is the text-safe gold for metrics and roles. Cobalt `#2340c4` belongs to interaction only: focus rings, hover, selected couplers, microwave pulses, sampled shots. Night `#14171f` closes the page (closing band, footer, BibTeX).
 
 ## Typography
 
-- **DM Sans** is the CSS family alias for DM Sans 9pt. Local faces: normal / 400, normal / 500, normal / 600.
-- **Italiana** is the CSS family alias for Italiana. Local faces: normal / 400.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
-- approach   p uses the font shorthand (`400 clamp(2.2rem, 4vw, 3.8rem)/1.15 Italiana, serif`).
+Sora alone, as assigned. Display 600 at −0.035em, h2/h3 600 at −0.025/−0.015em, body 400. Numerals are tabular in every table, spec list, histogram and timeline. A system monospace appears only in the BibTeX block, where it is actual code.
 
 ## Layout
 
-- **Opening**: grid-template-columns (1.05fr 1fr); min-height (680px).
-- **Study grid**: grid-template-columns (1fr 1.1fr); gap (60px).
-- **Approach**: grid-template-columns (1.4fr 1fr); padding (75px 7%); gap (80px).
-- **Library row**: grid-template-columns (80px 1fr 150px 35px); gap (20px); padding (25px 0).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 760px)`.
-- @media (max-width: 650px): section title changes to flex-direction (column).
-- @media (max-width: 650px): footer changes to flex-direction (column).
-- @media (max-width: 760px): opening changes to grid-template-columns (1fr).
-- @media (max-width: 760px): study grid changes to grid-template-columns (1fr); gap (25px).
-- @media (max-width: 760px): library row changes to grid-template-columns (50px 1fr 35px); gap (12px).
-
-## Elevation & Depth
-
-Depth is locally authored on the following surfaces; these values are not a general card-shadow preset.
-
-- specimen i: `8px 15px 30px #5c46621a`.
-
-## Shapes
-
-- btn: corners (`3px`).
-- field input: corners (`3px`).
-- tabs button: corners (`3px`).
-- specimen i: corners (`50%`).
-- orbit: corners (`50%`).
-- motion: corners (`50%`).
-- study detail: corners (`0 70px 0 0`).
+1280px max width, fluid gutters. Pages open with a large h1 and lead, then alternate dense ruled sections (tables, lists with 1.5px ink top rules like a journal contents page) with full-bleed panel bands that hold the two instruments (composer, calibration map). Figures are captioned "Fig. n." in the journal manner.
 
 ## Components
 
-Select a research programme, save or remove studies from a local reading list, filter the study library, and pause molecular motion.
+- Cryostat section drawing (hero): six plated stages with temperature leaders, attenuators, heat exchanger and four coax lines.
+- Circuit composer: gate palette as a radio group, three wires × six steps of buttons, exact state-vector simulation, ket readout, probability histogram, 1,024-shot sampling.
+- Lattice explorer: every qubit and coupler of a system, coloured by T1, readout or frequency; mouse or arrow keys; parked qubits drawn dashed.
+- Spec tables, spec lists, access tags (filled dot = cloud, square = on-premises, ring = preview).
+- Paper rows and paper page with an SVG plot drawn from content data and a copyable BibTeX block.
+- Segmented filters, sort selects, search, `<details>` disclosures, validated forms with inline errors and an `aria-live` confirmation.
 
-### Primary button
+## Motion
 
-Authored btn styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Selection tab
-
-Authored tabs button styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Study Detail
-
-Authored study detail styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Nav Nav
-
-Authored nav nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Motion
-
-Authored source styling with representative content; interactive behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Study List Button
-
-Authored source styling with representative content; interactive behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- :focus visible: outline (3px solid var(--accent)); outline-offset (4px).
-- button:disabled: opacity (0.5).
-- button:hover: filter (brightness(0.94)).
-- tabs button[aria pressed="true"]: background (var(--ink)); color (var(--paper)); border-color (var(--ink)).
-- study list button[aria pressed="true"]: color (#ae456f).
-- specimen i animation: `cell 8s ease-in-out infinite`.
-- specimen i animation-delay: `calc(var(--i) * -0.3s)`.
-- orbit animation: `orbit 18s linear infinite`.
-- o2 animation-delay: `-6s`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+One language: signals travelling. Pulses run down the cryostat's coax lines, the status dot breathes, histogram bars ease to new probabilities, gates settle into place, and each route arrives with a short lift-and-unblur. The in-progress roadmap node pulses. Under `prefers-reduced-motion` all animation stops and the pulses are hidden.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
-
-## Collection 100 refinement
-
-The molecular specimen now exposes Backbone and Surface representations, with selected-study color and metadata. Layered geometric chains replace the isolated bead ring; motion can be paused.
+- Do publish numbers with units and label illustrative values as illustrative.
+- Do keep cobalt for interaction and gold for hardware.
+- Do caption photographs and figures like a paper.
+- Don't add eyebrow labels, gradient text, glass, or icon-card grids.
+- Don't use biology, sci-fi glow or particle backgrounds; the world is cryogenic hardware.
+- Don't use monospace for decoration.

@@ -1,209 +1,84 @@
 ---
 name: Vector
-description: A cinematic automotive concept with trim, finish and engineering views.
 colors:
-  paper: '#e8e8e4'
-  ink: '#222825'
-  muted: '#636b66'
-  accent: '#5a7759'
-  line: '#c4c9c1'
-  config-tone: '#d4d9d1'
-  trims-button-tone: '#a6afa3'
-  drive-surface: '#28342f'
-  config-visual-surface: '#ced4cc'
-  photo-note-ink: '#596359'
-  trims-button-aria-pressed-true-ink: '#21432a'
-  chassis-i-surface: '#222b24'
-  details-surface: '#202a24'
-  details-ink: '#edf0e7'
-  details-span-ink: '#b5c5aa'
-  details-p-ink: '#c4cdc0'
+  paper: "#eef0ec"
+  sheet: "#f8f9f6"
+  ink: "#121518"
+  graphite: "#4d5359"
+  muted: "#5c6268"
+  rule: "#cfd3cd"
+  rule-strong: "#a9aea8"
+  hv: "#d4511c"
+  hv-deep: "#c2470f"
+  hv-ink: "#a63a0d"
+  night: "#121518"
+  night-2: "#1c2024"
+  on-night: "#e9ebe6"
+  on-night-muted: "#a3aab0"
+  hv-on-night: "#ef7a4c"
+  winter: "#355a70"
 typography:
   display:
-    fontFamily: '"Barlow Condensed", sans-serif'
-    lineHeight: '0.9'
-    letterSpacing: -0.02em
-    fontSize: clamp(4rem, 8vw, 6rem)
-    fontWeight: '600'
+    fontFamily: '"Red Hat Display", system-ui, sans-serif'
+    fontWeight: "600"
+    letterSpacing: -0.035em
+    lineHeight: "1.08"
+    fontSize: clamp(2.5rem, 1.6rem + 3.8vw, 4.75rem)
   headline:
-    fontFamily: '"Barlow Condensed", sans-serif'
-    lineHeight: '1.02'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 4rem)
-    fontWeight: '600'
-  headline-context-1:
-    fontFamily: '"Barlow Condensed", sans-serif'
-    lineHeight: '1.02'
-    letterSpacing: -0.035em
-    fontSize: 42px
-    fontWeight: '600'
-  headline-context-2:
-    fontFamily: '"Barlow Condensed", sans-serif'
-    lineHeight: '1.02'
-    letterSpacing: -0.035em
-    fontSize: 44px
-    fontWeight: '600'
-  title:
-    fontFamily: '"DM Sans", sans-serif'
-    lineHeight: '1.2'
-  title-context-1:
-    fontFamily: '"DM Sans", sans-serif'
-    lineHeight: '1.2'
-    fontSize: 24px
-    fontWeight: '400'
+    fontFamily: '"Red Hat Display", system-ui, sans-serif'
+    fontWeight: "600"
+    letterSpacing: -0.025em
+    fontSize: clamp(1.9rem, 1.4rem + 2vw, 3rem)
   body:
-    fontFamily: '"DM Sans", sans-serif'
-    lineHeight: '1.55'
+    fontFamily: '"Red Hat Text", system-ui, sans-serif'
+    fontWeight: "400"
+    lineHeight: "1.6"
+    fontSize: 1.0625rem
+  small:
+    fontFamily: '"Red Hat Text", system-ui, sans-serif'
+    fontSize: 0.875rem
 rounded:
-  observed-1: 3px
+  control: 6px
+  panel: 12px
 spacing:
-  observed-1: 8px
-  observed-2: 12px
-  observed-3: 65px 6%
-  observed-4: 30px
-components:
-  primary-button:
-    textColor: '#e8e8e4'
-    padding: 13px 20px
-    backgroundColor: '#222825'
-    rounded: 3px
-  config-visual:
-    padding: 30px
-    backgroundColor: '#ced4cc'
-    textColor: '#222825'
-  nav-nav:
-    textColor: '#222825'
-  view-tabs-button:
-    textColor: inherit
-    backgroundColor: none
-    padding: 8px 0
-  trims-button:
-    textColor: inherit
-    width: 100%
-    backgroundColor: transparent
-    padding: 18px 0
+  gutter: clamp(20px, 4vw, 48px)
+  section: clamp(64px, 8vw, 120px)
 ---
-
-# Design System: Vector
 
 ## Overview
 
-**Creative North Star: "A cinematic road journal"**
-
-A cinematic road journal: full-width editorial vehicle photography, lean condensed headings, sage engineering surfaces and an integrated trim configurator.
-
-This records the implemented automotive template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Automotive composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-Impeccable collection seed `0c646d2f`, assigned candidate 7. Grounded collection candidates: trade publication; materials archive; field guide; factory drawing; operational atlas; neighborhood workshop; **sector-specific working artifact**. The seventh is selected: each theme gets the artifact its audience uses to understand and decide, rather than a shared marketing skeleton. The user's direct-code creative delegation controls the workflow.
+The design studio sheet: cool studio-wall paper, graphite ink and high-voltage orange, the colour carmakers use for orange HV cabling, reserved for dimension lines, focus and things that carry current. Cars are authored SVG side elevations with real dimension callouts, drawn to one scale; photography is only ever the road. It suits a maker whose whole pitch is honest numbers. People shop for a car on a laptop in daylight and come back on a phone, so the site is light, calm and full of measured data.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Muted**: secondary copy.
-- **Accent**: interactive emphasis.
-- **Line**: dividers.
-- **Config Tone**: context-specific authored color.
-- **Trims Button Tone**: context-specific authored color.
-- **Drive Surface**: context-specific authored color.
-- **Config Visual Surface**: context-specific authored color.
-- **Photo Note Ink**: context-specific authored color.
-- **Trims Button Aria Pressed True Ink**: context-specific authored color.
-- **Chassis I Surface**: context-specific authored color.
-- **Details Surface**: context-specific authored color.
-- **Details Ink**: context-specific authored color.
-- **Details Span Ink**: context-specific authored color.
-- **Details P Ink**: context-specific authored color.
+`paper` is the page and `sheet` lifts drawing surfaces and heroes. `ink` carries text and primary buttons; `graphite`/`muted` carry secondary copy (both AA on paper). `hv` marks dimensions, the active line-up tab, sliders and selection; `hv-deep` fills the primary action on forms, and `hv-ink` is the AA text version used for links and errors. `winter` (steel blue) is used only for the 20 °F range so the two ranges always read apart. `night` holds the range estimator, closing CTA and footer, with `hv-on-night` for accents there.
 
 ## Typography
 
-- **Barlow Condensed** is the CSS family alias for Barlow Condensed Medium, Barlow Condensed SemiBold, Barlow Condensed, Barlow Condensed ExtraBold. Local faces: normal / 500, normal / 600, normal / 700, normal / 800.
-- **DM Sans** is the CSS family alias for DM Sans 9pt. Local faces: normal / 400, normal / 500, normal / 600, normal / 700.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
-- specs strong uses the font shorthand (`500 44px/1 "Barlow Condensed", sans-serif`).
-- specs small uses the font shorthand (`12px "DM Sans", sans-serif`).
+Red Hat Display 600 for headings with tight but legal tracking (−0.035em at h1, −0.025em at h2) and balanced wrapping. Red Hat Text for body at 17px/1.6, capped near 68ch. Every price, range, time and spec uses tabular lining numerals so columns line up. Model names pair a Display name with a lighter body-type label ("Span Sedan").
 
 ## Layout
 
-- **Vision**: padding (65px 6%); grid-template-columns (1fr 1fr); gap (12%).
-- **Config**: grid-template-columns (1.25fr 1fr).
-- **Specs**: grid-template-columns (1fr 1fr); padding (20px 0).
-- **Details   div**: grid-template-columns (repeat(3, 1fr)); gap (45px).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 760px)`.
-- @media (max-width: 650px): section title changes to flex-direction (column).
-- @media (max-width: 650px): footer changes to flex-direction (column).
-- @media (max-width: 760px): drive top changes to flex-direction (column); gap (25px).
-- @media (max-width: 760px): vision changes to grid-template-columns (1fr).
-- @media (max-width: 760px): details   div changes to grid-template-columns (1fr); gap (30px).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-- btn: corners (`3px`).
-- field input: corners (`3px`).
-- tabs button: corners (`3px`).
-- paint button: corners (`50%`).
-- chassis i: corners (`8px`).
+A 1200px sheet with fluid gutters. Heroes split headline and lead copy, with the elevation drawing taking the full width underneath. Spec content is in ruled tables (label left, value right), never in cards. Detail and form pages use a sticky summary column at desktop that drops under the content below 900px. Sections alternate `paper` and `sheet` and land on a dark `night` close.
 
 ## Components
 
-Choose a trim and finish, switch between exterior and CSS engineering views, and save a local configuration.
+- **Elevation**: one SVG car generated from a `Profile` (length, height, wheelbase, roof and nose shape). Paths morph between models, paint/wheel/interior recolour live, and optional dimension lines carry real millimetre and inch values. It drives the home switcher, the models list, model pages, the configurator and the reservation summary.
+- **Option rows**: radio/checkbox rows with name, sublabel and price, and an ink outline when selected; paint swatches are round with a name and note.
+- **Range bars**: paired sticker vs winter bars; the range estimator uses temperature, speed and wheel sliders.
+- **Charging curve**: SVG power-vs-state-of-charge plot with the session window shaded.
+- **Forms**: labelled fields, inline errors with a dot that name the fix, a busy button state, a confirmation panel with an orange check, and a quiet "demo only" line.
+- **Header**: wordmark with the HV arrow, underline-active nav, ink CTA; under 900px a dropdown sheet menu.
 
-### Primary button
+## Motion
 
-Authored btn styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Config Visual
-
-Authored config visual styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Nav Nav
-
-Authored nav nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### View Tabs Button
-
-Authored source styling with representative content; interactive behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Trims Button
-
-Authored source styling with representative content; interactive behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- :focus visible: outline (3px solid var(--accent)); outline-offset (4px).
-- button:disabled: opacity (0.5).
-- button:hover: filter (brightness(0.94)).
-- tabs button[aria pressed="true"]: background (var(--ink)); color (var(--paper)); border-color (var(--ink)).
-- view tabs button[aria pressed="true"]: border-color (var(--ink)).
-- drive   img animation: `reveal 1.5s ease-out`.
-- car photo img transition: `filter 0.6s`.
-- chassis animation: `chassis 6s ease-in-out infinite`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+One language: things settle into place with an exponential ease-out (`cubic-bezier(0.16, 1, 0.3, 1)`). The elevation morphs between models and paints, dimension lines plot themselves, range bars grow from zero, pages rise 10px from 40% opacity on route change (never invisible), and the mobile menu drops in. Content is visible by default. `prefers-reduced-motion: reduce` removes every animation and transition.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do show both ranges together wherever one appears.
+- Do draw the product; use photos for roads, weather and charging only.
+- Do keep orange for current, measurement and action, never for decoration.
+- Don't add eyebrow labels, stat-hero rows or icon-card grids.
+- Don't use photographs of real cars or any third-party marks.
+- Don't round panels past 12px or add shadows to bordered panels.

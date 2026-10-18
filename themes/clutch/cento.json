@@ -1,0 +1,30 @@
+{
+  "number": 96,
+  "name": "Clutch",
+  "sector": "Esports team",
+  "category": "Culture & Media",
+  "tagline": "Three games, twelve players, one habit: winning the last round.",
+  "description": "A multi-page esports club site: division rosters and player pages with stats and crosshair codes, a match centre with round-by-round replays, news, partners enquiry and a merch shop with jersey name printing, bag and checkout.",
+  "tags": [
+    "Round-by-round replay",
+    "Player pages",
+    "Jersey name print",
+    "Match centre"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/teams", "title": "Teams" },
+    { "path": "/players/vexa", "title": "Player" },
+    { "path": "/matches", "title": "Matches" },
+    { "path": "/matches/2026-10-17-hexa-club", "title": "Match" },
+    { "path": "/news", "title": "News" },
+    { "path": "/news/six-rounds-in-a-row", "title": "Article" },
+    { "path": "/shop", "title": "Shop" },
+    { "path": "/shop/home-jersey-2026", "title": "Product" },
+    { "path": "/cart", "title": "Bag & checkout" },
+    { "path": "/partners", "title": "Partners" },
+    { "path": "/club", "title": "Club" }
+  ],
+  "colors": { "paper": "#0b0d12", "ink": "#eceae3", "accent": "#ff5a1f" },
+  "fonts": ["Tomorrow", "Chakra Petch"]
+}

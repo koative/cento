@@ -1,30 +1,35 @@
 # Kindred
 
-A spirited adoption board with animal filters and meet-and-greet requests.
+Somebody here has been waiting for you. A pet adoption shelter website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: hero with today's opening status and longest-waiting faces, just-arrived kennel cards, a live quiz sample, the longest stays, adoption steps, an adopter story, foster callout, donation ladder, visiting hours, close
+- `/animals` — Adoptable animals: species tabs, search, age/size filters, good-with and first-timer toggles, sort, empty state, collar-tag legend
+- `/animals/:id` — Animal profile (14 animals): kennel-card spec sheet, collar tag, good-with, story, the right home, loves/not keen, character scales, health, fee, related animals
+- `/match` — Matching quiz: seven questions with a live "still in the running" board, then ranked matches with reasons and cautions
+- `/adopt` — How adoption works: steps, fee table, what's included, policies, FAQ
+- `/apply` and `/apply/:id` — Three-step adoption application with per-step validation and a confirmation state
+- `/volunteer` — Volunteer roles, fostering, orientation dates and sign-up form
+- `/donate` — Monthly/one-off giving with live impact line, funds, spending split, wishlist, kennel sponsorship
+- `/about` — Story, milestones, the building, team, visiting info and hours
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Build with `bun run build`. Publish `dist`; relative asset paths support subdirectory hosting.
-
-## Design and interaction
-
-An affectionate adoption noticeboard in orange, cream and forest. Oversized animal photography, informal bold type, a species filter and an inline meeting request make matching the central experience.
-
-The controls demonstrate complete local state changes. All brands, people, addresses, prices, dates and offerings are fictional demo content. No information is submitted, no booking or order is made, and no service or advice is provided. Replace demo content and connect an appropriate backend before real use.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-Edit `src/App.tsx` for content and behavior, `src/styles.css` for styles, and `index.html` for metadata. React, TypeScript, Vite and Lucide icons. Keyboard focus, semantic controls, mobile layouts and reduced-motion preferences are supported.
+`src/content.ts` holds all copy and data (animals, quiz, fees, roles, hours), `src/styles.css` the design tokens at `:root`, and `src/assets` the imagery. Quiz weights live in `src/lib/match.ts`.
 
-## Assets
+## Demo behaviour
 
-Self-hosted bricolage and dm fonts copied from the collection's licensed assets; OFL notices in `src/assets/fonts`. Lucide icons are ISC licensed. Photos are bundled from Unsplash under its license and are illustrative, without endorsement:
+The filters, matching quiz, adoption application, volunteer sign-up, donation form and newsletter all run locally in the browser: they validate, show a short loading state and confirm, but nothing is sent, stored, reserved or charged. Kindred, its animals, people, prices and addresses are fictional.
 
-- `dog.jpg`: https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1400&q=85
-- `cat.jpg`: https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1200&q=85
-- `puppy.jpg`: https://images.unsplash.com/photo-1583511655826-05700d52f4d9?auto=format&fit=crop&w=1200&q=85
+## Credits
+
+Fonts: Baloo 2 and Mulish (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

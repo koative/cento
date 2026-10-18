@@ -1,29 +1,37 @@
 # Odyssey
 
-A destination journal with a buildable day-by-day itinerary.
+Slow journeys, planned by people who have been. A travel agency website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: hero with a journey photo, a strip of all ten destinations, featured destinations, how a journey gets made, the route chart teaser, set journeys, a traveller's quote, promises, journal picks and an enquiry close.
+- `/destinations` — Destinations: filter by region, landscape and travel month, sort by best month, flight time, price or name; empty state.
+- `/destinations/:slug` — Destination (e.g. `/destinations/kyoto`): photo pair, facts sheet, month-by-month season chart, sample days, a stays table, journeys through it and related places.
+- `/journeys` — Journeys: seven set routes filtered by length and departure month, with plain pricing notes.
+- `/journeys/:slug` — Journey (e.g. `/journeys/the-atlantic-rim`): facts and best departures, "open in planner", route chart, day-by-day timeline, inclusions and related journeys.
+- `/planner` — Itinerary planner: click fixes on a navigator's chart, set nights, reorder stops, pick a date, travellers and stay level; dates, legs and a per-person estimate update live and persist locally.
+- `/journal` — Travel journal: articles filterable by planner.
+- `/journal/:slug` — Journal article (e.g. `/journal/kyoto-before-nine`).
+- `/about` — About: the agency's habits, the planners and their regions, the office.
+- `/how-we-work` — How we work: the four steps, fees and payments, FAQ disclosures.
+- `/enquire` — Enquiry form that carries the drafted route, with validation and a confirmation state.
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Build with `bun run build`. Publish `dist`; relative asset paths support subdirectory hosting.
-
-## Design and interaction
-
-A blue-and-sand travel notebook: panoramic destination imagery, tabbed daily plans and a trip packing sheet. The itinerary behaves like a practical journal and each selected activity changes a visible route summary.
-
-The controls demonstrate complete local state changes. All brands, people, addresses, prices, dates and offerings are fictional demo content. No information is submitted, no booking or order is made, and no service or advice is provided. Replace demo content and connect an appropriate backend before real use.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-Edit `src/App.tsx` for content and behavior, `src/styles.css` for styles, and `index.html` for metadata. React, TypeScript, Vite and Lucide icons. Keyboard focus, semantic controls, mobile layouts and reduced-motion preferences are supported.
+`src/content.ts` holds all copy and data (destinations, journeys, articles, planners, fees, FAQ). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
-## Assets
+## Demo behaviour
 
-Self-hosted instrument and dm fonts copied from the collection's licensed assets; OFL notices in `src/assets/fonts`. Lucide icons are ISC licensed. Photos are bundled from Unsplash under its license and are illustrative, without endorsement:
+The planner keeps your draft route in `localStorage` (and still works without storage), plots it on the chart and prices it with illustrative nightly rates. "Send this route to a planner" attaches the route to the enquiry form, which validates every field and shows a reference number on success; the footer newsletter validates and confirms in place. Nothing is sent, booked or charged anywhere, and Odyssey, its planners, prices and travellers are fictional.
 
-- `coast.jpg`: https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1800&q=85
-- `town.jpg`: https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=1200&q=85
+## Credits
+
+Fonts: Playfair Display and Kumbh Sans (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

@@ -1,30 +1,39 @@
 # Folio
 
-An independent print room with original geometric editions and a viewing-table shortlist.
+Three rooms, eight artists, every price on the wall label. A contemporary art gallery website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-[Live demo](https://koative.github.io/elseform/themes/folio/)
+## Pages
 
-## Run independently
+- `/` — Home: the current exhibition with its lead work, also on view, the building with live open/closed status, works for sale from the viewing room, the true-scale wall preview, artist roster with hover preview, talks and late nights, coming next, editions and books, private-viewing close
+- `/exhibitions` — Exhibitions: on now, upcoming and past, filterable by status
+- `/exhibitions/:slug` — Exhibition: dates, room, admission and live status, installation view, text, related events, every work with price or sale status, one-click enquiry about all available works
+- `/artists` — Artists: the eight represented artists with medium, biography line and current or coming shows
+- `/artists/:slug` — Artist: statement, biography, works, exhibitions at Folio and a selected CV
+- `/viewing-room` — Viewing room: 16 priced works filterable by artist and price band, four sort orders, a saved list kept between visits and a sticky "enquire about N" action
+- `/viewing-room/:id` — Work: wall label with size in cm and in, price, description, save to list, true-scale wall preview, more by the artist
+- `/visit` — Visit: weekly hours with today highlighted and live status, authored street map and directions, the three rooms, access, FAQ
+- `/shop` — Editions & books: signed editions, catalogues and posters with type filter and sort
+- `/shop/:id` — Shop item: framing option, quantity, add to bag, specs, related items
+- `/bag` — Bag & checkout: quantities, delivery or collection, validated details form, order confirmation
+- `/about` — About: the bindery story, how the gallery works, opening night, team, close
+- `/enquire` — Enquire: the saved list, topic, preferred viewing date and a validated enquiry form with success state
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Build with `bun run build`; preview with `bun run preview`. The relative Vite base supports nested hosting. This folder is self-contained.
-
-## Design and interaction
-
-Print drawer: warm paper, open black type, full-size geometric editions and a compact catalog.
-
-Edition switching, print-process filtering and local saved editions. All state is local to the current page visit and resets on reload. All businesses, products, prices, schedules and services are fictional. No order, payment, booking or inquiry is sent.
+Build with `bun run build`: static output in `dist/`, and the relative base works in any subfolder.
 
 ## Customize
 
-Edit `src/App.tsx` for content and behavior, `src/styles.css` for the visual system, and `index.html` for metadata. React 19, TypeScript and Vite. Semantic controls, visible keyboard focus, mobile reflow and reduced-motion handling are included.
+`src/content.ts` holds all copy and data (artists, works and their drawn geometry, exhibitions, events, shop, hours, visit, team). `src/styles.css` holds the design tokens at `:root`. Photography lives in `src/assets`.
 
-## Assets and licensing
+## Demo behaviour
 
-No photography. Original CSS geometry is included under the template MIT license.
+The viewing-room list and the bag are saved in `localStorage` (and still work if storage is blocked). The true-scale preview redraws any work on a gallery wall, living room, hallway or a wall of your own size, at a hanging height you choose, in centimetres or inches. Opening status follows the visitor's clock and the hours in `content.ts`. The enquiry, checkout and newsletter forms validate in the browser and show a confirmation; nothing is sent, booked or charged, and Folio is a fictional brand.
 
-Self-hosted DM Sans, Libre Caslon Text and Space Grotesk originate from [Google Fonts](https://fonts.google.com/). Their OFL notices ship in `src/assets/fonts`. Icons are [Lucide](https://lucide.dev/), ISC licensed. Template code is MIT licensed; see `LICENSE`. Replace demonstration content and connect real services before production use.
+## Credits
+
+Font: Hanken Grotesk (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

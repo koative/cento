@@ -1,203 +1,113 @@
-import { useState } from "react";
-import { Braces, Play, ArrowRight, Check, RotateCcw } from "lucide-react";
+import { useRef, type ReactNode } from "react";
+import { match, usePageChange, useRoute } from "./router";
+import {
+  about,
+  app,
+  brand,
+  changelog,
+  connectors,
+  connectorsPage,
+  consolePage,
+  customers,
+  docs,
+  home,
+  notFound,
+  platform,
+  pricing,
+  signin,
+  signup,
+  status,
+} from "./content";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { AppSidebar } from "./components/AppSidebar";
+import Home from "./pages/Home";
+import Platform from "./pages/Platform";
+import Connectors from "./pages/Connectors";
+import ConnectorPage from "./pages/Connector";
+import ConsolePage from "./pages/ConsolePage";
+import Pricing from "./pages/Pricing";
+import Docs from "./pages/Docs";
+import Status from "./pages/Status";
+import Changelog from "./pages/Changelog";
+import Customers from "./pages/Customers";
+import About from "./pages/About";
+import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SignIn";
+import NotFound from "./pages/NotFound";
+import AppOverview from "./pages/AppOverview";
+import AppConnections from "./pages/AppConnections";
+import AppLogs from "./pages/AppLogs";
+import AppSettings from "./pages/AppSettings";
+
+type Page = [title: string, node: ReactNode] | null;
+
+const site = (s: string) => `${s} — ${brand.name}`;
+const inApp = (i: number) =>
+  `${app.nav[i].label} — ${brand.name} dashboard demo`;
+
+const routes: [string, (p: Record<string, string>) => Page][] = [
+  ["/", () => [home.title, <Home />]],
+  ["/platform", () => [site(platform.title), <Platform />]],
+  ["/connectors", () => [site(connectorsPage.title), <Connectors />]],
+  [
+    "/connectors/:slug",
+    ({ slug }) => {
+      const c = connectors.find((x) => x.slug === slug);
+      return c
+        ? [site(`${c.name} connector`), <ConnectorPage connector={c} />]
+        : null;
+    },
+  ],
+  ["/console", () => [site(consolePage.title), <ConsolePage />]],
+  ["/pricing", () => [site(pricing.title), <Pricing />]],
+  ["/docs", () => [site(docs.title), <Docs />]],
+  ["/status", () => [site(status.title), <Status />]],
+  ["/changelog", () => [site(changelog.title), <Changelog />]],
+  ["/customers", () => [site(customers.title), <Customers />]],
+  ["/about", () => [site(about.title), <About />]],
+  ["/signup", () => [site(signup.title), <SignUp />]],
+  ["/signin", () => [site(signin.title), <SignIn />]],
+  ["/app", () => [inApp(0), <AppOverview />]],
+  ["/app/connections", () => [inApp(1), <AppConnections />]],
+  ["/app/logs", () => [inApp(2), <AppLogs />]],
+  ["/app/settings", () => [inApp(3), <AppSettings />]],
+];
+
+function resolve(path: string): [string, ReactNode] | null {
+  for (const [pattern, render] of routes) {
+    const params = match(pattern, path);
+    const page = params && render(params);
+    if (page) return page;
+  }
+  return null;
+}
+
 export default function App() {
-  const [event, setEvent] = useState("order.created");
-  const [ran, setRan] = useState(false);
-  const [retries, setRetries] = useState(3);
-  const [attempts, setAttempts] = useState(0);
-  const [tab, setTab] = useState("Payload");
-  const eventBody =
-    event === "order.created"
-      ? {
-          event: "order.created",
-          order_id: "ord_2048",
-          total: 148,
-          currency: "USD",
-        }
-      : {
-          event: "customer.updated",
-          customer_id: "cus_601",
-          segment: "returning",
-          email_consent: true,
-        };
+  const path = useRoute();
+  const mainRef = useRef<HTMLElement>(null);
+  const found = resolve(path);
+  const [title, page] = found ?? [site(notFound.title), <NotFound />];
+  const dashboard =
+    found !== null && (path === "/app" || path.startsWith("/app/"));
+  usePageChange(mainRef, title);
+
   return (
-    <>
-      <a className="skip" href="#main">
-        Skip to integration lab
+    <div className={dashboard ? "app-shell" : "site-shell"}>
+      <a className="skip-link" href="#main">
+        Skip to content
       </a>
-      <header>
-        <a className="brand" href="#">
-          <Braces />
-          conduit
-        </a>
-        <nav>
-          <a href="#main">Workbench</a>
-          <a href="#reference">Reference</a>
-          <span className="sandbox">Sandbox</span>
-        </nav>
-      </header>
-      <main id="main">
-        <div className="lab-heading">
-          <h1>Make the connection.</h1>
-          <p>
-            One event. The right destination. A clear view of everything in
-            between.
-          </p>
-        </div>
-        <section className="workbench">
-          <div className="bench-toolbar">
-            <span>storefront → fulfilment</span>
-            <span>Local simulation / v1</span>
-          </div>
-          <div className="flow">
-            <div className="node source">
-              <small>Source</small>
-              <Braces />
-              <strong>Storefront</strong>
-              <span>Event stream</span>
-            </div>
-            <div className={"connector " + (ran ? "complete" : "")}>
-              <i />
-              <span>{ran ? "200 OK" : "Ready"}</span>
-            </div>
-            <div className="node transform">
-              <small>Transform</small>
-              <span className="brackets">{"{ }"}</span>
-              <strong>Normalize</strong>
-              <span>JSON mapping</span>
-            </div>
-            <div className={"connector " + (ran ? "complete" : "")}>
-              <i />
-              <span>{ran ? "Delivered" : "Awaiting event"}</span>
-            </div>
-            <div className="node destination">
-              <small>Destination</small>
-              <Check />
-              <strong>Fulfilment</strong>
-              <span>Webhook endpoint</span>
-            </div>
-          </div>
-          <div className="lab-panels">
-            <section className="request">
-              <h2>Build your event</h2>
-              <label>
-                Event type
-                <select
-                  value={event}
-                  onChange={(e) => {
-                    setEvent(e.target.value);
-                    setRan(false);
-                  }}
-                >
-                  <option>order.created</option>
-                  <option>customer.updated</option>
-                </select>
-              </label>
-              <label>
-                Retry limit
-                <select
-                  value={retries}
-                  onChange={(e) => setRetries(+e.target.value)}
-                >
-                  <option value="0">No retries</option>
-                  <option value="3">3 attempts</option>
-                  <option value="5">5 attempts</option>
-                </select>
-              </label>
-              <button
-                className="primary"
-                onClick={() => {
-                  setRan(true);
-                  setAttempts(attempts + 1);
-                }}
-              >
-                <Play />
-                Run test event
-              </button>
-              <p className="status" role="status">
-                {ran
-                  ? `${event} delivered to the local test destination.`
-                  : "No network request will be made."}
-              </p>
-            </section>
-            <section className="payload">
-              <div className="tabs">
-                {["Payload", "Response"].map((x) => (
-                  <button
-                    key={x}
-                    aria-pressed={tab === x}
-                    onClick={() => setTab(x)}
-                  >
-                    {x}
-                  </button>
-                ))}
-                <span>application/json</span>
-              </div>
-              <pre>
-                {tab === "Payload"
-                  ? JSON.stringify(eventBody, null, 2)
-                  : ran
-                    ? JSON.stringify(
-                        {
-                          status: 200,
-                          accepted: true,
-                          event: event,
-                          retry_limit: retries,
-                        },
-                        null,
-                        2,
-                      )
-                    : "// Run a test event to see its response."}
-              </pre>
-            </section>
-          </div>
-        </section>
-        <section id="reference" className="reference">
-          <article>
-            <h2>Predictable by design.</h2>
-            <p>
-              Observe the entire path before you connect a production service.
-              This workbench is a fully local teaching example.
-            </p>
-            <dl>
-              <div>
-                <dt>Events tested</dt>
-                <dd>{attempts}</dd>
-              </div>
-              <div>
-                <dt>Current retry policy</dt>
-                <dd>{retries === 0 ? "Disabled" : `${retries} attempts`}</dd>
-              </div>
-            </dl>
-          </article>
-          <div className="event-log">
-            <h3>Execution log</h3>
-            {ran ? (
-              <div className="log-row">
-                <span className="success">Success</span>
-                <code>{event}</code>
-                <span>Simulation #{attempts}</span>
-              </div>
-            ) : (
-              <p className="log-empty">
-                The log is quiet. Run an event to trace its path.
-              </p>
-            )}
-            <div className="reference-line">
-              <strong>About retries</strong>
-              <p>
-                A real integration retries temporary failures. This demo records
-                your selected policy without making requests or adding
-                artificial delays.
-              </p>
-            </div>
-          </div>
-        </section>
+      {dashboard ? <AppSidebar /> : <Header />}
+      <main
+        id="main"
+        tabIndex={-1}
+        ref={mainRef}
+        key={path}
+        className={dashboard ? "app-main" : "site-main"}
+      >
+        {page}
       </main>
-      <footer>
-        <span>Conduit — fictional integration lab</span>
-        <span>Local data. Real interactions.</span>
-      </footer>
-    </>
+      {!dashboard && <Footer />}
+    </div>
   );
 }

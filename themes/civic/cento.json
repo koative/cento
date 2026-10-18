@@ -1,0 +1,28 @@
+{
+  "number": 37,
+  "name": "Civic",
+  "sector": "City government services",
+  "category": "Education & Community",
+  "tagline": "Your city, one search away.",
+  "description": "A multi-page city government portal: searchable services A–Z with detailed service pages, a pin-on-the-map issue reporter with reference tracking, an address lookup for trash day and ward, council meetings with agendas and outcomes, news and service alerts with sign-up.",
+  "tags": [
+    "Report on a map",
+    "Trash-day & ward lookup",
+    "Council agendas",
+    "Service alerts"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/services", "title": "Services A–Z" },
+    { "path": "/services/potholes", "title": "Service" },
+    { "path": "/report", "title": "Report an issue" },
+    { "path": "/council", "title": "Council & meetings" },
+    { "path": "/council/council-2026-10-28", "title": "Meeting" },
+    { "path": "/news", "title": "News" },
+    { "path": "/news/mill-street-resurfacing-done", "title": "Article" },
+    { "path": "/alerts", "title": "Alerts" },
+    { "path": "/city-hall", "title": "City Hall" }
+  ],
+  "colors": { "paper": "#f4f4ee", "ink": "#10384b", "accent": "#dbe74d" },
+  "fonts": ["Public Sans", "Public Sans"]
+}

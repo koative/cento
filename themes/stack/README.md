@@ -1,37 +1,36 @@
 # Stack
 
-A readable documentation workspace with search, SDK examples and an event playground.
+Durable jobs, events and webhooks for TypeScript backends. A developer documentation website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-A standalone, responsive React + TypeScript + Vite template from [Elseform](https://github.com/koative/elseform).
+## Pages
 
-## Run independently
+- `/` — docs home: install command with package-manager switch, annotated code and worker log, contents, job-flow diagram, code tour, API at a glance, playground teaser, clients table, recent releases, support close
+- `/guides` — guides index filtered by topic and level, sortable by reading order, recency or length
+- `/guides/:slug` — guide page (9 guides) in the docs shell: sidebar, sections with code, steps, notes and SVG diagrams, on-this-page rail with scroll tracking, feedback, previous/next
+- `/api` — API reference overview: basics, authentication, error table, pagination, resource index
+- `/api/:slug` — resource reference (6 resources): object fields, every endpoint with parameters, request and response examples, link into the playground
+- `/playground` and `/playground/:op` — request console: pick any of 16 endpoints, edit path/query params and JSON body, get validated responses, live cURL / fetch / Python code, session history
+- `/changelog` — releases filterable by change type, breaking releases flagged
+- `/search` — search across guides, API and changelog with type filters, highlighted matches and empty states (press `/` anywhere)
+- `/about` — project story, principles, maintainers, governance
+- `/support` — support ticket form with validation and confirmation, response times, FAQ
+
+## Run
 
 ```sh
-cd themes/stack
-bun install
-bun run dev
-bun run build
-bun run preview
+bun install && bun run dev
 ```
 
-The production output is `dist/`. Vite uses a relative base, so the output can be served from any static subdirectory.
+Build: `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
-## Working interactions
+## Customize
 
-Search and navigate documentation, switch package managers, copy a code example, and run a local event request simulator with native validation.
+`src/content.ts` (all copy and data: guides, API resources and endpoints, releases, team), `src/styles.css` (tokens at `:root`), `src/assets` (sources list).
 
-All business names, prices, specifications, data and availability are **fictional demonstration content**. State stays in memory and resets on reload. No backend, booking, email, payment or external operation is connected. Replace demonstration content and implement real integrations before production use.
+## Demo behaviour
 
-## Design and accessibility
+The playground validates requests in the browser against the documented parameters (missing fields, wrong types, unknown keys, bad ids, malformed JSON) and answers from the reference examples; search, filters, copy buttons and the support and newsletter forms all run locally. Nothing is sent anywhere, no key is real, and Stack is a fictional brand.
 
-A technical field guide: fixed wayfinding, calm reading column, pale code surfaces, explicit examples and an embedded event playground.
+## Credits
 
-Responsive layouts, semantic controls, visible focus, meaningful labels, native form validation where relevant, and reduced-motion support. Motion follows the material of each theme; reduced-motion disables decorative animation.
-
-## Self-hosted fonts and icons
-
-Fonts are bundled in `src/assets/fonts/` with their Open Font License notices. Font assets are reused from this repository's licensed font collection. No external font request is made. [Lucide](https://lucide.dev/) icons use the ISC license. CSS and SVG geometry are authored for this template.
-
-## Validation
-
-Standalone build verified with `bun run build`. The root repository maintains interaction tests and responsive screenshot checks.
+Fonts: IBM Plex Sans and IBM Plex Mono (SIL OFL 1.1). Images: none; all diagrams are authored SVG, see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

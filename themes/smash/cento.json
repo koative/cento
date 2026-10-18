@@ -1,0 +1,29 @@
+{
+  "number": 86,
+  "name": "Smash",
+  "sector": "Burger joint with ordering",
+  "category": "Food & Drink",
+  "tagline": "Smashed thin. Stacked tall. Ready in twelve.",
+  "description": "A counter-service smash-burger joint with online ordering: filterable menu, a live burger builder that draws your stack, persisted cart and pickup/delivery checkout, plus locations with live open hours, catering estimator and a merch shop.",
+  "tags": [
+    "Burger builder",
+    "Online ordering",
+    "Catering estimator",
+    "Merch shop"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/menu", "title": "Menu" },
+    { "path": "/menu/the-smash", "title": "Menu item" },
+    { "path": "/order", "title": "Your order" },
+    { "path": "/checkout", "title": "Checkout" },
+    { "path": "/locations", "title": "Locations" },
+    { "path": "/locations/eastside", "title": "Location" },
+    { "path": "/catering", "title": "Catering" },
+    { "path": "/merch", "title": "Merch" },
+    { "path": "/merch/logo-tee", "title": "Merch item" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#fbf1de", "ink": "#22150f", "accent": "#d42a1c" },
+  "fonts": ["Titan One", "Rubik"]
+}

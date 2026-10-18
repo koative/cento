@@ -1,0 +1,25 @@
+{
+  "number": 64,
+  "name": "Reel",
+  "sector": "Documentary film production",
+  "category": "Creative",
+  "tagline": "Documentaries made slowly, with the people in them.",
+  "description": "A dark, cinematic site for an independent documentary studio: a filterable film slate, film pages with a scrubbable stills-cut trailer player, a production board, screenings programme with licences, services with rate card and FAQ, studio and team, and a validated enquiry form.",
+  "tags": [
+    "Trailer player",
+    "Production board",
+    "Screenings programme",
+    "Enquiry form"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/films", "title": "Films" },
+    { "path": "/films/ghost-gear", "title": "Film" },
+    { "path": "/screenings", "title": "Screenings" },
+    { "path": "/services", "title": "Services" },
+    { "path": "/studio", "title": "Studio & team" },
+    { "path": "/contact", "title": "Contact" }
+  ],
+  "colors": { "paper": "#131210", "ink": "#f2ecdc", "accent": "#e8a463" },
+  "fonts": ["Bebas Neue", "Inter Tight"]
+}

@@ -1,175 +1,65 @@
 ---
 name: Field
-description: A community football match hub with fixtures, results, and a signup squad.
 colors:
-  paper: '#e6eddf'
-  ink: '#143c2a'
-  header-tone: '#9eaf9a'
-  match-label-tone: '#50715e'
-  crest-tone: '#d0dfb9'
-  pitch-lines-tone: '#65866d'
-  club-band-tone: '#c5d69b'
-  club-title-h1-span-ink: '#518052'
-  versus-ink: '#9db88c'
-  fixture-list-h3-span-ink: '#58735a'
-  join-photo-span-ink: '#fff'
-  join-form-input-placeholder-ink: '#b3c5ad'
+  paper: "#f3f1e7"
+  paper-2: "#e8e5d6"
+  chalk: "#fbfaf3"
+  ink: "#13261b"
+  ink-2: "#43564b"
+  rule: "#c8c9ba"
+  green: "#1e5b3a"
+  green-deep: "#133f28"
+  green-stripe: "#23683f"
+  gold: "#f2b630"
+  gold-tint: "#f6e3b0"
+  red: "#b02e22"
 typography:
-  display:
-    fontFamily: '"Barlow Condensed"'
-    fontSize: clamp(72px, 8.5vw, 120px)
-    lineHeight: '0.89'
-    fontWeight: '700'
-    letterSpacing: -0.02em
-  headline:
-    fontFamily: '"DM Sans", sans-serif'
-  headline-context-1:
-    fontFamily: '"Barlow Condensed"'
-    fontSize: 53px
-    lineHeight: normal
-    fontWeight: '600'
-  headline-context-2:
-    fontFamily: '"Barlow Condensed"'
-    fontSize: 59px
-    lineHeight: '0.95'
-    fontWeight: '600'
-  title:
-    fontFamily: '"DM Sans", sans-serif'
-  title-context-1:
-    fontFamily: '"Barlow Condensed"'
-    fontSize: 27px
-    lineHeight: '1.2'
-    fontWeight: '600'
-  body:
-    fontFamily: '"DM Sans", sans-serif'
+  display: Graduate
+  body: Rubik
+  sizes:
+    h1: "clamp(2.4rem, 1.4rem + 4.2vw, 5.25rem)"
+    h2: "clamp(1.65rem, 1.2rem + 1.9vw, 2.75rem)"
+    h3: "clamp(1.1rem, 1rem + 0.35vw, 1.3rem)"
+    body: "1rem / 1.55"
+rounded:
+  sm: 4px
+  md: 10px
+  lg: 14px
 spacing:
-  observed-1: 20px
-  observed-2: 25px
-  observed-3: 30px
-components:
-  navigation:
-    textColor: '#143c2a'
-  next-match:
-    backgroundColor: '#143c2a'
-    textColor: '#e6eddf'
-    padding: 30px 30px 0
-  fixture-tabs-button:
-    textColor: inherit
-    backgroundColor: transparent
-    padding: 10px 0 16px
-  fixture-heading-select:
-    textColor: inherit
-    backgroundColor: transparent
-    padding: 12px 18px
+  gap: "clamp(1rem, 0.6rem + 1.6vw, 2rem)"
+  section: "clamp(3.5rem, 2rem + 6vw, 7rem)"
 ---
 
-# Design System: Field
+# Field
 
 ## Overview
 
-**Creative North Star: "Community matchday programme in club green and white with giant score typography"**
-
-Community matchday programme in club green and white with giant score typography. A community football match hub with fixtures, results, and a signup squad.
-
-This records the implemented community sports template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Community sports composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-Mode: Experience with a useful demonstration task. The user delegates creative orchestration and direct implementation. Impeccable collection seed `0b4a6fde` assigns candidate 3: a collection of culturally grounded programme and specimen systems. Grounded candidates were exhibition, poster, programme/specimen, field notes, studio archive, publication, and operational board. The individual sector owns its typography, topology and behavior.
+A grassroots football club seen through its matchday programme: cream programme stock, ink rules, varsity lettering and club-green panels with chalk pitch markings. The people who use it are parents and players checking fixtures on a phone at the touchline in daylight, so the site is light, dense where the fixture list is dense, and quiet everywhere else.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Header Tone**: context-specific authored color.
-- **Match Label Tone**: context-specific authored color.
-- **Crest Tone**: context-specific authored color.
-- **Pitch Lines Tone**: context-specific authored color.
-- **Club Band Tone**: context-specific authored color.
-- **Club Title H1 Span Ink**: context-specific authored color.
-- **Versus Ink**: context-specific authored color.
-- **Fixture List H3 Span Ink**: context-specific authored color.
-- **Join Photo Span Ink**: context-specific authored color.
-- **Join Form Input Placeholder Ink**: context-specific authored color.
+Paper and ink carry the reading. Club green is the shirt, the primary button and every "on the pitch" surface (matchday strip, results band, team sheet pitch, closing panel). Gold is the kit trim: selected states, the age marker, "won" on the results band and focus rings on dark surfaces. Red marks losses and form errors only. League rows for the club sit on gold tint.
 
 ## Typography
 
-- **Barlow Condensed** is the CSS family alias for Barlow Condensed Medium, Barlow Condensed SemiBold, Barlow Condensed, Barlow Condensed ExtraBold, Barlow Condensed Black. Local faces: normal / 500, normal / 600, normal / 700, normal / 800, normal / 900.
-- **DM Sans** is the CSS family alias for DM Sans 9pt. Local faces: normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
-- brand uses the font shorthand (`800 38px "Barlow Condensed"`).
-- brand   span uses the font shorthand (`8px/1.5 "DM Sans"`).
-- club title h1 uses the font shorthand (`700 clamp(72px, 8.5vw, 120px)/0.89 "Barlow Condensed"`).
-- crest uses the font shorthand (`700 40px "Barlow Condensed"`).
-- match teams b uses the font shorthand (`600 25px/1 "Barlow Condensed"`).
+Graduate, a collegiate slab, sets the club name, headings, shirt numbers, scores and dates, the way shirt lettering and programme headings do. Rubik handles everything that has to be read: body, tables, forms and labels. Numbers in tables use tabular lining figures.
 
 ## Layout
 
-- **Matchday**: grid-template-columns (1.2fr 1fr); padding (45px 5vw 55px); gap (60px).
-- **Fixture list article**: grid-template-columns (1fr 2fr 0.8fr 1fr); gap (30px); padding (26px 0).
-- **Join**: grid-template-columns (1fr 1fr).
-- **Club values**: padding (70px 5vw); grid-template-columns (1fr 1fr); gap (70px).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 850px)`, `(max-width: 600px)`.
-- @media (max-width: 650px): footer changes to flex-direction (column).
-- @media (max-width: 600px): matchday changes to grid-template-columns (1fr); gap (35px).
-- @media (max-width: 600px): fixture list article changes to grid-template-columns (75px 1fr 55px); gap (15px).
-- @media (max-width: 600px): join changes to grid-template-columns (1fr).
-- @media (max-width: 600px): club values changes to grid-template-columns (1fr); gap (25px).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-- crest: corners (`0 0 40% 40%`).
-- join form input: corners (`0`).
+A 1240px wrap with programme-style rules: 2px ink rules above lists, double rules under page titles. Fixture rows are a fixed grid (date, team, home-score-away, venue) that folds into two lines on phones. Home alternates dense sections (weekend list, tables) with open ones (scoreboard, quote, closing panel).
 
 ## Components
 
-Switch fixtures and results, filter teams and prepare a training signup.
+Crest and shirt are authored SVG (green body, chalk sleeves, keeper in gold). The team sheet is the signature: an SVG pitch with mowing stripes, shirt tokens placed from the formation string, a player card with stats and bench swaps. Also: segmented controls for filters, league table, age ladder (a Gantt of team age bands with a slider), training board, fee table, registration form with inline errors, FAQ disclosures and the ground map.
 
-### Navigation
+## Motion
 
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Next Match
-
-Authored next match styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Fixture Tabs Button
-
-Authored fixture tabs button styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Fixture Heading Select
-
-Authored fixture heading select styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid currentColor); outline-offset (5px).
-- button:disabled: opacity (0.55).
-- pitch lines svg animation: `pitch 2s cubic-bezier(0.16, 1, 0.3, 1)`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+One language: chalk. Pitch markings draw themselves in with stroke-dashoffset when a pitch appears, and shirts glide to their new positions when the formation changes, staggered by slot. Pages fade up 10px on arrival. Everything is visible by default; `prefers-reduced-motion` removes all of it.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do keep scores, dates and shirt numbers in Graduate; keep reading text in Rubik.
+- Do use green surfaces only for match-related moments.
+- Don't put gold text on paper: it fails contrast. Gold is a fill.
+- Don't publish under-12 scores or tables; the content model supports `scores: false` for that.
+- Don't add eyebrows above headings or decorative stat rows.

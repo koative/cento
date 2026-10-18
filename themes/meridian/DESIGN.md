@@ -1,163 +1,67 @@
 ---
 name: Meridian
-description: A map-and-list property finder with saved homes and viewing requests.
 colors:
-  paper: '#eef0e8'
-  ink: '#253c32'
-  accent: '#a34724'
-  searchbar-tone: '#fffef5'
-  finder-tone: '#b7c3b1'
-  title-em-ink: '#6b7d5d'
-  searchbar-span-ink: '#53644d'
-  listing-heading-span-last-child-ink: '#5a6b50'
+  paper: "#f2efe7"
+  paper-2: "#e8e3d6"
+  card: "#fbfaf6"
+  ink: "#1d2b24"
+  ink-2: "#4a5850"
+  line: "#d3cdbd"
+  line-strong: "#7d8378"
+  accent: "#a3401f"
+  forest: "#23392f"
+  ok: "#2f6340"
+  error: "#9f2a1b"
+  map-land: "#e7e2d2"
+  map-park: "#c9d6b7"
+  map-water: "#aecbc8"
 typography:
   display:
-    fontFamily: Display, serif
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(3.5rem, 6vw, 5.7rem)
-  headline:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 3.7rem)
-  headline-context-1:
-    fontFamily: Display, serif
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: 27px
-  headline-context-2:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 3.7rem)
-  title:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
+    family: Noto Serif Display
+    weights: [300, 400]
+    sizes: "h1 clamp(2.4rem → 4.6rem), h2 clamp(1.7rem → 2.6rem), prices 1.55–3rem"
   body:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
-spacing:
-  observed-1: 12px
-  observed-2: 20px
-  observed-3: 10px
-  observed-4: 16px
-  observed-5: 20px 0
-components:
-  primary-button:
-    padding: 14px 22px
-    backgroundColor: '#253c32'
-    textColor: '#eef0e8'
-  navigation:
-    textColor: '#253c32'
-  searchbar:
-    padding: 14px 20px
-    backgroundColor: '#fffef5'
-    textColor: '#253c32'
+    family: Albert Sans
+    weights: [400, 600, 650, 700]
+    sizes: "1.0625rem body, 0.92rem labels, 0.8rem table heads"
+rounded: "3px controls and images, 4px panels, 50% avatars and icon buttons"
+spacing: "sections clamp(3.5rem → 6rem); gutter clamp(1.1rem → 3rem); max width 1320px"
 ---
-
-# Design System: Meridian
 
 ## Overview
 
-**Creative North Star: "Meridian real estate world"**
-
-An airy property atlas with a full-width search bar, illustrated schematic neighborhood map, horizontal listing rows, and a local viewing planner. Forest ink and butter map acreage balance domestic photography.
-
-This records the implemented real estate template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Real estate composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-The collection considered a neighborhood gazette, service counter, museum directory, brand magazine, specimen catalogue, community field guide, and event programme. Seed `4fa713db` assigned sixth, community field guide: navigable specificity and contextual choices. This template translates that discipline into its own sector world, not common visual scaffolding. Explicit delegated creative direction authorizes code-led implementation.
+Meridian is drawn from the printed world of a local estate agent: the property particulars sheet, the measured floor plan and the hand-drawn city map pinned to the office wall. Survey-paper ground, forest-green ink and a single brick accent keep it calm enough for people comparing homes on a phone in the evening, while the map and floor plans make the business tangible at a glance.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Accent**: interactive emphasis.
-- **Searchbar Tone**: context-specific authored color.
-- **Finder Tone**: context-specific authored color.
-- **Title Em Ink**: context-specific authored color.
-- **Searchbar Span Ink**: context-specific authored color.
-- **Listing Heading Span Last Child Ink**: context-specific authored color.
+Warm paper (`paper`) is the page; `card` lifts forms, the viewing panel and popovers. `ink` carries text and primary buttons, `ink-2` secondary text (6.5:1 on paper). Brick `accent` marks the one action that matters (Book a valuation, Search, Request viewing), active map districts, hot pins and status tags. `forest` is reserved for closing bands and the desk-estimate slip. The map has its own muted land/park/water set.
 
 ## Typography
 
-- **Display** is the CSS family alias for Instrument Serif. Local faces: italic / 100 900, normal / 100 900.
-- **Body** is the CSS family alias for Manrope ExtraLight. Local faces: normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
+Noto Serif Display, light and high-contrast, sets headlines, prices, guide names and the testimonial in italic, the way an agency sets its window cards. Albert Sans does everything functional: navigation, labels, facts, tables. All figures use tabular lining numerals.
 
 ## Layout
 
-- **Finder body**: grid-template-columns (42% 58%).
-- **Listing article**: grid-template-columns (36% 1fr); gap (20px); padding (20px 0).
-- **Viewing**: padding (0 4vw 60px); grid-template-columns (1fr 1fr); gap (8vw).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 900px)`.
-- @media (max-width: 900px): finder body changes to grid-template-columns (1fr).
-- @media (max-width: 900px): listing article changes to grid-template-columns (30% 1fr).
-- @media (max-width: 650px): listing article changes to grid-template-columns (35% 1fr); gap (13px).
-- @media (max-width: 650px): viewing changes to grid-template-columns (1fr); gap (25px).
-
-## Elevation & Depth
-
-Depth is locally authored on the following surfaces; these values are not a general card-shadow preset.
-
-- pin: `0 5px 14px #253c3220`.
-
-## Shapes
-
-- input: corners (`0`).
-- pin: corners (`8px`).
+A 1320px column with generous gutters. Pages alternate dense passages (the search grid, sold-prices ledger, particulars, room schedule) with quiet ones (the quote, guide introductions). Search is a two-pane list + sticky map; listing pages pair a long reading column with a sticky viewing panel. Below 1000px everything stacks and search gains a list/map toggle.
 
 ## Components
 
-Filter homes, save selections and preview a viewing request.
+- **City map** (authored SVG, 1000×700): districts as dashed survey boundaries that tint and outline in brick when active; river, harbor, park, rail with ties, contours on Kestrel Hill, scale bar and north arrow. Price pins are HTML buttons or links positioned by percentage, with a preview popover.
+- **Floor plan**: rooms drawn from feet-based rectangles with labels and dimensions; the room schedule beside it highlights each room on hover or focus.
+- **Listing card**: 4:3 photo, status tag, save heart, serif price, address as a stretched link, facts with icons.
+- **Particulars**: two-column ruled definition list.
+- **Forms**: 48px fields, radio/checkbox chips, inline errors that name the fix, disabled loading state and a green-ruled success panel announced politely.
+- **Stepper** for the three-step valuation, with a live estimate slip on forest.
 
-### Primary button
+## Motion
 
-Authored btn styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Navigation
-
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Searchbar
-
-Authored searchbar styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid var(--accent)); outline-offset (4px).
-- button:disabled: opacity (0.5).
-- btn:hover: background (var(--accent)).
-- button[aria pressed="true"]: outline (2px solid var(--accent)); outline-offset (3px).
-- pin:hover: background (#a34724).
-- save[aria pressed="true"]: outline (0); color (#a34724).
-- pin animation: `pinDrop 0.8s ease-out`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+Pages rise 12px into place; pins drop onto the map; the map preview unrolls with a clip-path; district fills and the estimate range bar ease with an exponential curve; gallery photos settle from a slight zoom. All of it is disabled under `prefers-reduced-motion`.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do keep brick for one action per view and for active map state.
+- Do write particulars plainly: the steep stairs as well as the cornices.
+- Do keep figures tabular and right-aligned in ruled lists.
+- Don't add eyebrow labels, stat rows or icon-card grids.
+- Don't introduce a second accent or gradients; the map colours stay muted.
+- Don't use the serif below ~1.2rem; small text belongs to Albert Sans.

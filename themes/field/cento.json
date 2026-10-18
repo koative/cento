@@ -1,0 +1,27 @@
+{
+  "number": 56,
+  "name": "Field",
+  "sector": "Community sports club",
+  "category": "Education & Community",
+  "tagline": "Our game. Our ground. Our people.",
+  "description": "A grassroots football club site: eight teams with team pages and an interactive team sheet, a filterable fixtures and results programme with league tables, coaching timetable, club news, and a registration form that matches players to teams by age.",
+  "tags": [
+    "Team sheet builder",
+    "Fixtures & results",
+    "Age-group team finder",
+    "Membership registration"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/teams", "title": "Teams" },
+    { "path": "/teams/women", "title": "Team" },
+    { "path": "/fixtures", "title": "Fixtures & results" },
+    { "path": "/join", "title": "Join the club" },
+    { "path": "/coaching", "title": "Coaching" },
+    { "path": "/news", "title": "Club news" },
+    { "path": "/news/women-cup-sedgecombe", "title": "Article" },
+    { "path": "/about", "title": "The club" }
+  ],
+  "colors": { "paper": "#f3f1e7", "ink": "#13261b", "accent": "#1e5b3a" },
+  "fonts": ["Graduate", "Rubik"]
+}

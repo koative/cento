@@ -1,0 +1,31 @@
+{
+  "number": 97,
+  "name": "Manual",
+  "sector": "Help center & knowledge base",
+  "category": "Technology",
+  "tagline": "Find the fix, then get back to the counter.",
+  "description": "A help center for a point-of-sale product: instant-answer search, a chaptered knowledge base with numbered articles and diagrams, guided troubleshooters that hand off to a validated support form, a live status page with incident timelines, and a community forum.",
+  "tags": [
+    "Instant search",
+    "Guided troubleshooter",
+    "Status page",
+    "Community forum"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/categories", "title": "Contents" },
+    { "path": "/categories/hardware", "title": "Category" },
+    { "path": "/articles/pair-card-reader", "title": "Article" },
+    { "path": "/search", "title": "Search" },
+    { "path": "/troubleshoot", "title": "Troubleshooter" },
+    { "path": "/troubleshoot/reader", "title": "Troubleshooting flow" },
+    { "path": "/contact", "title": "Contact support" },
+    { "path": "/status", "title": "System status" },
+    { "path": "/status/2026-10-06-payouts", "title": "Incident" },
+    { "path": "/community", "title": "Community" },
+    { "path": "/community/reader-drops-farmers-market", "title": "Discussion" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#f5f3ee", "ink": "#16181d", "accent": "#c2410c" },
+  "fonts": ["Source Sans 3", "Source Code Pro"]
+}

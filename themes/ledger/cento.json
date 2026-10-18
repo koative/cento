@@ -1,0 +1,30 @@
+{
+  "number": 6,
+  "name": "Ledger",
+  "sector": "Personal finance app",
+  "category": "Technology",
+  "tagline": "Give every dollar a job before the month does.",
+  "description": "An envelope-budgeting app site with features, pricing toggle, household use cases, money guides and sign-up, plus a working /app demo with overview charts, an editable budget table, accounts, a sortable transactions ledger and settings.",
+  "tags": ["Paycheck allocator", "App demo", "Envelope budget", "Card freeze"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/features", "title": "Features" },
+    { "path": "/pricing", "title": "Pricing" },
+    { "path": "/households", "title": "Households" },
+    { "path": "/guides", "title": "Guides" },
+    { "path": "/guides/give-every-dollar-a-job", "title": "Guide" },
+    { "path": "/security", "title": "Security" },
+    { "path": "/changelog", "title": "Changelog" },
+    { "path": "/about", "title": "About" },
+    { "path": "/signup", "title": "Sign up" },
+    { "path": "/signin", "title": "Sign in" },
+    { "path": "/app", "title": "App: Overview" },
+    { "path": "/app/budgets", "title": "App: Budgets" },
+    { "path": "/app/accounts", "title": "App: Accounts" },
+    { "path": "/app/accounts/everyday", "title": "App: Account detail" },
+    { "path": "/app/transactions", "title": "App: Transactions" },
+    { "path": "/app/settings", "title": "App: Settings" }
+  ],
+  "colors": { "paper": "#f7f4ee", "ink": "#24172a", "accent": "#5b2a6e" },
+  "fonts": ["Plus Jakarta Sans"]
+}

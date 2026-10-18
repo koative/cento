@@ -1,185 +1,88 @@
-import { useState } from "react";
-import { ArrowUpRight, ChevronRight } from "lucide-react";
-import photo from "./assets/photo.jpg";
-const pieces = [
-  {
-    name: "The low lounge",
-    era: "1970s",
-    material: "Oak & woven cord",
-    price: 480,
-  },
-  {
-    name: "A good sideboard",
-    era: "1960s",
-    material: "Warm teak, quiet lines",
-    price: 920,
-  },
-  {
-    name: "Reading companion",
-    era: "1970s",
-    material: "Brushed brass floor lamp",
-    price: 240,
-  },
+import { useRef, type ReactNode } from "react";
+import { match, useRoute, usePageChange } from "./router";
+import { brand, pieceById, rooms } from "./content";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { Home } from "./pages/Home";
+import { Shop } from "./pages/Shop";
+import { PiecePage } from "./pages/PiecePage";
+import { Rooms } from "./pages/Rooms";
+import { RoomPage } from "./pages/RoomPage";
+import { Restoration } from "./pages/Restoration";
+import { Sell } from "./pages/Sell";
+import { About } from "./pages/About";
+import { Visit } from "./pages/Visit";
+import { Cart } from "./pages/Cart";
+import { Checkout } from "./pages/Checkout";
+import { NotFound } from "./pages/NotFound";
+
+type Page = { title: string; node: ReactNode };
+
+const routes: [string, (p: Record<string, string>) => Page | null][] = [
+  ["/", () => ({ title: `${brand.name} — ${brand.sector}`, node: <Home /> })],
+  ["/shop", () => ({ title: "Shop the floor", node: <Shop /> })],
+  [
+    "/shop/:id",
+    ({ id }) => {
+      const piece = pieceById(id);
+      return piece
+        ? {
+            title: `${piece.name} (${piece.stock})`,
+            node: <PiecePage piece={piece} key={piece.id} />,
+          }
+        : null;
+    },
+  ],
+  ["/rooms", () => ({ title: "Room sets", node: <Rooms /> })],
+  [
+    "/rooms/:slug",
+    ({ slug }) => {
+      const room = rooms.find((r) => r.slug === slug);
+      return room
+        ? {
+            title: `${room.name} — room set`,
+            node: <RoomPage room={room} key={room.slug} />,
+          }
+        : null;
+    },
+  ],
+  [
+    "/restoration",
+    () => ({ title: "Restoration workshop", node: <Restoration /> }),
+  ],
+  ["/sell", () => ({ title: "Sell us a piece", node: <Sell /> })],
+  ["/about", () => ({ title: "About", node: <About /> })],
+  ["/visit", () => ({ title: "Visit & delivery", node: <Visit /> })],
+  ["/cart", () => ({ title: "Your cart", node: <Cart /> })],
+  ["/checkout", () => ({ title: "Checkout", node: <Checkout /> })],
 ];
+
+function resolve(path: string): Page {
+  for (const [pattern, render] of routes) {
+    const params = match(pattern, path);
+    const page = params && render(params);
+    if (page) return page;
+  }
+  return { title: "Page not found", node: <NotFound /> };
+}
+
 export default function App() {
-  const [selected, setSelected] = useState(0),
-    [saved, setSaved] = useState<string[]>([]),
-    [view, setView] = useState("All decades");
-  const p = pieces[selected];
+  const path = useRoute();
+  const main = useRef<HTMLElement>(null);
+  const page = resolve(path);
+  const title = path === "/" ? page.title : `${page.title} — ${brand.name}`;
+  usePageChange(main, title);
+
   return (
     <>
-      <header>
-        <a className="brand" href="#">
-          patina
-        </a>
-        <nav>
-          <a href="#objects">Objects</a>
-          <a href="#notes">A second life</a>
-          <span>Shortlist {saved.length}</span>
-        </nav>
-      </header>
-      <main>
-        <section className="patina-hero">
-          <img
-            src={photo}
-            alt="Warm modern interior with natural timber furniture and soft daylight"
-          />
-          <div className="title-panel">
-            <h1>
-              Already lived.
-              <br />
-              <em>Still loved.</em>
-            </h1>
-            <p>
-              Furniture with a past.
-              <br />
-              Room for a future.
-            </p>
-            <a href="#objects">
-              Meet the collection <ArrowUpRight size={18} />
-            </a>
-          </div>
-          <span className="photo-caption">
-            A room to imagine. Editorial inspiration.
-          </span>
-        </section>
-        <section className="objects" id="objects">
-          <div className="objects-intro">
-            <h2>
-              Good things
-              <br />
-              don't get old.
-            </h2>
-            <p>
-              They settle in. A small collection of imagined vintage pieces,
-              selected for form, feeling, and another lifetime of use.
-            </p>
-            <label>
-              Browse by decade
-              <select value={view} onChange={(e) => setView(e.target.value)}>
-                <option>All decades</option>
-                <option>1960s</option>
-                <option>1970s</option>
-              </select>
-            </label>
-          </div>
-          <div>
-            <div className="inventory">
-              {pieces
-                .filter((x) => view === "All decades" || x.era === view)
-                .map((x) => (
-                  <button
-                    aria-pressed={selected === pieces.indexOf(x)}
-                    key={x.name}
-                    onClick={() => setSelected(pieces.indexOf(x))}
-                  >
-                    <span>{x.era}</span>
-                    <h3>{x.name}</h3>
-                    <ChevronRight size={20} />
-                  </button>
-                ))}
-            </div>
-            <div className="piece-detail">
-              <div
-                className={"chair-study object-" + selected}
-                role="img"
-                aria-label="Abstract furniture form study"
-              >
-                <i />
-                <i />
-                <i />
-                <i />
-                <i />
-              </div>
-              <div>
-                <h3>{p.name}</h3>
-                <p>
-                  {p.material}
-                  <br />
-                  An illustrative vintage selection.
-                </p>
-                <strong>£{p.price}</strong>
-                <button
-                  className="action"
-                  onClick={() =>
-                    setSaved(
-                      saved.includes(p.name)
-                        ? saved.filter((x) => x !== p.name)
-                        : [...saved, p.name],
-                    )
-                  }
-                >
-                  {saved.includes(p.name)
-                    ? "Remove from shortlist"
-                    : "Add to shortlist"}
-                </button>
-                <p className="status" role="status">
-                  {saved.includes(p.name)
-                    ? p.name + " is in your local shortlist."
-                    : ""}
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="care" id="notes">
-          <span className="care-word">Keep.</span>
-          <div>
-            <h2>
-              Character is
-              <br />
-              worth keeping.
-            </h2>
-            <p>
-              A softened edge. A deepened color. The mark of a favorite book. We
-              like objects that show their time without losing their purpose.
-            </p>
-            <details>
-              <summary>Living with older furniture</summary>
-              <p>
-                Use gentle cleaning, protect timber from standing water, and ask
-                a qualified restorer before making structural repairs. Every
-                object has its own needs.
-              </p>
-            </details>
-            <details>
-              <summary>About the collection</summary>
-              <p>
-                This is a fictional shop. Photographs show interior inspiration;
-                the illustrated objects and prices are examples, not actual
-                inventory.
-              </p>
-            </details>
-          </div>
-        </section>
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
+      <Header />
+      <main id="main" tabIndex={-1} ref={main} key={path}>
+        {page.node}
       </main>
-      <footer>
-        <a href="../../">Elseform collection</a>
-        <p>
-          Patina is a fictional vintage furniture concept. Shortlists stay in
-          this page.
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }

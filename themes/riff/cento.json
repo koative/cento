@@ -1,0 +1,30 @@
+{
+  "number": 88,
+  "name": "Riff",
+  "sector": "Band & musician",
+  "category": "Creative",
+  "tagline": "Loud-quiet rock from a Baltimore basement",
+  "description": "A two-ink show-bill site for a touring band: filterable tour ledger with per-show posters and tickets, discography and album pages with a persistent preview player, videos, a merch store with cart and checkout, and a press kit.",
+  "tags": [
+    "Persistent record player",
+    "Tour dates & tickets",
+    "Merch store",
+    "Press kit"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/tour", "title": "Tour dates" },
+    { "path": "/tour/2026-12-19-baltimore", "title": "Show" },
+    { "path": "/music", "title": "Discography" },
+    { "path": "/music/low-ceiling", "title": "Album" },
+    { "path": "/videos", "title": "Videos" },
+    { "path": "/merch", "title": "Merch" },
+    { "path": "/merch/low-ceiling-lp", "title": "Product" },
+    { "path": "/cart", "title": "Cart" },
+    { "path": "/checkout", "title": "Checkout" },
+    { "path": "/press", "title": "Press" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#ece5d5", "ink": "#1a1714", "accent": "#bd2d17" },
+  "fonts": ["Six Caps", "Work Sans"]
+}

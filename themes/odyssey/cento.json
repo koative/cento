@@ -1,0 +1,24 @@
+{
+  "number": 45,
+  "name": "Odyssey",
+  "sector": "Travel agency",
+  "category": "Travel & Stay",
+  "tagline": "Slow journeys, planned by people who have been.",
+  "description": "A tailor-made travel agency site: filterable destination guides with season charts and stays, set journeys with day-by-day timelines, an itinerary planner that plots your route on a navigator's chart and prices it live, a travel journal and a validated enquiry form that carries your drafted route.",
+  "tags": ["Itinerary planner", "Route chart", "Season charts", "Enquiry flow"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/destinations", "title": "Destinations" },
+    { "path": "/destinations/kyoto", "title": "Destination" },
+    { "path": "/journeys", "title": "Journeys" },
+    { "path": "/journeys/the-atlantic-rim", "title": "Journey" },
+    { "path": "/planner", "title": "Itinerary planner" },
+    { "path": "/journal", "title": "Travel journal" },
+    { "path": "/journal/kyoto-before-nine", "title": "Journal article" },
+    { "path": "/about", "title": "About & planners" },
+    { "path": "/how-we-work", "title": "How we work & fees" },
+    { "path": "/enquire", "title": "Enquire" }
+  ],
+  "colors": { "paper": "#ebe4d6", "ink": "#1f3e4b", "accent": "#9b4a2a" },
+  "fonts": ["Playfair Display", "Kumbh Sans"]
+}

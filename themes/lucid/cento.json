@@ -1,0 +1,33 @@
+{
+  "number": 70,
+  "name": "Lucid",
+  "sector": "AI writing assistant SaaS",
+  "category": "Technology",
+  "tagline": "Say what you mean, in fewer words.",
+  "description": "An AI writing assistant SaaS site with a live prompt demo that returns tracked changes, product, use cases, pricing with seat calculator, changelog and sign in, plus an /app editor demo with documents, review mode, house style and settings.",
+  "tags": [
+    "Live prompt demo",
+    "Tracked-changes review",
+    "App editor demo",
+    "House style guide"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/product", "title": "Product" },
+    { "path": "/use-cases", "title": "Use cases" },
+    { "path": "/use-cases/support", "title": "Use case" },
+    { "path": "/pricing", "title": "Pricing" },
+    { "path": "/changelog", "title": "Changelog" },
+    { "path": "/about", "title": "About" },
+    { "path": "/contact", "title": "Talk to sales" },
+    { "path": "/signin", "title": "Sign in" },
+    { "path": "/signup", "title": "Create an account" },
+    { "path": "/app", "title": "App: Overview" },
+    { "path": "/app/documents", "title": "App: Documents" },
+    { "path": "/app/documents/winter-catalog-intro", "title": "App: Editor" },
+    { "path": "/app/style", "title": "App: House style" },
+    { "path": "/app/settings", "title": "App: Settings" }
+  ],
+  "colors": { "paper": "#f5f3ee", "ink": "#16171b", "accent": "#1f45c4" },
+  "fonts": ["Hubot Sans", "Mona Sans"]
+}

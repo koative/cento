@@ -1,0 +1,28 @@
+{
+  "number": 48,
+  "name": "Drift",
+  "sector": "Surf school & camps",
+  "category": "Travel & Stay",
+  "tagline": "Surf lessons and camps timed to the tide, not the clock.",
+  "description": "A surf school and camps site: lessons with pack pricing, a filterable camp finder with itinerary pages, coach profiles, a seven-day surf forecast widget rated per level, and a validated booking flow.",
+  "tags": [
+    "Surf forecast widget",
+    "Camp finder",
+    "Lesson & camp booking",
+    "Coach profiles"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/lessons", "title": "Lessons" },
+    { "path": "/camps", "title": "Camps" },
+    { "path": "/camps/first-wave-week", "title": "Camp" },
+    { "path": "/forecast", "title": "Surf report" },
+    { "path": "/coaches", "title": "Coaches" },
+    { "path": "/coaches/ines-calder", "title": "Coach" },
+    { "path": "/book", "title": "Booking" },
+    { "path": "/about", "title": "About" },
+    { "path": "/faq", "title": "FAQ" }
+  ],
+  "colors": { "paper": "#f6efe2", "ink": "#0d3341", "accent": "#f5c34a" },
+  "fonts": ["Lilita One", "Albert Sans"]
+}

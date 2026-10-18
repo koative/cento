@@ -1,0 +1,27 @@
+{
+  "number": 25,
+  "name": "Solace",
+  "sector": "Family health clinic",
+  "category": "Health & Wellness",
+  "tagline": "Family medicine with room to talk, from newborns to grandparents.",
+  "description": "A multi-page family practice site: filterable services with visit pages, clinician badges and profiles with weekly clinics, a booking planner that fills in a printed appointment card live, patient information with fees and FAQ, and an authored clinic map with live opening hours.",
+  "tags": [
+    "Appointment booking",
+    "Live appointment card",
+    "Clinic map & hours",
+    "Clinician profiles"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/services", "title": "Services" },
+    { "path": "/services/well-child", "title": "Service" },
+    { "path": "/clinicians", "title": "Clinicians" },
+    { "path": "/clinicians/mei-tanaka", "title": "Clinician" },
+    { "path": "/book", "title": "Book a visit" },
+    { "path": "/patients", "title": "Patient information" },
+    { "path": "/locations", "title": "Locations & hours" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#f5f2ea", "ink": "#1c4038", "accent": "#9a4f27" },
+  "fonts": ["Source Serif 4", "Source Sans 3"]
+}

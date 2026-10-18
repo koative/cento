@@ -1,0 +1,23 @@
+{
+  "number": 41,
+  "name": "Stack",
+  "sector": "Developer documentation",
+  "category": "Technology",
+  "tagline": "Durable jobs, events and webhooks for TypeScript backends.",
+  "description": "A documentation site for a fictional developer platform: docs shell with sidebar and on-this-page rail, guides with diagrams, a full API reference, a request playground that validates and generates code, a filterable changelog, and docs-wide search.",
+  "tags": ["Docs shell", "API playground", "Docs search", "Changelog"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/guides", "title": "Guides" },
+    { "path": "/guides/background-jobs", "title": "Guide" },
+    { "path": "/api", "title": "API reference" },
+    { "path": "/api/jobs", "title": "API resource" },
+    { "path": "/playground", "title": "Playground" },
+    { "path": "/changelog", "title": "Changelog" },
+    { "path": "/search", "title": "Search" },
+    { "path": "/about", "title": "About" },
+    { "path": "/support", "title": "Support" }
+  ],
+  "colors": { "paper": "#f6f4ee", "ink": "#15171b", "accent": "#c2410c" },
+  "fonts": ["IBM Plex Sans", "IBM Plex Mono"]
+}

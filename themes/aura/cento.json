@@ -1,0 +1,25 @@
+{
+  "number": 22,
+  "name": "Aura",
+  "sector": "Skincare brand",
+  "category": "Commerce",
+  "tagline": "Daily care. Quiet joy. Five minutes, twice a day.",
+  "description": "A multi-page skincare brand shop: filterable essentials with authored packshots and size variants, a morning/evening ritual builder that layers products thinnest to thickest, an ingredients glossary with per-ingredient pages, a journal, and a persisted bag with validated checkout.",
+  "tags": ["Ritual builder", "Ingredients glossary", "Online shop", "Journal"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/shop", "title": "Shop" },
+    { "path": "/shop/dew-facial-oil", "title": "Product" },
+    { "path": "/ritual", "title": "Ritual builder" },
+    { "path": "/ingredients", "title": "Ingredients glossary" },
+    { "path": "/ingredients/rosehip", "title": "Ingredient" },
+    { "path": "/journal", "title": "Journal" },
+    { "path": "/journal/thinnest-to-thickest", "title": "Article" },
+    { "path": "/about", "title": "Our story" },
+    { "path": "/help", "title": "Help & FAQ" },
+    { "path": "/cart", "title": "Bag" },
+    { "path": "/checkout", "title": "Checkout" }
+  ],
+  "colors": { "paper": "#f8efc8", "ink": "#3d2133", "accent": "#9a3459" },
+  "fonts": ["Bellefair", "Urbanist"]
+}

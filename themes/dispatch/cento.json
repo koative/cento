@@ -1,0 +1,26 @@
+{
+  "number": 69,
+  "name": "Dispatch",
+  "sector": "Newsletter & personal blog",
+  "category": "Culture & Media",
+  "tagline": "A Sunday letter on the machinery of ordinary life.",
+  "description": "A writer's newsletter site with a searchable archive, a post reader with sidenotes, text size and night reading, topic pages, an about page, subscribe tiers with a delivery calendar, and a sponsor booking form.",
+  "tags": [
+    "Post reader",
+    "Delivery calendar",
+    "Subscribe tiers",
+    "Sponsor booking"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/archive", "title": "Archive" },
+    { "path": "/archive/the-crane-that-waits-for-the-tide", "title": "Post" },
+    { "path": "/topics", "title": "Topics" },
+    { "path": "/topics/ports", "title": "Topic" },
+    { "path": "/about", "title": "About" },
+    { "path": "/subscribe", "title": "Subscribe" },
+    { "path": "/sponsor", "title": "Sponsor" }
+  ],
+  "colors": { "paper": "#f1efe9", "ink": "#1c1b19", "accent": "#b2361e" },
+  "fonts": ["Petrona", "Inter Tight"]
+}

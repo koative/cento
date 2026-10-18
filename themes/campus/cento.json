@@ -1,0 +1,30 @@
+{
+  "number": 34,
+  "name": "Campus",
+  "sector": "Online course platform",
+  "category": "Education & Community",
+  "tagline": "Learn a real skill in the evenings you already have.",
+  "description": "A multi-page online course platform: searchable catalogue, rich course pages with a pace planner, instructors, pricing with billing toggle, sign-up flow and a learning workspace demo with lessons, checks, notes and saved progress.",
+  "tags": [
+    "Course catalogue",
+    "Pace planner",
+    "Learning workspace demo",
+    "Sign-up flow"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/courses", "title": "Courses" },
+    { "path": "/courses/sourdough-from-first-principles", "title": "Course" },
+    { "path": "/instructors", "title": "Instructors" },
+    { "path": "/instructors/priya-raman", "title": "Instructor" },
+    { "path": "/pricing", "title": "Pricing" },
+    { "path": "/about", "title": "About" },
+    { "path": "/signup", "title": "Sign up" },
+    { "path": "/signin", "title": "Sign in" },
+    { "path": "/learn", "title": "Workspace: desk" },
+    { "path": "/learn/notice-the-ordinary", "title": "Workspace: lesson" },
+    { "path": "/learn/notes", "title": "Workspace: notebook" }
+  ],
+  "colors": { "paper": "#f6f2e9", "ink": "#22271f", "accent": "#ecd84f" },
+  "fonts": ["Be Vietnam Pro"]
+}

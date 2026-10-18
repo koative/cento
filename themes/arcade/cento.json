@@ -1,0 +1,28 @@
+{
+  "number": 20,
+  "name": "Arcade",
+  "sector": "Indie game studio",
+  "category": "Creative",
+  "tagline": "Little games. Big feelings. Finished with love.",
+  "description": "A small game studio site drawn entirely in authored pixel art: a cartridge shelf with filters, rich game pages with screenshot viewers, a playable canvas demo with saved runs plus a memory game, devlog with articles, a press kit with SVG downloads and key requests, and jobs with an application form.",
+  "tags": [
+    "Playable canvas demo",
+    "Pixel-art key art",
+    "Press kit",
+    "Job applications"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/games", "title": "Games" },
+    { "path": "/games/blob-hop", "title": "Game" },
+    { "path": "/play", "title": "Play the demo" },
+    { "path": "/devlog", "title": "Devlog" },
+    { "path": "/devlog/why-blob-has-no-arms", "title": "Devlog post" },
+    { "path": "/studio", "title": "Studio" },
+    { "path": "/press", "title": "Press kit" },
+    { "path": "/jobs", "title": "Jobs" },
+    { "path": "/jobs/gameplay-programmer", "title": "Job" }
+  ],
+  "colors": { "paper": "#f6efe2", "ink": "#1d1631", "accent": "#5b3fd1" },
+  "fonts": ["Bungee", "Rubik"]
+}

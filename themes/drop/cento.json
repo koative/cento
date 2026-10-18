@@ -1,0 +1,29 @@
+{
+  "number": 75,
+  "name": "Drop",
+  "sector": "Streetwear store",
+  "category": "Commerce",
+  "tagline": "Small runs. Saturday drops. No restocks.",
+  "description": "A streetwear store with a live drops calendar (.ics export, month view, countdowns), a shop with size/availability filters and sort, product pages with colourways, sizes and stock, a raffle entry that prints a numbered ticket, a lookbook, and a persisted bag with checkout.",
+  "tags": [
+    "Drops calendar",
+    "Raffle tickets",
+    "Size-run stock",
+    "Cart & checkout"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/drops", "title": "Drops calendar" },
+    { "path": "/drops/last-light", "title": "Drop" },
+    { "path": "/shop", "title": "Shop" },
+    { "path": "/shop/last-light-hood", "title": "Product" },
+    { "path": "/lookbook", "title": "Lookbook" },
+    { "path": "/raffle", "title": "Raffle entry" },
+    { "path": "/store", "title": "The shop" },
+    { "path": "/help", "title": "Help & sizing" },
+    { "path": "/cart", "title": "Bag" },
+    { "path": "/checkout", "title": "Checkout" }
+  ],
+  "colors": { "paper": "#ecebe6", "ink": "#121212", "accent": "#ff5a1f" },
+  "fonts": ["Rubik Mono One", "Inter Tight"]
+}

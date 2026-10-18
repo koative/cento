@@ -1,0 +1,21 @@
+{
+  "number": 8,
+  "name": "Atelier",
+  "sector": "Creative agency",
+  "category": "Creative",
+  "tagline": "Good ideas. Strange shapes.",
+  "description": "A brand and digital studio site: filterable work index with grid and index views, eight case studies with authored SVG artwork, services and fees, studio and team, careers with role applications, and a live brief builder.",
+  "tags": ["Brief builder", "Case studies", "Work index", "Careers"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/work", "title": "Work" },
+    { "path": "/work/tidewater", "title": "Case study" },
+    { "path": "/services", "title": "Services" },
+    { "path": "/studio", "title": "Studio" },
+    { "path": "/careers", "title": "Careers" },
+    { "path": "/careers/design-engineer", "title": "Role" },
+    { "path": "/contact", "title": "Start a brief" }
+  ],
+  "colors": { "paper": "#f2f1e9", "ink": "#1d201b", "accent": "#244bff" },
+  "fonts": ["Syne", "Albert Sans"]
+}

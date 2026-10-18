@@ -1,0 +1,28 @@
+{
+  "number": 43,
+  "name": "Kindred",
+  "sector": "Pet adoption shelter",
+  "category": "Education & Community",
+  "tagline": "Somebody here has been waiting for you.",
+  "description": "A warm, multi-page adoption shelter site: filterable kennel-card listings with animal profiles, a seven-question matching quiz that ranks every animal with reasons, a three-step adoption application, volunteer sign-up and a monthly/one-off donate flow.",
+  "tags": [
+    "Matching quiz",
+    "Kennel-card listings",
+    "Adoption application",
+    "Donate flow"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/animals", "title": "Adoptable animals" },
+    { "path": "/animals/milo", "title": "Animal profile" },
+    { "path": "/match", "title": "Matching quiz" },
+    { "path": "/adopt", "title": "How adoption works" },
+    { "path": "/apply", "title": "Adoption application" },
+    { "path": "/apply/duchess", "title": "Apply for an animal" },
+    { "path": "/volunteer", "title": "Volunteer & foster" },
+    { "path": "/donate", "title": "Donate" },
+    { "path": "/about", "title": "About & visiting" }
+  ],
+  "colors": { "paper": "#f7ead2", "ink": "#33302a", "accent": "#b44720" },
+  "fonts": ["Baloo 2", "Mulish"]
+}

@@ -1,0 +1,35 @@
+{
+  "number": 24,
+  "name": "Relay",
+  "sector": "Freight logistics platform",
+  "category": "Industry",
+  "tagline": "Road, rail, sea and air freight across Europe, on one record.",
+  "description": "A freight forwarder site with seven services, a live shipment tracker, a lane-by-lane quote calculator, an interactive hub network map and a /app shipments workspace (overview, sortable table, shipment detail, settings) on demo data.",
+  "tags": [
+    "Shipment tracker",
+    "Quote calculator",
+    "Network map",
+    "Shipments app demo"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/services", "title": "Services" },
+    { "path": "/services/intermodal", "title": "Service" },
+    { "path": "/track", "title": "Track" },
+    { "path": "/track/RLY-4821-0937", "title": "Tracking result" },
+    { "path": "/quote", "title": "Quote & book" },
+    { "path": "/network", "title": "Network" },
+    { "path": "/platform", "title": "Platform" },
+    { "path": "/pricing", "title": "Pricing" },
+    { "path": "/customers", "title": "Customers" },
+    { "path": "/changelog", "title": "Changelog" },
+    { "path": "/about", "title": "About & careers" },
+    { "path": "/signin", "title": "Sign in" },
+    { "path": "/app", "title": "App overview" },
+    { "path": "/app/shipments", "title": "App shipments" },
+    { "path": "/app/shipments/RLY-4822-0412", "title": "App shipment" },
+    { "path": "/app/settings", "title": "App settings" }
+  ],
+  "colors": { "paper": "#efede7", "ink": "#121417", "accent": "#ff5b14" },
+  "fonts": ["IBM Plex Sans Condensed", "IBM Plex Mono"]
+}

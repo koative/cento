@@ -1,0 +1,28 @@
+{
+  "number": 26,
+  "name": "Helix",
+  "sector": "Quantum computing company",
+  "category": "Technology",
+  "tagline": "Quantum processors, held at nine millikelvin and open for work.",
+  "description": "A superconducting quantum computing company site: systems with qubit specs and an interactive calibration lattice, a live three-qubit circuit composer, roadmap timeline, cloud pricing with a job estimator, a searchable papers library with paper pages, team, careers and a request-access form.",
+  "tags": [
+    "Circuit composer",
+    "Qubit lattice explorer",
+    "Papers library",
+    "Cloud pricing estimator"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/systems", "title": "Systems" },
+    { "path": "/systems/moraine-108", "title": "System" },
+    { "path": "/roadmap", "title": "Roadmap" },
+    { "path": "/pricing", "title": "Pricing" },
+    { "path": "/research", "title": "Research" },
+    { "path": "/research/logical-memory-below-threshold", "title": "Paper" },
+    { "path": "/team", "title": "Team" },
+    { "path": "/careers", "title": "Careers" },
+    { "path": "/access", "title": "Request access" }
+  ],
+  "colors": { "paper": "#f2f1ec", "ink": "#14171f", "accent": "#c28a3a" },
+  "fonts": ["Sora"]
+}

@@ -1,0 +1,28 @@
+{
+  "number": 85,
+  "name": "Mentor",
+  "sector": "Online coach & course creator",
+  "category": "Education & Community",
+  "tagline": "Coaching for the promotion nobody trains you for.",
+  "description": "A leadership coach's site for new managers: filterable programmes with workbook covers and a binder-tab curriculum, free worksheets with email delivery, a podcast with a chaptered episode player, client stories and a four-step coaching application, all anchored by an interactive Manager's Wheel self-assessment.",
+  "tags": [
+    "Manager's Wheel self-assessment",
+    "Coaching application",
+    "Podcast player",
+    "Free worksheets"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/programmes", "title": "Programmes" },
+    { "path": "/programmes/new-manager-cohort", "title": "Programme" },
+    { "path": "/resources", "title": "Free resources" },
+    { "path": "/resources/delegation-ladder", "title": "Resource" },
+    { "path": "/podcast", "title": "Podcast" },
+    { "path": "/podcast/promoted-over-your-friends", "title": "Episode" },
+    { "path": "/stories", "title": "Stories" },
+    { "path": "/about", "title": "About" },
+    { "path": "/apply", "title": "Apply" }
+  ],
+  "colors": { "paper": "#f5f1e8", "ink": "#1f2a44", "accent": "#f4d94a" },
+  "fonts": ["Bricolage Grotesque", "Figtree"]
+}

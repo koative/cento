@@ -1,35 +1,27 @@
 # Asset credits and licensing
 
-The MIT license covers original source code in this repository. It does not replace the licenses of third-party assets.
+The MIT license covers the original source code in this repository. It does not replace the licenses of third-party assets.
 
 ## Photography
 
-Photography is downloaded locally from Unsplash, used as illustrative template imagery. Exact image URLs are documented in the README of each photographic template: [Forma](themes/forma/README.md), [Muse](themes/muse/README.md), [Ember](themes/ember/README.md), [Haven](themes/haven/README.md), [Pulse](themes/pulse/README.md), [Terrain](themes/terrain/README.md), [Still](themes/still/README.md), and [Roast](themes/roast/README.md). Images remain subject to the [Unsplash license](https://unsplash.com/license). Photographer, trademark, property and model rights are separate; select assets appropriate to your own published project.
+Each template documents every image it ships in `themes/<slug>/src/assets/SOURCES.md`: file, source URL, creator where known and license. Sources are open-licensed collections — CC0 and public-domain works found through [Openverse](https://openverse.org) and [Wikimedia Commons](https://commons.wikimedia.org), the [WordPress Photo Directory](https://wordpress.org/photos/), StockSnap, rawpixel's public-domain collection, and photographs served under the [Unsplash License](https://unsplash.com/license). A few Commons images are CC BY or CC BY-SA and carry their attribution in that file. Where a photograph showed a third-party logo or brand mark, it was cropped or retouched out.
 
-The second collection documents its asset sources in [Frame](themes/frame/README.md), [Monograph](themes/monograph/README.md), [Index](themes/index/README.md), [Bloom](themes/bloom/README.md), [Velo](themes/velo/README.md), [Prism](themes/prism/README.md), [Nocturne](themes/nocturne/README.md), [Arcade](themes/arcade/README.md), [Kiln](themes/kiln/README.md), [Aura](themes/aura/README.md), [Tide](themes/tide/README.md), and [Relay](themes/relay/README.md). Some use only original CSS/SVG geometry.
-
-The expansion to 64 adds independent asset credits in the README of every new folder: [Solace](themes/solace/README.md), [Helix](themes/helix/README.md), [Aperture](themes/aperture/README.md), [Counsel](themes/counsel/README.md), [Grid](themes/grid/README.md), [Tempo](themes/tempo/README.md), [Meridian](themes/meridian/README.md), [Forge](themes/forge/README.md), [Summit](themes/summit/README.md), [Equinox](themes/equinox/README.md), [Campus](themes/campus/README.md), [Vector](themes/vector/README.md), [Chapter](themes/chapter/README.md), [Civic](themes/civic/README.md), [Cipher](themes/cipher/README.md), [Ink](themes/ink/README.md), [Vow](themes/vow/README.md), [Stack](themes/stack/README.md), [Proof](themes/proof/README.md), [Atlas](themes/atlas/README.md), [Kindred](themes/kindred/README.md), [Flux](themes/flux/README.md), [Grove](themes/grove/README.md), [Odyssey](themes/odyssey/README.md), [Loom](themes/loom/README.md), [Palette](themes/palette/README.md), [Lumen](themes/lumen/README.md), [Vault](themes/vault/README.md), [Drift](themes/drift/README.md), [Commons](themes/commons/README.md), [Heirloom](themes/heirloom/README.md), [Harbor](themes/harbor/README.md), [Chroma](themes/chroma/README.md), [Saffron](themes/saffron/README.md), [Alloy](themes/alloy/README.md), [Encore](themes/encore/README.md), [Nest](themes/nest/README.md), [Circuit](themes/circuit/README.md), [Field](themes/field/README.md), [Gavel](themes/gavel/README.md).
-
-The expansion to 100 includes local asset provenance and font notices in each new template: [Brine](themes/brine/README.md), [Folio](themes/folio/README.md), [Patina](themes/patina/README.md), [Nectar](themes/nectar/README.md), [Alpine](themes/alpine/README.md), [Sonnet](themes/sonnet/README.md), [Mosaic](themes/mosaic/README.md), [Lacquer](themes/lacquer/README.md), [Truffle](themes/truffle/README.md), [Score](themes/score/README.md), [Sprout](themes/sprout/README.md), [Ripple](themes/ripple/README.md), [Ballast](themes/ballast/README.md), [Delta](themes/delta/README.md), [Strata](themes/strata/README.md), [Cadence](themes/cadence/README.md), [Conduit](themes/conduit/README.md), [Lumenary](themes/lumenary/README.md), [Waypoint](themes/waypoint/README.md), [Torque](themes/torque/README.md), [Verdant](themes/verdant/README.md), [Parcel](themes/parcel/README.md), [Beacon](themes/beacon/README.md), [Keystone](themes/keystone/README.md), [Aurora](themes/aurora/README.md), [Reel](themes/reel/README.md), [Botanica](themes/botanica/README.md), [Cove](themes/cove/README.md), [Fable](themes/fable/README.md), [Cadence House](themes/cadencehouse/README.md), [Pour](themes/pour/README.md), [Ascent](themes/ascent/README.md), [Emberlight](themes/emberlight/README.md), [Sanctuary](themes/sanctuary/README.md), [Kinetic](themes/kinetic/README.md), [Horizon](themes/horizon/README.md). Campus and Vault also document their newly reused Forma photographs.
+Photographer, trademark, property and model rights are separate from copyright licenses; choose assets that suit your own published project. Templates whose worlds are graphic (dashboards, documentation, games, product drawings) ship no photography at all and say so in their `SOURCES.md`.
 
 ## Fonts
 
-Latin subsets are self-hosted next to the gallery and individual templates, so the shipped sites make no Google Fonts request. Exact download provenance is recorded in [`scripts/font-sources.json`](scripts/font-sources.json). Font licenses are retained in each font asset directory for standalone extraction.
+Every typeface is a Google Fonts family, self-hosted as Latin subsets next to the stylesheet that uses it (`src/assets/fonts/` in each template, `gallery/assets/fonts/` for the gallery), so no page requests Google's servers at runtime. All families are under the SIL Open Font License except Roboto Slab (Fixture) and Ultra (Kettle), which are Apache 2.0. Each font directory carries its family's license text, and the exact download URL of every file is recorded in [`scripts/font-sources.json`](scripts/font-sources.json). Each template's pairing is listed in its `cento.json` and README.
 
-Font families used: Barlow Condensed, Bodoni Moda, Bricolage Grotesque, Cormorant Garamond, DM Sans, IBM Plex Sans, Instrument Serif, Inter, Italiana, Libre Caslon Text, Lora, Manrope, Space Grotesk. Font copyright and licensing notices remain with their respective authors. The Google Fonts source repository provides the original [font family records and license files](https://github.com/google/fonts).
+The gallery itself is set in Geist and Geist Mono.
 
 ## Icons and geometry
 
-Interface icons come from [Lucide](https://lucide.dev), distributed under the ISC license. The orbital model, abstract studio posters, breathing shapes, card treatment, charts and other geometric compositions are original CSS/SVG work in this repository. No external 3D model is required.
+Interface icons come from [Lucide](https://lucide.dev) (ISC license). Charts, maps, floor plans, product drawings, seat maps, logos and the Cento mark are original SVG/CSS/canvas work in this repository.
 
 ## Gallery previews
 
-The images in `public/previews/` are browser screenshots of the included templates. They show the actual implemented websites, not design mockups.
+`public/previews/` holds browser screenshots of each template's first viewport, captured from the real builds by `scripts/capture-previews.mjs`. `public/cento-social.png` is a capture of the gallery itself.
 
 ## Demo content
 
-All brands, client stories, schedules, prices, room descriptions, financial balances and analytics are fictional demonstration content. None imply endorsement, real customer relationships or a commercial offering by a named third party.
-
-## Elseform identity
-
-The Elseform monogram and glass artwork are original code-native geometry authored for this project. The gallery reuses locally hosted Instrument Serif (regular and italic) with its SIL Open Font License; exact source URLs are in `scripts/font-sources.json`. The social image is a render of the gallery’s own typography and WebGL artwork.
+All template brands, people, testimonials, schedules, prices, menus, specifications and figures are fictional demonstration content. None imply endorsement, a real customer relationship or a commercial offering by a named third party.

@@ -1,0 +1,29 @@
+{
+  "number": 31,
+  "name": "Meridian",
+  "sector": "Real estate agency",
+  "category": "Services",
+  "tagline": "Homes on both banks of the Ellery, sold and let by neighbours.",
+  "description": "A multi-page estate agency site: map-linked home search with buy/rent filters, listing pages with gallery, measured floor plan, mortgage calculator and viewing booking, a three-step valuation form with live desk estimate, agents and neighborhood guides.",
+  "tags": [
+    "Map search",
+    "Floor plans",
+    "Valuation estimator",
+    "Neighborhood guides"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/homes", "title": "Search homes" },
+    { "path": "/homes/14-cordwainer-row", "title": "Listing" },
+    { "path": "/sell", "title": "Sell & valuation" },
+    { "path": "/neighborhoods", "title": "Neighborhood guides" },
+    { "path": "/neighborhoods/old-town", "title": "Neighborhood guide" },
+    { "path": "/agents", "title": "Agents" },
+    { "path": "/agents/nora-lindqvist", "title": "Agent profile" },
+    { "path": "/about", "title": "About & fees" },
+    { "path": "/contact", "title": "Contact" },
+    { "path": "/saved", "title": "Saved homes" }
+  ],
+  "colors": { "paper": "#f2efe7", "ink": "#1d2b24", "accent": "#a3401f" },
+  "fonts": ["Noto Serif Display", "Albert Sans"]
+}

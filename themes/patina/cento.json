@@ -1,0 +1,24 @@
+{
+  "number": 58,
+  "name": "Patina",
+  "sector": "Vintage furniture store",
+  "category": "Commerce",
+  "tagline": "Furniture with a past, measured and mended for its next room.",
+  "description": "A multi-page vintage furniture shop: a filterable stock-book catalogue with hanging price tags, piece pages with finish options and a to-scale doorway and wall fit check, staged room sets, a restoration workshop with an estimator, a sell-to-us form, and a persisted cart with checkout.",
+  "tags": ["Online shop", "Doorway fit check", "Room sets", "Sell-to-us form"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/shop", "title": "Shop the floor" },
+    { "path": "/shop/haldane-teak-sideboard", "title": "Piece" },
+    { "path": "/rooms", "title": "Room sets" },
+    { "path": "/rooms/the-reading-corner", "title": "Room set" },
+    { "path": "/restoration", "title": "Restoration" },
+    { "path": "/sell", "title": "Sell to us" },
+    { "path": "/about", "title": "About" },
+    { "path": "/visit", "title": "Visit & delivery" },
+    { "path": "/cart", "title": "Cart" },
+    { "path": "/checkout", "title": "Checkout" }
+  ],
+  "colors": { "paper": "#f1ebe0", "ink": "#2a211b", "accent": "#2f6b5e" },
+  "fonts": ["Sorts Mill Goudy", "Work Sans"]
+}

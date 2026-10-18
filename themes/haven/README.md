@@ -1,55 +1,38 @@
 # Haven
 
-Alpine retreat / travel template from the Elseform collection. Built with React, TypeScript, Vite, and Lucide icons.
+Twenty-two beds at 1,640 metres, and the whole valley below. An alpine hotel website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Design
+## Pages
 
-Deep forest, warm limestone, Italiana typography, immersive mountain photography, a slow landscape reveal, and a compact stay configurator.
+- `/` — Home: hero with availability bar, hosts' letter, room strip, interactive panorama table, dinner menu, bathhouse infusion times, summer/winter experiences, guest quote, journal, closing call to book
+- `/rooms` — Rooms and cabins: filter by type and party size, sort by price or size, comparison table
+- `/rooms/:id` — Room: photo gallery, facts, description, amenities, policies, the panorama framed by that room's window, related rooms
+- `/book` — Check availability: four-step flow (dates on a nightly-rate calendar, room, board and extras, guest details) with a live price summary and confirmation
+- `/dining` — Restaurant Teria tasting menu, the Stube à la carte menu, breakfast, producers, table reservations
+- `/spa` — The bathhouse: saunas and temperatures, daily infusion schedule, treatments with prices, house rules
+- `/experiences` — Guided and self-guided days, filterable by season
+- `/experiences/:id` — Experience: facts, what happens, what to bring, timed plan of the day
+- `/journal` — Stories from the house
+- `/journal/:slug` — Article with pull quotes and further reading
+- `/about` — The house: history timeline, how it is run, the team
+- `/plan` — Plan your stay: getting here, seasons, house rules, packing list, FAQ, contact
 
-**Type:** Italiana and DM Sans. Fonts are sourced from Google Fonts and bundled locally.
-
-- Forest: `#233c32`
-- Cream: `#f2f0e8`
-- Sage: `#d9decf`
-
-## Run independently
+## Run
 
 ```sh
-bun install
-bun run dev
-bun run build
-bun run preview
+bun install && bun run dev
 ```
 
-The relative Vite base supports deployment at `/elseform/themes/haven/` or another subdirectory. The theme has no dependency on the gallery or other templates. `src/main.tsx` is the entry point. Edit `src/App.tsx` for content and `src/styles.css` for the visual system.
+Build with `bun run build`: static output in `dist/`; the relative base works in any subfolder.
 
-## Working interactions
+## Customize
 
-- Select a room or cabin and see its imagery, details, and illustrative rate.
-- Set an arrival date, one to fourteen nights, and party size; the total recalculates immediately.
-- Four guests automatically selects the suite; choosing a smaller room adjusts the party to two.
-- Submit to produce a local demonstration confirmation.
+`src/content.ts` holds all copy and data (brand, rooms, peaks, rates, menus, experiences, journal). `src/styles.css` holds the design system with tokens at `:root`. Imagery lives in `src/assets`.
 
-State is held in memory and resets on reload. Forms use native validation; no server, payment processor, or external message service is connected. All business names, projects, prices, offerings, and availability are **fictional demonstration content**. Replace these and connect your own services before production use.
+## Demo behaviour
 
-## Accessibility and motion
+The availability calendar is generated locally from each room's base rate, seasonal opening dates and a stable pseudo-random occupancy, so the same nights are free on every visit. The booking flow, newsletter form and validation run entirely in the browser: nothing is sent, stored or charged, and the confirmation reference is made up. Haven, its people, prices and the Val Teria are fictional.
 
-Semantic navigation and forms, visible keyboard focus, accessible button names, pressed/expanded control states, explicit confirmation messages, mobile reflow, and `prefers-reduced-motion` support. Photographs include descriptive alternative text. The intentionally authored motion is disabled for reduced-motion preferences.
+## Credits
 
-## Photography and icons
-
-The following photographs are stored locally under `src/assets` and imported by Vite, so nested deployments do not depend on remote photo URLs. Sources:
-
-- [mountain — original Unsplash image](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b)
-- [cabin — original Unsplash image](https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8)
-- [room — original Unsplash image](https://images.unsplash.com/photo-1611892440504-42a792e24d32)
-
-Photography: [Unsplash license](https://unsplash.com/license). Fonts: [Google Fonts](https://fonts.google.com/), under the respective open font licenses. Icons: [Lucide](https://lucide.dev/), ISC license. Verify the terms for your intended use and replace editorial demonstration photographs before using them to imply a real business, product, or property.
-
-## Validation
-
-Standalone production build verified with `bun run build`. Collection-wide responsive and interaction verification is maintained at the repository level.
-
-## Self-hosted fonts
-
-Fonts are bundled under `src/assets/fonts/`, with their OFL license notices. No external font service is needed at runtime.
+Fonts: Gloock and Figtree (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

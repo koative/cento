@@ -1,0 +1,28 @@
+{
+  "number": 78,
+  "name": "Enamel",
+  "sector": "Dental clinic",
+  "category": "Health & Wellness",
+  "tagline": "Careful dentistry, priced before we pick up a drill.",
+  "description": "A dental clinic site built around the dental chart: an interactive FDI tooth map that turns marked teeth into treatments and a price estimate, 13 treatment pages with cross-section diagrams, dentist profiles, a prices table with member toggle, new-patient guide and a four-step booking flow with live free slots.",
+  "tags": [
+    "Tooth chart estimator",
+    "Online booking",
+    "Treatment price list",
+    "Membership plan"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/treatments", "title": "Treatments" },
+    { "path": "/treatments/root-canal", "title": "Treatment" },
+    { "path": "/dentists", "title": "Dentists" },
+    { "path": "/dentists/mira-okafor", "title": "Dentist" },
+    { "path": "/prices", "title": "Prices & plans" },
+    { "path": "/new-patients", "title": "New patients" },
+    { "path": "/book", "title": "Book online" },
+    { "path": "/visit", "title": "Visit & hours" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#f5f3ee", "ink": "#14262b", "accent": "#1f45b5" },
+  "fonts": ["Albert Sans"]
+}

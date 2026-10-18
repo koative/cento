@@ -1,0 +1,23 @@
+{
+  "number": 14,
+  "name": "Monograph",
+  "sector": "Independent magazine",
+  "category": "Culture & Media",
+  "tagline": "A quarterly of slow attention. One word, four times a year.",
+  "description": "A multi-page independent magazine: current issue with authored covers and contents, issue archive and issue pages, an article reader with side notes, lamplight mode and a print folio counter, sections, contributor profiles and a subscribe flow with plans and validation.",
+  "tags": ["Article reader", "Issue archive", "Subscriptions", "Contributors"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/stories", "title": "Stories" },
+    { "path": "/read/the-long-threshold", "title": "Article" },
+    { "path": "/issues", "title": "Issues" },
+    { "path": "/issues/31", "title": "Issue" },
+    { "path": "/sections/essays", "title": "Section" },
+    { "path": "/contributors", "title": "Contributors" },
+    { "path": "/contributors/elena-moss", "title": "Contributor" },
+    { "path": "/subscribe", "title": "Subscribe" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#f2ecdd", "ink": "#1c1a16", "accent": "#8c2b1f" },
+  "fonts": ["Libre Bodoni", "Literata"]
+}

@@ -1,189 +1,83 @@
-import { useState } from "react";
-import { ArrowUpRight, ArrowRight, Plus, Minus, Film } from "lucide-react";
-import screen from "./assets/screen.jpg";
-const films = [
-  {
-    name: "The quiet between",
-    director: "A film by Ellis North",
-    genre: "A nocturnal road story",
-    time: "20:30",
-    length: "108 min",
-    date: "Friday 16 October",
-  },
-  {
-    name: "A place to disappear",
-    director: "A film by Ren Okada",
-    genre: "Cities, memory, and the spaces we leave",
-    time: "18:15",
-    length: "94 min",
-    date: "Saturday 17 October",
-  },
-  {
-    name: "Where the light goes",
-    director: "A film by Alma Reed",
-    genre: "An intimate portrait of a disappearing coast",
-    time: "21:00",
-    length: "116 min",
-    date: "Sunday 18 October",
-  },
+import { useRef, type ReactNode } from "react";
+import { match, useRoute, usePageChange } from "./router";
+import { brand, films } from "./content";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { Home } from "./pages/Home";
+import { WhatsOn } from "./pages/WhatsOn";
+import { FilmPage } from "./pages/FilmPage";
+import { Book } from "./pages/Book";
+import { Events } from "./pages/Events";
+import { Membership } from "./pages/Membership";
+import { Hire } from "./pages/Hire";
+import { Visit } from "./pages/Visit";
+import { About } from "./pages/About";
+import { NotFound } from "./pages/NotFound";
+
+type Page = { title: string; view: ReactNode };
+type Route = [string, (p: Record<string, string>) => Page | null];
+
+const routes: Route[] = [
+  [
+    "/",
+    () => ({
+      title: `${brand.name} — Independent cinema on Tanner Street`,
+      view: <Home />,
+    }),
+  ],
+  ["/whats-on", () => ({ title: "What's on", view: <WhatsOn /> })],
+  [
+    "/films/:slug",
+    ({ slug }) => {
+      const film = films.find((f) => f.slug === slug);
+      return film
+        ? {
+            title: `${film.title} (${film.year})`,
+            view: <FilmPage film={film} />,
+          }
+        : null;
+    },
+  ],
+  ["/book", () => ({ title: "Book tickets", view: <Book /> })],
+  ["/events", () => ({ title: "Events & Q&As", view: <Events /> })],
+  ["/membership", () => ({ title: "Membership", view: <Membership /> })],
+  ["/hire", () => ({ title: "Venue hire", view: <Hire /> })],
+  ["/visit", () => ({ title: "Visit & access", view: <Visit /> })],
+  ["/about", () => ({ title: "About", view: <About /> })],
 ];
+
+function resolve(path: string): Page {
+  for (const [pattern, render] of routes) {
+    const params = match(pattern, path);
+    const page = params && render(params);
+    if (page) return page;
+  }
+  return { title: "Page not found", view: <NotFound /> };
+}
+
 export default function App() {
-  const [selected, setSelected] = useState(0);
-  const [tickets, setTickets] = useState(1);
-  const [receipt, setReceipt] = useState("");
-  const film = films[selected];
+  const path = useRoute();
+  const main = useRef<HTMLElement>(null);
+  const page = resolve(path);
+  const title = path === "/" ? page.title : `${page.title} — ${brand.name}`;
+  usePageChange(main, title);
+
   return (
     <>
-      <header>
-        <a className="wordmark" href="#programme">
-          APERTURE
-          <Film size={26} />
-        </a>
-        <nav aria-label="Main">
-          <a href="#programme">On screen</a>
-          <a href="#tickets">
-            Your evening <ArrowUpRight size={15} />
-          </a>
-        </nav>
-      </header>
-      <main>
-        <div className="intro">
-          <p>Independent cinema. Shared darkness.</p>
-          <span>16—18 OCT / AUTUMN PROGRAMME</span>
-        </div>
-        <section id="programme" className="programme">
-          <div className="film-screen">
-            <img
-              src={screen}
-              alt="Deep blue night sky over a distant horizon"
-            />
-            <div className="screen-top">
-              <span>THIS WEEK AT APERTURE</span>
-              <span>SCREEN 1 · ORIGINAL VERSION</span>
-            </div>
-            <div className="film-title">
-              <h1>{film.name}</h1>
-              <p>{film.director}</p>
-            </div>
-            <div className="screen-bottom">
-              <span>{film.genre}</span>
-              <span>{film.length}</span>
-            </div>
-          </div>
-          <aside>
-            <h2>
-              Stay for
-              <br />
-              the credits.
-            </h2>
-            <p>Three films worth getting lost in. Choose your next evening.</p>
-            <div className="film-list">
-              {films.map((f, i) => (
-                <button
-                  key={f.name}
-                  aria-pressed={selected === i}
-                  onClick={() => {
-                    setSelected(i);
-                    setReceipt("");
-                  }}
-                >
-                  <span>
-                    {f.date}
-                    <b>{f.name}</b>
-                  </span>
-                  <ArrowRight size={19} />
-                </button>
-              ))}
-            </div>
-            <p className="small">
-              A fictional cinema programme.
-              <br />A real love of the big screen.
-            </p>
-          </aside>
-        </section>
-        <section className="ticket-strip" id="tickets">
-          <div>
-            <span>YOUR SCREENING</span>
-            <h2>{film.name}</h2>
-            <p>
-              {film.date} · {film.time} · Screen 1
-            </p>
-          </div>
-          <div className="ticket-quantity">
-            <span>Seats · £12 each</span>
-            <div>
-              <button
-                aria-label="Remove ticket"
-                disabled={tickets === 1}
-                onClick={() => {
-                  setTickets(tickets - 1);
-                  setReceipt("");
-                }}
-              >
-                <Minus />
-              </button>
-              <output aria-label="Ticket quantity">{tickets}</output>
-              <button
-                aria-label="Add ticket"
-                disabled={tickets === 6}
-                onClick={() => {
-                  setTickets(tickets + 1);
-                  setReceipt("");
-                }}
-              >
-                <Plus />
-              </button>
-            </div>
-          </div>
-          <button
-            className="reserve"
-            onClick={() =>
-              setReceipt(
-                `${tickets} ${tickets === 1 ? "seat" : "seats"} for ${film.name} at ${film.time} — £${tickets * 12}. Local preview only; no seats reserved.`,
-              )
-            }
-          >
-            Preview tickets · £{tickets * 12}
-            <ArrowUpRight size={22} />
-          </button>
-          <p className="status" role="status">
-            {receipt}
-          </p>
-        </section>
-        <section className="cinema-note">
-          <h2>
-            Arrive early.
-            <br />
-            Leave somewhere else.
-          </h2>
-          <div>
-            <p>
-              Our imagined corner cinema has one screen, a small bar, and a
-              programme that makes room for unfamiliar voices. No trailers you
-              have seen a hundred times. Just a little room for the unexpected.
-            </p>
-            <p>
-              Doors open 30 minutes before each screening.
-              <br />
-              All films shown with English subtitles where needed.
-            </p>
-          </div>
-          <div className="stamp">
-            LIGHTS
-            <br />
-            DOWN.
-            <br />
-            <Film size={38} />
-          </div>
-        </section>
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
+      <Header />
+      <main
+        id="main"
+        tabIndex={-1}
+        ref={main}
+        key={path}
+        className="page-enter"
+      >
+        {page.view}
       </main>
-      <footer>
-        <strong>APERTURE / INDEPENDENT PICTURES</strong>
-        <p>
-          Fictional cinema demo by Koative. Ticket selections stay in this
-          browser.
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }

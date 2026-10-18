@@ -1,182 +1,71 @@
 ---
 name: Heirloom
-description: A jewel-box archive with material selection and an engraving preview.
 colors:
-  paper: '#231f20'
-  ink: '#f0e3cf'
-  accent: '#c6a269'
-  header-tone: '#514646'
-  inscription-tone: '#382a24'
-  header-span-tone: '#c0ac9c'
-  object-p-tone: '#d7c5b2'
-  cabinet-mark-ink: '#a78a6a'
-  inscription-surface: '#e4d7c2'
-  engraving-plate-span-ink: '#35271e'
+  velvet: "#171413"
+  velvet-2: "#201b19"
+  night: "#100e0d"
+  line: "#3a312d"
+  line-strong: "#5d4f47"
+  bone: "#f0e3cf"
+  bone-2: "#cdbca6"
+  gold: "#c9a46a"
+  gold-2: "#e5c891"
+  card: "#ece0cb"
+  card-ink: "#2a201b"
+  error: "#f19a83"
 typography:
   display:
-    fontFamily: Display, serif
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(4rem, 7vw, 6rem)
-  headline:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 3.7rem)
-  headline-context-1:
-    fontFamily: Display
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: 42px
-  headline-context-2:
-    fontFamily: Display
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: 52px
-  title:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
+    {
+      family: "Cinzel",
+      weight: "400–600",
+      sizes: "h1 clamp(2.4rem, 1.5rem + 3.4vw, 4.75rem); h2 clamp(1.6rem, 1.2rem + 1.5vw, 2.6rem); h3 1.05–1.25rem; labels 0.72–0.82rem at 0.12–0.14em",
+    }
   body:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
-rounded:
-  observed-1: 50%
+    {
+      family: "Cormorant Garamond",
+      weight: "500–600, italic",
+      size: "clamp(1.1875rem, 1.12rem + 0.25vw, 1.3125rem) / 1.55",
+    }
+rounded: { control: 2px, swatch: 50%, inscription: 32px }
 spacing:
-  observed-1: 12px
-  observed-2: '0'
-  observed-3: 5vw
-components:
-  primary-button:
-    padding: 14px 22px
-    backgroundColor: '#f0e3cf'
-    textColor: '#231f20'
-  quiet-button:
-    backgroundColor: transparent
-    textColor: inherit
-    padding: 10px 16px
-  navigation:
-    textColor: '#f0e3cf'
-  inscription:
-    backgroundColor: '#e4d7c2'
-    textColor: '#382a24'
-    padding: 65px 7vw
+  {
+    gutter: "clamp(1.25rem, 4vw, 3.5rem)",
+    section: "clamp(3.5rem, 7vw, 7rem)",
+    max: 1320px,
+  }
 ---
-
-# Design System: Heirloom
 
 ## Overview
 
-**Creative North Star: "Heirloom jewelry atelier world"**
-
-A dark jewelry cabinet with a giant CSS gold ring, asymmetrical serif hierarchy, material swatches and a live engraving inscription. Each section reads as a curated object plate rather than a conventional shop grid.
-
-This records the implemented jewelry atelier template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Jewelry atelier composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-The collection considered a neighborhood gazette, service counter, museum directory, brand magazine, specimen catalogue, community field guide, and event programme. Seed `4fa713db` assigned sixth, community field guide: navigable specificity and contextual choices. This template translates that discipline into its own sector world, not common visual scaffolding. Explicit delegated creative direction authorizes code-led implementation.
+Heirloom is a jeweller's velvet tray under a bench lamp. Rings are judged on dark felt in warm, low light, and the people shopping for one usually do it in the evening, slowly, on a sofa or at a consultation table, so the site is dark: brown-black velvet, bone text and one warm gold. Every catalogue piece is drawn rather than photographed, like the gouache renderings jewellers paint before a commission, so a metal or stone change redraws the piece on the spot.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Accent**: interactive emphasis.
-- **Header Tone**: context-specific authored color.
-- **Inscription Tone**: context-specific authored color.
-- **Header Span Tone**: context-specific authored color.
-- **Object P Tone**: context-specific authored color.
-- **Cabinet Mark Ink**: context-specific authored color.
-- **Inscription Surface**: context-specific authored color.
-- **Engraving Plate Span Ink**: context-specific authored color.
+Velvet (#171413) is the ground and velvet-2 the raised surfaces (ledgers, asides, trays). Bone (#f0e3cf) carries body text at ~15:1, bone-2 (#cdbca6) secondary text at ~9:1, and gold (#c9a46a) is the single accent for buttons, rules, hallmark marks and focus. The cream card (#ece0cb with #2a201b ink) appears only where a page closes and as the mat around the engravings, like a print in a frame. Metal and gem colours live in the drawing plates, not in the UI.
 
 ## Typography
 
-- **Display** is the CSS family alias for Bodoni Moda 11pt. Local faces: normal / 100 900.
-- **Body** is the CSS family alias for DM Sans 9pt. Local faces: normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
+Cinzel, the inscriptional Roman capital, sets headings, labels, buttons and the logo: it is the lettering of hallmarks and engraved shanks. Cormorant Garamond sets the body at 19–21px and weight 500 so it holds on a dark ground; its italic carries captions, hints, prices-as-prose and the engraving previews. Numbers in prices, ledgers and the size chart are tabular lining figures.
 
 ## Layout
 
-- **Cabinet**: grid-template-columns (0.9fr 1.1fr); min-height (620px); padding (55px 5vw 40px); gap (5vw).
-- **Object**: padding (50px 5vw 65px); grid-template-columns (0.6fr 1.2fr 1fr); gap (5vw).
-- **Inscription**: padding (65px 7vw); grid-template-columns (1.1fr 0.9fr); gap (10vw).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 900px)`.
-- @media (max-width: 900px): object changes to grid-template-columns (1fr 1fr).
-- @media (max-width: 650px): cabinet changes to grid-template-columns (1fr); gap (15px).
-- @media (max-width: 650px): object changes to grid-template-columns (1fr); gap (30px).
-- @media (max-width: 650px): inscription changes to grid-template-columns (1fr); gap (40px).
-
-## Elevation & Depth
-
-Depth is locally authored on the following surfaces; these values are not a general card-shadow preset.
-
-- ring face: `inset 8px 8px 11px #fff6d273, inset -8px -8px 9px #2b140bb3, 7px 24px 25px #0006`.
-- engraving plate: `inset 0 8px 15px #4c301c36, inset 0 -6px 12px #fff6e16b`.
-
-## Shapes
-
-- input: corners (`0`).
-- ring face: corners (`50%`).
-- engraving plate: corners (`50%`).
-- metals button: corners (`50%`).
+A 1320px measure with full-bleed bands for the ring-builder teaser and the cream close. The home hero pairs the house solitaire photograph with the statement, followed by a hairline collection index so the catalogue is reachable in the first screen. Detail pages use a sticky drawing tray beside a scrolling column of options; checkout and booking use a form column with a ledger or visit aside. Information is set in hairline lists and definition rows rather than card grids.
 
 ## Components
 
-Choose metal and size, preview engraving and prepare a local piece summary.
+- **Plate:** an SVG drawing generated from each piece's `art` record (kind, gem, cut, carat, band finish) and metal: solitaire, trilogy, halo, plain/knife-edge/milgrain bands, half eternity, signet with engraved initials, studs, drops, pendants and a loose stone from above.
+- **Ring builder:** native radio groups for setting, stone, cut, band and metal, a carat slider, size and engraving; the side view, top view and inside-band inscription redraw live with an itemised ledger.
+- **Inscription strip:** the inside of the band unrolled in the chosen metal, showing the engraving in italic.
+- **Maker's mark:** an elongated hexagon punch with H (logo, favicon) and oval cartouches for each maker.
+- Metal and gem swatches, option pills, appointment type cards, slot picker with taken times, quantity stepper, `<details>` FAQ with a CSS plus, size table with live match.
 
-### Primary button
+## Motion
 
-Authored btn styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Quiet button
-
-Authored quiet styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Navigation
-
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Inscription
-
-Authored inscription styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid var(--accent)); outline-offset (4px).
-- button:disabled: opacity (0.5).
-- btn:hover: background (var(--accent)).
-- button[aria pressed="true"]: outline (2px solid var(--accent)); outline-offset (3px).
-- ring animation: `heirloomTurn 8s ease-in-out infinite alternate`.
-- ring face transition: `border-color 0.5s`.
-- engraving plate transition: `background 0.5s`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+Pages arrive like a stone coming into focus under the loupe: a 0.7s blur-to-sharp with an exponential ease-out, from an already-visible state. In the builder a newly chosen stone drops into its claws, and metal changes cross-fade through the gradient stops. Hover lifts the drawing slightly in its tray. `prefers-reduced-motion` removes all of it.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
-
-## Collection 100 refinement
-
-The ring has fourteen depth layers and visitor-controlled rotation, with an explicit animation pause. Metal and engraving controls remain independent and working.
+- Do keep gold as the only UI accent; let metals and stones speak inside the plates.
+- Do give every new piece an `art` record so it can be drawn, priced per metal and shown in the bag.
+- Don't use the cream card for anything but closes and print mats.
+- Don't add eyebrow labels, icon-card rows, gradient text or glass.

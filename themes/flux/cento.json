@@ -1,0 +1,35 @@
+{
+  "number": 44,
+  "name": "Flux",
+  "sector": "Workflow automation SaaS",
+  "category": "Technology",
+  "tagline": "Let the handoffs run themselves.",
+  "description": "A workflow automation SaaS site with product tour, searchable integrations directory, template gallery with live test runs, pricing with a run estimator, customers and changelog, plus a /app demo with overview charts, a sortable workflows table, a step builder with a test bench, run history and settings.",
+  "tags": [
+    "Workflow builder",
+    "Live test runs",
+    "Integrations directory",
+    "App demo"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/product", "title": "Product" },
+    { "path": "/integrations", "title": "Integrations" },
+    { "path": "/integrations/ledgerline", "title": "Integration" },
+    { "path": "/templates", "title": "Templates" },
+    { "path": "/templates/invoice-approval", "title": "Template" },
+    { "path": "/pricing", "title": "Pricing" },
+    { "path": "/customers", "title": "Customers" },
+    { "path": "/changelog", "title": "Changelog" },
+    { "path": "/about", "title": "About" },
+    { "path": "/contact", "title": "Talk to sales" },
+    { "path": "/signin", "title": "Sign in" },
+    { "path": "/app", "title": "App: Overview" },
+    { "path": "/app/workflows", "title": "App: Workflows" },
+    { "path": "/app/workflows/wf-invoice", "title": "App: Workflow builder" },
+    { "path": "/app/runs", "title": "App: Run history" },
+    { "path": "/app/settings", "title": "App: Settings" }
+  ],
+  "colors": { "paper": "#f5f3ee", "ink": "#1d1a26", "accent": "#5b3fa8" },
+  "fonts": ["Wix Madefor Display", "Wix Madefor Text"]
+}

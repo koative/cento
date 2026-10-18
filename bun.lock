@@ -11,35 +11,17 @@
       },
       "devDependencies": {
         "@playwright/test": "^1.56.0",
-        "@tailwindcss/vite": "^4.1.0",
         "@types/node": "^22.0.0",
         "@types/react": "^19.2.0",
         "@types/react-dom": "^19.2.0",
         "@vitejs/plugin-react": "^5.0.0",
         "prettier": "^3.9.10",
-        "tailwindcss": "^4.1.0",
         "typescript": "^5.9.0",
         "vite": "^7.1.0",
       },
     },
     "themes/alloy": {
       "name": "@koative/alloy",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
-    "themes/alpine": {
-      "name": "@koative/alpine",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -86,40 +68,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/ascent": {
-      "name": "@koative/ascent",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
     "themes/atelier": {
       "name": "@koative/atelier",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
-    "themes/atlas": {
-      "name": "@koative/atlas",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -150,88 +100,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/aurora": {
-      "name": "@koative/aurora",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
-    "themes/ballast": {
-      "name": "@koative/ballast",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
-    "themes/beacon": {
-      "name": "@koative/beacon",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
     "themes/bloom": {
       "name": "@koative/bloom",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
-    "themes/botanica": {
-      "name": "@koative/botanica",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
-    "themes/brine": {
-      "name": "@koative/brine",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -262,8 +132,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/cadencehouse": {
-      "name": "@koative/cadencehouse",
+    "themes/campus": {
+      "name": "@koative/campus",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -278,8 +148,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/campus": {
-      "name": "@koative/campus",
+    "themes/channel": {
+      "name": "@koative/channel",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -342,8 +212,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/circuit": {
-      "name": "@koative/circuit",
+    "themes/civic": {
+      "name": "@koative/civic",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -358,8 +228,24 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/civic": {
-      "name": "@koative/civic",
+    "themes/clutch": {
+      "name": "@koative/clutch",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/cohort": {
+      "name": "@koative/cohort",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -422,24 +308,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/cove": {
-      "name": "@koative/cove",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
-    "themes/delta": {
-      "name": "@koative/delta",
+    "themes/dispatch": {
+      "name": "@koative/dispatch",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -470,6 +340,22 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/drop": {
+      "name": "@koative/drop",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/ember": {
       "name": "@koative/ember",
       "version": "1.0.0",
@@ -486,8 +372,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/emberlight": {
-      "name": "@koative/emberlight",
+    "themes/enamel": {
+      "name": "@koative/enamel",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -518,22 +404,6 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/equinox": {
-      "name": "@koative/equinox",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
     "themes/fable": {
       "name": "@koative/fable",
       "version": "1.0.0",
@@ -550,8 +420,40 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/fade": {
+      "name": "@koative/fade",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/field": {
       "name": "@koative/field",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/fixture": {
+      "name": "@koative/fixture",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -646,22 +548,6 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/gavel": {
-      "name": "@koative/gavel",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
     "themes/grid": {
       "name": "@koative/grid",
       "version": "1.0.0",
@@ -678,24 +564,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/grove": {
-      "name": "@koative/grove",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
-    "themes/harbor": {
-      "name": "@koative/harbor",
+    "themes/guild": {
+      "name": "@koative/guild",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -758,8 +628,24 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/horizon": {
-      "name": "@koative/horizon",
+    "themes/hideaway": {
+      "name": "@koative/hideaway",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/hush": {
+      "name": "@koative/hush",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -806,8 +692,24 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/keystone": {
-      "name": "@koative/keystone",
+    "themes/iron": {
+      "name": "@koative/iron",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/kettle": {
+      "name": "@koative/kettle",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -854,24 +756,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/kinetic": {
-      "name": "@koative/kinetic",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
-    "themes/lacquer": {
-      "name": "@koative/lacquer",
+    "themes/lantern": {
+      "name": "@koative/lantern",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -902,8 +788,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/loom": {
-      "name": "@koative/loom",
+    "themes/lucid": {
+      "name": "@koative/lucid",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -934,8 +820,40 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/lumenary": {
-      "name": "@koative/lumenary",
+    "themes/manual": {
+      "name": "@koative/manual",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/margin": {
+      "name": "@koative/margin",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/mentor": {
+      "name": "@koative/mentor",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -1014,22 +932,6 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/nectar": {
-      "name": "@koative/nectar",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
     "themes/nest": {
       "name": "@koative/nest",
       "version": "1.0.0",
@@ -1094,24 +996,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/palette": {
-      "name": "@koative/palette",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
-    "themes/parcel": {
-      "name": "@koative/parcel",
+    "themes/pantry": {
+      "name": "@koative/pantry",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -1128,6 +1014,22 @@
     },
     "themes/patina": {
       "name": "@koative/patina",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/pipeline": {
+      "name": "@koative/pipeline",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -1206,6 +1108,38 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/quad": {
+      "name": "@koative/quad",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/quadrant": {
+      "name": "@koative/quadrant",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/reel": {
       "name": "@koative/reel",
       "version": "1.0.0",
@@ -1238,8 +1172,24 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/ripple": {
-      "name": "@koative/ripple",
+    "themes/riff": {
+      "name": "@koative/riff",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/roam": {
+      "name": "@koative/roam",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -1286,22 +1236,6 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/sanctuary": {
-      "name": "@koative/sanctuary",
-      "version": "1.0.0",
-      "dependencies": {
-        "lucide-react": "^0.468.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-      },
-      "devDependencies": {
-        "@types/react": "^19.2.0",
-        "@types/react-dom": "^19.2.0",
-        "@vitejs/plugin-react": "^5.0.0",
-        "typescript": "^5.9.0",
-        "vite": "^7.1.0",
-      },
-    },
     "themes/score": {
       "name": "@koative/score",
       "version": "1.0.0",
@@ -1318,8 +1252,40 @@
         "vite": "^7.1.0",
       },
     },
+    "themes/shortlist": {
+      "name": "@koative/shortlist",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
     "themes/signal": {
       "name": "@koative/signal",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/smash": {
+      "name": "@koative/smash",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -1366,8 +1332,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/sprout": {
-      "name": "@koative/sprout",
+    "themes/sprint": {
+      "name": "@koative/sprint",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -1414,8 +1380,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/strata": {
-      "name": "@koative/strata",
+    "themes/streak": {
+      "name": "@koative/streak",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -1432,6 +1398,38 @@
     },
     "themes/summit": {
       "name": "@koative/summit",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/surge": {
+      "name": "@koative/surge",
+      "version": "1.0.0",
+      "dependencies": {
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@types/react": "^19.2.0",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "^5.9.0",
+        "vite": "^7.1.0",
+      },
+    },
+    "themes/tally": {
+      "name": "@koative/tally",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -1494,8 +1492,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/torque": {
-      "name": "@koative/torque",
+    "themes/tilde": {
+      "name": "@koative/tilde",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -1510,8 +1508,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/truffle": {
-      "name": "@koative/truffle",
+    "themes/tinker": {
+      "name": "@koative/tinker",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -1574,8 +1572,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/verdant": {
-      "name": "@koative/verdant",
+    "themes/vital": {
+      "name": "@koative/vital",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -1606,8 +1604,8 @@
         "vite": "^7.1.0",
       },
     },
-    "themes/waypoint": {
-      "name": "@koative/waypoint",
+    "themes/whisker": {
+      "name": "@koative/whisker",
       "version": "1.0.0",
       "dependencies": {
         "lucide-react": "^0.468.0",
@@ -1726,37 +1724,21 @@
 
     "@koative/alloy": ["@koative/alloy@workspace:themes/alloy"],
 
-    "@koative/alpine": ["@koative/alpine@workspace:themes/alpine"],
-
     "@koative/aperture": ["@koative/aperture@workspace:themes/aperture"],
 
     "@koative/arcade": ["@koative/arcade@workspace:themes/arcade"],
 
-    "@koative/ascent": ["@koative/ascent@workspace:themes/ascent"],
-
     "@koative/atelier": ["@koative/atelier@workspace:themes/atelier"],
-
-    "@koative/atlas": ["@koative/atlas@workspace:themes/atlas"],
 
     "@koative/aura": ["@koative/aura@workspace:themes/aura"],
 
-    "@koative/aurora": ["@koative/aurora@workspace:themes/aurora"],
-
-    "@koative/ballast": ["@koative/ballast@workspace:themes/ballast"],
-
-    "@koative/beacon": ["@koative/beacon@workspace:themes/beacon"],
-
     "@koative/bloom": ["@koative/bloom@workspace:themes/bloom"],
-
-    "@koative/botanica": ["@koative/botanica@workspace:themes/botanica"],
-
-    "@koative/brine": ["@koative/brine@workspace:themes/brine"],
 
     "@koative/cadence": ["@koative/cadence@workspace:themes/cadence"],
 
-    "@koative/cadencehouse": ["@koative/cadencehouse@workspace:themes/cadencehouse"],
-
     "@koative/campus": ["@koative/campus@workspace:themes/campus"],
+
+    "@koative/channel": ["@koative/channel@workspace:themes/channel"],
 
     "@koative/chapter": ["@koative/chapter@workspace:themes/chapter"],
 
@@ -1764,9 +1746,11 @@
 
     "@koative/cipher": ["@koative/cipher@workspace:themes/cipher"],
 
-    "@koative/circuit": ["@koative/circuit@workspace:themes/circuit"],
-
     "@koative/civic": ["@koative/civic@workspace:themes/civic"],
+
+    "@koative/clutch": ["@koative/clutch@workspace:themes/clutch"],
+
+    "@koative/cohort": ["@koative/cohort@workspace:themes/cohort"],
 
     "@koative/commons": ["@koative/commons@workspace:themes/commons"],
 
@@ -1774,23 +1758,25 @@
 
     "@koative/counsel": ["@koative/counsel@workspace:themes/counsel"],
 
-    "@koative/cove": ["@koative/cove@workspace:themes/cove"],
-
-    "@koative/delta": ["@koative/delta@workspace:themes/delta"],
+    "@koative/dispatch": ["@koative/dispatch@workspace:themes/dispatch"],
 
     "@koative/drift": ["@koative/drift@workspace:themes/drift"],
 
+    "@koative/drop": ["@koative/drop@workspace:themes/drop"],
+
     "@koative/ember": ["@koative/ember@workspace:themes/ember"],
 
-    "@koative/emberlight": ["@koative/emberlight@workspace:themes/emberlight"],
+    "@koative/enamel": ["@koative/enamel@workspace:themes/enamel"],
 
     "@koative/encore": ["@koative/encore@workspace:themes/encore"],
 
-    "@koative/equinox": ["@koative/equinox@workspace:themes/equinox"],
-
     "@koative/fable": ["@koative/fable@workspace:themes/fable"],
 
+    "@koative/fade": ["@koative/fade@workspace:themes/fade"],
+
     "@koative/field": ["@koative/field@workspace:themes/field"],
+
+    "@koative/fixture": ["@koative/fixture@workspace:themes/fixture"],
 
     "@koative/flux": ["@koative/flux@workspace:themes/flux"],
 
@@ -1802,13 +1788,9 @@
 
     "@koative/frame": ["@koative/frame@workspace:themes/frame"],
 
-    "@koative/gavel": ["@koative/gavel@workspace:themes/gavel"],
-
     "@koative/grid": ["@koative/grid@workspace:themes/grid"],
 
-    "@koative/grove": ["@koative/grove@workspace:themes/grove"],
-
-    "@koative/harbor": ["@koative/harbor@workspace:themes/harbor"],
+    "@koative/guild": ["@koative/guild@workspace:themes/guild"],
 
     "@koative/haven": ["@koative/haven@workspace:themes/haven"],
 
@@ -1816,29 +1798,35 @@
 
     "@koative/helix": ["@koative/helix@workspace:themes/helix"],
 
-    "@koative/horizon": ["@koative/horizon@workspace:themes/horizon"],
+    "@koative/hideaway": ["@koative/hideaway@workspace:themes/hideaway"],
+
+    "@koative/hush": ["@koative/hush@workspace:themes/hush"],
 
     "@koative/index": ["@koative/index@workspace:themes/index"],
 
     "@koative/ink": ["@koative/ink@workspace:themes/ink"],
 
-    "@koative/keystone": ["@koative/keystone@workspace:themes/keystone"],
+    "@koative/iron": ["@koative/iron@workspace:themes/iron"],
+
+    "@koative/kettle": ["@koative/kettle@workspace:themes/kettle"],
 
     "@koative/kiln": ["@koative/kiln@workspace:themes/kiln"],
 
     "@koative/kindred": ["@koative/kindred@workspace:themes/kindred"],
 
-    "@koative/kinetic": ["@koative/kinetic@workspace:themes/kinetic"],
-
-    "@koative/lacquer": ["@koative/lacquer@workspace:themes/lacquer"],
+    "@koative/lantern": ["@koative/lantern@workspace:themes/lantern"],
 
     "@koative/ledger": ["@koative/ledger@workspace:themes/ledger"],
 
-    "@koative/loom": ["@koative/loom@workspace:themes/loom"],
+    "@koative/lucid": ["@koative/lucid@workspace:themes/lucid"],
 
     "@koative/lumen": ["@koative/lumen@workspace:themes/lumen"],
 
-    "@koative/lumenary": ["@koative/lumenary@workspace:themes/lumenary"],
+    "@koative/manual": ["@koative/manual@workspace:themes/manual"],
+
+    "@koative/margin": ["@koative/margin@workspace:themes/margin"],
+
+    "@koative/mentor": ["@koative/mentor@workspace:themes/mentor"],
 
     "@koative/meridian": ["@koative/meridian@workspace:themes/meridian"],
 
@@ -1848,8 +1836,6 @@
 
     "@koative/muse": ["@koative/muse@workspace:themes/muse"],
 
-    "@koative/nectar": ["@koative/nectar@workspace:themes/nectar"],
-
     "@koative/nest": ["@koative/nest@workspace:themes/nest"],
 
     "@koative/nocturne": ["@koative/nocturne@workspace:themes/nocturne"],
@@ -1858,11 +1844,11 @@
 
     "@koative/orbit": ["@koative/orbit@workspace:themes/orbit"],
 
-    "@koative/palette": ["@koative/palette@workspace:themes/palette"],
-
-    "@koative/parcel": ["@koative/parcel@workspace:themes/parcel"],
+    "@koative/pantry": ["@koative/pantry@workspace:themes/pantry"],
 
     "@koative/patina": ["@koative/patina@workspace:themes/patina"],
+
+    "@koative/pipeline": ["@koative/pipeline@workspace:themes/pipeline"],
 
     "@koative/pour": ["@koative/pour@workspace:themes/pour"],
 
@@ -1872,35 +1858,47 @@
 
     "@koative/pulse": ["@koative/pulse@workspace:themes/pulse"],
 
+    "@koative/quad": ["@koative/quad@workspace:themes/quad"],
+
+    "@koative/quadrant": ["@koative/quadrant@workspace:themes/quadrant"],
+
     "@koative/reel": ["@koative/reel@workspace:themes/reel"],
 
     "@koative/relay": ["@koative/relay@workspace:themes/relay"],
 
-    "@koative/ripple": ["@koative/ripple@workspace:themes/ripple"],
+    "@koative/riff": ["@koative/riff@workspace:themes/riff"],
+
+    "@koative/roam": ["@koative/roam@workspace:themes/roam"],
 
     "@koative/roast": ["@koative/roast@workspace:themes/roast"],
 
     "@koative/saffron": ["@koative/saffron@workspace:themes/saffron"],
 
-    "@koative/sanctuary": ["@koative/sanctuary@workspace:themes/sanctuary"],
-
     "@koative/score": ["@koative/score@workspace:themes/score"],
 
+    "@koative/shortlist": ["@koative/shortlist@workspace:themes/shortlist"],
+
     "@koative/signal": ["@koative/signal@workspace:themes/signal"],
+
+    "@koative/smash": ["@koative/smash@workspace:themes/smash"],
 
     "@koative/solace": ["@koative/solace@workspace:themes/solace"],
 
     "@koative/sonnet": ["@koative/sonnet@workspace:themes/sonnet"],
 
-    "@koative/sprout": ["@koative/sprout@workspace:themes/sprout"],
+    "@koative/sprint": ["@koative/sprint@workspace:themes/sprint"],
 
     "@koative/stack": ["@koative/stack@workspace:themes/stack"],
 
     "@koative/still": ["@koative/still@workspace:themes/still"],
 
-    "@koative/strata": ["@koative/strata@workspace:themes/strata"],
+    "@koative/streak": ["@koative/streak@workspace:themes/streak"],
 
     "@koative/summit": ["@koative/summit@workspace:themes/summit"],
+
+    "@koative/surge": ["@koative/surge@workspace:themes/surge"],
+
+    "@koative/tally": ["@koative/tally@workspace:themes/tally"],
 
     "@koative/tempo": ["@koative/tempo@workspace:themes/tempo"],
 
@@ -1908,9 +1906,9 @@
 
     "@koative/tide": ["@koative/tide@workspace:themes/tide"],
 
-    "@koative/torque": ["@koative/torque@workspace:themes/torque"],
+    "@koative/tilde": ["@koative/tilde@workspace:themes/tilde"],
 
-    "@koative/truffle": ["@koative/truffle@workspace:themes/truffle"],
+    "@koative/tinker": ["@koative/tinker@workspace:themes/tinker"],
 
     "@koative/vault": ["@koative/vault@workspace:themes/vault"],
 
@@ -1918,11 +1916,11 @@
 
     "@koative/velo": ["@koative/velo@workspace:themes/velo"],
 
-    "@koative/verdant": ["@koative/verdant@workspace:themes/verdant"],
+    "@koative/vital": ["@koative/vital@workspace:themes/vital"],
 
     "@koative/vow": ["@koative/vow@workspace:themes/vow"],
 
-    "@koative/waypoint": ["@koative/waypoint@workspace:themes/waypoint"],
+    "@koative/whisker": ["@koative/whisker@workspace:themes/whisker"],
 
     "@napi-rs/lzma-linux-x64-gnu": ["@napi-rs/lzma-linux-x64-gnu@1.5.1", "", { "os": "linux", "cpu": "x64" }, "sha512-oTXEIha4SsuXdTA4Iyskj0kpdx2yVXdhd75c2v3xGrHFfVMsbhTPZU/nMPL4sWKo4pBHm3aucLaqGlF696dTyQ=="],
 
@@ -1980,36 +1978,6 @@
 
     "@rollup/rollup-win32-x64-msvc": ["@rollup/rollup-win32-x64-msvc@4.64.7", "", { "os": "win32", "cpu": "x64" }, "sha512-EhX6N3XPMEnVU5cRfNgzPOKcSucsbu3nNNWuoAaEuKIqmddBKHN5b9d4rPe65T1I+FaOT176JKiZNsUBp3rqbA=="],
 
-    "@tailwindcss/node": ["@tailwindcss/node@4.3.3", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "enhanced-resolve": "^5.24.1", "jiti": "^2.7.0", "lightningcss": "1.32.0", "magic-string": "^0.30.21", "source-map-js": "^1.2.1", "tailwindcss": "4.3.3" } }, "sha512-/T8IKEsf9VTU6tLjgC7+sv2mOPtQxzE2jMw7u4Tt40Tx+QSZxpzh95/H6cMKoja9XuW7iMdLJYBB0o9G1CaAgg=="],
-
-    "@tailwindcss/oxide": ["@tailwindcss/oxide@4.3.3", "", { "optionalDependencies": { "@tailwindcss/oxide-android-arm64": "4.3.3", "@tailwindcss/oxide-darwin-arm64": "4.3.3", "@tailwindcss/oxide-darwin-x64": "4.3.3", "@tailwindcss/oxide-freebsd-x64": "4.3.3", "@tailwindcss/oxide-linux-arm-gnueabihf": "4.3.3", "@tailwindcss/oxide-linux-arm64-gnu": "4.3.3", "@tailwindcss/oxide-linux-arm64-musl": "4.3.3", "@tailwindcss/oxide-linux-x64-gnu": "4.3.3", "@tailwindcss/oxide-linux-x64-musl": "4.3.3", "@tailwindcss/oxide-wasm32-wasi": "4.3.3", "@tailwindcss/oxide-win32-arm64-msvc": "4.3.3", "@tailwindcss/oxide-win32-x64-msvc": "4.3.3" } }, "sha512-krXjAikiaFSPaK/FkAQT5UTx3VormQaiZ5hBFlJZ9UFQGB/rwg1MZIhHAG9smMQRTdyJxP6Qt5MwMtdyU5FWrA=="],
-
-    "@tailwindcss/oxide-android-arm64": ["@tailwindcss/oxide-android-arm64@4.3.3", "", { "os": "android", "cpu": "arm64" }, "sha512-Y85A2gmPSkl5Ve5qR86GL4HT509cFqQh1aes9p3sSkyTPwt0Pppf3GkwGe4JPACcRYjgJIEhQgM6dBClnr0NYw=="],
-
-    "@tailwindcss/oxide-darwin-arm64": ["@tailwindcss/oxide-darwin-arm64@4.3.3", "", { "os": "darwin", "cpu": "arm64" }, "sha512-BiaWatpBcERQFDlOjRDpIVXuFK5PJez5SA4JMg6VYZdBYU+qKfV/vqjcIs+IYmtitf1xYQZTwXvU/8y4lfZUGw=="],
-
-    "@tailwindcss/oxide-darwin-x64": ["@tailwindcss/oxide-darwin-x64@4.3.3", "", { "os": "darwin", "cpu": "x64" }, "sha512-fAeUqfV5ndhxRwai8cXGzdLvul9utWOmeTkv69unv4ZXixjn61Z+p9lCWdwOwA3TYboG3BwdVuN/RDjhBRl0mw=="],
-
-    "@tailwindcss/oxide-freebsd-x64": ["@tailwindcss/oxide-freebsd-x64@4.3.3", "", { "os": "freebsd", "cpu": "x64" }, "sha512-iyf5bV6+wnAlflVeEy7R25dupxTNECZN5QMI0qNT6eT+EgaGdZcKhGkr5SdoaWiLJ3spLqIY9VCeSGrwmtg4kw=="],
-
-    "@tailwindcss/oxide-linux-arm-gnueabihf": ["@tailwindcss/oxide-linux-arm-gnueabihf@4.3.3", "", { "os": "linux", "cpu": "arm" }, "sha512-aAYUprJAJQWWbRrPvtjdroZ56Md+JM8pMiopS6xGEwDfLhqj+2ver2p4nU4Mb3CRqcMmNBjo8KkUgcxhkzVQGQ=="],
-
-    "@tailwindcss/oxide-linux-arm64-gnu": ["@tailwindcss/oxide-linux-arm64-gnu@4.3.3", "", { "os": "linux", "cpu": "arm64" }, "sha512-nDxldcEENOxZRzC2uu9jrutZdAAQtb+8WWDCSnWL1zvBk1+FN+x6MtDViPB5AJMfttVCUhehGWus3XBPgatM/w=="],
-
-    "@tailwindcss/oxide-linux-arm64-musl": ["@tailwindcss/oxide-linux-arm64-musl@4.3.3", "", { "os": "linux", "cpu": "arm64" }, "sha512-Md44bD6veX/PC5iyF8cDVnw4HBIANZepRZZ7a8DQOvkfo5WUBwcp6iAuCUz23u+4SUkhJlD3eL7hNdW8ezd/kA=="],
-
-    "@tailwindcss/oxide-linux-x64-gnu": ["@tailwindcss/oxide-linux-x64-gnu@4.3.3", "", { "os": "linux", "cpu": "x64" }, "sha512-tx7us1muwOKAKWao2v/GaafFeQboE6aj88vC6ziN2NCGcRm8gWUhwjzg+YdVB1e4boAtdtma4L43onunI6NS4w=="],
-
-    "@tailwindcss/oxide-linux-x64-musl": ["@tailwindcss/oxide-linux-x64-musl@4.3.3", "", { "os": "linux", "cpu": "x64" }, "sha512-SJxX60smvHgasZoBy11dX6YRjXJFovwWBoedhbQPOBzgFWBHGB+TVPWB9BxzR7TTxU8FQZAI2AyiNCMzFm8Img=="],
-
-    "@tailwindcss/oxide-wasm32-wasi": ["@tailwindcss/oxide-wasm32-wasi@4.3.3", "", { "dependencies": { "@emnapi/core": "^1.11.1", "@emnapi/runtime": "^1.11.1", "@emnapi/wasi-threads": "^1.2.2", "@napi-rs/wasm-runtime": "^1.1.4", "@tybys/wasm-util": "^0.10.2", "tslib": "^2.8.1" }, "cpu": "none" }, "sha512-jx1+rPhY/5Ympkktd656HBWEBLxP7dH06losBLjjf5vgCODXvi9KhtftWcMIwTFIDqBr7cRnQkdLnAG+IOlGvQ=="],
-
-    "@tailwindcss/oxide-win32-arm64-msvc": ["@tailwindcss/oxide-win32-arm64-msvc@4.3.3", "", { "os": "win32", "cpu": "arm64" }, "sha512-3rc292Ca2ceK6Ulcc/bAVnTs/3nDtoPhyEKlgPv+yQJQi/JS/AMJlqzxvlDacL1nekbrcf6bTqp/jV4qgnPxNQ=="],
-
-    "@tailwindcss/oxide-win32-x64-msvc": ["@tailwindcss/oxide-win32-x64-msvc@4.3.3", "", { "os": "win32", "cpu": "x64" }, "sha512-yJ0pwIVc/nYeGoV02WtsN8KYyLQv7kyI2wDnkezyJlGGjkd4QLwDGAwl47YpPJeuI0M0ObaXGSPjvWDPeTPggw=="],
-
-    "@tailwindcss/vite": ["@tailwindcss/vite@4.3.3", "", { "dependencies": { "@tailwindcss/node": "4.3.3", "@tailwindcss/oxide": "4.3.3", "tailwindcss": "4.3.3" }, "peerDependencies": { "vite": "^5.2.0 || ^6 || ^7 || ^8" } }, "sha512-yYU8cogLeSh/ms2jh8Fj7jaba/EWa7Ja6GoUqYZaraEuCI5YS6ms6ObZgjjedm+jm6XZjdNRWBpPP6Z86oOxcw=="],
-
     "@types/babel__core": ["@types/babel__core@7.20.5", "", { "dependencies": { "@babel/parser": "^7.20.7", "@babel/types": "^7.20.7", "@types/babel__generator": "*", "@types/babel__template": "*", "@types/babel__traverse": "*" } }, "sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA=="],
 
     "@types/babel__generator": ["@types/babel__generator@7.27.0", "", { "dependencies": { "@babel/types": "^7.0.0" } }, "sha512-ufFd2Xi92OAVPYsy+P4n7/U7e68fex0+Ee8gSG9KX7eo084CWiQ4sdxktvdl0bOPupXtVJPY19zk6EwWqUQ8lg=="],
@@ -2040,11 +2008,7 @@
 
     "debug": ["debug@4.4.3", "", { "dependencies": { "ms": "^2.1.3" }, "peerDependencies": { "supports-color": "*" }, "optionalPeers": ["supports-color"] }, "sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA=="],
 
-    "detect-libc": ["detect-libc@2.1.2", "", {}, "sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ=="],
-
     "electron-to-chromium": ["electron-to-chromium@1.5.456", "", {}, "sha512-8hboqI6xesozteFb8aa7OGknvxUtTeRJLz0FoePysUEh/oWbddykIGdgpEJRbPRg/nIMfBf2DFos+H2MtvJl2A=="],
-
-    "enhanced-resolve": ["enhanced-resolve@5.26.0", "", { "dependencies": { "graceful-fs": "^4.2.4", "tapable": "^2.3.3" } }, "sha512-9vhedylFonb2YGogzUKX6+Ja72gOJbN1QHAqdrvqLwhdl/QWbKopzoUC9EbQNVsAns/bx/4uyqalrQAoy1IByw=="],
 
     "esbuild": ["esbuild@0.28.2", "", { "optionalDependencies": { "@esbuild/aix-ppc64": "0.28.2", "@esbuild/android-arm": "0.28.2", "@esbuild/android-arm64": "0.28.2", "@esbuild/android-x64": "0.28.2", "@esbuild/darwin-arm64": "0.28.2", "@esbuild/darwin-x64": "0.28.2", "@esbuild/freebsd-arm64": "0.28.2", "@esbuild/freebsd-x64": "0.28.2", "@esbuild/linux-arm": "0.28.2", "@esbuild/linux-arm64": "0.28.2", "@esbuild/linux-ia32": "0.28.2", "@esbuild/linux-loong64": "0.28.2", "@esbuild/linux-mips64el": "0.28.2", "@esbuild/linux-ppc64": "0.28.2", "@esbuild/linux-riscv64": "0.28.2", "@esbuild/linux-s390x": "0.28.2", "@esbuild/linux-x64": "0.28.2", "@esbuild/netbsd-arm64": "0.28.2", "@esbuild/netbsd-x64": "0.28.2", "@esbuild/openbsd-arm64": "0.28.2", "@esbuild/openbsd-x64": "0.28.2", "@esbuild/openharmony-arm64": "0.28.2", "@esbuild/sunos-x64": "0.28.2", "@esbuild/win32-arm64": "0.28.2", "@esbuild/win32-ia32": "0.28.2", "@esbuild/win32-x64": "0.28.2" }, "bin": { "esbuild": "bin/esbuild" } }, "sha512-HKVLS8dvII+xoKW9kmqxbRKrnWEXfJJr/FZhhJmiqIB0e053QNYFqOBouTMO/k5sID4MvCiUCvv8b9M4h32wIA=="],
 
@@ -2056,45 +2020,15 @@
 
     "gensync": ["gensync@1.0.0-beta.2", "", {}, "sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg=="],
 
-    "graceful-fs": ["graceful-fs@4.2.11", "", {}, "sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ=="],
-
-    "jiti": ["jiti@2.7.0", "", { "bin": { "jiti": "lib/jiti-cli.mjs" } }, "sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ=="],
-
     "js-tokens": ["js-tokens@4.0.0", "", {}, "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="],
 
     "jsesc": ["jsesc@3.1.0", "", { "bin": { "jsesc": "bin/jsesc" } }, "sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA=="],
 
     "json5": ["json5@2.2.3", "", { "bin": { "json5": "lib/cli.js" } }, "sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg=="],
 
-    "lightningcss": ["lightningcss@1.32.0", "", { "dependencies": { "detect-libc": "^2.0.3" }, "optionalDependencies": { "lightningcss-android-arm64": "1.32.0", "lightningcss-darwin-arm64": "1.32.0", "lightningcss-darwin-x64": "1.32.0", "lightningcss-freebsd-x64": "1.32.0", "lightningcss-linux-arm-gnueabihf": "1.32.0", "lightningcss-linux-arm64-gnu": "1.32.0", "lightningcss-linux-arm64-musl": "1.32.0", "lightningcss-linux-x64-gnu": "1.32.0", "lightningcss-linux-x64-musl": "1.32.0", "lightningcss-win32-arm64-msvc": "1.32.0", "lightningcss-win32-x64-msvc": "1.32.0" } }, "sha512-NXYBzinNrblfraPGyrbPoD19C1h9lfI/1mzgWYvXUTe414Gz/X1FD2XBZSZM7rRTrMA8JL3OtAaGifrIKhQ5yQ=="],
-
-    "lightningcss-android-arm64": ["lightningcss-android-arm64@1.32.0", "", { "os": "android", "cpu": "arm64" }, "sha512-YK7/ClTt4kAK0vo6w3X+Pnm0D2cf2vPHbhOXdoNti1Ga0al1P4TBZhwjATvjNwLEBCnKvjJc2jQgHXH0NEwlAg=="],
-
-    "lightningcss-darwin-arm64": ["lightningcss-darwin-arm64@1.32.0", "", { "os": "darwin", "cpu": "arm64" }, "sha512-RzeG9Ju5bag2Bv1/lwlVJvBE3q6TtXskdZLLCyfg5pt+HLz9BqlICO7LZM7VHNTTn/5PRhHFBSjk5lc4cmscPQ=="],
-
-    "lightningcss-darwin-x64": ["lightningcss-darwin-x64@1.32.0", "", { "os": "darwin", "cpu": "x64" }, "sha512-U+QsBp2m/s2wqpUYT/6wnlagdZbtZdndSmut/NJqlCcMLTWp5muCrID+K5UJ6jqD2BFshejCYXniPDbNh73V8w=="],
-
-    "lightningcss-freebsd-x64": ["lightningcss-freebsd-x64@1.32.0", "", { "os": "freebsd", "cpu": "x64" }, "sha512-JCTigedEksZk3tHTTthnMdVfGf61Fky8Ji2E4YjUTEQX14xiy/lTzXnu1vwiZe3bYe0q+SpsSH/CTeDXK6WHig=="],
-
-    "lightningcss-linux-arm-gnueabihf": ["lightningcss-linux-arm-gnueabihf@1.32.0", "", { "os": "linux", "cpu": "arm" }, "sha512-x6rnnpRa2GL0zQOkt6rts3YDPzduLpWvwAF6EMhXFVZXD4tPrBkEFqzGowzCsIWsPjqSK+tyNEODUBXeeVHSkw=="],
-
-    "lightningcss-linux-arm64-gnu": ["lightningcss-linux-arm64-gnu@1.32.0", "", { "os": "linux", "cpu": "arm64" }, "sha512-0nnMyoyOLRJXfbMOilaSRcLH3Jw5z9HDNGfT/gwCPgaDjnx0i8w7vBzFLFR1f6CMLKF8gVbebmkUN3fa/kQJpQ=="],
-
-    "lightningcss-linux-arm64-musl": ["lightningcss-linux-arm64-musl@1.32.0", "", { "os": "linux", "cpu": "arm64" }, "sha512-UpQkoenr4UJEzgVIYpI80lDFvRmPVg6oqboNHfoH4CQIfNA+HOrZ7Mo7KZP02dC6LjghPQJeBsvXhJod/wnIBg=="],
-
-    "lightningcss-linux-x64-gnu": ["lightningcss-linux-x64-gnu@1.32.0", "", { "os": "linux", "cpu": "x64" }, "sha512-V7Qr52IhZmdKPVr+Vtw8o+WLsQJYCTd8loIfpDaMRWGUZfBOYEJeyJIkqGIDMZPwPx24pUMfwSxxI8phr/MbOA=="],
-
-    "lightningcss-linux-x64-musl": ["lightningcss-linux-x64-musl@1.32.0", "", { "os": "linux", "cpu": "x64" }, "sha512-bYcLp+Vb0awsiXg/80uCRezCYHNg1/l3mt0gzHnWV9XP1W5sKa5/TCdGWaR/zBM2PeF/HbsQv/j2URNOiVuxWg=="],
-
-    "lightningcss-win32-arm64-msvc": ["lightningcss-win32-arm64-msvc@1.32.0", "", { "os": "win32", "cpu": "arm64" }, "sha512-8SbC8BR40pS6baCM8sbtYDSwEVQd4JlFTOlaD3gWGHfThTcABnNDBda6eTZeqbofalIJhFx0qKzgHJmcPTnGdw=="],
-
-    "lightningcss-win32-x64-msvc": ["lightningcss-win32-x64-msvc@1.32.0", "", { "os": "win32", "cpu": "x64" }, "sha512-Amq9B/SoZYdDi1kFrojnoqPLxYhQ4Wo5XiL8EVJrVsB8ARoC1PWW6VGtT0WKCemjy8aC+louJnjS7U18x3b06Q=="],
-
     "lru-cache": ["lru-cache@5.1.1", "", { "dependencies": { "yallist": "^3.0.2" } }, "sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w=="],
 
     "lucide-react": ["lucide-react@0.468.0", "", { "peerDependencies": { "react": "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc" } }, "sha512-6koYRhnM2N0GGZIdXzSeiNwguv1gt/FAjZOiPl76roBi3xKEXa4WmfpxgQwTTL4KipXjefrnf3oV4IsYhi4JFA=="],
-
-    "magic-string": ["magic-string@0.30.21", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.5" } }, "sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ=="],
 
     "ms": ["ms@2.1.3", "", {}, "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=="],
 
@@ -2128,10 +2062,6 @@
 
     "source-map-js": ["source-map-js@1.2.2", "", {}, "sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw=="],
 
-    "tailwindcss": ["tailwindcss@4.3.3", "", {}, "sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ=="],
-
-    "tapable": ["tapable@2.3.3", "", {}, "sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A=="],
-
     "tinyglobby": ["tinyglobby@0.2.17", "", { "dependencies": { "fdir": "^6.5.0", "picomatch": "^4.0.4" } }, "sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g=="],
 
     "typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
@@ -2143,17 +2073,5 @@
     "vite": ["vite@7.3.7", "", { "dependencies": { "esbuild": "^0.27.0 || ^0.28.0", "fdir": "^6.5.0", "picomatch": "^4.0.3", "postcss": "^8.5.6", "rollup": "^4.43.0", "tinyglobby": "^0.2.15" }, "optionalDependencies": { "fsevents": "~2.3.3" }, "peerDependencies": { "@types/node": "^20.19.0 || >=22.12.0", "jiti": ">=1.21.0", "less": "^4.0.0", "lightningcss": "^1.21.0", "sass": "^1.70.0", "sass-embedded": "^1.70.0", "stylus": ">=0.54.8", "sugarss": "^5.0.0", "terser": "^5.16.0", "tsx": "^4.8.1", "yaml": "^2.4.2" }, "optionalPeers": ["@types/node", "jiti", "less", "lightningcss", "sass", "sass-embedded", "stylus", "sugarss", "terser", "tsx", "yaml"], "bin": { "vite": "bin/vite.js" } }, "sha512-AHEzTORMbi7/7aXp7w7KZ5+DCUdSeLsJz0grY8xHpc9DHdYb0vQu6DqJfm2tOw3gDExNgPgnJTXxM6syYFHaCA=="],
 
     "yallist": ["yallist@3.1.1", "", {}, "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g=="],
-
-    "@tailwindcss/oxide-wasm32-wasi/@emnapi/core": ["@emnapi/core@1.11.3", "", { "dependencies": { "@emnapi/wasi-threads": "1.2.3", "tslib": "^2.4.0" }, "bundled": true }, "sha512-zLpS5asjEb7lq8jYLq37N6XKaE41DIexlY1rF/z4/tIl3wo13Sqm28fRyfIsKZD+NZ8mM5RoKkpW/rBcuoSZSg=="],
-
-    "@tailwindcss/oxide-wasm32-wasi/@emnapi/runtime": ["@emnapi/runtime@1.11.3", "", { "dependencies": { "tslib": "^2.4.0" }, "bundled": true }, "sha512-Xz4Tpyki7XyrpbUK1jR1AhdAdaXyhhY4lZ3neLodmhpuWfy2PAQN5B46sAiU4liOXGLkHypn/qU+jvfWSCYYLA=="],
-
-    "@tailwindcss/oxide-wasm32-wasi/@emnapi/wasi-threads": ["@emnapi/wasi-threads@1.2.3", "", { "dependencies": { "tslib": "^2.4.0" }, "bundled": true }, "sha512-ELEBe8PsLvvJ6QMr0zLt8ffvOHW/dc1m3CEzNMg7aJUv3bMaoDtw2TXyDAwkYBuroxxuHEwhRTLJSe5sya547g=="],
-
-    "@tailwindcss/oxide-wasm32-wasi/@napi-rs/wasm-runtime": ["@napi-rs/wasm-runtime@1.2.5", "", { "dependencies": { "@tybys/wasm-util": "^0.10.3" }, "peerDependencies": { "@emnapi/core": "^1.7.1 || ^2.0.0-alpha.4", "@emnapi/runtime": "^1.7.1 || ^2.0.0-alpha.4" }, "bundled": true }, "sha512-HshSvXzmBxNzqejd3k/KemgQ3hdREUYFRRrgxOZ+gPljDIsO2SDZrVZMd4Z/HsxudQbE62OVyVFE8z9BCurfjA=="],
-
-    "@tailwindcss/oxide-wasm32-wasi/@tybys/wasm-util": ["@tybys/wasm-util@0.10.4", "", { "dependencies": { "tslib": "^2.4.0" }, "bundled": true }, "sha512-W3c4gRigFS0T/Ma4qIYF3GDAc5AQdHb1yL5znJT1Zv1YaD9Kitx656wBjvr19qbiosmZT8lWDM5BEMynUqX65A=="],
-
-    "@tailwindcss/oxide-wasm32-wasi/tslib": ["tslib@2.8.1", "", { "bundled": true }, "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w=="],
   }
 }

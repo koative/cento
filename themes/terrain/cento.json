@@ -1,0 +1,28 @@
+{
+  "number": 11,
+  "name": "Terrain",
+  "sector": "Guided adventure travel",
+  "category": "Travel & Stay",
+  "tagline": "Small-group treks, led by people who live where they walk.",
+  "description": "A guided trekking company site: filterable trips with day-by-day itineraries on an interactive topo map and elevation profile, a route finder that ranks every trip against your answers, guide profiles, a remembered packing list and a validated booking flow.",
+  "tags": [
+    "Route finder",
+    "Day-by-day route explorer",
+    "Packing checklist",
+    "Booking flow"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/trips", "title": "Trips" },
+    { "path": "/trips/alta-via-huts", "title": "Trip" },
+    { "path": "/route-finder", "title": "Route finder" },
+    { "path": "/guides", "title": "Guides" },
+    { "path": "/guides/marta-dellantonio", "title": "Guide" },
+    { "path": "/gear", "title": "Gear list" },
+    { "path": "/book", "title": "Book a trip" },
+    { "path": "/about", "title": "About & safety" },
+    { "path": "/faq", "title": "FAQ & policies" }
+  ],
+  "colors": { "paper": "#eeeae0", "ink": "#1e261e", "accent": "#a44126" },
+  "fonts": ["Anybody", "Overpass"]
+}

@@ -1,46 +1,42 @@
 # Ledger
 
-A plum and pale-lilac personal-finance workspace with a dimensional debit card, considered typography, and an expressive account overview.
+Give every dollar a job before the month does. A personal finance app website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: product hero with a live budget sheet and card, three-step method, paycheck allocator, accounts ledger, card freeze, household quote, guides, security, plans, close
+- `/features` — Envelopes, accounts, transactions, goals and the card, with a money-flow band
+- `/pricing` — Three plans with a monthly/yearly toggle, plan-by-plan table, billing FAQ
+- `/households` — Four household setups, each with its own envelope ledger
+- `/guides` — Money guides with topic filter and search
+- `/guides/:slug` — Guide article with worked ledger tables and related guides (7 guides)
+- `/security` — Practices line by line, what Ledger never does, incident FAQ
+- `/changelog` — Release notes
+- `/about` — Story, facts, principles, team
+- `/signup` — Account creation form with plan choice, validation and success state
+- `/signin` — Sign-in form that opens the demo
+- `/app` — Demo overview: month equation, spending pace chart, envelopes to watch, latest activity, card freeze, goal
+- `/app/budgets` — Editable envelope budget with to-be-assigned banner, overspending cover and move-money form
+- `/app/accounts` and `/app/accounts/:id` — Accounts by type with net worth; account detail with six-month chart and transactions
+- `/app/transactions` — Searchable, filterable, sortable transactions with inline recategorising and CSV export
+- `/app/settings` — Profile and alert preferences, connected institutions
+
+## Run
 
 ```sh
-bun install
-bun run dev
-bun run build
-bun run preview
+bun install && bun run dev
 ```
 
-Node and npm may also be used with the equivalent commands. The Vite configuration uses relative asset paths, so the production `dist/` folder can be hosted at any static subdirectory.
-
-## Interactions
-
-Hide/show balances, freeze/unfreeze the sample card, preview a transfer, adjust the spending budget, add sample savings, and navigate workspace sections.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-- `src/App.tsx`: content, sample data, interactions, sections.
-- `src/styles.css`: complete independent design system and responsive rules.
-- `src/assets/`: local photography where applicable.
+`src/content.ts` holds all copy and demo data, `src/styles.css` the design tokens at `:root`, `src/assets` the sources list.
 
-This is a React + Vite + TypeScript template. It is independent of the gallery and other templates. No backend or environment variables are required.
+## Demo behaviour
 
-## Demo boundaries
+The paycheck allocator, card freeze, guide filters and every form run entirely in the browser. In the `/app` demo you can reassign envelopes, cover overspending, recategorise transactions, hide balances, freeze the card, save settings and export a CSV; changes persist while you move between screens and reset on reload. Nothing is sent, charged or connected to a bank, and Ledger is a fictional brand.
 
-All brands, balances, metrics, products, classes, schedules, prices, and account details are fictional demonstration content. State lives in memory and resets on reload. No real payments, financial transfers, orders, bookings, account connections, analytics tracking, or email delivery are implemented. Form values are not sent or stored.
+## Credits
 
-## Accessibility and motion
-
-Semantic landmarks, labeled controls, keyboard focus, responsive layouts, native form validation, and reduced-motion styles are included. The main animation is decorative or user-initiated; the content remains available without it.
-
-## Assets
-
-No stock imagery. Debit card and decorative geometry are authored in CSS. Fonts: Manrope and DM Sans sourced from Google Fonts and bundled locally. Icons: Lucide.
-
-Unsplash assets are subject to the [Unsplash license](https://unsplash.com/license); font families are open source under their respective licenses. Replace demonstration imagery and content as appropriate for your project. Lucide icons use the ISC license.
-
-Part of [Elseform](https://koative.github.io/elseform/).
-
-## Self-hosted fonts
-
-Fonts and their OFL licenses are bundled under `src/assets/fonts/`. No external font service is needed at runtime.
+Font: Plus Jakarta Sans (SIL Open Font License). Graphics are authored SVG/CSS — see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

@@ -1,238 +1,65 @@
 ---
 name: Vault
-description: A warm insurance concept with an adjustable plan explorer and transparent local summaries.
 colors:
-  paper: '#f7f1e7'
-  ink: '#49382e'
-  muted: '#857364'
-  accent: '#a35436'
-  line: '#dbccbb'
-  intro-title-em-tone: '#ae6d4c'
-  plan-aria-pressed-true-tone: '#e7ebdb'
-  plan-aria-pressed-true-plan-mark-tone: '#61784c'
-  arch-surface: '#c9d1ae'
-  arch-svg-ink: '#5d714a'
-  circle-surface: '#e6b98e'
-  circle-svg-ink: '#9e6240'
-  quote-section-surface: '#e8e5d4'
-  quote-inputs-select-surface: '#f4f1e6'
-  billing-span-ink: '#63734a'
-  plan-mark-surface: '#eee5d8'
-  plan-aria-pressed-true-plan-mark-ink: '#fff'
-  care-surface: '#9f6245'
-  care-ink: '#fff4e4'
+  paper: "#f4efe5"
+  band: "#ebe3d4"
+  sheet: "#fffdf8"
+  ink: "#1d2a33"
+  ink-2: "#4a5661"
+  rule: "#d5cab6"
+  accent: "#a4472a"
+  accent-deep: "#85361e"
+  accent-wash: "#f3dccd"
+  covered: "#2f5d4b"
+  accent-on-ink: "#eba383"
 typography:
-  display:
-    fontFamily: '"Instrument Serif", serif'
-    lineHeight: '1.04'
-    letterSpacing: -0.035em
-    fontSize: clamp(3rem, 7vw, 6rem)
-    fontWeight: '400'
-  headline:
-    fontFamily: '"Instrument Serif", serif'
-    lineHeight: '1.02'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 4rem)
-    fontWeight: '400'
-  headline-context-1:
-    fontFamily: '"Instrument Serif", serif'
-    lineHeight: '1.02'
-    letterSpacing: -0.035em
-    fontSize: 50px
-    fontWeight: '400'
-  headline-context-2:
-    fontFamily: '"Instrument Serif", serif'
-    lineHeight: '1.02'
-    letterSpacing: -0.035em
-    fontSize: 45px
-    fontWeight: '400'
-  title:
-    fontFamily: '"DM Sans", sans-serif'
-    lineHeight: '1.2'
-  title-context-1:
-    fontFamily: '"Instrument Serif", serif'
-    lineHeight: normal
-    fontSize: 28px
-    fontWeight: '400'
-  body:
-    fontFamily: '"DM Sans", sans-serif'
-    lineHeight: '1.55'
+  display: "Merriweather (variable opsz/wght), 300–900"
+  body: "Merriweather Sans, 400–700"
+  sizes:
+    h1: "clamp(2.3rem, 1.5rem + 3.4vw, 4.4rem), weight 350"
+    h2: "clamp(1.55rem, 1.15rem + 1.5vw, 2.4rem)"
+    lede: "clamp(1.05rem, 0.98rem + 0.35vw, 1.25rem)"
+    body: "1.0625rem / 1.65"
 rounded:
-  observed-1: 3px
-  observed-2: 50%
+  control: 6px
+  card: 12px
+  document: 4px
 spacing:
-  observed-1: 12px
-  observed-2: 10px
-  observed-3: 8px
-  observed-4: 20px
-  observed-5: 12%
-  observed-6: 65px 6%
-components:
-  primary-button:
-    textColor: '#f7f1e7'
-    padding: 13px 20px
-    backgroundColor: '#49382e'
-    rounded: 3px
-  text-field:
-    textColor: inherit
-    padding: 13px
-    backgroundColor: '#f7f1e7'
-    rounded: 3px
-  quote-section:
-    backgroundColor: '#e8e5d4'
-    padding: 55px 6%
-    textColor: '#49382e'
-  nav-nav:
-    textColor: '#49382e'
-  field-select:
-    textColor: inherit
-    padding: 13px
-    backgroundColor: '{colors.paper}'
-    rounded: 3px
-  plan:
-    textColor: inherit
-    backgroundColor: transparent
-    rounded: 12px
-    padding: 28px
+  section: "clamp(4rem, 2.5rem + 6vw, 8rem)"
+  gutter: "clamp(1.25rem, 4vw, 3rem)"
 ---
-
-# Design System: Vault
 
 ## Overview
 
-**Creative North Star: "A reassuring household booklet"**
-
-A reassuring household booklet: warm paper, earthy modular forms, expressive Instrument Serif and visible insurance comparisons.
-
-This records the implemented insurance template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Insurance composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-Impeccable collection seed `0c646d2f`, assigned candidate 7. Grounded collection candidates: trade publication; materials archive; field guide; factory drawing; operational atlas; neighborhood workshop; **sector-specific working artifact**. The seventh is selected: each theme gets the artifact its audience uses to understand and decide, rather than a shared marketing skeleton. The user's direct-code creative delegation controls the workflow.
+Vault is drawn from the insurer's own printed matter: the declarations page. Warm paper, blue-black ink, hairline rules, dotted leaders, the US form letters A–F in little boxed tags and a double rule above the premium. People read insurance at a kitchen table or on a phone after something has gone wrong, so the world is light, calm and set for reading rather than selling.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Muted**: secondary copy.
-- **Accent**: interactive emphasis.
-- **Line**: dividers.
-- **Intro Title Em Tone**: context-specific authored color.
-- **Plan Aria Pressed True Tone**: context-specific authored color.
-- **Plan Aria Pressed True Plan Mark Tone**: context-specific authored color.
-- **Arch Surface**: context-specific authored color.
-- **Arch Svg Ink**: context-specific authored color.
-- **Circle Surface**: context-specific authored color.
-- **Circle Svg Ink**: context-specific authored color.
-- **Quote Section Surface**: context-specific authored color.
-- **Quote Inputs Select Surface**: context-specific authored color.
-- **Billing Span Ink**: context-specific authored color.
-- **Plan Mark Surface**: context-specific authored color.
-- **Plan Aria Pressed True Plan Mark Ink**: context-specific authored color.
-- **Care Surface**: context-specific authored color.
-- **Care Ink**: context-specific authored color.
+Paper `#f4efe5` and a darker band `#ebe3d4` alternate sections; documents sit on `#fffdf8`. Ink `#1d2a33` carries text, primary buttons, the footer and the fine-print band. Terracotta `#a4472a` is the seal: active states, the stamp, bars and focus rings. Green `#2f5d4b` marks what is covered. On ink, secondary text is `#c9c3b6` and the accent lightens to `#eba383`.
 
 ## Typography
 
-- **DM Sans** is the CSS family alias for DM Sans 9pt. Local faces: normal / 400, normal / 500, normal / 600, normal / 700.
-- **Instrument Serif** is the CSS family alias for Instrument Serif. Local faces: italic / 400, normal / 400.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
-- little square span uses the font shorthand (`400 33px/1.1 "Instrument Serif", serif`).
-- plan h3 uses the font shorthand (`400 28px "Instrument Serif", serif`).
-- price uses the font shorthand (`400 53px "Instrument Serif", serif`).
-- price small uses the font shorthand (`11px "DM Sans", sans-serif`).
+Merriweather sets headings light (350) at large sizes with its optical sizing, and bold for document titles, names and figures. Merriweather Sans carries body, UI and tables. Figures are tabular lining numerals everywhere money appears.
 
 ## Layout
 
-- **Vault intro**: grid-template-columns (1.1fr 1fr); padding (60px 6% 65px); gap (8%).
-- **Quote section**: grid-template-columns (1fr 1.2fr); gap (12%); padding (55px 6%).
-- **Quote inputs**: grid-template-columns (1fr 1.2fr); gap (25px 35px).
-- **Plan grid**: grid-template-columns (repeat(3, 1fr)); gap (20px).
-- **Care**: padding (65px 6%); grid-template-columns (1.2fr 1fr); gap (10%).
-- **Questions**: grid-template-columns (1fr 1.2fr); gap (12%).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 750px)`.
-- @media (max-width: 650px): section title changes to flex-direction (column).
-- @media (max-width: 650px): footer changes to flex-direction (column).
-- @media (max-width: 750px): vault intro changes to grid-template-columns (1fr); gap (20px).
-- @media (max-width: 750px): quote section changes to grid-template-columns (1fr); gap (35px).
-- @media (max-width: 750px): quote inputs changes to grid-template-columns (1fr).
-- @media (max-width: 750px): plan grid changes to grid-template-columns (1fr).
-- @media (max-width: 750px): plan summary changes to flex-direction (column).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-- btn: corners (`3px`).
-- field input: corners (`3px`).
-- tabs button: corners (`3px`).
-- arch: corners (`120px 120px 0 0`).
-- circle: corners (`50%`).
-- little square: corners (`8px`).
-- plan: corners (`12px`).
+A 1260px column with asymmetric two-column splits (0.8fr / 1.2fr) for intro-plus-instrument sections, ruled lists instead of cards for indexes, and full-width bands for the dense moments (fine print, triage, stories). Breakpoints at 1100, 900 and 640px; every split collapses to one column at 900px.
 
 ## Components
 
-Change home type, belongings value and billing period, compare plans, save a local summary and expand answers.
+- **Policy schedule** — the signature document: header with the mark, meta grid, A–F table with dotted rules, double-ruled premium. Figures re-key on change and "settle" from a terracotta wash. In the quote it is live and gains a rubber "Quoted" stamp on success.
+- **Contents counter** — rooms as segmented buttons with subtotals, item steppers, a proportional room bar, and a total that feeds the quote.
+- **Quote flow** — four fieldsets with a ruled progress bar, radio cards, inline errors that name the fix, loading and confirmation states.
+- **Claims triage** — incident chips switch a three-column action sheet (next hour, two days, photograph/typical) with a cover verdict.
+- Ruled index lists, compare and wording tables, native `<details>` FAQ, ledger `dl`s for paid amounts.
 
-### Primary button
+## Motion
 
-Authored btn styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Text field
-
-Authored field input styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Quote Section
-
-Authored quote section styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Nav Nav
-
-Authored nav nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Field Select
-
-Authored source styling with representative content; interactive behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Plan
-
-Authored source styling with representative content; interactive behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- :focus visible: outline (3px solid var(--accent)); outline-offset (4px).
-- button:disabled: opacity (0.5).
-- button:hover: filter (brightness(0.94)).
-- tabs button[aria pressed="true"]: background (var(--ink)); color (var(--paper)); border-color (var(--ink)).
-- plan[aria pressed="true"]: background (#e7ebdb); border-color (#6b7c51).
-- arch animation: `sway 9s ease-in-out infinite`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+Pages rise 10px on entry. The hero schedule slides in slightly rotated. Clauses and triage sheets unroll with a clip-path; changing figures settle from a wash; the quote stamp lands with a scale-down. All of it collapses under `prefers-reduced-motion`.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
-
-## Collection 100 refinement
-
-A local interior photograph and live plan-summary sheet replace the generic geometric hero. The sheet reflects selected home, belongings value, plan and illustrative price. Muted text contrast is stronger.
+- Do keep every policy line paired with plain English.
+- Do keep money in tabular figures and the A–F letters where they mean the US form sections.
+- Don't add cards around list rows or eyebrow labels over headings.
+- Don't use the accent for body text on paper except links and errors (`#85361e`).

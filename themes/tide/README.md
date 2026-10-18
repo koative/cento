@@ -1,50 +1,36 @@
-# Tide — Ocean conservation community
+# Tide
 
-Turquoise, sea green, and ivory; a gently moving ocean photograph, editorial narrative, location-led volunteering, and a sample season report.
+We look after the coast between the tides. An ocean conservation nonprofit website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: next low-tide clean, programme ledger, interactive tide planner, upcoming events, debris composition and five-year chart, volunteer voices, where the money goes, monthly-gift close
+- `/programmes` — Programmes: filter by type of work (clean, restore, survey, teach)
+- `/programmes/:slug` — Programme: lede, facts table, the work, season steps, gallery, sites with tide range, upcoming dates, lead, related programmes
+- `/volunteer` — Volunteer: what to expect, events filtered by type, place, month and availability
+- `/volunteer/:id` — Event: tide planner for the day, practical details, booking form with validation, waitlist and confirmation
+- `/impact` — Impact reports: kilograms per year chart, five-year table, report list, counting method
+- `/impact/:year` — Impact report: measures with year-on-year change, director's letter, highlights, debris composition, sortable top-ten items, money
+- `/donate` — Donate: monthly / one-off, amounts with live "what it does", Gift Aid, details, Direct Debit or card, confirmation; giving FAQ
+- `/about` — About: story, values, timeline, staff, trustees, accounts, contact
+- any other path — Not found
+
+## Run
 
 ```sh
-bun install
-bun run dev
-bun run build
-bun run preview
+bun install && bun run dev
 ```
 
-Node and npm equivalents also work. The production `dist/` directory uses relative asset paths and can be hosted at any static subdirectory.
-
-## Interactions
-
-Select a cleanup location, inspect event details, submit a locally validated signup, and edit the signup. Selecting another event resets the confirmation.
+Build: `bun run build` — static output in `dist/`, relative base works in any subfolder.
 
 ## Customize
 
-- `src/App.tsx`: content, demo data, interactions, and sections.
-- `src/styles.css`: independent visual system, responsive layout, and reduced motion.
-- `src/assets/`: local photography and self-hosted fonts.
+`src/content.ts` (all copy and data: programmes, sites with tide parameters, events, reports, giving tiers, people), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
-React + Vite + TypeScript. This folder is standalone and requires no backend, environment variables, or shared runtime from another template.
+## Demo behaviour
 
-## Demo boundaries
+The tide planner draws each event's tide curve from a simplified harmonic model and derives the work window from low water; drag the chart, use the slider or run the day to watch the beach flood and drain. Event bookings validate inline and are kept in this browser's `localStorage` so lists show "You're going"; the newsletter and the donate flow validate and confirm locally. Nothing is sent, booked or charged, and Tide is a fictional charity: every person, place, figure and report is sample content.
 
-All businesses, products, prices, customers, shipments, events, metrics, dates, and account details are fictional demonstration content. State lives in memory and resets on reload. No orders, payments, reservations, tracking requests, subscriptions, or messages are sent. Form values are not transmitted or persisted.
+## Credits
 
-## Accessibility and motion
-
-Semantic landmarks, visible keyboard focus, native controls and form validation, descriptive labels, responsive layouts, and reduced-motion overrides are included. Animations are decorative; all content remains accessible without motion.
-
-## Asset provenance
-
-src/assets/ocean.jpg: https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1800&q=85&fit=crop
-
-Photo sourced from Unsplash. Events, available spaces, and impact data are explicitly illustrative. No cleanup events are actually organized or reserved.
-
-Unsplash photos are subject to the [Unsplash license](https://unsplash.com/license). Replace illustrative imagery as appropriate.
-
-Fonts are bundled in `src/assets/fonts/` with their OFL licenses: DM Sans and Manrope, sourced from Google Fonts. No external fonts are requested at runtime. Icons are from [Lucide](https://lucide.dev), ISC license.
-
-Part of [Elseform](https://koative.github.io/elseform/).
-
-## Self-hosted fonts
-
-Font files and their OFL license notices are included in `src/assets/fonts/`. No remote font request is required at runtime.
+Fonts: Zilla Slab and Atkinson Hyperlegible (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

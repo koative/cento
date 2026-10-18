@@ -1,167 +1,72 @@
 ---
 name: Proof
-description: A daily bakery order sheet with loaf quantities and a pickup receipt.
 colors:
-  paper: '#f0dfbc'
-  ink: '#783b2a'
-  header-tone: '#b58d6d'
-  order-sheet-surface: '#f7ecd6'
-  receipt-button-ink: '#fff3dd'
+  flour: "#f7efe1"
+  paper: "#fffaf1"
+  kraft: "#ecd9b8"
+  kraft-deep: "#d4b483"
+  crust: "#3a2116"
+  crumb: "#6b4a36"
+  oven: "#b03f1c"
+  oven-deep: "#8c2f12"
+  butter: "#f3c14f"
+  felt: "#2a1a12"
+  line: "#dcc8a6"
 typography:
   display:
-    fontFamily: '"Cormorant Garamond"'
-    fontSize: clamp(66px, 7vw, 100px)
-    lineHeight: '0.92'
-    fontWeight: '400'
-    letterSpacing: -0.03em
-  headline:
-    fontFamily: '"DM Sans", sans-serif'
-  headline-context-1:
-    fontFamily: '"Cormorant Garamond"'
-    fontSize: 64px
-    lineHeight: '0.96'
-    fontWeight: '400'
-    letterSpacing: -0.02em
-  headline-context-2:
-    fontFamily: '"Cormorant Garamond"'
-    fontSize: 51px
-    lineHeight: '0.98'
-    fontWeight: '400'
-  title:
-    fontFamily: '"DM Sans", sans-serif'
-  title-context-1:
-    fontFamily: '"Cormorant Garamond"'
-    fontSize: 27px
-    lineHeight: normal
-    fontWeight: '500'
+    family: Caprasimo
+    sizes:
+      {
+        h1: "clamp(2.5rem, 1.5rem + 4.2vw, 5.25rem)",
+        hero: "up to 6rem",
+        h2: "clamp(1.75rem, 1.25rem + 1.9vw, 2.9rem)",
+        h3: "1.2–1.4rem",
+      }
   body:
-    fontFamily: '"DM Sans", sans-serif'
+    family: Nunito
+    sizes:
+      {
+        body: "1.0625rem / 1.6",
+        lede: "clamp(1.1rem, 1.02rem + 0.35vw, 1.3rem)",
+        small: "0.85–0.95rem",
+      }
+rounded:
+  { card: 16px, field: 12px, control: 999px, arch: "999px 999px 16px 16px" }
 spacing:
-  observed-1: 20px
-  observed-2: 30px
-  observed-3: 25px 0
-components:
-  navigation:
-    textColor: '#783b2a'
-  order-sheet:
-    backgroundColor: '#f7ecd6'
-    padding: 28px
-    textColor: '#783b2a'
-  quantity-button:
-    textColor: inherit
-    backgroundColor: transparent
-    width: 28px
-    height: 28px
-    rounded: 50%
-  order-total-select:
-    textColor: inherit
-    backgroundColor: transparent
-    padding: 10px 0
+  {
+    gutter: "clamp(1rem, 4vw, 3rem)",
+    section: "clamp(3.5rem, 2rem + 6vw, 7rem)",
+    wrap: "1260px",
+  }
 ---
-
-# Design System: Proof
 
 ## Overview
 
-**Creative North Star: "Bakery order ledger with honey paper and flour-white typography"**
-
-Bakery order ledger with honey paper and flour-white typography. A daily bakery order sheet with loaf quantities and a pickup receipt.
-
-This records the implemented artisan bakery template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Artisan bakery composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-Mode: Experience with a useful demonstration task. The user delegates creative orchestration and direct implementation. Impeccable collection seed `0b4a6fde` assigns candidate 3: a collection of culturally grounded programme and specimen systems. Grounded candidates were exhibition, poster, programme/specimen, field notes, studio archive, publication, and operational board. The individual sector owns its typography, topology and behavior.
+A neighbourhood sourdough bakery seen the way regulars see it: early, on a phone, on the way to the counter. The world is the bakery's own printed matter — flour-white paper, kraft bags, a felt letterboard of oven times, price tags, a receipt — set in a soft, heavy 1970s shop-front serif. Light, because the scene is daylight and a bright shop window.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Header Tone**: context-specific authored color.
-- **Order Sheet Surface**: context-specific authored color.
-- **Receipt Button Ink**: context-specific authored color.
+Flour paper and a warmer paper for raised surfaces; crust brown for ink; crumb brown for secondary text (≥ 6:1 on flour). Oven red is the single action colour (buttons, active nav, the oven segment). Butter yellow marks warmth only: warm-now badges, the price tag, highlights, selection. Kraft carries the footer, method band and filled tracks; felt is reserved for the letterboard.
 
 ## Typography
 
-- **Cormorant Garamond** is the CSS family alias for Cormorant Garamond Light. Local faces: italic / 400, italic / 500, normal / 400, normal / 500, normal / 600.
-- **Manrope** is the CSS family alias for Manrope ExtraLight. Local faces: normal / 400, normal / 500, normal / 600.
-- **DM Sans** is the CSS family alias for DM Sans 9pt. Local faces: normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
-- brand uses the font shorthand (`600 58px/0.8 "Cormorant Garamond"`).
-- brand span uses the font shorthand (`10px "DM Sans"`).
-- opening title h1 uses the font shorthand (`400 clamp(66px, 7vw, 100px)/0.92 "Cormorant Garamond"`).
-- counter title h2 uses the font shorthand (`400 64px/0.96 "Cormorant Garamond"`).
-- order sheet h3 uses the font shorthand (`500 27px "Cormorant Garamond"`).
+Caprasimo for headings, prices, big numerals (day tiles, the board clock, years). Nunito for everything else; uppercase tracked Nunito only on the letterboard, where it imitates changeable letters. Tabular numerals on prices, hours and times.
 
 ## Layout
 
-- **Bakery opening**: grid-template-columns (0.9fr 1.3fr); padding (55px 5vw 0); gap (30px 40px).
-- **Counter**: grid-template-columns (0.7fr 1.3fr); gap (65px); padding (75px 5vw).
-- **Order sheet article**: grid-template-columns (1fr 65px 100px); gap (20px); padding (25px 0).
-- **Our way**: padding (70px 5vw); grid-template-columns (0.3fr 1fr 1fr); gap (45px).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 900px)`, `(max-width: 550px)`.
-- @media (max-width: 650px): footer changes to flex-direction (column).
-- @media (max-width: 900px): counter changes to grid-template-columns (1fr); gap (25px).
-- @media (max-width: 900px): our way changes to grid-template-columns (1fr 1fr).
-- @media (max-width: 550px): bakery opening changes to grid-template-columns (1fr); gap (25px).
-- @media (max-width: 550px): order sheet article changes to grid-template-columns (1fr 90px); gap (13px).
-- @media (max-width: 550px): our way changes to grid-template-columns (1fr); gap (25px).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-- bakery opening   img: corners (`50% 50% 0 0`).
-- quantity button: corners (`50%`).
+A 1260px wrap with fluid gutters. Images use an oven-mouth arch (fully rounded top, square-ish bottom) carried over from the earlier Proof. Sections alternate dense lists (letterboard, sessions, price tables) with quiet full-bleed bands (method, wholesale). Lists use ruled rows rather than cards; cards appear only for products.
 
 ## Components
 
-Adjust loaf quantities and pickup time; prepare a local receipt.
+Pill buttons (solid oven, ghost crust, light on dark), chips for filters, option rows for variants and dates, a quantity pill, receipt lists with dashed rules, a day-tile pickup planner with disabled reasons, the oven board (range clock, hour scale, per-row Gantt track with oven/warm/rack segments and a now line), details-based FAQ, an authored SVG street map.
 
-### Navigation
+## Motion
 
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Order Sheet
-
-Authored order sheet styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Quantity Button
-
-Authored quantity button styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Order Total Select
-
-Authored order total select styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid currentColor); outline-offset (5px).
-- button:disabled: opacity (0.55).
-- receipt button:hover:not(:disabled): background (#5b2a1d).
-- bakery opening   img animation: `bread-rise 1.3s cubic-bezier(0.16, 1, 0.3, 1)`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+Pages rise into place (short translate + fade from partly visible). Hero and header images unveil from an arch clip. Warm items on the oven board breathe with a soft butter halo. The mobile menu drops with a clip-path. All of it switches off under `prefers-reduced-motion`.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do keep butter for warmth and oven red for action; never swap them.
+- Do write times and prices as the bakery would chalk them (5:40, $4.25).
+- Don't add eyebrow labels, icon-card rows or decorative gradients.
+- Don't put the letterboard texture anywhere except the letterboard.

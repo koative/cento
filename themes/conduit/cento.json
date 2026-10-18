@@ -1,0 +1,35 @@
+{
+  "number": 63,
+  "name": "Conduit",
+  "sector": "API integration platform",
+  "category": "Technology",
+  "tagline": "One request format for every API your product touches.",
+  "description": "A developer-platform site with a filterable connectors directory and connector pages, a live request console that plays auth, mapping, retries and timings, pricing with a usage estimator, docs teaser, status page, plus a /app dashboard demo.",
+  "tags": [
+    "Live request console",
+    "Connectors directory",
+    "Status page",
+    "App demo"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/platform", "title": "Platform" },
+    { "path": "/connectors", "title": "Connectors" },
+    { "path": "/connectors/tillpoint", "title": "Connector" },
+    { "path": "/console", "title": "Request console" },
+    { "path": "/pricing", "title": "Pricing" },
+    { "path": "/docs", "title": "Docs" },
+    { "path": "/status", "title": "Status" },
+    { "path": "/changelog", "title": "Changelog" },
+    { "path": "/customers", "title": "Customers" },
+    { "path": "/about", "title": "About" },
+    { "path": "/signup", "title": "Create a workspace" },
+    { "path": "/signin", "title": "Sign in" },
+    { "path": "/app", "title": "App: Overview" },
+    { "path": "/app/connections", "title": "App: Connections" },
+    { "path": "/app/logs", "title": "App: Logs" },
+    { "path": "/app/settings", "title": "App: Settings" }
+  ],
+  "colors": { "paper": "#111413", "ink": "#e7ece5", "accent": "#b8f27c" },
+  "fonts": ["Bai Jamjuree", "Golos Text"]
+}

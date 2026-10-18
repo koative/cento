@@ -1,28 +1,35 @@
 # Solace
 
-A warm, appointment-first clinic with a calm visit planner.
+Family medicine with room to talk, from newborns to grandparents. A family health clinic website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: next same-day appointments, service index, same-day band, children’s and long-term care features, clinicians, first-visit steps, clinics with live open/closed state, patient voices, “already a patient” info, closing call to book
+- `/services` — Services: filter by who it’s for, search, rows with length, ages and self-pay price
+- `/services/:slug` — Service page (8): visit steps, what’s covered, what to bring, FAQ, facts, next open times, who you’ll see, related care
+- `/clinicians` — Clinicians: ID-badge cards filtered by clinic, language and accepting new patients
+- `/clinicians/:slug` — Clinician profile (8): bio, quote, interests, weekly clinic table, bookable services, next open times
+- `/book` — Book a visit: four-step planner (visit type, clinic and clinician, day and time, patient details) with a live appointment card, validation and confirmation
+- `/patients` — Patient information: registration steps, what to bring, insurance and self-pay fees, prescriptions and results, policies, FAQ
+- `/locations` — Locations & hours: authored clinic map with pins, clinic tabs, opening hours with today highlighted, access and transport
+- `/about` — About: story, principles, timeline, team and careers
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Build with `bun run build`. Publish `dist`; relative asset paths support subdirectory hosting.
-
-## Design and interaction
-
-A sage appointment sheet: a friendly circular portrait paired with a four-step visit planner, clean service rows, and an unfolding care note. The booking form shows a local confirmation with selected visit type and time.
-
-The controls demonstrate complete local state changes. All brands, people, addresses, prices, dates and offerings are fictional demo content. No information is submitted, no booking or order is made, and no service or advice is provided. Replace demo content and connect an appropriate backend before real use.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-Edit `src/App.tsx` for content and behavior, `src/styles.css` for styles, and `index.html` for metadata. React, TypeScript, Vite and Lucide icons. Keyboard focus, semantic controls, mobile layouts and reduced-motion preferences are supported.
+`src/content.ts` holds all copy and data (brand, services, clinicians and their weekly schedules, locations and hours, patient info). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
-## Assets
+## Demo behaviour
 
-Self-hosted lora and dm fonts copied from the collection's licensed assets; OFL notices in `src/assets/fonts`. Lucide icons are ISC licensed. Photos are bundled from Unsplash under its license and are illustrative, without endorsement:
+Open appointment times are generated locally from each clinician’s weekly schedule and the clinic’s opening hours, with a fixed pseudo-random pattern of already-booked slots. Booking validates the form, shows a short loading state, then stamps the appointment card with a demo reference; the newsletter form validates and confirms. Nothing is sent, stored, booked or charged, nothing on the site is medical advice, and Solace and everyone named in it are fictional.
 
-- `care.jpg`: https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=85
+## Credits
+
+Fonts: Source Serif 4 and Source Sans 3 (SIL OFL 1.1). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

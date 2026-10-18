@@ -1,50 +1,38 @@
-# Aura — Skincare ritual studio
+# Aura
 
-Butter yellow and plum, large editorial serif type, a still-life photographic composition, and a stepped skincare ritual.
+Daily care. Quiet joy. Five minutes, twice a day. A skincare brand website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: hero with the three most-loved products, a morning/evening ritual preview, bestsellers, shop by step, ingredient spotlight, philosophy, reviews, journal, promises and a closing call to the builder
+- `/shop` — The essentials: twelve products with search, step / skin type / time-of-day filters and sorting
+- `/shop/:id` — Product: packshot, texture and key-ingredient views, size variants, quantity, add to bag or buy now, formula notes, ritual position, key ingredients, full INCI, reviews, pairings
+- `/ritual` — Ritual builder: four questions build a layered routine (thinnest to thickest) with swappable steps, real timing and one-click add to bag; the page turns to night for evening rituals
+- `/ingredients` — Ingredients glossary: eighteen entries with search, kind filter and A–Z jump
+- `/ingredients/:slug` — Ingredient: what it does, origin, strength, cautions, pairings and the products that contain it
+- `/journal` — Journal with topic filter
+- `/journal/:slug` — Article with mentioned products and further reading
+- `/about` — Our story, principles, sourcing and team
+- `/help` — FAQ disclosures, shipping table and contact
+- `/cart` — Bag with quantities, removal and free-shipping progress
+- `/checkout` — Checkout with validation, delivery choice, free sample, payment fields and order confirmation
+
+## Run
 
 ```sh
-bun install
-bun run dev
-bun run build
-bun run preview
+bun install && bun run dev
 ```
 
-Node and npm equivalents also work. The production `dist/` directory uses relative asset paths and can be hosted at any static subdirectory.
-
-## Interactions
-
-Select the three ritual steps, choose morning or evening and a preferred texture, generate a local sample routine, and try the newsletter form.
+Build: `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-- `src/App.tsx`: content, demo data, interactions, and sections.
-- `src/styles.css`: independent visual system, responsive layout, and reduced motion.
-- `src/assets/`: local photography and self-hosted fonts.
+`src/content.ts` (all copy and data), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
-React + Vite + TypeScript. This folder is standalone and requires no backend, environment variables, or shared runtime from another template.
+## Demo behaviour
 
-## Demo boundaries
+The bag is kept in `localStorage` (and still works for the visit if storage is unavailable). The ritual builder, filters, checkout and newsletter run entirely in the browser: checkout validates every field and shows a confirmation, but nothing is sent, stored on a server or charged. Aura, its people, products, prices and reviews are fictional demonstration content, and the ritual builder is a cosmetic guide, not medical advice.
 
-All businesses, products, prices, customers, shipments, events, metrics, dates, and account details are fictional demonstration content. State lives in memory and resets on reload. No orders, payments, reservations, tracking requests, subscriptions, or messages are sent. Form values are not transmitted or persisted.
+## Credits
 
-## Accessibility and motion
-
-Semantic landmarks, visible keyboard focus, native controls and form validation, descriptive labels, responsive layouts, and reduced-motion overrides are included. Animations are decorative; all content remains accessible without motion.
-
-## Asset provenance
-
-src/assets/skincare.jpg: https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=1400&q=85&fit=crop
-
-Photo sourced from Unsplash. Recommendations are fictional cosmetic texture preferences, not medical advice or claims of efficacy.
-
-Unsplash photos are subject to the [Unsplash license](https://unsplash.com/license). Replace illustrative imagery as appropriate.
-
-Fonts are bundled in `src/assets/fonts/` with their OFL licenses: DM Sans and Cormorant Garamond, sourced from Google Fonts. No external fonts are requested at runtime. Icons are from [Lucide](https://lucide.dev), ISC license.
-
-Part of [Elseform](https://koative.github.io/elseform/).
-
-## Self-hosted fonts
-
-Font files and their OFL license notices are included in `src/assets/fonts/`. No remote font request is required at runtime.
+Fonts: Bellefair and Urbanist (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

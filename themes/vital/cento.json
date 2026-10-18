@@ -1,0 +1,28 @@
+{
+  "number": 91,
+  "name": "Vital",
+  "sector": "Telehealth service",
+  "category": "Health & Wellness",
+  "tagline": "A licensed clinician on your phone, usually within fifteen minutes.",
+  "description": "A multi-page telehealth site: conditions index with search and filters, condition pages with in-person red flags, a six-step symptom check-in that builds a live visit slip and triages to video, message or emergency care, pricing with a billing toggle, clinician profiles with bookable times, and an app page with authored phone screens.",
+  "tags": [
+    "Symptom check-in",
+    "Live visit slip",
+    "Live wait board",
+    "Plan pricing toggle"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/conditions", "title": "Conditions" },
+    { "path": "/conditions/uti", "title": "Condition" },
+    { "path": "/how-it-works", "title": "How it works" },
+    { "path": "/check-in", "title": "Symptom check-in" },
+    { "path": "/pricing", "title": "Pricing" },
+    { "path": "/clinicians", "title": "Clinicians" },
+    { "path": "/clinicians/nadia-haddad", "title": "Clinician" },
+    { "path": "/app", "title": "App" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#f4f1ea", "ink": "#14262b", "accent": "#0d5c55" },
+  "fonts": ["Plus Jakarta Sans"]
+}

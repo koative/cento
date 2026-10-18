@@ -1,0 +1,24 @@
+{
+  "number": 10,
+  "name": "Still",
+  "sector": "Yoga & meditation studio",
+  "category": "Health & Wellness",
+  "tagline": "Less noise. More you. Slow yoga, breath and rest, taught plainly.",
+  "description": "A small yoga and meditation studio site: a live seven-day schedule with filters and booking, eight class pages with the shape of each hour, teacher profiles, memberships with a monthly/yearly toggle, and a guided breathing timer drawn in SVG.",
+  "tags": ["Breathing guide", "Class schedule", "Class booking", "Memberships"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/schedule", "title": "Schedule" },
+    { "path": "/classes", "title": "Classes" },
+    { "path": "/classes/slow-flow", "title": "Class" },
+    { "path": "/teachers", "title": "Teachers" },
+    { "path": "/teachers/june-hallett", "title": "Teacher" },
+    { "path": "/memberships", "title": "Memberships" },
+    { "path": "/breathe", "title": "Breathing guide" },
+    { "path": "/book", "title": "Book a class" },
+    { "path": "/visit", "title": "Your first visit" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#f6f1ee", "ink": "#3b2232", "accent": "#8c3f69" },
+  "fonts": ["Fraunces", "Nunito Sans"]
+}

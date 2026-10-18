@@ -1,43 +1,37 @@
 # Bloom
 
-Floral studio website template from the Elseform collection.
+Flowers gathered by hand, delivered the same day. A florist website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: hero with live same-day cut-off, today's bouquets, builder teaser, this week's stem list, subscriptions, weddings, delivery zones, testimonials, journal, close
+- `/shop` — Shop: bouquets, vase arrangements, dried flowers and plants with kind, colour and occasion filters and sorting
+- `/shop/:id` — Product: photos, size and vase options, quantity, add to bag or buy now, recipe, vase life, care, related flowers
+- `/builder` — Bouquet builder: pick stems, wrap and card message; a top-down spiral drawing grows as you add stems
+- `/subscriptions` — Subscriptions: weekly / fortnightly / monthly toggle, three bunch sizes, a subscriber's week, FAQ
+- `/weddings` — Weddings & events: services with starting prices, recent days, planning timeline, validated enquiry form
+- `/journal` — Journal with topic filter; `/journal/:slug` — article with related stories
+- `/about` — Studio story, house rules, growers with a distance map, team, hours
+- `/delivery` — Postcode checker, zones and fees, delivery windows, flower care, FAQ
+- `/cart` — Bag with quantities, removal and summary
+- `/checkout` — Delivery or pickup, recipient, date rules, delivery window, card message, confirmation
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Build with `bun run build`; publish the resulting `dist` directory. Vite uses relative asset paths, so the template can be hosted under a subdirectory.
-
-## Design
-
-Lavender and pink composition, Bodoni Moda italics, angled photographic studies, a floral arrangement builder, and calm practical care notes.
-
-## Interactions
-
-Choose between two arrangements and three sizes; see the price update; add a name and optional message; generate a local request summary; expand the flower-care notes. No order or message is sent.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
 ## Customize
 
-Edit content and interactions in `src/App.tsx`, styles in `src/styles.css`, and the document title and description in `index.html`. Photography is imported from `src/assets/`. The template uses React, Vite, TypeScript, and Lucide icons.
+`src/content.ts` holds all copy and data (products, stems, plans, zones, posts, team). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
-## Accessibility
+## Demo behaviour
 
-Semantic landmarks, visible keyboard focus, labeled controls, native form validation, responsive layouts, and reduced-motion overrides are included. All text is English.
+The bag is kept in `localStorage` (and still works for the visit without it). The builder, product pages and subscriptions add lines to the bag; checkout checks postcodes against the delivery zones, enforces the 1 pm same-day cut-off and no-Sunday rule, and shows a confirmation. The wedding enquiry, postcode checker and newsletter forms validate locally. Nothing is sent, stored on a server or charged, and Bloom is a fictional brand.
 
-## Asset credits
+## Credits
 
-Typography: Bodoni Moda and DM Sans, distributed through Google Fonts under their included open font licenses. Icons: [Lucide](https://lucide.dev), ISC license. Photography is locally bundled from Unsplash; source image URLs are listed below. Photographs illustrate the fictional concept and do not imply endorsement.
-
-- `bouquet.jpg`: https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=1600&q=85
-- `flowers.jpg`: https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=1600&q=85
-
-## Demonstration content
-
-The brand, people, project names, books, descriptions, pricing, and business information are fictional demonstration content. Replace them with your own content before publication. No personal information leaves this page.
-
-## Self-hosted fonts
-
-Font files and their OFL license notices are included in `src/assets/fonts/`. No remote font request is required at runtime.
+Fonts: Gilda Display and Lato (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

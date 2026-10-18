@@ -23,12 +23,24 @@ def download(url):
 
 def bundle_license(family, directory):
     slug = re.sub(r"[^a-z0-9]", "", family.lower())
-    license_file = ROOT / "licenses/fonts" / f"{slug}-OFL.txt"
-    if not license_file.exists():
-        url = f"https://raw.githubusercontent.com/google/fonts/main/ofl/{slug}/OFL.txt"
-        content = download(url).decode()
+    # google/fonts keeps each family under its license: ofl/, apache/ (e.g. Roboto Slab) or ufl/.
+    choices = [("ofl", "OFL.txt", "OFL"), ("apache", "LICENSE.txt", "LICENSE"), ("ufl", "UFL.txt", "UFL")]
+    license_file = next(
+        (ROOT / "licenses/fonts" / f"{slug}-{suffix}.txt" for _, _, suffix in choices
+         if (ROOT / "licenses/fonts" / f"{slug}-{suffix}.txt").exists()),
+        None,
+    )
+    for folder, name, suffix in choices if license_file is None else []:
+        try:
+            content = download(f"https://raw.githubusercontent.com/google/fonts/main/{folder}/{slug}/{name}").decode()
+        except urllib.error.HTTPError:
+            continue
+        license_file = ROOT / "licenses/fonts" / f"{slug}-{suffix}.txt"
         license_file.parent.mkdir(parents=True, exist_ok=True)
         license_file.write_text("\n".join(line.rstrip() for line in content.splitlines()) + "\n")
+        break
+    if license_file is None:
+        raise SystemExit(f"No license found in google/fonts for {family} ({slug})")
     (directory / license_file.name).write_text(license_file.read_text())
 
 
@@ -62,7 +74,7 @@ for stylesheet in stylesheets:
     if content != original:
         stylesheet.write_text(content)
 
-unique = {record["file"]: record for record in records}
+unique = {record["file"]: record for record in records if (ROOT / record["file"]).exists()}
 known_files = {Path(record["file"]).name: record for record in records}
 for font in (ROOT / "themes").glob("*/src/assets/fonts/*.woff2"):
     relative = str(font.relative_to(ROOT))

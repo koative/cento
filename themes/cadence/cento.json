@@ -1,0 +1,34 @@
+{
+  "number": 62,
+  "name": "Cadence",
+  "sector": "Hiring & ATS software",
+  "category": "Technology",
+  "tagline": "Hire good people with a steady beat.",
+  "description": "An applicant tracking SaaS site with product tour, pricing toggle, filterable customer stories and changelog, plus a working /app demo: overview charts, jobs, a pipeline board with keyboard moves, a sortable candidates table, candidate profiles and a scored interview kit.",
+  "tags": [
+    "Interview loop composer",
+    "Pipeline board demo",
+    "Interview kit scorecards",
+    "Pricing toggle"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/product", "title": "Product" },
+    { "path": "/pricing", "title": "Pricing" },
+    { "path": "/customers", "title": "Customers" },
+    { "path": "/customers/hollis-and-rye", "title": "Customer story" },
+    { "path": "/changelog", "title": "Changelog" },
+    { "path": "/about", "title": "Company" },
+    { "path": "/demo", "title": "Book a walkthrough" },
+    { "path": "/signin", "title": "Sign in" },
+    { "path": "/app", "title": "App: Overview" },
+    { "path": "/app/jobs", "title": "App: Jobs" },
+    { "path": "/app/jobs/product-designer", "title": "App: Pipeline board" },
+    { "path": "/app/candidates", "title": "App: Candidates" },
+    { "path": "/app/candidates/morgan-lee", "title": "App: Candidate profile" },
+    { "path": "/app/kit", "title": "App: Interview kit" },
+    { "path": "/app/kit/morgan-lee", "title": "App: Scorecard" }
+  ],
+  "colors": { "paper": "#f5f2ea", "ink": "#1b2620", "accent": "#2d5a44" },
+  "fonts": ["Outfit"]
+}

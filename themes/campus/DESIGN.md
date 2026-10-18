@@ -1,160 +1,72 @@
 ---
 name: Campus
-description: A vivid learning workspace with lessons, notes and real progress.
 colors:
-  paper: '#f5f1e8'
-  ink: '#242820'
-  accent: '#6c5717'
-  header-tone: '#c5c4b7'
-  type-art-tone: '#e8d559'
-  workspace-aside-surface: '#eae9df'
-  progress-div-surface: '#cccec0'
-  notebook-surface: '#e8e5da'
+  paper: "#f6f2e9"
+  paper-2: "#ece6d7"
+  surface: "#fffdf8"
+  ink: "#22271f"
+  ink-2: "#464c41"
+  muted: "#5c6056"
+  rule: "#d6cfbd"
+  marker: "#ecd84f"
+  marker-soft: "#f6eca6"
+  accent: "#6c5717"
+  margin: "#b2442a"
+  ok: "#2f6a3a"
 typography:
   display:
-    fontFamily: Display, sans-serif
-    lineHeight: '1.05'
-    fontWeight: '400'
+    fontFamily: Be Vietnam Pro
+    fontWeight: 800
+    fontSize: clamp(2.5rem, 1.6rem + 3.8vw, 4.75rem)
     letterSpacing: -0.035em
-    fontSize: clamp(2rem, 3.6vw, 3.6rem)
+    lineHeight: 1.02
   headline:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: clamp(2rem, 4vw, 3.7rem)
-  headline-context-1:
-    fontFamily: Display, sans-serif
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.04em
-    fontSize: 40px
-  headline-context-2:
-    fontFamily: Display
-    lineHeight: '1.05'
-    fontWeight: '400'
-    letterSpacing: -0.035em
-    fontSize: 22px
-  title:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
+    fontFamily: Be Vietnam Pro
+    fontWeight: 700
+    fontSize: clamp(1.85rem, 1.4rem + 1.9vw, 2.75rem)
+    letterSpacing: -0.03em
   body:
-    fontFamily: '"Body", sans-serif'
-    lineHeight: '1.5'
+    fontFamily: Be Vietnam Pro
+    fontWeight: 400
+    fontSize: 1.0625rem
+    lineHeight: 1.6
+rounded:
+  card: 12px
+  control: 8px
+  chip: 99px
 spacing:
-  observed-1: 12px
-  observed-2: 20px
-  observed-3: 16px
-components:
-  primary-button:
-    padding: 14px 22px
-    backgroundColor: '#242820'
-    textColor: '#f5f1e8'
-  navigation:
-    textColor: '#242820'
-  type-art:
-    height: 220px
-    backgroundColor: '#e8d559'
-    padding: 25px 40px
-    textColor: '#242820'
+  gutter: clamp(20px, 4vw, 48px)
+  section: clamp(64px, 9vw, 128px)
 ---
-
-# Design System: Campus
 
 ## Overview
 
-**Creative North Star: "A yellow and charcoal course workspace"**
-
-A yellow and charcoal course workspace: a persistent syllabus rail, a typographic lesson canvas, lesson completion and a locally editable notebook. The opening is a working learning surface rather than marketing.
-
-This records the implemented online learning template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Online learning composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-The collection considered a neighborhood gazette, service counter, museum directory, brand magazine, specimen catalogue, community field guide, and event programme. Seed `4fa713db` assigned sixth, community field guide: navigable specificity and contextual choices. This template translates that discipline into its own sector world, not common visual scaffolding. Explicit delegated creative direction authorizes code-led implementation.
+A study desk under a lamp. Campus learners study at kitchen tables between 8 and 10 pm, on laptops and phones, so the world is warm notebook paper, charcoal-green ink and one highlighter yellow that marks what matters — the word in the headline, the active nav item, the finish date the planner gives you, a completed lesson. It reads as a well-kept study notebook rather than a tech dashboard.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Accent**: interactive emphasis.
-- **Header Tone**: context-specific authored color.
-- **Type Art Tone**: context-specific authored color.
-- **Workspace Aside Surface**: context-specific authored color.
-- **Progress Div Surface**: context-specific authored color.
-- **Notebook Surface**: context-specific authored color.
+Paper (`#f6f2e9`) is the page; a darker paper band (`#ece6d7`) holds rhythm sections and the workspace rail. Ink (`#22271f`) carries text, primary buttons, the workspace resume card and the footer. Highlighter (`#ecd84f`) is used as a mark, never as text colour: headline highlight, progress fills, active chips, the closing band. Ochre (`#6c5717`) is reserved for link underlines, focus rings and small labels. A notebook-margin red (`#b2442a`) marks errors and the ruled margin line in notes.
 
 ## Typography
 
-- **Display** is the CSS family alias for Space Grotesk Light. Local faces: normal / 100 900.
-- **Body** is the CSS family alias for DM Sans 9pt. Local faces: normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
+Be Vietnam Pro only, with weight doing the work: ExtraBold 800 display at up to 4.75rem with −0.035em tracking, Bold 700 headings, Medium 500 for pull quotes, Regular 400 body at 1.0625rem/1.6. Durations, prices, dates and counts use tabular numerals.
 
 ## Layout
 
-- **Workspace**: grid-template-columns (290px 1fr); max-width (1600px).
-- **Notebook**: padding (35px 45px); grid-template-columns (1fr 1.7fr); gap (25px).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 900px)`.
-- @media (max-width: 900px): workspace changes to grid-template-columns (230px 1fr).
-- @media (max-width: 900px): notebook changes to grid-template-columns (1fr).
-- @media (max-width: 650px): workspace nav changes to grid-template-columns (1fr 1fr).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-- input: corners (`0`).
+A 1280px wrap with fluid gutters. Pages alternate dense passages (subject index, catalogue rows, syllabus) with quiet ones (pull quote, closing band). The catalogue is a printed course index — cover, title and summary, then a ruled facts column — not a card grid. Course pages pair a long reading column with a sticky enrol panel. The workspace swaps the site header for a syllabus rail.
 
 ## Components
 
-Choose a lesson, mark it complete and edit or save a local note.
+Highlighter mark (`mark.hl`), buttons (ink primary, quiet outline, highlighter on dark), pill chips with `aria-pressed`, segmented radio toggles, radio choice cards, labelled fields with inline errors, syllabus `<details>` modules, the pace planner (range, day toggles, date input, week timeline, first sessions), lens study, progress meters, SVG week chart, ruled notebook textarea.
 
-### Primary button
+## Motion
 
-Authored btn styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Navigation
-
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Type Art
-
-Authored type art styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid var(--accent)); outline-offset (4px).
-- button:disabled: opacity (0.5).
-- btn:hover: background (var(--accent)).
-- button[aria pressed="true"]: outline (2px solid var(--accent)); outline-offset (3px).
-- progress i transition: `width 0.5s`.
-- focus frame animation: `focusFind 4s ease-in-out infinite alternate`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+One language: the highlighter stroke. Marks sweep in left-to-right on load, progress meters and planner bars fill with the same exponential ease-out, nav items gain their marker underline on hover. Content is always visible; `prefers-reduced-motion` removes every animation and transition.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
-
-## Collection 100 refinement
-
-A photographic observation study replaces the repeated yellow typographic placeholder. Shape, Light and Rhythm lenses change the crop and teaching prompt while preserving lesson progress and notes.
+- Do use yellow as a mark behind ink, never as text on paper.
+- Do keep lessons, exercises and checks short and concrete in copy.
+- Do let numbers sit in tabular figures.
+- Don't add eyebrow labels, icon-card rows or gradient effects.
+- Don't introduce a second accent colour; ochre and margin red are utility colours only.

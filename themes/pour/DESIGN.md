@@ -1,37 +1,66 @@
 ---
-name: "Pour"
+name: Pour
 colors:
   paper: "#f3e6d1"
-  ink: "#662b42"
-  accent: "#da977c"
+  paper-2: "#ead8bc"
+  tag: "#f8efdf"
+  ink: "#34151f"
+  muted: "#69434f"
+  plum: "#662b42"
+  blush: "#da977c"
+  rule: "#cdb197"
+  leaf: "#3f5a44"
+  pine: "#b4875c"
+  night: "#2a1219"
+  night-ink: "#f3e6d1"
 typography:
-  body:
-    fontFamily: "Body, sans-serif"
-    lineHeight: "1.5"
   display:
-    fontWeight: 400
-    lineHeight: "1"
-    letterSpacing: "-0.035em"
-    fontFamily: "Display, serif"
-    fontSize: "clamp(54px, 5.8vw, 80px)"
+    fontFamily: "Ibarra Real Nova"
+    fontWeight: 500
+    sizes: "h1 clamp(2.75rem, 1.4rem + 5.2vw, 5.75rem) / h2 clamp(2rem, 1.35rem + 2.4vw, 3.25rem) / h3 1.4rem"
+    letterSpacing: "-0.03em to -0.01em"
+  body:
+    fontFamily: "Figtree"
+    fontSize: "1.0625rem"
+    lineHeight: 1.6
+rounded:
+  card: 14px
+  control: 8px
+  pill: 99px
+spacing:
+  gutter: "clamp(1.25rem, 4vw, 3rem)"
+  section: "clamp(3rem, 7vw, 6rem)"
+  max: 1240px
 ---
 
-# Pour
+## Overview
 
-Good wine, no ceremony. A sculptural bottle shelf with a build-your-own case.
+Pour is drawn from the two lives of a natural wine shop: the bottle list on butcher paper by day and the chalkboard by night. Daytime pages sit on warm kraft paper with plum ink; the bar, the "open tonight" note, the club call-to-action and the footer switch to the dark night surface. Products are authored SVG bottles with hand-chosen label colours and motifs, standing on a pine shelf with hanging price tags, because natural wine is bought by its label art and its producer, not by stock photography.
 
-Mode: Experience with a task-specific local planning interaction. The user delegated creative direction. Code-led build; no mockup approval is claimed. Shared seed `ae458e69`, assigned grounded candidate 6: a collection of physical-sector artifacts translated into living interfaces, with independent compositions, palettes and navigation rather than a shared hero scaffold.
+## Colors
 
-## Craft
-
-Local type and assets, visible keyboard focus, semantic controls, a 390px reflow, readable contrast and reduced-motion alternatives. Body text uses DM Sans. The main heading uses the source-extracted display scale above. Specific layout and motion tokens are in `src/styles.css`.
-
-## Implemented palette
-
-`#00000033`, `#462d32`, `#462d3240`, `#4b6850`, `#4d28222a`, `#523b40`, `#5b4435`, `#662b42`, `#7c8051`, `#946b39`, `#a2b6b2`, `#bca78f`, `#c4a697`, `#cbbba4`, `#cec18d`, `#da977c`, `#e6d8bf`, `#e9ba62`, `#ed967a`, `#f3e6d1`, `#ffffff20`
-
-These shades include intentional surface, rule, subject geometry and overlay variants. Preserve the material treatments used by this theme’s own composition.
+Paper `#f3e6d1` and ink `#34151f` carry everything; plum `#662b42` is the single action colour (buttons, links, focus, selection, caret). Blush `#da977c` is reserved for accents on the night surface. Each wine colour has a swatch (white, orange, rosé, red, sparkling) used only for small dots, chips and the palate map. Secondary text is `#69434f`, AA on paper.
 
 ## Typography
 
-Body text uses DM Sans (CSS alias `Body`); the main heading uses Instrument Serif (CSS alias `Display`). The aliases resolve through local `@font-face` declarations in `src/`; the font files and license notices are bundled under `src/assets/fonts`. Frontmatter captures the desktop main-heading declarations; responsive overrides remain in the stylesheet.
+Ibarra Real Nova (a transitional book face with a lively italic) sets headings, wine names, prices on tags and the logo in italic lowercase. Figtree sets body, labels and controls. Numerals are tabular wherever prices line up.
+
+## Layout
+
+12-ish column freedom inside a 1240px frame. Home alternates dense passages (the shelf, the finder, the event list) with quiet ones (the manifesto line, the close). Listings use a sticky filter rail; detail pages use a sticky bottle stage. Below 960px everything stacks; below 640px the shelf shows four bottles and lists collapse to two columns.
+
+## Components
+
+Bottle (SVG silhouettes: burgundy, bordeaux, sparkling with crown cap, litre), WineCard (bottle on a pine ledge + tag), TasteFinder (palate map, mood presets, colour chips, price range, ranked matches), price tags, event date blocks, chalkboard menu rows with dotted leaders, club tiers with bottle counts, case meter (six slots), Field with inline errors, Qty stepper, FAQ disclosures.
+
+## Motion
+
+One language: things are placed, not faded. Bottles drop onto the shelf with a slight tilt, tilt when picked up (hover/focus), the glass marker glides across the palate map, the cart count bumps. Page content settles 10px on route change. `prefers-reduced-motion` removes all of it.
+
+## Do's and Don'ts
+
+- Do keep wine data in `content.ts`, including each bottle's shape, glass, label, ink, cap and motif.
+- Do keep the night surface for the bar and evening moments only.
+- Don't add stock bottle photos for products; the authored bottles are the catalogue.
+- Don't use the blush accent for body text on paper (it fails contrast).
+- Don't add eyebrow labels above headings or decorative stat rows.

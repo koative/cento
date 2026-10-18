@@ -1,0 +1,27 @@
+{
+  "number": 23,
+  "name": "Tide",
+  "sector": "Ocean conservation nonprofit",
+  "category": "Education & Community",
+  "tagline": "We look after the coast between the tides.",
+  "description": "A coastal conservation charity site: filterable programmes with programme pages, volunteer events timed to low water with a live tide planner and booking form, five years of impact reports with sortable data, and a three-step donate flow with Gift Aid.",
+  "tags": [
+    "Tide planner",
+    "Volunteer booking",
+    "Impact reports",
+    "Donate flow"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/programmes", "title": "Programmes" },
+    { "path": "/programmes/seagrass-meadows", "title": "Programme" },
+    { "path": "/volunteer", "title": "Volunteer" },
+    { "path": "/volunteer/merrow-autumn-clean", "title": "Event" },
+    { "path": "/impact", "title": "Impact reports" },
+    { "path": "/impact/2025", "title": "Impact report" },
+    { "path": "/donate", "title": "Donate" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#f3f0e7", "ink": "#0e2a31", "accent": "#c2461d" },
+  "fonts": ["Zilla Slab", "Atkinson Hyperlegible"]
+}

@@ -1,0 +1,30 @@
+{
+  "number": 84,
+  "name": "Guild",
+  "sector": "Freelance marketplace",
+  "category": "Technology",
+  "tagline": "Independent talent, vouched for by the people who know the work.",
+  "description": "A freelance marketplace styled as a guild register: searchable talent directory with profiles, crafts with median rates, a bench that plots your crew's shared working hours across time zones, a live-preview project brief, fee calculator and sign-up flows.",
+  "tags": [
+    "Time-zone crew planner",
+    "Talent directory",
+    "Project brief builder",
+    "Fee calculator"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/talent", "title": "Browse talent" },
+    { "path": "/talent/ines-duarte", "title": "Profile" },
+    { "path": "/crafts", "title": "Crafts" },
+    { "path": "/crafts/product-design", "title": "Craft" },
+    { "path": "/post", "title": "Post a project" },
+    { "path": "/how-it-works", "title": "How it works" },
+    { "path": "/pricing", "title": "Pricing & fees" },
+    { "path": "/bench", "title": "Your bench" },
+    { "path": "/signup", "title": "Join Guild" },
+    { "path": "/signin", "title": "Sign in" },
+    { "path": "/about", "title": "About & charter" }
+  ],
+  "colors": { "paper": "#f3eee3", "ink": "#1d211e", "accent": "#a3301c" },
+  "fonts": ["DM Serif Text", "Karla"]
+}

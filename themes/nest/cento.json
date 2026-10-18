@@ -1,0 +1,58 @@
+{
+  "number": 55,
+  "name": "Nest",
+  "sector": "Childcare & nursery",
+  "category": "Education & Community",
+  "tagline": "Big days for small people, on Linden Row.",
+  "description": "A nursery, preschool and after-school club site: six rooms on an age growth-chart with room pages, a live day-in-the-life timeline, a week-planner fees calculator with pre-K credit and sibling discount, parent info, team and a validated tour booking flow.",
+  "tags": [
+    "Fees calculator",
+    "Rooms by age",
+    "Day in the life",
+    "Tour booking"
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "title": "Home"
+    },
+    {
+      "path": "/rooms",
+      "title": "Rooms by age"
+    },
+    {
+      "path": "/rooms/finches",
+      "title": "Room"
+    },
+    {
+      "path": "/day",
+      "title": "A day at Nest"
+    },
+    {
+      "path": "/fees",
+      "title": "Fees calculator"
+    },
+    {
+      "path": "/parents",
+      "title": "Parent info"
+    },
+    {
+      "path": "/team",
+      "title": "Team"
+    },
+    {
+      "path": "/about",
+      "title": "Our story"
+    },
+    {
+      "path": "/tour",
+      "title": "Book a tour"
+    }
+  ],
+  "colors": {
+    "paper": "#fbf6ec",
+    "ink": "#2b2340",
+    "accent": "#c2461f"
+  },
+  "fonts": ["Fredoka", "Nunito"]
+}

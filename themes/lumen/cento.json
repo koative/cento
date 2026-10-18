@@ -1,0 +1,29 @@
+{
+  "number": 46,
+  "name": "Lumen",
+  "sector": "Eyewear brand",
+  "category": "Commerce",
+  "tagline": "Glasses that fit your face, at one honest price.",
+  "description": "A multi-page eyewear shop: twelve frames drawn in live SVG with colour, size and lens options, a face-shape finder that tries frames on an outline, a lens thickness guide, four stores with eye-test booking, and a persisted bag with prescription-aware checkout.",
+  "tags": [
+    "Face-shape finder",
+    "Live frame configurator",
+    "Eye test booking",
+    "Lens thickness guide"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/frames", "title": "Frames" },
+    { "path": "/frames/orla", "title": "Frame" },
+    { "path": "/face-shapes", "title": "Face-shape finder" },
+    { "path": "/lenses", "title": "Lens guide" },
+    { "path": "/stores", "title": "Stores" },
+    { "path": "/stores/mercer-street", "title": "Store" },
+    { "path": "/eye-test", "title": "Book an eye test" },
+    { "path": "/about", "title": "About" },
+    { "path": "/cart", "title": "Bag" },
+    { "path": "/checkout", "title": "Checkout" }
+  ],
+  "colors": { "paper": "#f3f4ee", "ink": "#1a1e19", "accent": "#d6e13b" },
+  "fonts": ["Host Grotesk"]
+}

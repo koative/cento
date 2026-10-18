@@ -1,160 +1,77 @@
 ---
 name: Tempo
-description: A kinetic dance poster with an interactive weekly class timetable.
 colors:
-  paper: '#d9ff66'
-  ink: '#252341'
-  poster-type-h1-span-tone: '#4d42ba'
-  timetable-surface: '#f4f0e7'
-  studio-ink: '#eeeade'
+  paper: "#f4f2ea"
+  paper-2: "#e8e5d8"
+  ink: "#1d1b36"
+  ink-2: "#4a4766"
+  lime: "#d9ff66"
+  lime-soft: "#f0ffc4"
+  cobalt: "#4d42ba"
+  cobalt-light: "#9b93ff"
+  on-ink: "#f4f2ea"
+  on-ink-2: "#bdbad6"
+  alert: "#b8320d"
 typography:
   display:
-    fontFamily: '"Barlow Condensed"'
-    fontSize: clamp(84px, 10.5vw, 150px)
-    lineHeight: '0.83'
-    fontWeight: '800'
-    letterSpacing: -0.02em
-  headline:
-    fontFamily: '"DM Sans", sans-serif'
-  headline-context-1:
-    fontFamily: '"Barlow Condensed"'
-    fontSize: 65px
-    lineHeight: '0.9'
-    fontWeight: '700'
-  headline-context-2:
-    fontFamily: '"Barlow Condensed"'
-    fontSize: 68px
-    lineHeight: '0.95'
-    fontWeight: '600'
-  title:
-    fontFamily: '"DM Sans", sans-serif'
-  title-context-1:
-    fontFamily: '"DM Sans", sans-serif'
-    fontSize: 23px
-    letterSpacing: -0.02em
+    fontFamily: '"Dela Gothic One", sans-serif'
+    fontWeight: "400"
+    hero: clamp(2.5rem, 8.4vw, 6rem)
+    page: clamp(2.3rem, 6.2vw, 5.25rem)
+    section: clamp(1.9rem, 4.2vw, 3.4rem)
+    lineHeight: "1.02"
+    letterSpacing: -0.01em
   body:
-    fontFamily: '"DM Sans", sans-serif'
+    fontFamily: '"Outfit", system-ui, sans-serif'
+    fontSize: 1.0625rem
+    lede: clamp(1.1rem, 1.5vw, 1.3rem)
+    lineHeight: "1.6"
+rounded:
+  control: 999px
+  sm: 6px
+  lg: 14px
 spacing:
-  observed-1: 20px
-  observed-2: 30px
-  observed-3: 15px
-  observed-4: 50px
-components:
-  navigation:
-    textColor: '#252341'
-  filter-control:
-    textColor: inherit
-    backgroundColor: transparent
-    padding: 12px 22px
-  rhythm-band:
-    backgroundColor: '#4d42ba'
-    textColor: '#d9ff66'
-    padding: 18px 0
-  class-list-button:
-    textColor: inherit
-    backgroundColor: transparent
-    padding: 15px 0
+  gutter: clamp(1rem, 4vw, 3rem)
+  section: clamp(4rem, 9vw, 7.5rem)
 ---
 
-# Design System: Tempo
+# Tempo
 
 ## Overview
 
-**Creative North Star: "Acid yellow dance poster with cobalt typographic choreography"**
-
-Acid yellow dance poster with cobalt typographic choreography. A kinetic dance poster with an interactive weekly class timetable.
-
-This records the implemented dance studio template. Source declarations are normative; responsive and component-specific overrides remain scoped to their original context.
-
-**Key Characteristics:**
-- Dance studio composition with local, visible state changes.
-- Bundled typography and a sector-specific visual artifact.
-- Responsive layout with a reduced-motion alternative.
-
-### Direction provenance
-
-Mode: Experience with a useful demonstration task. The user delegates creative orchestration and direct implementation. Impeccable collection seed `0b4a6fde` assigns candidate 3: a collection of culturally grounded programme and specimen systems. Grounded candidates were exhibition, poster, programme/specimen, field notes, studio archive, publication, and operational board. The individual sector owns its typography, topology and behavior.
+The front-desk timetable board of a busy neighbourhood dance studio, set like a club flyer: acid-lime paper, deep ink-indigo type, heavy Dela Gothic One headlines and a cobalt beat running underneath. People check it on a phone between work and class, so the schedule, spots left and the $15 trial are always one tap away, and the site is light because it is read in daylight and studio fluorescents, not at the club.
 
 ## Colors
 
-
-The frontmatter records actual page palette primitives and authored surface/accent colors. The `paper`/`surface` and `ink`/`text` entries describe the CSS page ground and text; other entries retain their source context. Gallery thumbnail swatches are separate identity samples.
-
-- **Paper**: page ground.
-- **Ink**: principal text.
-- **Poster Type H1 Span Tone**: context-specific authored color.
-- **Timetable Surface**: context-specific authored color.
-- **Studio Ink**: context-specific authored color.
+- **Paper `#f4f2ea`** is the default surface; **paper-2** marks quieter bands (pass helper, home close).
+- **Lime `#d9ff66`** is the poster colour: the hero, the tap pad, selection, picked classes (`lime-soft`) and every accent on ink.
+- **Ink `#1d1b36`** carries text, primary buttons and the dark bands (tap-tempo finder, My week panel, footer). On ink, secondary text uses `on-ink-2`, never grey.
+- **Cobalt `#4d42ba`** is hover, caret and the scrolling style band; `alert` is reserved for validation errors.
 
 ## Typography
 
-- **Barlow Condensed** is the CSS family alias for Barlow Condensed Medium, Barlow Condensed SemiBold, Barlow Condensed, Barlow Condensed ExtraBold, Barlow Condensed Black. Local faces: normal / 500, normal / 600, normal / 700, normal / 800, normal / 900.
-- **DM Sans** is the CSS family alias for DM Sans 9pt. Local faces: normal / 100 900.
-
-The frontmatter expands real CSS font shorthands and preserves context-specific heading variants. The sidecar maps each role to its source selector. Missing values inherit from source context or browser defaults; no synthetic type scale is implied.
-- brand sup uses the font shorthand (`14px "DM Sans"`).
-- poster type h1 uses the font shorthand (`800 clamp(84px, 10.5vw, 150px)/0.83 "Barlow Condensed"`).
-- rhythm band uses the font shorthand (`700 36px/0.9 "Barlow Condensed"`).
-- section head h2 uses the font shorthand (`700 65px/0.9 "Barlow Condensed"`).
-- class list b uses the font shorthand (`600 35px "Barlow Condensed"`).
+Dela Gothic One (one weight) sets h1/h2 only, tracked at −0.01em and balanced, max 6rem. Outfit (300–800) does everything else: h3 at 650, body 17px at 1.6, measure held to ~70ch. Prices, times and spot counts use tabular numerals.
 
 ## Layout
 
-- **Dance poster**: padding (28px 4vw 32px); grid-template-columns (1.1fr 1fr); gap (20px).
-- **Class list article**: grid-template-columns (1fr 2.5fr 1fr); gap (25px); padding (25px 0).
-- **Studio**: padding (80px 5vw); grid-template-columns (1.4fr 1fr); gap (50px).
-
-Spacing entries in frontmatter are repeated authored gap/padding values, not a newly imposed scale. Breakpoint conditions: `(max-width: 650px)`, `(max-width: 800px)`, `(max-width: 550px)`.
-- @media (max-width: 650px): footer changes to flex-direction (column).
-- @media (max-width: 550px): dance poster changes to grid-template-columns (1fr); gap (30px).
-- @media (max-width: 550px): class list article changes to grid-template-columns (75px 1fr); gap (15px).
-- @media (max-width: 550px): studio changes to grid-template-columns (1fr); gap (25px).
-
-## Elevation & Depth
-
-No box-shadow declarations occur in the scanned stylesheets. Surface color, borders, imagery and composition provide separation.
-
-## Shapes
-
-The scanned stylesheet defines no border-radius values; preserve its existing geometry and border construction.
+A 1376px (86rem) wrap with fluid gutters. Home opens on a two-column hero (headline, tilted studio photo, "tonight on the floor" board) and alternates paper, ink and paper-2 bands of different density. The timetable is a seven-column board beside a sticky My week panel; below 1100px it collapses to day tabs, below 1200px the panel drops under the board. Style and event pages lead with a full-bleed photo and a facts strip.
 
 ## Components
 
-Filter the class timetable and choose a class locally.
+- **Class item**: time, title linked to its style, teacher/studio meta, level and spots (low counts highlighted), an Add toggle (`aria-pressed`) and an overlap warning.
+- **My week panel** (signature): pinned classes, cost bars for every pass that covers the habit, cheapest flagged, persisted in localStorage.
+- **Tap-tempo finder**: a round lime pad that turns taps into BPM and lights the matching styles on an authored SVG/CSS tempo map, with a ring pulsing at the tapped beat.
+- **Chips and toggles**: pill radio groups for styles, the month/6-month pass toggle.
+- **Forms**: labelled fields with hints, inline errors naming the fix, loading spinner and an `aria-live` confirmation.
+- **Buttons**: pill shaped, ink with lime text, line variant, lime variant on ink.
 
-### Navigation
+## Motion
 
-Authored nav styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Filter control
-
-Authored filters button styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Rhythm Band
-
-Authored rhythm band styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### Class List Button
-
-Authored class list button styles with representative text; React behavior remains in App.tsx. The sidecar preserves its source shape, palette, spacing and authored states.
-
-### State and motion
-
-- button:focus visible: outline (3px solid currentColor); outline-offset (5px).
-- button:disabled: opacity (0.55).
-- filters button[aria pressed="true"]: background (#4d42ba); color (white); border-color (#4d42ba).
-- class list button:hover: color (#4d42ba).
-- rhythm band span animation: `beat 2.5s cubic-bezier(0.16, 1, 0.3, 1) infinite alternate`.
-- Reduced motion: the source disables authored animations/transitions under `prefers-reduced-motion: reduce`.
+One rhythm language: pages enter with a short rise, the cobalt band scrolls style names like a marquee, the tap ring pulses at the tapped tempo and the logo's four count-in bars beat on hover. Everything is visible without JS; `prefers-reduced-motion` stops all animation and transitions.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preserve the sector-specific composition and local interaction described above.
-- Do use the observed font aliases with their bundled font files.
-- Do retain keyboard focus and the existing reduced-motion override.
-
-### Don't:
-- Don't substitute the gallery thumbnail palette for this page’s surface and text colors.
-- Don't make decorative motion necessary to understand or use a control.
-- Don't present a local demonstration confirmation as a real transaction.
+- Do keep lime for the poster moments and selection; never set body text in lime on paper.
+- Do keep real schedule data (times, spots, prices) in the first viewport of Home and Timetable.
+- Don't add eyebrow labels, section numbers or stat rows; headings carry the voice.
+- Don't round cards beyond 14px or add shadows; elevation comes from ink/lime surfaces and 1–2px rules.

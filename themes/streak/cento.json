@@ -1,0 +1,28 @@
+{
+  "number": 71,
+  "name": "Streak",
+  "sector": "Habit-tracking mobile app",
+  "category": "Technology",
+  "tagline": "Mark the day. Keep the chain.",
+  "description": "A habit-tracker app website built around authored CSS phone mockups: home with a tappable wall-calendar chain, features, pricing with a billing toggle, blog with filters, help centre with search, download page and support form.",
+  "tags": [
+    "Interactive chain calendar",
+    "CSS phone mockups",
+    "Help centre",
+    "Blog"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/features", "title": "Features" },
+    { "path": "/pricing", "title": "Pricing" },
+    { "path": "/blog", "title": "Blog" },
+    { "path": "/blog/grace-days", "title": "Blog post" },
+    { "path": "/help", "title": "Help centre" },
+    { "path": "/help/how-streaks-count", "title": "Help article" },
+    { "path": "/download", "title": "Download" },
+    { "path": "/about", "title": "About" },
+    { "path": "/contact", "title": "Contact support" }
+  ],
+  "colors": { "paper": "#f6f1e6", "ink": "#1b1e30", "accent": "#cf3a24" },
+  "fonts": ["Rubik"]
+}

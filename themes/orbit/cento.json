@@ -1,0 +1,29 @@
+{
+  "number": 2,
+  "name": "Orbit",
+  "sector": "Space launch startup",
+  "category": "Technology",
+  "tagline": "Orbit by the kilogram, on a manifest you can read a year ahead.",
+  "description": "A small-satellite launch company site: a live rideshare pricing calculator with an animated orbit diagram, a filterable launch manifest with T-minus countdowns, mission pages with generated patches and flight timelines, vehicle spec sheets with dimensioned elevation drawings, a reservation flow and careers with job applications.",
+  "tags": [
+    "Rideshare calculator",
+    "Launch manifest",
+    "Vehicle spec sheets",
+    "Mission patches"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/missions", "title": "Missions" },
+    { "path": "/missions/tandem-6", "title": "Mission" },
+    { "path": "/vehicles", "title": "Vehicles" },
+    { "path": "/vehicles/halcyon", "title": "Vehicle" },
+    { "path": "/manifest", "title": "Launch manifest" },
+    { "path": "/rideshare", "title": "Rideshare pricing" },
+    { "path": "/reserve", "title": "Reserve a launch" },
+    { "path": "/careers", "title": "Careers" },
+    { "path": "/careers/gnc-engineer", "title": "Job" },
+    { "path": "/about", "title": "About" }
+  ],
+  "colors": { "paper": "#f3f2ee", "ink": "#0b1622", "accent": "#ff5a1f" },
+  "fonts": ["Unbounded", "Onest"]
+}

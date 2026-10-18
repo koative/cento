@@ -1,28 +1,37 @@
 # Lumen
 
-A sculptural eyewear showroom with a live frame configurator.
+Glasses that fit your face, at one honest price. An eyewear brand website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: frame tray hero, itemised $145 order ticket, most-tried frames, face-shape teaser, sunglasses, lens guide teaser, eye exam steps, stores with live open status, reviews, eye-chart close
+- `/frames` — Frames: range toggle (all/optical/sun), face-shape, shape, material and width filters, sort
+- `/frames/:id` — Frame: live SVG front and measurement views, colour, size, lens type, lens index and light-reactive options, quantity, add to bag or buy now, specs, related frames
+- `/face-shapes` — Face-shape finder: three mirror questions or a direct pick, the result drawn as an outline you can try frames and colours on, guide to all six shapes
+- `/lenses` — Lens guide: lens types and prices, interactive lens thickness by index, how to read a prescription, what's included, FAQ
+- `/stores` — Stores: four stores with hours, open status and eye test prices
+- `/stores/:id` — Store: hours, directions, next free eye tests, optometrists, services
+- `/eye-test` — Eye test booking: store, test type, day and time slots, details, validation and confirmation
+- `/about` — Our story: origin, principles, timeline, team
+- `/cart` — Bag: persisted lines with quantity and removal
+- `/checkout` — Checkout: delivery or store collection, prescription entry (OD/OS SPH, CYL, AXIS, PD), payment fields, validation and order confirmation
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Build with `bun run build`. Publish `dist`; relative asset paths support subdirectory hosting.
-
-## Design and interaction
-
-An acid-chartreuse optical showroom: the entire first viewport is a large CSS dimensional frame display on a ruled product stage. Frame colors, sizes and lens tints update the product and cart summary live; technical measurements justify the stage guides.
-
-The controls demonstrate complete local state changes. All brands, people, addresses, prices, dates and offerings are fictional demo content. No information is submitted, no booking or order is made, and no service or advice is provided. Replace demo content and connect an appropriate backend before real use.
+Build with `bun run build`: static output in `dist/`, and the relative base works in any subfolder.
 
 ## Customize
 
-Edit `src/App.tsx` for content and behavior, `src/styles.css` for styles, and `index.html` for metadata. React, TypeScript, Vite and Lucide icons. Keyboard focus, semantic controls, mobile layouts and reduced-motion preferences are supported.
+`src/content.ts` holds all copy and data (frames, lenses, face shapes, stores, exams, about), `src/styles.css` the design system (tokens at `:root`), `src/assets` the imagery.
 
-## Assets
+## Demo behaviour
 
-Self-hosted space and dm fonts copied from the collection's licensed assets; OFL notices in `src/assets/fonts`. Lucide icons are ISC licensed. Photos are bundled from Unsplash under its license and are illustrative, without endorsement:
+The bag is saved in `localStorage` (and still works for the visit when storage is blocked). Frame options, the face-shape finder, the lens thickness slider, filters, eye-test booking, checkout and the newsletter form all run locally: forms validate in the browser and show a confirmation, but nothing is sent, booked or charged. Lumen, its stores, people, prices and reviews are fictional.
 
-- `portrait.jpg`: https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1400&q=85
+## Credits
+
+Font: Host Grotesk (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

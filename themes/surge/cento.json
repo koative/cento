@@ -1,0 +1,22 @@
+{
+  "number": 76,
+  "name": "Surge",
+  "sector": "Growth marketing agency",
+  "category": "Services",
+  "tagline": "Growth you can read in the numbers.",
+  "description": "A growth marketing agency site built like a weekly experiment readout: services with scope pages, filterable case studies with experiment logs and funnels, an interactive 12-month ROI model that attaches to a validated proposal form, plus approach and team pages.",
+  "tags": ["ROI model", "Experiment readouts", "Case studies", "Proposal form"],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/services", "title": "Services" },
+    { "path": "/services/conversion", "title": "Service" },
+    { "path": "/work", "title": "Case studies" },
+    { "path": "/work/halfmoon-coffee", "title": "Case study" },
+    { "path": "/roi", "title": "ROI model" },
+    { "path": "/approach", "title": "Approach" },
+    { "path": "/team", "title": "Team" },
+    { "path": "/proposal", "title": "Request a proposal" }
+  ],
+  "colors": { "paper": "#f4f3ee", "ink": "#111412", "accent": "#d7ff3c" },
+  "fonts": ["Kanit", "Inter Tight"]
+}

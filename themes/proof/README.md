@@ -1,32 +1,37 @@
 # Proof
 
-A daily bakery order sheet with loaf quantities and a pickup receipt.
+Baked before you're up. Ready when you are. An artisan bakery website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Run independently
+## Pages
+
+- `/` — Home: hero with the first bake time, letterboard of today's oven loads, order-ahead favourites, the 36-hour loaf, how pickup works, upcoming classes, wholesale band, a regular's quote, visit close
+- `/today` — Today's bake: the oven board (scrub a clock through the day's oven loads), what's on the counter and what isn't baked today
+- `/shop` — Order ahead: category and dietary filters, search, sort
+- `/shop/:id` — Product: sizes, slicing/bake options, cake message, quantity, notice and bake days, allergens, specs, related items
+- `/classes` — Classes: level filter, next open date per class
+- `/classes/:id` — Class: agenda, take-home list, seat booking with per-date availability
+- `/wholesale` — Wholesale: who we bake for, trade price list, delivery rounds, terms, trial-delivery enquiry form
+- `/about` — Our story: timeline, how we bake, the bakers
+- `/visit` — Visit & FAQ: live open/closed state, hours, authored street map, access notes, FAQ
+- `/cart` — Bag: quantities, earliest pickup day
+- `/checkout` — Pickup checkout: pickup planner (only days the whole bag can be baked), hourly windows, validation, confirmation
+
+## Run
 
 ```sh
-bun install
-bun run dev
+bun install && bun run dev
 ```
 
-Build with `bun run build`. Deploy `dist/` to any static host. Relative Vite asset paths support subdirectories.
+Build with `bun run build` — static output in `dist/`; the relative base works in any subfolder.
 
-## Design and interactions
+## Customize
 
-Bakery order ledger with honey paper and flour-white typography. Bread photograph slowly unfolds; quantities produce a clear itemized local receipt.
+`src/content.ts` holds all copy and data (products, bake schedule, hours, classes, wholesale prices, FAQ). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
-Edit `src/App.tsx` for content and behavior, `src/styles.css` for the design system, and `index.html` for metadata. React, TypeScript, Vite and Lucide icons. No backend required.
+## Demo behaviour
 
-## Accessibility
+The bag is kept in `localStorage` (and still works for the visit without it). Checkout reserves nothing: it validates the form, checks pickup days against each item's notice and bake days, shows a confirmation and empties the bag. Class booking, the wholesale enquiry and the newsletter form validate and confirm locally; nothing is sent, charged or stored anywhere. Proof, its people, prices and reviews are fictional.
 
-Semantic landmarks, visible focus, labeled controls, mobile reflow and reduced-motion preferences. All interaction state is local to this visit and resets on reload.
+## Credits
 
-## Demonstration content
-
-All brands, people, schedules, products, prices and availability are fictional sample content. No booking, payment, message, or personal data leaves the page. Replace example content and connect your own services for production.
-
-## Assets
-
-Fonts are self-hosted in `src/assets/fonts/`, copied from the collection's nocturne template with their OFL notices. DM Sans is also bundled. Fonts originate from [Google Fonts](https://fonts.google.com/). Icons: [Lucide](https://lucide.dev/), ISC license. Original vector diagrams and CSS graphics are part of this MIT-licensed template.
-
-Photography `bread.jpg`: [photo-1509440159596-0249088772ff](https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&q=85), [Unsplash license](https://unsplash.com/license). Bundled locally; illustrative use does not imply endorsement.
+Fonts: Caprasimo and Nunito (SIL Open Font License). Images: see `src/assets/SOURCES.md`. Icons: Lucide (ISC). Code: MIT.

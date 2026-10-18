@@ -1,0 +1,28 @@
+{
+  "number": 67,
+  "name": "Tilde",
+  "sector": "Developer portfolio",
+  "category": "Creative",
+  "tagline": "I build the slow, careful parts of fast software.",
+  "description": "A multi-page portfolio for an independent engineer, set like a man page: a working shell over the site's content, filterable projects with case studies (pipeline diagrams, benchmark tables, code), a writing archive with posts, uses with a dotfiles browser, a résumé that switches to resume.json, and a validated contact form.",
+  "tags": [
+    "Working shell",
+    "Case studies",
+    "Dotfiles browser",
+    "resume.json view"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/projects", "title": "Projects" },
+    { "path": "/projects/loam", "title": "Case study" },
+    { "path": "/writing", "title": "Writing" },
+    { "path": "/writing/your-sync-engine-is-a-database", "title": "Post" },
+    { "path": "/uses", "title": "Uses" },
+    { "path": "/resume", "title": "Résumé" },
+    { "path": "/about", "title": "About" },
+    { "path": "/now", "title": "Now" },
+    { "path": "/contact", "title": "Contact" }
+  ],
+  "colors": { "paper": "#f3f1ea", "ink": "#161618", "accent": "#2438c4" },
+  "fonts": ["DM Mono", "Schibsted Grotesk"]
+}

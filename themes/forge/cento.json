@@ -1,0 +1,26 @@
+{
+  "number": 32,
+  "name": "Forge",
+  "sector": "Precision manufacturing",
+  "category": "Industry",
+  "tagline": "Machined to print. Shipped on the date we quote.",
+  "description": "A contract CNC machining shop: filterable capabilities with work-envelope diagrams, a live part configurator that redraws a dimensioned drawing and prices it, industries, a quality page with a ballooned first-article report, and an RFQ form with file upload and validation.",
+  "tags": [
+    "Part configurator",
+    "RFQ with file upload",
+    "First-article report",
+    "Capability filters"
+  ],
+  "pages": [
+    { "path": "/", "title": "Home" },
+    { "path": "/capabilities", "title": "Capabilities" },
+    { "path": "/capabilities/five-axis-milling", "title": "Capability" },
+    { "path": "/configurator", "title": "Part configurator" },
+    { "path": "/industries", "title": "Industries" },
+    { "path": "/quality", "title": "Quality" },
+    { "path": "/about", "title": "About & careers" },
+    { "path": "/rfq", "title": "Request a quote" }
+  ],
+  "colors": { "paper": "#f1f0ea", "ink": "#15181b", "accent": "#1d47a3" },
+  "fonts": ["Chivo", "Chivo Mono"]
+}

@@ -1,54 +1,35 @@
 # Forma
 
-Architecture / portfolio template from the Elseform collection. Built with React, TypeScript, Vite, and Lucide icons.
+Architecture built around the light. An architecture studio website template from [Cento](https://koative.github.io/cento/) by Koative.
 
-## Design
+## Pages
 
-Warm bone paper, charcoal ink, Manrope display typography, and asymmetric photographic index. A clipped photograph reveal and restrained project-row motion reinforce the architectural composition.
+- `/` — Home: featured-project hero with title block and switcher, recent work, the studio's questions, interactive light study, building types, six-stage ruler, studio strip, awards, journal, closing call to action
+- `/projects` — Projects: register table with hover preview or photo plates, filter by building type, search by place or material, sort by name, area or year
+- `/projects/:slug` — Project case page (nine projects): cover, facts sheet, story sections with images, light study of a key room, materials schedule, client quote, related journal entries, previous/next and more projects
+- `/studio` — Studio: intro, principles, people, awards, press and careers
+- `/process` — Process and fees: fee-share bar, six stages with durations and deliverables, fee table, FAQ disclosures
+- `/journal` — Journal: category filter, lead entry and list
+- `/journal/:slug` — Journal entry (six entries): article with headings and pull quote, related project
+- `/contact` — Start a project: validated enquiry form (building type, site, start, budget, brief) with loading and success states, studio details
+- Any unknown route — Page not found
 
-**Type:** Manrope and DM Sans. Fonts are sourced from Google Fonts and bundled locally.
-
-- Background: `#eeeee8`
-- Ink: `#292b26`
-- Contact Surface: `#d9ddcd`
-
-## Run independently
+## Run
 
 ```sh
-bun install
-bun run dev
-bun run build
-bun run preview
+bun install && bun run dev
 ```
 
-The relative Vite base supports deployment at `/elseform/themes/forma/` or another subdirectory. The theme has no dependency on the gallery or other templates. `src/main.tsx` is the entry point. Edit `src/App.tsx` for content and `src/styles.css` for the visual system.
+Build with `bun run build`: static output in `dist/`, and the relative base works from any subfolder.
 
-## Working interactions
+## Customize
 
-- Switch the hero photograph between three projects.
-- Filter the project index by discipline, then expand a project for more detail.
-- Submit the local inquiry form to display an explicit demonstration confirmation.
+`src/content.ts` holds all copy and data (studio, projects, sections for the light study, people, fees, posts). `src/styles.css` holds the design system, tokens at `:root`. Imagery lives in `src/assets` (credits in `src/assets/SOURCES.md`).
 
-State is held in memory and resets on reload. Forms use native validation; no server, payment processor, or external message service is connected. All business names, projects, prices, offerings, and availability are **fictional demonstration content**. Replace these and connect your own services before production use.
+## Demo behaviour
 
-## Accessibility and motion
+The light study computes the sun's position for each project's latitude and draws how far direct sun reaches into a room section; it can be scrubbed or played through the day for midwinter, equinox and midsummer. Project filters, search, sort and view mode run in local state, the enquiry and newsletter forms validate in the browser and show a confirmation, and nothing is sent, stored or charged. Forma, its people, projects and awards are fictional.
 
-Semantic navigation and forms, visible keyboard focus, accessible button names, pressed/expanded control states, explicit confirmation messages, mobile reflow, and `prefers-reduced-motion` support. Photographs include descriptive alternative text. The intentionally authored motion is disabled for reduced-motion preferences.
+## Credits
 
-## Photography and icons
-
-The following photographs are stored locally under `src/assets` and imported by Vite, so nested deployments do not depend on remote photo URLs. Sources:
-
-- [house — original Unsplash image](https://images.unsplash.com/photo-1600607687939-ce8a6c25118c)
-- [interior — original Unsplash image](https://images.unsplash.com/photo-1600210492486-724fe5c67fb0)
-- [building — original Unsplash image](https://images.unsplash.com/photo-1511818966892-d7d671e672a2)
-
-Photography: [Unsplash license](https://unsplash.com/license). Fonts: [Google Fonts](https://fonts.google.com/), under the respective open font licenses. Icons: [Lucide](https://lucide.dev/), ISC license. Verify the terms for your intended use and replace editorial demonstration photographs before using them to imply a real business, product, or property.
-
-## Validation
-
-Standalone production build verified with `bun run build`. Collection-wide responsive and interaction verification is maintained at the repository level.
-
-## Self-hosted fonts
-
-Fonts are bundled under `src/assets/fonts/`, with their OFL license notices. No external font service is needed at runtime.
+Fonts: Familjen Grotesk and Newsreader (SIL Open Font License). Images: see `src/assets/SOURCES.md` (CC0). Icons: Lucide (ISC). Code: MIT.
