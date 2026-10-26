@@ -1,7 +1,7 @@
 import { ArrowRight, Trash2 } from "lucide-react";
 import { Link } from "../router";
 import { Qty } from "../components/Qty";
-import { money, setQty, subtotal, useCart } from "../lib/cart";
+import { count, money, setQty, subtotal, useCart } from "../lib/cart";
 
 export function Cart() {
   const cart = useCart();
@@ -51,7 +51,11 @@ export function Cart() {
                       value={l.qty}
                       onChange={(n) => setQty(l.key, n)}
                       label={`${l.piece.unit ?? "piece"}s of ${l.piece.name}`}
-                      max={l.piece.available}
+                      max={
+                        l.qty +
+                        l.piece.available -
+                        count(cart.filter((o) => o.id === l.id))
+                      }
                     />
                   ) : (
                     <span className="quiet">One of a kind</span>

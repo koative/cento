@@ -13,12 +13,17 @@ export type Line = Stored & {
 const STORAGE_KEY = "patina-cart";
 const listeners = new Set<() => void>();
 
+/** Every finish of a piece draws on the same stock, so lines share one budget per piece. */
 function hydrate(stored: Stored[]): Line[] {
+  const left = new Map<string, number>();
   return stored.flatMap((s) => {
     const piece = pieceById(s.id);
     const finish = piece?.options.find((o) => o.id === s.option);
     if (!piece || !finish || piece.sold) return [];
-    const qty = Math.min(Math.max(1, s.qty), piece.available);
+    const budget = left.get(piece.id) ?? piece.available;
+    const qty = Math.min(Math.max(1, s.qty), budget);
+    if (qty < 1) return [];
+    left.set(piece.id, budget - qty);
     return [
       {
         ...s,
@@ -44,18 +49,18 @@ function load(): Line[] {
 
 let lines = load();
 
+const stored = (): Stored[] =>
+  lines.map(({ id, option, qty }) => ({ id, option, qty }));
+
 function save(next: Stored[]) {
   lines = hydrate(next);
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(stored()));
   } catch {
     /* storage unavailable: the cart still works for this visit */
   }
   listeners.forEach((l) => l());
 }
-
-const stored = (): Stored[] =>
-  lines.map(({ id, option, qty }) => ({ id, option, qty }));
 
 export function useCart() {
   return useSyncExternalStore(
