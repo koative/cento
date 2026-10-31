@@ -209,4 +209,4 @@ The gallery reads each template's `themes/<slug>/cento.json`, so a new folder wi
 
 Code is MIT. Photographs, fonts and icons keep their own licences: see [ASSETS.md](ASSETS.md) and each template's `src/assets/SOURCES.md`. Every brand, person, price and figure in the templates is fictional.
 
-Made by [Koray Güler](https://koray.dev) at [koative](https://koative.com)
+Made by [koative](https://koative.com)
