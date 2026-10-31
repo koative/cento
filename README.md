@@ -6,7 +6,7 @@
 
 One hundred complete, multi-page website templates — each a different world. Browse them live, preview every page, take the code with one command.
 
-**[Browse the templates →](https://cento.koative.com/)** · by **[Koative](https://koative.com)**
+**[Browse the templates →](https://cento.koative.com/)**
 
 ![React](https://img.shields.io/badge/React-19-20232a?logo=react&logoColor=61dafb)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)
@@ -208,3 +208,5 @@ The gallery reads each template's `themes/<slug>/cento.json`, so a new folder wi
 ## Credits
 
 Code is MIT. Photographs, fonts and icons keep their own licences: see [ASSETS.md](ASSETS.md) and each template's `src/assets/SOURCES.md`. Every brand, person, price and figure in the templates is fictional.
+
+Made by [Koray Güler](https://koray.dev) at [koative](https://koative.com)
