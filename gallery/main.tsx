@@ -739,10 +739,6 @@ function App() {
           </a>
           <p>
             Made by{" "}
-            <a href="https://koray.dev/" target="_blank" rel="noreferrer">
-              Koray Güler
-            </a>{" "}
-            at{" "}
             <a href="https://koative.com/" target="_blank" rel="noreferrer">
               koative
             </a>
