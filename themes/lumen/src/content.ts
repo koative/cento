@@ -1148,3 +1148,6 @@ export const footer = {
   newsletter:
     "New frames, store openings and the occasional lens explainer. About once a month.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

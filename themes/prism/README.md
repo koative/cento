@@ -28,6 +28,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (speakers, sessions, passes, editions, venue, partners), `src/styles.css` the design system (tokens at `:root`, track colours as `--t-*`), and `src/assets` the imagery.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The agenda builder stores your picks in `localStorage` (and keeps working without it), draws them on a timeline, flags overlapping sessions and downloads a real `.ics` calendar file. Ticket pricing, team discounts, registration, the partner enquiry and the newsletter sign-up all validate in the browser and show a confirmation, but nothing is sent, booked or charged anywhere. Prism, its people, partners and venue are fictional.

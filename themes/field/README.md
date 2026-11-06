@@ -26,6 +26,8 @@ Build with `bun run build`: static output in `dist/`; the relative base works in
 
 `src/content.ts` holds all copy and data (teams, squads, fixtures, tables, fees, coaching, news, club). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The team sheet changes formation, shows player stats and swaps substitutes in local state. Fixtures, teams and news filter in the page. The registration form validates in the browser, picks eligible teams from the date of birth and shows a confirmation; the newsletter form confirms locally. Nothing is sent, stored or charged, and Field United, its people, fixtures and fees are fictional.

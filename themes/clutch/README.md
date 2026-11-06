@@ -25,6 +25,8 @@ bun install && bun run dev (build: bun run build — static output in dist/, rel
 
 content.ts (all copy and data), styles.css (tokens at :root), src/assets (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The round-by-round replay plays, steps and scrubs through each map's rounds from local data. The bag is stored in `localStorage` (and keeps working without it); checkout, the partner enquiry and the matchday email validate in the browser and show a confirmation, but nothing is sent, charged or stored on a server. The calendar button generates an `.ics` file locally. Clutch, its players, opponents, leagues, games and partners are fictional.

@@ -1466,3 +1466,6 @@ export const newsletter = {
   title: "The Monday Smash",
   text: "One email a week: the special, where the Truck is parking, and the occasional free-fries code.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

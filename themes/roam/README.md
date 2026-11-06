@@ -22,6 +22,8 @@ bun install && bun run dev (build: bun run build — static output in dist/, rel
 
 content.ts (all copy and data), styles.css (tokens at :root), src/assets (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The booking keeps its draft in sessionStorage, prices every line (weekly rate, deal rules, cover, extras, young-driver and one-way fees, airport fee, sales tax) in the browser, validates each step and ends on a confirmation key tag; deal codes are checked against the dates, car and stations you chose. The bag planner, fleet filters, FAQ search and footer sign-up all run locally. Nothing is sent, booked or charged, and Roam is a fictional brand.

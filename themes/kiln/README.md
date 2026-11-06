@@ -28,6 +28,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` (all copy and data: products, glazes, clays, workshops, journal, studio), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The bag is kept in `localStorage` (and still works for the visit if storage is unavailable). Adding objects from the shop or made-to-order pieces from the glaze bench updates the header count, the checkout validates its fields and shows an order confirmation, workshop booking validates and confirms with a reference, and the footer sign-up confirms inline. Nothing is sent anywhere, nothing is charged, and Kiln and everyone in it are fictional.

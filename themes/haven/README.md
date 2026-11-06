@@ -29,6 +29,8 @@ Build with `bun run build`: static output in `dist/`; the relative base works in
 
 `src/content.ts` holds all copy and data (brand, rooms, peaks, rates, menus, experiences, journal). `src/styles.css` holds the design system with tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The availability calendar is generated locally from each room's base rate, seasonal opening dates and a stable pseudo-random occupancy, so the same nights are free on every visit. The booking flow, newsletter form and validation run entirely in the browser: nothing is sent, stored or charged, and the confirmation reference is made up. Haven, its people, prices and the Val Teria are fictional.

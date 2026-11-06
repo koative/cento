@@ -1406,3 +1406,6 @@ export const notificationOptions = [
   { id: "wip", label: "A column passes its WIP limit", on: true },
   { id: "digest", label: "Monday planning digest by email", on: false },
 ];
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

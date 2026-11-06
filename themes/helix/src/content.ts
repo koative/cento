@@ -37,7 +37,6 @@ export const brand = {
     "48 Tremont Works, Bay 3",
     "Boulder, CO 80301",
   ],
-  gallery: "https://cento.koative.com/",
 };
 
 export type NavItem = { to: string; label: string };
@@ -1389,3 +1388,6 @@ export const notFound = {
   heading: "This page decohered.",
   lead: "The address does not match any page on the site. It may have moved when we reorganised the papers library.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

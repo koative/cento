@@ -1381,3 +1381,6 @@ export const quotePage = {
   title: "Get a quote",
   text: "Four short steps. Your schedule builds itself on the right as you go, and the price is the price — no call needed.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

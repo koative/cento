@@ -28,6 +28,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (chapters, articles, flows, status incidents, threads, team). `src/styles.css` holds the design tokens at `:root`. `src/assets` holds the sources list; every graphic is authored SVG in `src/components`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Search, filters, the troubleshooter, votes and every form run entirely in the browser. Opening a ticket, posting a question or reply, subscribing and sending article feedback only show their success states: nothing is sent, stored or charged. Counter, its products, prices, people and incidents are fictional.

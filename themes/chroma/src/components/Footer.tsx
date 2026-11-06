@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Link } from "../router";
-import { brand, days, footer, hours } from "../content";
+import { brand, days, footer, hours, credit } from "../content";
 import { hoursLabel } from "../lib/plan";
 import { pause } from "../lib/form";
 import { Wordmark } from "./Wordmark";
@@ -151,9 +151,13 @@ export function Footer() {
       </div>
       <div className="wrap footer-base">
         <p>
-          {brand.name} is a fictional brand — a{" "}
-          <a href="https://cento.koative.com/">Cento</a> template by
-          Koative.
+          {brand.name} is a fictional brand.
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
         <p>Newsletter and booking forms are demonstrations; nothing is sent.</p>
       </div>

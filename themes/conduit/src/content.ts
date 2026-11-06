@@ -1658,3 +1658,6 @@ export const traffic = [
   [2560, 6],
   [2140, 5],
 ] as [number, number][];
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

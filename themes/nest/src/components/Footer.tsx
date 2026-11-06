@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { Instagram, Facebook } from "lucide-react";
 import { Link } from "../router";
-import { brand, rooms } from "../content";
+import { brand, rooms, credit } from "../content";
 import { Logo } from "./Logo";
 
 const columns = [
@@ -146,9 +146,13 @@ export function Footer() {
       </div>
       <div className="wrap footer-base">
         <p>
-          {brand.name} is a fictional brand — a{" "}
-          <a href="https://cento.koative.com/">Cento</a> template by
-          Koative.
+          {brand.name} is a fictional brand.
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
         <p>
           © {new Date().getFullYear()} {brand.name} Nursery. Sample content

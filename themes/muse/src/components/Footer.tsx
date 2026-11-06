@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "../router";
-import { brand, categories, footer, stores } from "../content";
+import { brand, categories, footer, stores, credit } from "../content";
 import { validate, type Errors } from "./Field";
 
 export function Footer() {
@@ -108,9 +108,13 @@ export function Footer() {
           Muse
         </span>
         <p>
-          {brand.name} is a fictional brand — a{" "}
-          <a href="https://cento.koative.com/">Cento</a> template by
-          Koative.
+          {brand.name} is a fictional brand.
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
       </div>
     </footer>

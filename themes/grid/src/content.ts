@@ -30,7 +30,6 @@ export const brand = {
     ["Sunday", "Closed · monitoring alerts 24/7"],
   ] as [string, string][],
   licence: "Licensed electrical contractor no. EC-48213",
-  gallery: "https://cento.koative.com/",
 };
 
 export type NavItem = { to: string; label: string };
@@ -1101,3 +1100,6 @@ export const quotePage = {
 };
 
 export const notFound = { title: "Page not found" };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

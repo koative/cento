@@ -26,6 +26,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Marked frames and the print order are kept in `localStorage` (the site still works without storage). The order checkout, contact enquiry and studio-letter signup validate locally and show a confirmation; nothing is sent, charged or stored on a server. Noor Halvorsen, Frame and every client, price and date are fictional.

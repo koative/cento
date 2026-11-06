@@ -26,6 +26,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` holds all copy and data (artists, stages, set times, tickets, places, FAQ, team). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Timetable picks and the ticket order are kept in `localStorage` (the site still works when storage is blocked). Checkout and the newsletter form validate in the browser and show a confirmation; nothing is sent, booked or charged. Pulse, its artists, venue and people are fictional.

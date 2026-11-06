@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { Facebook, Instagram, Youtube } from "lucide-react";
 import { Link } from "../router";
-import { brand, footer, sitemap } from "../content";
+import { brand, footer, sitemap, credit } from "../content";
 import { pause, validate } from "../lib/util";
 import { Field, useErrors } from "./Field";
 import { Mark } from "./Logo";
@@ -115,9 +115,13 @@ export function Footer() {
       </div>
       <div className="wrap footer-base">
         <p>
-          {brand.name} is a fictional brand — a{" "}
-          <a href="https://cento.koative.com/">Cento</a> template by
-          Koative.
+          {brand.name} is a fictional brand.
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
         <p>{brand.charity}</p>
       </div>

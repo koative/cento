@@ -26,6 +26,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The configurator, range estimator and charging calculator compute everything in the browser from the data in `content.ts`; the current build is kept in `localStorage` (and works without it). The reservation, test-drive and newsletter forms validate locally and show a confirmation, but nothing is sent, booked or charged. Vector, its cars, people, prices and figures are fictional.

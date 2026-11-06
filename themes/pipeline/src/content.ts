@@ -1497,3 +1497,6 @@ export const notFound = {
   h1: "This page fell out of the pipeline.",
   body: "The link may be old, or the page was never qualified. Try the board instead.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

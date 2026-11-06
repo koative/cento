@@ -1174,3 +1174,6 @@ export const homeSections = {
     "Twenty-four people work at Nest. Here are the ones you'll see at the door every morning.",
   closeTitle: "Come and see a normal Tuesday.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

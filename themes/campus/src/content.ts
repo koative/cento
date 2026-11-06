@@ -1294,3 +1294,6 @@ export const notFound = {
   heading: "This page isn't on the syllabus.",
   text: "The link may be old, or the course may have moved. Try the catalogue, or head back to the start.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

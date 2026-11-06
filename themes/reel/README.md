@@ -24,6 +24,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (films, trailer shots and subtitles, team, services, rates, screenings, licences, FAQ). `src/styles.css` starts with the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The trailer player cuts a silent trailer from each film's stills: shots drift and dissolve on a timeline you can scrub, with subtitles, a transcript that jumps to each line, keyboard controls and full screen. Filters, the enquiry form and the newsletter sign-up all run locally in the browser: nothing is sent, booked or charged. Reel, its films, people, venues, festivals and quotes are fictional.

@@ -1424,3 +1424,6 @@ export const about = {
   pitch:
     "We open for new show pitches twice a year. Send one paragraph about the show, one about why you should host it, and a ten-minute recording of anything at all.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

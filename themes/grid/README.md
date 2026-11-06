@@ -28,6 +28,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data, including the energy model rates and prices), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The planner saves your roof layout, orientation, bill, batteries and EV choice in `localStorage` (it falls back to memory if storage is blocked) and carries them into the financing calculator and the quote form. All estimates come from a simple average-day model with illustrative rates. The quote and newsletter forms validate in the browser, show a short sending state and a confirmation; nothing is sent, booked or charged anywhere. Grid, its people, customers, prices and products are fictional.

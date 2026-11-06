@@ -1,5 +1,5 @@
 import { Link } from "../router";
-import { brand, footer } from "../content";
+import { brand, footer, credit } from "../content";
 import { Logo } from "./Logo";
 import { EMAIL, Field, useForm } from "./form";
 
@@ -76,9 +76,13 @@ export function Footer() {
 
       <div className="wrap footer-base">
         <p>
-          {brand.name} is a fictional brand — a{" "}
-          <a href="https://cento.koative.com/">Cento</a> template by
-          Koative.
+          {brand.name} is a fictional brand.
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
         <ul className="socials">
           {brand.socials.map((s) => (

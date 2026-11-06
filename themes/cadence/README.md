@@ -30,6 +30,8 @@ Build: `bun run build` — static output in `dist/`, relative base works in any 
 
 `src/content.ts` (all copy and data), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The loop composer, pricing toggle, filters, forms and the whole `/app` workspace run in the browser only. Moving candidates, adding notes and submitting scorecards update in-memory demo state that resets on reload; the booking, sign-in and newsletter forms validate and confirm locally. Nothing is sent, stored on a server or charged. Cadence, its customers, people, prices and figures are fictional.

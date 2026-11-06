@@ -29,6 +29,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The bag is kept in `localStorage` (and still works for the visit if storage is unavailable). The ritual builder, filters, checkout and newsletter run entirely in the browser: checkout validates every field and shows a confirmation, but nothing is sent, stored on a server or charged. Aura, its people, products, prices and reviews are fictional demonstration content, and the ritual builder is a cosmetic guide, not medical advice.

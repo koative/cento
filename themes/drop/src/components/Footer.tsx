@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "../router";
-import { brand, footer } from "../content";
+import { brand, footer, credit } from "../content";
 import { Logo } from "./Header";
 
 const columns = [
@@ -122,9 +122,14 @@ export function Footer() {
         </form>
       </div>
       <p className="footer-legal">
-        {brand.name} is a fictional brand — a{" "}
-        <a href="https://cento.koative.com/">Cento</a> template by
-        Koative. Nothing on this site is sold, sent or charged.
+        {brand.name} is a fictional brand. Nothing on this site is sold, sent or
+        charged.
+        {credit && (
+          <>
+            {" "}
+            <a href="https://cento.koative.com/">{credit}</a>
+          </>
+        )}
       </p>
     </footer>
   );

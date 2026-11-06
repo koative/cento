@@ -26,6 +26,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (brand, capabilities, industries, quality, configurator materials, finishes and tolerances). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`. The illustrative pricing model is in `src/lib/part.ts`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The configurator prices parts with an illustrative formula in the browser and can download a plain-text spec or attach the part to the RFQ form. The RFQ and newsletter forms validate locally, show a loading state and a confirmation; no file is uploaded, nothing is sent, quoted or charged. Forge Precision Works, its people, customers, certifications registrars and figures are fictional.

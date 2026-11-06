@@ -1372,3 +1372,6 @@ export const pagesCopy = {
       "Drop in to give cash, borrow a collection tin, ask about a grant, or just see the board up close.",
   },
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

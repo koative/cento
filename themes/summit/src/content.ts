@@ -1863,3 +1863,6 @@ export const visit = {
     weekend: [30, 46, 64, 80, 88, 86, 78, 70, 60, 52, 40, 24],
   },
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

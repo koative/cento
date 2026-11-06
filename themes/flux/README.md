@@ -34,6 +34,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data: connectors, templates, plans, stories, demo workflows and runs), `src/styles.css` (tokens at `:root`), `src/assets` (sources list; the theme uses no raster images).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Test runs walk each workflow's steps locally against a sample record and show where a condition stops it. The demo workspace keeps your edits, new workflows from templates, switches, replays, connections and invites in memory for the session; reloading resets it. Forms validate in the browser and show a confirmation, but nothing is sent, charged or connected anywhere. Flux, its connectors, customers and people are fictional.

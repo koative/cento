@@ -28,6 +28,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (destinations, journeys, articles, planners, fees, FAQ). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The planner keeps your draft route in `localStorage` (and still works without storage), plots it on the chart and prices it with illustrative nightly rates. "Send this route to a planner" attaches the route to the enquiry form, which validates every field and shows a reference number on success; the footer newsletter validates and confirms in place. Nothing is sent, booked or charged anywhere, and Odyssey, its planners, prices and travellers are fictional.

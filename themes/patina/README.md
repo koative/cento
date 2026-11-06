@@ -24,6 +24,8 @@ Furniture with a past, measured and mended for its next room. A vintage furnitur
 
 `src/content.ts` (all copy and data), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The cart is stored in `localStorage` (and still works for the visit if storage is blocked). Filters, finish options, the fit check, the restoration estimate and every form run entirely in the browser: forms validate and show a success state, checkout shows a confirmation, but nothing is sent, uploaded, reserved or charged. Patina, its people, pieces and prices are fictional.

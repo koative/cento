@@ -26,6 +26,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (exhibits, floor-map layout, tickets, events, programmes, packages, team). `src/styles.css` holds the design tokens at `:root`, including the wayfinding swatches. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The family day plan (ages, arrival time and chosen galleries) is saved in `localStorage` and builds a timed route with a lunch break; the ticket, school-trip, party and newsletter forms validate in the browser, show a sending state and a confirmation. Nothing is sent, reserved or charged, and Fable is a fictional museum.

@@ -1402,3 +1402,6 @@ export const newsletter = {
   title: "Launch alerts",
   text: "One email when a launch date is set or moves, and a link to the webcast. No marketing.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

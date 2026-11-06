@@ -25,6 +25,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data: brand, services, case studies, team, roles, brief options), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The brief builder updates its brief sheet as you type, estimates the team, length and starting fee from the chosen disciplines, warns when the budget sits below that fee, validates every step and ends on a confirmation with a brief number. Role pages carry a validated application form, the footer has a newsletter sign-up and the work index filters, searches, sorts and switches views. Nothing is sent, stored or charged anywhere, and Atelier, its clients and its people are fictional.

@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Link } from "../router";
-import { brand, footerColumns, destinations } from "../content";
+import { brand, footerColumns, destinations, credit } from "../content";
 import { Logo } from "./Header";
 
 function Dispatch() {
@@ -106,9 +106,13 @@ export function Footer() {
       </div>
       <div className="wrap footer-base">
         <p>
-          {brand.name} is a fictional brand — a{" "}
-          <a href="https://cento.koative.com/">Cento</a> template by
-          Koative.
+          {brand.name} is a fictional brand.
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
         <ul className="social">
           {brand.social.map((s) => (

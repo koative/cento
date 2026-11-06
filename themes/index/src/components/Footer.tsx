@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { brand, footerColumns, hours, socials } from "../content";
+import { brand, footerColumns, hours, socials, credit } from "../content";
 import { Link } from "../router";
 import { hoursLabel } from "../lib/format";
 import { Logo } from "./Header";
@@ -101,9 +101,13 @@ export function Footer() {
 
       <div className="footer-base">
         <p>
-          {brand.name} is a fictional brand — a{" "}
-          <a href="https://cento.koative.com/">Cento</a> template by
-          Koative.
+          {brand.name} is a fictional brand.
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
         <ul className="socials">
           {socials.map((s) => (

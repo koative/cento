@@ -1317,3 +1317,6 @@ export const home = {
   closeLede:
     "Juniors and minis train free for two weeks. Adults can come to any open session before deciding. Fees from £4.50 a month, and nobody misses out because of cost.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

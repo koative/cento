@@ -14,7 +14,6 @@ export const brand = {
     "410 Harbor Row, Suite 6",
     "Portland, OR 97209",
   ],
-  gallery: "https://cento.koative.com/",
 };
 
 export type NavItem = { to: string; label: string };
@@ -1828,3 +1827,6 @@ export const notFound = {
   heading: "No access path leads here",
   text: "This page was moved, renamed, or never existed. The pages below are all still granted.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

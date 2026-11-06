@@ -26,6 +26,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (brand, services, clinicians and their weekly schedules, locations and hours, patient info). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Open appointment times are generated locally from each clinician’s weekly schedule and the clinic’s opening hours, with a fixed pseudo-random pattern of already-booked slots. Booking validates the form, shows a short loading state, then stamps the appointment card with a demo reference; the newsletter form validates and confirms. Nothing is sent, stored, booked or charged, nothing on the site is medical advice, and Solace and everyone named in it are fictional.

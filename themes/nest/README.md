@@ -26,6 +26,8 @@ Build: `bun run build` — static output in `dist/`, the relative base works in 
 
 `src/content.ts` (all copy and data: rooms, sessions and prices, day plans, team, menu, policies, tours), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The fees calculator, age finder, day timeline, packing checklist, tour booking and newsletter sign-up all run locally in the browser. Tour slots are generated from today's date; the calculator's chosen days are carried into the tour form for the current visit only. Nothing is sent, booked or charged, prices and credit rules are illustrative, and Nest, its staff and families are fictional.

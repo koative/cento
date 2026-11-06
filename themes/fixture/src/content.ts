@@ -1046,3 +1046,6 @@ export const footer = {
   reminders:
     "Seasonal reminders: winter pipe prep in November, sump pump check in March. Four emails a year.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

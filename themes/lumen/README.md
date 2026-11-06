@@ -28,6 +28,8 @@ Build with `bun run build`: static output in `dist/`, and the relative base work
 
 `src/content.ts` holds all copy and data (frames, lenses, face shapes, stores, exams, about), `src/styles.css` the design system (tokens at `:root`), `src/assets` the imagery.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The bag is saved in `localStorage` (and still works for the visit when storage is blocked). Frame options, the face-shape finder, the lens thickness slider, filters, eye-test booking, checkout and the newsletter form all run locally: forms validate in the browser and show a confirmation, but nothing is sent, booked or charged. Lumen, its stores, people, prices and reviews are fictional.

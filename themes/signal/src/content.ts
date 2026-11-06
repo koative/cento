@@ -14,7 +14,6 @@ export const brand = {
     "1200-195 Lisbon",
   ],
   workspace: "Fernway",
-  gallery: "https://cento.koative.com/",
 };
 
 export type NavItem = { to: string; label: string };
@@ -1606,3 +1605,6 @@ export const notFound = {
   heading: "No events match that path.",
   text: "The page you asked for does not exist, or it was renamed. Try one of these instead.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

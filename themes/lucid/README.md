@@ -27,6 +27,8 @@ bun install && bun run dev (build: bun run build — static output in dist/, rel
 
 content.ts (all copy and data), styles.css (tokens at :root), src/assets (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The home demo matches a typed prompt to one of four instructions and returns an authored rewrite for each sample as a word-level diff you can review change by change; edited drafts run a local rule pass for filler and wordy phrases. The /app demo keeps decisions, document status and house style rules in localStorage (falling back to memory). Forms validate in the browser and show success states; nothing is sent, stored on a server or charged, and Lucid is a fictional brand.

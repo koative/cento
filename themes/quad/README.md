@@ -27,6 +27,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` holds all copy and data (brand, programmes and modules, events, halls, fees), `src/styles.css` the design tokens at `:root`, `src/assets` the imagery.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The programme finder, hall filters, fee toggle and campus plan run on local data. The module planner adds up credits towards 120, flags timetable clashes and, once a year adds up, saves the plan to `localStorage` and attaches it to the application. The application, event reservation and newsletter forms validate in the browser and show a confirmation; nothing is sent, stored on a server or charged. Quadwell University, Harrowmere and everyone named here are fictional.

@@ -1179,3 +1179,6 @@ export const whileYouWait = [
   "Have your pharmacy's name and any medicine bottles nearby.",
   "Keep this tab open — the call starts here when your clinician is ready.",
 ];
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

@@ -947,3 +947,6 @@ export const footer = {
   letter:
     "The studio letter, four times a year: new series, print releases and open-studio dates. Nothing else.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

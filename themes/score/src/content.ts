@@ -1418,3 +1418,6 @@ export const trial = {
     "For under-eights, a grown-up stays in the lesson.",
   ],
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

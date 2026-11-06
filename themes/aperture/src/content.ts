@@ -1030,3 +1030,6 @@ export const home = {
   hireText:
     "Premieres, company mornings, birthday screenings in the balcony. Both screens and the bar are for hire, with a projectionist included.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

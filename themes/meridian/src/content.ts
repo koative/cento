@@ -1350,3 +1350,6 @@ export const contact = {
   ],
   officePin: { x: 560, y: 280 },
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

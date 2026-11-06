@@ -1289,3 +1289,6 @@ export const contact = {
 export function projectBySlug(slug: string) {
   return projects.find((p) => p.slug === slug);
 }
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

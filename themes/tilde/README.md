@@ -28,6 +28,8 @@ Build with `bun run build`: static output in `dist/`, and the relative base work
 
 `src/content.ts` holds all copy and data (person, projects, posts, uses, dotfiles, résumé, availability). `src/styles.css` starts with the design tokens at `:root` (light) and `[data-scheme="dark"]`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The shell runs entirely in the browser over the content in `content.ts`: `ls`, `cd`, `cat`, `open` (navigates), `theme`, `history`, tab completion and arrow-key history. The light/dark choice is stored in `localStorage` when available. The contact and newsletter forms validate in the browser and show a confirmation, but nothing is sent anywhere. Tilde Ekvall, her clients and every figure are fictional.

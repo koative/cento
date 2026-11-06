@@ -28,6 +28,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (classes, trainers, timetable, plans, programme rules). Design tokens live at `:root` in `src/styles.css`. Imagery is in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The timetable, filters, programme builder and join flow all run in the browser. The programme builder saves its inputs to `localStorage` on this device (and still works when storage is unavailable); the join flow validates every field, shows a loading state and a confirmation with a sample membership number. Nothing is sent, booked or charged anywhere, and Iron, its coaches, members and prices are fictional.

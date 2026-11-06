@@ -33,6 +33,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and demo data, `src/styles.css` the design tokens at `:root`, `src/assets` the sources list.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The paycheck allocator, card freeze, guide filters and every form run entirely in the browser. In the `/app` demo you can reassign envelopes, cover overspending, recategorise transactions, hide balances, freeze the card, save settings and export a CSV; changes persist while you move between screens and reset on reload. Nothing is sent, charged or connected to a bank, and Ledger is a fictional brand.

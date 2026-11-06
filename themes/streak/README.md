@@ -27,6 +27,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` holds all copy and data (brand, habits on the phone screens, the chain presets, plans, posts, help articles). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The hero phone's habits can be ticked, the October calendar on the home page recomputes the chain, longest run and grace-day rule on every tap, and the pricing, blog and help filters work locally. The support form, the "email me the link" form and the newsletter validate input, show a short sending state and then a confirmation; nothing is sent, stored or charged. Streak and everyone quoted are fictional.

@@ -28,6 +28,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (shows, episodes with chapters, hosts, newsletter, rate card). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`; show covers are drawn in SVG from each show's colours and motif.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The player has no audio: while playing, the playhead advances on a one-second timer at the chosen speed, and a mini player follows you across pages. The loaded episode, per-episode progress and the listening list are kept in `localStorage` (the site still works without it); when an episode ends, the next one on your list starts. The newsletter, footer signup and advertiser enquiry forms validate in the browser and show a confirmation, but nothing is sent anywhere. Chapter, its shows, hosts, guests, figures and prices are fictional.

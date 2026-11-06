@@ -27,6 +27,8 @@ Build: `bun run build` — static output in `dist/`, relative base works in any 
 
 `src/content.ts` (all copy and data: programmes, sites with tide parameters, events, reports, giving tiers, people), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The tide planner draws each event's tide curve from a simplified harmonic model and derives the work window from low water; drag the chart, use the slider or run the day to watch the beach flood and drain. Event bookings validate inline and are kept in this browser's `localStorage` so lists show "You're going"; the newsletter and the donate flow validate and confirm locally. Nothing is sent, booked or charged, and Tide is a fictional charity: every person, place, figure and report is sample content.

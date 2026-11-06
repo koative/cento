@@ -27,6 +27,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (firm, practice areas, people, insights, limitation periods, fees, offices). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The limitation clock calculates illustrative deadlines from a chosen event and date and hands the practice area and deadline to the enquiry form. The enquiry form validates in the browser, shows a short sending state and then a receipt with a reference number; the footer briefing sign-up validates and confirms the same way. Nothing is sent, stored or charged, no attorney–client relationship is created, and Counsel Partners LLP, its people and its matters are fictional.

@@ -901,3 +901,6 @@ export const home = {
     who: "Leila, visiting with Noor (4) and Sami (8)",
   },
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

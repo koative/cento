@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { brand, footer, hours, nav } from "../content";
+import { brand, footer, hours, nav, credit } from "../content";
 import { Link } from "../router";
 import { clock } from "../lib/time";
 import { Field, useFormFlow } from "./Field";
@@ -118,9 +118,13 @@ export function Footer() {
       </div>
 
       <p className="footer-legal">
-        {brand.name} is a fictional brand — a{" "}
-        <a href="https://cento.koative.com/">Cento</a> template by
-        Koative.
+        {brand.name} is a fictional brand.
+        {credit && (
+          <>
+            {" "}
+            <a href="https://cento.koative.com/">{credit}</a>
+          </>
+        )}
       </p>
     </footer>
   );

@@ -29,6 +29,8 @@ Build: `bun run build` — static output in `dist/`, the relative base works in 
 
 `src/content.ts` (all copy and data), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The player has no video file: its clock drives the timeline, chapter list and parts list, and your place in each episode is saved in localStorage so every thumbnail shows a watch-progress bar. The bag is stored in localStorage too. Checkout, membership, brand-deal and newsletter forms validate in the browser and show a success state, but nothing is sent, charged or shipped. Channel, its host, partners and figures are fictional.

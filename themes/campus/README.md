@@ -29,6 +29,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (courses, syllabi, instructors, plans, workspace lessons). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Filters, the pace planner, pricing toggles and every form run entirely in the browser. Sign-up and newsletter forms validate and show a success state, but nothing is sent, stored on a server or charged. Workspace progress, check answers and notes are saved to `localStorage` (and still work for the session if storage is unavailable); "Reset demo" on the desk clears them. Campus, its instructors, learners, prices and figures are fictional.

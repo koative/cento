@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Link } from "../router";
-import { brand, locations, nav, services } from "../content";
+import { brand, locations, nav, services, credit } from "../content";
 import { Logo } from "./Header";
 
 export function Footer() {
@@ -131,9 +131,14 @@ export function Footer() {
       </div>
 
       <p className="footer-legal">
-        {brand.name} is a fictional brand — a{" "}
-        <a href="https://cento.koative.com/">Cento</a> template by
-        Koative. Nothing on this site is medical advice.
+        {brand.name} is a fictional brand. Nothing on this site is medical
+        advice.
+        {credit && (
+          <>
+            {" "}
+            <a href="https://cento.koative.com/">{credit}</a>
+          </>
+        )}
       </p>
     </footer>
   );

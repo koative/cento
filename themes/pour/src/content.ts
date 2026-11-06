@@ -1126,3 +1126,6 @@ export const checkout = {
   caseDiscount: 0.1,
   note: "This is a demo: nothing is charged and no order is sent.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

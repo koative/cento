@@ -27,6 +27,8 @@ Build with `bun run build` — static output in `dist/`, and the relative base w
 
 `src/content.ts` holds all copy and data (brand, hours, drinks, records, nights, events, zones, hire packages). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The record-of-the-night player is visual only: press play or drag the timeline and the drawn turntable shows what the room was hearing at that minute, with no audio. Table bookings, event places, private-hire enquiries and the newsletter validate in the browser and show a confirmation, but nothing is sent, reserved or charged. Nocturne, its people, records and prices are fictional.

@@ -26,6 +26,8 @@ Build with `bun run build` — static output in `dist/`, the relative base works
 
 `src/content.ts` holds all copy and data (brand, villas, seasons and prices, booked nights, guide places, services, team, FAQ). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The availability calendar, villa filters, booking form, concierge enquiry and newsletter all run in the browser. The chosen house, dates and guests are kept in `sessionStorage` (falling back to memory) and carried from the calendar and search to the booking form; booked nights are generated from each villa's seed in the sample data. Nothing is sent, no card is charged, and Hideaway, Vellmar and everyone in it are fictional.

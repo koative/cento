@@ -27,6 +27,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` holds all copy and data (treatments, dentists, prices, plan, hours, policies). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The tooth chart marks teeth per concern and turns them into suggested treatments with a price range, then hands the marked teeth to the booking form. The booking diary is generated locally from opening hours and each dentist's working days; confirming a booking, signing up for a recall reminder and every other form only validate and show a success state in the browser. Nothing is sent, stored or charged, and Enamel, its people and its patients are fictional.

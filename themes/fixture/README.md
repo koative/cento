@@ -25,6 +25,8 @@ Build: `bun run build` — static output in `dist/`, relative base works in any 
 
 `src/content.ts` (all copy, rates, services, areas and team), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The estimator computes ranges locally from the rate card in `content.ts` and keeps your last estimate in `sessionStorage` (with a safe fallback) so it can be attached to a booking. The ZIP checks, emergency triage, booking form and reminder signup all validate and confirm in the browser; nothing is sent, no visit is booked and nothing is charged. Fixture, its people, licences, prices and neighbourhoods are fictional.

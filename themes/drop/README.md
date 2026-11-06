@@ -24,6 +24,8 @@ bun install && bun run dev (build: bun run build — static output in dist/, rel
 
 content.ts (all copy and data), styles.css (tokens at :root), src/assets (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Drop dates roll forward in whole weeks so the next drop is always ahead of today (set `shift` to 0 in `src/lib/time.ts` for real dates). The bag and raffle entries persist in localStorage; "Add to calendar" downloads an .ics file. Checkout, raffle entries and drop alerts are validated in the browser only: nothing is sent, drawn or charged, and Drop is a fictional brand.

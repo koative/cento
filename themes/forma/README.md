@@ -26,6 +26,8 @@ Build with `bun run build`: static output in `dist/`, and the relative base work
 
 `src/content.ts` holds all copy and data (studio, projects, sections for the light study, people, fees, posts). `src/styles.css` holds the design system, tokens at `:root`. Imagery lives in `src/assets` (credits in `src/assets/SOURCES.md`).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The light study computes the sun's position for each project's latitude and draws how far direct sun reaches into a room section; it can be scrubbed or played through the day for midwinter, equinox and midsummer. Project filters, search, sort and view mode run in local state, the enquiry and newsletter forms validate in the browser and show a confirmation, and nothing is sent, stored or charged. Forma, its people, projects and awards are fictional.

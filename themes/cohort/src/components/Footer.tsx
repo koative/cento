@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Link } from "../router";
-import { brand, footerNote } from "../content";
+import { brand, footerNote, credit } from "../content";
 import { Mark } from "./Mark";
 
 const columns = [
@@ -39,8 +39,6 @@ export function Footer() {
     }
     setStatus("done");
   };
-
-  const [cento, rest] = footerNote.split("Cento");
 
   return (
     <footer className="site-footer">
@@ -132,9 +130,13 @@ export function Footer() {
       </div>
       <div className="wrap footer-base rule-top">
         <p>
-          {cento}
-          <a href="https://cento.koative.com/">Cento</a>
-          {rest}
+          {footerNote}
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
         <p>
           Portfolio, people and figures on this site are fictional demonstration

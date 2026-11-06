@@ -29,6 +29,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (wines, bar menu, events, club, team, FAQ), `src/styles.css` the design system (tokens at `:root`), `src/assets` the imagery. Bottle silhouettes and labels are drawn from each wine's `bottle` field.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Bottles, tasting seats and a club membership go into a case stored in `localStorage` (it still works for the visit when storage is blocked). Mixing six bottles applies a 10% case discount. Checkout validates the form, simulates a short wait and shows a confirmation; the newsletter form confirms locally. Nothing is sent, booked or charged, and Pour, its growers and its people are fictional.

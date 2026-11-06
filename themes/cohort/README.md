@@ -28,6 +28,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` holds all copy and data (portfolio, partners, essays, terms, FAQ). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The portfolio and writing filters, the round modeller and the pitch and newsletter forms all run locally in the browser. The pitch form validates every field, simulates sending and shows a reference number with a reply date ten working days out; nothing is sent, stored or charged. Cohort, its partners, portfolio companies and figures are fictional.

@@ -1542,3 +1542,6 @@ export const footer = {
     body: "One email every Friday: road works, meetings and what changed this week.",
   },
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";
