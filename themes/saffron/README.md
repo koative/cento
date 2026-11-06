@@ -27,6 +27,8 @@ Build with `bun run build`: static output in `dist/`; the relative base works in
 
 `src/content.ts` holds all copy and data (brand, aisles, products, recipes, delivery windows, zones, growers, team). `src/styles.css` holds the design tokens at `:root`. Images live in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The basket and the chosen delivery slot are saved in `localStorage` (the site still works without it). Slot availability is generated from the date so the board looks lived-in; slots close three hours before they start. Checkout validates every field in the browser, shows a loading state, then confirms the order and empties the basket. Nothing is sent, booked or charged, and Saffron, its people, suppliers, prices and ZIP codes are fictional.

@@ -1324,3 +1324,6 @@ export const faqs = [
     a: "Yes. Step-free entrance from the yard, an accessible restroom, and lowered sections at both ends of the bar.",
   },
 ];
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

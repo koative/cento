@@ -24,6 +24,8 @@ Less noise. More you. Slow yoga, breath and rest, taught plainly. A yoga & medit
 
 `src/content.ts` (all copy and data: classes, teachers, weekly timetable, prices, breathing patterns), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The schedule is generated from a fixed weekly timetable for the seven days starting today; places left are deterministic demo numbers. Booking validates locally, simulates a short save and shows a confirmation or waitlist message; the footer newsletter form validates and confirms. The breathing guide runs entirely in the browser. Nothing is sent, stored, booked or charged, and Still is a fictional brand.

@@ -1880,3 +1880,6 @@ export const home = {
     text: "Apply by 28 January 2027 for equal consideration. It takes about forty minutes, and you can save your module plan from any programme page first.",
   },
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

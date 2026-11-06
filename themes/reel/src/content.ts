@@ -1241,3 +1241,6 @@ export const footer = {
     text: "One email a month: new dates, new films, the occasional open call for pitches.",
   },
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

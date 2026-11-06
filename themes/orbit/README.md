@@ -28,6 +28,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` holds all copy and data (vehicles, missions, manifest, rideshare prices, jobs, team). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The rideshare calculator prices a payload from the published rates in `content.ts`, remembers the quote in `localStorage` (it still works when storage is blocked) and hands it to the reservation form. The manifest and header count down to the next scheduled launch in real time. The reservation, job application and launch-alert forms validate in the browser and show a confirmation; nothing is sent, booked or charged. Orbit, its vehicles, customers, people and prices are fictional.

@@ -1,6 +1,13 @@
 import { useState, type FormEvent } from "react";
 import { Link } from "../router";
-import { brand, footer, services, trades, type Trade } from "../content";
+import {
+  brand,
+  footer,
+  services,
+  trades,
+  type Trade,
+  credit,
+} from "../content";
 import { validate } from "../lib/format";
 import { Mark } from "./Mark";
 
@@ -134,9 +141,13 @@ export function Footer() {
 
       <div className="wrap footer-base">
         <p>
-          {brand.name} is a fictional brand — a{" "}
-          <a href="https://cento.koative.com/">Cento</a> template by
-          Koative.
+          {brand.name} is a fictional brand.
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
         <p>{brand.licences.map((l) => `${l.label} ${l.value}`).join(" · ")}</p>
       </div>

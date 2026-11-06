@@ -1,5 +1,5 @@
 import { Link } from "../router";
-import { brand, footerColumns, socials } from "../content";
+import { brand, footerColumns, socials, credit } from "../content";
 import { openState } from "../lib/format";
 import { isEmail, useForm } from "../lib/form";
 import { Field } from "./Field";
@@ -90,9 +90,13 @@ export function Footer() {
 
       <div className="footer-bottom">
         <p>
-          {brand.name} is a fictional brand — a{" "}
-          <a href="https://cento.koative.com/">Cento</a> template by
-          Koative.
+          {brand.name} is a fictional brand.
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
         <ul className="socials">
           {socials.map((s) => (

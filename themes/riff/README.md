@@ -25,6 +25,8 @@ bun install && bun run dev (build: bun run build — static output in dist/, rel
 
 content.ts (all copy and data), styles.css (tokens at :root), src/assets (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The record player plays 30-second previews and keeps going in a bar at the bottom of the screen while you browse; without real audio files it synthesises a short bass-and-kick sketch at each track's tempo (add an `audio` URL to a track in content.ts to use a real file). Tickets and merch go into one cart stored in your browser; checkout, the waitlist, the press guest-list request and the mailing list validate locally and show a confirmation. Nothing is sent, charged or stored anywhere else. Riff, its members, venues, press and prices are fictional.

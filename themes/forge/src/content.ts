@@ -1252,3 +1252,6 @@ export const footer = {
   newsletter:
     "One email a month on tolerancing, materials and what we learned on the floor. No sales sequences.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

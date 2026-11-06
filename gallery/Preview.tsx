@@ -190,10 +190,21 @@ export function Preview({
                 : "Copy command"}
           </button>
         </div>
-        <p className="preview-note" aria-live="polite">
-          {copied === "failed"
-            ? "Your browser blocked the clipboard. Select the command and copy it yourself."
-            : `${t.name} is a fictional brand. The preview runs in your browser; nothing you enter is sent anywhere.`}
+        <p className="preview-note">
+          <span aria-live="polite">
+            {copied === "failed"
+              ? "Your browser blocked the clipboard. Select the command and copy it yourself."
+              : `${t.name} is a fictional brand. The preview runs in your browser; nothing you enter is sent anywhere.`}
+          </span>{" "}
+          Need it customised?{" "}
+          <a
+            href="https://koative.com/services/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ask koative
+          </a>
+          .
         </p>
       </div>
     </dialog>

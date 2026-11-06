@@ -28,6 +28,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data: services, vets, plans, hours, emergency info), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The care planner builds a vaccine schedule from species and birth month and lets you stamp doses as given; it is saved in `localStorage` on your device only and prefills the booking form. Booking validates every field, shows demo availability for each vet's clinic days, simulates a short confirmation step and shows a confirmation; the footer newsletter validates and confirms. Nothing is sent, stored on a server or charged. Whisker, its staff, patients, prices and partner hospital are fictional.

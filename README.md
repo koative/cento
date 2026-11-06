@@ -40,6 +40,8 @@ Replace `roast` with any folder from the catalogue below. `bun run build` writes
 
 Routes are hash-based (`#/shop/guji-natural`), so the build needs no server rewrites. Interactive state (carts, saved plans) lives in `localStorage`, and every flow keeps working when storage is unavailable.
 
+Need it customised? [koative](https://koative.com/services/) can turn a template into your site.
+
 ## The catalogue
 
 ![All 100 Cento templates](public/previews/collection.webp)
@@ -208,5 +210,7 @@ The gallery reads each template's `themes/<slug>/cento.json`, so a new folder wi
 ## Credits
 
 Code is MIT. Photographs, fonts and icons keep their own licences: see [ASSETS.md](ASSETS.md) and each template's `src/assets/SOURCES.md`. Every brand, person, price and figure in the templates is fictional.
+
+Every template ends its footer with a small "Template by Cento" link to this collection. To remove it, set `credit` to `null` in the template's `src/content.ts`. The MIT licence allows that. If the template helped you, please keep the link.
 
 Made by [koative](https://koative.com)

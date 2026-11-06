@@ -985,3 +985,6 @@ export const cafesPage = {
   toursText:
     "Every Saturday at 10:00 Mara or June walks up to ten people through green coffee, the roast and a cupping of three coffees. 75 minutes, $18 including a 250 g bag. Book at the Roastery Bar or call us.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

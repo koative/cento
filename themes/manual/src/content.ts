@@ -1909,3 +1909,6 @@ export const about = {
     ["Article corrections", "Fixed in 2 business days", "Mon – Fri"],
   ] as [string, string, string][],
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

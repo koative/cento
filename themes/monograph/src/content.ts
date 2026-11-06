@@ -1130,3 +1130,6 @@ export const notFound = {
   title: "This page was cut at proof stage",
   text: "The story you were looking for has moved, or it was never in print. The current issue and the full archive are still where they should be.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

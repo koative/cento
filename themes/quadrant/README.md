@@ -26,6 +26,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (capabilities, industries, people, insights, roles, offices, matrix presets). `src/styles.css` holds the design system, with tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The priority matrix runs entirely in the page: drag points or move them with the arrow keys, rename, add or remove initiatives, and the memo rewrites itself. The insights, industries, people and careers filters work on local data. The enquiry form and the newsletter sign-up validate in the browser and show a confirmation, but nothing is sent, stored or charged anywhere. Quadrant, its people, clients and figures are fictional.

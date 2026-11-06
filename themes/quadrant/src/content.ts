@@ -1527,3 +1527,6 @@ export const footer = {
     text: "One idea from the work, one exhibit, one page. Every other Monday.",
   },
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

@@ -26,6 +26,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (studio, artists, flash, placements, prices, aftercare, FAQ). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`; new flash drawings go in `src/components/FlashArt.tsx`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The stencil sizer scales each flash design against the usable area of real placements and estimates price and sit time locally; "Request" carries the design, size and placement into the booking form. The booking form validates in the browser, shows a loading state and a confirmation with a reference number; the footer newsletter validates and confirms. Nothing is sent, stored or charged, and Ink, its artists and its clients are fictional.

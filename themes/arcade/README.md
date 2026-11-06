@@ -27,6 +27,8 @@ Build with `bun run build`: static output in `dist/`, and the relative base work
 
 `src/content.ts` holds all copy and data (games with their pixel palettes, posts, team, jobs, press facts). `src/styles.css` holds the design tokens at `:root`. All artwork is drawn in code from `src/lib/pixels.ts` (sprites) and `src/components/Scene.tsx` (key art and screenshots), so new games only need a palette, a scene type and a few seeds.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Blob Hop is a real canvas game: tap, click or press Space to hop, hold to float higher, P to pause, with an assist mode at 70% speed; your ten best runs are kept in `localStorage` (the game still works when storage is blocked). Pair Up! is a working memory game. The games list and devlog filter locally, the press page copies the boilerplate and downloads SVGs generated in the browser, and the review key request, job application and playtest signup forms validate inline, show a loading state and confirm success. Nothing is sent, stored on a server or charged, and Arcade with all its games, people and quotes is fictional.

@@ -34,6 +34,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data: brand, hubs, lanes, services, shipments, plans), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Tracking, quoting, booking, sign-in, the newsletter form and every `/app` screen run entirely in your browser on fixed sample data set at Monday 19 October 2026, 10:40. Quotes are calculated locally from distances between hubs; bookings, notes and settings live in memory and reset on reload. Nothing is sent, booked or charged, and Relay, its customers and every shipment are fictional.

@@ -26,6 +26,8 @@ bun install && bun run dev (build: bun run build — static output in dist/, rel
 
 content.ts (all copy and data), styles.css (tokens at :root), src/assets (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The planner, forms and the whole `/app` demo run in the browser only. Board moves, edits, comments and settings are kept in memory and mirrored to `localStorage` when available (Reset demo data restores the seed); forms validate and show their success states without sending anything, and nothing is charged. Sprint, its customers, people and prices are fictional.

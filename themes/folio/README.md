@@ -30,6 +30,8 @@ Build with `bun run build`: static output in `dist/`, and the relative base work
 
 `src/content.ts` holds all copy and data (artists, works and their drawn geometry, exhibitions, events, shop, hours, visit, team). `src/styles.css` holds the design tokens at `:root`. Photography lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The viewing-room list and the bag are saved in `localStorage` (and still work if storage is blocked). The true-scale preview redraws any work on a gallery wall, living room, hallway or a wall of your own size, at a hanging height you choose, in centimetres or inches. Opening status follows the visitor's clock and the hours in `content.ts`. The enquiry, checkout and newsletter forms validate in the browser and show a confirmation; nothing is sent, booked or charged, and Folio is a fictional brand.

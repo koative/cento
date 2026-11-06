@@ -1,6 +1,6 @@
 import { Github, Linkedin, Youtube } from "lucide-react";
 import { Link } from "../router";
-import { brand, footerColumns, socials } from "../content";
+import { brand, footerColumns, socials, credit } from "../content";
 import { EMAIL, Field, useForm } from "./form";
 import { Logo } from "./Logo";
 import { Waves } from "./Guilloche";
@@ -83,8 +83,13 @@ export function Footer() {
       </div>
       <div className="wrap footer-base">
         <p>
-          {brand.name} is a fictional brand — a{" "}
-          <a href={brand.gallery}>Cento</a> template by Koative.
+          {brand.name} is a fictional brand.
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
         <ul className="socials">
           {socials.map((s) => {

@@ -1321,3 +1321,6 @@ export const newsletter = {
   title: "The seasonal note",
   body: "Four short emails a year: tick season, holiday hazards, fireworks, and what's new at the clinic.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

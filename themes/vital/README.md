@@ -27,6 +27,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The check-in screens for red flags and routes to emergency care, in-person care or a video, message or scheduled visit using the sample data in `content.ts`; the live wait board follows a sample wait-by-hour table and your local clock. Forms validate in the browser and show loading and success states, but nothing is sent, booked or charged, and nobody will call. Vital, its clinicians, insurers, prices and policies are fictional and are not medical advice.

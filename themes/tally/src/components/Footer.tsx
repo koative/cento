@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Link } from "../router";
-import { articles, brand, nav, services } from "../content";
+import { articles, brand, nav, services, credit } from "../content";
 import { pause, validate } from "../lib/forms";
 import { Field, useErrors } from "./Field";
 import { TallyMark } from "./Marks";
@@ -123,9 +123,13 @@ export function Footer() {
 
       <div className="wrap footer-base">
         <p>
-          {brand.name} is a fictional brand — a{" "}
-          <a href="https://cento.koative.com/">Cento</a> template by
-          Koative.
+          {brand.name} is a fictional brand.
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
         <ul className="footer-social">
           {brand.social.map((s) => (

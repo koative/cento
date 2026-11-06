@@ -27,6 +27,8 @@ Build with `bun run build`: static output in `dist/`, and the relative base work
 
 `src/content.ts` holds all copy and data (projects, materials, services, stages, team, FAQ, slots copy). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The sample board is saved in `localStorage` (and still works for the visit if storage is blocked): add samples from the library, a material page or a whole project palette, reorder them to change their role, and turn the daylight dial to re-light every sample at once. The consultation form validates every field, shows a loading state and confirms the booking with a reference; the footer newsletter validates and confirms too. Nothing is sent, booked or charged, and Mosaic is a fictional brand.

@@ -29,6 +29,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data: toys, age shelves, workshops, events, hours, team), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The basket lives in `localStorage` (and keeps working without it): toys with their variant, gift wrap and tag message, and workshop seats with their session. The gift finder, filters, RSVP form, newsletter form and checkout all run in the browser; checkout validates every field, then shows an order confirmation and empties the basket. Nothing is sent, booked or charged, and Tinker is a fictional brand.

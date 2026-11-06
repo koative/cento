@@ -27,6 +27,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (houses, floor plans, rooms, plans, events, members). Design tokens live at `:root` in `src/styles.css`. Imagery is in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The room board, RSVP, tour, notice-board and newsletter forms validate in the browser and show loading and confirmation states; bookings appear on the board for the rest of the visit. Room availability is generated demo data. Nothing is sent, stored on a server or charged, and Commons, its houses and its people are fictional.

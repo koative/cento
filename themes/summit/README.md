@@ -28,6 +28,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (walls, problems, classes, events, plans, team, hours). `src/styles.css` has the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The route map filters, steps through holds and keeps your tick list in `localStorage` (it still works without storage). The booking page, event RSVPs and newsletter form validate in the browser, show a loading state and a confirmation, but nothing is sent, stored on a server or charged. Availability is generated demo data. Summit and everyone in it is fictional.

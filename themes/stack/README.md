@@ -27,6 +27,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data: guides, API resources and endpoints, releases, team), `src/styles.css` (tokens at `:root`), `src/assets` (sources list).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The playground validates requests in the browser against the documented parameters (missing fields, wrong types, unknown keys, bad ids, malformed JSON) and answers from the reference examples; search, filters, copy buttons and the support and newsletter forms all run locally. Nothing is sent anywhere, no key is real, and Stack is a fictional brand.

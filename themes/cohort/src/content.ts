@@ -1028,5 +1028,7 @@ export const modellerDefaults = {
   capTable: { founders: 82, angels: 12, pool: 6 },
 };
 
-export const footerNote =
-  "Cohort is a fictional brand — a Cento template by Koative.";
+export const footerNote = "Cohort is a fictional brand.";
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

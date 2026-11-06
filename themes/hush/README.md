@@ -23,6 +23,8 @@ bun install && bun run dev (build: bun run build — static output in dist/, rel
 
 content.ts (all copy and data), styles.css (tokens at :root), src/assets (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Everything runs in the browser. The cart is kept in localStorage (and still works for the visit when storage is blocked); checkout, the support form and the newsletter validate input and show a confirmation, but nothing is sent, stored on a server or charged. The noise lab draws a modelled spectrum and, only when you press play, renders filtered noise with the Web Audio API. Hush, its people, products and prices are fictional.

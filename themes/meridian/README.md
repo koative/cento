@@ -28,6 +28,8 @@ Build with `bun run build`; the static output in `dist/` uses a relative base, s
 
 `src/content.ts` holds all copy and data (brand, homes, floor plans, neighborhoods and their map shapes, agents, fees). Design tokens are at the top of `src/styles.css`; imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Search filters, map selection, the floor-plan schedule, the mortgage calculator and the valuation estimate all run locally in the browser. Saved homes are stored in `localStorage` when available. The viewing, valuation, contact and newsletter forms validate input and show a confirmation, but nothing is sent, booked or stored on a server. Meridian, Port Ellery, every agent, home and price are fictional.

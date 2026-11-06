@@ -29,6 +29,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (barbers, services, prices, hours, cuts, products, page text). `src/styles.css` starts with the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Booking, the fade chart, the bag and checkout all run in the browser. Open times are generated from the shop hours and each barber's working days, with a fixed pattern of taken slots. The bag is saved in `localStorage` (and still works without it). Forms validate and show loading and confirmation states, but nothing is sent, held or charged anywhere. Fade, its barbers, clients and reviews are fictional.

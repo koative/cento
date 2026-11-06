@@ -27,6 +27,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (packages, weddings, journal, team, planner milestones and budget shares). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The planner saves its date, guest count, budget, priorities and ticked milestones in `localStorage` (it still works for the visit when storage is blocked), and the enquiry form picks up the planned date and guests. Forms validate in the browser and show a confirmation, but nothing is sent, booked or charged. Vow, its people, couples, venues, suppliers and prices are fictional.

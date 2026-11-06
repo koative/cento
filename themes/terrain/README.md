@@ -27,6 +27,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data: trips with day-by-day profiles and map legs, guides, gear, FAQ), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The trips filter, route finder, day-by-day explorer and packing list all run in the browser; the packing list is saved to `localStorage` when available. The booking and newsletter forms validate input and show a confirmation, but nothing is sent, held or charged. Terrain, its guides, prices and reviews are fictional.

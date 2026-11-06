@@ -19,7 +19,6 @@ export const brand = {
     "210 Mercer Lane, Suite 4",
     "Portland, OR 97209",
   ],
-  gallery: "https://cento.koative.com/",
 };
 
 export type NavLink = { to: string; label: string };
@@ -1878,3 +1877,6 @@ export const kitPage = {
   intro:
     "Pick an interview from your schedule to open its kit. Scores stay hidden from other interviewers until everyone has submitted.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

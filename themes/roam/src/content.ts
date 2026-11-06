@@ -1337,3 +1337,6 @@ export const newsletter = {
   title: "Deal alerts",
   text: "One email when a new code goes live. Usually twice a month, never more.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

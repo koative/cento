@@ -27,6 +27,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (services, steps and prices, stylists, looks, products, hours, policies). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Services, a chosen stylist and set-aside products are kept in `localStorage` (falling back to memory) so they follow you from the menu, a look or a profile into booking. The booking page computes your appointment minute by minute, shows which start times fit before closing, blocks the next two days for new colour clients who need a patch test, validates every field and ends on a confirmation with a reference number. Booked slots are simulated. Nothing is sent, booked or charged, and Chroma is a fictional brand.

@@ -26,6 +26,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` (all copy and data: writer, posts, topics, tiers, delivery schedule, sponsor rates), `src/styles.css` (tokens at `:root`, night reading tokens under `[data-theme="night"]`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Every form validates in the browser (including common email-domain typos) and shows a loading and a success state, but nothing is sent, stored on a server or charged. The delivery calendar computes next month's emails for the chosen plan, the slot picker totals a sponsorship with its bundle discount, and the reader remembers text size, night reading and the Field Notes preview in `localStorage` (it still works when storage is unavailable). Dispatch, Ines Calder, the readers, sponsors and figures are fictional.

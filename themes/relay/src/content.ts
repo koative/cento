@@ -1965,3 +1965,6 @@ export const app = {
   ],
   apiKey: "rk_live_7Hq2Xc9vLm4TzR8bN1pW",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

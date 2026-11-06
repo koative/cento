@@ -28,6 +28,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (issues, articles, sections, contributors, plans, FAQ). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Search and filters run on local data. The reader remembers text size and lamplight mode in `localStorage` (it still works when storage is unavailable). The subscribe form and the Sunday letter sign-up validate in the browser and show a confirmation; nothing is sent, stored on a server or charged. Monograph, its people, issues and prices are fictional.

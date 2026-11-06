@@ -14,7 +14,6 @@ export const brand = {
     "Portland, OR 97204",
   ],
   hours: "Support answers Mon–Fri, 8 am – 6 pm Pacific",
-  gallery: "https://cento.koative.com/",
 };
 
 export type NavItem = { to: string; label: string };
@@ -1309,3 +1308,6 @@ export const settings = {
     },
   ],
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

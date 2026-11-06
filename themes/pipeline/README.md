@@ -26,6 +26,8 @@ bun install && bun run dev (build: bun run build — static output in dist/, rel
 
 content.ts (all copy and data), styles.css (tokens at :root), src/assets (sources list; all graphics are authored).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The forecast call, board, contacts and reports run on demo data held in memory: moving a deal, changing a forecast category, adding a deal or logging a touch updates every screen of the demo until the page is reloaded. The demo booking, sign-in and newsletter forms validate in the browser and show their confirmation states, but nothing is sent, stored or charged anywhere. Pipeline, its customers and every person and figure are fictional.

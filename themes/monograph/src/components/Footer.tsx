@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { ArrowRight, Instagram } from "lucide-react";
 import { Link } from "../router";
-import { brand, footer } from "../content";
+import { brand, footer, credit } from "../content";
 import { validate } from "./Field";
 
 function SundayLetter() {
@@ -101,9 +101,13 @@ export function Footer() {
         <SundayLetter />
       </div>
       <p className="wrap colophon">
-        Monograph is a fictional brand — a{" "}
-        <a href="https://cento.koative.com/">Cento</a> template by
-        Koative. Set in Libre Bodoni and Literata.
+        Monograph is a fictional brand. Set in Libre Bodoni and Literata.
+        {credit && (
+          <>
+            {" "}
+            <a href="https://cento.koative.com/">{credit}</a>
+          </>
+        )}
       </p>
     </footer>
   );

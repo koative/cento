@@ -27,6 +27,8 @@ Build with `bun run build`; static output goes to `dist/`, and the relative base
 
 `src/content.ts` holds all copy and data (books, booksellers, events, club, hours, delivery methods). `src/styles.css` starts with the design tokens at `:root`. Photographs live in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The bag is kept in `localStorage` (and still works for the visit if storage is blocked); checkout validates every field, shows a loading state and then a receipt, but nothing is sent and no card is charged. Event reservations, the club membership builder and the newsletter form work locally only. Index, its booksellers, authors, books and publishers are fictional.

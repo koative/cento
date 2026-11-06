@@ -1165,3 +1165,6 @@ export const visit = {
 
 export const footerNote =
   "Nothing on this site is sent anywhere — forms and bookings are a demonstration that stays in your browser.";
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

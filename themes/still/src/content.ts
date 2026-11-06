@@ -1103,3 +1103,6 @@ export const notFound = {
   title: "This room is empty.",
   text: "The page you were looking for has moved or never existed. Take a breath, then try one of these.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

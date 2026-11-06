@@ -27,6 +27,8 @@ Build with `bun run build`: static output in `dist/`, and the relative base work
 
 `src/content.ts` holds all copy and data (coffees, guides, cafés, team, FAQ, prices). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The bag is saved in `localStorage` (and still works if storage is blocked). Coffees and subscriptions can be added, changed and removed, and checkout validates the form and shows a confirmation with an order number. The subscription builder, brew timer and café open/closed status run in the browser from the demo data and the current date. Nothing is sent, charged or shipped: no payment is taken, the newsletter stores nothing, and Roast is a fictional brand.

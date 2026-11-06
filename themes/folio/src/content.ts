@@ -1269,3 +1269,6 @@ export const artistBySlug = (slug: string) =>
 export const workById = (id: string) => works.find((w) => w.id === id);
 export const exhibitionBySlug = (slug: string) =>
   exhibitions.find((e) => e.slug === slug);
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

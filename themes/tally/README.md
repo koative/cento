@@ -26,6 +26,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data, including deadline rules), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The tax calendar computes the next twelve months of federal deadlines from today's date for the chosen business setup, rolls weekend dates to Monday, remembers the setup in `localStorage` (the header then shows your next date) and downloads an .ics file built in the browser. The booking form, reminder signup and filters all run locally: nothing is sent, booked or charged, and the dates are illustrative rather than tax advice. Tally and everyone in it are fictional.

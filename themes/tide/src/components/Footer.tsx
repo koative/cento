@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Link } from "../router";
-import { brand, newsletter, programmes, reports } from "../content";
+import { brand, newsletter, programmes, reports, credit } from "../content";
 import { Mark } from "./Mark";
 
 const columns = [
@@ -141,9 +141,13 @@ export function Footer() {
           <span>{brand.name}</span>
         </Link>
         <p>
-          {brand.name} is a fictional brand — a{" "}
-          <a href="https://cento.koative.com/">Cento</a> template by
-          Koative.
+          {brand.name} is a fictional brand.
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
       </div>
     </footer>

@@ -1382,3 +1382,6 @@ export const footer = {
     text: "New models, winter-range results and software release notes. No discount codes, because we do not do discounts.",
   },
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

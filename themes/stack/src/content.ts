@@ -16,7 +16,6 @@ export const brand = {
   phone: "+1 555 0142",
   baseUrl: "https://api.stack.example/v3",
   testKey: "sk_test_51Hq8vStackDemo0042",
-  gallery: "https://cento.koative.com/",
   address: ["Stack Labs", "Rua da Boavista 118", "1200-066 Lisbon, Portugal"],
 };
 
@@ -2043,3 +2042,6 @@ export const notFound = {
   h1: "No page at this address.",
   body: "It may have moved in the v3 restructure. Search usually finds the new home.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

@@ -28,6 +28,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (products, stems, plans, zones, posts, team). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The bag is kept in `localStorage` (and still works for the visit without it). The builder, product pages and subscriptions add lines to the bag; checkout checks postcodes against the delivery zones, enforces the 1 pm same-day cut-off and no-Sunday rule, and shows a confirmation. The wedding enquiry, postcode checker and newsletter forms validate locally. Nothing is sent, stored on a server or charged, and Bloom is a fictional brand.

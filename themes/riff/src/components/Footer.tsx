@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { brand, socials } from "../content";
+import { brand, socials, credit } from "../content";
 import { Link } from "../router";
 import { pause, validate } from "../lib/format";
 import { Field, useErrors } from "./Field";
@@ -123,9 +123,13 @@ export function Footer() {
             ))}
           </ul>
           <p>
-            {brand.name} is a fictional brand — a{" "}
-            <a href="https://cento.koative.com/">Cento</a> template by
-            Koative.
+            {brand.name} is a fictional brand.
+            {credit && (
+              <>
+                {" "}
+                <a href="https://cento.koative.com/">{credit}</a>
+              </>
+            )}
           </p>
         </div>
       </div>

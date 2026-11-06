@@ -1248,3 +1248,6 @@ export const home = {
     "Seasonal stems from growers within ninety miles, spiralled by hand, wrapped in paper and cotton, never plastic.",
   close: "For someone you love. That includes you.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

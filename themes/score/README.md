@@ -28,6 +28,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (programmes, teachers and their teaching hours, recitals, fees, FAQ). `src/styles.css` holds the design system, with tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Everything runs in the browser. The keyboard, metronome and tuning notes use Web Audio and only sound after you press something. Trial slots are generated from each teacher's hours for the next ten teaching days; booking validates the form, shows a short loading state and a confirmation, but nothing is sent and no lesson is booked. The newsletter form and "Save to calendar" work locally only. Score, its teachers, students, prices and concerts are fictional.

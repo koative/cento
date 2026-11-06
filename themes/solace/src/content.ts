@@ -1047,3 +1047,6 @@ export const about = {
     text: "We’re hiring a part-time practice nurse for Northfield, three days a week. Thirty-minute appointments, a team that eats lunch together, and no seven-minute anything.",
   },
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

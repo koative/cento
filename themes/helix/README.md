@@ -28,6 +28,8 @@ Build with `bun run build`: static output in `dist/`, and the relative base work
 
 `src/content.ts` holds all copy and data (systems, papers, roadmap, plans, team, roles). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The circuit composer simulates three qubits exactly in the browser and samples shots locally; the calibration map shows illustrative per-qubit values seeded around each system's published medians; the pricing estimator computes in place. The request-access and newsletter forms validate and show a confirmation, but nothing is sent, stored or charged. Helix, its people, systems, papers and figures are fictional.

@@ -26,6 +26,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (projects with their programme phases, services, jobs, safety record, estimate rates). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The build programme player, filters, tender/estimate form, job applications and the footer bulletin signup all run locally in the browser: forms validate, show a sending state and a confirmation with a reference number, but nothing is sent, uploaded, stored or charged. Alloy, its projects, clients, people, figures and rates are fictional.

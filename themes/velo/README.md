@@ -26,6 +26,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (bikes, geometry, build options, services, rides, team, hours). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The cart is stored in `localStorage` (and still works for the visit when storage is unavailable). The configurator, size helper, workshop booking, club sign-up, newsletter and checkout run entirely in the browser: forms validate and show a confirmation, but nothing is sent, booked or charged. Velo, its people, prices and reviews are fictional.

@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "../router";
-import { brand, days, hours, hoursNote } from "../content";
+import { brand, days, hours, hoursNote, credit } from "../content";
 import { hoursLabel } from "../lib/format";
 import { pause, useErrors, validate } from "../lib/forms";
 import { Field } from "./Field";
@@ -148,9 +148,13 @@ export function Footer() {
       </div>
       <div className="wrap footer-base">
         <p>
-          {brand.name} is a fictional brand — a{" "}
-          <a href="https://cento.koative.com/">Cento</a> template by
-          Koative.
+          {brand.name} is a fictional brand.
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
         <p>All exhibits, prices, people and events are sample content.</p>
       </div>

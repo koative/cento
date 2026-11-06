@@ -23,6 +23,8 @@ bun install && bun run dev (build: bun run build — static output in dist/, rel
 
 content.ts (all copy and data), styles.css (tokens at :root), src/assets (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The Manager's Wheel scores are kept in `localStorage` (and work without it) and recommend a programme, two worksheets and an episode; they can be attached to the coaching application. The application, worksheet download and newsletter forms validate in the browser, show loading and success states, and send nothing. The podcast player runs a silent clock with seek, skip, speed and chapters because no audio ships with the template. Nothing is charged. Mentor, Margo Ellery, every client and every company are fictional.

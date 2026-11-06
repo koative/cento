@@ -26,6 +26,8 @@ Build with `bun run build`: static output in `dist/`, and the relative base work
 
 `src/content.ts` holds all copy and data (languages, courses, teachers, test questions, fees). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The level test marks your answers in the browser and remembers the last result in `localStorage`, so the enrolment form can suggest your level; it works without storage too. Course filters, the timetable, the fees toggle, the enrolment form and the newsletter signup all run locally: nothing is sent, stored on a server or charged. Sonnet, its teachers, students, prices and dates are fictional.

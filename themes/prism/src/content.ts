@@ -1684,3 +1684,6 @@ export const home = {
   closeText:
     "Early-bird prices end 31 January 2027. The Full Spectrum pass sold out three weeks before Prism 2026.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

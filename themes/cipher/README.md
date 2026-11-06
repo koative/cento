@@ -32,6 +32,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data), `src/styles.css` (tokens at `:root`), `src/assets` (sources list; the theme uses authored SVG only).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The home review widget and the `/app` workspace run entirely in the browser on fictional identities and grants: decisions, undo, bulk actions and the signed attestation live in memory and reset on reload. Forms validate locally and show a success state; nothing is sent, stored, revoked or charged. Cipher, Alder Logistics and every person, price and figure are fictional.

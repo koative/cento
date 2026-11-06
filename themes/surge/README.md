@@ -27,6 +27,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (brand, services, plans, case studies, team, ROI assumptions). `src/styles.css` holds the design tokens at `:root`. Images live in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The ROI model runs entirely in the browser on the assumptions in `content.ts` and carries its inputs to the proposal form in the URL. Case-study filters, the billing toggle, the proposal form and the newsletter sign-up validate and respond locally; nothing is sent, stored or charged. Surge, its clients, people and results are fictional.

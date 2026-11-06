@@ -25,6 +25,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (productions, seat layouts and price zones, membership tiers, programmes, hours). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Seat availability is generated deterministically per performance, so the same seats are sold on every visit, and performances in the past drop out of the booking flow automatically. Choosing seats, ticket types, joining as a member and signing up for the newsletter all run locally with validation and success states; nothing is sent, held or charged. Encore Theatre, its productions, people and prices are fictional.

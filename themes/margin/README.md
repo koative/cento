@@ -24,6 +24,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` holds all copy and data, including the case study screens (each mockup is a list of UI blocks plus pinned notes). `src/styles.css` holds the tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Redlines on case study screens are measured live from the rendered layout; pins and margin notes select each other. The playground tools run entirely in the browser (copy uses the clipboard when available). The enquiry form and newsletter sign-up validate in the browser and show a success state, but nothing is sent or stored anywhere. Nora Vale, Margin and every client, person and result shown are fictional.

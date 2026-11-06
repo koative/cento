@@ -28,6 +28,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (products, bake schedule, hours, classes, wholesale prices, FAQ). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The bag is kept in `localStorage` (and still works for the visit without it). Checkout reserves nothing: it validates the form, checks pickup days against each item's notice and bake days, shows a confirmation and empties the bag. Class booking, the wholesale enquiry and the newsletter form validate and confirm locally; nothing is sent, charged or stored anywhere. Proof, its people, prices and reviews are fictional.

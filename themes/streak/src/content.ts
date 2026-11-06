@@ -28,7 +28,6 @@ export const brand = {
   press: "press@streak.example",
   phone: "+1 555 0142 7781",
   address: ["Streak Labs", "41 Halsey Street, 2nd floor", "Portland, OR 97232"],
-  gallery: "https://cento.koative.com/",
   version: "4.2",
   /** The in-world "today" used by every demo calendar. */
   today: { year: 2026, month: 9, day: 18 },
@@ -1294,3 +1293,6 @@ export const contact = {
 };
 
 export const notFound = { title: "Page not found" };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

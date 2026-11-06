@@ -1328,3 +1328,6 @@ export const newsletter = {
   title: "The kiln letter",
   text: "One email when the kiln opens, with first pick of the new pieces. About once a month.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

@@ -26,6 +26,8 @@ Build with `bun run build`: static output in `dist/`; the relative base works in
 
 `src/content.ts` holds all copy and data (brand, campaigns, events, roles, reports, team). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Pledges, gifts, RSVPs, volunteer sign-ups and the newsletter form all run in the browser. A completed gift moves the campaign's board and donor count, and RSVPs hold places, both kept in `localStorage` when it is available. Nothing is sent, stored on a server or charged, and Lantern, Calder Bend and everyone named are fictional.

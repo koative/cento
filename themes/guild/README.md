@@ -29,6 +29,8 @@ Build: `bun run build` — static output in `dist/`, the relative base works in 
 
 `src/content.ts` (all copy and data), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Everything runs in the browser. The bench is kept in `localStorage` (and simply lasts for the visit when storage is unavailable); the time-zone chart, cost totals, filters and fee calculator are computed locally. Posting a project, signing up, signing in and subscribing to the newsletter validate their fields and show a success state, but nothing is sent, stored on a server or charged. Guild, its members, clients, rates and reviews are fictional.

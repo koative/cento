@@ -28,6 +28,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` holds all copy and data (brand, products, looks, posts, stores, checkout options). `src/styles.css` holds the design system with tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The bag is stored in `localStorage` (and still works for the visit when storage is blocked); shop-the-look, product variants and quantities all write to it. Checkout validates every field in the browser and shows a confirmation with a demo order number, then empties the bag. Newsletter and look forms confirm locally. Nothing is sent, charged or stored on a server, and Muse is a fictional brand.

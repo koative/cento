@@ -1343,3 +1343,6 @@ export const newsletter = {
   title: "A softer kind of inbox.",
   text: "One letter a month: a new journal piece, what we are formulating, and first word on seasonal batches.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

@@ -878,3 +878,6 @@ export const footer = {
   alertsTitle: "Drop alerts",
   alertsText: "One email on Monday when the lineup goes up. Nothing else.",
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

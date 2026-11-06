@@ -26,6 +26,8 @@ Build: `bun run build` — static output in `dist/`; the relative base works in 
 
 `src/content.ts` (all copy and data: recipes, prices, farms, FAQ), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The box (plan size, delivery day, recipes and gift cards) is kept in `localStorage` and survives reloads; it still works for the visit if storage is blocked. The plan builder, menu filters, recipe swaps, gift card form and sign-up checkout all run in the browser: forms validate locally, checkout shows a short loading state and an order confirmation, and nothing is sent, stored on a server or charged. Delivery dates and the Wednesday cutoff countdown are computed from the visitor's clock. Pantry, its people, farms and prices are fictional.

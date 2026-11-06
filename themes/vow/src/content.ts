@@ -1146,3 +1146,6 @@ export const about = {
     "We work for a flat fee, never a percentage, and we take no commission from suppliers. When we recommend a florist it is because their work will suit your day, not ours.",
   ],
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

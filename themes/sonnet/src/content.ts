@@ -1441,3 +1441,6 @@ export const glosses: Record<string, Gloss> = {
     def: "to put your name down. Literally, to write it on the roll.",
   },
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

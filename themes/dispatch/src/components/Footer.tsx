@@ -1,5 +1,5 @@
 import { Link } from "../router";
-import { brand, footerColumns, topics } from "../content";
+import { brand, footerColumns, topics, credit } from "../content";
 import { Logo } from "./Header";
 import { SubscribeForm } from "./SubscribeForm";
 
@@ -62,9 +62,13 @@ export function Footer() {
       </div>
       <div className="wrap footer-base">
         <p>
-          {brand.name} is a fictional brand — a{" "}
-          <a href="https://cento.koative.com/">Cento</a> template by
-          Koative.
+          {brand.name} is a fictional brand.
+          {credit && (
+            <>
+              {" "}
+              <a href="https://cento.koative.com/">{credit}</a>
+            </>
+          )}
         </p>
         <p>
           Writer, people, places and prices are sample content. Prices in USD.

@@ -27,6 +27,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (lessons, camps, coaches, spots, FAQ). `src/styles.css` starts with the design tokens at `:root`. Imagery lives in `src/assets`. The sample forecast model is in `src/lib/forecast.ts`; replace `forecast()` with a real marine-weather feed.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The forecast widget generates seven days of sample swell, wind and tide from the calendar date and rates each hour for the chosen lesson level; its "Book" button carries the lesson, day and time into the booking form. Camp filters, the lesson pack toggle, the booking form and the swell-alerts signup all run locally in the browser: they validate, show loading and success states, and never send, store or charge anything. Drift, its coaches, students, prices and the Gull Point beach are fictional.

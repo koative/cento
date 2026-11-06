@@ -1386,3 +1386,6 @@ export const press = {
     text: "Keys are available for every released game, and preview builds of Orbital Delivery go to outlets from winter 2026. Creators and streamers of every size are welcome.",
   },
 };
+
+// Footer credit, a small "Template by Cento" link. Set it to null to remove it.
+export const credit: string | null = "Template by Cento";

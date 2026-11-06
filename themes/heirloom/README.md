@@ -28,6 +28,8 @@ Build with `bun run build`: static output in `dist/`, and the relative base work
 
 `src/content.ts` holds all copy and data (pieces, prices, metals, stones, builder pricing, appointments, care tables). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`; piece drawings are generated from each piece's `art` record by `src/components/Plate.tsx`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The bag is kept in `localStorage` (and still works for the visit if storage is blocked). The ring builder, piece options, appointment booking, checkout and newsletter forms validate and confirm entirely in the browser: nothing is sent, booked or charged, and card numbers are only checked for shape. Heirloom, its makers, clients, address and prices are fictional.

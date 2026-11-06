@@ -26,6 +26,8 @@ Brewed in copper. Poured twelve feet from the kettle. A craft brewery & taproom 
 
 `src/content.ts` (all copy and data), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The age-gate answer and the pickup order are remembered in `localStorage` (everything still works when storage is unavailable). The flight builder reorders a paddle in pour order or deals a bartender's pick. Tour bookings, pickup checkout and the newsletter form validate in the browser and show a confirmation, but nothing is sent, booked or charged, and payment always happens at the bar. Kettle Brewing Co., its beers, staff, prices and events are fictional.

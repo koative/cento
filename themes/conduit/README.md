@@ -31,6 +31,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (connectors, plans, incidents, changelog, people, dashboard data). `src/styles.css` holds the design tokens at `:root`. `src/assets` holds SOURCES.md (the template ships no raster images).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The request console runs a local model of the pipeline (auth, transform, upstream with retries and backoff) and plays it back with real-shaped responses; forms validate and show success states; the dashboard tails generated log lines and lets you pause connections and rotate keys. Nothing is sent, stored or charged, and state resets on reload. Conduit and every connector, company and person are fictional.

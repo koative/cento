@@ -25,6 +25,8 @@ bun install && bun run dev (build: bun run build — static output in dist/, rel
 
 `src/content.ts` (all copy and data: menu, option groups, merch, locations and hours, catering, about), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Everything runs in the browser. The burger builder recalculates price and calories and redraws the stack as you change options; your order is kept in `localStorage` (and still works for the visit if storage is blocked). Checkout, the catering enquiry and the newsletter validate their fields and show a confirmation, but nothing is sent anywhere and no card is charged. Open/closed status is computed from each location's hours and your device clock. Smash, its people, places and prices are fictional.

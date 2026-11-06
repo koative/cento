@@ -32,6 +32,8 @@ Build with `bun run build`; the static output in `dist/` uses a relative base an
 
 `src/content.ts` holds all copy and demo data, `src/styles.css` holds the design tokens at `:root`, and `src/assets/` holds imagery sources.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Every interactive flow runs locally in the browser: the query composer, charts, funnel builder, event table, settings, pricing calculator and all forms work on fictional demo data held in React state, and reset on reload. The CSV export builds the file in the browser. Forms validate and show a success state, but nothing is sent, stored or charged anywhere. Signal, Fernway and every company, person and number on the site are fictional.

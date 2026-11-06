@@ -27,6 +27,8 @@ Build: `bun run build` — static output in `dist/`, relative base works in any 
 
 `src/content.ts` (all copy and data), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Shortlisting a job circles it in red pen and saves it, with its applied status, to `localStorage` (the site still works when storage is blocked). Search, filters, sorting, the salary checker and the shortlist comparison run entirely in the browser on sample data. The application, listing and newsletter forms validate and show a success state, but nothing is uploaded, sent or charged. Shortlist, its employers, people and figures are fictional.

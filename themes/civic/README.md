@@ -27,6 +27,8 @@ Build: `bun run build` — static output in `dist/`, the relative base works in 
 
 `src/content.ts` (all copy and data: services, map, wards, alerts, council, meetings, news), `src/styles.css` (tokens at `:root`), `src/assets` (imagery).
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 Searching, filtering, the address lookup and the ward finder run on local demo data. Filed reports are kept in this browser's `localStorage` (the app still works when storage is unavailable) and can be tracked by their reference number; alert and newsletter sign-ups only show a confirmation. Nothing is sent to anyone, no payment or registration takes place, and the City of Commonwell, its people and its figures are fictional.

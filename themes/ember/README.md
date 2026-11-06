@@ -26,6 +26,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (menus, dishes, hours, events, spaces, team, FAQ). `src/styles.css` holds the design tokens at `:root`. Imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The table planner keeps a guest count and chosen dishes in `localStorage` (and still works without it), totals the bill per head and suggests a balanced order. Reservations show demo availability per date and time, validate every field and return a confirmation reference; the private-dining enquiry, event seat holds and newsletter sign-up behave the same way. Nothing is sent, booked or charged, and Ember is a fictional brand.

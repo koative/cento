@@ -25,6 +25,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (covers, rates, rooms, incidents, articles, people). Design tokens sit at `:root` in `src/styles.css`; imagery lives in `src/assets`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The quote prices a policy locally from illustrative rates in `content.ts`, validates every step, shows a loading state and issues a made-up quote reference; the contents counter, claims triage, help search and newsletter form all run in the browser. Nothing is sent, stored or charged, and no insurance is offered. Vault and everyone in it are fictional.

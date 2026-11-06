@@ -26,6 +26,8 @@ Build with `bun run build` — static output in `dist/`; the relative base works
 
 `src/content.ts` holds all copy and data (animals, quiz, fees, roles, hours), `src/styles.css` the design tokens at `:root`, and `src/assets` the imagery. Quiz weights live in `src/lib/match.ts`.
 
+The footer ends with a small "Template by Cento" link. To remove it, set `credit` to `null` in `src/content.ts`.
+
 ## Demo behaviour
 
 The filters, matching quiz, adoption application, volunteer sign-up, donation form and newsletter all run locally in the browser: they validate, show a short loading state and confirm, but nothing is sent, stored, reserved or charged. Kindred, its animals, people, prices and addresses are fictional.
